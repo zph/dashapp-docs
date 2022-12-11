@@ -1,0 +1,17 @@
+{
+    "name": "MongoDB v3.4",
+    "package": "mongodb-v3.4",
+    "index": "index.html",
+    "selectors": {
+        "dt a": "Command",
+        "title": "Package",
+        "h1": "Section",
+        ".mongodb-method": "Method"
+    },
+    "ignore": [
+        "ABOUT"
+    ],
+    "icon32x32": "",
+    "allowJS": true,
+    "ExternalURL": ""
+}
