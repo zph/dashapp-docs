@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+set -eou pipefail
+set -x
+
+readonly VERSION="$1"
+
+if ! command -v dashing; then
+  brew install dashing
+fi
+
+readonly WORKSPACE=$(mktemp -d 2>/dev/null || mktemp -d -t 'mongo-docs-build')
+readonly ORIGINAL_DIR="$PWD"
+
+cleanup()
+{
+  echo "Removing temporary files:"
+  rm -rf "$WORKSPACE"
+}
+
+# trap cleanup EXIT
+
+(
+  cd "$WORKSPACE" || exit 1
+  wget https://docs.mongodb.com/${VERSION}/manual.tar.gz
+
+  mkdir $WORKSPACE/docs
+  tar -xvf $WORKSPACE/manual.tar.gz -C $WORKSPACE/docs
+  cd $WORKSPACE/docs/manual-${VERSION}.tar
+  mv html mongodb-${VERSION}
+  (
+    ls ./*
+    cd mongodb-$VERSION/
+    dashing create
+    # Edit settings
+    $EDITOR dashing.json
+    dashing build "mongodb-${VERSION}"
+    cd ../ # Move back up because we're inside the mongo folder
+    mv mongodb-${VERSION} $ORIGINAL_DIR/
+  )
+)
+
+git add -N "$ORIGINAL_DIR/mongodb-$VERSION"
+open "$ORIGINAL_DIR/mongodb-$VERSION/*.docset"
