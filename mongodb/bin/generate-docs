@@ -18,7 +18,7 @@ cleanup()
   rm -rf "$WORKSPACE"
 }
 
-# trap cleanup EXIT
+trap cleanup EXIT
 
 (
   cd "$WORKSPACE" || exit 1
