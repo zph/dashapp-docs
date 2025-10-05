@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3757"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.remove%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.remove() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1871"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.remove%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.remove() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.remove/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-remove">
-<a class="dashingAutolink" name="autolink-3733"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.remove%28%29%C2%B6"></a><h1>db.collection.remove()<a class="headerlink" href="#db-collection-remove" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.remove()<a class="headerlink" href="#db-collection-remove" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,10 +167,10 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.remove">
-<code class="descclassname">db.collection.</code><code class="descname">remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3756"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.remove" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1872"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.remove" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Removes documents from a collection.</p>
-<p>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3734"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> method can have one of two
-syntaxes. The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3735"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method can take a
+<p>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> method can have one of two
+syntaxes. The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method can take a
 query document and an optional <code class="docutils literal"><span class="pre">justOne</span></code> boolean:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -273,7 +273,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-3736"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -290,7 +290,7 @@ find and another for the sort.</p>
 </tbody>
 </table>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3737"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> returns an object that
+<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> returns an object that
 contains the status of the operation.</p>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
@@ -312,13 +312,13 @@ status of the operation.</td>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
-<p>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3738"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method uses the
+<p>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method uses the
 <a class="reference internal" href="../command/delete.html#dbcmd.delete" title="delete"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">delete</span></code></a> command, which uses the default <a class="reference internal" href="../write-concern.html"><span class="doc">write concern</span></a>. To specify a different write concern,
 include the write concern in the options parameter.</p>
 </div>
 <div class="section" id="query-considerations">
 <h3>Query Considerations<a class="headerlink" href="#query-considerations" title="Permalink to this headline">&para;</a></h3>
-<p>By default, <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3739"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> removes all documents
+<p>By default, <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> removes all documents
 that match the <code class="docutils literal"><span class="pre">query</span></code> expression. Specify the <code class="docutils literal"><span class="pre">justOne</span></code> option to
 limit the operation to removing a single document. To delete a single
 document sorted by a specified order, use the <a class="reference internal" href="db.collection.findAndModify.html#findandmodify-wrapper-sorted-remove"><span class="std std-ref">findAndModify()</span></a> method.</p>
@@ -333,25 +333,25 @@ stops the remove operation.</p>
 </div>
 <div class="section" id="capped-collections">
 <h3>Capped Collections<a class="headerlink" href="#capped-collections" title="Permalink to this headline">&para;</a></h3>
-<p>You cannot use the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3740"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method
+<p>You cannot use the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method
 with a <a class="reference internal" href="../glossary.html#term-capped-collection"><span class="xref std std-term">capped collection</span></a>.</p>
 </div>
 <div class="section" id="sharded-collections">
 <h3>Sharded Collections<a class="headerlink" href="#sharded-collections" title="Permalink to this headline">&para;</a></h3>
-<p>All <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3741"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations for a sharded
+<p>All <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations for a sharded
 collection that specify the <code class="docutils literal"><span class="pre">justOne</span></code> option must include the
 <a class="reference internal" href="../glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> <em>or</em> the <code class="docutils literal"><span class="pre">_id</span></code> field in the query specification.
-<a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3742"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations specifying <code class="docutils literal"><span class="pre">justOne</span></code>
+<a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations specifying <code class="docutils literal"><span class="pre">justOne</span></code>
 in a sharded collection which do not contain either the
 <a class="reference internal" href="../glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> or the <code class="docutils literal"><span class="pre">_id</span></code> field return an error.</p>
 </div>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">&para;</a></h2>
-<p>The following are examples of the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3743"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method.</p>
+<p>The following are examples of the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method.</p>
 <div class="section" id="remove-all-documents-from-a-collection">
 <h3>Remove All Documents from a Collection<a class="headerlink" href="#remove-all-documents-from-a-collection" title="Permalink to this headline">&para;</a></h3>
-<p>To remove all documents in a collection, call the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3744"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove</span></code></a> method with an empty query document <code class="docutils literal"><span class="pre">{}</span></code>.
+<p>To remove all documents in a collection, call the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove</span></code></a> method with an empty query document <code class="docutils literal"><span class="pre">{}</span></code>.
 The following operation deletes all documents from the <a class="reference internal" href="../bios-example-collection.html"><span class="doc">bios
 collection</span></a>:</p>
 <div class="button-code-block">
@@ -364,16 +364,16 @@ copy</a>
 </div>
 </div>
 <p>This operation is not equivalent to the
-<a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-3745"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">drop()</span></code></a> method.</p>
+<a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">drop()</span></code></a> method.</p>
 <p>To remove all documents from a collection, it may be more efficient
-to use the <a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-3746"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">drop()</span></code></a> method to drop the entire
+to use the <a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">drop()</span></code></a> method to drop the entire
 collection, including the indexes, and then recreate the collection
 and rebuild the indexes.</p>
 </div>
 <div class="section" id="remove-all-documents-that-match-a-condition">
 <h3>Remove All Documents that Match a Condition<a class="headerlink" href="#remove-all-documents-that-match-a-condition" title="Permalink to this headline">&para;</a></h3>
 <p>To remove the documents that match a deletion criteria, call the
-<a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3747"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method with the <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code>
+<a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method with the <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code>
 parameter:</p>
 <p>The following operation removes all the documents from the collection
 <code class="docutils literal"><span class="pre">products</span></code> where <code class="docutils literal"><span class="pre">qty</span></code> is greater than <code class="docutils literal"><span class="pre">20</span></code>:</p>
@@ -416,7 +416,7 @@ copy</a>
 <div class="section" id="remove-a-single-document-that-matches-a-condition">
 <h3>Remove a Single Document that Matches a Condition<a class="headerlink" href="#remove-a-single-document-that-matches-a-condition" title="Permalink to this headline">&para;</a></h3>
 <p>To remove the first document that match a deletion criteria, call the
-<a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3748"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove</span></code></a> method with the <code class="docutils literal"><span class="pre">query</span></code>
+<a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove</span></code></a> method with the <code class="docutils literal"><span class="pre">query</span></code>
 criteria and the <code class="docutils literal"><span class="pre">justOne</span></code> parameter set to <code class="docutils literal"><span class="pre">true</span></code> or <code class="docutils literal"><span class="pre">1</span></code>.</p>
 <p>The following operation removes the first document from the collection
 <code class="docutils literal"><span class="pre">products</span></code> where <code class="docutils literal"><span class="pre">qty</span></code> is greater than <code class="docutils literal"><span class="pre">20</span></code>:</p>
@@ -487,9 +487,9 @@ copy</a>
 </div>
 <div class="section" id="successful-results">
 <h3>Successful Results<a class="headerlink" href="#successful-results" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3749"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> returns a <a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3750"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a>
+<p>The <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> returns a <a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a>
 object that contains the status of the operation. Upon success, the
-<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3751"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object contains information on the number of
+<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object contains information on the number of
 documents removed:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -507,7 +507,7 @@ copy</a>
 </div>
 <div class="section" id="write-concern-errors">
 <h3>Write Concern Errors<a class="headerlink" href="#write-concern-errors" title="Permalink to this headline">&para;</a></h3>
-<p>If the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3752"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method encounters write
+<p>If the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method encounters write
 concern errors, the results include the
 <a class="reference internal" href="WriteResult.html#WriteResult.writeConcernError" title="WriteResult.writeConcernError"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">WriteResult.writeConcernError</span></code></a> field:</p>
 <div class="button-code-block">
@@ -530,12 +530,12 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="WriteResult.hasWriteConcernError.html#WriteResult.hasWriteConcernError" title="WriteResult.hasWriteConcernError()"><a class="dashingAutolink" name="autolink-3753"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult.hasWriteConcernError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteConcernError()</span></code></a></p>
+<p class="last"><a class="reference internal" href="WriteResult.hasWriteConcernError.html#WriteResult.hasWriteConcernError" title="WriteResult.hasWriteConcernError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteConcernError()</span></code></a></p>
 </div>
 </div>
 <div class="section" id="errors-unrelated-to-write-concern">
 <h3>Errors Unrelated to Write Concern<a class="headerlink" href="#errors-unrelated-to-write-concern" title="Permalink to this headline">&para;</a></h3>
-<p>If the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3754"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method encounters a non-write
+<p>If the <a class="reference internal" href="#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> method encounters a non-write
 concern error, the results include <a class="reference internal" href="WriteResult.html#WriteResult.writeError" title="WriteResult.writeError"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">WriteResult.writeError</span></code></a> field:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -554,7 +554,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="WriteResult.hasWriteError.html#WriteResult.hasWriteError" title="WriteResult.hasWriteError()"><a class="dashingAutolink" name="autolink-3755"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult.hasWriteError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteError()</span></code></a></p>
+<p class="last"><a class="reference internal" href="WriteResult.hasWriteError.html#WriteResult.hasWriteError" title="WriteResult.hasWriteError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteError()</span></code></a></p>
 </div>
 </div>
 </div>

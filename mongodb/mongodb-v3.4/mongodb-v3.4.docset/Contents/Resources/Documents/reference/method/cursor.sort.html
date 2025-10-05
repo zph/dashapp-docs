@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3216"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.sort%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.sort() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1786"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.sort%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.sort() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.sort/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-sort">
-<a class="dashingAutolink" name="autolink-3217"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.sort%28%29%C2%B6"></a><h1>cursor.sort()<a class="headerlink" href="#cursor-sort" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.sort()<a class="headerlink" href="#cursor-sort" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,11 +167,11 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.sort">
-<code class="descclassname">cursor.</code><code class="descname">sort</code><span class="sig-paren">(</span><em>sort</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3225"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.sort" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">sort</code><span class="sig-paren">(</span><em>sort</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1785"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.sort" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the order in which the query returns matching documents.
-You must apply <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3218"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> to the cursor before
+You must apply <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> to the cursor before
 retrieving any documents from the database.</p>
-<p>The <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3219"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method has the following parameter:</p>
+<p>The <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method has the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -211,7 +211,7 @@ existing fields</span></a> or <a class="reference internal" href="#sort-metadata
 <h2>Behaviors<a class="headerlink" href="#behaviors" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="result-ordering">
 <h3>Result Ordering<a class="headerlink" href="#result-ordering" title="Permalink to this headline">&para;</a></h3>
-<p>Unless you specify the <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3220"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method or use the
+<p>Unless you specify the <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method or use the
 <a class="reference internal" href="../operator/query/near.html#op._S_near" title="$near"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$near</span></code></a> operator, MongoDB does <strong>not</strong> guarantee the order of
 query results.</p>
 </div>
@@ -279,7 +279,7 @@ is less than 32 megabytes.</p>
 <p>When the sort operation consumes more than 32 megabytes, MongoDB
 returns an error. To avoid this error, either create an index
 supporting the sort operation (see <a class="reference internal" href="#sort-index-use"><span class="std std-ref">Sort and Index Use</span></a>) or use
-<a class="reference internal" href="#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3221"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> in conjunction with <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3222"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>
+<a class="reference internal" href="#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> in conjunction with <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>
 (see <a class="reference internal" href="#sort-limit-results"><span class="std std-ref">Limit Results</span></a>).</p>
 </div>
 <div class="section" id="sort-and-index-use">
@@ -291,8 +291,8 @@ more information, see <a class="reference internal" href="../../tutorial/sort-re
 </div>
 <div class="section" id="limit-results">
 <span id="sort-limit-results"></span><h3>Limit Results<a class="headerlink" href="#limit-results" title="Permalink to this headline">&para;</a></h3>
-<p>You can use <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3223"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> in conjunction with
-<a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3224"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> to return the first (in terms of the sort
+<p>You can use <a class="reference internal" href="#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> in conjunction with
+<a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> to return the first (in terms of the sort
 order) <code class="docutils literal"><span class="pre">k</span></code> documents, where <code class="docutils literal"><span class="pre">k</span></code> is the specified limit.</p>
 <p>If MongoDB cannot obtain the sort order via an index scan, then MongoDB
 uses a top-k sort algorithm. This algorithm buffers the first <code class="docutils literal"><span class="pre">k</span></code>

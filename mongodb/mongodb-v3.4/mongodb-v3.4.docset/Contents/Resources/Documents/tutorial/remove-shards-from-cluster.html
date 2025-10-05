@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8616"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Remove%20Shards%20from%20an%20Existing%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Remove Shards from an Existing Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3715"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Remove%20Shards%20from%20an%20Existing%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Remove Shards from an Existing Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/remove-shards-from-cluster/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="remove-shards-from-an-existing-sharded-cluster">
-<a class="dashingAutolink" name="autolink-8617"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Remove%20Shards%20from%20an%20Existing%20Sharded%20Cluster%C2%B6"></a><h1>Remove Shards from an Existing Sharded Cluster<a class="headerlink" href="#remove-shards-from-an-existing-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
+<h1>Remove Shards from an Existing Sharded Cluster<a class="headerlink" href="#remove-shards-from-an-existing-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -180,7 +180,7 @@ sequence of tasks in this document to remove a shard from the cluster.</p>
 <span id="remove-shard-ensure-balancer-is-active"></span><span id="remove-shard-ensure-balancer-is-enabled"></span><h2>Ensure the Balancer Process is Enabled<a class="headerlink" href="#ensure-the-balancer-process-is-enabled" title="Permalink to this headline">&para;</a></h2>
 <p>To successfully migrate data from a shard, the <a class="reference internal" href="../reference/glossary.html#term-balancer"><span class="xref std std-term">balancer</span></a> process
 <strong>must</strong> be enabled. Check the balancer state using the
-<a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8618"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.
+<a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.
 For more information, see the section on <a class="reference internal" href="manage-sharded-cluster-balancer.html#sharding-balancing-disable-temporarily"><span class="std std-ref">balancer operations</span></a>.</p>
 </div>
 <div class="section" id="determine-the-name-of-the-shard-to-remove">
@@ -199,8 +199,8 @@ copy</a>
 </div>
 </div>
 </li>
-<li><p class="first">Run either the <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8619"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> or the
-<a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><a class="dashingAutolink" name="autolink-8620"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printShardingStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a> method.</p>
+<li><p class="first">Run either the <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> or the
+<a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a> method.</p>
 </li>
 </ul>
 <p>The <code class="docutils literal"><span class="pre">shards._id</span></code> field lists the name of each shard.</p>
@@ -298,7 +298,7 @@ MongoDB databases that have &ldquo;primary&rdquo; status on this shard.</p>
 <p>Continue checking the status of the <cite>removeShard</cite> command until the
 number of chunks remaining is <code class="docutils literal"><span class="pre">0</span></code>. Always run the command on the
 <code class="docutils literal"><span class="pre">admin</span></code> database. If you are on a database other than <code class="docutils literal"><span class="pre">admin</span></code>, you can
-use <a class="dashingAutolink" name="autolink-8621"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh._adminCommand"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh._adminCommand</span></code> to run the command on <code class="docutils literal"><span class="pre">admin</span></code>.</p>
+use <code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh._adminCommand</span></code> to run the command on <code class="docutils literal"><span class="pre">admin</span></code>.</p>
 </div>
 <div class="section" id="move-databases-to-another-primary-shard">
 <span id="remove-shard-move-unsharded-databases"></span><h2>Move Databases to Another Primary Shard<a class="headerlink" href="#move-databases-to-another-primary-shard" title="Permalink to this headline">&para;</a></h2>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-791"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/BSON%20Types%20%E2%80%94%20MongoDB%20Manual"></a><title>BSON Types &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-336"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/BSON%20Types%20%E2%80%94%20MongoDB%20Manual"></a><title>BSON Types &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/bson-types/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="bson-types">
-<span id="id1"></span><a class="dashingAutolink" name="autolink-792"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/BSON%20Types%C2%B6"></a><h1>BSON Types<a class="headerlink" href="#bson-types" title="Permalink to this headline">&para;</a></h1>
+<span id="id1"></span><h1>BSON Types<a class="headerlink" href="#bson-types" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -319,7 +319,7 @@ Using ObjectIds for the <code class="docutils literal"><span class="pre">_id</sp
 benefits:</p>
 <ul>
 <li><p class="first">in the <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, you can access the creation time of
-the <code class="docutils literal"><span class="pre">ObjectId</span></code>, using the <a class="reference internal" href="method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><a class="dashingAutolink" name="autolink-786"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId.getTimestamp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.getTimestamp()</span></code></a> method.</p>
+the <code class="docutils literal"><span class="pre">ObjectId</span></code>, using the <a class="reference internal" href="method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.getTimestamp()</span></code></a> method.</p>
 </li>
 <li><p class="first">sorting on an <code class="docutils literal"><span class="pre">_id</span></code> field that stores <code class="docutils literal"><span class="pre">ObjectId</span></code> values is
 roughly equivalent to sorting by creation time.</p>
@@ -338,7 +338,7 @@ ordering, and</li>
 </ul>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="method/ObjectId.html#ObjectId" title="ObjectId()"><a class="dashingAutolink" name="autolink-787"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a></p>
+<p class="last"><a class="reference internal" href="method/ObjectId.html#ObjectId" title="ObjectId()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a></p>
 </div>
 </div>
 <div class="section" id="string">
@@ -353,9 +353,9 @@ most international characters in BSON strings with ease.
 <colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>Given strings using UTF-8
-character sets, using <a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-788"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> on strings
+character sets, using <a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> on strings
 will be reasonably correct. However, because internally
-<a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-789"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> uses the C++ <code class="docutils literal"><span class="pre">strcmp</span></code> api, the
+<a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> uses the C++ <code class="docutils literal"><span class="pre">strcmp</span></code> api, the
 sort order may handle some characters incorrectly.</td></tr>
 </tbody>
 </table>
@@ -405,7 +405,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Running <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-790"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.test.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.test.find()</span></code></a>  would then
+<p>Running <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.test.find()</span></code></a>  would then
 return a document which resembles the following:</p>
 <div class="button-code-block">
 <div class="button-row">

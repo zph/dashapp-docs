@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3274"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.aggregate%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.aggregate() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1802"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.aggregate%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.aggregate() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-aggregate">
-<a class="dashingAutolink" name="autolink-3275"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.aggregate%28%29%C2%B6"></a><h1>db.collection.aggregate()<a class="headerlink" href="#db-collection-aggregate" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.aggregate()<a class="headerlink" href="#db-collection-aggregate" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.aggregate">
-<code class="descclassname">db.collection.</code><code class="descname">aggregate</code><span class="sig-paren">(</span><em>pipeline</em>, <em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3292"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.aggregate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">aggregate</code><span class="sig-paren">(</span><em>pipeline</em>, <em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1801"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.aggregate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Calculates aggregate values for the data in a collection or a <a class="reference internal" href="../../core/views.html"><span class="doc">view</span></a>.</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -195,7 +195,7 @@ not specify the <code class="docutils literal"><span class="pre">pipeline</span>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">options</span></code></td>
 <td>document</td>
-<td><p class="first">Optional. Additional options that <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3276"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> passes
+<td><p class="first">Optional. Additional options that <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> passes
 to the <a class="reference internal" href="../command/aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a> command.</p>
 <div class="last versionadded">
 <p><span class="versionmodified">New in version 2.6: </span>Available only if you specify the <code class="docutils literal"><span class="pre">pipeline</span></code> as an array.</p>
@@ -255,7 +255,7 @@ operations on a cursor. If you do not specify a value for maxTimeMS,
 operations will not time out. A value of <code class="docutils literal"><span class="pre">0</span></code> explicitly
 specifies the default unbounded behavior.</p>
 <p class="last">MongoDB terminates operations that exceed their allotted time limit
-using the same mechanism as <a class="reference internal" href="db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-3277"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only
+using the same mechanism as <a class="reference internal" href="db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only
 terminates an operation at one of its designated <a class="reference internal" href="../glossary.html#term-interrupt-point"><span class="xref std std-term">interrupt
 points</span></a>.</p>
 </td>
@@ -264,7 +264,7 @@ points</span></a>.</p>
 <td>boolean</td>
 <td><p class="first">Optional. Available only if you specify the <a class="reference internal" href="../operator/aggregation/out.html#pipe._S_out" title="$out"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$out</span></code></a> aggregation
 operator.</p>
-<p>Enables <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate"><a class="dashingAutolink" name="autolink-3278"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate</span></code></a> to bypass document validation
+<p>Enables <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate</span></code></a> to bypass document validation
 during the operation. This lets you insert documents that do not
 meet the validation requirements.</p>
 <div class="last versionadded">
@@ -327,7 +327,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-3279"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -351,10 +351,10 @@ find and another for the sort.</p>
 the aggregation pipeline operation, or if you include the
 <code class="docutils literal"><span class="pre">explain</span></code> option, the document that provides
 details on the processing of the aggregation operation.<p>If the pipeline includes the <a class="reference internal" href="../operator/aggregation/out.html#pipe._S_out" title="$out"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$out</span></code></a> operator,
-<a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3280"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> returns an empty cursor. See
+<a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> returns an empty cursor. See
 <a class="reference internal" href="../operator/aggregation/out.html#pipe._S_out" title="$out"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$out</span></code></a> for more information.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3281"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method returns a
+<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method returns a
 cursor and can return result sets of any size. Previous
 versions returned all results in a single document, and the
 result set was subject to a size limit of 16 megabytes.</p>
@@ -370,13 +370,13 @@ result set was subject to a size limit of 16 megabytes.</p>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="error-handling">
 <h3>Error Handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">&para;</a></h3>
-<p>If an error occurs, the <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3282"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> helper
+<p>If an error occurs, the <a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> helper
 throws an exception.</p>
 </div>
 <div class="section" id="cursor-behavior">
 <h3>Cursor Behavior<a class="headerlink" href="#cursor-behavior" title="Permalink to this headline">&para;</a></h3>
 <p>In the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, if the cursor returned from the
-<a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3283"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> is not assigned to a variable using
+<a class="reference internal" href="#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> is not assigned to a variable using
 the <code class="docutils literal"><span class="pre">var</span></code> keyword, then the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell automatically
 iterates the cursor up to 20 times. See
 <a class="reference internal" href="../../tutorial/iterate-a-cursor.html"><span class="doc">Iterate a Cursor in the mongo Shell</span></a> for handling cursors in the
@@ -385,16 +385,16 @@ iterates the cursor up to 20 times. See
 operate on evaluated cursors (i.e. cursors whose first batch has been
 retrieved), such as the following methods:</p>
 <table class="hlist"><tbody><tr><td><ul class="simple">
-<li><a class="reference internal" href="cursor.hasNext.html#cursor.hasNext" title="cursor.hasNext()"><a class="dashingAutolink" name="autolink-3284"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.hasNext%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.hasNext()</span></code></a></li>
-<li><a class="reference internal" href="cursor.next.html#cursor.next" title="cursor.next()"><a class="dashingAutolink" name="autolink-3285"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.next%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.next()</span></code></a></li>
-<li><a class="reference internal" href="cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><a class="dashingAutolink" name="autolink-3286"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.toArray%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.toArray()</span></code></a></li>
-<li><a class="reference internal" href="cursor.forEach.html#cursor.forEach" title="cursor.forEach()"><a class="dashingAutolink" name="autolink-3287"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.forEach%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.forEach()</span></code></a></li>
+<li><a class="reference internal" href="cursor.hasNext.html#cursor.hasNext" title="cursor.hasNext()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.hasNext()</span></code></a></li>
+<li><a class="reference internal" href="cursor.next.html#cursor.next" title="cursor.next()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.next()</span></code></a></li>
+<li><a class="reference internal" href="cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.toArray()</span></code></a></li>
+<li><a class="reference internal" href="cursor.forEach.html#cursor.forEach" title="cursor.forEach()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.forEach()</span></code></a></li>
 </ul>
 </td><td><ul class="simple">
-<li><a class="reference internal" href="cursor.map.html#cursor.map" title="cursor.map()"><a class="dashingAutolink" name="autolink-3288"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.map%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.map()</span></code></a></li>
-<li><a class="reference internal" href="cursor.objsLeftInBatch.html#cursor.objsLeftInBatch" title="cursor.objsLeftInBatch()"><a class="dashingAutolink" name="autolink-3289"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.objsLeftInBatch%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.objsLeftInBatch()</span></code></a></li>
-<li><a class="reference internal" href="cursor.itcount.html#cursor.itcount" title="cursor.itcount()"><a class="dashingAutolink" name="autolink-3290"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.itcount%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.itcount()</span></code></a></li>
-<li><a class="reference internal" href="cursor.pretty.html#cursor.pretty" title="cursor.pretty()"><a class="dashingAutolink" name="autolink-3291"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.pretty%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.pretty()</span></code></a></li>
+<li><a class="reference internal" href="cursor.map.html#cursor.map" title="cursor.map()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.map()</span></code></a></li>
+<li><a class="reference internal" href="cursor.objsLeftInBatch.html#cursor.objsLeftInBatch" title="cursor.objsLeftInBatch()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.objsLeftInBatch()</span></code></a></li>
+<li><a class="reference internal" href="cursor.itcount.html#cursor.itcount" title="cursor.itcount()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.itcount()</span></code></a></li>
+<li><a class="reference internal" href="cursor.pretty.html#cursor.pretty" title="cursor.pretty()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.pretty()</span></code></a></li>
 </ul>
 </td></tr></tbody></table>
 <div class="admonition seealso">

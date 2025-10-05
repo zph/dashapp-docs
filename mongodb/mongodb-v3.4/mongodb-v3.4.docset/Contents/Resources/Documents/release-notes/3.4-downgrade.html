@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7758"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Downgrade%20MongoDB%203.4%20to%203.2%20%E2%80%94%20MongoDB%20Manual"></a><title>Downgrade MongoDB 3.4 to 3.2 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3556"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Downgrade%20MongoDB%203.4%20to%203.2%20%E2%80%94%20MongoDB%20Manual"></a><title>Downgrade MongoDB 3.4 to 3.2 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/3.4-downgrade/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="downgrade-mongodb-3-4-to-3-2">
-<a class="dashingAutolink" name="autolink-7759"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Downgrade%20MongoDB%203.4%20to%203.2%C2%B6"></a><h1>Downgrade MongoDB 3.4 to 3.2<a class="headerlink" href="#downgrade-mongodb-3-4-to-3-2" title="Permalink to this headline">&para;</a></h1>
+<h1>Downgrade MongoDB 3.4 to 3.2<a class="headerlink" href="#downgrade-mongodb-3-4-to-3-2" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -282,9 +282,9 @@ contain <a class="reference internal" href="3.4.html#decimal"><span class="std s
 possible conversion options, see
 <a class="reference internal" href="../tutorial/model-monetary-data.html"><span class="doc">Model Monetary Data</span></a>.</p>
 <p>To detect the presence of decimal, you can run
-<a class="reference internal" href="../reference/method/db.collection.validate.html#db.collection.validate" title="db.collection.validate()"><a class="dashingAutolink" name="autolink-7760"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.validate%28true%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate(true)</span></code></a>
+<a class="reference internal" href="../reference/method/db.collection.validate.html#db.collection.validate" title="db.collection.validate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate(true)</span></code></a>
 against the collections which may contain decimal data.</p>
-<p><a class="reference internal" href="../reference/method/db.collection.validate.html#db.collection.validate" title="db.collection.validate()"><a class="dashingAutolink" name="autolink-7761"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.validate%28true%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate(true)</span></code></a>
+<p><a class="reference internal" href="../reference/method/db.collection.validate.html#db.collection.validate" title="db.collection.validate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate(true)</span></code></a>
 reports on decimal data only when <code class="docutils literal"><span class="pre">featureCompatibilityVersion</span></code> is
 <code class="docutils literal"><span class="pre">&#34;3.2&#34;</span></code>.</p>
 </div>
@@ -292,7 +292,7 @@ reports on decimal data only when <code class="docutils literal"><span class="pr
 <h3>5. Downgrade Index Versions<a class="headerlink" href="#downgrade-index-versions" title="Permalink to this headline">&para;</a></h3>
 <p>If you have <code class="docutils literal"><span class="pre">v:</span> <span class="pre">2</span></code> indexes (i.e. the default version for indexes
 created in MongoDB 3.4 if <code class="docutils literal"><span class="pre">featureCompatibilityVersion:</span> <span class="pre">&#34;3.4&#34;</span></code>),
-<a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-7762"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/reindex%20the%20collection"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reindex</span> <span class="pre">the</span> <span class="pre">collection</span></code></a> to recreate
+<a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reindex</span> <span class="pre">the</span> <span class="pre">collection</span></code></a> to recreate
 all indexes on the collection as <code class="docutils literal"><span class="pre">v:</span> <span class="pre">1</span></code> before downgrading MongoDB.</p>
 <p>To find indexes with <code class="docutils literal"><span class="pre">v:</span> <span class="pre">2</span></code>, you can run the following in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell:</p>

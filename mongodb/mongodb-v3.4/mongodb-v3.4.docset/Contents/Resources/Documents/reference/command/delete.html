@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1152"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/delete%20%E2%80%94%20MongoDB%20Manual"></a><title>delete &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-571"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/delete%20%E2%80%94%20MongoDB%20Manual"></a><title>delete &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/delete/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="delete">
-<a class="dashingAutolink" name="autolink-1140"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/delete%C2%B6"></a><h1>delete<a class="headerlink" href="#delete" title="Permalink to this headline">&para;</a></h1>
+<h1>delete<a class="headerlink" href="#delete" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,7 +167,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.delete">
-<code class="descname">delete</code><a class="dashingAutolink" name="autolink-1142"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.delete" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">delete</code><a class="dashingAutolink" name="autolink-561"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.delete" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -287,7 +287,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-1141"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -498,19 +498,19 @@ copy</a>
 <p>The returned document contains a subset of the following fields:</p>
 <dl class="data">
 <dt id="delete.ok">
-<code class="descclassname">delete.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-1143"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.ok" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-562"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.ok" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The status of the command.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="delete.n">
-<code class="descclassname">delete.</code><code class="descname">n</code><a class="dashingAutolink" name="autolink-1144"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.n" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.</code><code class="descname">n</code><a class="dashingAutolink" name="autolink-563"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.n" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of documents deleted.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="delete.writeErrors">
-<code class="descclassname">delete.</code><code class="descname">writeErrors</code><a class="dashingAutolink" name="autolink-1145"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.</code><code class="descname">writeErrors</code><a class="dashingAutolink" name="autolink-564"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of documents that contains information regarding any error
 encountered during the delete operation. The
 <a class="reference internal" href="#delete.writeErrors" title="delete.writeErrors"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">writeErrors</span></code></a> array contains an error document for
@@ -518,20 +518,20 @@ each delete statement that errors.</p>
 <p>Each error document contains the following information:</p>
 <dl class="data">
 <dt id="delete.writeErrors.index">
-<code class="descclassname">delete.writeErrors.</code><code class="descname">index</code><a class="dashingAutolink" name="autolink-1146"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors.index" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.writeErrors.</code><code class="descname">index</code><a class="dashingAutolink" name="autolink-565"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors.index" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An integer that identifies the delete statement in the
 <code class="docutils literal"><span class="pre">deletes</span></code> array, which uses a zero-based index.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="delete.writeErrors.code">
-<code class="descclassname">delete.writeErrors.</code><code class="descname">code</code><a class="dashingAutolink" name="autolink-1147"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors.code" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.writeErrors.</code><code class="descname">code</code><a class="dashingAutolink" name="autolink-566"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors.code" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An integer value identifying the error.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="delete.writeErrors.errmsg">
-<code class="descclassname">delete.writeErrors.</code><code class="descname">errmsg</code><a class="dashingAutolink" name="autolink-1148"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors.errmsg" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.writeErrors.</code><code class="descname">errmsg</code><a class="dashingAutolink" name="autolink-567"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeErrors.errmsg" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A description of the error.</p>
 </dd></dl>
 
@@ -539,18 +539,18 @@ each delete statement that errors.</p>
 
 <dl class="data">
 <dt id="delete.writeConcernError">
-<code class="descclassname">delete.</code><code class="descname">writeConcernError</code><a class="dashingAutolink" name="autolink-1149"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeConcernError" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.</code><code class="descname">writeConcernError</code><a class="dashingAutolink" name="autolink-568"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeConcernError" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Document that describe error related to write concern and contains
 the field:</p>
 <dl class="data">
 <dt id="delete.writeConcernError.code">
-<code class="descclassname">delete.writeConcernError.</code><code class="descname">code</code><a class="dashingAutolink" name="autolink-1150"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeConcernError.code" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.writeConcernError.</code><code class="descname">code</code><a class="dashingAutolink" name="autolink-569"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeConcernError.code" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An integer value identifying the cause of the write concern error.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="delete.writeConcernError.errmsg">
-<code class="descclassname">delete.writeConcernError.</code><code class="descname">errmsg</code><a class="dashingAutolink" name="autolink-1151"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeConcernError.errmsg" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">delete.writeConcernError.</code><code class="descname">errmsg</code><a class="dashingAutolink" name="autolink-570"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#delete.writeConcernError.errmsg" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A description of the cause of the write concern error.</p>
 </dd></dl>
 

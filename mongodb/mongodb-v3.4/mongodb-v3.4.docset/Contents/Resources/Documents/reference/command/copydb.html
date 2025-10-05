@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1013"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/copydb%20%E2%80%94%20MongoDB%20Manual"></a><title>copydb &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-483"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/copydb%20%E2%80%94%20MongoDB%20Manual"></a><title>copydb &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/copydb/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="copydb">
-<a class="dashingAutolink" name="autolink-1014"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/copydb%C2%B6"></a><h1>copydb<a class="headerlink" href="#copydb" title="Permalink to this headline">&para;</a></h1>
+<h1>copydb<a class="headerlink" href="#copydb" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,7 +168,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.copydb">
-<code class="descname">copydb</code><a class="dashingAutolink" name="autolink-1024"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.copydb" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">copydb</code><a class="dashingAutolink" name="autolink-482"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.copydb" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Copies a database either from one <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance to the
 current <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance or within the current
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>. Run <a class="reference internal" href="#dbcmd.copydb" title="copydb"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">copydb</span></code></a> in the <code class="docutils literal"><span class="pre">admin</span></code> database
@@ -254,13 +254,13 @@ meet the validation requirements.</p>
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1015"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a>
+<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a>
 wrapper for the <a class="reference internal" href="#dbcmd.copydb" title="copydb"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">copydb</span></code></a> command.</p>
 <p>When authenticating to the <code class="docutils literal"><span class="pre">fromhost</span></code> instance, <a class="reference internal" href="#dbcmd.copydb" title="copydb"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">copydb</span></code></a>
 uses <a class="reference internal" href="../../core/security-mongodb-cr.html#authentication-mongodb-cr"><span class="std std-ref">MONGODB-CR</span></a> mechanism to
 authenticate the <code class="docutils literal"><span class="pre">fromhost</span></code> user. To authenticate users with
 <a class="reference internal" href="../../core/security-scram.html#authentication-scram-sha-1"><span class="std std-ref">SCRAM-SHA-1 mechanism</span></a>, use the
-<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1016"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
+<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
 </dd></dl>
 
 </div>
@@ -279,7 +279,7 @@ the source database to the target database.  If any collection from the
 source database exists in the target database, <a class="reference internal" href="#dbcmd.copydb" title="copydb"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">copydb</span></code></a> errors out and
 does not copy any remaining collections from the source database.</li>
 <li><a class="reference internal" href="#dbcmd.copydb" title="copydb"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">copydb</span></code></a> requires enough free disk space on the host
-instance for the copied database. Use the <a class="reference internal" href="../method/db.stats.html#db.stats" title="db.stats()"><a class="dashingAutolink" name="autolink-1017"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a>
+instance for the copied database. Use the <a class="reference internal" href="../method/db.stats.html#db.stats" title="db.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a>
 operation to check the size of the database on the source
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</li>
 </ul>
@@ -298,7 +298,7 @@ the <code class="docutils literal"><span class="pre">username</span></code>, <co
 uses <a class="reference internal" href="../../core/security-mongodb-cr.html#authentication-mongodb-cr"><span class="std std-ref">MONGODB-CR</span></a> mechanism to
 authenticate the <code class="docutils literal"><span class="pre">fromhost</span></code> user. To authenticate users with
 <a class="reference internal" href="../../core/security-scram.html#authentication-scram-sha-1"><span class="std std-ref">SCRAM-SHA-1 mechanism</span></a>, use the
-<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1018"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
+<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
 </li>
 </ul>
 <p>For more information on required access and authentication, see
@@ -359,7 +359,7 @@ the <code class="docutils literal"><span class="pre">username</span></code>, <co
 uses <a class="reference internal" href="../../core/security-mongodb-cr.html#authentication-mongodb-cr"><span class="std std-ref">MONGODB-CR</span></a> mechanism to
 authenticate the <code class="docutils literal"><span class="pre">fromhost</span></code> user. To authenticate users with
 <a class="reference internal" href="../../core/security-scram.html#authentication-scram-sha-1"><span class="std std-ref">SCRAM-SHA-1 mechanism</span></a>, use the
-<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1019"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
+<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
 <div class="section" id="source-database-fromdb">
 <span id="copydb-fromdb-access"></span><h3>Source Database (<code class="docutils literal"><span class="pre">fromdb</span></code>)<a class="headerlink" href="#source-database-fromdb" title="Permalink to this headline">&para;</a></h3>
 <div class="section" id="source-is-non-admin-database">
@@ -464,7 +464,7 @@ control, then you must include a <code class="docutils literal"><span class="pre
 to authenticate to that instance as a user with proper access.</p>
 <div class="admonition-tip admonition">
 <p class="first admonition-title">Tip</p>
-<p class="last">The <a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1020"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> handles the generation of the
+<p class="last">The <a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> handles the generation of the
 <code class="docutils literal"><span class="pre">nonce</span></code> and <code class="docutils literal"><span class="pre">key</span></code>.</p>
 </div>
 <div class="section" id="nonce">
@@ -554,7 +554,7 @@ the <code class="docutils literal"><span class="pre">username</span></code>, <co
 uses <a class="reference internal" href="../../core/security-mongodb-cr.html#authentication-mongodb-cr"><span class="std std-ref">MONGODB-CR</span></a> mechanism to
 authenticate the <code class="docutils literal"><span class="pre">fromhost</span></code> user. To authenticate users with
 <a class="reference internal" href="../../core/security-scram.html#authentication-scram-sha-1"><span class="std std-ref">SCRAM-SHA-1 mechanism</span></a>, use the
-<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1021"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
+<a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> method.</p>
 </div>
 <p>The following command copies the <code class="docutils literal"><span class="pre">test</span></code> database from a
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance that runs on the remote host <code class="docutils literal"><span class="pre">example.net</span></code>
@@ -579,8 +579,8 @@ copy</a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-1022"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a></li>
-<li><a class="reference internal" href="clone.html#dbcmd.clone" title="clone"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">clone</span></code></a> and <a class="reference internal" href="../method/db.cloneDatabase.html#db.cloneDatabase" title="db.cloneDatabase()"><a class="dashingAutolink" name="autolink-1023"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.cloneDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.cloneDatabase()</span></code></a></li>
+<li><a class="reference internal" href="../method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a></li>
+<li><a class="reference internal" href="clone.html#dbcmd.clone" title="clone"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">clone</span></code></a> and <a class="reference internal" href="../method/db.cloneDatabase.html#db.cloneDatabase" title="db.cloneDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.cloneDatabase()</span></code></a></li>
 <li><a class="reference internal" href="../../core/backups.html"><span class="doc">MongoDB Backup Methods</span></a></li>
 </ul>
 </div>

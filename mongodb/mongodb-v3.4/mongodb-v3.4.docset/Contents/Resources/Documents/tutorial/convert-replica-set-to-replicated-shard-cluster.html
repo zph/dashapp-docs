@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8049"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Convert%20a%20Replica%20Set%20to%20a%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Convert a Replica Set to a Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3617"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Convert%20a%20Replica%20Set%20to%20a%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Convert a Replica Set to a Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/convert-replica-set-to-replicated-shard-cluster/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="convert-a-replica-set-to-a-sharded-cluster">
-<a class="dashingAutolink" name="autolink-8050"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Convert%20a%20Replica%20Set%20to%20a%20Sharded%20Cluster%C2%B6"></a><h1>Convert a Replica Set to a Sharded Cluster<a class="headerlink" href="#convert-a-replica-set-to-a-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
+<h1>Convert a Replica Set to a Sharded Cluster<a class="headerlink" href="#convert-a-replica-set-to-a-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -233,7 +233,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="initiate-the-replica-set">
 <h4>Initiate the replica set.<a class="headerlink" href="#initiate-the-replica-set" title="Permalink to this headline">&para;</a></h4>
-<p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8051"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to
+<p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to
 initiate a replica set that consists of the current member.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -311,7 +311,7 @@ role is <code class="docutils literal"><span class="pre">27018</span></code>. To
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">1</div></div><div class="section" id="determine-the-primary-and-secondary-members">
 <h4>Determine the primary and secondary members.<a class="headerlink" href="#determine-the-primary-and-secondary-members" title="Permalink to this headline">&para;</a></h4>
 <p>Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to one of the members and run
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8052"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to determine the primary and secondary members.</p>
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to determine the primary and secondary members.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="restart-secondary-members-with-the-shardsvr-option">
 <h4>Restart secondary members with the <code class="docutils literal"><span class="pre">--shardsvr</span></code> option.<a class="headerlink" href="#restart-secondary-members-with-the-shardsvr-option" title="Permalink to this headline">&para;</a></h4>
@@ -388,7 +388,7 @@ copy</a>
 specific to your deployment, see <a class="reference internal" href="../reference/program/mongod.html"><span class="doc">mongod</span></a> or
 <a class="reference internal" href="../reference/configuration-options.html"><span class="doc">Configuration File Options</span></a>.</p>
 <p>Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to one of the config servers and
-run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8053"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the replica set.</p>
+run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the replica set.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -440,7 +440,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="add-the-shard">
 <h4>Add the shard.<a class="headerlink" href="#add-the-shard" title="Permalink to this headline">&para;</a></h4>
-<p>Add a shard to the cluster with the <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard"><a class="dashingAutolink" name="autolink-8054"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard</span></code></a> method:</p>
+<p>Add a shard to the cluster with the <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -505,7 +505,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="id5">
 <h4>Initiate the replica set.<a class="headerlink" href="#id5" title="Permalink to this headline">&para;</a></h4>
-<p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8055"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to
+<p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to
 initiate a replica set that consists of the current member.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -539,7 +539,7 @@ copy</a>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="id8">
 <h4>Add the shard.<a class="headerlink" href="#id8" title="Permalink to this headline">&para;</a></h4>
 <p>In a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell connected to the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>, add
-the shard to the cluster with the <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><a class="dashingAutolink" name="autolink-8056"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a> method:</p>
+the shard to the cluster with the <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -655,8 +655,8 @@ documents to the appropriate shard.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">6</div></div><div class="section" id="confirm-the-shard-is-balancing">
 <h4>Confirm the shard is balancing.<a class="headerlink" href="#confirm-the-shard-is-balancing" title="Permalink to this headline">&para;</a></h4>
-<p>To confirm balancing activity, run <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><a class="dashingAutolink" name="autolink-8057"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a> or
-<a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><a class="dashingAutolink" name="autolink-8058"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printShardingStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a> in the <code class="docutils literal"><span class="pre">test</span></code> database.</p>
+<p>To confirm balancing activity, run <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a> or
+<a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a> in the <code class="docutils literal"><span class="pre">test</span></code> database.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -668,7 +668,7 @@ db.printShardingStatus<span class="o">()</span>
 </pre></div>
 </div>
 </div>
-<p>Example output of the <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><a class="dashingAutolink" name="autolink-8059"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a>:</p>
+<p>Example output of the <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -729,7 +729,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Example output of the <a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><a class="dashingAutolink" name="autolink-8060"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printShardingStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a>:</p>
+<p>Example output of the <a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

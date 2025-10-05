@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-5040"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.startBalancer%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.startBalancer() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2148"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.startBalancer%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.startBalancer() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/sh.startBalancer/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="sh-startbalancer">
-<a class="dashingAutolink" name="autolink-5041"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/sh.startBalancer%28%29%C2%B6"></a><h1>sh.startBalancer()<a class="headerlink" href="#sh-startbalancer" title="Permalink to this headline">&para;</a></h1>
+<h1>sh.startBalancer()<a class="headerlink" href="#sh-startbalancer" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -164,12 +164,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="sh.startBalancer">
-<code class="descclassname">sh.</code><code class="descname">startBalancer</code><span class="sig-paren">(</span><em>timeout</em>, <em>interval</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-5039"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.startBalancer" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">sh.</code><code class="descname">startBalancer</code><span class="sig-paren">(</span><em>timeout</em>, <em>interval</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2147"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.startBalancer" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Starts the balancer in a sharded cluster.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last">You can only run <a class="reference internal" href="#sh.startBalancer" title="sh.startBalancer()"><a class="dashingAutolink" name="autolink-5027"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.startBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a> on a
-<a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance. <a class="reference internal" href="#sh.startBalancer" title="sh.startBalancer()"><a class="dashingAutolink" name="autolink-5028"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.startBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a>
+<p class="last">You can only run <a class="reference internal" href="#sh.startBalancer" title="sh.startBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a> on a
+<a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance. <a class="reference internal" href="#sh.startBalancer" title="sh.startBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a>
 errors if run on <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 </div>
 <div class="versionchanged">
@@ -213,7 +213,7 @@ with earlier version sharded clusters.s</p>
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell method <a class="reference internal" href="#sh.startBalancer" title="sh.startBalancer"><a class="dashingAutolink" name="autolink-5029"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.startBalancer"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer</span></code></a> is a
+<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell method <a class="reference internal" href="#sh.startBalancer" title="sh.startBalancer"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer</span></code></a> is a
 wrapper around the <a class="reference internal" href="../command/balancerStart.html#dbcmd.balancerStart" title="balancerStart"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">balancerStart</span></code></a> command, introduced in
 3.4.</p>
 </dd></dl>
@@ -221,15 +221,15 @@ wrapper around the <a class="reference internal" href="../command/balancerStart.
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><a class="dashingAutolink" name="autolink-5030"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a></li>
-<li><a class="reference internal" href="sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><a class="dashingAutolink" name="autolink-5031"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.disableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a></li>
-<li><a class="reference internal" href="sh.getBalancerHost.html#sh.getBalancerHost" title="sh.getBalancerHost()"><a class="dashingAutolink" name="autolink-5032"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerHost%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerHost()</span></code></a></li>
-<li><a class="reference internal" href="sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-5033"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a></li>
-<li><a class="reference internal" href="sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><a class="dashingAutolink" name="autolink-5034"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.isBalancerRunning%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a></li>
-<li><a class="reference internal" href="sh.setBalancerState.html#sh.setBalancerState" title="sh.setBalancerState()"><a class="dashingAutolink" name="autolink-5035"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.setBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.setBalancerState()</span></code></a></li>
-<li><a class="reference internal" href="sh.stopBalancer.html#sh.stopBalancer" title="sh.stopBalancer()"><a class="dashingAutolink" name="autolink-5036"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.stopBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.stopBalancer()</span></code></a></li>
-<li><a class="reference internal" href="sh.waitForBalancer.html#sh.waitForBalancer" title="sh.waitForBalancer()"><a class="dashingAutolink" name="autolink-5037"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.waitForBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.waitForBalancer()</span></code></a></li>
-<li><a class="reference internal" href="sh.waitForBalancerOff.html#sh.waitForBalancerOff" title="sh.waitForBalancerOff()"><a class="dashingAutolink" name="autolink-5038"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.waitForBalancerOff%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.waitForBalancerOff()</span></code></a></li>
+<li><a class="reference internal" href="sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a></li>
+<li><a class="reference internal" href="sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a></li>
+<li><a class="reference internal" href="sh.getBalancerHost.html#sh.getBalancerHost" title="sh.getBalancerHost()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerHost()</span></code></a></li>
+<li><a class="reference internal" href="sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a></li>
+<li><a class="reference internal" href="sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a></li>
+<li><a class="reference internal" href="sh.setBalancerState.html#sh.setBalancerState" title="sh.setBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.setBalancerState()</span></code></a></li>
+<li><a class="reference internal" href="sh.stopBalancer.html#sh.stopBalancer" title="sh.stopBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.stopBalancer()</span></code></a></li>
+<li><a class="reference internal" href="sh.waitForBalancer.html#sh.waitForBalancer" title="sh.waitForBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.waitForBalancer()</span></code></a></li>
+<li><a class="reference internal" href="sh.waitForBalancerOff.html#sh.waitForBalancerOff" title="sh.waitForBalancerOff()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.waitForBalancerOff()</span></code></a></li>
 </ul>
 </div>
 </div>

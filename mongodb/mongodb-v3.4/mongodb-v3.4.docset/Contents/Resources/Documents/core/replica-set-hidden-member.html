@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-454"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Hidden%20Replica%20Set%20Members%20%E2%80%94%20MongoDB%20Manual"></a><title>Hidden Replica Set Members &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-222"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Hidden%20Replica%20Set%20Members%20%E2%80%94%20MongoDB%20Manual"></a><title>Hidden Replica Set Members &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/replica-set-hidden-member/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="hidden-replica-set-members">
-<span id="replica-set-hidden-members"></span><span id="replica-set-hidden-configuration"></span><span id="index-0"></span><a class="dashingAutolink" name="autolink-455"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Hidden%20Replica%20Set%20Members%C2%B6"></a><h1>Hidden Replica Set Members<a class="headerlink" href="#hidden-replica-set-members" title="Permalink to this headline">&para;</a></h1>
+<span id="replica-set-hidden-members"></span><span id="replica-set-hidden-configuration"></span><span id="index-0"></span><h1>Hidden Replica Set Members<a class="headerlink" href="#hidden-replica-set-members" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@ data set but is <strong>invisible</strong> to client applications. Hidden member
 are good for workloads with different usage patterns from the other
 members in the <a class="reference internal" href="../reference/glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a>. Hidden members must always be
 <a class="reference internal" href="replica-set-priority-0-member.html#replica-set-secondary-only-members"><span class="std std-ref">priority 0 members</span></a> and
-so <strong>cannot become primary</strong>. The <a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><a class="dashingAutolink" name="autolink-456"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> method does not
+so <strong>cannot become primary</strong>. The <a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> method does not
 display hidden members. Hidden members, however, <strong>may vote</strong> in
 <a class="reference internal" href="replica-set-elections.html#replica-set-elections"><span class="std std-ref">elections</span></a>.</p>
 <p>In the following five-member replica set, all four secondary members
@@ -195,19 +195,19 @@ voting hidden member, ensure that the set has an active majority or the
 <p>For the purposes of backups,</p>
 <ul>
 <li><p class="first">If using the MMAPv1 storage engine, you can avoid stopping a
-hidden member with the <a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-457"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><a class="dashingAutolink" name="autolink-458"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncUnlock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncUnlock()</span></code></a> operations to flush all writes and lock
+hidden member with the <a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncUnlock()</span></code></a> operations to flush all writes and lock
 the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance for the duration of the backup
 operation.</p>
 </li>
 <li><div class="first versionchanged">
 <p><span class="versionmodified">Changed in version MongoDB: </span>3.2</p>
-<p><a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-459"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> ensures that the data files are safe to copy
+<p><a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> ensures that the data files are safe to copy
 using low-level backup utilities such as <code class="docutils literal"><span class="pre">cp</span></code>, <code class="docutils literal"><span class="pre">scp</span></code>, or
 <code class="docutils literal"><span class="pre">tar</span></code>. A <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> started using the copied
 files contains user-written data that is indistinguishable from the
 user-written data on the locked <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
-<p>Prior to MongoDB 3.2, <a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-460"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> <em>cannot</em> guarantee that
+<p>Prior to MongoDB 3.2, <a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> <em>cannot</em> guarantee that
 WiredTiger data files are safe to copy using low-level backup
 utilities.</p>
 </div>

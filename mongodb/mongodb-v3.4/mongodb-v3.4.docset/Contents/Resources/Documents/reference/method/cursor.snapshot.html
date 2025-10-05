@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3214"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.snapshot%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.snapshot() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1784"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.snapshot%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.snapshot() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.snapshot/"/><meta name="robots" content="index"/>
@@ -153,27 +153,27 @@
   </div>
                 
                   <div class="section" id="cursor-snapshot">
-<a class="dashingAutolink" name="autolink-3215"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.snapshot%28%29%C2%B6"></a><h1>cursor.snapshot()<a class="headerlink" href="#cursor-snapshot" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.snapshot()<a class="headerlink" href="#cursor-snapshot" title="Permalink to this headline">&para;</a></h1>
 <dl class="method">
 <dt id="cursor.snapshot">
-<code class="descclassname">cursor.</code><code class="descname">snapshot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3213"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.snapshot" title="Permalink to this definition">&para;</a></dt>
-<dd><p>Append the <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-3206"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> method to a cursor to toggle
+<code class="descclassname">cursor.</code><code class="descname">snapshot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1783"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.snapshot" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Append the <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> method to a cursor to toggle
 the &ldquo;snapshot&rdquo; mode. This ensures that the query will not return a
 document multiple times, even if intervening write operations result
 in a move of the document due to the growth in document size.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <ul class="last simple">
-<li>You must apply <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-3207"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> to the cursor before
+<li>You must apply <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> to the cursor before
 retrieving any documents from the database.</li>
-<li>You can only use <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-3208"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> with
+<li>You can only use <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> with
 <strong>unsharded</strong> collections.</li>
 </ul>
 </div>
-<p>The <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-3209"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> does not guarantee
+<p>The <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> does not guarantee
 isolation from insertion or deletions.</p>
-<p>The <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-3210"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> <strong>cannot</strong> be used with
-<a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3211"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> or <a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-3212"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>.</p>
+<p>The <a class="reference internal" href="#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> <strong>cannot</strong> be used with
+<a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> or <a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>.</p>
 </dd></dl>
 
 </div>

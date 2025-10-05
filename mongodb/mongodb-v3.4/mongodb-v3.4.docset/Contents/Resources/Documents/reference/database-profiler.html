@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2295"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Database%20Profiler%20Output%20%E2%80%94%20MongoDB%20Manual"></a><title>Database Profiler Output &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1489"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Database%20Profiler%20Output%20%E2%80%94%20MongoDB%20Manual"></a><title>Database Profiler Output &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/database-profiler/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="database-profiler-output">
-<span id="profiler"></span><a class="dashingAutolink" name="autolink-2296"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Database%20Profiler%20Output%C2%B6"></a><h1>Database Profiler Output<a class="headerlink" href="#database-profiler-output" title="Permalink to this headline">&para;</a></h1>
+<span id="profiler"></span><h1>Database Profiler Output<a class="headerlink" href="#database-profiler-output" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -336,7 +336,7 @@ the appropriate version of the MongoDB Manual.</p>
 </div>
 <dl class="data">
 <dt id="system.profile.op">
-<code class="descclassname">system.profile.</code><code class="descname">op</code><a class="dashingAutolink" name="autolink-2302"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.op" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">op</code><a class="dashingAutolink" name="autolink-1448"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.op" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The type of operation. The possible values are:</p>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">command</span></code></li>
@@ -355,7 +355,7 @@ the appropriate version of the MongoDB Manual.</p>
 
 <dl class="data">
 <dt id="system.profile.ns">
-<code class="descclassname">system.profile.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-2303"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ns" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-1449"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ns" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="glossary.html#term-namespace"><span class="xref std std-term">namespace</span></a> the operation targets. Namespaces in MongoDB
 take the form of the <a class="reference internal" href="glossary.html#term-database"><span class="xref std std-term">database</span></a>, followed by a dot (<code class="docutils literal"><span class="pre">.</span></code>),
 followed by the name of
@@ -364,7 +364,7 @@ the <a class="reference internal" href="glossary.html#term-collection"><span cla
 
 <dl class="data">
 <dt id="system.profile.query">
-<code class="descclassname">system.profile.</code><code class="descname">query</code><a class="dashingAutolink" name="autolink-2304"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.query" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">query</code><a class="dashingAutolink" name="autolink-1450"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.query" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="../tutorial/query-documents.html#read-operations-query-document"><span class="std std-ref">query document</span></a> used, or
 for an insert operation, the inserted document. If the document
 exceeds 50 kilobytes, the value is a string summary of the object.
@@ -373,8 +373,8 @@ truncated, denoted with an ellipsis (<code class="docutils literal"><span class=
 string.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.4: </span>For <a class="reference internal" href="#system.profile.op" title="system.profile.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">&#34;getmore&#34;</span></code></a> operations on cursors
-returned from a <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-2297"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> or a
-<a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-2298"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a>, the
+returned from a <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> or a
+<a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a>, the
 <a class="reference internal" href="#system.profile.query" title="system.profile.query"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">query</span></code></a> field contains respectively the
 query predicate or the issued <a class="reference internal" href="command/aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a>
 command document. For details on the <a class="reference internal" href="command/aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a>
@@ -384,7 +384,7 @@ command document, see the <a class="reference internal" href="command/aggregate.
 
 <dl class="data">
 <dt id="system.profile.command">
-<code class="descclassname">system.profile.</code><code class="descname">command</code><a class="dashingAutolink" name="autolink-2305"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.command" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">command</code><a class="dashingAutolink" name="autolink-1451"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.command" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The command operation. If the command document exceeds 50 kilobytes,
 the value is a string summary of the object. If the string summary
 exceeds 50 kilobytes, the string summary is truncated, denoted with
@@ -393,7 +393,7 @@ an ellipsis (<code class="docutils literal"><span class="pre">...</span></code>)
 
 <dl class="data">
 <dt id="system.profile.updateobj">
-<code class="descclassname">system.profile.</code><code class="descname">updateobj</code><a class="dashingAutolink" name="autolink-2306"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.updateobj" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">updateobj</code><a class="dashingAutolink" name="autolink-1452"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.updateobj" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">&lt;update&gt;</span></code> document passed in during an <a class="reference internal" href="../tutorial/update-documents.html"><span class="doc">update</span></a> operation. If the document exceeds 50
 kilobytes, the value is a string summary of the object. If the
 string summary exceeds 50 kilobytes, the string summary is
@@ -403,14 +403,14 @@ string.</p>
 
 <dl class="data">
 <dt id="system.profile.cursorid">
-<code class="descclassname">system.profile.</code><code class="descname">cursorid</code><a class="dashingAutolink" name="autolink-2307"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.cursorid" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">cursorid</code><a class="dashingAutolink" name="autolink-1453"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.cursorid" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The ID of the cursor accessed by a <code class="docutils literal"><span class="pre">query</span></code> and <code class="docutils literal"><span class="pre">getmore</span></code>
 operations.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.keysExamined">
-<code class="descclassname">system.profile.</code><code class="descname">keysExamined</code><a class="dashingAutolink" name="autolink-2308"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.keysExamined" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">keysExamined</code><a class="dashingAutolink" name="autolink-1454"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.keysExamined" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.2.0.</span></p>
 </div>
@@ -445,7 +445,7 @@ operations:</p>
 
 <dl class="data">
 <dt id="system.profile.docsExamined">
-<code class="descclassname">system.profile.</code><code class="descname">docsExamined</code><a class="dashingAutolink" name="autolink-2309"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.docsExamined" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">docsExamined</code><a class="dashingAutolink" name="autolink-1455"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.docsExamined" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.2.0: </span>Renamed from <code class="docutils literal"><span class="pre">system.profile.nscannedObjects</span></code>.</p>
 </div>
@@ -475,7 +475,7 @@ operations:</p>
 
 <dl class="data">
 <dt id="system.profile.moved">
-<code class="descclassname">system.profile.</code><code class="descname">moved</code><a class="dashingAutolink" name="autolink-2310"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.moved" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">moved</code><a class="dashingAutolink" name="autolink-1456"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.moved" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Removed in 3.4.</em></p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.0: </span>Only appears when using the MMAPv1 storage engine.</p>
@@ -489,7 +489,7 @@ occur as a result of document growth.</p>
 
 <dl class="data">
 <dt id="system.profile.nmoved">
-<code class="descclassname">system.profile.</code><code class="descname">nmoved</code><a class="dashingAutolink" name="autolink-2311"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nmoved" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">nmoved</code><a class="dashingAutolink" name="autolink-1457"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nmoved" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.0: </span>Only appears when using the MMAPv1 storage engine.</p>
 </div>
@@ -500,7 +500,7 @@ zero, and the field is present only when non-zero.</p>
 
 <dl class="data">
 <dt id="system.profile.hasSortStage">
-<code class="descclassname">system.profile.</code><code class="descname">hasSortStage</code><a class="dashingAutolink" name="autolink-2312"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.hasSortStage" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">hasSortStage</code><a class="dashingAutolink" name="autolink-1458"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.hasSortStage" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.2.0: </span>Renamed from <code class="docutils literal"><span class="pre">system.profile.scanAndOrder</span></code>.</p>
 </div>
@@ -527,19 +527,19 @@ operations:</p>
 
 <dl class="data">
 <dt id="system.profile.ndeleted">
-<code class="descclassname">system.profile.</code><code class="descname">ndeleted</code><a class="dashingAutolink" name="autolink-2313"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ndeleted" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">ndeleted</code><a class="dashingAutolink" name="autolink-1459"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ndeleted" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of documents deleted by the operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.ninserted">
-<code class="descclassname">system.profile.</code><code class="descname">ninserted</code><a class="dashingAutolink" name="autolink-2314"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ninserted" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">ninserted</code><a class="dashingAutolink" name="autolink-1460"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ninserted" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of documents inserted by the operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.nMatched">
-<code class="descclassname">system.profile.</code><code class="descname">nMatched</code><a class="dashingAutolink" name="autolink-2315"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nMatched" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">nMatched</code><a class="dashingAutolink" name="autolink-1461"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nMatched" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -549,7 +549,7 @@ condition for the update operation.</p>
 
 <dl class="data">
 <dt id="system.profile.nModified">
-<code class="descclassname">system.profile.</code><code class="descname">nModified</code><a class="dashingAutolink" name="autolink-2316"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nModified" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">nModified</code><a class="dashingAutolink" name="autolink-1462"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nModified" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -558,14 +558,14 @@ condition for the update operation.</p>
 
 <dl class="data">
 <dt id="system.profile.upsert">
-<code class="descclassname">system.profile.</code><code class="descname">upsert</code><a class="dashingAutolink" name="autolink-2317"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.upsert" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">upsert</code><a class="dashingAutolink" name="autolink-1463"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.upsert" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean that indicates the update operation&rsquo;s <code class="docutils literal"><span class="pre">upsert</span></code> option
 value. Only appears if <code class="docutils literal"><span class="pre">upsert</span></code> is true.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.fastmodinsert">
-<code class="descclassname">system.profile.</code><code class="descname">fastmodinsert</code><a class="dashingAutolink" name="autolink-2318"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.fastmodinsert" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">fastmodinsert</code><a class="dashingAutolink" name="autolink-1464"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.fastmodinsert" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.4.</span></p>
 </div>
@@ -579,7 +579,7 @@ following criteria:</p>
 
 <dl class="data">
 <dt id="system.profile.fromMultiPlanner">
-<code class="descclassname">system.profile.</code><code class="descname">fromMultiPlanner</code><a class="dashingAutolink" name="autolink-2319"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.fromMultiPlanner" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">fromMultiPlanner</code><a class="dashingAutolink" name="autolink-1465"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.fromMultiPlanner" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.5.</span></p>
 </div>
@@ -590,7 +590,7 @@ plans before choosing the winning execution plan for the query.</p>
 
 <dl class="data">
 <dt id="system.profile.replanned">
-<code class="descclassname">system.profile.</code><code class="descname">replanned</code><a class="dashingAutolink" name="autolink-2320"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.replanned" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">replanned</code><a class="dashingAutolink" name="autolink-1466"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.replanned" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.5.</span></p>
 </div>
@@ -601,13 +601,13 @@ plan and re-evaluated all candidate plans.</p>
 
 <dl class="data">
 <dt id="system.profile.keysInserted">
-<code class="descclassname">system.profile.</code><code class="descname">keysInserted</code><a class="dashingAutolink" name="autolink-2321"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.keysInserted" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">keysInserted</code><a class="dashingAutolink" name="autolink-1467"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.keysInserted" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of index keys inserted for a given write operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.keysDeleted">
-<code class="descclassname">system.profile.</code><code class="descname">keysDeleted</code><a class="dashingAutolink" name="autolink-2322"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.keysDeleted" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">keysDeleted</code><a class="dashingAutolink" name="autolink-1468"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.keysDeleted" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Removed in 3.4.</em></p>
 <p>The number of <a class="reference internal" href="../indexes.html"><span class="doc">index</span></a> keys the update changed in
 the operation. Changing an index key carries a small performance
@@ -617,7 +617,7 @@ key into the B-tree index.</p>
 
 <dl class="data">
 <dt id="system.profile.writeConflicts">
-<code class="descclassname">system.profile.</code><code class="descname">writeConflicts</code><a class="dashingAutolink" name="autolink-2323"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.writeConflicts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">writeConflicts</code><a class="dashingAutolink" name="autolink-1469"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.writeConflicts" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0.</span></p>
 </div>
@@ -628,7 +628,7 @@ another <code class="docutils literal"><span class="pre">update</span></code> op
 
 <dl class="data">
 <dt id="system.profile.numYield">
-<code class="descclassname">system.profile.</code><code class="descname">numYield</code><a class="dashingAutolink" name="autolink-2324"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.numYield" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">numYield</code><a class="dashingAutolink" name="autolink-1470"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.numYield" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of times the operation yielded to allow other operations
 to complete. Typically, operations yield when they need access to
 data that MongoDB has not yet fully read into memory. This allows
@@ -639,7 +639,7 @@ see <a class="reference internal" href="../faq/concurrency.html#faq-concurrency-
 
 <dl class="data">
 <dt id="system.profile.locks">
-<code class="descclassname">system.profile.</code><code class="descname">locks</code><a class="dashingAutolink" name="autolink-2325"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">locks</code><a class="dashingAutolink" name="autolink-1471"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0: </span><a class="reference internal" href="#system.profile.locks" title="system.profile.locks"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">locks</span></code></a> replaces the <code class="docutils literal"><span class="pre">lockStats</span></code> field.</p>
 </div>
@@ -709,14 +709,14 @@ journal writes; for non-MMAPv1 storage engines, the mode for
 <p>The returned lock information for the various lock types include:</p>
 <dl class="data">
 <dt id="system.profile.locks.acquireCount">
-<code class="descclassname">system.profile.locks.</code><code class="descname">acquireCount</code><a class="dashingAutolink" name="autolink-2326"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.acquireCount" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.locks.</code><code class="descname">acquireCount</code><a class="dashingAutolink" name="autolink-1472"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.acquireCount" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of times the operation acquired the lock in the specified
 mode.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.locks.acquireWaitCount">
-<code class="descclassname">system.profile.locks.</code><code class="descname">acquireWaitCount</code><a class="dashingAutolink" name="autolink-2327"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.acquireWaitCount" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.locks.</code><code class="descname">acquireWaitCount</code><a class="dashingAutolink" name="autolink-1473"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.acquireWaitCount" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of times the operation had to wait for the
 <a class="reference internal" href="#system.profile.locks.acquireCount" title="system.profile.locks.acquireCount"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">acquireCount</span></code></a> lock acquisitions
 because the locks were held in a conflicting mode.
@@ -726,7 +726,7 @@ equal to <a class="reference internal" href="#system.profile.locks.acquireCount"
 
 <dl class="data">
 <dt id="system.profile.locks.timeAcquiringMicros">
-<code class="descclassname">system.profile.locks.</code><code class="descname">timeAcquiringMicros</code><a class="dashingAutolink" name="autolink-2328"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.timeAcquiringMicros" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.locks.</code><code class="descname">timeAcquiringMicros</code><a class="dashingAutolink" name="autolink-1474"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.timeAcquiringMicros" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Cumulative time in microseconds that the operation had to wait to
 acquire the locks.</p>
 <p><a class="reference internal" href="#system.profile.locks.timeAcquiringMicros" title="system.profile.locks.timeAcquiringMicros"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">timeAcquiringMicros</span></code></a> divided by
@@ -736,7 +736,7 @@ approximate average wait time for the particular lock mode.</p>
 
 <dl class="data">
 <dt id="system.profile.locks.deadlockCount">
-<code class="descclassname">system.profile.locks.</code><code class="descname">deadlockCount</code><a class="dashingAutolink" name="autolink-2329"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.deadlockCount" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.locks.</code><code class="descname">deadlockCount</code><a class="dashingAutolink" name="autolink-1475"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.locks.deadlockCount" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of times the operation encountered deadlocks while waiting
 for lock acquisitions.</p>
 </dd></dl>
@@ -747,13 +747,13 @@ for lock acquisitions.</p>
 
 <dl class="data">
 <dt id="system.profile.nreturned">
-<code class="descclassname">system.profile.</code><code class="descname">nreturned</code><a class="dashingAutolink" name="autolink-2330"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nreturned" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">nreturned</code><a class="dashingAutolink" name="autolink-1476"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.nreturned" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of documents returned by the operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.responseLength">
-<code class="descclassname">system.profile.</code><code class="descname">responseLength</code><a class="dashingAutolink" name="autolink-2331"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.responseLength" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">responseLength</code><a class="dashingAutolink" name="autolink-1477"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.responseLength" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The length in bytes of the operation&rsquo;s result document. A large
 <a class="reference internal" href="#system.profile.responseLength" title="system.profile.responseLength"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">responseLength</span></code></a> can affect performance.
 To limit the size of the
@@ -761,8 +761,8 @@ result document for a query operation, you can use any of the
 following:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../tutorial/project-fields-from-query-results.html#read-operations-projection"><span class="std std-ref">Projections</span></a></li>
-<li><a class="reference internal" href="method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-2299"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/The%20limit%28%29%20method"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">The</span> <span class="pre">limit()</span> <span class="pre">method</span></code></a></li>
-<li><a class="reference internal" href="method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><a class="dashingAutolink" name="autolink-2300"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/The%20batchSize%28%29%20method"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">The</span> <span class="pre">batchSize()</span> <span class="pre">method</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">The</span> <span class="pre">limit()</span> <span class="pre">method</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">The</span> <span class="pre">batchSize()</span> <span class="pre">method</span></code></a></li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -774,13 +774,13 @@ named <code class="docutils literal"><span class="pre">reslen</span></code>.</p>
 
 <dl class="data">
 <dt id="system.profile.protocol">
-<code class="descclassname">system.profile.</code><code class="descname">protocol</code><a class="dashingAutolink" name="autolink-2332"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.protocol" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">protocol</code><a class="dashingAutolink" name="autolink-1478"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.protocol" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="mongodb-wire-protocol.html"><span class="doc">MongoDB Wire Protocol</span></a> request message format.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.millis">
-<code class="descclassname">system.profile.</code><code class="descname">millis</code><a class="dashingAutolink" name="autolink-2333"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.millis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">millis</code><a class="dashingAutolink" name="autolink-1479"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.millis" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The time in milliseconds from the perspective of the
 <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> from the beginning of the operation to the end of
 the operation.</p>
@@ -788,7 +788,7 @@ the operation.</p>
 
 <dl class="data">
 <dt id="system.profile.planSummary">
-<code class="descclassname">system.profile.</code><code class="descname">planSummary</code><a class="dashingAutolink" name="autolink-2334"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.planSummary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">planSummary</code><a class="dashingAutolink" name="autolink-1480"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.planSummary" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -797,7 +797,7 @@ the operation.</p>
 
 <dl class="data">
 <dt id="system.profile.execStats">
-<code class="descclassname">system.profile.</code><code class="descname">execStats</code><a class="dashingAutolink" name="autolink-2335"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.execStats" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">execStats</code><a class="dashingAutolink" name="autolink-1481"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.execStats" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.</span></p>
 </div>
@@ -814,7 +814,7 @@ stage.</p>
 </div>
 <dl class="data">
 <dt id="system.profile.execStats.stage">
-<code class="descclassname">system.profile.execStats.</code><code class="descname">stage</code><a class="dashingAutolink" name="autolink-2336"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.execStats.stage" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.execStats.</code><code class="descname">stage</code><a class="dashingAutolink" name="autolink-1482"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.execStats.stage" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0: </span><a class="reference internal" href="#system.profile.execStats.stage" title="system.profile.execStats.stage"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">stage</span></code></a> replaces the <code class="docutils literal"><span class="pre">type</span></code> field.</p>
 </div>
@@ -829,7 +829,7 @@ query execution; e.g.</p>
 
 <dl class="data">
 <dt id="system.profile.execStats.inputStages">
-<code class="descclassname">system.profile.execStats.</code><code class="descname">inputStages</code><a class="dashingAutolink" name="autolink-2337"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.execStats.inputStages" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.execStats.</code><code class="descname">inputStages</code><a class="dashingAutolink" name="autolink-1483"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.execStats.inputStages" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0: </span><a class="reference internal" href="#system.profile.execStats.inputStages" title="system.profile.execStats.inputStages"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">inputStages</span></code></a> replaces the
 <code class="docutils literal"><span class="pre">children</span></code> field.</p>
@@ -842,22 +842,22 @@ input stages of the current stage.</p>
 
 <dl class="data">
 <dt id="system.profile.ts">
-<code class="descclassname">system.profile.</code><code class="descname">ts</code><a class="dashingAutolink" name="autolink-2338"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">ts</code><a class="dashingAutolink" name="autolink-1484"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.ts" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The timestamp of the operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.client">
-<code class="descclassname">system.profile.</code><code class="descname">client</code><a class="dashingAutolink" name="autolink-2339"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.client" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">client</code><a class="dashingAutolink" name="autolink-1485"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.client" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The IP address or hostname of the client connection where the
 operation originates.</p>
-<p>For some operations, such as <a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-2301"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a>, the client is
+<p>For some operations, such as <a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a>, the client is
 <code class="docutils literal"><span class="pre">0.0.0.0:0</span></code> instead of an actual client.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.appName">
-<code class="descclassname">system.profile.</code><code class="descname">appName</code><a class="dashingAutolink" name="autolink-2340"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.appName" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">appName</code><a class="dashingAutolink" name="autolink-1486"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.appName" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -870,14 +870,14 @@ be set to a custom string.</p>
 
 <dl class="data">
 <dt id="system.profile.allUsers">
-<code class="descclassname">system.profile.</code><code class="descname">allUsers</code><a class="dashingAutolink" name="autolink-2341"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.allUsers" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">allUsers</code><a class="dashingAutolink" name="autolink-1487"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.allUsers" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of authenticated user information (user name and database)
 for the session. See also <a class="reference internal" href="../core/security-users.html"><span class="doc">Users</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="system.profile.user">
-<code class="descclassname">system.profile.</code><code class="descname">user</code><a class="dashingAutolink" name="autolink-2342"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.user" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">system.profile.</code><code class="descname">user</code><a class="dashingAutolink" name="autolink-1488"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#system.profile.user" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The authenticated user who ran the operation. If the operation was
 not run by an authenticated user, this field&rsquo;s value is an empty
 string.</p>

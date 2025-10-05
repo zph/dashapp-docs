@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8081"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Convert%20a%20Standalone%20to%20a%20Replica%20Set%20%E2%80%94%20MongoDB%20Manual"></a><title>Convert a Standalone to a Replica Set &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3621"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Convert%20a%20Standalone%20to%20a%20Replica%20Set%20%E2%80%94%20MongoDB%20Manual"></a><title>Convert a Standalone to a Replica Set &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/convert-standalone-to-replica-set/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="convert-a-standalone-to-a-replica-set">
-<a class="dashingAutolink" name="autolink-8082"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Convert%20a%20Standalone%20to%20a%20Replica%20Set%C2%B6"></a><h1>Convert a Standalone to a Replica Set<a class="headerlink" href="#convert-a-standalone-to-a-replica-set" title="Permalink to this headline">&para;</a></h1>
+<h1>Convert a Standalone to a Replica Set<a class="headerlink" href="#convert-a-standalone-to-a-replica-set" title="Permalink to this headline">&para;</a></h1>
 <p>This tutorial describes the process for converting a <a class="reference internal" href="../reference/glossary.html#term-standalone"><span class="xref std std-term">standalone</span></a>
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance into a <a class="reference internal" href="../reference/glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a>. Use
 standalone instances for testing and development, but always use
@@ -194,7 +194,7 @@ manual page.</p>
 </li>
 <li><p class="first">Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 </li>
-<li><p class="first">Use <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8083"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the new replica set:</p>
+<li><p class="first">Use <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the new replica set:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -205,11 +205,11 @@ copy</a>
 </div>
 </div>
 <p>The replica set is now operational. To view the replica set
-configuration, use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8084"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>. To check the status of the
-replica set, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8085"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>.</p>
+configuration, use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>. To check the status of the
+replica set, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>.</p>
 </li>
 </ol>
-<p>To add members to this replica set, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8086"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method.
+<p>To add members to this replica set, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method.
 For more information on adding members to a replica set, see
 <a class="reference internal" href="expand-replica-set.html"><span class="doc">Add Members to a Replica Set</span></a>.</p>
 <div class="admonition seealso">

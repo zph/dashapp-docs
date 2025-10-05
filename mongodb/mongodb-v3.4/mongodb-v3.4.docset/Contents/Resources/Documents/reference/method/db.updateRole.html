@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4354"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.updateRole%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.updateRole() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2023"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.updateRole%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.updateRole() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.updateRole/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-updaterole">
-<a class="dashingAutolink" name="autolink-4355"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.updateRole%28%29%C2%B6"></a><h1>db.updateRole()<a class="headerlink" href="#db-updaterole" title="Permalink to this headline">&para;</a></h1>
+<h1>db.updateRole()<a class="headerlink" href="#db-updaterole" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,24 +167,24 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.updateRole">
-<code class="descclassname">db.</code><code class="descname">updateRole</code><span class="sig-paren">(</span><em>rolename</em>, <em>update</em>, <em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4367"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.updateRole" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">updateRole</code><span class="sig-paren">(</span><em>rolename</em>, <em>update</em>, <em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2022"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.updateRole" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Updates a <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined role</span></a>. The
-<a class="reference internal" href="#db.updateRole" title="db.updateRole()"><a class="dashingAutolink" name="autolink-4356"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method must run on the role&rsquo;s database.</p>
+<a class="reference internal" href="#db.updateRole" title="db.updateRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method must run on the role&rsquo;s database.</p>
 <p>An update to a field <strong>completely replaces</strong> the previous field&rsquo;s values.
 To grant or remove roles or <a class="reference internal" href="../../core/authorization.html#privileges"><span class="std std-ref">privileges</span></a> without
 replacing all values, use one or more of the following methods:</p>
 <ul class="simple">
-<li><a class="reference internal" href="db.grantRolesToRole.html#db.grantRolesToRole" title="db.grantRolesToRole()"><a class="dashingAutolink" name="autolink-4357"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a></li>
-<li><a class="reference internal" href="db.grantPrivilegesToRole.html#db.grantPrivilegesToRole" title="db.grantPrivilegesToRole()"><a class="dashingAutolink" name="autolink-4358"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantPrivilegesToRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantPrivilegesToRole()</span></code></a></li>
-<li><a class="reference internal" href="db.revokeRolesFromRole.html#db.revokeRolesFromRole" title="db.revokeRolesFromRole()"><a class="dashingAutolink" name="autolink-4359"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.revokeRolesFromRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokeRolesFromRole()</span></code></a></li>
-<li><a class="reference internal" href="db.revokePrivilegesFromRole.html#db.revokePrivilegesFromRole" title="db.revokePrivilegesFromRole()"><a class="dashingAutolink" name="autolink-4360"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.revokePrivilegesFromRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokePrivilegesFromRole()</span></code></a></li>
+<li><a class="reference internal" href="db.grantRolesToRole.html#db.grantRolesToRole" title="db.grantRolesToRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a></li>
+<li><a class="reference internal" href="db.grantPrivilegesToRole.html#db.grantPrivilegesToRole" title="db.grantPrivilegesToRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantPrivilegesToRole()</span></code></a></li>
+<li><a class="reference internal" href="db.revokeRolesFromRole.html#db.revokeRolesFromRole" title="db.revokeRolesFromRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokeRolesFromRole()</span></code></a></li>
+<li><a class="reference internal" href="db.revokePrivilegesFromRole.html#db.revokePrivilegesFromRole" title="db.revokePrivilegesFromRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokePrivilegesFromRole()</span></code></a></li>
 </ul>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">An update to the <code class="docutils literal"><span class="pre">privileges</span></code> or <code class="docutils literal"><span class="pre">roles</span></code> array completely replaces
 the previous array&rsquo;s values.</p>
 </div>
-<p>The <a class="dashingAutolink" name="autolink-4361"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateRole()</span></code> method uses the following syntax:</p>
+<p>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateRole()</span></code> method uses the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -209,7 +209,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><a class="dashingAutolink" name="autolink-4362"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method takes the following arguments.</p>
+<p>The <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method takes the following arguments.</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -277,7 +277,7 @@ The roles from which this role inherits privileges. An update to the
 <a class="reference internal" href="../built-in-roles.html#built-in-roles"><span class="std std-ref">built-in roles</span></a> and <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined
 role</span></a>.</p>
 <p>To specify a role that exists in the same database where
-<a class="reference internal" href="#db.updateRole" title="db.updateRole()"><a class="dashingAutolink" name="autolink-4363"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> runs, you can either specify the role with the name of
+<a class="reference internal" href="#db.updateRole" title="db.updateRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> runs, you can either specify the role with the name of
 the role:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -300,7 +300,7 @@ copy</a>
 </div>
 <p>To specify a role that exists in a different database, specify the role
 with a document.</p>
-<p>The <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><a class="dashingAutolink" name="autolink-4364"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method wraps the <a class="reference internal" href="../command/updateRole.html#dbcmd.updateRole" title="updateRole"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">updateRole</span></code></a>
+<p>The <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method wraps the <a class="reference internal" href="../command/updateRole.html#dbcmd.updateRole" title="updateRole"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">updateRole</span></code></a>
 command.</p>
 </dd></dl>
 
@@ -309,7 +309,7 @@ command.</p>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="replica-set">
 <h3>Replica set<a class="headerlink" href="#replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>If run on a replica set, <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><a class="dashingAutolink" name="autolink-4365"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
+<p>If run on a replica set, <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
 </div>
 <div class="section" id="scope">
 <h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">&para;</a></h3>
@@ -340,7 +340,7 @@ the following:</p>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><a class="dashingAutolink" name="autolink-4366"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method replaces the
+<p>The following <a class="reference internal" href="#db.updateRole" title="db.updateRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateRole()</span></code></a> method replaces the
 <a class="reference internal" href="../system-roles-collection.html#admin.system.roles.privileges" title="admin.system.roles.privileges"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">privileges</span></code></a> and the
 <a class="reference internal" href="../system-roles-collection.html#admin.system.roles.roles" title="admin.system.roles.roles"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">roles</span></code></a> for the <code class="docutils literal"><span class="pre">inventoryControl</span></code> role
 that exists in the <code class="docutils literal"><span class="pre">products</span></code> database. The method runs on the

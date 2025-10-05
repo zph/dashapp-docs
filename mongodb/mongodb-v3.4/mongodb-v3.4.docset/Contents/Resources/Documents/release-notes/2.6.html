@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7546"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%202.6%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 2.6 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3536"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%202.6%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 2.6 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/2.6/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="release-notes-for-mongodb-2-6">
-<a class="dashingAutolink" name="autolink-7547"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Release%20Notes%20for%20MongoDB%202.6%C2%B6"></a><h1>Release Notes for MongoDB 2.6<a class="headerlink" href="#release-notes-for-mongodb-2-6" title="Permalink to this headline">&para;</a></h1>
+<h1>Release Notes for MongoDB 2.6<a class="headerlink" href="#release-notes-for-mongodb-2-6" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -346,7 +346,7 @@ may cause the migration operation to skip some documents:
 failover and correctly route read operations to the new
 primary <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-18280">SERVER-18280</a></li>
 <li>Improved reporting of queries in <code class="docutils literal"><span class="pre">getMore</span></code> operation in
-<a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-7548"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> and the database
+<a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> and the database
 profiler <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-16265">SERVER-16265</a></li>
 <li><a class="reference external" href="https://jira.mongodb.org/issues/?jql=fixVersion%20%3D%20%222.6.11%22%20AND%20project%20%3D%20SERVER">All issues closed in 2.6.11</a></li>
 </ul>
@@ -476,7 +476,7 @@ orphan documents on sharded collections <a class="reference external" href="http
 <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-13981">SERVER-13981</a>.</li>
 <li><a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> incorrectly targets multiple shards for nested
 field shard key predicates <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14138">SERVER-14138</a>.</li>
-<li><a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7549"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> during mapReduce causes <code class="docutils literal"><span class="pre">fassert</span></code> when
+<li><a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> during mapReduce causes <code class="docutils literal"><span class="pre">fassert</span></code> when
 writing to op log <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14186">SERVER-14186</a>.</li>
 </ul>
 <ul class="simple">
@@ -510,7 +510,7 @@ size, either by returning a cursor or writing the output to
 a collection. Additionally, the aggregation pipeline supports
 variables and adds new operations to handle sets and redact data.</p>
 <ul class="simple">
-<li>The <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7550"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> now returns a cursor, which
+<li>The <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> now returns a cursor, which
 enables the aggregation pipeline to return result sets of any size.</li>
 <li>Aggregation pipelines now support an <code class="docutils literal"><span class="pre">explain</span></code> operation to aid
 analysis of aggregation operations.</li>
@@ -584,7 +584,7 @@ support for bulk operations.</p>
 for the improved bulk insert. All officially supported MongoDB drivers
 support the new write commands.</p>
 <p>The <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell now includes
-methods to perform bulk-write operations. See <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-7551"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> for
+methods to perform bulk-write operations. See <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> for
 more information.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
@@ -647,8 +647,8 @@ than one index.</li>
 plan for a query.</li>
 <li><a class="reference internal" href="../reference/method/js-plan-cache.html"><span class="doc">Query Plan Cache Methods</span></a> methods to view and clear the
 <a class="reference internal" href="../core/query-plans.html"><span class="doc">query plans</span></a> cached by the query optimizer.</li>
-<li>MongoDB can now use <a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><a class="dashingAutolink" name="autolink-7552"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> with
-<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-7553"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>. See <a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><a class="dashingAutolink" name="autolink-7554"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> for details.</li>
+<li>MongoDB can now use <a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> with
+<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>. See <a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> for details.</li>
 </ul>
 </div>
 <div class="section" id="improvements">
@@ -693,10 +693,10 @@ build when the instance restarts.</li>
 <p>To disable this behavior, use the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-noindexbuildretry"><code class="xref std std-option docutils literal"><span class="pre">--noIndexBuildRetry</span></code></a>
 command-line option.</p>
 </li>
-<li><p class="first"><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7555"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a> now wraps a new
+<li><p class="first"><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a> now wraps a new
 <code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndex</span></code> command.</p>
 </li>
-<li><p class="first">The <code class="docutils literal"><span class="pre">dropDups</span></code> option to <a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7556"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a>
+<li><p class="first">The <code class="docutils literal"><span class="pre">dropDups</span></code> option to <a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a>
 and <code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndex</span></code> is deprecated.</p>
 </li>
 </ul>
@@ -713,8 +713,8 @@ documents</span></a> from a shard.</li>
 <li>New <a class="reference internal" href="../reference/command/mergeChunks.html#dbcmd.mergeChunks" title="mergeChunks"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mergeChunks</span></code></a> command to combine contiguous chunks
 located on a single shard. See <a class="reference internal" href="../reference/command/mergeChunks.html#dbcmd.mergeChunks" title="mergeChunks"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mergeChunks</span></code></a> and
 <a class="reference internal" href="../tutorial/merge-chunks-in-sharded-cluster.html"><span class="doc">Merge Chunks in a Sharded Cluster</span></a>.</li>
-<li>New <a class="reference internal" href="../reference/method/rs.printReplicationInfo.html#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-7557"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> and
-<a class="reference internal" href="../reference/method/rs.printSlaveReplicationInfo.html#rs.printSlaveReplicationInfo" title="rs.printSlaveReplicationInfo()"><a class="dashingAutolink" name="autolink-7558"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printSlaveReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printSlaveReplicationInfo()</span></code></a> methods to provide a
+<li>New <a class="reference internal" href="../reference/method/rs.printReplicationInfo.html#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> and
+<a class="reference internal" href="../reference/method/rs.printSlaveReplicationInfo.html#rs.printSlaveReplicationInfo" title="rs.printSlaveReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printSlaveReplicationInfo()</span></code></a> methods to provide a
 formatted report of the status of a replica set from the perspective
 of the primary and the secondary, respectively.</li>
 </ul>
@@ -766,7 +766,7 @@ sharded clusters.</li>
 <a class="reference internal" href="../reference/command/isMaster.html#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a> command instead of
 <a class="reference internal" href="../reference/command/replSetGetStatus.html#dbcmd.replSetGetStatus" title="replSetGetStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetStatus</span></code></a>. This allows the C++ driver to support
 systems that require authentication.</li>
-<li>New <a class="reference internal" href="../reference/method/cursor.maxTimeMS.html#cursor.maxTimeMS" title="cursor.maxTimeMS()"><a class="dashingAutolink" name="autolink-7559"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.maxTimeMS%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxTimeMS()</span></code></a> and corresponding <code class="docutils literal"><span class="pre">maxTimeMS</span></code>
+<li>New <a class="reference internal" href="../reference/method/cursor.maxTimeMS.html#cursor.maxTimeMS" title="cursor.maxTimeMS()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxTimeMS()</span></code></a> and corresponding <code class="docutils literal"><span class="pre">maxTimeMS</span></code>
 option for commands to specify a time limit.</li>
 </ul>
 </div>
@@ -828,7 +828,7 @@ shards. See <a class="reference internal" href="2.6-upgrade.html"><span class="d
 <h3>Expanded SNMP Support<a class="headerlink" href="#expanded-snmp-support" title="Permalink to this headline">&para;</a></h3>
 <p>MongoDB Enterprise has greatly expanded its SNMP support to provide
 SNMP access to nearly the full range of metrics provided by
-<a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-7560"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last"><a class="reference internal" href="2.6-compatibility.html#snmp-iana-mib-incompatibility"><span class="std std-ref">SNMP Changes</span></a></p>
@@ -908,7 +908,7 @@ SNMP access to nearly the full range of metrics provided by
 </div>
 <p>Some changes in 2.6 can affect <a class="reference internal" href="2.6-compatibility.html"><span class="doc">compatibility</span></a> and may require user actions. The
 2.6 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides a
-<a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><a class="dashingAutolink" name="autolink-7561"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.upgradeCheckAllDBs%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> method to perform a check for upgrade
+<a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> method to perform a check for upgrade
 preparedness for some of these changes.</p>
 <p>See <a class="reference internal" href="2.6-compatibility.html"><span class="doc">Compatibility Changes in MongoDB 2.6</span></a> for a detailed list of
 compatibility changes.</p>

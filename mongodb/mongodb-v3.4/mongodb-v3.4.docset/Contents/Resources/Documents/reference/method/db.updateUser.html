@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4368"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.updateUser%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.updateUser() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2025"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.updateUser%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.updateUser() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.updateUser/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-updateuser">
-<a class="dashingAutolink" name="autolink-4369"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.updateUser%28%29%C2%B6"></a><h1>db.updateUser()<a class="headerlink" href="#db-updateuser" title="Permalink to this headline">&para;</a></h1>
+<h1>db.updateUser()<a class="headerlink" href="#db-updateuser" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,7 +167,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.updateUser">
-<code class="descclassname">db.</code><code class="descname">updateUser</code><span class="sig-paren">(</span><em>username</em>, <em>update</em>, <em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4380"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.updateUser" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">updateUser</code><span class="sig-paren">(</span><em>username</em>, <em>update</em>, <em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2024"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.updateUser" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Updates the user&rsquo;s profile on the database on which you run the method.
 An update to a field <strong>completely replaces</strong> the previous field&rsquo;s values.
 This includes updates to the user&rsquo;s <code class="docutils literal"><span class="pre">roles</span></code> array.</p>
@@ -175,10 +175,10 @@ This includes updates to the user&rsquo;s <code class="docutils literal"><span c
 <p class="first admonition-title">Warning</p>
 <p class="last">When you update the <code class="docutils literal"><span class="pre">roles</span></code> array, you completely replace the
 previous array&rsquo;s values. To add or remove roles without replacing all
-the user&rsquo;s existing roles, use the <a class="reference internal" href="db.grantRolesToUser.html#db.grantRolesToUser" title="db.grantRolesToUser()"><a class="dashingAutolink" name="autolink-4370"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToUser()</span></code></a> or
-<a class="reference internal" href="db.revokeRolesFromUser.html#db.revokeRolesFromUser" title="db.revokeRolesFromUser()"><a class="dashingAutolink" name="autolink-4371"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.revokeRolesFromUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokeRolesFromUser()</span></code></a> methods.</p>
+the user&rsquo;s existing roles, use the <a class="reference internal" href="db.grantRolesToUser.html#db.grantRolesToUser" title="db.grantRolesToUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToUser()</span></code></a> or
+<a class="reference internal" href="db.revokeRolesFromUser.html#db.revokeRolesFromUser" title="db.revokeRolesFromUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokeRolesFromUser()</span></code></a> methods.</p>
 </div>
-<p>The <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4372"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method uses the following syntax:</p>
+<p>The <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method uses the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -199,7 +199,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4373"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method has the following arguments.</p>
+<p>The <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method has the following arguments.</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -266,7 +266,7 @@ overrides the previous array&rsquo;s values.</td>
 <a class="reference internal" href="../built-in-roles.html#built-in-roles"><span class="std std-ref">built-in roles</span></a> and <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined
 role</span></a>.</p>
 <p>To specify a role that exists in the same database where
-<a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4374"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> runs, you can either specify the role with the name of
+<a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> runs, you can either specify the role with the name of
 the role:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -289,7 +289,7 @@ copy</a>
 </div>
 <p>To specify a role that exists in a different database, specify the role
 with a document.</p>
-<p>The <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4375"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method wraps the <a class="reference internal" href="../command/updateUser.html#dbcmd.updateUser" title="updateUser"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">updateUser</span></code></a>
+<p>The <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method wraps the <a class="reference internal" href="../command/updateUser.html#dbcmd.updateUser" title="updateUser"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">updateUser</span></code></a>
 command.</p>
 </dd></dl>
 
@@ -298,16 +298,16 @@ command.</p>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="replica-set">
 <h3>Replica set<a class="headerlink" href="#replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>If run on a replica set, <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4376"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
+<p>If run on a replica set, <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
 </div>
 <div class="section" id="encyption">
 <h3>Encyption<a class="headerlink" href="#encyption" title="Permalink to this headline">&para;</a></h3>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p>By default, <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4377"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> sends all specified data to the MongoDB
+<p>By default, <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> sends all specified data to the MongoDB
 instance in cleartext. Use TLS transport encryption to protect
 communications between clients and the server,
-including the password sent by <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4378"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a>. For
+including the password sent by <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a>. For
 instructions on enabling TLS transport encryption, see
 <a class="reference internal" href="../../tutorial/configure-ssl.html"><span class="doc">Configure mongod and mongos for TLS/SSL</span></a>.</p>
 <p class="last">MongoDB does not store the password in cleartext. The password
@@ -357,7 +357,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The following <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-4379"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method <strong>completely</strong> replaces the
+<p>The following <a class="reference internal" href="#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> method <strong>completely</strong> replaces the
 user&rsquo;s <code class="docutils literal"><span class="pre">customData</span></code> and <code class="docutils literal"><span class="pre">roles</span></code> data:</p>
 <div class="button-code-block">
 <div class="button-row">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1473"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/mapReduce%20%E2%80%94%20MongoDB%20Manual"></a><title>mapReduce &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-780"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/mapReduce%20%E2%80%94%20MongoDB%20Manual"></a><title>mapReduce &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/mapReduce/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="mapreduce">
-<a class="dashingAutolink" name="autolink-1474"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/mapReduce%C2%B6"></a><h1>mapReduce<a class="headerlink" href="#mapreduce" title="Permalink to this headline">&para;</a></h1>
+<h1>mapReduce<a class="headerlink" href="#mapreduce" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -169,7 +169,7 @@
 </div>
 <dl class="dbcommand">
 <dt id="dbcmd.mapReduce">
-<code class="descname">mapReduce</code><a class="dashingAutolink" name="autolink-1479"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.mapReduce" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">mapReduce</code><a class="dashingAutolink" name="autolink-770"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.mapReduce" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command allows you to run
 <a class="reference internal" href="../glossary.html#term-map-reduce"><span class="xref std std-term">map-reduce</span></a> aggregation operations over a collection. The
 <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command has the following prototype
@@ -355,7 +355,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-1475"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -690,9 +690,9 @@ permissions to perform map-reduce aggregation.</p>
 </div>
 <div class="section" id="map-reduce-examples">
 <h2>Map-Reduce Examples<a class="headerlink" href="#map-reduce-examples" title="Permalink to this headline">&para;</a></h2>
-<p>In the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, the <a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-1476"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>
+<p>In the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, the <a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>
 method is a wrapper around the <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command. The
-following examples use the <a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-1477"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method:</p>
+following examples use the <a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method:</p>
 <p>Consider the following map-reduce operations on a collection
 <code class="docutils literal"><span class="pre">orders</span></code> that contains documents of the following prototype:</p>
 <div class="button-code-block">
@@ -962,7 +962,7 @@ copy</a>
 </div>
 <dl class="data">
 <dt id="mapReduce.result">
-<code class="descclassname">mapReduce.</code><code class="descname">result</code><a class="dashingAutolink" name="autolink-1480"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.result" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.</code><code class="descname">result</code><a class="dashingAutolink" name="autolink-771"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.result" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For output sent to a collection, this value is either:</p>
 <ul class="simple">
 <li>a string for the collection name if <a class="reference internal" href="#mapreduce-out-cmd"><span class="std std-ref">out</span></a>
@@ -973,7 +973,7 @@ did not specify the database name, or</li>
 
 <dl class="data">
 <dt id="mapReduce.results">
-<code class="descclassname">mapReduce.</code><code class="descname">results</code><a class="dashingAutolink" name="autolink-1481"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.results" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.</code><code class="descname">results</code><a class="dashingAutolink" name="autolink-772"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.results" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For output written inline, an array of resulting documents. Each
 resulting document contains two fields:</p>
 <ul class="simple">
@@ -985,46 +985,46 @@ associated <code class="docutils literal"><span class="pre">key</span></code>.</
 
 <dl class="data">
 <dt id="mapReduce.timeMillis">
-<code class="descclassname">mapReduce.</code><code class="descname">timeMillis</code><a class="dashingAutolink" name="autolink-1482"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.timeMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.</code><code class="descname">timeMillis</code><a class="dashingAutolink" name="autolink-773"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.timeMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The command execution time in milliseconds.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="mapReduce.counts">
-<code class="descclassname">mapReduce.</code><code class="descname">counts</code><a class="dashingAutolink" name="autolink-1483"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.</code><code class="descname">counts</code><a class="dashingAutolink" name="autolink-774"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Various count statistics from the <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="mapReduce.counts.input">
-<code class="descclassname">mapReduce.counts.</code><code class="descname">input</code><a class="dashingAutolink" name="autolink-1484"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.input" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.counts.</code><code class="descname">input</code><a class="dashingAutolink" name="autolink-775"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.input" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of input documents, which is the number of times the
 <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command called the <code class="docutils literal"><span class="pre">map</span></code> function.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="mapReduce.counts.emit">
-<code class="descclassname">mapReduce.counts.</code><code class="descname">emit</code><a class="dashingAutolink" name="autolink-1485"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.emit" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.counts.</code><code class="descname">emit</code><a class="dashingAutolink" name="autolink-776"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.emit" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of times the <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command called the
 <code class="docutils literal"><span class="pre">emit</span></code> function.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="mapReduce.counts.reduce">
-<code class="descclassname">mapReduce.counts.</code><code class="descname">reduce</code><a class="dashingAutolink" name="autolink-1486"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.reduce" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.counts.</code><code class="descname">reduce</code><a class="dashingAutolink" name="autolink-777"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.reduce" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of times the <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command called the
 <code class="docutils literal"><span class="pre">reduce</span></code> function.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="mapReduce.counts.output">
-<code class="descclassname">mapReduce.counts.</code><code class="descname">output</code><a class="dashingAutolink" name="autolink-1487"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.output" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.counts.</code><code class="descname">output</code><a class="dashingAutolink" name="autolink-778"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.counts.output" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of output values produced.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="mapReduce.ok">
-<code class="descclassname">mapReduce.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-1488"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.ok" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">mapReduce.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-779"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#mapReduce.ok" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A value of <code class="docutils literal"><span class="pre">1</span></code> indicates the <a class="reference internal" href="#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command ran
 successfully. A value of <code class="docutils literal"><span class="pre">0</span></code> indicates an error.</p>
 </dd></dl>
@@ -1035,7 +1035,7 @@ successfully. A value of <code class="docutils literal"><span class="pre">0</spa
 <ul class="simple">
 <li><a class="reference internal" href="../../tutorial/troubleshoot-map-function.html"><span class="doc">Troubleshoot the Map Function</span></a></li>
 <li><a class="reference internal" href="../../tutorial/troubleshoot-reduce-function.html"><span class="doc">Troubleshoot the Reduce Function</span></a></li>
-<li><a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-1478"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a></li>
+<li><a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a></li>
 <li><a class="reference internal" href="../../aggregation.html"><span class="doc">Aggregation</span></a></li>
 </ul>
 </div>

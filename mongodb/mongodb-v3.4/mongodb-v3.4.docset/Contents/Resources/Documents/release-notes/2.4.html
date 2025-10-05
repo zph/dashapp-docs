@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7441"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%202.4%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 2.4 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3528"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%202.4%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 2.4 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/2.4/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="release-notes-for-mongodb-2-4">
-<a class="dashingAutolink" name="autolink-7442"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Release%20Notes%20for%20MongoDB%202.4%C2%B6"></a><h1>Release Notes for MongoDB 2.4<a class="headerlink" href="#release-notes-for-mongodb-2-4" title="Permalink to this headline">&para;</a></h1>
+<h1>Release Notes for MongoDB 2.4<a class="headerlink" href="#release-notes-for-mongodb-2-4" title="Permalink to this headline">&para;</a></h1>
 <p><em>March 19, 2013</em></p>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
@@ -377,7 +377,7 @@ precedes a <a class="reference internal" href="../reference/operator/aggregation
 <span id="fixed-size-arrays"></span><h3>Changes to Update Operators<a class="headerlink" href="#changes-to-update-operators" title="Permalink to this headline">&para;</a></h3>
 <ul class="simple">
 <li>Add new <a class="reference internal" href="../reference/operator/update/setOnInsert.html#up._S_setOnInsert" title="$setOnInsert"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$setOnInsert</span></code></a> operator for use with
-<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7443"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/upsert"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">upsert</span></code></a> .</li>
+<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">upsert</span></code></a> .</li>
 <li>Enhance functionality of the <a class="reference internal" href="../reference/operator/update/push.html#up._S_push" title="$push"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$push</span></code></a> operator, supporting
 its use with the <a class="reference internal" href="../reference/operator/update/each.html#up._S_each" title="$each"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$each</span></code></a>, the <a class="reference internal" href="../reference/operator/update/sort.html#up._S_sort" title="$sort"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$sort</span></code></a>, and the
 <a class="reference internal" href="../reference/operator/update/slice.html#up._S_slice" title="$slice"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$slice</span></code></a> modifiers.</li>
@@ -394,7 +394,7 @@ operator for details.</p>
 <div class="section" id="improvements-to-serverstatus-command">
 <span id="release-server-status"></span><h3>Improvements to <code class="docutils literal"><span class="pre">serverStatus</span></code> Command<a class="headerlink" href="#improvements-to-serverstatus-command" title="Permalink to this headline">&para;</a></h3>
 <p>Provide additional metrics and customization for the
-<a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a> command. See <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-7444"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>
+<a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a> command. See <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>
 and <a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a> for more information.</p>
 </div>
 </div>
@@ -463,7 +463,7 @@ and <a class="reference internal" href="../reference/program/mongorestore.html#b
 a single <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance. See <a class="reference internal" href="../core/index-creation.html#index-creation-background"><span class="std std-ref">building indexes in
 the background</span></a> for more information on
 background index builds.</li>
-<li>Allow the <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-7445"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> method to terminate a foreground
+<li>Allow the <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> method to terminate a foreground
 index build.</li>
 <li>Improve index validation during index creation. See
 <a class="reference internal" href="2.4-index-types.html"><span class="doc">Compatibility and Index Type Changes in MongoDB 2.4</span></a> for more information.</li>

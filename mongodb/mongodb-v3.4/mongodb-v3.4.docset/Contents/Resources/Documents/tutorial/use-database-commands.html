@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8847"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Use%20Database%20Commands%20%E2%80%94%20MongoDB%20Manual"></a><title>Use Database Commands &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3749"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Use%20Database%20Commands%20%E2%80%94%20MongoDB%20Manual"></a><title>Use Database Commands &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/use-database-commands/"/><meta name="robots" content="index"/>
@@ -143,7 +143,7 @@
   </div>
                 
                   <div class="section" id="use-database-commands">
-<a class="dashingAutolink" name="autolink-8842"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Use%20Database%20Commands%C2%B6"></a><h1>Use Database Commands<a class="headerlink" href="#use-database-commands" title="Permalink to this headline">&para;</a></h1>
+<h1>Use Database Commands<a class="headerlink" href="#use-database-commands" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -177,7 +177,7 @@ copy</a>
 <div class="section" id="issue-commands">
 <span id="id1"></span><h2>Issue Commands<a class="headerlink" href="#issue-commands" title="Permalink to this headline">&para;</a></h2>
 <p>The <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides a helper method for running
-commands called <a class="reference internal" href="../reference/method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-8843"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand()</span></code></a>. The following operation in
+commands called <a class="reference internal" href="../reference/method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand()</span></code></a>. The following operation in
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> runs the above command:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -189,12 +189,12 @@ copy</a>
 </div>
 </div>
 <p>Many <a class="reference external" href="https://docs.mongodb.com/ecosystem/drivers">drivers</a> provide an equivalent for
-the <a class="reference internal" href="../reference/method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-8844"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand()</span></code></a> method. Internally, running commands
-with <a class="reference internal" href="../reference/method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-8845"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand()</span></code></a> is equivalent to a special query
+the <a class="reference internal" href="../reference/method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand()</span></code></a> method. Internally, running commands
+with <a class="reference internal" href="../reference/method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand()</span></code></a> is equivalent to a special query
 against the <a class="reference internal" href="../reference/glossary.html#term-cmd"><span class="xref std std-term">$cmd</span></a> collection.</p>
 <p>Many common commands have their own shell helpers or wrappers in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and drivers, such as the
-<a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><a class="dashingAutolink" name="autolink-8846"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> JavaScript
+<a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> JavaScript
 shell.</p>
 <p>You can use the <code class="docutils literal"><span class="pre">maxTimeMS</span></code> option to specify a time limit for the
 execution of a command, see <a class="reference internal" href="terminate-running-operations.html#terminate-long-running-commands"><span class="std std-ref">Terminate a Command</span></a> for

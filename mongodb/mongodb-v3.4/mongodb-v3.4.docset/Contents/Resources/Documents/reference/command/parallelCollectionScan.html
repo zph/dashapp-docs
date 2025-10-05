@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1542"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/parallelCollectionScan%20%E2%80%94%20MongoDB%20Manual"></a><title>parallelCollectionScan &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-811"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/parallelCollectionScan%20%E2%80%94%20MongoDB%20Manual"></a><title>parallelCollectionScan &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/parallelCollectionScan/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="parallelcollectionscan">
-<a class="dashingAutolink" name="autolink-1543"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/parallelCollectionScan%C2%B6"></a><h1>parallelCollectionScan<a class="headerlink" href="#parallelcollectionscan" title="Permalink to this headline">&para;</a></h1>
+<h1>parallelCollectionScan<a class="headerlink" href="#parallelcollectionscan" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -163,7 +163,7 @@
 </div>
 <dl class="dbcommand">
 <dt id="dbcmd.parallelCollectionScan">
-<code class="descname">parallelCollectionScan</code><a class="dashingAutolink" name="autolink-1534"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.parallelCollectionScan" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">parallelCollectionScan</code><a class="dashingAutolink" name="autolink-803"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.parallelCollectionScan" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -253,7 +253,7 @@ operations on a cursor. If you do not specify a value for maxTimeMS,
 operations will not time out. A value of <code class="docutils literal"><span class="pre">0</span></code> explicitly
 specifies the default unbounded behavior.</p>
 <p class="last">MongoDB terminates operations that exceed their allotted time limit
-using the same mechanism as <a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-1533"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only
+using the same mechanism as <a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only
 terminates an operation at one of its designated <a class="reference internal" href="../glossary.html#term-interrupt-point"><span class="xref std std-term">interrupt
 points</span></a>.</p>
 </td>
@@ -336,19 +336,19 @@ copy</a>
 </div>
 <dl class="data">
 <dt id="parallelCollectionScan.cursors">
-<code class="descclassname">parallelCollectionScan.</code><code class="descname">cursors</code><a class="dashingAutolink" name="autolink-1535"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.</code><code class="descname">cursors</code><a class="dashingAutolink" name="autolink-804"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array with one or more cursors returned with the command.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="parallelCollectionScan.cursors.cursor">
-<code class="descclassname">parallelCollectionScan.cursors.</code><code class="descname">cursor</code><a class="dashingAutolink" name="autolink-1536"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.cursors.</code><code class="descname">cursor</code><a class="dashingAutolink" name="autolink-805"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For each cursor returned, a document with details about the cursor.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="parallelCollectionScan.cursors.cursor.firstBatch">
-<code class="descclassname">parallelCollectionScan.cursors.cursor.</code><code class="descname">firstBatch</code><a class="dashingAutolink" name="autolink-1537"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor.firstBatch" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.cursors.cursor.</code><code class="descname">firstBatch</code><a class="dashingAutolink" name="autolink-806"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor.firstBatch" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An empty first batch is useful for quickly returning a cursor or
 failure message without doing significant server-side work. See
 <a class="reference internal" href="../../tutorial/iterate-a-cursor.html#cursor-batches"><span class="std std-ref">cursor batches</span></a>.</p>
@@ -356,25 +356,25 @@ failure message without doing significant server-side work. See
 
 <dl class="data">
 <dt id="parallelCollectionScan.cursors.cursor.ns">
-<code class="descclassname">parallelCollectionScan.cursors.cursor.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-1538"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor.ns" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.cursors.cursor.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-807"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor.ns" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The namespace for each cursor.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="parallelCollectionScan.cursors.cursor.id">
-<code class="descclassname">parallelCollectionScan.cursors.cursor.</code><code class="descname">id</code><a class="dashingAutolink" name="autolink-1539"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor.id" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.cursors.cursor.</code><code class="descname">id</code><a class="dashingAutolink" name="autolink-808"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.cursor.id" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The unique id for each cursor.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="parallelCollectionScan.cursors.ok">
-<code class="descclassname">parallelCollectionScan.cursors.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-1540"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.ok" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.cursors.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-809"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.cursors.ok" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The status of each cursor returned with the command.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="parallelCollectionScan.ok">
-<code class="descclassname">parallelCollectionScan.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-1541"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.ok" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">parallelCollectionScan.</code><code class="descname">ok</code><a class="dashingAutolink" name="autolink-810"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#parallelCollectionScan.ok" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A value of <code class="docutils literal"><span class="pre">1</span></code> indicates the <a class="reference internal" href="#dbcmd.parallelCollectionScan" title="parallelCollectionScan"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">parallelCollectionScan</span></code></a>
 command succeeded. A value of <code class="docutils literal"><span class="pre">0</span></code> indicates an error.</p>
 </dd></dl>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4778"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rs.printReplicationInfo%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>rs.printReplicationInfo() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2086"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rs.printReplicationInfo%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>rs.printReplicationInfo() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/rs.printReplicationInfo/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="rs-printreplicationinfo">
-<a class="dashingAutolink" name="autolink-4779"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/rs.printReplicationInfo%28%29%C2%B6"></a><h1>rs.printReplicationInfo()<a class="headerlink" href="#rs-printreplicationinfo" title="Permalink to this headline">&para;</a></h1>
+<h1>rs.printReplicationInfo()<a class="headerlink" href="#rs-printreplicationinfo" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,20 +166,20 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="rs.printReplicationInfo">
-<code class="descclassname">rs.</code><code class="descname">printReplicationInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4792"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rs.printReplicationInfo" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rs.</code><code class="descname">printReplicationInfo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2085"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rs.printReplicationInfo" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
 <p>Prints a formatted report of the replica set member&rsquo;s <a class="reference internal" href="../glossary.html#term-oplog"><span class="xref std std-term">oplog</span></a>.
 The displayed report formats the data returned by
-<a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><a class="dashingAutolink" name="autolink-4780"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a>. <a class="footnote-reference" href="#run-on-slave" id="id1">[1]</a> The output of
-<a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-4781"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> is identical to that of
-<a class="reference internal" href="db.printReplicationInfo.html#db.printReplicationInfo" title="db.printReplicationInfo()"><a class="dashingAutolink" name="autolink-4782"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printReplicationInfo()</span></code></a>.</p>
+<a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a>. <a class="footnote-reference" href="#run-on-slave" id="id1">[1]</a> The output of
+<a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> is identical to that of
+<a class="reference internal" href="db.printReplicationInfo.html#db.printReplicationInfo" title="db.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printReplicationInfo()</span></code></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-4783"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell does <strong>not</strong> return
-<a class="reference internal" href="../glossary.html#term-json"><span class="xref std std-term">JSON</span></a>. Use <a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-4784"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> for manual inspection, and
-<a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><a class="dashingAutolink" name="autolink-4785"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a> in scripts.</p>
+<p class="last">The <a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell does <strong>not</strong> return
+<a class="reference internal" href="../glossary.html#term-json"><span class="xref std std-term">JSON</span></a>. Use <a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> for manual inspection, and
+<a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a> in scripts.</p>
 </div>
 </dd></dl>
 
@@ -187,7 +187,7 @@ The displayed report formats the data returned by
 <div class="section" id="output-example">
 <h2>Output Example<a class="headerlink" href="#output-example" title="Permalink to this headline">&para;</a></h2>
 <p>The following example is a sample output from the
-<a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-4786"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> method run on the primary:</p>
+<a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> method run on the primary:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -204,8 +204,8 @@ now:                     Thu Jun 26 2014 14:24:39 GMT-0400 (EDT)
 </div>
 <div class="section" id="output-fields">
 <h2>Output Fields<a class="headerlink" href="#output-fields" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-4787"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> formats and prints the data returned by
-<a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><a class="dashingAutolink" name="autolink-4788"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a>:</p>
+<p><a class="reference internal" href="#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> formats and prints the data returned by
+<a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a>:</p>
 <dl class="docutils">
 <dt>configured oplog size</dt>
 <dd>Displays the <a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo.logSizeMB" title="db.getReplicationInfo.logSizeMB"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">db.getReplicationInfo.logSizeMB</span></code></a> value.</dd>
@@ -219,13 +219,13 @@ now:                     Thu Jun 26 2014 14:24:39 GMT-0400 (EDT)
 <dt>now</dt>
 <dd>Displays the <a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo.now" title="db.getReplicationInfo.now"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">db.getReplicationInfo.now</span></code></a>.</dd>
 </dl>
-<p>See <a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><a class="dashingAutolink" name="autolink-4789"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a> for description of the data.</p>
+<p>See <a class="reference internal" href="db.getReplicationInfo.html#db.getReplicationInfo" title="db.getReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getReplicationInfo()</span></code></a> for description of the data.</p>
 <table class="docutils footnote" frame="void" id="run-on-slave" rules="none">
 <colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>If run on a slave of a <a class="reference internal" href="../../core/master-slave.html"><span class="doc">master-slave replication</span></a>, the method calls
-<a class="reference internal" href="db.printSlaveReplicationInfo.html#db.printSlaveReplicationInfo" title="db.printSlaveReplicationInfo()"><a class="dashingAutolink" name="autolink-4790"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printSlaveReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printSlaveReplicationInfo()</span></code></a>. See
-<a class="reference internal" href="db.printSlaveReplicationInfo.html#db.printSlaveReplicationInfo" title="db.printSlaveReplicationInfo()"><a class="dashingAutolink" name="autolink-4791"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printSlaveReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printSlaveReplicationInfo()</span></code></a> for details.</td></tr>
+<a class="reference internal" href="db.printSlaveReplicationInfo.html#db.printSlaveReplicationInfo" title="db.printSlaveReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printSlaveReplicationInfo()</span></code></a>. See
+<a class="reference internal" href="db.printSlaveReplicationInfo.html#db.printSlaveReplicationInfo" title="db.printSlaveReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printSlaveReplicationInfo()</span></code></a> for details.</td></tr>
 </tbody>
 </table>
 </div>

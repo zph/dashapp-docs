@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3361"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.createIndexes%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.createIndexes() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1812"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.createIndexes%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.createIndexes() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.createIndexes/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-createindexes">
-<a class="dashingAutolink" name="autolink-3362"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.createIndexes%28%29%C2%B6"></a><h1>db.collection.createIndexes()<a class="headerlink" href="#db-collection-createindexes" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.createIndexes()<a class="headerlink" href="#db-collection-createindexes" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,7 +168,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.createIndexes">
-<code class="descclassname">db.collection.</code><code class="descname">createIndexes</code><span class="sig-paren">(</span><span class="optional">[</span><em>keyPatterns</em>, <span class="optional">]</span><em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3376"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.createIndexes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">createIndexes</code><span class="sig-paren">(</span><span class="optional">[</span><em>keyPatterns</em>, <span class="optional">]</span><em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1811"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.createIndexes" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -205,7 +205,7 @@ of the indexes. See <a class="reference internal" href="#createindexes-options">
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3363"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> is a wrapper around the
+<p>The <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> is a wrapper around the
 <a class="reference internal" href="../command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a> command.</p>
 <p>To minimize the impact of building an index on replica sets and sharded
 clusters, use a rolling index build procedure
@@ -221,11 +221,11 @@ options specific for that type.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p>When you specify options to
-<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3364"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a>, the options apply to
+<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a>, the options apply to
 <em>all</em> of the specified indexes. For example, if you specify a
 collation option, all of the created indexes will include that
 collation.</p>
-<p class="last"><a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3365"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> will return an error if you
+<p class="last"><a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> will return an error if you
 attempt to create indexes with incompatible options. Refer to the
 options descriptions for more information.</p>
 </div>
@@ -277,11 +277,11 @@ by concatenating the names of the indexed fields and the sort order.</p>
 <p>Whether user specified or MongoDB generated, index names including
 their full namespace (i.e. <code class="docutils literal"><span class="pre">database.collection</span></code>) cannot be longer
 than the <a class="reference internal" href="../limits.html#Index-Name-Length" title="Index Name Length"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">Index</span> <span class="pre">Name</span> <span class="pre">Limit</span></code></a>.</p>
-<p class="last">Options specified to <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes"><a class="dashingAutolink" name="autolink-3366"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes</span></code></a> apply to <strong>all</strong> of the index
+<p class="last">Options specified to <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes</span></code></a> apply to <strong>all</strong> of the index
 specifications included in the key pattern array. Since index names
 must be unique, you may
 only specify name if you are creating a single index using
-<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes"><a class="dashingAutolink" name="autolink-3367"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes</span></code></a>.</p>
+<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes</span></code></a>.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">partialFilterExpression</span></code></td>
@@ -688,7 +688,7 @@ specified number of units to each other.</p>
 </div>
 <div class="section" id="behaviors">
 <h2>Behaviors<a class="headerlink" href="#behaviors" title="Permalink to this headline">&para;</a></h2>
-<p>The <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3368"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndexes()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndexes()</span></code></a> method has the following
 behaviors.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -700,20 +700,20 @@ behaviors.</p>
 </div>
 <p>To add or change index options other than
 collation, you must drop the index using the
-<a class="reference internal" href="db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><a class="dashingAutolink" name="autolink-3369"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/dropIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">dropIndex()</span></code></a> method and issue another
-<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3370"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> operation with the new options.</p>
+<a class="reference internal" href="db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">dropIndex()</span></code></a> method and issue another
+<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> operation with the new options.</p>
 </li>
 <li><p class="first">If you create an index with one set of options, and then issue the
-<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3371"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> method with the same index
+<a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> method with the same index
 fields and different options (not including collation) without first
-dropping the index, <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3372"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> will <em>not</em>
+dropping the index, <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> will <em>not</em>
 rebuild the existing index with the new options.</p>
 </li>
 <li><p class="first">Unlike other index options, you can create multiple indexes on the same
 key(s) with different collations. To create indexes with the same key
 pattern but different collations, you must supply unique index names.</p>
 </li>
-<li><p class="first">If you call <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-3373"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> multiple times concurrently
+<li><p class="first">If you call <a class="reference internal" href="#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> multiple times concurrently
 with the same index specification, only
 the first operation will succeed. All other operations will have
 no effect.</p>
@@ -729,7 +729,7 @@ would create the index but not index such documents.</p>
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-3374"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> for examples of
+<p class="last"><a class="reference internal" href="db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> for examples of
 various index specifications.</p>
 </div>
 <div class="section" id="create-indexes-without-options">
@@ -792,7 +792,7 @@ rules, MongoDB can use the index. For details, see <a class="reference internal"
 <ul class="simple">
 <li>The <a class="reference internal" href="../../indexes.html"><span class="doc">Indexes</span></a> section of this manual for full
 documentation of indexes and indexing in MongoDB.</li>
-<li><a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><a class="dashingAutolink" name="autolink-3375"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a> to view the specifications of
+<li><a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a> to view the specifications of
 existing indexes for a collection.</li>
 <li><a class="reference internal" href="../../core/index-text.html"><span class="doc">Text Indexes</span></a> for details on creating <code class="docutils literal"><span class="pre">text</span></code>
 indexes.</li>

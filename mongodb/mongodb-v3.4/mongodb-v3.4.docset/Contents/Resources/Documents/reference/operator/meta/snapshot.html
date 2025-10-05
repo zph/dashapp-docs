@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-5907"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24snapshot%20%E2%80%94%20MongoDB%20Manual"></a><title>$snapshot &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2471"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24snapshot%20%E2%80%94%20MongoDB%20Manual"></a><title>$snapshot &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/meta/snapshot/"/><meta name="robots" content="index"/>
@@ -153,17 +153,17 @@
   </div>
                 
                   <div class="section" id="snapshot">
-<a class="dashingAutolink" name="autolink-5908"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24snapshot%C2%B6"></a><h1>$snapshot<a class="headerlink" href="#snapshot" title="Permalink to this headline">&para;</a></h1>
+<h1>$snapshot<a class="headerlink" href="#snapshot" title="Permalink to this headline">&para;</a></h1>
 <dl class="operator">
 <dt id="metaOp._S_snapshot">
-<code class="descname">$snapshot</code><a class="dashingAutolink" name="autolink-5913"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#metaOp._S_snapshot" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$snapshot</code><a class="dashingAutolink" name="autolink-2470"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#metaOp._S_snapshot" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="admonition note">
 <p class="first admonition-title">Note</p>
 <dl class="last docutils">
 <dt>Deprecated in the <code class="docutils literal"><span class="pre">mongo</span></code> Shell since v3.2</dt>
 <dd>Starting in v3.2, the <a class="reference internal" href="#metaOp._S_snapshot" title="$snapshot"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$snapshot</span></code></a> operator is deprecated in the
 <a class="reference internal" href="../../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell. In the <a class="reference internal" href="../../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use
-<a class="reference internal" href="../../method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-5909"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.snapshot()</span></code></a> instead.</dd>
+<a class="reference internal" href="../../method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.snapshot()</span></code></a> instead.</dd>
 </dl>
 </div>
 <p>The <a class="reference internal" href="#metaOp._S_snapshot" title="$snapshot"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$snapshot</span></code></a> operator prevents the cursor from
@@ -171,7 +171,7 @@ returning a document more than once because an intervening write
 operation results in a move of the document.</p>
 <p>Even in snapshot mode, objects inserted or deleted during the
 lifetime of the cursor may or may not be returned.</p>
-<p>The <a class="reference internal" href="../../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../../method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-5910"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.snapshot()</span></code></a>
+<p>The <a class="reference internal" href="../../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../../method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.snapshot()</span></code></a>
 method:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -202,7 +202,7 @@ copy</a>
 collections</span></a>.</li>
 <li>Do <strong>not</strong> use <a class="reference internal" href="#metaOp._S_snapshot" title="$snapshot"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$snapshot</span></code></a> with <a class="reference internal" href="hint.html#metaOp._S_hint" title="$hint"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$hint</span></code></a> or
 <a class="reference internal" href="orderby.html#metaOp._S_orderby" title="$orderby"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$orderby</span></code></a> (or the corresponding
-<a class="reference internal" href="../../method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-5911"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.hint()</span></code></a> and <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5912"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a> methods.)</li>
+<a class="reference internal" href="../../method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.hint()</span></code></a> and <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a> methods.)</li>
 </ul>
 </div>
 <table class="docutils footnote" frame="void" id="snapshot-alternative" rules="none">

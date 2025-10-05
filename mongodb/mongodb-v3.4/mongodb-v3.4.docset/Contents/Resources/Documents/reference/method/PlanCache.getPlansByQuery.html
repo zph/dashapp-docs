@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2885"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/PlanCache.getPlansByQuery%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>PlanCache.getPlansByQuery() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1689"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/PlanCache.getPlansByQuery%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>PlanCache.getPlansByQuery() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/PlanCache.getPlansByQuery/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="plancache-getplansbyquery">
-<a class="dashingAutolink" name="autolink-2886"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/PlanCache.getPlansByQuery%28%29%C2%B6"></a><h1>PlanCache.getPlansByQuery()<a class="headerlink" href="#plancache-getplansbyquery" title="Permalink to this headline">&para;</a></h1>
+<h1>PlanCache.getPlansByQuery()<a class="headerlink" href="#plancache-getplansbyquery" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,12 +166,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="PlanCache.getPlansByQuery">
-<code class="descclassname">PlanCache.</code><code class="descname">getPlansByQuery</code><span class="sig-paren">(</span><em>&lt;query&gt;</em>, <em>&lt;projection&gt;</em>, <em>&lt;sort&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2893"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#PlanCache.getPlansByQuery" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">PlanCache.</code><code class="descname">getPlansByQuery</code><span class="sig-paren">(</span><em>&lt;query&gt;</em>, <em>&lt;projection&gt;</em>, <em>&lt;sort&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1688"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#PlanCache.getPlansByQuery" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Displays the cached query plans for the specified <a class="reference internal" href="../glossary.html#term-query-shape"><span class="xref std std-term">query
 shape</span></a>.</p>
 <p>The query optimizer only caches the plans for those query shapes that
 can have more than one viable plan.</p>
-<p>The method is only available from the <a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><a class="dashingAutolink" name="autolink-2887"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/plan%20cache%20object"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">plan</span> <span class="pre">cache</span> <span class="pre">object</span></code></a> of a specific collection; i.e.</p>
+<p>The method is only available from the <a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">plan</span> <span class="pre">cache</span> <span class="pre">object</span></code></a> of a specific collection; i.e.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -181,7 +181,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#PlanCache.getPlansByQuery" title="PlanCache.getPlansByQuery()"><a class="dashingAutolink" name="autolink-2888"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.getPlansByQuery%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.getPlansByQuery()</span></code></a> method accepts the
+<p>The <a class="reference internal" href="#PlanCache.getPlansByQuery" title="PlanCache.getPlansByQuery()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.getPlansByQuery()</span></code></a> method accepts the
 following parameters:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -222,7 +222,7 @@ specifying the <code class="docutils literal"><span class="pre">sort</span></cod
 </tbody>
 </table>
 <p>To see the query shapes for which cached query plans exist, use the
-<a class="reference internal" href="PlanCache.listQueryShapes.html#PlanCache.listQueryShapes" title="PlanCache.listQueryShapes()"><a class="dashingAutolink" name="autolink-2889"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.listQueryShapes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.listQueryShapes()</span></code></a> method.</p>
+<a class="reference internal" href="PlanCache.listQueryShapes.html#PlanCache.listQueryShapes" title="PlanCache.listQueryShapes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.listQueryShapes()</span></code></a> method.</p>
 </dd></dl>
 
 </div>
@@ -264,9 +264,9 @@ copy</a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><a class="dashingAutolink" name="autolink-2890"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getPlanCache%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getPlanCache()</span></code></a></li>
-<li><a class="reference internal" href="PlanCache.listQueryShapes.html#PlanCache.listQueryShapes" title="PlanCache.listQueryShapes()"><a class="dashingAutolink" name="autolink-2891"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.listQueryShapes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.listQueryShapes()</span></code></a></li>
-<li><a class="reference internal" href="PlanCache.help.html#PlanCache.help" title="PlanCache.help()"><a class="dashingAutolink" name="autolink-2892"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.help%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.help()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getPlanCache()</span></code></a></li>
+<li><a class="reference internal" href="PlanCache.listQueryShapes.html#PlanCache.listQueryShapes" title="PlanCache.listQueryShapes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.listQueryShapes()</span></code></a></li>
+<li><a class="reference internal" href="PlanCache.help.html#PlanCache.help" title="PlanCache.help()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.help()</span></code></a></li>
 </ul>
 </div>
 </div>

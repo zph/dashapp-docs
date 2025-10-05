@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8514"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Linearizable%20Reads%20via%20findAndModify%20%E2%80%94%20MongoDB%20Manual"></a><title>Linearizable Reads via findAndModify &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3698"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Linearizable%20Reads%20via%20findAndModify%20%E2%80%94%20MongoDB%20Manual"></a><title>Linearizable Reads via findAndModify &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/perform-findAndModify-linearizable-reads/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="linearizable-reads-via-findandmodify">
-<span id="perform-findandmodify-linearizable-reads"></span><a class="dashingAutolink" name="autolink-8515"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Linearizable%20Reads%20via%20findAndModify%C2%B6"></a><h1>Linearizable Reads via <code class="docutils literal"><span class="pre">findAndModify</span></code><a class="headerlink" href="#linearizable-reads-via-findandmodify" title="Permalink to this headline">&para;</a></h1>
+<span id="perform-findandmodify-linearizable-reads"></span><h1>Linearizable Reads via <code class="docutils literal"><span class="pre">findAndModify</span></code><a class="headerlink" href="#linearizable-reads-via-findandmodify" title="Permalink to this headline">&para;</a></h1>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">&para;</a></h2>
 <p>When reading from a replica set, it is possible to read data that is
@@ -166,25 +166,25 @@ that is not stale. <a class="reference internal" href="../reference/read-concern
 concern guarantees only apply if read operations specify a query filter
 that uniquely identifies a single document.</p>
 <p>This tutorial outlines an alternative procedure, one using
-<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8516"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> to read data that is not stale
+<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> to read data that is not stale
 and cannot be rolled back, for deployments using MongoDB 3.2. For
 MongoDB 3.4, although the outlined procedure can be applied, see
 <a class="reference internal" href="../reference/read-concern.html#readconcern.&#34;linearizable&#34;" title="&#34;linearizable&#34;"><code class="xref mongodb mongodb-readconcern docutils literal"><span class="pre">&#34;linearizable&#34;</span></code></a> read concern instead.</p>
 </div>
 <div class="section" id="id1">
 <h2>Linearizable Reads via <code class="docutils literal"><span class="pre">findAndModify</span></code><a class="headerlink" href="#id1" title="Permalink to this headline">&para;</a></h2>
-<p>This procedure uses <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8517"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> to read
+<p>This procedure uses <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> to read
 data that is not stale and cannot be rolled back. To do so, the
-procedure uses the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8518"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method with
+procedure uses the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method with
 a <a class="reference internal" href="../reference/write-concern.html#write-concern"><span class="std std-ref">write concern</span></a> to modify a dummy field in a
 document. Specifically, the procedure requires that:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8519"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> use an <strong>exact</strong> match query,
+<li><a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> use an <strong>exact</strong> match query,
 and a <a class="reference internal" href="../core/index-unique.html"><span class="doc">unique index</span></a> <strong>must exist</strong> to
 satisfy the query.</li>
-<li><a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8520"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> must actually modify a
+<li><a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> must actually modify a
 document; i.e. result in a change to the document.</li>
-<li><a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8521"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> must use the write concern
+<li><a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> must use the write concern
 <a class="reference internal" href="../reference/write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">{</span> <span class="pre">w:</span> <span class="pre">&#34;majority&#34;</span> <span class="pre">}</span></code></a>.</li>
 </ul>
 <div class="admonition important">
@@ -231,10 +231,10 @@ copy</a>
 </div>
 <p>The documents in this collection contain a dummy field named
 <code class="docutils literal"><span class="pre">_dummy_field</span></code> that will be incremented by the
-<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8522"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> in the tutorial. If the field
-does not exist, the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8523"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> operation
+<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> in the tutorial. If the field
+does not exist, the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> operation
 will add the field to the document. The purpose of the field is to
-ensure that the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8524"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> results in a
+ensure that the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> results in a
 modification to the document.</p>
 </div>
 <div class="section" id="procedure">
@@ -243,7 +243,7 @@ modification to the document.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">1</div></div><div class="section" id="create-a-unique-index">
 <h3>Create a unique index.<a class="headerlink" href="#create-a-unique-index" title="Permalink to this headline">&para;</a></h3>
 <p>Create a unique index on the fields that will be used to specify an
-exact match in the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8525"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> operation.</p>
+exact match in the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> operation.</p>
 <p>This tutorial will use an exact match on the <code class="docutils literal"><span class="pre">sku</span></code> field. As such,
 create a unique index on the <code class="docutils literal"><span class="pre">sku</span></code> field.</p>
 <div class="button-code-block">
@@ -258,11 +258,11 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="use-findandmodify-to-read-committed-data">
 <h3>Use <code class="docutils literal"><span class="pre">findAndModify</span></code> to read committed data.<a class="headerlink" href="#use-findandmodify-to-read-committed-data" title="Permalink to this headline">&para;</a></h3>
-<p>Use the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8526"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> method to make a
+<p>Use the <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> method to make a
 trivial update to the document you want to read and return the
 modified document. A write concern of <a class="reference internal" href="../reference/write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">{</span> <span class="pre">w:</span> <span class="pre">&#34;majority&#34;</span> <span class="pre">}</span></code></a> is required. To specify the document to read, you must
 use an exact match query that is supported by a unique index.</p>
-<p>The following <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8527"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> operation
+<p>The following <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> operation
 specifies an exact match on the uniquely indexed field <code class="docutils literal"><span class="pre">sku</span></code> and
 increments the field named <code class="docutils literal"><span class="pre">_dummy_field</span></code> in the matching document.
 While not necessary, the write concern for this command also includes
@@ -288,12 +288,12 @@ copy</a>
 <p>Even in situations where two nodes in the replica set believe that
 they are the primary, only one will be able to complete the write with
 <a class="reference internal" href="../reference/write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">w:</span> <span class="pre">&#34;majority&#34;</span></code></a>. As such, the
-<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8528"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method with
+<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method with
 <a class="reference internal" href="../reference/write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">&#34;majority&#34;</span></code></a> write concern will be successful only when
 the client has connected to the true primary to perform the operation.</p>
 <p>Since the quorum read procedure only increments a dummy field in the
 document, you can safely repeat invocations of
-<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8529"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>, adjusting the
+<a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>, adjusting the
 <a class="reference internal" href="../reference/write-concern.html#wc-wtimeout"><span class="std std-ref">wtimeout</span></a> as necessary.</p>
 </div></div>
 </div>

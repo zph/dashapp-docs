@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8019"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Prevent%20Secondary%20from%20Becoming%20Primary%20%E2%80%94%20MongoDB%20Manual"></a><title>Prevent Secondary from Becoming Primary &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3608"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Prevent%20Secondary%20from%20Becoming%20Primary%20%E2%80%94%20MongoDB%20Manual"></a><title>Prevent Secondary from Becoming Primary &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/configure-secondary-only-replica-set-member/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="prevent-secondary-from-becoming-primary">
-<a class="dashingAutolink" name="autolink-8020"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Prevent%20Secondary%20from%20Becoming%20Primary%C2%B6"></a><h1>Prevent Secondary from Becoming Primary<a class="headerlink" href="#prevent-secondary-from-becoming-primary" title="Permalink to this headline">&para;</a></h1>
+<h1>Prevent Secondary from Becoming Primary<a class="headerlink" href="#prevent-secondary-from-becoming-primary" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -191,7 +191,7 @@ the <a class="reference internal" href="../reference/replica-configuration.html#
 <p class="last">MongoDB does not permit the current <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> to have a priority
 of <code class="docutils literal"><span class="pre">0</span></code>. To prevent the current primary from again becoming a primary,
 you must first step down the current primary using
-<a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8021"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>.</p>
 </div>
 </div>
 <div class="section" id="procedure">
@@ -200,7 +200,7 @@ you must first step down the current primary using
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <ul class="last simple">
-<li>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8022"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can force the current
+<li>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can force the current
 primary to step down, which causes an <a class="reference internal" href="../core/replica-set-elections.html#replica-set-elections"><span class="std std-ref">election</span></a>. When the primary steps down, the
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> closes all client connections. While this
 typically takes 10-20 seconds, try to make these changes during
@@ -211,11 +211,11 @@ MongoDB versions as validation rules may differ across MongoDB versions.</li>
 </div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">1</div></div><div class="section" id="retrieve-the-current-replica-set-configuration">
 <h3>Retrieve the current replica set configuration.<a class="headerlink" href="#retrieve-the-current-replica-set-configuration" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8023"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method returns a <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set
+<p>The <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method returns a <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set
 configuration document</span></a> that
 contains the current configuration for a replica set.</p>
 <p>In a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell connected to a primary, run the
-<a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8024"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method and assign the result to a variable:</p>
+<a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method and assign the result to a variable:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -254,9 +254,9 @@ the replica set.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="reconfigure-the-replica-set">
 <h3>Reconfigure the replica set.<a class="headerlink" href="#reconfigure-the-replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>Use <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8025"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method to reconfigure the replica set
+<p>Use <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method to reconfigure the replica set
 with the updated replica set configuration document.</p>
-<p>Pass the <code class="docutils literal"><span class="pre">cfg</span></code> variable to the <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8026"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method:</p>
+<p>Pass the <code class="docutils literal"><span class="pre">cfg</span></code> variable to the <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

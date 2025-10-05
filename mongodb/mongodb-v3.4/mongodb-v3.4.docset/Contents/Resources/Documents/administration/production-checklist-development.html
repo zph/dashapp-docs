@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-62"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Development%20Checklist%20%E2%80%94%20MongoDB%20Manual"></a><title>Development Checklist &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-37"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Development%20Checklist%20%E2%80%94%20MongoDB%20Manual"></a><title>Development Checklist &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/administration/production-checklist-development/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="development-checklist">
-<a class="dashingAutolink" name="autolink-63"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Development%20Checklist%C2%B6"></a><h1>Development Checklist<a class="headerlink" href="#development-checklist" title="Permalink to this headline">&para;</a></h1>
+<h1>Development Checklist<a class="headerlink" href="#development-checklist" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -259,7 +259,7 @@ during replica set elections.</li>
 <li>Ensure that your applications handle failed requests and retry them if
 applicable. Drivers <strong>do not</strong> automatically retry failed requests.</li>
 <li>Use exponential backoff logic for database request retries.</li>
-<li>Use <a class="reference internal" href="../reference/method/cursor.maxTimeMS.html#cursor.maxTimeMS" title="cursor.maxTimeMS()"><a class="dashingAutolink" name="autolink-61"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.maxTimeMS%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxTimeMS()</span></code></a> for reads and <a class="reference internal" href="../reference/write-concern.html#wc-wtimeout"><span class="std std-ref">wtimeout</span></a> for
+<li>Use <a class="reference internal" href="../reference/method/cursor.maxTimeMS.html#cursor.maxTimeMS" title="cursor.maxTimeMS()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxTimeMS()</span></code></a> for reads and <a class="reference internal" href="../reference/write-concern.html#wc-wtimeout"><span class="std std-ref">wtimeout</span></a> for
 writes if you need to cap execution time for database operations.</li>
 </ul>
 </div>

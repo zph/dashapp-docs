@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1247"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/fsyncUnlock%20%E2%80%94%20MongoDB%20Manual"></a><title>fsyncUnlock &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-610"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/fsyncUnlock%20%E2%80%94%20MongoDB%20Manual"></a><title>fsyncUnlock &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/fsyncUnlock/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="fsyncunlock">
-<a class="dashingAutolink" name="autolink-1248"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/fsyncUnlock%C2%B6"></a><h1>fsyncUnlock<a class="headerlink" href="#fsyncunlock" title="Permalink to this headline">&para;</a></h1>
+<h1>fsyncUnlock<a class="headerlink" href="#fsyncunlock" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,7 +167,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.fsyncUnlock">
-<code class="descname">fsyncUnlock</code><a class="dashingAutolink" name="autolink-1253"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.fsyncUnlock" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">fsyncUnlock</code><a class="dashingAutolink" name="autolink-611"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.fsyncUnlock" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Reduces the lock taken by <a class="reference internal" href="fsync.html#dbcmd.fsync" title="fsync"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">fsync</span></code></a> (with the lock option)
 on a <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance by 1.</p>
 <div class="admonition important">
@@ -186,7 +186,7 @@ writes.</p>
 you will use <a class="reference internal" href="#dbcmd.fsyncUnlock" title="fsyncUnlock"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">fsyncUnlock</span></code></a> following a database
 <a class="reference internal" href="../../core/backups.html"><span class="doc">backup operation</span></a>.</p>
 <p>To run the <a class="reference internal" href="#dbcmd.fsyncUnlock" title="fsyncUnlock"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">fsyncUnlock</span></code></a> command, use the
-<a class="reference internal" href="../method/db.adminCommand.html#db.adminCommand" title="db.adminCommand()"><a class="dashingAutolink" name="autolink-1249"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.adminCommand%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.adminCommand()</span></code></a> method:</p>
+<a class="reference internal" href="../method/db.adminCommand.html#db.adminCommand" title="db.adminCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.adminCommand()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -217,16 +217,16 @@ copy</a>
 <div class="admonition-tip admonition">
 <p class="first admonition-title">Tip</p>
 <p class="last">The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the helper method
-<a class="reference internal" href="../method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><a class="dashingAutolink" name="autolink-1250"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncUnlock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncUnlock()</span></code></a>.</p>
+<a class="reference internal" href="../method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncUnlock()</span></code></a>.</p>
 </div>
 </dd></dl>
 
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">&para;</a></h2>
-<p>Consider a situation where <a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-1251"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> has been issued two
+<p>Consider a situation where <a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> has been issued two
 times. The following <a class="reference internal" href="#dbcmd.fsyncUnlock" title="fsyncUnlock"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">fsyncUnlock</span></code></a> operation reduces the
-locks taken by <a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-1252"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> by 1:</p>
+locks taken by <a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> by 1:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

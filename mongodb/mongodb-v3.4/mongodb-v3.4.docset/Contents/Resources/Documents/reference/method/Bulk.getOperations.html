@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2704"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk.getOperations%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk.getOperations() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1636"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk.getOperations%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk.getOperations() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/Bulk.getOperations/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="bulk-getoperations">
-<a class="dashingAutolink" name="autolink-2705"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Bulk.getOperations%28%29%C2%B6"></a><h1>Bulk.getOperations()<a class="headerlink" href="#bulk-getoperations" title="Permalink to this headline">&para;</a></h1>
+<h1>Bulk.getOperations()<a class="headerlink" href="#bulk-getoperations" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -163,26 +163,26 @@
 </div>
 <dl class="method">
 <dt id="Bulk.getOperations">
-<code class="descclassname">Bulk.</code><code class="descname">getOperations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2716"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Bulk.getOperations" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">Bulk.</code><code class="descname">getOperations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1632"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Bulk.getOperations" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
 <p>Returns an array of write operations executed through
-<a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-2706"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>. The returned write operations are in
+<a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>. The returned write operations are in
 groups as determined by MongoDB for execution. For information on
 how MongoDB groups the list of bulk write operations, see
 <a class="reference internal" href="Bulk.execute.html#bulk-execute-behavior"><span class="std std-ref">Bulk.execute() Behavior</span></a>.</p>
-<p>Only use <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><a class="dashingAutolink" name="autolink-2707"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.getOperations%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.getOperations()</span></code></a> after a
-<a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-2708"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>. Calling <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><a class="dashingAutolink" name="autolink-2709"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.getOperations%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.getOperations()</span></code></a>
-before you call <a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-2710"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a> will result in an
+<p>Only use <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.getOperations()</span></code></a> after a
+<a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>. Calling <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.getOperations()</span></code></a>
+before you call <a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a> will result in an
 <em>incomplete</em> list.</p>
 </dd></dl>
 
 <div class="section" id="example">
 <span id="bulk-getoperations-example"></span><h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-2711"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder on the
+<p>The following initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder on the
 <code class="docutils literal"><span class="pre">items</span></code> collection, adds a series of write operations, executes the
-operations, and then calls <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><a class="dashingAutolink" name="autolink-2712"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getOperations%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getOperations()</span></code></a> on the
+operations, and then calls <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getOperations()</span></code></a> on the
 <code class="docutils literal"><span class="pre">bulk</span></code> builder object:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -200,7 +200,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><a class="dashingAutolink" name="autolink-2713"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getOperations%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getOperations()</span></code></a> method returns an array with the
+<p>The <a class="reference internal" href="#Bulk.getOperations" title="Bulk.getOperations()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getOperations()</span></code></a> method returns an array with the
 operations executed. The output shows that MongoDB divided the
 operations into 2 groups, one with 1000 operations and one with 500.
 For information on how MongoDB groups the list of bulk write
@@ -245,7 +245,7 @@ copy</a>
 <p>The array contains documents with the following fields:</p>
 <dl class="data">
 <dt id="originalZeroIndex">
-<code class="descname">originalZeroIndex</code><a class="dashingAutolink" name="autolink-2717"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#originalZeroIndex" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">originalZeroIndex</code><a class="dashingAutolink" name="autolink-1633"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#originalZeroIndex" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the order in which the operation was added to the bulk
 operations builder, based on a zero index; e.g. first operation
 added to the bulk operations builder will have
@@ -254,7 +254,7 @@ added to the bulk operations builder will have
 
 <dl class="data">
 <dt id="batchType">
-<code class="descname">batchType</code><a class="dashingAutolink" name="autolink-2718"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#batchType" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">batchType</code><a class="dashingAutolink" name="autolink-1634"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#batchType" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the write operations type.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -282,13 +282,13 @@ added to the bulk operations builder will have
 
 <dl class="data">
 <dt id="operations">
-<code class="descname">operations</code><a class="dashingAutolink" name="autolink-2719"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#operations" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">operations</code><a class="dashingAutolink" name="autolink-1635"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#operations" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Array of documents that contain the details of the operation.</p>
 </dd></dl>
 
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-2714"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> and <a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-2715"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>.</p>
+<p class="last"><a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> and <a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>.</p>
 </div>
 </div>
 </div>

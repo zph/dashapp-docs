@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-315"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Index%20Intersection%20%E2%80%94%20MongoDB%20Manual"></a><title>Index Intersection &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-184"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Index%20Intersection%20%E2%80%94%20MongoDB%20Manual"></a><title>Index Intersection &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/index-intersection/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="index-intersection">
-<a class="dashingAutolink" name="autolink-312"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Index%20Intersection%C2%B6"></a><h1>Index Intersection<a class="headerlink" href="#index-intersection" title="Permalink to this headline">&para;</a></h1>
+<h1>Index Intersection<a class="headerlink" href="#index-intersection" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -189,7 +189,7 @@ copy</a>
 </div>
 </div>
 <p>To determine if MongoDB used index intersection, run
-<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-313"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a>; the results of <a class="reference internal" href="../reference/explain-results.html#explain-output-index-intersection"><span class="std std-ref">explain()</span></a> will include either an
+<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a>; the results of <a class="reference internal" href="../reference/explain-results.html#explain-output-index-intersection"><span class="std std-ref">explain()</span></a> will include either an
 <code class="docutils literal"><span class="pre">AND_SORTED</span></code> stage or an <code class="docutils literal"><span class="pre">AND_HASH</span></code> stage.</p>
 <table class="docutils footnote" frame="void" id="previous-versions" rules="none">
 <colgroup><col class="label"/><col/></colgroup>
@@ -302,7 +302,7 @@ system.</p>
 </div>
 <div class="section" id="index-intersection-and-sort">
 <h2>Index Intersection and Sort<a class="headerlink" href="#index-intersection-and-sort" title="Permalink to this headline">&para;</a></h2>
-<p>Index intersection does not apply when the <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-314"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>
+<p>Index intersection does not apply when the <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>
 operation requires an index completely separate from the query
 predicate.</p>
 <p>For example, the <code class="docutils literal"><span class="pre">orders</span></code> collection has the following indexes:</p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1620"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/replSetGetStatus%20%E2%80%94%20MongoDB%20Manual"></a><title>replSetGetStatus &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-902"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/replSetGetStatus%20%E2%80%94%20MongoDB%20Manual"></a><title>replSetGetStatus &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/replSetGetStatus/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="replsetgetstatus">
-<a class="dashingAutolink" name="autolink-1621"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/replSetGetStatus%C2%B6"></a><h1>replSetGetStatus<a class="headerlink" href="#replsetgetstatus" title="Permalink to this headline">&para;</a></h1>
+<h1>replSetGetStatus<a class="headerlink" href="#replsetgetstatus" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.replSetGetStatus">
-<code class="descname">replSetGetStatus</code><a class="dashingAutolink" name="autolink-1628"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.replSetGetStatus" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">replSetGetStatus</code><a class="dashingAutolink" name="autolink-850"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.replSetGetStatus" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">replSetGetStatus</span></code> command returns the status of the replica
 set from the point of view of the server that processed the command.
 <code class="docutils literal"><span class="pre">replSetGetStatus</span></code> must be run against the <a class="reference internal" href="../glossary.html#term-admin-database"><span class="xref std std-term">admin database</span></a>.
@@ -195,7 +195,7 @@ copy</a>
 heartbeats sent to the server by other members of the replica set.
 Because of the frequency of heartbeats, these data can be several
 seconds out of date.</p>
-<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-1622"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>
+<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>
 helper; however, you cannot specify the <code class="docutils literal"><span class="pre">initialSync:</span> <span class="pre">1</span></code> option
 using the helper.</p>
 <p>The <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance must have replication enabled and be a
@@ -535,15 +535,15 @@ copy</a>
 following fields:</p>
 <dl class="data">
 <dt id="replSetGetStatus.set">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">set</code><a class="dashingAutolink" name="autolink-1629"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.set" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">set</code><a class="dashingAutolink" name="autolink-851"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.set" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">set</span></code> value is the name of the replica set, configured in the
 <a class="reference internal" href="../configuration-options.html#replication.replSetName" title="replication.replSetName"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">replSetName</span></code></a> setting. This is the same value as
-<a class="reference internal" href="../replica-configuration.html#rsconf._id" title="_id"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">_id</span></code></a> in <a class="reference internal" href="../method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-1623"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>.</p>
+<a class="reference internal" href="../replica-configuration.html#rsconf._id" title="_id"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">_id</span></code></a> in <a class="reference internal" href="../method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.date">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">date</code><a class="dashingAutolink" name="autolink-1630"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.date" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">date</code><a class="dashingAutolink" name="autolink-852"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.date" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISODate</span></a> formatted date and time that reflects the current
 time according to the server that processed the
 <strong class="command">replSetGetStatus</strong> command. Compare this to the values of
@@ -554,14 +554,14 @@ replica set.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.myState">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">myState</code><a class="dashingAutolink" name="autolink-1631"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.myState" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">myState</code><a class="dashingAutolink" name="autolink-853"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.myState" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An integer between <code class="docutils literal"><span class="pre">0</span></code> and <code class="docutils literal"><span class="pre">10</span></code> that represents the <a class="reference internal" href="../replica-states.html"><span class="doc">replica
 state</span></a> of the current member.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.term">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">term</code><a class="dashingAutolink" name="autolink-1632"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.term" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">term</code><a class="dashingAutolink" name="autolink-854"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.term" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -574,7 +574,7 @@ distributed consensus algorithm to ensure correctness.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.syncingTo">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">syncingTo</code><a class="dashingAutolink" name="autolink-1633"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.syncingTo" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">syncingTo</code><a class="dashingAutolink" name="autolink-855"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.syncingTo" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.4.16: </span>Starting in MongoDB 3.4.16, MongoDB deprecates
 <a class="reference internal" href="#replSetGetStatus.syncingTo" title="replSetGetStatus.syncingTo"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">syncingTo</span></code></a>. See
@@ -587,7 +587,7 @@ an empty string <code class="docutils literal"><span class="pre">&#34;&#34;</spa
 
 <dl class="data">
 <dt id="replSetGetStatus.syncSourceHost">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">syncSourceHost</code><a class="dashingAutolink" name="autolink-1634"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.syncSourceHost" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">syncSourceHost</code><a class="dashingAutolink" name="autolink-856"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.syncSourceHost" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.16.</span></p>
 </div>
@@ -600,7 +600,7 @@ the <a class="reference internal" href="#replSetGetStatus.syncSourceId" title="r
 
 <dl class="data">
 <dt id="replSetGetStatus.syncSourceId">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">syncSourceId</code><a class="dashingAutolink" name="autolink-1635"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.syncSourceId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">syncSourceId</code><a class="dashingAutolink" name="autolink-857"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.syncSourceId" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.16.</span></p>
 </div>
@@ -614,7 +614,7 @@ the <a class="reference internal" href="#replSetGetStatus.syncSourceId" title="r
 
 <dl class="data">
 <dt id="replSetGetStatus.heartbeatIntervalMillis">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">heartbeatIntervalMillis</code><a class="dashingAutolink" name="autolink-1636"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.heartbeatIntervalMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">heartbeatIntervalMillis</code><a class="dashingAutolink" name="autolink-858"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.heartbeatIntervalMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -623,7 +623,7 @@ the <a class="reference internal" href="#replSetGetStatus.syncSourceId" title="r
 
 <dl class="data">
 <dt id="replSetGetStatus.optimes">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">optimes</code><a class="dashingAutolink" name="autolink-1637"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">optimes</code><a class="dashingAutolink" name="autolink-859"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -631,7 +631,7 @@ the <a class="reference internal" href="#replSetGetStatus.syncSourceId" title="r
 <a class="reference internal" href="../glossary.html#term-optime"><span class="xref std std-term">optimes</span></a> used to inspect replication progress.</p>
 <dl class="data">
 <dt id="replSetGetStatus.optimes.lastCommittedOpTime">
-<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">lastCommittedOpTime</code><a class="dashingAutolink" name="autolink-1638"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.lastCommittedOpTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">lastCommittedOpTime</code><a class="dashingAutolink" name="autolink-860"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.lastCommittedOpTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Information, from the viewpoint of this member, regarding the
 most recent operation that has been written to a majority of
 replica set members.</p>
@@ -650,7 +650,7 @@ is equal to <code class="docutils literal"><span class="pre">-1</span></code>.</
 
 <dl class="data">
 <dt id="replSetGetStatus.optimes.readConcernMajorityOpTime">
-<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">readConcernMajorityOpTime</code><a class="dashingAutolink" name="autolink-1639"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.readConcernMajorityOpTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">readConcernMajorityOpTime</code><a class="dashingAutolink" name="autolink-861"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.readConcernMajorityOpTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Information, from the viewpoint of this member, regarding the
 most recent operation that can fulfill read concern
 <a class="reference internal" href="../read-concern.html#readconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-readconcern docutils literal"><span class="pre">&#34;majority&#34;</span></code></a> queries; i.e. the most recent
@@ -674,7 +674,7 @@ is equal to <code class="docutils literal"><span class="pre">-1</span></code>.</
 
 <dl class="data">
 <dt id="replSetGetStatus.optimes.appliedOpTime">
-<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">appliedOpTime</code><a class="dashingAutolink" name="autolink-1640"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.appliedOpTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">appliedOpTime</code><a class="dashingAutolink" name="autolink-862"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.appliedOpTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Information, from the viewpoint of this member, regarding the
 most recent operation that has been applied to this member of the
 replica set.</p>
@@ -693,7 +693,7 @@ operation.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.optimes.durableOpTime">
-<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">durableOpTime</code><a class="dashingAutolink" name="autolink-1641"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.durableOpTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.optimes.</code><code class="descname">durableOpTime</code><a class="dashingAutolink" name="autolink-863"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.optimes.durableOpTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Information,, from the viewpoint of this member, regarding the
 most recent operation that has been written to the journal of
 this member of the replica set.</p>
@@ -714,7 +714,7 @@ operation.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">initialSyncStatus</code><a class="dashingAutolink" name="autolink-1642"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">initialSyncStatus</code><a class="dashingAutolink" name="autolink-864"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -729,7 +729,7 @@ appear once the initial sync completes.</p>
 </div>
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.failedInitialSyncAttempts">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">failedInitialSyncAttempts</code><a class="dashingAutolink" name="autolink-1643"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.failedInitialSyncAttempts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">failedInitialSyncAttempts</code><a class="dashingAutolink" name="autolink-865"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.failedInitialSyncAttempts" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -740,7 +740,7 @@ secondary.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.maxFailedInitialSyncAttempts">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">maxFailedInitialSyncAttempts</code><a class="dashingAutolink" name="autolink-1644"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.maxFailedInitialSyncAttempts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">maxFailedInitialSyncAttempts</code><a class="dashingAutolink" name="autolink-866"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.maxFailedInitialSyncAttempts" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -751,7 +751,7 @@ before the member shuts down.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.initialSyncStart">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncStart</code><a class="dashingAutolink" name="autolink-1645"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncStart" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncStart</code><a class="dashingAutolink" name="autolink-867"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncStart" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -761,7 +761,7 @@ option on a secondary</em></p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.initialSyncEnd">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncEnd</code><a class="dashingAutolink" name="autolink-1646"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncEnd" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncEnd</code><a class="dashingAutolink" name="autolink-868"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncEnd" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -771,7 +771,7 @@ option on a secondary</em></p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.initialSyncElapsedMillis">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncElapsedMillis</code><a class="dashingAutolink" name="autolink-1647"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncElapsedMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncElapsedMillis</code><a class="dashingAutolink" name="autolink-869"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncElapsedMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -783,7 +783,7 @@ and <a class="reference internal" href="#replSetGetStatus.initialSyncStatus.init
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.initialSyncAttempts">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncAttempts</code><a class="dashingAutolink" name="autolink-1648"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncAttempts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncAttempts</code><a class="dashingAutolink" name="autolink-870"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncAttempts" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -809,7 +809,7 @@ copy</a>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.fetchedMissingDocs">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">fetchedMissingDocs</code><a class="dashingAutolink" name="autolink-1649"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.fetchedMissingDocs" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">fetchedMissingDocs</code><a class="dashingAutolink" name="autolink-871"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.fetchedMissingDocs" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -824,7 +824,7 @@ replica set.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.appliedOps">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">appliedOps</code><a class="dashingAutolink" name="autolink-1650"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.appliedOps" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">appliedOps</code><a class="dashingAutolink" name="autolink-872"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.appliedOps" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -838,7 +838,7 @@ replica set.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.initialSyncOplogStart">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncOplogStart</code><a class="dashingAutolink" name="autolink-1651"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncOplogStart" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncOplogStart</code><a class="dashingAutolink" name="autolink-873"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncOplogStart" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -854,7 +854,7 @@ replica set.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.initialSyncOplogEnd">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncOplogEnd</code><a class="dashingAutolink" name="autolink-1652"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncOplogEnd" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">initialSyncOplogEnd</code><a class="dashingAutolink" name="autolink-874"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.initialSyncOplogEnd" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -870,7 +870,7 @@ replica set.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.databases">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">databases</code><a class="dashingAutolink" name="autolink-1653"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.databases" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.</code><code class="descname">databases</code><a class="dashingAutolink" name="autolink-875"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.databases" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -880,7 +880,7 @@ option on a secondary</em></p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.databases.databasesCloned">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.databases.</code><code class="descname">databasesCloned</code><a class="dashingAutolink" name="autolink-1654"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.databases.databasesCloned" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.databases.</code><code class="descname">databasesCloned</code><a class="dashingAutolink" name="autolink-876"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.databases.databasesCloned" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -890,7 +890,7 @@ option on a secondary</em></p>
 
 <dl class="data">
 <dt id="replSetGetStatus.initialSyncStatus.databases.&lt;dbname&gt;">
-<code class="descclassname">replSetGetStatus.initialSyncStatus.databases.</code><code class="descname">&lt;dbname&gt;</code><a class="dashingAutolink" name="autolink-1655"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.databases.&lt;dbname&gt;" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.initialSyncStatus.databases.</code><code class="descname">&lt;dbname&gt;</code><a class="dashingAutolink" name="autolink-877"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.initialSyncStatus.databases.&lt;dbname&gt;" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span><em>Available only if the command is run with the initialSync: 1
 option on a secondary</em></p>
@@ -927,24 +927,24 @@ copy</a>
 
 <dl class="data">
 <dt id="replSetGetStatus.members">
-<code class="descclassname">replSetGetStatus.</code><code class="descname">members</code><a class="dashingAutolink" name="autolink-1656"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.</code><code class="descname">members</code><a class="dashingAutolink" name="autolink-878"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">members</span></code> field holds an array that contains a document for
 every member in the replica set.</p>
 <dl class="data">
 <dt id="replSetGetStatus.members[n]._id">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-1657"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n]._id" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-879"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n]._id" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">_id</span></code> field holds the identifier for the member.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].name">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">name</code><a class="dashingAutolink" name="autolink-1658"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].name" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">name</code><a class="dashingAutolink" name="autolink-880"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].name" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">name</span></code> field holds the name of the server.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].self">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">self</code><a class="dashingAutolink" name="autolink-1659"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].self" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">self</code><a class="dashingAutolink" name="autolink-881"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].self" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">self</span></code> field is only included in the document for the
 current <code class="docutils literal"><span class="pre">mongod</span></code> instance in the members array. Its value is
 <code class="docutils literal"><span class="pre">true</span></code>.</p>
@@ -952,16 +952,16 @@ current <code class="docutils literal"><span class="pre">mongod</span></code> in
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].health">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">health</code><a class="dashingAutolink" name="autolink-1660"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].health" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">health</code><a class="dashingAutolink" name="autolink-882"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].health" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">health</span></code> value is only present for the other members of the
 replica set (i.e. not the member that returns
-<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status"><a class="dashingAutolink" name="autolink-1624"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status</span></code></a>). This field conveys if the member is up (i.e.
+<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status</span></code></a>). This field conveys if the member is up (i.e.
 <code class="docutils literal"><span class="pre">1</span></code>) or down (i.e. <code class="docutils literal"><span class="pre">0</span></code>).</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].state">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">state</code><a class="dashingAutolink" name="autolink-1661"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].state" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">state</code><a class="dashingAutolink" name="autolink-883"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].state" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The value of <a class="reference internal" href="#replSetGetStatus.members[n].state" title="replSetGetStatus.members[n].state"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">state</span></code></a> is an
 integer between <code class="docutils literal"><span class="pre">0</span></code> and <code class="docutils literal"><span class="pre">10</span></code> that represents the
 <a class="reference internal" href="../replica-states.html"><span class="doc">replica state</span></a> of the member.</p>
@@ -969,23 +969,23 @@ integer between <code class="docutils literal"><span class="pre">0</span></code>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].stateStr">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">stateStr</code><a class="dashingAutolink" name="autolink-1662"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].stateStr" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">stateStr</code><a class="dashingAutolink" name="autolink-884"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].stateStr" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string that describes <a class="reference internal" href="#replSetGetStatus.members[n].state" title="replSetGetStatus.members[n].state"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">state</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].uptime">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">uptime</code><a class="dashingAutolink" name="autolink-1663"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].uptime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">uptime</code><a class="dashingAutolink" name="autolink-885"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].uptime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="#replSetGetStatus.members[n].uptime" title="replSetGetStatus.members[n].uptime"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">uptime</span></code></a> field holds a value
 that reflects the number of seconds that this member has been
 online.</p>
 <p>This value does not appear for the member that returns the
-<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-1625"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> data.</p>
+<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> data.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].optime">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optime</code><a class="dashingAutolink" name="autolink-1664"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optime</code><a class="dashingAutolink" name="autolink-886"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Information regarding the last operation from the operation log that
 this member has applied.</p>
 <div class="versionchanged">
@@ -1008,7 +1008,7 @@ the <a class="reference internal" href="../glossary.html#term-oplog"><span class
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].optimeDurable">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optimeDurable</code><a class="dashingAutolink" name="autolink-1665"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optimeDurable" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optimeDurable</code><a class="dashingAutolink" name="autolink-887"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optimeDurable" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -1029,7 +1029,7 @@ operation.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].optimeDate">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optimeDate</code><a class="dashingAutolink" name="autolink-1666"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optimeDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optimeDate</code><a class="dashingAutolink" name="autolink-888"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optimeDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISODate</span></a> formatted date string that reflects the last
 entry from the <a class="reference internal" href="../glossary.html#term-oplog"><span class="xref std std-term">oplog</span></a> that this member applied. If this
 differs significantly from
@@ -1041,7 +1041,7 @@ new operations since the last update. Compare
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].optimeDurableDate">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optimeDurableDate</code><a class="dashingAutolink" name="autolink-1667"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optimeDurableDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">optimeDurableDate</code><a class="dashingAutolink" name="autolink-889"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].optimeDurableDate" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -1052,7 +1052,7 @@ journal.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].syncingTo">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncingTo</code><a class="dashingAutolink" name="autolink-1668"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].syncingTo" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncingTo</code><a class="dashingAutolink" name="autolink-890"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].syncingTo" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.4.16: </span>Starting in MongoDB 3.4.16, MongoDB deprecates
 <a class="reference internal" href="#replSetGetStatus.members[n].syncingTo" title="replSetGetStatus.members[n].syncingTo"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">syncingTo</span></code></a>. See
@@ -1065,7 +1065,7 @@ returns an empty string <code class="docutils literal"><span class="pre">&#34;&#
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].syncSourceHost">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncSourceHost</code><a class="dashingAutolink" name="autolink-1669"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].syncSourceHost" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncSourceHost</code><a class="dashingAutolink" name="autolink-891"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].syncSourceHost" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.16.</span></p>
 </div>
@@ -1079,7 +1079,7 @@ string and the <a class="reference internal" href="#replSetGetStatus.members[n].
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].syncSourceId">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncSourceId</code><a class="dashingAutolink" name="autolink-1670"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].syncSourceId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncSourceId</code><a class="dashingAutolink" name="autolink-892"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].syncSourceId" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.16.</span></p>
 </div>
@@ -1094,7 +1094,7 @@ string and the <a class="reference internal" href="#replSetGetStatus.members[n].
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].electionTime">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">electionTime</code><a class="dashingAutolink" name="autolink-1671"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].electionTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">electionTime</code><a class="dashingAutolink" name="autolink-893"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].electionTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For the current primary, information regarding the election
 <a class="reference internal" href="../bson-types.html#document-bson-type-timestamp"><span class="std std-ref">Timestamp</span></a> from the
 operation log. See <a class="reference internal" href="../../core/replica-set-high-availability.html"><span class="doc">Replica Set High Availability</span></a> for more
@@ -1103,7 +1103,7 @@ information about elections.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].electionDate">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">electionDate</code><a class="dashingAutolink" name="autolink-1672"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].electionDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">electionDate</code><a class="dashingAutolink" name="autolink-894"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].electionDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For the current primary, an <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISODate</span></a> formatted date string
 that reflects the election date. See
 <a class="reference internal" href="../../core/replica-set-high-availability.html"><span class="doc">Replica Set High Availability</span></a> for more information about
@@ -1112,14 +1112,14 @@ elections.</p>
 
 <dl class="data">
 <dt id="iddup.replSetGetStatus.members[n].self">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">self</code><a class="dashingAutolink" name="autolink-1673"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.replSetGetStatus.members[n].self" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">self</code><a class="dashingAutolink" name="autolink-895"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.replSetGetStatus.members[n].self" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Indicates which replica set member processed the
 <strong class="command">replSetGetStatus</strong> command.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].lastHeartbeat">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">lastHeartbeat</code><a class="dashingAutolink" name="autolink-1674"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].lastHeartbeat" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">lastHeartbeat</code><a class="dashingAutolink" name="autolink-896"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].lastHeartbeat" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISODate</span></a> formatted date and time that reflects the last
 time the server that processed the <strong class="command">replSetGetStatus</strong>
 command received a response from a heartbeat that it sent to this
@@ -1132,7 +1132,7 @@ track latency between these replica set members.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].lastHeartbeatRecv">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">lastHeartbeatRecv</code><a class="dashingAutolink" name="autolink-1675"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].lastHeartbeatRecv" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">lastHeartbeatRecv</code><a class="dashingAutolink" name="autolink-897"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].lastHeartbeatRecv" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISODate</span></a> formatted date and time that reflects the last
 time the server that processed the <strong class="command">replSetGetStatus</strong>
 command received a heartbeat request from this member
@@ -1146,7 +1146,7 @@ latency between these replica set members.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].lastHeartbeatMessage">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">lastHeartbeatMessage</code><a class="dashingAutolink" name="autolink-1676"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].lastHeartbeatMessage" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">lastHeartbeatMessage</code><a class="dashingAutolink" name="autolink-898"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].lastHeartbeatMessage" title="Permalink to this definition">&para;</a></dt>
 <dd><p>When the last heartbeat included an extra message, the
 <a class="reference internal" href="#replSetGetStatus.members[n].lastHeartbeatMessage" title="replSetGetStatus.members[n].lastHeartbeatMessage"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">lastHeartbeatMessage</span></code></a> contains
 a string representation of that message.</p>
@@ -1154,26 +1154,26 @@ a string representation of that message.</p>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].pingMs">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">pingMs</code><a class="dashingAutolink" name="autolink-1677"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].pingMs" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">pingMs</code><a class="dashingAutolink" name="autolink-899"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].pingMs" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">pingMs</span></code> represents the number of milliseconds (ms) that a
 round-trip packet takes to travel between the remote member and
 the local instance.</p>
 <p>This value does not appear for the member that returns the
-<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-1626"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> data.</p>
+<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> data.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="iddup.replSetGetStatus.members[n].syncingTo">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncingTo</code><a class="dashingAutolink" name="autolink-1678"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.replSetGetStatus.members[n].syncingTo" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">syncingTo</code><a class="dashingAutolink" name="autolink-900"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.replSetGetStatus.members[n].syncingTo" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">syncingTo</span></code> field is only present on the output of
-<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-1627"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> on <a class="reference internal" href="../glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> and recovering members,
+<a class="reference internal" href="../method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> on <a class="reference internal" href="../glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> and recovering members,
 and holds the hostname of the member from which this instance is
 syncing.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="replSetGetStatus.members[n].configVersion">
-<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">configVersion</code><a class="dashingAutolink" name="autolink-1679"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].configVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">replSetGetStatus.members[n].</code><code class="descname">configVersion</code><a class="dashingAutolink" name="autolink-901"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replSetGetStatus.members[n].configVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8675"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Restore%20a%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Restore a Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3719"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Restore%20a%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Restore a Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/restore-sharded-cluster/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="restore-a-sharded-cluster">
-<a class="dashingAutolink" name="autolink-8676"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Restore%20a%20Sharded%20Cluster%C2%B6"></a><h1>Restore a Sharded Cluster<a class="headerlink" href="#restore-a-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
+<h1>Restore a Sharded Cluster<a class="headerlink" href="#restore-a-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -200,7 +200,7 @@ configuration for your restored CSRS and shards, you must
 reconfigure the replica set(s).</p>
 <p>If your source cluster is healthy and accessible, connect a
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the primary replica set member
-in each replica set and run <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8637"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> to view the
+in each replica set and run <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> to view the
 replica configuration document.</p>
 <p>If you cannot access one or more components of the source sharded
 cluster, please reference any existing internal documentation to
@@ -232,7 +232,7 @@ run <code class="docutils literal"><span class="pre">mongod</span> <span class="
 process on the target host.</p>
 <p>For hosts running <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>, connect a
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the <code class="docutils literal"><span class="pre">mongos</span></code> and
-run <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8638"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> from the <code class="docutils literal"><span class="pre">admin</span></code> database:</p>
+run <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> from the <code class="docutils literal"><span class="pre">admin</span></code> database:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -245,21 +245,21 @@ copy</a>
 </div>
 <p>For hosts running a <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>, connect a
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the <code class="docutils literal"><span class="pre">mongod</span></code> and
-run <a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><a class="dashingAutolink" name="autolink-8639"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a>:</p>
+run <a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a>:</p>
 <ul class="last">
 <li><p class="first">If <a class="reference internal" href="../reference/command/isMaster.html#isMaster.ismaster" title="isMaster.ismaster"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">ismaster</span></code></a> is false, the <code class="docutils literal"><span class="pre">mongod</span></code> is a
 <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> member of a replica set. You
-can shut it down by running <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8640"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> from
+can shut it down by running <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> from
 the <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
 </li>
 <li><p class="first">If <a class="reference internal" href="../reference/command/isMaster.html#isMaster.ismaster" title="isMaster.ismaster"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">ismaster</span></code></a> is true, the <code class="docutils literal"><span class="pre">mongod</span></code> is the
 <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> member of a replica set. Shut down
 the secondary members of the replica set <em>first</em>. Use
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8641"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify the other members of
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify the other members of
 the replica set.</p>
 <p>The primary automatically steps down after it detects a
 majority of members are offline. After it steps down
-(<a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster"><a class="dashingAutolink" name="autolink-8642"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster</span></code></a> returns
+(<a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster</span></code></a> returns
 <a class="reference internal" href="../reference/command/isMaster.html#isMaster.ismaster" title="isMaster.ismaster"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">ismaster:</span> <span class="pre">false</span></code></a>), you can safely
 shut down the <code class="docutils literal"><span class="pre">mongod</span></code></p>
 </li>
@@ -557,7 +557,7 @@ to it using the <a class="reference internal" href="../reference/program/mongo.h
 </div></div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="drop-the-local-database">
 <h3>Drop the <code class="docutils literal"><span class="pre">local</span></code> database.<a class="headerlink" href="#drop-the-local-database" title="Permalink to this headline">&para;</a></h3>
-<p>Use <a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><a class="dashingAutolink" name="autolink-8643"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a> to drop the <code class="docutils literal"><span class="pre">local</span></code> database:</p>
+<p>Use <a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a> to drop the <code class="docutils literal"><span class="pre">local</span></code> database:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -576,7 +576,7 @@ copy</a>
 <li>No shard member host machine hostname has or will change during this procedure.</li>
 <li>No shard replica set name has or will change during this procedure.</li>
 </ul>
-<p>Issue the following <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8644"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the
+<p>Issue the following <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the
 <a class="reference internal" href="../reference/config-database.html#config.shards" title="config.shards"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">shards</span></code></a> collection in the <a class="reference internal" href="../reference/config-database.html#config-database"><span class="std std-ref">Config Database</span></a>.
 Replace <code class="docutils literal"><span class="pre">&lt;shardName&gt;</span></code> with the name of the shard. By default the
 shard name is its replica set name. If you added the shard
@@ -615,7 +615,7 @@ When restoring the shards later in this procedure, validate that
 the <code class="docutils literal"><span class="pre">_id</span></code> field in <a class="reference internal" href="../reference/config-database.html#config.shards" title="config.shards"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">shards</span></code></a> matches the
 <code class="docutils literal"><span class="pre">shardName</span></code> value on the shard.</p>
 </div>
-<p>Use the <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><a class="dashingAutolink" name="autolink-8645"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne()</span></code></a> method to update the
+<p>Use the <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne()</span></code></a> method to update the
 <code class="docutils literal"><span class="pre">hosts</span></code> string to reflect the planned replica set name and
 hostname list for the shard. For example, the following operation
 updates the  <code class="docutils literal"><span class="pre">host</span></code> connection string for the shard with <code class="docutils literal"><span class="pre">&#34;_id&#34;</span> <span class="pre">:</span> <span class="pre">&#34;shard1&#34;</span></code>:</p>
@@ -637,7 +637,7 @@ cluster.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>If you do not know the shard name, issue the
-<a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8646"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the <a class="reference internal" href="../reference/config-database.html#config.shards" title="config.shards"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">shards</span></code></a>
+<a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the <a class="reference internal" href="../reference/config-database.html#config.shards" title="config.shards"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">shards</span></code></a>
 collection with an empty filter document <code class="docutils literal"><span class="pre">{}</span></code>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -695,7 +695,7 @@ the <a class="reference internal" href="../reference/program/mongo.html#bin.mong
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="initiate-the-new-replica-set">
 <h3>Initiate the new replica set.<a class="headerlink" href="#initiate-the-new-replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>Initiate the replica set using <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8647"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> with the
+<p>Initiate the replica set using <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> with the
 default settings.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -706,7 +706,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Once the operation completes, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8648"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to check
+<p>Once the operation completes, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to check
 that the member has become the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">6</div></div><div class="section" id="add-additional-replica-set-members">
@@ -715,7 +715,7 @@ that the member has become the <a class="reference internal" href="../reference/
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> on its host machine. Once you have
 started up all remaining members of the cluster successfully,
 connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the primary replica
-set member. From the primary, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8649"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method to
+set member. From the primary, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method to
 add each member of the replica set. Include the replica set name as
 the prefix, followed by the hostname and port of the member&rsquo;s
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> process:</p>
@@ -731,7 +731,7 @@ copy</a>
 </div>
 <p>If you want to add the member with specific replica
 <code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">member</span></code> configuration settings, you can pass a
-document to <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8650"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> that defines the member hostname
+document to <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> that defines the member hostname
 and any <code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n]</span></code> settings your deployment requires.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -755,15 +755,15 @@ primary. Depending on factors such as the amount of data to sync, your
 network topology and health, and the power of each host machine,
 initial sync may take an extended period of time to complete.</p>
 <p>The replica set may elect a new primary while you add additional
-members. Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8651"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify which member is
-the current primary. You can only run <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8652"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> from the
+members. Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify which member is
+the current primary. You can only run <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> from the
 primary.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">7</div></div><div class="section" id="configure-any-additional-required-replication-settings">
 <h3>Configure any additional required replication settings.<a class="headerlink" href="#configure-any-additional-required-replication-settings" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8653"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method updates the replica set
+<p>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method updates the replica set
 configuration based on a configuration document passed in as a
-parameter. You must run <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8654"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfig()</span></code></a>
+parameter. You must run <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfig()</span></code></a>
 against the primary member of the replica set.</p>
 <p>Reference the original configuration file output of the replica set as
 identified in step <span class="guilabel">A. Review Replica Set Configurations</span>
@@ -1041,7 +1041,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="id1">
 <h3>Drop the <code class="docutils literal"><span class="pre">local</span></code> database.<a class="headerlink" href="#id1" title="Permalink to this headline">&para;</a></h3>
-<p>Use <a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><a class="dashingAutolink" name="autolink-8655"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a> to drop the <code class="docutils literal"><span class="pre">local</span></code> database:</p>
+<p>Use <a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a> to drop the <code class="docutils literal"><span class="pre">local</span></code> database:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -1065,7 +1065,7 @@ collection on the <code class="docutils literal"><span class="pre">admin</span><
 to the shard, including the CSRS connection string. If either the
 CSRS name or any member hostnames changed while restoring the CSRS,
 you must update this metadata.</p>
-<p>Issue the following <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8656"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the
+<p>Issue the following <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the
 <a class="reference internal" href="../reference/system-collections.html#admin.system.version" title="admin.system.version"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">system.version</span></code></a> collection in the
 <code class="docutils literal"><span class="pre">admin</span></code> database:</p>
 <div class="button-code-block">
@@ -1078,7 +1078,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8657"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method returns a document that
+<p>The <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method returns a document that
 resembles the following:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -1095,7 +1095,7 @@ copy</a>
 </div>
 <p>If the shard does not have a <code class="docutils literal"><span class="pre">shardIdentity</span></code> document, skip to the
 next step.</p>
-<p>The following <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne"><a class="dashingAutolink" name="autolink-8658"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateOne"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne</span></code></a> method
+<p>The following <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne</span></code></a> method
 updates the document such that the <code class="docutils literal"><span class="pre">host</span></code> string represents
 the most current CSRS connection string:</p>
 <div class="button-code-block">
@@ -1127,7 +1127,7 @@ CSRS metadata.</p>
 <h3>Modify the <code class="docutils literal"><span class="pre">minOpTimeRecovery</span></code> document from the <code class="docutils literal"><span class="pre">admin.system.versions</span></code> collection.<a class="headerlink" href="#modify-the-minoptimerecovery-document-from-the-admin-system-versions-collection" title="Permalink to this headline">&para;</a></h3>
 <dl class="docutils">
 <dt>If the shard has a <code class="docutils literal"><span class="pre">shardIdentity</span></code> document:</dt>
-<dd><p class="first">Issue the following <a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-8659"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne()</span></code></a> method on the
+<dd><p class="first">Issue the following <a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne()</span></code></a> method on the
 <a class="reference internal" href="../reference/system-collections.html#admin.system.version" title="admin.system.version"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">system.version</span></code></a> collection in the
 <code class="docutils literal"><span class="pre">admin</span></code> database:</p>
 <div class="last button-code-block">
@@ -1142,7 +1142,7 @@ copy</a>
 </div>
 </dd>
 <dt>If the shard does <strong>not</strong> have a <code class="docutils literal"><span class="pre">shardIdentity</span></code> document:</dt>
-<dd><p class="first">Issue the following <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8660"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the
+<dd><p class="first">Issue the following <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method on the
 <a class="reference internal" href="../reference/system-collections.html#admin.system.version" title="admin.system.version"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">system.version</span></code></a> collection in the
 <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
 <div class="button-code-block">
@@ -1155,7 +1155,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8661"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method returns a document that
+<p>The <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method returns a document that
 resembles the following:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -1173,7 +1173,7 @@ resembles the following:</p>
 </pre></div>
 </div>
 </div>
-<p>The following <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne"><a class="dashingAutolink" name="autolink-8662"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateOne"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne</span></code></a> method updates the
+<p>The following <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne</span></code></a> method updates the
 document such that:</p>
 <ul class="simple">
 <li>The <code class="docutils literal"><span class="pre">configsvrConnectionString</span></code> string represents the most current
@@ -1242,7 +1242,7 @@ the <a class="reference internal" href="../reference/program/mongo.html#bin.mong
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">7</div></div><div class="section" id="id3">
 <h3>Initiate the new replica set.<a class="headerlink" href="#id3" title="Permalink to this headline">&para;</a></h3>
-<p>Initiate the replica set using <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8663"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> with the
+<p>Initiate the replica set using <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> with the
 default settings.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -1253,7 +1253,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Once the operation completes, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8664"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to check
+<p>Once the operation completes, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to check
 that the member has become the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">8</div></div><div class="section" id="id4">
@@ -1262,7 +1262,7 @@ that the member has become the <a class="reference internal" href="../reference/
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> on its host machine. Once you have
 started up all remaining members of the cluster successfully,
 connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the primary replica
-set member. From the primary, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8665"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method to
+set member. From the primary, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method to
 add each member of the replica set. Include the replica set name as
 the prefix, followed by the hostname and port of the member&rsquo;s
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> process:</p>
@@ -1278,7 +1278,7 @@ copy</a>
 </div>
 <p>If you want to add the member with specific replica
 <code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">member</span></code> configuration settings, you can pass a
-document to <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8666"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> that defines the member hostname
+document to <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> that defines the member hostname
 and any <code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n]</span></code> settings your deployment requires.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -1302,15 +1302,15 @@ primary. Depending on factors such as the amount of data to sync, your
 network topology and health, and the power of each host machine,
 initial sync may take an extended period of time to complete.</p>
 <p>The replica set may elect a new primary while you add additional
-members. Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8667"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify which member is
-the current primary. You can only run <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8668"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> from the
+members. Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify which member is
+the current primary. You can only run <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> from the
 primary.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">9</div></div><div class="section" id="id5">
 <h3>Configure any additional required replication settings.<a class="headerlink" href="#id5" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8669"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method updates the replica set
+<p>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method updates the replica set
 configuration based on a configuration document passed in as a
-parameter. You must run <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8670"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfig()</span></code></a>
+parameter. You must run <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfig()</span></code></a>
 against the primary member of the replica set.</p>
 <p>Reference the original configuration file output of the replica set as
 identified in step <span class="guilabel">A. Review Replica Set Configurations</span>
@@ -1379,14 +1379,14 @@ copy</a>
 <h2>F. Validate Cluster Accessibility<a class="headerlink" href="#f-validate-cluster-accessibility" title="Permalink to this headline">&para;</a></h2>
 <p>Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to one of the
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> processes for the cluster. Use
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8671"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to check the overall cluster status. If
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8672"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> indicates that the balancer is not running, use
-<a class="reference internal" href="../reference/method/sh.startBalancer.html#sh.startBalancer" title="sh.startBalancer()"><a class="dashingAutolink" name="autolink-8673"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.startBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a> to restart the balancer.</p>
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to check the overall cluster status. If
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> indicates that the balancer is not running, use
+<a class="reference internal" href="../reference/method/sh.startBalancer.html#sh.startBalancer" title="sh.startBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a> to restart the balancer.</p>
 <p>To confirm that all shards are accessible and communicating, insert
 test data into a temporary sharded collection. Confirm that data is
 being split and migrated between each shard in your cluster. You can
 connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to each shard primary and
-use <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8674"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> to validate that the data was
+use <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> to validate that the data was
 sharded as expected.</p>
 </div>
 </div>

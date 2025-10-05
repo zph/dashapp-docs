@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-6230"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24setOnInsert%20%E2%80%94%20MongoDB%20Manual"></a><title>$setOnInsert &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2606"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24setOnInsert%20%E2%80%94%20MongoDB%20Manual"></a><title>$setOnInsert &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/update/setOnInsert/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="setoninsert">
-<a class="dashingAutolink" name="autolink-6231"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24setOnInsert%C2%B6"></a><h1>$setOnInsert<a class="headerlink" href="#setoninsert" title="Permalink to this headline">&para;</a></h1>
+<h1>$setOnInsert<a class="headerlink" href="#setoninsert" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,15 +167,15 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="update">
 <dt id="up._S_setOnInsert">
-<code class="descname">$setOnInsert</code><a class="dashingAutolink" name="autolink-6229"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#up._S_setOnInsert" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$setOnInsert</code><a class="dashingAutolink" name="autolink-2605"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#up._S_setOnInsert" title="Permalink to this definition">&para;</a></dt>
 <dd><p>If an update operation with <a class="reference internal" href="../../method/db.collection.update.html#upsert-parameter"><span class="std std-ref">upsert: true</span></a>
 results in an insert of a document, then <a class="reference internal" href="#up._S_setOnInsert" title="$setOnInsert"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$setOnInsert</span></code></a>
 assigns the specified values to the fields in the document. If the
 update operation does not result in an insert,
 <a class="reference internal" href="#up._S_setOnInsert" title="$setOnInsert"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$setOnInsert</span></code></a> does nothing.</p>
 <p>You can specify the <code class="docutils literal"><span class="pre">upsert</span></code> option for either the
-<a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6232"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> or
-<a class="reference internal" href="../../method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-6233"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> methods.</p>
+<a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> or
+<a class="reference internal" href="../../method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> methods.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -197,7 +197,7 @@ copy</a>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
 <p>A collection named <code class="docutils literal"><span class="pre">products</span></code> contains no documents.</p>
-<p>Then, the following <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6234"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> with <a class="reference internal" href="../../method/db.collection.update.html#upsert-parameter"><span class="std std-ref">upsert:
+<p>Then, the following <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> with <a class="reference internal" href="../../method/db.collection.update.html#upsert-parameter"><span class="std std-ref">upsert:
 true</span></a> inserts a new document.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -228,13 +228,13 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>If the <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6235"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> with <a class="reference internal" href="../../method/db.collection.update.html#upsert-parameter"><span class="std std-ref">upsert: true</span></a> had found a matching document, then MongoDB
+<p>If the <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> with <a class="reference internal" href="../../method/db.collection.update.html#upsert-parameter"><span class="std std-ref">upsert: true</span></a> had found a matching document, then MongoDB
 performs an update, applying the <a class="reference internal" href="set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a> operation but ignoring
 the <a class="reference internal" href="#up._S_setOnInsert" title="$setOnInsert"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$setOnInsert</span></code></a> operation.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6236"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>,
-<a class="reference internal" href="../../method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-6237"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a></p>
+<p class="last"><a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>,
+<a class="reference internal" href="../../method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a></p>
 </div>
 </div>
 </div>

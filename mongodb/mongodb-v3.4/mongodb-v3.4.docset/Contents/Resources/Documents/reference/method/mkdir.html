@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4725"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/mkdir%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>mkdir() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2061"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/mkdir%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>mkdir() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/mkdir/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="mkdir">
-<a class="dashingAutolink" name="autolink-4726"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/mkdir%28%29%C2%B6"></a><h1>mkdir()<a class="headerlink" href="#mkdir" title="Permalink to this headline">&para;</a></h1>
+<h1>mkdir()<a class="headerlink" href="#mkdir" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,14 +165,14 @@
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="iddup.mkdir">
-<code class="descname">mkdir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4724"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.mkdir" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">mkdir</code><span class="sig-paren">(</span><em>path</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2060"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.mkdir" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Creates a directory at the specified path. This method creates
 the entire path specified if the enclosing directory or
 directories do not already exit. The user running the
 <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell must have permission to create directories in
 the specified path.</p>
 <p>This method is equivalent to <strong class="command">mkdir -p</strong> with BSD or GNU utilities.</p>
-<p>The <a class="dashingAutolink" name="autolink-4720"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/mkdir%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> method has the following parameter:</p>
+<p>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> method has the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -195,9 +195,9 @@ the specified path.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
-<p><a class="dashingAutolink" name="autolink-4721"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/mkdir%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> returns a document with
+<p><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> returns a document with
 information about the result of the operation.</p>
-<p>On success, <a class="dashingAutolink" name="autolink-4722"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/mkdir%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> returns the following:</p>
+<p>On success, <code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> returns the following:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -208,7 +208,7 @@ copy</a>
 </div>
 </div>
 <p>If the directory at the specified path already exists,
-<a class="dashingAutolink" name="autolink-4723"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/mkdir%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> returns the following:</p>
+<code class="xref mongodb mongodb-method docutils literal"><span class="pre">mkdir()</span></code> returns the following:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

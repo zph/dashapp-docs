@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7456"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Compatibility%20Changes%20in%20MongoDB%202.6%20%E2%80%94%20MongoDB%20Manual"></a><title>Compatibility Changes in MongoDB 2.6 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3531"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Compatibility%20Changes%20in%20MongoDB%202.6%20%E2%80%94%20MongoDB%20Manual"></a><title>Compatibility Changes in MongoDB 2.6 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/2.6-compatibility/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="compatibility-changes-in-mongodb-2-6">
-<a class="dashingAutolink" name="autolink-7457"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Compatibility%20Changes%20in%20MongoDB%202.6%C2%B6"></a><h1>Compatibility Changes in MongoDB 2.6<a class="headerlink" href="#compatibility-changes-in-mongodb-2-6" title="Permalink to this headline">&para;</a></h1>
+<h1>Compatibility Changes in MongoDB 2.6<a class="headerlink" href="#compatibility-changes-in-mongodb-2-6" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -186,12 +186,12 @@ the 2.6 changes.</p>
 <p>Creating indexes will error if an index key in an existing document
 exceeds the limit:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7458"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-7459"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>, <a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>, and
+<li><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>, <a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>, and
 <a class="reference internal" href="../reference/command/repairDatabase.html#dbcmd.repairDatabase" title="repairDatabase"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">repairDatabase</span></code></a> will error and not create the index.
 Previous versions of MongoDB would create the index but not index
 such documents.</li>
-<li>Because <a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-7460"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>, <a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>,
+<li>Because <a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>, <a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>,
 and <a class="reference internal" href="../reference/command/repairDatabase.html#dbcmd.repairDatabase" title="repairDatabase"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">repairDatabase</span></code></a> drop <em>all</em> the indexes from a
 collection and then recreate them sequentially, the error from the
 index key limit prevents these operations from rebuilding any
@@ -201,9 +201,9 @@ remainder of the process.</li>
 </ul>
 <p>Inserts will error:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-7461"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a> and other operations that perform
-inserts (e.g. <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-7462"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7463"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert</span></code> that result in
+<li><a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a> and other operations that perform
+inserts (e.g. <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert</span></code> that result in
 inserts) will fail to insert if the new document has an indexed
 field whose corresponding index entry exceeds the limit.
 Previous versions of MongoDB would insert but not index such
@@ -214,8 +214,8 @@ corresponding index entry exceeds the limit.</li>
 </ul>
 <p>Updates will error:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7464"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-7465"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> operations on an indexed field will
+<li><a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> operations on an indexed field will
 error if the updated value causes the index entry to exceed the
 limit.</li>
 <li>If an existing document contains an indexed field whose index
@@ -248,7 +248,7 @@ indexed field whose corresponding index entry exceeds the limit.</li>
 </ul>
 </dd>
 <dt>Solution</dt>
-<dd>Run <a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><a class="dashingAutolink" name="autolink-7466"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.upgradeCheckAllDBs%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> to find current keys that
+<dd>Run <a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> to find current keys that
 violate this limit and correct as appropriate. Preferably, run the
 test before upgrading; i.e. connect the 2.6 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
 to your MongoDB 2.4 database and run the method.</dd>
@@ -265,9 +265,9 @@ indexing issues, use the <a class="reference internal" href="../reference/parame
 key refers to an empty field, e.g. <code class="docutils literal"><span class="pre">&#34;a..b&#34;</span> <span class="pre">:</span> <span class="pre">1</span></code> or the field name
 starts with a dollar sign (<code class="docutils literal"><span class="pre">$</span></code>).</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7467"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> will not create a new index
+<li><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> will not create a new index
 with an invalid or empty key name.</li>
-<li><a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-7468"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>, <a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>, and
+<li><a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>, <a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>, and
 <a class="reference internal" href="../reference/command/repairDatabase.html#dbcmd.repairDatabase" title="repairDatabase"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">repairDatabase</span></code></a> will error if an index exists with an
 invalid or empty key name.</li>
 <li>Chunk migration will fail if an index exists with an
@@ -276,7 +276,7 @@ invalid or empty key name.</li>
 <p class="last">Previous versions of MongoDB allow the index.</p>
 </dd>
 <dt>Solution</dt>
-<dd>Run <a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><a class="dashingAutolink" name="autolink-7469"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.upgradeCheckAllDBs%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> to find current keys that
+<dd>Run <a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> to find current keys that
 violate this limit and correct as appropriate. Preferably, run the
 test before upgrading; i.e. connect the 2.6 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
 to your MongoDB 2.4 database and run the method.</dd>
@@ -286,11 +286,11 @@ to your MongoDB 2.4 database and run the method.</dd>
 <h3><code class="docutils literal"><span class="pre">ensureIndex</span></code> and Existing Indexes<a class="headerlink" href="#ensureindex-and-existing-indexes" title="Permalink to this headline">&para;</a></h3>
 <dl class="docutils">
 <dt>Description</dt>
-<dd><p class="first"><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7470"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> now errors:</p>
+<dd><p class="first"><a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> now errors:</p>
 <ul>
 <li><p class="first">if you try to create an existing index but with different
 options; e.g. in the following example, the second
-<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7471"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> will error.</p>
+<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> will error.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -304,7 +304,7 @@ copy</a>
 </li>
 <li><p class="first">if you specify an index name that already exists but the key
 specifications differ; e.g. in the following example, the second
-<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7472"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> will error.</p>
+<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a> will error.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -327,8 +327,8 @@ copy</a>
 <dl class="docutils">
 <dt>Description</dt>
 <dd>The <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell write methods
-<a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-7473"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a>, <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7474"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-7475"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-7476"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a>
+<a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a>, <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a>
 now integrate the <a class="reference internal" href="../reference/write-concern.html"><span class="doc">write concern</span></a>
 directly into the method rather than with a separate
 <a class="reference internal" href="../reference/command/getLastError.html#dbcmd.getLastError" title="getLastError"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">getLastError</span></code></a> command to provide <a class="reference internal" href="../reference/write-concern.html#wc-w"><span class="std std-ref">acknowledgement of writes</span></a> whether run interactively in the
@@ -340,13 +340,13 @@ versions, these methods exhibited a &ldquo;fire-and-forget&rdquo; behavior.
 <li>Existing scripts for the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell that used these
 methods will now wait for acknowledgement, which take <strong>longer</strong> than
 the previous &ldquo;fire-and-forget&rdquo; behavior.</li>
-<li>The write methods now return a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-7477"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object that
+<li>The write methods now return a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object that
 contains the results of the operation, including any write errors
 and write concern errors, and obviates the need to call
 <a class="reference internal" href="../reference/command/getLastError.html#dbcmd.getLastError" title="getLastError"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">getLastError</span></code></a> command to get the status of the results.
-See <a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-7478"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7479"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>, <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-7480"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a>
-and <a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-7481"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> for details.</li>
+See <a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>, <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a>
+and <a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> for details.</li>
 <li>In sharded environments, <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> no longer supports
 &ldquo;fire-and-forget&rdquo; behavior. This limits throughput when writing data
 to sharded clusters.</li>
@@ -367,9 +367,9 @@ write method.</td></tr>
 <dt>Solution</dt>
 <dd><p class="first">Scripts that used these <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell methods for bulk write
 operations with &ldquo;fire-and-forget&rdquo; behavior should use the
-<a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-7482"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> methods.</p>
+<a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> methods.</p>
 <p>In sharded environments, applications using any driver or
-<a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell should use <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-7483"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> methods for optimal
+<a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell should use <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> methods for optimal
 performance when inserting or modifying groups of documents.</p>
 <p>For example, instead of:</p>
 <div class="button-code-block">
@@ -383,7 +383,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>In MongoDB 2.6, replace with <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-7484"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operation:</p>
+<p>In MongoDB 2.6, replace with <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operation:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -399,15 +399,15 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Bulk method returns a <a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult"><a class="dashingAutolink" name="autolink-7485"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/BulkWriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult</span></code></a> object that contains
+<p>Bulk method returns a <a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult</span></code></a> object that contains
 the result of the operation.</p>
 <div class="last admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last"><a class="reference internal" href="2.6.html#rel-notes-write-operations"><span class="std std-ref">New Write Operation Protocol</span></a>,
-<a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-7486"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a>,
-<a class="reference internal" href="../reference/method/Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-7487"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><a class="dashingAutolink" name="autolink-7488"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeUnorderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeUnorderedBulkOp()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><a class="dashingAutolink" name="autolink-7489"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeOrderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></p>
+<a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a>,
+<a class="reference internal" href="../reference/method/Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeUnorderedBulkOp()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></p>
 </div>
 </dd>
 </dl>
@@ -416,7 +416,7 @@ the result of the operation.</p>
 <h2><code class="docutils literal"><span class="pre">db.collection.aggregate()</span></code> Change<a class="headerlink" href="#db-collection-aggregate-change" title="Permalink to this headline">&para;</a></h2>
 <dl class="docutils">
 <dt>Description</dt>
-<dd><p class="first">The <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7490"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method in the
+<dd><p class="first">The <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell defaults to returning a cursor to the results
 set. This change enables the aggregation pipeline to return result
 sets of any size and requires cursor iteration to access the result
@@ -467,13 +467,13 @@ copy</a>
 </dd>
 <dt>Solution</dt>
 <dd>Update scripts that currently expect
-<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7491"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> to return a document with a
+<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> to return a document with a
 <code class="docutils literal"><span class="pre">results</span></code> array to handle cursors instead.</dd>
 </dl>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last"><a class="reference internal" href="2.6.html#rn-2-6-aggregation-cursor"><span class="std std-ref">Aggregation Enhancements</span></a>,
-<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7492"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a>,</p>
+<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a>,</p>
 </div>
 </div>
 <div class="section" id="write-concern-validation">
@@ -643,13 +643,13 @@ packages.</p>
 <h2>Remove Method Signature Change<a class="headerlink" href="#remove-method-signature-change" title="Permalink to this headline">&para;</a></h2>
 <dl class="docutils">
 <dt>Description</dt>
-<dd><a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-7493"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> requires a query document as a
+<dd><a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> requires a query document as a
 parameter. In previous versions, the method invocation without a
 query document deleted all documents in a collection.</dd>
 <dt>Solution</dt>
-<dd>For existing <a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-7494"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> invocations without a
+<dd>For existing <a class="reference internal" href="../reference/method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove()</span></code></a> invocations without a
 query document, modify the invocations to include an empty document
-<a class="dashingAutolink" name="autolink-7495"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.remove%28%7B%7D%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove({})</span></code>.</dd>
+<code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.remove({})</span></code>.</dd>
 </dl>
 </div>
 <div class="section" id="update-operator-syntax-validation">
@@ -701,15 +701,15 @@ names (i.e. <code class="docutils literal"><span class="pre">&#34;&#34;</span></
 <dt>Solution</dt>
 <dd><ul class="first last simple">
 <li>For existing documents that have fields with empty names <code class="docutils literal"><span class="pre">&#34;&#34;</span></code>,
-replace the whole document. See <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7496"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>
-and <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-7497"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> for details on replacing an
+replace the whole document. See <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>
+and <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a> for details on replacing an
 existing document.</li>
 <li>For existing documents that have fields with names that contain a
 dot (<code class="docutils literal"><span class="pre">.</span></code>), either replace the whole document or <a class="reference internal" href="../reference/operator/update/unset.html#up._S_unset" title="$unset"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">unset</span></code></a> the field. To find fields whose names contain a dot, run
-<a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><a class="dashingAutolink" name="autolink-7498"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.upgradeCheckAllDBs%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a>.</li>
+<a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a>.</li>
 <li>For existing documents that have fields with names that start with
 a dollar sign (<code class="docutils literal"><span class="pre">$</span></code>), <a class="reference internal" href="../reference/operator/update/unset.html#up._S_unset" title="$unset"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">unset</span></code></a> or <a class="reference internal" href="../reference/operator/update/rename.html#up._S_rename" title="$rename"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">rename</span></code></a> those fields. To find fields whose names start with a
-dollar sign, run <a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><a class="dashingAutolink" name="autolink-7499"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.upgradeCheckAllDBs%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a>.</li>
+dollar sign, run <a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a>.</li>
 </ul>
 </dd>
 </dl>
@@ -729,7 +729,7 @@ with a dollar sign (<code class="docutils literal"><span class="pre">$</span></c
 <dt>Solution</dt>
 <dd><a class="reference internal" href="../reference/operator/update/unset.html#up._S_unset" title="$unset"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">Unset</span></code></a> or <a class="reference internal" href="../reference/operator/update/rename.html#up._S_rename" title="$rename"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">rename</span></code></a> existing
 fields whose names start with a dollar sign (<code class="docutils literal"><span class="pre">$</span></code>). Run
-<a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><a class="dashingAutolink" name="autolink-7500"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.upgradeCheckAllDBs%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> to find fields whose
+<a class="reference internal" href="../reference/method/db.upgradeCheckAllDBs.html#db.upgradeCheckAllDBs" title="db.upgradeCheckAllDBs()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.upgradeCheckAllDBs()</span></code></a> to find fields whose
 names start with a dollar sign.</dd>
 </dl>
 </div>
@@ -739,7 +739,7 @@ names start with a dollar sign.</dd>
 <dt>Description</dt>
 <dd><p class="first">If a <a class="reference internal" href="../core/index-sparse.html"><span class="doc">sparse index</span></a> results in an
 incomplete result set for queries and sort operations, MongoDB will
-not use that index unless a <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-7501"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> explicitly
+not use that index unless a <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> explicitly
 specifies the index.</p>
 <p class="last">For example, the query <code class="docutils literal"><span class="pre">{</span> <span class="pre">x:</span> <span class="pre">{</span> <span class="pre">$exists:</span> <span class="pre">false</span> <span class="pre">}</span> <span class="pre">}</span></code> will no longer
 use a sparse index on the <code class="docutils literal"><span class="pre">x</span></code> field, unless explicitly hinted.</p>
@@ -747,7 +747,7 @@ use a sparse index on the <code class="docutils literal"><span class="pre">x</sp
 <dt>Solution</dt>
 <dd>To override the behavior to use the sparse index and return
 incomplete results, explicitly specify the index with a
-<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-7502"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>.</dd>
+<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>.</dd>
 </dl>
 <p>See <a class="reference internal" href="../core/index-sparse.html#sparse-index-incomplete-results"><span class="std std-ref">Sparse Index On A Collection Cannot Return Complete Results</span></a> for an example that details
 the new behavior.</p>
@@ -756,7 +756,7 @@ the new behavior.</p>
 <span id="sort-value-incompatibility"></span><h3><code class="docutils literal"><span class="pre">sort()</span></code> Specification Values<a class="headerlink" href="#sort-specification-values" title="Permalink to this headline">&para;</a></h3>
 <dl class="docutils">
 <dt>Description</dt>
-<dd><p class="first">The <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-7503"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method <strong>only</strong> accepts the following
+<dd><p class="first">The <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method <strong>only</strong> accepts the following
 values for the sort keys:</p>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">1</span></code> to specify ascending order for a field,</li>
@@ -776,8 +776,8 @@ ascending.</p>
 <span id="skip-incompatibility"></span><h3><code class="docutils literal"><span class="pre">skip()</span></code> and <code class="docutils literal"><span class="pre">_id</span></code> Queries<a class="headerlink" href="#skip-and-id-queries" title="Permalink to this headline">&para;</a></h3>
 <dl class="docutils">
 <dt>Description</dt>
-<dd><p class="first">Equality match on the <code class="docutils literal"><span class="pre">_id</span></code> field obeys <a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-7504"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a>.</p>
-<p class="last">Previous versions ignored <a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-7505"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> when performing
+<dd><p class="first">Equality match on the <code class="docutils literal"><span class="pre">_id</span></code> field obeys <a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a>.</p>
+<p class="last">Previous versions ignored <a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> when performing
 an equality match on the <code class="docutils literal"><span class="pre">_id</span></code> field.</p>
 </dd>
 </dl>
@@ -786,14 +786,14 @@ an equality match on the <code class="docutils literal"><span class="pre">_id</s
 <span id="explain-query-plan-incompatibility"></span><h3><code class="docutils literal"><span class="pre">explain()</span></code> Retains Query Plan Cache<a class="headerlink" href="#explain-retains-query-plan-cache" title="Permalink to this headline">&para;</a></h3>
 <dl class="docutils">
 <dt>Description</dt>
-<dd><p class="first"><a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-7506"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> no longer clears the <a class="reference internal" href="../core/query-plans.html"><span class="doc">query plans</span></a> cached for that <a class="reference internal" href="../reference/glossary.html#term-query-shape"><span class="xref std std-term">query shape</span></a>.</p>
-<p class="last">In previous versions, <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-7507"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> would have the
+<dd><p class="first"><a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> no longer clears the <a class="reference internal" href="../core/query-plans.html"><span class="doc">query plans</span></a> cached for that <a class="reference internal" href="../reference/glossary.html#term-query-shape"><span class="xref std std-term">query shape</span></a>.</p>
+<p class="last">In previous versions, <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> would have the
 side effect of clearing the query plan cache for that query shape.</p>
 </dd>
 </dl>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last">The <a class="reference internal" href="../reference/method/db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><a class="dashingAutolink" name="autolink-7508"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache()</span></code></a> reference.</p>
+<p class="last">The <a class="reference internal" href="../reference/method/db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache()</span></code></a> reference.</p>
 </div>
 </div>
 <div class="section" id="geospatial-changes">

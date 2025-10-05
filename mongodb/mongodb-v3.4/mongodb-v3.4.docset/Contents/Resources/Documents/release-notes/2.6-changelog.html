@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7446"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/2.6%20Changelog%20%E2%80%94%20MongoDB%20Manual"></a><title>2.6 Changelog &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3529"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/2.6%20Changelog%20%E2%80%94%20MongoDB%20Manual"></a><title>2.6 Changelog &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/2.6-changelog/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="changelog">
-<a class="dashingAutolink" name="autolink-7447"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/2.6%20Changelog%C2%B6"></a><h1>2.6 Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">&para;</a></h1>
+<h1>2.6 Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -244,7 +244,7 @@
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-18620">SERVER-18620</a> Reduce frequency of &ldquo;<code class="docutils literal"><span class="pre">staticYield</span> <span class="pre">can&#39;t</span> <span class="pre">unlock</span></code>&rdquo; log message</li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-18461">SERVER-18461</a> Range predicates comparing against a BinData value should be covered, but are not in 2.6</li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-17815">SERVER-17815</a> Plan ranking tie breaker is computed incorrectly</li>
-<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-16265">SERVER-16265</a> Add query details to getmore entry in profiler and <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-7448"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a></li>
+<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-16265">SERVER-16265</a> Add query details to getmore entry in profiler and <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a></li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-15217">SERVER-15217</a> v2.6 query plan ranking test &ldquo;<code class="docutils literal"><span class="pre">NonCoveredIxisectFetchesLess</span></code>&rdquo; relies on order of deleted record list</li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14070">SERVER-14070</a> Compound index not providing sort if equality predicate given on sort field</li>
 </ul>
@@ -253,7 +253,7 @@
 <h3>Replication<a class="headerlink" href="#replication" title="Permalink to this headline">&para;</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-18280">SERVER-18280</a> <code class="docutils literal"><span class="pre">ReplicaSetMonitor</span></code> should use <code class="docutils literal"><span class="pre">electionId</span></code> to avoid talking to old primaries</li>
-<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-18795">SERVER-18795</a> <a class="reference internal" href="../reference/method/db.printSlaveReplicationInfo.html#db.printSlaveReplicationInfo" title="db.printSlaveReplicationInfo()"><a class="dashingAutolink" name="autolink-7449"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printSlaveReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printSlaveReplicationInfo()</span></code></a>/<a class="reference internal" href="../reference/method/rs.printSlaveReplicationInfo.html#rs.printSlaveReplicationInfo" title="rs.printSlaveReplicationInfo()"><a class="dashingAutolink" name="autolink-7450"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printSlaveReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printSlaveReplicationInfo()</span></code></a> can not work with <code class="docutils literal"><span class="pre">ARBITER</span></code> role</li>
+<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-18795">SERVER-18795</a> <a class="reference internal" href="../reference/method/db.printSlaveReplicationInfo.html#db.printSlaveReplicationInfo" title="db.printSlaveReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printSlaveReplicationInfo()</span></code></a>/<a class="reference internal" href="../reference/method/rs.printSlaveReplicationInfo.html#rs.printSlaveReplicationInfo" title="rs.printSlaveReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printSlaveReplicationInfo()</span></code></a> can not work with <code class="docutils literal"><span class="pre">ARBITER</span></code> role</li>
 </ul>
 </div>
 <div class="section" id="id4">
@@ -268,7 +268,7 @@
 <ul class="simple">
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-19559">SERVER-19559</a> Document growth of &ldquo;key too large&rdquo; document makes it disappear from the index</li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-16348">SERVER-16348</a> <code class="docutils literal"><span class="pre">Assertion</span> <span class="pre">failure</span> <span class="pre">n</span> <span class="pre">&gt;=</span> <span class="pre">0</span> <span class="pre">&amp;&amp;</span> <span class="pre">n</span> <span class="pre">&lt;</span> <span class="pre">static_cast&lt;int&gt;(_files.size())</span> <span class="pre">src/mongo/db/storage/extent_manager.cpp</span> <span class="pre">109</span></code></li>
-<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-13875">SERVER-13875</a> <a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7451"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a> of <code class="docutils literal"><span class="pre">2dsphere</span></code> index breaks after upgrading to 2.6 (with the new <code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndex</span></code> command)</li>
+<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-13875">SERVER-13875</a> <a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a> of <code class="docutils literal"><span class="pre">2dsphere</span></code> index breaks after upgrading to 2.6 (with the new <code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndex</span></code> command)</li>
 </ul>
 </div>
 <div class="section" id="networking">
@@ -381,7 +381,7 @@
 <h3>Querying<a class="headerlink" href="#id18" title="Permalink to this headline">&para;</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14723">SERVER-14723</a> Crash during query planning for <a class="reference internal" href="../reference/command/geoNear.html#dbcmd.geoNear" title="geoNear"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">geoNear</span></code></a> with multiple <code class="docutils literal"><span class="pre">2dsphere</span></code> indexes</li>
-<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14071">SERVER-14071</a> For queries with <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-7452"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>, bad non-blocking plan can be cached if there are zero results</li>
+<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14071">SERVER-14071</a> For queries with <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>, bad non-blocking plan can be cached if there are zero results</li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-8188">SERVER-8188</a> Configurable idle cursor timeout</li>
 </ul>
 </div>
@@ -991,7 +991,7 @@ config server is unresponsive&rdquo;</li>
 <div class="section" id="map-reduce">
 <h3>Map/Reduce<a class="headerlink" href="#map-reduce" title="Permalink to this headline">&para;</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14186">SERVER-14186</a> Resolved: &ldquo;<a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown"><a class="dashingAutolink" name="autolink-7453"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown</span></code></a> during
+<li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-14186">SERVER-14186</a> Resolved: &ldquo;<a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown</span></code></a> during
 mapReduce causes fassert in logOp&rdquo;</li>
 <li><a class="reference external" href="https://jira.mongodb.org/browse/SERVER-13981">SERVER-13981</a> Temporary map/reduce collections are now
 correctly replicated to secondaries.</li>

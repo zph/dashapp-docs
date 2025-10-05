@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8388"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20Sharded%20Cluster%20Balancer%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage Sharded Cluster Balancer &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3674"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20Sharded%20Cluster%20Balancer%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage Sharded Cluster Balancer &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/manage-sharded-cluster-balancer/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <span class="target" id="index-0"></span><div class="section" id="manage-sharded-cluster-balancer">
-<span id="index-1"></span><a class="dashingAutolink" name="autolink-8389"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Manage%20Sharded%20Cluster%20Balancer%C2%B6"></a><h1>Manage Sharded Cluster Balancer<a class="headerlink" href="#manage-sharded-cluster-balancer" title="Permalink to this headline">&para;</a></h1>
+<span id="index-1"></span><h1>Manage Sharded Cluster Balancer<a class="headerlink" href="#manage-sharded-cluster-balancer" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -187,8 +187,8 @@ cluster.</p>
 </div>
 <div class="section" id="check-the-balancer-state">
 <h2>Check the Balancer State<a class="headerlink" href="#check-the-balancer-state" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8390"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> checks if the balancer is enabled (i.e. that the
-balancer is permitted to run). <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8391"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> does not check if the balancer
+<p><a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> checks if the balancer is enabled (i.e. that the
+balancer is permitted to run). <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> does not check if the balancer
 is actively balancing chunks.</p>
 <p>To see if the balancer is enabled in your <a class="reference internal" href="../reference/glossary.html#term-sharded-cluster"><span class="xref std std-term">sharded cluster</span></a>,
 issue the following command, which returns a boolean:</p>
@@ -203,7 +203,7 @@ copy</a>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0: </span>You can also see if the balancer is enabled using
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8392"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>. The
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>. The
 <a class="reference internal" href="../reference/method/sh.status.html#sh.status.balancer.currently-enabled" title="sh.status.balancer.currently-enabled"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">currently-enabled</span></code></a> field indicates whether
 the balancer is enabled, while the
 <a class="reference internal" href="../reference/method/sh.status.html#sh.status.balancer.currently-running" title="sh.status.balancer.currently-running"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">currently-running</span></code></a> field indicates if
@@ -277,7 +277,7 @@ copy</a>
 <h3>Ensure that the balancer is not <code class="docutils literal"><span class="pre">stopped</span></code>.<a class="headerlink" href="#ensure-that-the-balancer-is-not-stopped" title="Permalink to this headline">&para;</a></h3>
 <p>The balancer will not activate in the <code class="docutils literal"><span class="pre">stopped</span></code> state.
 To ensure that the  balancer
-is not <code class="docutils literal"><span class="pre">stopped</span></code>, use <a class="reference internal" href="../reference/method/sh.setBalancerState.html#sh.setBalancerState" title="sh.setBalancerState()"><a class="dashingAutolink" name="autolink-8393"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.setBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.setBalancerState()</span></code></a>,
+is not <code class="docutils literal"><span class="pre">stopped</span></code>, use <a class="reference internal" href="../reference/method/sh.setBalancerState.html#sh.setBalancerState" title="sh.setBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.setBalancerState()</span></code></a>,
 as in the following:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -293,7 +293,7 @@ of the <code class="docutils literal"><span class="pre">activeWindow</span></cod
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">4</div></div><div class="section" id="modify-the-balancer-s-window">
 <h3>Modify the balancer&rsquo;s window.<a class="headerlink" href="#modify-the-balancer-s-window" title="Permalink to this headline">&para;</a></h3>
-<p>Set the <code class="docutils literal"><span class="pre">activeWindow</span></code> using <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-8394"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>,
+<p>Set the <code class="docutils literal"><span class="pre">activeWindow</span></code> using <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>,
 as in the following:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -325,7 +325,7 @@ of all data inserted during the day.</p>
 <p>As data insert rates can change based on activity and usage
 patterns, it is important to ensure that the balancing window you
 select will be sufficient to support the needs of your deployment.</p>
-<p class="last">Do not use the <a class="reference internal" href="../reference/method/sh.startBalancer.html#sh.startBalancer" title="sh.startBalancer()"><a class="dashingAutolink" name="autolink-8395"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.startBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a> method when you have set an
+<p class="last">Do not use the <a class="reference internal" href="../reference/method/sh.startBalancer.html#sh.startBalancer" title="sh.startBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.startBalancer()</span></code></a> method when you have set an
 <code class="docutils literal"><span class="pre">activeWindow</span></code>.</p>
 </div>
 </div></div>
@@ -482,14 +482,14 @@ the balancer process.</p>
 <div class="section" id="disable-balancing-on-a-collection">
 <h2>Disable Balancing on a Collection<a class="headerlink" href="#disable-balancing-on-a-collection" title="Permalink to this headline">&para;</a></h2>
 <p>You can disable balancing for a specific collection with the
-<a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><a class="dashingAutolink" name="autolink-8396"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.disableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a> method. You may want to disable the
+<a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a> method. You may want to disable the
 balancer for a specific collection to support maintenance operations or
 atypical workloads, for example, during data ingestions or data exports.</p>
 <p>When you disable balancing on a collection, MongoDB will not interrupt in
 progress migrations.</p>
 <p>To disable balancing on a collection, connect to a <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 with the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and call the
-<a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><a class="dashingAutolink" name="autolink-8397"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.disableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a> method.</p>
 <p>For example:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -500,20 +500,20 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><a class="dashingAutolink" name="autolink-8398"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.disableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a> method accepts as its parameter the
+<p>The <a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a> method accepts as its parameter the
 full <a class="reference internal" href="../reference/glossary.html#term-namespace"><span class="xref std std-term">namespace</span></a> of the collection.</p>
 </div>
 <div class="section" id="enable-balancing-on-a-collection">
 <h2>Enable Balancing on a Collection<a class="headerlink" href="#enable-balancing-on-a-collection" title="Permalink to this headline">&para;</a></h2>
 <p>You can enable balancing for a specific collection with the
-<a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><a class="dashingAutolink" name="autolink-8399"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a> method.</p>
 <p>When you enable balancing for a collection, MongoDB will not <em>immediately</em>
 begin balancing data. However, if the data in your sharded collection is
 not balanced, MongoDB will be able to begin distributing the data more
 evenly.</p>
 <p>To enable balancing on a collection, connect to a <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 with the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and call the
-<a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><a class="dashingAutolink" name="autolink-8400"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a> method.</p>
 <p>For example:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -524,7 +524,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><a class="dashingAutolink" name="autolink-8401"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a> method accepts as its parameter the
+<p>The <a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a> method accepts as its parameter the
 full <a class="reference internal" href="../reference/glossary.html#term-namespace"><span class="xref std std-term">namespace</span></a> of the collection.</p>
 </div>
 <div class="section" id="confirm-balancing-is-enabled-or-disabled">
@@ -555,7 +555,7 @@ this collection will begin the next time the balancer runs.</li>
 </ul>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0: </span>You can also see if the balancer is enabled using
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8402"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>. The
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>. The
 <a class="reference internal" href="../reference/method/sh.status.html#sh.status.balancer.currently-enabled" title="sh.status.balancer.currently-enabled"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">currently-enabled</span></code></a> field indicates if the
 balancer is enabled.</p>
 </div>
@@ -694,7 +694,7 @@ copy</a>
 </div>
 </div>
 <p>To limit the storage size for a given shard, use the
-<a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><a class="dashingAutolink" name="autolink-8403"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a> method with the <a class="reference internal" href="../reference/operator/update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a> operator to
+<a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a> method with the <a class="reference internal" href="../reference/operator/update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a> operator to
 create the <code class="docutils literal"><span class="pre">maxSize</span></code> field and assign it an <code class="docutils literal"><span class="pre">integer</span></code> value. The
 <code class="docutils literal"><span class="pre">maxSize</span></code> field represents the maximum storage size for the shard in
 <code class="docutils literal"><span class="pre">megabytes</span></code>.</p>

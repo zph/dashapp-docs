@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8692"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Distributed%20Local%20Writes%20for%20Insert%20Only%20Workloads%20%E2%80%94%20MongoDB%20Manual"></a><title>Distributed Local Writes for Insert Only Workloads &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3724"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Distributed%20Local%20Writes%20for%20Insert%20Only%20Workloads%20%E2%80%94%20MongoDB%20Manual"></a><title>Distributed Local Writes for Insert Only Workloads &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/sharding-high-availability-writes/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="distributed-local-writes-for-insert-only-workloads">
-<a class="dashingAutolink" name="autolink-8693"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Distributed%20Local%20Writes%20for%20Insert%20Only%20Workloads%C2%B6"></a><h1>Distributed Local Writes for Insert Only Workloads<a class="headerlink" href="#distributed-local-writes-for-insert-only-workloads" title="Permalink to this headline">&para;</a></h1>
+<h1>Distributed Local Writes for Insert Only Workloads<a class="headerlink" href="#distributed-local-writes-for-insert-only-workloads" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -379,12 +379,12 @@ copy</a>
 </div>
 </div>
 <p>You can review the tags assigned to any given shard by running
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8694"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="define-ranges-for-each-tag">
 <h4>Define ranges for each tag.<a class="headerlink" href="#define-ranges-for-each-tag" title="Permalink to this headline">&para;</a></h4>
 <p>Define the range for the <code class="docutils literal"><span class="pre">alfa</span></code> database and associate it to the <code class="docutils literal"><span class="pre">alfa</span></code>
-tag using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-8695"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method requires:</p>
+tag using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method requires:</p>
 <ul class="simple">
 <li>The full namespace of the target collection.</li>
 <li>The inclusive lower bound of the range.</li>
@@ -406,7 +406,7 @@ copy</a>
 </div>
 </div>
 <p>Define the range for the <code class="docutils literal"><span class="pre">bravo</span></code> database and associate it to the
-<code class="docutils literal"><span class="pre">bravo</span></code> tag using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-8696"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method
+<code class="docutils literal"><span class="pre">bravo</span></code> tag using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method
 requires:</p>
 <ul class="simple">
 <li>The full namespace of the target collection.</li>
@@ -443,7 +443,7 @@ shards respecting the tag ranges and tags.</p>
 <p>Once balancing finishes, the shards tagged as <code class="docutils literal"><span class="pre">alfa</span></code> should only
 contain documents with <code class="docutils literal"><span class="pre">datacenter</span> <span class="pre">:</span> <span class="pre">alfa</span></code>, while shards tagged as
 <code class="docutils literal"><span class="pre">bravo</span></code> should only contain documents with <code class="docutils literal"><span class="pre">datacenter</span> <span class="pre">:</span> <span class="pre">bravo</span></code>.</p>
-<p>You can review the chunk distribution by running <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8697"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
+<p>You can review the chunk distribution by running <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
 </div></div>
 </div>
 <div class="section" id="resolve-write-failure">
@@ -546,11 +546,11 @@ copy</a>
 documents, or it can attempt to trim the duplicates until only a single
 document remains.</p>
 <p>One method for trimming duplicates is to use the
-<a class="reference internal" href="../reference/method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><a class="dashingAutolink" name="autolink-8698"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId.getTimestamp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.getTimestamp()</span></code></a> method to extract the timestamp from the
+<a class="reference internal" href="../reference/method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.getTimestamp()</span></code></a> method to extract the timestamp from the
 <code class="docutils literal"><span class="pre">_id</span></code> field. The application can then keep either the first document
 inserted, or the last document inserted. This assumes the
-<code class="docutils literal"><span class="pre">_id</span></code> field uses the MongoDB <a class="reference internal" href="../reference/method/ObjectId.html#ObjectId" title="ObjectId"><a class="dashingAutolink" name="autolink-8699"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a>.</p>
-<p>For example, using <a class="reference internal" href="../reference/method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><a class="dashingAutolink" name="autolink-8700"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getTimestamp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getTimestamp()</span></code></a> on the document
+<code class="docutils literal"><span class="pre">_id</span></code> field uses the MongoDB <a class="reference internal" href="../reference/method/ObjectId.html#ObjectId" title="ObjectId"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a>.</p>
+<p>For example, using <a class="reference internal" href="../reference/method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getTimestamp()</span></code></a> on the document
 with <code class="docutils literal"><span class="pre">ObjectId(&#34;56f08c447fe58b2e96f595fa&#34;)</span></code> returns:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -561,7 +561,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Using <a class="reference internal" href="../reference/method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><a class="dashingAutolink" name="autolink-8701"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getTimestamp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getTimestamp()</span></code></a> on the document with
+<p>Using <a class="reference internal" href="../reference/method/ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getTimestamp()</span></code></a> on the document with
 <code class="docutils literal"><span class="pre">ObjectId(&#34;56f08c457fe58b2e96f595fb&#34;)</span></code> returns:</p>
 <div class="button-code-block">
 <div class="button-row">

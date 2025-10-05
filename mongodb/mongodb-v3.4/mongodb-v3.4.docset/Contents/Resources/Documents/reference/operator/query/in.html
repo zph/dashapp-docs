@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-6015"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24in%20%E2%80%94%20MongoDB%20Manual"></a><title>$in &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2519"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24in%20%E2%80%94%20MongoDB%20Manual"></a><title>$in &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/query/in/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="in">
-<a class="dashingAutolink" name="autolink-6016"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24in%C2%B6"></a><h1>$in<a class="headerlink" href="#in" title="Permalink to this headline">&para;</a></h1>
+<h1>$in<a class="headerlink" href="#in" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,7 +167,7 @@
 </div>
 <dl class="query">
 <dt id="op._S_in">
-<code class="descname">$in</code><a class="dashingAutolink" name="autolink-6014"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_in" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$in</code><a class="dashingAutolink" name="autolink-2518"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_in" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="#op._S_in" title="$in"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$in</span></code></a> operator selects the documents where the value
 of a field equals any value in the specified array. To specify an
 <a class="reference internal" href="#op._S_in" title="$in"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$in</span></code></a> expression, use the following prototype:</p>
@@ -227,7 +227,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Then, the following <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6017"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation will
+<p>Then, the following <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation will
 set the <code class="docutils literal"><span class="pre">sale</span></code> field value to <code class="docutils literal"><span class="pre">true</span></code> where the <code class="docutils literal"><span class="pre">tags</span></code> field holds
 an array with at least one element matching either <code class="docutils literal"><span class="pre">&#34;appliances&#34;</span></code> or
 <code class="docutils literal"><span class="pre">&#34;school&#34;</span></code>.</p>
@@ -274,7 +274,7 @@ the <code class="docutils literal"><span class="pre">tags</span></code> field ho
 <code class="docutils literal"><span class="pre">st</span></code>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-6018"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>, <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6019"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>, <a class="reference internal" href="or.html#op._S_or" title="$or"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$or</span></code></a>, <a class="reference internal" href="../update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a>, <a class="reference internal" href="elemMatch.html#op._S_elemMatch" title="$elemMatch"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$elemMatch</span></code></a>.</p>
+<p class="last"><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>, <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>, <a class="reference internal" href="or.html#op._S_or" title="$or"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$or</span></code></a>, <a class="reference internal" href="../update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a>, <a class="reference internal" href="elemMatch.html#op._S_elemMatch" title="$elemMatch"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$elemMatch</span></code></a>.</p>
 </div>
 </div>
 </div>

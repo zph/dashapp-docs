@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-418"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Ranged%20Sharding%20%E2%80%94%20MongoDB%20Manual"></a><title>Ranged Sharding &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-210"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Ranged%20Sharding%20%E2%80%94%20MongoDB%20Manual"></a><title>Ranged Sharding &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/ranged-sharding/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="ranged-sharding">
-<span id="sharding-ranged"></span><a class="dashingAutolink" name="autolink-419"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Ranged%20Sharding%C2%B6"></a><h1>Ranged Sharding<a class="headerlink" href="#ranged-sharding" title="Permalink to this headline">&para;</a></h1>
+<span id="sharding-ranged"></span><h1>Ranged Sharding<a class="headerlink" href="#ranged-sharding" title="Permalink to this headline">&para;</a></h1>
 <p>Range-based sharding involves dividing data into contiguous ranges determined
 by the shard key values. In this model, documents with &ldquo;close&rdquo; shard key
 values are likely to be in the same <a class="reference internal" href="../reference/glossary.html#term-chunk"><span class="xref std std-term">chunk</span></a> or <a class="reference internal" href="../reference/glossary.html#term-shard"><span class="xref std std-term">shard</span></a>. This
@@ -179,7 +179,7 @@ to the following:</p>
 </div>
 <div class="section" id="shard-a-collection">
 <h2>Shard a Collection<a class="headerlink" href="#shard-a-collection" title="Permalink to this headline">&para;</a></h2>
-<p>Use the <a class="reference internal" href="../reference/method/sh.shardCollection.html#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-420"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> method, specifying the full namespace
+<p>Use the <a class="reference internal" href="../reference/method/sh.shardCollection.html#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> method, specifying the full namespace
 of the collection and the target <a class="reference internal" href="../reference/glossary.html#term-index"><span class="xref std std-term">index</span></a> or <a class="reference internal" href="../reference/glossary.html#term-compound-index"><span class="xref std std-term">compound index</span></a>
 to use as the <a class="reference internal" href="../reference/glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a>.</p>
 <div class="button-code-block">

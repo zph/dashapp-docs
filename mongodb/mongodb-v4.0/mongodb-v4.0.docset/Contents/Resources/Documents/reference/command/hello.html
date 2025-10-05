@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-676"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/hello%20%E2%80%94%20MongoDB%20Manual"></a><title>hello &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-709"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/hello%20%E2%80%94%20MongoDB%20Manual"></a><title>hello &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/hello/"/><meta name="robots" content="index"/>
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.hello">
-<code class="descname">hello</code><a class="dashingAutolink" name="autolink-677"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.hello" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">hello</code><a class="dashingAutolink" name="autolink-676"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.hello" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 4.0.21: </span>(and 3.6.21)</p>
 </div>
@@ -225,7 +225,7 @@ provides a wrapper around <a class="reference internal" href="#dbcmd.hello" titl
 roles:</p>
 <dl class="data">
 <dt id="hello.isWritablePrimary">
-<code class="descclassname">hello.</code><code class="descname">isWritablePrimary</code><a class="dashingAutolink" name="autolink-678"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.isWritablePrimary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">isWritablePrimary</code><a class="dashingAutolink" name="autolink-677"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.isWritablePrimary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that reports when this node is writable. If
 <code class="docutils literal"><span class="pre">true</span></code>, then this instance is a <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a> in a
 <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a>, or a <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance, or a standalone
@@ -237,13 +237,13 @@ roles:</p>
 
 <dl class="data">
 <dt id="hello.topologyVersion">
-<code class="descclassname">hello.</code><code class="descname">topologyVersion</code><a class="dashingAutolink" name="autolink-679"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.topologyVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">topologyVersion</code><a class="dashingAutolink" name="autolink-678"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.topologyVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>For internal use by MongoDB.</em></p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.maxBsonObjectSize">
-<code class="descclassname">hello.</code><code class="descname">maxBsonObjectSize</code><a class="dashingAutolink" name="autolink-680"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxBsonObjectSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">maxBsonObjectSize</code><a class="dashingAutolink" name="autolink-679"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxBsonObjectSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum permitted size of a <a class="reference internal" href="../glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> object in bytes for
 this <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> process. If not provided, clients should
 assume a max size of &ldquo;<code class="docutils literal"><span class="pre">16</span> <span class="pre">*</span> <span class="pre">1024</span> <span class="pre">*</span> <span class="pre">1024</span></code>&rdquo;.</p>
@@ -251,14 +251,14 @@ assume a max size of &ldquo;<code class="docutils literal"><span class="pre">16<
 
 <dl class="data">
 <dt id="hello.maxMessageSizeBytes">
-<code class="descclassname">hello.</code><code class="descname">maxMessageSizeBytes</code><a class="dashingAutolink" name="autolink-681"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxMessageSizeBytes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">maxMessageSizeBytes</code><a class="dashingAutolink" name="autolink-680"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxMessageSizeBytes" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum permitted size of a <a class="reference internal" href="../glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> wire protocol message.
 The default value is <code class="docutils literal"><span class="pre">48000000</span></code> bytes.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.maxWriteBatchSize">
-<code class="descclassname">hello.</code><code class="descname">maxWriteBatchSize</code><a class="dashingAutolink" name="autolink-682"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxWriteBatchSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">maxWriteBatchSize</code><a class="dashingAutolink" name="autolink-681"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxWriteBatchSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum number of write operations permitted in a write batch.
 If a batch exceeds this
 <a class="reference internal" href="../limits.html#Write-Command-Batch-Limit-Size" title="Write Command Batch Limit Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">limit</span></code></a>, the client
@@ -272,14 +272,14 @@ also applies to legacy <code class="docutils literal"><span class="pre">OP_INSER
 
 <dl class="data">
 <dt id="hello.localTime">
-<code class="descclassname">hello.</code><code class="descname">localTime</code><a class="dashingAutolink" name="autolink-683"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.localTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">localTime</code><a class="dashingAutolink" name="autolink-682"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.localTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns the local server time in UTC. This value is an
 <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISO date</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.logicalSessionTimeoutMinutes">
-<code class="descclassname">hello.</code><code class="descname">logicalSessionTimeoutMinutes</code><a class="dashingAutolink" name="autolink-684"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.logicalSessionTimeoutMinutes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">logicalSessionTimeoutMinutes</code><a class="dashingAutolink" name="autolink-683"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.logicalSessionTimeoutMinutes" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The time in minutes that a <a class="reference internal" href="../../core/read-isolation-consistency-recency.html#sessions"><span class="std std-ref">session</span></a> remains active
 after its most recent use. Sessions that have not received a new
 read/write operation from the client or been refreshed with
@@ -292,14 +292,14 @@ See <a class="reference internal" href="../../release-notes/3.6-compatibility.ht
 
 <dl class="data">
 <dt id="hello.connectionId">
-<code class="descclassname">hello.</code><code class="descname">connectionId</code><a class="dashingAutolink" name="autolink-685"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.connectionId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">connectionId</code><a class="dashingAutolink" name="autolink-684"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.connectionId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An identifier for the <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>/<a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 instance&rsquo;s outgoing connection to the client.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.minWireVersion">
-<code class="descclassname">hello.</code><code class="descname">minWireVersion</code><a class="dashingAutolink" name="autolink-686"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.minWireVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">minWireVersion</code><a class="dashingAutolink" name="autolink-685"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.minWireVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The earliest version of the wire protocol that this
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> or <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance is capable of using
 to communicate with clients.</p>
@@ -309,7 +309,7 @@ compatibility with MongoDB.</p>
 
 <dl class="data">
 <dt id="hello.maxWireVersion">
-<code class="descclassname">hello.</code><code class="descname">maxWireVersion</code><a class="dashingAutolink" name="autolink-687"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxWireVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">maxWireVersion</code><a class="dashingAutolink" name="autolink-686"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.maxWireVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The latest version of the wire protocol that this <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
 or <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance is capable of using to communicate
 with clients.</p>
@@ -319,14 +319,14 @@ compatibility with MongoDB.</p>
 
 <dl class="data">
 <dt id="hello.readOnly">
-<code class="descclassname">hello.</code><code class="descname">readOnly</code><a class="dashingAutolink" name="autolink-688"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.readOnly" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">readOnly</code><a class="dashingAutolink" name="autolink-687"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.readOnly" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> or <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> is running in read-only mode.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.compression">
-<code class="descclassname">hello.</code><code class="descname">compression</code><a class="dashingAutolink" name="autolink-689"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.compression" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">compression</code><a class="dashingAutolink" name="autolink-688"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.compression" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array listing the compression algorithms used or available for
 use (i.e. common to both the client and the <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> or
 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance) to compress the communication
@@ -386,7 +386,7 @@ does not return.</p>
 
 <dl class="data">
 <dt id="hello.saslSupportedMechs">
-<code class="descclassname">hello.</code><code class="descname">saslSupportedMechs</code><a class="dashingAutolink" name="autolink-690"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.saslSupportedMechs" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">saslSupportedMechs</code><a class="dashingAutolink" name="autolink-689"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.saslSupportedMechs" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of SASL mechanisms used to create the user&rsquo;s credential or
 credentials.  Supported SASL mechanisms are:</p>
 <ul class="simple">
@@ -414,7 +414,7 @@ copy</a>
 <a class="reference internal" href="#dbcmd.hello" title="hello"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">hello</span></code></a> response document:</p>
 <dl class="data">
 <dt id="hello.msg">
-<code class="descclassname">hello.</code><code class="descname">msg</code><a class="dashingAutolink" name="autolink-691"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.msg" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">msg</code><a class="dashingAutolink" name="autolink-690"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.msg" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Contains the value <code class="docutils literal"><span class="pre">isdbgrid</span></code> when <a class="reference internal" href="#dbcmd.hello" title="hello"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">hello</span></code></a>
 returns from a <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance.</p>
 </dd></dl>
@@ -426,7 +426,7 @@ returns from a <a class="reference internal" href="../program/mongos.html#bin.mo
 of a replica set:</p>
 <dl class="data">
 <dt id="hello.hosts">
-<code class="descclassname">hello.</code><code class="descname">hosts</code><a class="dashingAutolink" name="autolink-692"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.hosts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">hosts</code><a class="dashingAutolink" name="autolink-691"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.hosts" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of strings in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code> that
 lists all members of the <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> that are neither
 <a class="reference internal" href="../glossary.html#term-hidden-member"><span class="xref std std-term">hidden</span></a>, <a class="reference internal" href="../glossary.html#term-passive-member"><span class="xref std std-term">passive</span></a>,
@@ -437,19 +437,19 @@ which members to read from.</p>
 
 <dl class="data">
 <dt id="hello.setName">
-<code class="descclassname">hello.</code><code class="descname">setName</code><a class="dashingAutolink" name="autolink-693"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.setName" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">setName</code><a class="dashingAutolink" name="autolink-692"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.setName" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The name of the current :replica set.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.setVersion">
-<code class="descclassname">hello.</code><code class="descname">setVersion</code><a class="dashingAutolink" name="autolink-694"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.setVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">setVersion</code><a class="dashingAutolink" name="autolink-693"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.setVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The current replica set config version.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.secondary">
-<code class="descclassname">hello.</code><code class="descname">secondary</code><a class="dashingAutolink" name="autolink-695"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.secondary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">secondary</code><a class="dashingAutolink" name="autolink-694"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.secondary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates if the
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> is a <a class="reference internal" href="../glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> member of a <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica
 set</span></a>.</p>
@@ -457,7 +457,7 @@ set</span></a>.</p>
 
 <dl class="data">
 <dt id="hello.passives">
-<code class="descclassname">hello.</code><code class="descname">passives</code><a class="dashingAutolink" name="autolink-696"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.passives" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">passives</code><a class="dashingAutolink" name="autolink-695"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.passives" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of strings in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code>
 listing all members of the <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> which have a
 <a class="reference internal" href="../replica-configuration.html#rsconf.members[n].priority" title="members[n].priority"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n].priority</span></code></a> of <code class="docutils literal"><span class="pre">0</span></code>.</p>
@@ -469,7 +469,7 @@ which members to read from.</p>
 
 <dl class="data">
 <dt id="hello.arbiters">
-<code class="descclassname">hello.</code><code class="descname">arbiters</code><a class="dashingAutolink" name="autolink-697"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.arbiters" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">arbiters</code><a class="dashingAutolink" name="autolink-696"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.arbiters" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of strings  in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code>
 listing all members of the <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> that are
 <a class="reference internal" href="../glossary.html#term-arbiter"><span class="xref std std-term">arbiters</span></a>.</p>
@@ -479,14 +479,14 @@ replica set.</p>
 
 <dl class="data">
 <dt id="hello.primary">
-<code class="descclassname">hello.</code><code class="descname">primary</code><a class="dashingAutolink" name="autolink-698"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.primary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">primary</code><a class="dashingAutolink" name="autolink-697"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.primary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code> listing the
 current <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a> member of the replica set.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.arbiterOnly">
-<code class="descclassname">hello.</code><code class="descname">arbiterOnly</code><a class="dashingAutolink" name="autolink-699"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.arbiterOnly" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">arbiterOnly</code><a class="dashingAutolink" name="autolink-698"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.arbiterOnly" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that , when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the current
 instance is an <a class="reference internal" href="../glossary.html#term-arbiter"><span class="xref std std-term">arbiter</span></a>.  The <a class="reference internal" href="#hello.arbiterOnly" title="hello.arbiterOnly"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">arbiterOnly</span></code></a>
 field is only present, if the instance is an arbiter.</p>
@@ -494,7 +494,7 @@ field is only present, if the instance is an arbiter.</p>
 
 <dl class="data">
 <dt id="hello.passive">
-<code class="descclassname">hello.</code><code class="descname">passive</code><a class="dashingAutolink" name="autolink-700"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.passive" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">passive</code><a class="dashingAutolink" name="autolink-699"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.passive" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the current
 instance is <a class="reference internal" href="../glossary.html#term-passive-member"><span class="xref std std-term">passive</span></a>.  The
 <a class="reference internal" href="#hello.passive" title="hello.passive"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">passive</span></code></a> field is only present for members with a
@@ -503,7 +503,7 @@ instance is <a class="reference internal" href="../glossary.html#term-passive-me
 
 <dl class="data">
 <dt id="hello.hidden">
-<code class="descclassname">hello.</code><code class="descname">hidden</code><a class="dashingAutolink" name="autolink-701"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.hidden" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">hidden</code><a class="dashingAutolink" name="autolink-700"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.hidden" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the current
 instance is <a class="reference internal" href="../glossary.html#term-hidden-member"><span class="xref std std-term">hidden</span></a>.  The
 <a class="reference internal" href="#hello.hidden" title="hello.hidden"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">hidden</span></code></a> field is only present for hidden members.</p>
@@ -511,7 +511,7 @@ instance is <a class="reference internal" href="../glossary.html#term-hidden-mem
 
 <dl class="data">
 <dt id="hello.tags">
-<code class="descclassname">hello.</code><code class="descname">tags</code><a class="dashingAutolink" name="autolink-702"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.tags" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">tags</code><a class="dashingAutolink" name="autolink-701"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.tags" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A <code class="docutils literal"><span class="pre">tags</span></code> document contains user-defined tag field and value pairs for
 the replica set member.</p>
 <div class="button-code-block">
@@ -539,14 +539,14 @@ operations to replica set member(s) with the specified tag(s).</li>
 
 <dl class="data">
 <dt id="hello.me">
-<code class="descclassname">hello.</code><code class="descname">me</code><a class="dashingAutolink" name="autolink-703"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.me" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">me</code><a class="dashingAutolink" name="autolink-702"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.me" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">[hostname]:[port]</span></code> of the member that returned
 <a class="reference internal" href="#dbcmd.hello" title="hello"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">hello</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.electionId">
-<code class="descclassname">hello.</code><code class="descname">electionId</code><a class="dashingAutolink" name="autolink-704"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.electionId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">electionId</code><a class="dashingAutolink" name="autolink-703"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.electionId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A unique identifier for each election. Included only in the output
 of <a class="reference internal" href="#dbcmd.hello" title="hello"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">hello</span></code></a> for the <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a>. Used by clients
 to determine when elections occur.</p>
@@ -554,32 +554,32 @@ to determine when elections occur.</p>
 
 <dl class="data">
 <dt id="hello.lastWrite">
-<code class="descclassname">hello.</code><code class="descname">lastWrite</code><a class="dashingAutolink" name="autolink-705"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.</code><code class="descname">lastWrite</code><a class="dashingAutolink" name="autolink-704"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A document containing <a class="reference internal" href="../glossary.html#term-optime"><span class="xref std std-term">optime</span></a> and date information for the
 database&rsquo;s most recent write operation.</p>
 <dl class="data">
 <dt id="hello.lastWrite.opTime">
-<code class="descclassname">hello.lastWrite.</code><code class="descname">opTime</code><a class="dashingAutolink" name="autolink-706"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.opTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.lastWrite.</code><code class="descname">opTime</code><a class="dashingAutolink" name="autolink-705"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.opTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An object giving the <a class="reference internal" href="../glossary.html#term-optime"><span class="xref std std-term">optime</span></a> of the last write operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.lastWrite.lastWriteDate">
-<code class="descclassname">hello.lastWrite.</code><code class="descname">lastWriteDate</code><a class="dashingAutolink" name="autolink-707"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.lastWriteDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.lastWrite.</code><code class="descname">lastWriteDate</code><a class="dashingAutolink" name="autolink-706"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.lastWriteDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A date object containing the
 time of the last write operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.lastWrite.majorityOpTime">
-<code class="descclassname">hello.lastWrite.</code><code class="descname">majorityOpTime</code><a class="dashingAutolink" name="autolink-708"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.majorityOpTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.lastWrite.</code><code class="descname">majorityOpTime</code><a class="dashingAutolink" name="autolink-707"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.majorityOpTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An object giving the <a class="reference internal" href="../glossary.html#term-optime"><span class="xref std std-term">optime</span></a> of the last write operation
 readable by <a class="reference internal" href="../read-concern-majority.html#readconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-readconcern docutils literal"><span class="pre">majority</span></code></a> reads.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="hello.lastWrite.majorityWriteDate">
-<code class="descclassname">hello.lastWrite.</code><code class="descname">majorityWriteDate</code><a class="dashingAutolink" name="autolink-709"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.majorityWriteDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">hello.lastWrite.</code><code class="descname">majorityWriteDate</code><a class="dashingAutolink" name="autolink-708"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#hello.lastWrite.majorityWriteDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A date object containing the
 time of the last write operation readable by
 <a class="reference internal" href="../read-concern-majority.html#readconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-readconcern docutils literal"><span class="pre">majority</span></code></a> reads.</p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-51"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Monitoring%20for%20MongoDB%20%E2%80%94%20MongoDB%20Manual"></a><title>Monitoring for MongoDB &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-36"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Monitoring%20for%20MongoDB%20%E2%80%94%20MongoDB%20Manual"></a><title>Monitoring for MongoDB &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/administration/monitoring/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="monitoring-for-mongodb">
-<a class="dashingAutolink" name="autolink-52"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Monitoring%20for%20MongoDB%C2%B6"></a><h1>Monitoring for MongoDB<a class="headerlink" href="#monitoring-for-mongodb" title="Permalink to this headline">&para;</a></h1>
+<h1>Monitoring for MongoDB<a class="headerlink" href="#monitoring-for-mongodb" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -251,12 +251,12 @@ database.</p>
 <p>These data may provide a finer level of granularity than the utilities
 discussed above. Consider using their output in scripts and programs to
 develop custom alerts, or to modify the behavior of your application in
-response to the activity of your instance. The <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp"><a class="dashingAutolink" name="autolink-53"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp</span></code></a>
+response to the activity of your instance. The <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp</span></code></a>
 method is another useful tool for identifying the database instance&rsquo;s
 in-progress operations.</p>
 <div class="section" id="serverstatus">
 <h4><code class="docutils literal"><span class="pre">serverStatus</span></code><a class="headerlink" href="#serverstatus" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a> command, or <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-54"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>
+<p>The <a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a> command, or <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>
 from the shell, returns a general overview of the status of the
 database, detailing disk usage, memory use, connection, journaling,
 and index access. The command returns quickly and does not impact
@@ -270,7 +270,7 @@ administrators should be familiar with the data provided by
 </div>
 <div class="section" id="dbstats">
 <h4><code class="docutils literal"><span class="pre">dbStats</span></code><a class="headerlink" href="#dbstats" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="../reference/command/dbStats.html#dbcmd.dbStats" title="dbStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">dbStats</span></code></a> command, or <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><a class="dashingAutolink" name="autolink-55"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a> from the shell,
+<p>The <a class="reference internal" href="../reference/command/dbStats.html#dbcmd.dbStats" title="dbStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">dbStats</span></code></a> command, or <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a> from the shell,
 returns a document that addresses storage use and data volumes. The
 <a class="reference internal" href="../reference/command/dbStats.html#dbcmd.dbStats" title="dbStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">dbStats</span></code></a> reflect the amount of
 storage used, the quantity of data contained in the database, and
@@ -282,7 +282,7 @@ use between databases and to determine the average
 </div>
 <div class="section" id="collstats">
 <h4><code class="docutils literal"><span class="pre">collStats</span></code><a class="headerlink" href="#collstats" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="../reference/command/collStats.html#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a> or <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-56"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> from the
+<p>The <a class="reference internal" href="../reference/command/collStats.html#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a> or <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> from the
 shell that provides statistics that resemble <a class="reference internal" href="../reference/command/dbStats.html#dbcmd.dbStats" title="dbStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">dbStats</span></code></a> on
 the collection level, including a count of the objects in the
 collection, the size of the collection, the amount of disk space used
@@ -290,7 +290,7 @@ by the collection, and information about its indexes.</p>
 </div>
 <div class="section" id="replsetgetstatus">
 <h4><code class="docutils literal"><span class="pre">replSetGetStatus</span></code><a class="headerlink" href="#replsetgetstatus" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="../reference/command/replSetGetStatus.html#dbcmd.replSetGetStatus" title="replSetGetStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetStatus</span></code></a> command (<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-57"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> from
+<p>The <a class="reference internal" href="../reference/command/replSetGetStatus.html#dbcmd.replSetGetStatus" title="replSetGetStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetStatus</span></code></a> command (<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> from
 the shell) returns an overview of your replica set&rsquo;s status. The <a class="reference internal" href="../reference/command/replSetGetStatus.html"><span class="doc">replSetGetStatus</span></a> document details the
 state and configuration of the replica set and statistics about its members.</p>
 <p>Use this data to ensure that replication is properly configured,
@@ -442,7 +442,7 @@ log or output.</li>
 <li><a class="reference internal" href="../reference/configuration-options.html#systemLog.verbosity" title="systemLog.verbosity"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">verbosity</span></code></a>. Increases the amount of information written to
 the log or output. You can also modify the logging verbosity during
 runtime with the <a class="reference internal" href="../reference/parameters.html#param.logLevel" title="logLevel"><code class="xref mongodb mongodb-parameter docutils literal"><span class="pre">logLevel</span></code></a> parameter or the
-<a class="reference internal" href="../reference/method/db.setLogLevel.html#db.setLogLevel" title="db.setLogLevel()"><a class="dashingAutolink" name="autolink-58"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setLogLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> method in the shell.</li>
+<a class="reference internal" href="../reference/method/db.setLogLevel.html#db.setLogLevel" title="db.setLogLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> method in the shell.</li>
 <li><a class="reference internal" href="../reference/configuration-options.html#systemLog.path" title="systemLog.path"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">path</span></code></a>. Enables logging to a file, rather than the standard
 output. You must specify the full path to the log file when adjusting
 this setting.</li>
@@ -639,7 +639,7 @@ create notifications if a config server becomes inaccessible. See the
 <a class="reference internal" href="../reference/glossary.html#term-chunk"><span class="xref std std-term">chunks</span></a> among the shards. To facilitate this, MongoDB
 has a background <a class="reference internal" href="../reference/glossary.html#term-balancer"><span class="xref std std-term">balancer</span></a> process that distributes data to ensure that
 chunks are always optimally distributed among the <a class="reference internal" href="../reference/glossary.html#term-shard"><span class="xref std std-term">shards</span></a>.</p>
-<p>Issue the <a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><a class="dashingAutolink" name="autolink-59"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.printShardingStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a> or <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-60"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>
+<p>Issue the <a class="reference internal" href="../reference/method/db.printShardingStatus.html#db.printShardingStatus" title="db.printShardingStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.printShardingStatus()</span></code></a> or <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>
 command to the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> by way of the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
 shell. This returns an overview of the entire cluster including the
 database name, and a list of the chunks.</p>

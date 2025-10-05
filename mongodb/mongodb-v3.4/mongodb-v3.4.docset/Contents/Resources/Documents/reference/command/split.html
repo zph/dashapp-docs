@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2011"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/split%20%E2%80%94%20MongoDB%20Manual"></a><title>split &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1201"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/split%20%E2%80%94%20MongoDB%20Manual"></a><title>split &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/split/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="split">
-<a class="dashingAutolink" name="autolink-2012"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/split%C2%B6"></a><h1>split<a class="headerlink" href="#split" title="Permalink to this headline">&para;</a></h1>
+<h1>split<a class="headerlink" href="#split" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,7 +168,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.split">
-<code class="descname">split</code><a class="dashingAutolink" name="autolink-2010"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.split" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">split</code><a class="dashingAutolink" name="autolink-1200"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.split" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Splits a <a class="reference internal" href="../glossary.html#term-chunk"><span class="xref std std-term">chunk</span></a> in a <a class="reference internal" href="../glossary.html#term-sharded-cluster"><span class="xref std std-term">sharded cluster</span></a> into two
 chunks. The <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance splits and manages
 chunks automatically, but for exceptional circumstances the
@@ -302,8 +302,8 @@ collection with differently sized chunks.</p>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="moveChunk.html#dbcmd.moveChunk" title="moveChunk"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">moveChunk</span></code></a>, <a class="reference internal" href="../method/sh.moveChunk.html#sh.moveChunk" title="sh.moveChunk()"><a class="dashingAutolink" name="autolink-2006"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.moveChunk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.moveChunk()</span></code></a>,
-<a class="reference internal" href="../method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><a class="dashingAutolink" name="autolink-2007"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.splitAt%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitAt()</span></code></a>, and <a class="reference internal" href="../method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><a class="dashingAutolink" name="autolink-2008"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.splitFind%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitFind()</span></code></a>, which wrap the
+<p class="last"><a class="reference internal" href="moveChunk.html#dbcmd.moveChunk" title="moveChunk"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">moveChunk</span></code></a>, <a class="reference internal" href="../method/sh.moveChunk.html#sh.moveChunk" title="sh.moveChunk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.moveChunk()</span></code></a>,
+<a class="reference internal" href="../method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitAt()</span></code></a>, and <a class="reference internal" href="../method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitFind()</span></code></a>, which wrap the
 functionality of <a class="reference internal" href="#dbcmd.split" title="split"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">split</span></code></a>.</p>
 </div>
 </div>
@@ -377,7 +377,7 @@ copy</a>
 <p class="last">MongoDB uses the 64-bit <a class="reference internal" href="../../core/shell-types.html#shell-type-long"><span class="std std-ref">NumberLong</span></a>
 type to represent the hashed value.</p>
 </div>
-<p>Use <a class="reference internal" href="../method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-2009"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to see the existing bounds of the shard keys.</p>
+<p>Use <a class="reference internal" href="../method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to see the existing bounds of the shard keys.</p>
 </div>
 </div>
 <div class="section" id="metadata-lock-error">

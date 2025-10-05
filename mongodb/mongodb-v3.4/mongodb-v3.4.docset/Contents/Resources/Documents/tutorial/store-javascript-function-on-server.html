@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8768"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Store%20a%20JavaScript%20Function%20on%20the%20Server%20%E2%80%94%20MongoDB%20Manual"></a><title>Store a JavaScript Function on the Server &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3731"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Store%20a%20JavaScript%20Function%20on%20the%20Server%20%E2%80%94%20MongoDB%20Manual"></a><title>Store a JavaScript Function on the Server &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/store-javascript-function-on-server/"/><meta name="robots" content="index"/>
@@ -143,7 +143,7 @@
   </div>
                 
                   <div class="section" id="store-a-javascript-function-on-the-server">
-<a class="dashingAutolink" name="autolink-8769"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Store%20a%20JavaScript%20Function%20on%20the%20Server%C2%B6"></a><h1>Store a JavaScript Function on the Server<a class="headerlink" href="#store-a-javascript-function-on-the-server" title="Permalink to this headline">&para;</a></h1>
+<h1>Store a JavaScript Function on the Server<a class="headerlink" href="#store-a-javascript-function-on-the-server" title="Permalink to this headline">&para;</a></h1>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Do not store application logic in the database. There are performance
@@ -153,7 +153,7 @@ the application itself.</p>
 </div>
 <p>There is a special system collection named <code class="docutils literal"><span class="pre">system.js</span></code> that can store
 JavaScript functions for reuse.</p>
-<p>To store a function, you can use the <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-8766"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a>, as
+<p>To store a function, you can use the <a class="reference internal" href="../reference/method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a>, as
 in the following examples:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -184,7 +184,7 @@ database.</li>
 <p>Once you save a function in the <code class="docutils literal"><span class="pre">system.js</span></code> collection, you can use
 the function from any JavaScript context; e.g.
 <a class="reference internal" href="../reference/operator/query/where.html#op._S_where" title="$where"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$where</span></code></a> operator, <a class="reference internal" href="../reference/command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command or
-<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-8767"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>.</p>
 </div>
 
                 

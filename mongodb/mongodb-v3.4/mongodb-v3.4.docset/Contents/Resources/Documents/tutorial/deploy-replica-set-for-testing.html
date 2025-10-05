@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8112"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Deploy%20a%20Replica%20Set%20for%20Testing%20and%20Development%20%E2%80%94%20MongoDB%20Manual"></a><title>Deploy a Replica Set for Testing and Development &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3628"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Deploy%20a%20Replica%20Set%20for%20Testing%20and%20Development%20%E2%80%94%20MongoDB%20Manual"></a><title>Deploy a Replica Set for Testing and Development &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set-for-testing/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="deploy-a-replica-set-for-testing-and-development">
-<a class="dashingAutolink" name="autolink-8113"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Deploy%20a%20Replica%20Set%20for%20Testing%20and%20Development%C2%B6"></a><h1>Deploy a Replica Set for Testing and Development<a class="headerlink" href="#deploy-a-replica-set-for-testing-and-development" title="Permalink to this headline">&para;</a></h1>
+<h1>Deploy a Replica Set for Testing and Development<a class="headerlink" href="#deploy-a-replica-set-for-testing-and-development" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -288,7 +288,7 @@ copy</a>
 </div>
 </div>
 </li>
-<li><p class="first">In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8114"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to
+<li><p class="first">In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to
 initiate the replica set. You can create a replica set
 configuration object in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell environment, as
 in the following example:</p>
@@ -318,7 +318,7 @@ copy</a>
 </div>
 </div>
 <p>replacing <code class="docutils literal"><span class="pre">&lt;hostname&gt;</span></code> with your system&rsquo;s hostname,
-and then pass the <code class="docutils literal"><span class="pre">rsconf</span></code> file to <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8115"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> as
+and then pass the <code class="docutils literal"><span class="pre">rsconf</span></code> file to <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> as
 follows:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -414,16 +414,16 @@ copy</a>
 </li>
 </ol>
 <p>Check the status of your replica set at any time with the
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8116"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> operation.</p>
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> operation.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p>The documentation of the following shell functions for
 more information:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8117"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8118"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8119"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8120"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a></li>
 </ul>
 <p>You may also consider the <a class="reference external" href="https://github.com/mongodb/mongo-snippets/blob/master/replication/simple-setup.py">simple setup script</a>
 as an example of a basic automatically-configured replica set.</p>

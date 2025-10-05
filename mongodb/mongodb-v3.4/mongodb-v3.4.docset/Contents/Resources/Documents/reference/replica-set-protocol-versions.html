@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7155"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Protocol%20Versions%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Protocol Versions &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3428"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Protocol%20Versions%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Protocol Versions &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/replica-set-protocol-versions/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="replica-set-protocol-versions">
-<a class="dashingAutolink" name="autolink-7156"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Replica%20Set%20Protocol%20Versions%C2%B6"></a><h1>Replica Set Protocol Versions<a class="headerlink" href="#replica-set-protocol-versions" title="Permalink to this headline">&para;</a></h1>
+<h1>Replica Set Protocol Versions<a class="headerlink" href="#replica-set-protocol-versions" title="Permalink to this headline">&para;</a></h1>
 <p>MongoDB provides replica set protocol version 0 (<code class="docutils literal"><span class="pre">pv0</span></code>) and replica
 set protocol version 1 (<code class="docutils literal"><span class="pre">pv1</span></code>).</p>
 <div class="admonition note">
@@ -343,7 +343,7 @@ election exceeds 30-seconds.</p>
 entry (generated from the current protocol version) has replicated from
 the primary to all secondaries. To verify, on each secondary, check the
 <a class="reference internal" href="command/replSetGetStatus.html#replSetGetStatus.optimes.lastCommittedOpTime" title="replSetGetStatus.optimes.lastCommittedOpTime"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">optimes.lastCommittedOpTime.t</span></code></a> field returned from
-<a class="reference internal" href="method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-7153"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>. For example, connect a <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
+<a class="reference internal" href="method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>. For example, connect a <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
 shell to each secondary and run:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -364,7 +364,7 @@ than <code class="docutils literal"><span class="pre">-1</span></code>.</li>
 protocol version) has replicated to all the secondaries, you can change
 the protocol version.</p>
 <p>To change the replica set protocol version, reconfigure
-(<a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig"><a class="dashingAutolink" name="autolink-7154"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig</span></code></a>) the replica set with the new
+(<a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig</span></code></a>) the replica set with the new
 <a class="reference internal" href="replica-configuration.html#rsconf.protocolVersion" title="protocolVersion"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">protocolVersion</span></code></a>. For example, to upgrade to <code class="docutils literal"><span class="pre">pv1</span></code>, connect
 a <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the current primary and perform the
 following sequence of operations:</p>

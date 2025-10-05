@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7949"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Change%20Replica%20Set%20to%20WiredTiger%20%E2%80%94%20MongoDB%20Manual"></a><title>Change Replica Set to WiredTiger &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3591"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Change%20Replica%20Set%20to%20WiredTiger%20%E2%80%94%20MongoDB%20Manual"></a><title>Change Replica Set to WiredTiger &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/change-replica-set-wiredtiger/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="change-replica-set-to-wiredtiger">
-<a class="dashingAutolink" name="autolink-7950"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Change%20Replica%20Set%20to%20WiredTiger%C2%B6"></a><h1>Change Replica Set to WiredTiger<a class="headerlink" href="#change-replica-set-to-wiredtiger" title="Permalink to this headline">&para;</a></h1>
+<h1>Change Replica Set to WiredTiger<a class="headerlink" href="#change-replica-set-to-wiredtiger" title="Permalink to this headline">&para;</a></h1>
 <p>Starting in version 3.2, WiredTiger is the default storage engine
 for MongoDB.</p>
 <p>This tutorial gives an overview of changing the storage engine of a
@@ -189,7 +189,7 @@ data, starts <a class="reference internal" href="../reference/program/mongod.htm
 <p class="last">To update all members of the replica set to use WiredTiger, update
 the members in a rolling manner. That is, update, one by one, all
 <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members first. Then, once all the secondary
-members have been updated, <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7951"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/step%20down"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">step</span> <span class="pre">down</span></code></a> the
+members have been updated, <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">step</span> <span class="pre">down</span></code></a> the
 <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>, and update that stepped-down member.</p>
 </div>
 <div class="section" id="update-a-secondary-member">
@@ -253,7 +253,7 @@ the <a class="reference internal" href="../reference/configuration-options.html#
 that all secondary members have been updated first before updating
 the primary.</p>
 </div>
-<p>To update the primary, <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7952"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/step%20down"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">step</span> <span class="pre">down</span></code></a> the
+<p>To update the primary, <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">step</span> <span class="pre">down</span></code></a> the
 <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>.</p>
 <div class="admonition docutils container">
 <div class="button-code-block">

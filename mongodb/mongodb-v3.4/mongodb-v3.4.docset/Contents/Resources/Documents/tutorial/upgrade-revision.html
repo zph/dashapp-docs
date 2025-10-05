@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8837"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Upgrade%20to%20the%20Latest%20Revision%20of%20MongoDB%20%E2%80%94%20MongoDB%20Manual"></a><title>Upgrade to the Latest Revision of MongoDB &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3748"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Upgrade%20to%20the%20Latest%20Revision%20of%20MongoDB%20%E2%80%94%20MongoDB%20Manual"></a><title>Upgrade to the Latest Revision of MongoDB &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/upgrade-revision/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="upgrade-to-the-latest-revision-of-mongodb">
-<a class="dashingAutolink" name="autolink-8838"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Upgrade%20to%20the%20Latest%20Revision%20of%20MongoDB%C2%B6"></a><h1>Upgrade to the Latest Revision of MongoDB<a class="headerlink" href="#upgrade-to-the-latest-revision-of-mongodb" title="Permalink to this headline">&para;</a></h1>
+<h1>Upgrade to the Latest Revision of MongoDB<a class="headerlink" href="#upgrade-to-the-latest-revision-of-mongodb" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -296,7 +296,7 @@ instructions in <a class="reference internal" href="#upgrade-mongodb-instance"><
 </li>
 <li><p class="first">After upgrading a secondary, wait for the secondary to recover to
 the <code class="docutils literal"><span class="pre">SECONDARY</span></code> state before upgrading the next instance. To
-check the member&rsquo;s state, issue <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8839"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> in the
+check the member&rsquo;s state, issue <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.</p>
 <p>The secondary may briefly go into <code class="docutils literal"><span class="pre">STARTUP2</span></code> or <code class="docutils literal"><span class="pre">RECOVERING</span></code>.
 This is normal. Make sure to wait for the secondary to fully recover
@@ -309,7 +309,7 @@ to <code class="docutils literal"><span class="pre">SECONDARY</span></code> befo
 <ol class="arabic">
 <li><p class="first">Step down the primary to initiate the normal <a class="reference internal" href="../core/replica-set-high-availability.html#replica-set-failover"><span class="std std-ref">failover</span></a> procedure. Using one of the following:</p>
 <ul class="simple">
-<li>The <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8840"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.</li>
+<li>The <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.</li>
 <li>The <a class="reference internal" href="../reference/command/replSetStepDown.html#dbcmd.replSetStepDown" title="replSetStepDown"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetStepDown</span></code></a> database command.</li>
 </ul>
 <p>During failover, the set cannot accept writes. Typically this takes
@@ -322,7 +322,7 @@ window.</p>
 failover procedure.</p>
 </div>
 </li>
-<li><p class="first">Once the primary has stepped down, call the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8841"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>
+<li><p class="first">Once the primary has stepped down, call the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>
 method from the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell until you see that another
 member has assumed the <code class="docutils literal"><span class="pre">PRIMARY</span></code> state.</p>
 </li>

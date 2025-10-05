@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8795"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Troubleshoot%20Replica%20Sets%20%E2%80%94%20MongoDB%20Manual"></a><title>Troubleshoot Replica Sets &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3739"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Troubleshoot%20Replica%20Sets%20%E2%80%94%20MongoDB%20Manual"></a><title>Troubleshoot Replica Sets &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/troubleshoot-replica-sets/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="troubleshoot-replica-sets">
-<a class="dashingAutolink" name="autolink-8796"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Troubleshoot%20Replica%20Sets%C2%B6"></a><h1>Troubleshoot Replica Sets<a class="headerlink" href="#troubleshoot-replica-sets" title="Permalink to this headline">&para;</a></h1>
+<h1>Troubleshoot Replica Sets<a class="headerlink" href="#troubleshoot-replica-sets" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -169,13 +169,13 @@
 <div class="section" id="check-replica-set-status">
 <span id="replica-set-troubleshooting-check-replication-status"></span><h2>Check Replica Set Status<a class="headerlink" href="#check-replica-set-status" title="Permalink to this headline">&para;</a></h2>
 <p>To display the current state of the replica set and current state of
-each member, run the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8797"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method in a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
+each member, run the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method in a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
 shell connected to the replica set&rsquo;s <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>. For descriptions
-of the information displayed by <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8798"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>, see
+of the information displayed by <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>, see
 <a class="reference internal" href="../reference/command/replSetGetStatus.html"><span class="doc">replSetGetStatus</span></a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8799"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method is a wrapper that runs the
+<p class="last">The <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method is a wrapper that runs the
 <a class="reference internal" href="../reference/command/replSetGetStatus.html#dbcmd.replSetGetStatus" title="replSetGetStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetStatus</span></code></a> database command.</p>
 </div>
 </div>
@@ -191,7 +191,7 @@ will be inconsistent.</p>
 <p>To check the current length of replication lag:</p>
 <ul>
 <li><p class="first">In a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell connected to the primary, call the
-<a class="reference internal" href="../reference/method/rs.printSlaveReplicationInfo.html#rs.printSlaveReplicationInfo" title="rs.printSlaveReplicationInfo()"><a class="dashingAutolink" name="autolink-8800"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printSlaveReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printSlaveReplicationInfo()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/rs.printSlaveReplicationInfo.html#rs.printSlaveReplicationInfo" title="rs.printSlaveReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printSlaveReplicationInfo()</span></code></a> method.</p>
 <p>Returns the <code class="docutils literal"><span class="pre">syncedTo</span></code> value for each member,
 which shows the time when the last oplog entry was written to the
 secondary, as shown in the following example:</p>
@@ -215,7 +215,7 @@ greater than the <a class="reference internal" href="../reference/replica-config
 value.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8801"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method is a wrapper around the
+<p class="last">The <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method is a wrapper around the
 <a class="reference internal" href="../reference/command/replSetGetStatus.html#dbcmd.replSetGetStatus" title="replSetGetStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetStatus</span></code></a> database command.</p>
 </div>
 </li>
@@ -372,7 +372,7 @@ related information on connection errors, see <a class="reference internal" href
 lag, and make the set more resilient.</p>
 <p>To check the size of the oplog for a given <a class="reference internal" href="../reference/glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> member,
 connect to the member in a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and run the
-<a class="reference internal" href="../reference/method/rs.printReplicationInfo.html#rs.printReplicationInfo" title="rs.printReplicationInfo()"><a class="dashingAutolink" name="autolink-8802"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.printReplicationInfo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/rs.printReplicationInfo.html#rs.printReplicationInfo" title="rs.printReplicationInfo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.printReplicationInfo()</span></code></a> method.</p>
 <p>The output displays the size of the oplog and the date ranges of the
 operations contained in the oplog. In the following example, the oplog
 is about 10 MB and is able to fit about 26 hours (94400 seconds) of

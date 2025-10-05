@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8245"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Ensure%20Indexes%20Fit%20in%20RAM%20%E2%80%94%20MongoDB%20Manual"></a><title>Ensure Indexes Fit in RAM &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3640"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Ensure%20Indexes%20Fit%20in%20RAM%20%E2%80%94%20MongoDB%20Manual"></a><title>Ensure Indexes Fit in RAM &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/ensure-indexes-fit-ram/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="ensure-indexes-fit-in-ram">
-<span id="indexes-ensure-indexes-fit-ram"></span><a class="dashingAutolink" name="autolink-8246"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Ensure%20Indexes%20Fit%20in%20RAM%C2%B6"></a><h1>Ensure Indexes Fit in RAM<a class="headerlink" href="#ensure-indexes-fit-in-ram" title="Permalink to this headline">&para;</a></h1>
+<span id="indexes-ensure-indexes-fit-ram"></span><h1>Ensure Indexes Fit in RAM<a class="headerlink" href="#ensure-indexes-fit-in-ram" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -161,7 +161,7 @@
 <p>For the fastest processing, ensure that your indexes fit entirely in RAM so
 that the system can avoid reading the index from disk.</p>
 <p>To check the size of your indexes, use the
-<a class="reference internal" href="../reference/method/db.collection.totalIndexSize.html#db.collection.totalIndexSize" title="db.collection.totalIndexSize()"><a class="dashingAutolink" name="autolink-8247"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.totalIndexSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.totalIndexSize()</span></code></a> helper, which returns data in
+<a class="reference internal" href="../reference/method/db.collection.totalIndexSize.html#db.collection.totalIndexSize" title="db.collection.totalIndexSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.totalIndexSize()</span></code></a> helper, which returns data in
 bytes:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -184,7 +184,7 @@ fit in memory at the same time.</p>
 to fit in memory. See <a class="reference internal" href="#indexing-right-handed"><span class="std std-ref">Indexes that Hold Only Recent Values in RAM</span></a>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../reference/command/collStats.html#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-8248"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a></p>
+<p class="last"><a class="reference internal" href="../reference/command/collStats.html#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a></p>
 </div>
 <div class="section" id="indexes-that-hold-only-recent-values-in-ram">
 <span id="indexing-right-handed"></span><h2>Indexes that Hold Only Recent Values in RAM<a class="headerlink" href="#indexes-that-hold-only-recent-values-in-ram" title="Permalink to this headline">&para;</a></h2>

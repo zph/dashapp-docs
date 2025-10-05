@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2847"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/ObjectId%20%E2%80%94%20MongoDB%20Manual"></a><title>ObjectId &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1679"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/ObjectId%20%E2%80%94%20MongoDB%20Manual"></a><title>ObjectId &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/ObjectId/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="objectid">
-<a class="dashingAutolink" name="autolink-2848"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/ObjectId%C2%B6"></a><h1>ObjectId<a class="headerlink" href="#objectid" title="Permalink to this headline">&para;</a></h1>
+<h1>ObjectId<a class="headerlink" href="#objectid" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <span id="core-object-id-class"></span><h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="ObjectId">
-<code class="descname">ObjectId</code><span class="sig-paren">(</span><em>&lt;hexadecimal&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2856"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#ObjectId" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">ObjectId</code><span class="sig-paren">(</span><em>&lt;hexadecimal&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1678"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#ObjectId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns a new <a class="reference internal" href="../bson-types.html#objectid"><span class="std std-ref">ObjectId</span></a> value. The 12-byte <a class="reference internal" href="../bson-types.html#objectid"><span class="std std-ref">ObjectId</span></a>
 value consists of:</p>
 <ul class="simple">
@@ -178,7 +178,7 @@ measured in seconds since the Unix epoch</li>
 <p>While the BSON format itself is little-endian, the <em>timestamp</em> and
 <em>counter</em> values are big-endian, with the most significant bytes
 appearing first in the byte sequence.</p>
-<p><a class="reference internal" href="#ObjectId" title="ObjectId()"><a class="dashingAutolink" name="autolink-2849"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> can accept the following parameter:</p>
+<p><a class="reference internal" href="#ObjectId" title="ObjectId()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> can accept the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -203,7 +203,7 @@ appearing first in the byte sequence.</p>
 </div>
 <div class="section" id="methods-and-attributes">
 <h2>Methods and Attributes<a class="headerlink" href="#methods-and-attributes" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="#ObjectId" title="ObjectId()"><a class="dashingAutolink" name="autolink-2850"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> has the following attribute and methods:</p>
+<p><a class="reference internal" href="#ObjectId" title="ObjectId()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> has the following attribute and methods:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="30%"/>
@@ -218,14 +218,14 @@ appearing first in the byte sequence.</p>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">str</span></code></td>
 <td>Returns the hexadecimal string representation of the object.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><a class="dashingAutolink" name="autolink-2851"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId.getTimestamp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.getTimestamp()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="ObjectId.getTimestamp.html#ObjectId.getTimestamp" title="ObjectId.getTimestamp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.getTimestamp()</span></code></a></td>
 <td>Returns the timestamp portion of the object as a Date.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="ObjectId.toString.html#ObjectId.toString" title="ObjectId.toString()"><a class="dashingAutolink" name="autolink-2852"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId.toString%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.toString()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="ObjectId.toString.html#ObjectId.toString" title="ObjectId.toString()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.toString()</span></code></a></td>
 <td>Returns the JavaScript representation in the form of a string
 literal &ldquo;<code class="docutils literal"><span class="pre">ObjectId(...)</span></code>&rdquo;.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="ObjectId.valueOf.html#ObjectId.valueOf" title="ObjectId.valueOf()"><a class="dashingAutolink" name="autolink-2853"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId.valueOf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.valueOf()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="ObjectId.valueOf.html#ObjectId.valueOf" title="ObjectId.valueOf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId.valueOf()</span></code></a></td>
 <td>Returns the representation of the object as a hexadecimal
 string. The returned string is the <code class="docutils literal"><span class="pre">str</span></code> attribute.</td>
 </tr>
@@ -236,7 +236,7 @@ string. The returned string is the <code class="docutils literal"><span class="p
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="generate-a-new-objectid">
 <h3>Generate a New ObjectId<a class="headerlink" href="#generate-a-new-objectid" title="Permalink to this headline">&para;</a></h3>
-<p>To generate a new ObjectId, use <a class="reference internal" href="#ObjectId" title="ObjectId()"><a class="dashingAutolink" name="autolink-2854"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> with no argument:</p>
+<p>To generate a new ObjectId, use <a class="reference internal" href="#ObjectId" title="ObjectId()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> with no argument:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -259,7 +259,7 @@ copy</a>
 </div>
 <div class="section" id="specify-a-hexadecimal-string">
 <h3>Specify a Hexadecimal String<a class="headerlink" href="#specify-a-hexadecimal-string" title="Permalink to this headline">&para;</a></h3>
-<p>To generate a new ObjectId using <a class="reference internal" href="#ObjectId" title="ObjectId()"><a class="dashingAutolink" name="autolink-2855"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> with a unique
+<p>To generate a new ObjectId using <a class="reference internal" href="#ObjectId" title="ObjectId()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId()</span></code></a> with a unique
 hexadecimal string:</p>
 <div class="button-code-block">
 <div class="button-row">

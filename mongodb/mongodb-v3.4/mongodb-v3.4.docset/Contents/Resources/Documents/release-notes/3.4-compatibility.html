@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7711"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Compatibility%20Changes%20in%20MongoDB%203.4%20%E2%80%94%20MongoDB%20Manual"></a><title>Compatibility Changes in MongoDB 3.4 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3552"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Compatibility%20Changes%20in%20MongoDB%203.4%20%E2%80%94%20MongoDB%20Manual"></a><title>Compatibility Changes in MongoDB 3.4 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/3.4-compatibility/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="compatibility-changes-in-mongodb-3-4">
-<a class="dashingAutolink" name="autolink-7712"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Compatibility%20Changes%20in%20MongoDB%203.4%C2%B6"></a><h1>Compatibility Changes in MongoDB 3.4<a class="headerlink" href="#compatibility-changes-in-mongodb-3-4" title="Permalink to this headline">&para;</a></h1>
+<h1>Compatibility Changes in MongoDB 3.4<a class="headerlink" href="#compatibility-changes-in-mongodb-3-4" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -226,10 +226,10 @@ fails and restarts to avoid possible data corruption. See
 <p>Operations that rename collections include:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a> command and
-<a class="reference internal" href="../reference/method/db.collection.renameCollection.html#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-7713"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method.</li>
-<li>Aggregation (<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7714"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method or
+<a class="reference internal" href="../reference/method/db.collection.renameCollection.html#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method.</li>
+<li>Aggregation (<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method or
 <a class="reference internal" href="../reference/command/aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a> command) with the <a class="reference internal" href="../reference/operator/aggregation/out.html#pipe._S_out" title="$out"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$out</span></code></a> stage.</li>
-<li>Map-reduce (<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-7715"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method or
+<li>Map-reduce (<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method or
 <a class="reference internal" href="../reference/command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command) with the <code class="docutils literal"><span class="pre">out</span></code> option.</li>
 <li><a class="reference internal" href="../reference/command/convertToCapped.html#dbcmd.convertToCapped" title="convertToCapped"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">convertToCapped</span></code></a> command.</li>
 </ul>
@@ -247,9 +247,9 @@ could potentially corrupt data. See <a class="reference external" href="https://
 <p>Mongodb 3.4 deprecates the following commands and <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
 shell methods:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/command/group.html#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> command and <a class="reference internal" href="../reference/method/db.collection.group.html#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-7716"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>.
-Use <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7717"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> or
-<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-7718"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> instead.</li>
+<li><a class="reference internal" href="../reference/command/group.html#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> command and <a class="reference internal" href="../reference/method/db.collection.group.html#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>.
+Use <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> or
+<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> instead.</li>
 </ul>
 </div>
 <div class="section" id="aggregate-without-cursor">
@@ -267,9 +267,9 @@ cursor option <code class="docutils literal"><span class="pre">cursor:</span> <s
 <div class="section" id="stricter-validation-of-collection-options">
 <h3>Stricter Validation of Collection Options<a class="headerlink" href="#stricter-validation-of-collection-options" title="Permalink to this headline">&para;</a></h3>
 <p>MongoDB 3.4 enforces a stricter validation of collection options during
-<a class="reference internal" href="../reference/command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a> and <a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7719"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> operations;
+<a class="reference internal" href="../reference/command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a> and <a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> operations;
 namely, the specified options must be valid options supported by
-<a class="reference internal" href="../reference/command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a> and <a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7720"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>.</p>
+<a class="reference internal" href="../reference/command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a> and <a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>.</p>
 <p>For example, the following operation is no longer valid:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -285,7 +285,7 @@ copy</a>
 <span id="index-validation"></span><h3>Stricter Validation of Index Specifications<a class="headerlink" href="#stricter-validation-of-index-specifications" title="Permalink to this headline">&para;</a></h3>
 <p>MongoDB 3.4 enforces a stricter validation of index specification
 during <a class="reference internal" href="../reference/command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a> and
-<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-7721"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> operations. The enforcement does
+<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> operations. The enforcement does
 not apply to existing indexes.</p>
 <p>Stricter validation include the following:</p>
 <ul>
@@ -366,9 +366,9 @@ functionality.</p>
 <li><p class="first">Updates to <a class="reference internal" href="../reference/operator/aggregation/project.html#pipe._S_project" title="$project"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$project</span></code></a> specification behavior: empty
 documents in <a class="reference internal" href="../reference/operator/aggregation/project.html#pipe._S_project" title="$project"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$project</span></code></a> specifications produce an error.</p>
 </li>
-<li><p class="first">If you include a <a class="dashingAutolink" name="autolink-7722"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> that specifies a
+<li><p class="first">If you include a <code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> that specifies a
 <a class="reference internal" href="../core/index-sparse.html#index-type-sparse"><span class="std std-ref">sparse index</span></a> when you perform a
-<a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><a class="dashingAutolink" name="autolink-7723"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> of all documents in a collection (i.e. with
+<a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> of all documents in a collection (i.e. with
 an empty query predicate), the sparse index is used even if the sparse
 index results in an incorrect count.</p>
 <div class="button-code-block">
@@ -383,7 +383,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>To obtain the correct count, do not <a class="dashingAutolink" name="autolink-7724"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> with a
+<p>To obtain the correct count, do not <code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> with a
 <a class="reference internal" href="../core/index-sparse.html#index-type-sparse"><span class="std std-ref">sparse index</span></a> when performing a count of all
 documents in a collection.</p>
 <div class="button-code-block">

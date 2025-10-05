@@ -14,6 +14,8 @@
 	<string>dashtoc</string>
 	<key>dashIndexFilePath</key>
 	<string>index.html</string>
-	<key>isJavaScriptEnabled</key><true/>
+	<key>isJavaScriptEnabled</key><false/>
+	<key>DashDocSetFallbackURL</key>
+	<string>https://docs.mongodb.com/v3.4/manual.tar.gz</string>
 </dict>
 </plist>

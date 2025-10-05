@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3325"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.copyTo%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.copyTo() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1806"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.copyTo%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.copyTo() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.copyTo/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-copyto">
-<a class="dashingAutolink" name="autolink-3326"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.copyTo%28%29%C2%B6"></a><h1>db.collection.copyTo()<a class="headerlink" href="#db-collection-copyto" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.copyTo()<a class="headerlink" href="#db-collection-copyto" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.copyTo">
-<code class="descclassname">db.collection.</code><code class="descname">copyTo</code><span class="sig-paren">(</span><em>newCollection</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3335"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.copyTo" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">copyTo</code><span class="sig-paren">(</span><em>newCollection</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1805"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.copyTo" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.0.</span></p>
 </div>
@@ -174,9 +174,9 @@
 server-side JavaScript. If <code class="docutils literal"><span class="pre">newCollection</span></code> does not exist, MongoDB
 creates it.</p>
 <p>If authorization is enabled, you must have access to all actions on
-all resources in order to run <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3327"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a>. Providing such access
+all resources in order to run <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a>. Providing such access
 is not recommended, but if your organization requires a user to run
-<a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3328"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a>, create a role that grants <a class="reference internal" href="../privilege-actions.html#anyAction" title="anyAction"><code class="xref mongodb mongodb-authaction docutils literal"><span class="pre">anyAction</span></code></a> on
+<a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a>, create a role that grants <a class="reference internal" href="../privilege-actions.html#anyAction" title="anyAction"><code class="xref mongodb mongodb-authaction docutils literal"><span class="pre">anyAction</span></code></a> on
 <a class="reference internal" href="../resource-document.html#resource-anyresource"><span class="std std-ref">anyResource</span></a>. Do not assign this role to any other
 user.</p>
 <table border="1" class="colwidths-given docutils">
@@ -200,23 +200,23 @@ user.</p>
 </table>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p>When using <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3329"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a> check field types to
+<p>When using <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a> check field types to
 ensure that the operation does not remove type information from
 documents during the translation from <a class="reference internal" href="../glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> to
 <a class="reference internal" href="../glossary.html#term-json"><span class="xref std std-term">JSON</span></a>.</p>
-<p class="last">The <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3330"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a> method uses the <a class="reference internal" href="../command/eval.html#dbcmd.eval" title="eval"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">eval</span></code></a>
-command internally. As a result, the <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3331"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a>
+<p class="last">The <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a> method uses the <a class="reference internal" href="../command/eval.html#dbcmd.eval" title="eval"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">eval</span></code></a>
+command internally. As a result, the <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a>
 operation takes a global lock that blocks all other read and write
-operations until the <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3332"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a> completes.</p>
+operations until the <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a> completes.</p>
 </div>
 </dd></dl>
 
-<p><a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3333"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">copyTo()</span></code></a> returns the number of documents
+<p><a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">copyTo()</span></code></a> returns the number of documents
 copied. If the copy fails, it throws an exception.</p>
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
-<p>Because <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-3334"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">copyTo()</span></code></a> uses
+<p>Because <a class="reference internal" href="#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">copyTo()</span></code></a> uses
 <a class="reference internal" href="../command/eval.html#dbcmd.eval" title="eval"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">eval</span></code></a> internally, the copy operations will block all
 other operations on the <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 </div>

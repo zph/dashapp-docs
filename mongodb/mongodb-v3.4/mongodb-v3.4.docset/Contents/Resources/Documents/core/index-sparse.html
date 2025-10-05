@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-332"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Sparse%20Indexes%20%E2%80%94%20MongoDB%20Manual"></a><title>Sparse Indexes &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-194"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Sparse%20Indexes%20%E2%80%94%20MongoDB%20Manual"></a><title>Sparse Indexes &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/index-sparse/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="sparse-indexes">
-<span id="index-type-sparse"></span><span id="index-0"></span><a class="dashingAutolink" name="autolink-333"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Sparse%20Indexes%C2%B6"></a><h1>Sparse Indexes<a class="headerlink" href="#sparse-indexes" title="Permalink to this headline">&para;</a></h1>
+<span id="index-type-sparse"></span><span id="index-0"></span><h1>Sparse Indexes<a class="headerlink" href="#sparse-indexes" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -179,7 +179,7 @@ are using MongoDB 3.2 or later, <a class="reference internal" href="index-partia
 <div class="section" id="create-a-sparse-index">
 <h2>Create a Sparse Index<a class="headerlink" href="#create-a-sparse-index" title="Permalink to this headline">&para;</a></h2>
 <p>To create a <code class="docutils literal"><span class="pre">sparse</span></code> index, use the
-<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-334"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> method with the <code class="docutils literal"><span class="pre">sparse</span></code> option
+<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> method with the <code class="docutils literal"><span class="pre">sparse</span></code> option
 set to <code class="docutils literal"><span class="pre">true</span></code>. For example, the following operation in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell creates a sparse index on the <code class="docutils literal"><span class="pre">xmpp_id</span></code> field
 of the <code class="docutils literal"><span class="pre">addresses</span></code> collection:</p>
@@ -207,7 +207,7 @@ specific filter.</p>
 <h3><code class="docutils literal"><span class="pre">sparse</span></code> Index and Incomplete Results<a class="headerlink" href="#sparse-index-and-incomplete-results" title="Permalink to this headline">&para;</a></h3>
 <p>If a sparse index would result in an incomplete result set for queries
 and sort operations, MongoDB will not use that index unless a
-<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-335"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> explicitly specifies the index.</p>
+<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> explicitly specifies the index.</p>
 <p>For example, the query <code class="docutils literal"><span class="pre">{</span> <span class="pre">x:</span> <span class="pre">{</span> <span class="pre">$exists:</span> <span class="pre">false</span> <span class="pre">}</span> <span class="pre">}</span></code> will not use a
 sparse index on the <code class="docutils literal"><span class="pre">x</span></code> field unless explicitly hinted. See
 <a class="reference internal" href="#sparse-index-incomplete-results"><span class="std std-ref">Sparse Index On A Collection Cannot Return Complete Results</span></a> for an example that details the
@@ -215,9 +215,9 @@ behavior.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.4.</span></p>
 </div>
-<p>If you include a <a class="dashingAutolink" name="autolink-336"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> that specifies a
+<p>If you include a <code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> that specifies a
 <a class="reference internal" href="#index-type-sparse"><span class="std std-ref">sparse index</span></a> when you perform a
-<a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><a class="dashingAutolink" name="autolink-337"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> of all documents in a collection (i.e. with
+<a class="reference internal" href="../reference/method/cursor.count.html#cursor.count" title="cursor.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> of all documents in a collection (i.e. with
 an empty query predicate), the sparse index is used even if the sparse
 index results in an incorrect count.</p>
 <div class="button-code-block">
@@ -232,7 +232,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>To obtain the correct count, do not <a class="dashingAutolink" name="autolink-338"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> with a
+<p>To obtain the correct count, do not <code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code> with a
 <a class="reference internal" href="#index-type-sparse"><span class="std std-ref">sparse index</span></a> when performing a count of all
 documents in a collection.</p>
 <div class="button-code-block">
@@ -380,7 +380,7 @@ copy</a>
 </div>
 </div>
 <p>To use the sparse index, explicitly specify the index with
-<a class="dashingAutolink" name="autolink-339"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code>:</p>
+<code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code>:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -404,7 +404,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-340"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> and <a class="reference internal" href="../tutorial/analyze-query-plan.html"><span class="doc">Analyze Query Performance</span></a></p>
+<p class="last"><a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> and <a class="reference internal" href="../tutorial/analyze-query-plan.html"><span class="doc">Analyze Query Performance</span></a></p>
 </div>
 </div>
 <div class="section" id="sparse-index-with-unique-constraint">

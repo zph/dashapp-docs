@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3509"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.findAndModify%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.findAndModify() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1834"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.findAndModify%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.findAndModify() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.findAndModify/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-findandmodify">
-<a class="dashingAutolink" name="autolink-3510"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.findAndModify%28%29%C2%B6"></a><h1>db.collection.findAndModify()<a class="headerlink" href="#db-collection-findandmodify" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.findAndModify()<a class="headerlink" href="#db-collection-findandmodify" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,14 +167,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.findAndModify">
-<code class="descclassname">db.collection.</code><code class="descname">findAndModify</code><span class="sig-paren">(</span><em>document</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3508"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.findAndModify" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">findAndModify</code><span class="sig-paren">(</span><em>document</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1833"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.findAndModify" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Modifies and returns a single document. By default, the returned
 document does not include the modifications made on the update. To
 return the document with the modifications made on the update, use
-the <code class="docutils literal"><span class="pre">new</span></code> option. The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3511"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
+the <code class="docutils literal"><span class="pre">new</span></code> option. The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
 method is a shell helper around the <a class="reference internal" href="../command/findAndModify.html#dbcmd.findAndModify" title="findAndModify"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">findAndModify</span></code></a>
 command.</p>
-<p>The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3512"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method has the following
 form:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -196,7 +196,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3513"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> method takes a document
+<p>The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> method takes a document
 parameter with the following embedded document fields:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -215,8 +215,8 @@ parameter with the following embedded document fields:</p>
 <td>document</td>
 <td><p class="first">Optional. The selection criteria for the modification. The <code class="docutils literal"><span class="pre">query</span></code> field
 employs the same <a class="reference internal" href="../operator/query.html#query-selectors"><span class="std std-ref">query selectors</span></a> as used in
-the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3514"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> method. Although the query may
-match multiple documents, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3515"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
+the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> method. Although the query may
+match multiple documents, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
 <strong>will only select one document to modify</strong>.</p>
 <p>If unspecified, defaults to an empty document.</p>
 <p class="last">Starting in MongoDB 3.4.23+, the operation errors if the query argument
@@ -226,7 +226,7 @@ is not a document.</p>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">sort</span></code></td>
 <td>document</td>
 <td><p class="first">Optional. Determines which document the operation modifies if the query selects
-multiple documents. <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3516"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> modifies
+multiple documents. <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> modifies
 the first document in the sort order specified by this argument.</p>
 <p class="last">Starting in MongoDB 3.4.23+, the operation errors if the sort argument is not
 a document.</p>
@@ -248,7 +248,7 @@ specifications to modify the selected document.</td>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">new</span></code></td>
 <td>boolean</td>
 <td>Optional. When <code class="docutils literal"><span class="pre">true</span></code>, returns the modified document rather than the original.
-The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3517"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method ignores the
+The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method ignores the
 <code class="docutils literal"><span class="pre">new</span></code> option for <code class="docutils literal"><span class="pre">remove</span></code> operations. The default is <code class="docutils literal"><span class="pre">false</span></code>.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">fields</span></code></td>
@@ -263,7 +263,7 @@ a document.</p>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">upsert</span></code></td>
 <td>boolean</td>
 <td><p class="first">Optional. Used in conjuction with the <code class="docutils literal"><span class="pre">update</span></code> field.</p>
-<p>When <code class="docutils literal"><span class="pre">true</span></code>, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3518"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> either:</p>
+<p>When <code class="docutils literal"><span class="pre">true</span></code>, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> either:</p>
 <ul class="simple">
 <li>Creates a new document if no documents match the <code class="docutils literal"><span class="pre">query</span></code>.
 For more details see <a class="reference internal" href="db.collection.update.html#upsert-behavior"><span class="std std-ref">upsert behavior</span></a>.</li>
@@ -276,7 +276,7 @@ are <a class="reference internal" href="../../core/index-unique.html#index-type-
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">bypassDocumentValidation</span></code></td>
 <td>boolean</td>
-<td><p class="first">Optional. Enables <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify"><a class="dashingAutolink" name="autolink-3519"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify</span></code></a> to bypass document validation
+<td><p class="first">Optional. Enables <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify</span></code></a> to bypass document validation
 during the operation. This lets you update documents that do not
 meet the validation requirements.</p>
 <div class="last versionadded">
@@ -327,7 +327,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-3520"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -349,10 +349,10 @@ find and another for the sort.</p>
 <div class="section" id="return-data">
 <h2>Return Data<a class="headerlink" href="#return-data" title="Permalink to this headline">&para;</a></h2>
 <p>For remove operations, if the query matches a document,
-<a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3521"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns the removed document.
+<a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns the removed document.
 If the query does not match a document to remove,
-<a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3522"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns <code class="docutils literal"><span class="pre">null</span></code>.</p>
-<p>For update operations, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3523"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns
+<a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns <code class="docutils literal"><span class="pre">null</span></code>.</p>
+<p>For update operations, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns
 one of the following:</p>
 <ul class="simple">
 <li>If the <code class="docutils literal"><span class="pre">new</span></code> parameter is not set or is <code class="docutils literal"><span class="pre">false</span></code>:<ul>
@@ -370,14 +370,14 @@ one of the following:</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0: </span>In previous versions, if for the update, <code class="docutils literal"><span class="pre">sort</span></code> is specified,
 and <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code>, and the <code class="docutils literal"><span class="pre">new</span></code> option is not set or <code class="docutils literal"><span class="pre">new:</span>
-<span class="pre">false</span></code>, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3524"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> returns an empty document <code class="docutils literal"><span class="pre">{}</span></code> instead of <code class="docutils literal"><span class="pre">null</span></code>.</p>
+<span class="pre">false</span></code>, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> returns an empty document <code class="docutils literal"><span class="pre">{}</span></code> instead of <code class="docutils literal"><span class="pre">null</span></code>.</p>
 </div>
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="upsert-and-unique-index">
 <span id="id1"></span><h3>Upsert and Unique Index<a class="headerlink" href="#upsert-and-unique-index" title="Permalink to this headline">&para;</a></h3>
-<p>When <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3525"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> includes the <code class="docutils literal"><span class="pre">upsert:</span>
+<p>When <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> includes the <code class="docutils literal"><span class="pre">upsert:</span>
 <span class="pre">true</span></code> option <strong>and</strong> the query field(s) is not uniquely indexed, the
 method could insert a document multiple times in certain circumstances.</p>
 <p>In the following example, no document with the name <code class="docutils literal"><span class="pre">Andy</span></code> exists,
@@ -396,7 +396,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Then, if these clients&rsquo; <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3526"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
+<p>Then, if these clients&rsquo; <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
 methods finish the <code class="docutils literal"><span class="pre">query</span></code> phase before any command starts the
 <code class="docutils literal"><span class="pre">modify</span></code> phase, <strong>and</strong> there is no unique index on the <code class="docutils literal"><span class="pre">name</span></code>
 field, the commands may all perform an upsert, creating
@@ -406,11 +406,11 @@ name, create a <a class="reference internal" href="../../core/index-unique.html#
 field. With this unique index in place, the multiple methods will
 exhibit one of the following behaviors:</p>
 <ul class="simple">
-<li>Exactly one <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3527"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
+<li>Exactly one <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>
 successfully inserts a new document.</li>
-<li>Zero or more <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3528"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> methods
+<li>Zero or more <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> methods
 update the newly inserted document.</li>
-<li>Zero or more <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3529"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> methods fail
+<li>Zero or more <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> methods fail
 when they attempt to insert documents with the same name. If the
 method fails due to the unique index constraint violation on the
 <code class="docutils literal"><span class="pre">name</span></code> field, you can retry the method. Absent a delete of the
@@ -427,7 +427,7 @@ instances for <em>non-sharded</em> collections function normally.</p>
 </div>
 <div class="section" id="document-validation">
 <h3>Document Validation<a class="headerlink" href="#document-validation" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3530"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> method adds support for the
+<p>The <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a> method adds support for the
 <code class="docutils literal"><span class="pre">bypassDocumentValidation</span></code> option, which lets you bypass
 <a class="reference internal" href="../../release-notes/3.2.html#rel-notes-document-validation"><span class="std std-ref">document validation</span></a> when
 inserting or updating documents in a collection with validation
@@ -435,33 +435,33 @@ rules.</p>
 </div>
 <div class="section" id="comparisons-with-the-update-method">
 <span id="findandmodify-method-and-update"></span><h3>Comparisons with the <code class="docutils literal"><span class="pre">update</span></code> Method<a class="headerlink" href="#comparisons-with-the-update-method" title="Permalink to this headline">&para;</a></h3>
-<p>When updating a document, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3531"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> and the
-<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3532"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method operate differently:</p>
+<p>When updating a document, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> and the
+<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method operate differently:</p>
 <ul>
 <li><p class="first">By default, both operations modify a single document. However, the
-<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3533"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method with its <code class="docutils literal"><span class="pre">multi</span></code> option
+<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method with its <code class="docutils literal"><span class="pre">multi</span></code> option
 can modify more than one document.</p>
 </li>
 <li><p class="first">If multiple documents match the update criteria, for
-<a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3534"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>, you can specify a <code class="docutils literal"><span class="pre">sort</span></code> to provide some
+<a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a>, you can specify a <code class="docutils literal"><span class="pre">sort</span></code> to provide some
 measure of control on which document to update.</p>
-<p>With the default behavior of the <a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3535"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
+<p>With the default behavior of the <a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
 method, you cannot specify which single document to update when
 multiple documents match.</p>
 </li>
-<li><p class="first">By default, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3536"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns the pre-modified version of the document. To
+<li><p class="first">By default, <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> returns the pre-modified version of the document. To
 obtain the updated document, use the <code class="docutils literal"><span class="pre">new</span></code> option.</p>
-<p>The <a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3537"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method returns a
-<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3538"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object that contains the status of the operation.
-To return the updated document, use the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3539"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>
+<p>The <a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method returns a
+<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object that contains the status of the operation.
+To return the updated document, use the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>
 method. However, other updates may have modified the document between
 your update and the document retrieval. Also, if the update modified
 only a single document but multiple documents matched, you will need to
 use additional logic to identify the updated document.</p>
 </li>
 </ul>
-<p>When modifying a <em>single</em> document, both <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3540"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> and the
-<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3541"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>atomically</em> update the
+<p>When modifying a <em>single</em> document, both <a class="reference internal" href="#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> and the
+<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>atomically</em> update the
 document. See <a class="reference internal" href="../../core/write-operations-atomicity.html"><span class="doc">Atomicity and Transactions</span></a> for more
 details about interactions and order of operations of these methods.</p>
 </div>

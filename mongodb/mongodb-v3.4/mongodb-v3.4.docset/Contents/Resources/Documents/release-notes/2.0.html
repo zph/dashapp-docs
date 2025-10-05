@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7387"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%202.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 2.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3520"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%202.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 2.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/2.0/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="release-notes-for-mongodb-2-0">
-<a class="dashingAutolink" name="autolink-7388"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Release%20Notes%20for%20MongoDB%202.0%C2%B6"></a><h1>Release Notes for MongoDB 2.0<a class="headerlink" href="#release-notes-for-mongodb-2-0" title="Permalink to this headline">&para;</a></h1>
+<h1>Release Notes for MongoDB 2.0<a class="headerlink" href="#release-notes-for-mongodb-2-0" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -203,9 +203,9 @@ temporarily halt your application (failover should take less than 10
 seconds), or you can set <a class="reference internal" href="../reference/write-concern.html#write-concern"><span class="std std-ref">write concern</span></a> in your application
 code to confirm that each update reaches multiple servers.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7389"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> to step down the primary to allow
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> to step down the primary to allow
 the normal <a class="reference internal" href="../core/replica-set-high-availability.html#replica-set-failover"><span class="std std-ref">failover</span></a> procedure.</p>
-<p><a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7390"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> and <a class="reference internal" href="../reference/command/replSetStepDown.html#dbcmd.replSetStepDown" title="replSetStepDown"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetStepDown</span></code></a> provide for
+<p><a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> and <a class="reference internal" href="../reference/command/replSetStepDown.html#dbcmd.replSetStepDown" title="replSetStepDown"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetStepDown</span></code></a> provide for
 shorter and more consistent failover procedures than simply
 shutting down the primary directly.</p>
 <p>When the primary has stepped down, shut down its instance and
@@ -355,7 +355,7 @@ now force a reconfiguration of the set to bring it back online.</p>
 </div>
 <div class="section" id="primary-checks-for-a-caught-up-secondary-before-stepping-down">
 <h4>Primary Checks for a Caught up Secondary before Stepping Down<a class="headerlink" href="#primary-checks-for-a-caught-up-secondary-before-stepping-down" title="Permalink to this headline">&para;</a></h4>
-<p>To minimize time without a <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>, the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7391"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
+<p>To minimize time without a <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>, the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
 method will now fail if the primary does not see a <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a>
 within 10 seconds of its latest optime. You can force the primary to
 step down anyway, but by default it will return an error message.</p>

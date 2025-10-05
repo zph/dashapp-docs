@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-66"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Production%20Notes%20%E2%80%94%20MongoDB%20Manual"></a><title>Production Notes &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-39"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Production%20Notes%20%E2%80%94%20MongoDB%20Manual"></a><title>Production Notes &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/administration/production-notes/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="production-notes">
-<a class="dashingAutolink" name="autolink-67"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Production%20Notes%C2%B6"></a><h1>Production Notes<a class="headerlink" href="#production-notes" title="Permalink to this headline">&para;</a></h1>
+<h1>Production Notes<a class="headerlink" href="#production-notes" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -909,7 +909,7 @@ following:</p>
 <ul>
 <li><p class="first">Two cluster members with different system clocks may return
 different values for operations whose return value depends on the
-system clock, such as <a class="reference internal" href="../reference/method/Date.html#Date" title="Date()"><a class="dashingAutolink" name="autolink-68"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Date%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Date()</span></code></a>.</p>
+system clock, such as <a class="reference internal" href="../reference/method/Date.html#Date" title="Date()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Date()</span></code></a>.</p>
 </li>
 <li><p class="first">Features which rely on timekeeping may have inconsistent or
 unpredictable behavior in clusters with clock drift between MongoDB
@@ -1349,8 +1349,8 @@ pressure in the hypervisor due to an overcommitted configuration.</p>
 setting VMware&rsquo;s <a class="reference external" href="https://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=kc&amp;externalId=1005508&amp;sliceId=1&amp;docTypeID=DT_KB_1_1&amp;dialogID=549881455&amp;stateId=0%200%20549889513">affinity rules</a>.
 If you must manually migrate a virtual machine
 to another host and the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance on the virtual machine is the
-<a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>, you must first <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown"><a class="dashingAutolink" name="autolink-69"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/step%20down"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">step</span> <span class="pre">down</span></code></a> the primary and then
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer"><a class="dashingAutolink" name="autolink-70"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/shut%20down%20the%20instance"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">shut</span> <span class="pre">down</span> <span class="pre">the</span> <span class="pre">instance</span></code></a>.</p>
+<a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>, you must first <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">step</span> <span class="pre">down</span></code></a> the primary and then
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">shut</span> <span class="pre">down</span> <span class="pre">the</span> <span class="pre">instance</span></code></a>.</p>
 <p>Follow the <a class="reference external" href="https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.vcenterhost.doc/GUID-7DAD15D4-7F41-4913-9F16-567289E22977.html">networking best practices for vMotion</a>
 and the <a class="reference external" href="https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=2054994">VMKernel</a>.
 Failure to follow the best practices can result in performance problems

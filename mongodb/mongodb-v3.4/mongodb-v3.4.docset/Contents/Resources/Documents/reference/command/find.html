@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1218"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/find%20%E2%80%94%20MongoDB%20Manual"></a><title>find &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-603"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/find%20%E2%80%94%20MongoDB%20Manual"></a><title>find &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/find/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="find">
-<a class="dashingAutolink" name="autolink-1208"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/find%C2%B6"></a><h1>find<a class="headerlink" href="#find" title="Permalink to this headline">&para;</a></h1>
+<h1>find<a class="headerlink" href="#find" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,7 +165,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.find">
-<code class="descname">find</code><a class="dashingAutolink" name="autolink-1217"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.find" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">find</code><a class="dashingAutolink" name="autolink-602"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.find" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -238,7 +238,7 @@ the collection will match the predicate.</td>
 <td><p class="first">Optional. The <a class="reference internal" href="../../tutorial/project-fields-from-query-results.html#projections"><span class="std std-ref">projection specification</span></a> to
 determine which fields to include in the returned documents. See
 <a class="reference internal" href="../../tutorial/project-fields-from-query-results.html#projections"><span class="std std-ref">Project Fields to Return from Query</span></a> and <a class="reference internal" href="../operator/projection.html"><span class="doc">Projection Operators</span></a>.</p>
-<p><a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-1209"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
+<p><a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
 the following <a class="reference internal" href="../operator/projection.html"><span class="doc">projection</span></a>
 operators:</p>
 <ul class="last simple">
@@ -334,12 +334,12 @@ specified in the originating <code class="docutils literal"><span class="pre">fi
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">max</span></code></td>
 <td>document</td>
 <td>Optional. The <em>exclusive</em> upper bound for a specific index. See
-<a class="reference internal" href="../method/cursor.max.html#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-1210"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.max()</span></code></a> for details.</td>
+<a class="reference internal" href="../method/cursor.max.html#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.max()</span></code></a> for details.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">min</span></code></td>
 <td>document</td>
 <td>Optional. The <em>inclusive</em> lower bound for a specific index. See
-<a class="reference internal" href="../method/cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-1211"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.min()</span></code></a> for details.</td>
+<a class="reference internal" href="../method/cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.min()</span></code></a> for details.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">returnKey</span></code></td>
 <td>boolean</td>
@@ -424,7 +424,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-1212"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -507,7 +507,7 @@ node may not reflect the most recent version of the data in the system.</p>
 <p>The <a class="reference internal" href="getMore.html#dbcmd.getMore" title="getMore"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">getMore</span></code></a> command uses the <code class="docutils literal"><span class="pre">readConcern</span></code> level
 specified in the originating <a class="reference internal" href="#dbcmd.find" title="find"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">find</span></code></a> command.</p>
 <p>A <code class="docutils literal"><span class="pre">readConcern</span></code> can be specified for the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell method
-<a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-1213"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> using the <a class="reference internal" href="../method/cursor.readConcern.html#cursor.readConcern" title="cursor.readConcern"><a class="dashingAutolink" name="autolink-1214"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.readConcern"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.readConcern</span></code></a>
+<a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> using the <a class="reference internal" href="../method/cursor.readConcern.html#cursor.readConcern" title="cursor.readConcern"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.readConcern</span></code></a>
 method:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -547,9 +547,9 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/cursor.collation.html#cursor.collation" title="cursor.collation()"><a class="dashingAutolink" name="autolink-1215"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.collation%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.collation()</span></code></a> to
+<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/cursor.collation.html#cursor.collation" title="cursor.collation()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.collation()</span></code></a> to
 specify <a class="reference internal" href="../bson-type-comparison-order.html#collation"><span class="std std-ref">collation</span></a> for a
-<a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-1216"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operation.</p>
+<a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operation.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last"><a class="reference internal" href="../../release-notes/3.2-compatibility.html#driver-compatibility"><span class="std std-ref">Driver Compatibility Changes</span></a></p>

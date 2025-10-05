@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-6093"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24text%20%E2%80%94%20MongoDB%20Manual"></a><title>$text &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2552"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24text%20%E2%80%94%20MongoDB%20Manual"></a><title>$text &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/query/text/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="text">
-<a class="dashingAutolink" name="autolink-6094"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24text%C2%B6"></a><h1>$text<a class="headerlink" href="#text" title="Permalink to this headline">&para;</a></h1>
+<h1>$text<a class="headerlink" href="#text" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,7 +168,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="query">
 <dt id="op._S_text">
-<code class="descname">$text</code><a class="dashingAutolink" name="autolink-6099"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_text" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$text</code><a class="dashingAutolink" name="autolink-2551"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_text" title="Permalink to this definition">&para;</a></dt>
 <dd><p><a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> performs a text search on the content of the fields
 indexed with a <a class="reference internal" href="../../../core/index-text.html"><span class="doc">text index</span></a>. A
 <a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> expression has the following syntax:</p>
@@ -271,7 +271,7 @@ sorting by the text search scores, see the
 expressions or <a class="reference internal" href="../projection/elemMatch.html#proj._S_elemMatch" title="$elemMatch"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$elemMatch</span></code></a> projection expressions.</li>
 <li>To use a <a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> query in an <a class="reference internal" href="or.html#op._S_or" title="$or"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$or</span></code></a> expression, all
 clauses in the <a class="reference internal" href="or.html#op._S_or" title="$or"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$or</span></code></a> array must be indexed.</li>
-<li>You cannot use <a class="reference internal" href="../../method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-6095"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> if the query includes
+<li>You cannot use <a class="reference internal" href="../../method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> if the query includes
 a <a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> query expression.</li>
 <li>You cannot specify <a class="reference internal" href="../meta/natural.html#metaOp._S_natural" title="$natural"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$natural</span></code></a> sort order if the query
 includes a <a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> expression.</li>
@@ -471,7 +471,7 @@ exact word.</p>
 <p>The <a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> operator assigns a score to each document that
 contains the search term in the indexed fields. The score represents
 the relevance of a document to a given text search query. The score can
-be part of a <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-6096"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method specification as well as part of the
+be part of a <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method specification as well as part of the
 projection expression. The <code class="docutils literal"><span class="pre">{</span> <span class="pre">$meta:</span> <span class="pre">&#34;textScore&#34;</span> <span class="pre">}</span></code> expression
 provides information on the processing of the <a class="reference internal" href="#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> operation.
 See <a class="reference internal" href="../projection/meta.html#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a> projection operator for details on accessing the score for
@@ -955,8 +955,8 @@ copy</a>
 </div>
 <div class="section" id="return-top-2-matching-documents">
 <span id="ex-sort-limit-two"></span><h3>Return Top 2 Matching Documents<a class="headerlink" href="#return-top-2-matching-documents" title="Permalink to this headline">&para;</a></h3>
-<p>Use the <a class="reference internal" href="../../method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-6097"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method in conjunction with a
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-6098"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> to return the top <code class="docutils literal"><span class="pre">n</span></code> matching documents.</p>
+<p>Use the <a class="reference internal" href="../../method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method in conjunction with a
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> to return the top <code class="docutils literal"><span class="pre">n</span></code> matching documents.</p>
 <p>The following query searches for the term <code class="docutils literal"><span class="pre">coffee</span></code> and sorts the
 results by the descending score, limiting the results to the top two
 matching documents:</p>

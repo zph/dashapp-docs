@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1426"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/killOp%20%E2%80%94%20MongoDB%20Manual"></a><title>killOp &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-748"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/killOp%20%E2%80%94%20MongoDB%20Manual"></a><title>killOp &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/killOp/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="killop">
-<a class="dashingAutolink" name="autolink-1427"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/killOp%C2%B6"></a><h1>killOp<a class="headerlink" href="#killop" title="Permalink to this headline">&para;</a></h1>
+<h1>killOp<a class="headerlink" href="#killop" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -169,14 +169,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.killOp">
-<code class="descname">killOp</code><a class="dashingAutolink" name="autolink-1432"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.killOp" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">killOp</code><a class="dashingAutolink" name="autolink-747"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.killOp" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Terminates an operation as specified by the operation ID.
 The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the
-<a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-1428"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> helper.
+<a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> helper.
 To find operations and their corresponding IDs,
-see <a class="reference internal" href="../method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-1429"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a>.</p>
+see <a class="reference internal" href="../method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a>.</p>
 <p>The <code class="docutils literal"><span class="pre">killOp</span></code> command must be run against the <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
-<p>To run killOp, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-1430"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%20%7B%20%3Ccommand%3E%20%7D%20%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
+<p>To run killOp, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
 <p>The command has the following form:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -249,7 +249,7 @@ copy</a>
 </div>
 </div>
 <p><a class="reference internal" href="#dbcmd.killOp" title="killOp"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">killOp</span></code></a> only confirms its attempt to end the
-specified operation. Use <a class="reference internal" href="../method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-1431"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> to confirm the
+specified operation. Use <a class="reference internal" href="../method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> to confirm the
 target operation was terminated.</p>
 </div>
 </div>

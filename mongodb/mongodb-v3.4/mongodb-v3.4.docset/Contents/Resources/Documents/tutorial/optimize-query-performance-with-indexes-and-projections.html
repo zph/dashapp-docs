@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8508"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Optimize%20Query%20Performance%20%E2%80%94%20MongoDB%20Manual"></a><title>Optimize Query Performance &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3697"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Optimize%20Query%20Performance%20%E2%80%94%20MongoDB%20Manual"></a><title>Optimize Query Performance &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/optimize-query-performance-with-indexes-and-projections/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="optimize-query-performance">
-<a class="dashingAutolink" name="autolink-8509"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Optimize%20Query%20Performance%C2%B6"></a><h1>Optimize Query Performance<a class="headerlink" href="#optimize-query-performance" title="Permalink to this headline">&para;</a></h1>
+<h1>Optimize Query Performance<a class="headerlink" href="#optimize-query-performance" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -230,7 +230,7 @@ in the index if:</p>
 <h2>Limit the Number of Query Results to Reduce Network Demand<a class="headerlink" href="#limit-the-number-of-query-results-to-reduce-network-demand" title="Permalink to this headline">&para;</a></h2>
 <p>MongoDB <a class="reference internal" href="../reference/glossary.html#term-cursor"><span class="xref std std-term">cursors</span></a> return results in groups of multiple
 documents. If you know the number of results you want, you can reduce
-the demand on network resources by issuing the <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-8510"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>
+the demand on network resources by issuing the <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>
 method.</p>
 <p>This is typically used in conjunction with sort operations. For example,
 if you need only 10 results from your query to the <code class="docutils literal"><span class="pre">posts</span></code>
@@ -244,7 +244,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>For more information on limiting results, see <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-8511"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a></p>
+<p>For more information on limiting results, see <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a></p>
 </div>
 <div class="section" id="use-projections-to-return-only-necessary-data">
 <h2>Use Projections to Return Only Necessary Data<a class="headerlink" href="#use-projections-to-return-only-necessary-data" title="Permalink to this headline">&para;</a></h2>
@@ -269,8 +269,8 @@ copy</a>
 <h2>Use <code class="docutils literal"><span class="pre">$hint</span></code> to Select a Particular Index<a class="headerlink" href="#use-hint-to-select-a-particular-index" title="Permalink to this headline">&para;</a></h2>
 <p>In most cases the <a class="reference internal" href="../core/query-plans.html#read-operations-query-optimization"><span class="std std-ref">query optimizer</span></a> selects the optimal index for a
 specific operation; however, you can force MongoDB to use a specific
-index using the <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-8512"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method. Use
-<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-8513"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> to support performance testing, or on
+index using the <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method. Use
+<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> to support performance testing, or on
 some queries where you must select a field or field included in
 several indexes.</p>
 </div>

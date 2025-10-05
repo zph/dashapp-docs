@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4232"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.logout%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.logout() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1985"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.logout%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.logout() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.logout/"/><meta name="robots" content="index"/>
@@ -153,27 +153,27 @@
   </div>
                 
                   <div class="section" id="db-logout">
-<a class="dashingAutolink" name="autolink-4233"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.logout%28%29%C2%B6"></a><h1>db.logout()<a class="headerlink" href="#db-logout" title="Permalink to this headline">&para;</a></h1>
+<h1>db.logout()<a class="headerlink" href="#db-logout" title="Permalink to this headline">&para;</a></h1>
 <dl class="method">
 <dt id="db.logout">
-<code class="descclassname">db.</code><code class="descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4240"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.logout" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">logout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1984"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.logout" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Ends the current authentication session. This function has no effect
 if the current session is not authenticated.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>If you&rsquo;re not logged in and using authentication, <a class="reference internal" href="#db.logout" title="db.logout()"><a class="dashingAutolink" name="autolink-4234"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.logout%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a>
+<p>If you&rsquo;re not logged in and using authentication, <a class="reference internal" href="#db.logout" title="db.logout()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a>
 has no effect.</p>
 <p>Because MongoDB allows users defined in one database to have
-privileges on another database, you must call <a class="reference internal" href="#db.logout" title="db.logout()"><a class="dashingAutolink" name="autolink-4235"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.logout%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> while
+privileges on another database, you must call <a class="reference internal" href="#db.logout" title="db.logout()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> while
 using the same database context that you authenticated to.</p>
 <p class="last">If you authenticated to a database such as <code class="docutils literal"><span class="pre">users</span></code> or
-<code class="docutils literal"><span class="pre">$external</span></code>, you must issue <a class="reference internal" href="#db.logout" title="db.logout()"><a class="dashingAutolink" name="autolink-4236"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.logout%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> against this
+<code class="docutils literal"><span class="pre">$external</span></code>, you must issue <a class="reference internal" href="#db.logout" title="db.logout()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> against this
 database in order to successfully log out.</p>
 </div>
 <div class="admonition-example admonition">
 <p class="first admonition-title">Example</p>
 <p>Use the <code class="docutils literal"><span class="pre">use</span> <span class="pre">&lt;database-name&gt;</span></code> helper in the interactive
-<a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, or the following <a class="reference internal" href="db.getSiblingDB.html#db.getSiblingDB" title="db.getSiblingDB()"><a class="dashingAutolink" name="autolink-4237"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getSiblingDB%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getSiblingDB()</span></code></a>
+<a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, or the following <a class="reference internal" href="db.getSiblingDB.html#db.getSiblingDB" title="db.getSiblingDB()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getSiblingDB()</span></code></a>
 in the interactive shell or in <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell scripts to
 change the <code class="docutils literal"><span class="pre">db</span></code> object:</p>
 <div class="button-code-block">
@@ -186,7 +186,7 @@ copy</a>
 </div>
 </div>
 <p>When you have set the database context and <code class="docutils literal"><span class="pre">db</span></code> object, you
-can use the <a class="reference internal" href="#db.logout" title="db.logout()"><a class="dashingAutolink" name="autolink-4238"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.logout%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> to log out of database as in the
+can use the <a class="reference internal" href="#db.logout" title="db.logout()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> to log out of database as in the
 following operation:</p>
 <div class="last button-code-block">
 <div class="button-row">
@@ -198,7 +198,7 @@ copy</a>
 </div>
 </div>
 </div>
-<p><a class="reference internal" href="#db.logout" title="db.logout()"><a class="dashingAutolink" name="autolink-4239"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.logout%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> function provides a wrapper around the
+<p><a class="reference internal" href="#db.logout" title="db.logout()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.logout()</span></code></a> function provides a wrapper around the
 database command <a class="reference internal" href="../command/logout.html#dbcmd.logout" title="logout"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">logout</span></code></a>.</p>
 </dd></dl>
 

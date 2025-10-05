@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8332"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Iterate%20a%20Cursor%20in%20the%20mongo%20Shell%20%E2%80%94%20MongoDB%20Manual"></a><title>Iterate a Cursor in the mongo Shell &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3666"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Iterate%20a%20Cursor%20in%20the%20mongo%20Shell%20%E2%80%94%20MongoDB%20Manual"></a><title>Iterate a Cursor in the mongo Shell &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/iterate-a-cursor/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="iterate-a-cursor-in-the-mongo-shell">
-<span id="read-operations-cursors"></span><a class="dashingAutolink" name="autolink-8333"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Iterate%20a%20Cursor%20in%20the%20mongo%20Shell%C2%B6"></a><h1>Iterate a Cursor in the <code class="docutils literal"><span class="pre">mongo</span></code> Shell<a class="headerlink" href="#iterate-a-cursor-in-the-mongo-shell" title="Permalink to this headline">&para;</a></h1>
+<span id="read-operations-cursors"></span><h1>Iterate a Cursor in the <code class="docutils literal"><span class="pre">mongo</span></code> Shell<a class="headerlink" href="#iterate-a-cursor-in-the-mongo-shell" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -161,7 +161,7 @@
 <li><a class="reference internal" href="#cursor-information" id="id9">Cursor Information</a></li>
 </ul>
 </div>
-<p>The <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8334"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> method returns a cursor. To access
+<p>The <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> method returns a cursor. To access
 the documents, you need to iterate the cursor. However, in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, if the returned cursor is not assigned to a
 variable using the <code class="docutils literal"><span class="pre">var</span></code> keyword, then the cursor is automatically
@@ -172,7 +172,7 @@ access the documents or to use the iterator index.</p>
 <div class="section" id="manually-iterate-the-cursor">
 <h2>Manually Iterate the Cursor<a class="headerlink" href="#manually-iterate-the-cursor" title="Permalink to this headline">&para;</a></h2>
 <p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, when you assign the cursor returned from
-the <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8335"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to a variable using
+the <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to a variable using
 the <code class="docutils literal"><span class="pre">var</span></code> keyword, the cursor does not automatically iterate.</p>
 <p>You can call the cursor variable in the shell to iterate up to 20 times
 <a class="footnote-reference" href="#set-shell-batch-size" id="id2">[1]</a> and print the matching documents, as in the
@@ -188,7 +188,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can also use the cursor method <a class="reference internal" href="../reference/method/cursor.next.html#cursor.next" title="cursor.next()"><a class="dashingAutolink" name="autolink-8336"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/next%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">next()</span></code></a> to
+<p>You can also use the cursor method <a class="reference internal" href="../reference/method/cursor.next.html#cursor.next" title="cursor.next()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">next()</span></code></a> to
 access the documents, as in the following example:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -218,7 +218,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can use the cursor method <a class="reference internal" href="../reference/method/cursor.forEach.html#cursor.forEach" title="cursor.forEach()"><a class="dashingAutolink" name="autolink-8337"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/forEach%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> to
+<p>You can use the cursor method <a class="reference internal" href="../reference/method/cursor.forEach.html#cursor.forEach" title="cursor.forEach()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> to
 iterate the cursor and access the documents, as in the following
 example:</p>
 <div class="button-code-block">
@@ -247,7 +247,7 @@ change the number of iteration from the default value <code class="docutils lite
 <div class="section" id="iterator-index">
 <h2>Iterator Index<a class="headerlink" href="#iterator-index" title="Permalink to this headline">&para;</a></h2>
 <p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, you can use the
-<a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><a class="dashingAutolink" name="autolink-8338"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/toArray%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a> method to iterate the cursor and return
+<a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a> method to iterate the cursor and return
 the documents in an array, as in the following:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -260,13 +260,13 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><a class="dashingAutolink" name="autolink-8339"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/toArray%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a> method loads into RAM all
-documents returned by the cursor; the <a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><a class="dashingAutolink" name="autolink-8340"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/toArray%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a>
+<p>The <a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a> method loads into RAM all
+documents returned by the cursor; the <a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a>
 method exhausts the cursor.</p>
 <p>Additionally, some <a class="reference external" href="https://docs.mongodb.com/ecosystem/drivers">drivers</a> provide
 access to the documents by using an index on the cursor (i.e.
 <code class="docutils literal"><span class="pre">cursor[index]</span></code>). This is a shortcut for first calling the
-<a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><a class="dashingAutolink" name="autolink-8341"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/toArray%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a> method and then using an index
+<a class="reference internal" href="../reference/method/cursor.toArray.html#cursor.toArray" title="cursor.toArray()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">toArray()</span></code></a> method and then using an index
 on the resulting array.</p>
 <p>Consider the following example:</p>
 <div class="button-code-block">
@@ -297,7 +297,7 @@ copy</a>
 <p>By default, the server will automatically close the cursor after 10
 minutes of inactivity, or if client has exhausted the cursor. To
 override this behavior in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, you can use
-the <a class="reference internal" href="../reference/method/cursor.noCursorTimeout.html#cursor.noCursorTimeout" title="cursor.noCursorTimeout()"><a class="dashingAutolink" name="autolink-8342"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.noCursorTimeout%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.noCursorTimeout()</span></code></a> method:</p>
+the <a class="reference internal" href="../reference/method/cursor.noCursorTimeout.html#cursor.noCursorTimeout" title="cursor.noCursorTimeout()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.noCursorTimeout()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -308,7 +308,7 @@ copy</a>
 </div>
 </div>
 <p>After setting the <code class="docutils literal"><span class="pre">noCursorTimeout</span></code> option, you must either close the cursor
-manually with <a class="reference internal" href="../reference/method/cursor.close.html#cursor.close" title="cursor.close()"><a class="dashingAutolink" name="autolink-8343"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.close%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.close()</span></code></a> or by exhausting the cursor&rsquo;s results.</p>
+manually with <a class="reference internal" href="../reference/method/cursor.close.html#cursor.close" title="cursor.close()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.close()</span></code></a> or by exhausting the cursor&rsquo;s results.</p>
 <p>See your <a class="reference external" href="https://docs.mongodb.com/ecosystem/drivers">driver</a> documentation for
 information on setting the <code class="docutils literal"><span class="pre">noCursorTimeout</span></code> option.</p>
 </div>
@@ -324,14 +324,14 @@ situation, see the information on <a class="reference internal" href="../core/re
 <span id="id5"></span><h3>Cursor Batches<a class="headerlink" href="#cursor-batches" title="Permalink to this headline">&para;</a></h3>
 <p>The MongoDB server returns the query results in batches. The amount of
 data in the batch will not exceed the <a class="reference internal" href="../reference/limits.html#limit-bson-document-size"><span class="std std-ref">maximum BSON document size</span></a>. To override the default size of
-the batch, see <a class="reference internal" href="../reference/method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><a class="dashingAutolink" name="autolink-8344"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/batchSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> and
-<a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-8345"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>.</p>
+the batch, see <a class="reference internal" href="../reference/method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> and
+<a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>.</p>
 <div class="versionadded">
-<p><span class="versionmodified">New in version 3.4: </span>Operations of type <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8346"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-8347"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a>,
+<p><span class="versionmodified">New in version 3.4: </span>Operations of type <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a>,
 <a class="reference internal" href="../reference/command/listIndexes.html#dbcmd.listIndexes" title="listIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">listIndexes</span></code></a>, and
 <a class="reference internal" href="../reference/command/listCollections.html#dbcmd.listCollections" title="listCollections"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">listCollections</span></code></a> return a maximum of 16 megabytes
-per batch. <a class="reference internal" href="../reference/method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><a class="dashingAutolink" name="autolink-8348"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/batchSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> can enforce a smaller
+per batch. <a class="reference internal" href="../reference/method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> can enforce a smaller
 limit, but not a larger one.</p>
 <p><code class="docutils literal"><span class="pre">find()</span></code> and <code class="docutils literal"><span class="pre">aggregate()</span></code> operations have an initial batch size
 of 101 documents by default. Subsequent <a class="reference internal" href="../reference/command/getMore.html#dbcmd.getMore" title="getMore"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">getMore</span></code></a>
@@ -342,10 +342,10 @@ size, so they are limited only by the 16 megabyte message size.</p>
 server must load all the documents in memory to perform the sort
 before returning any results.</p>
 <p>As you iterate through the cursor and reach the end of the returned
-batch, if there are more results, <a class="reference internal" href="../reference/method/cursor.next.html#cursor.next" title="cursor.next()"><a class="dashingAutolink" name="autolink-8349"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.next%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.next()</span></code></a> will perform
+batch, if there are more results, <a class="reference internal" href="../reference/method/cursor.next.html#cursor.next" title="cursor.next()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.next()</span></code></a> will perform
 a <a class="reference internal" href="../reference/command/currentOp.html#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">getMore</span> <span class="pre">operation</span></code></a> to retrieve the next batch.
 To see how many documents remain in the batch as you iterate the
-cursor, you can use the <a class="reference internal" href="../reference/method/cursor.objsLeftInBatch.html#cursor.objsLeftInBatch" title="cursor.objsLeftInBatch()"><a class="dashingAutolink" name="autolink-8350"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/objsLeftInBatch%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">objsLeftInBatch()</span></code></a> method, as
+cursor, you can use the <a class="reference internal" href="../reference/method/cursor.objsLeftInBatch.html#cursor.objsLeftInBatch" title="cursor.objsLeftInBatch()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">objsLeftInBatch()</span></code></a> method, as
 in the following example:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -364,7 +364,7 @@ copy</a>
 </div>
 <div class="section" id="cursor-information">
 <h2>Cursor Information<a class="headerlink" href="#cursor-information" title="Permalink to this headline">&para;</a></h2>
-<p>The <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-8351"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> method returns a document that includes
+<p>The <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> method returns a document that includes
 a <a class="reference internal" href="../reference/command/serverStatus.html#serverstatus.metrics" title="metrics"><code class="xref mongodb mongodb-serverstatus docutils literal"><span class="pre">metrics</span></code></a> field. The
 <a class="reference internal" href="../reference/command/serverStatus.html#serverstatus.metrics" title="metrics"><code class="xref mongodb mongodb-serverstatus docutils literal"><span class="pre">metrics</span></code></a> field contains a
 <a class="reference internal" href="../reference/command/serverStatus.html#serverstatus.metrics.cursor" title="metrics.cursor"><code class="xref mongodb mongodb-serverstatus docutils literal"><span class="pre">metrics.cursor</span></code></a> field with the following
@@ -378,7 +378,7 @@ period of inactivity</li>
 <li>total number of open cursors</li>
 </ul>
 <p>Consider the following example which calls the
-<a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-8352"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> method and accesses the <code class="docutils literal"><span class="pre">metrics</span></code> field
+<a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> method and accesses the <code class="docutils literal"><span class="pre">metrics</span></code> field
 from the results and then the <code class="docutils literal"><span class="pre">cursor</span></code> field from the <code class="docutils literal"><span class="pre">metrics</span></code>
 field:</p>
 <div class="button-code-block">
@@ -409,7 +409,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-8353"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a></p>
+<p class="last"><a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a></p>
 </div>
 </div>
 </div>

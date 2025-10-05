@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3394"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.deleteOne%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.deleteOne() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1817"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.deleteOne%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.deleteOne() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.deleteOne/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-deleteone">
-<a class="dashingAutolink" name="autolink-3395"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.deleteOne%28%29%C2%B6"></a><h1>db.collection.deleteOne()<a class="headerlink" href="#db-collection-deleteone" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.deleteOne()<a class="headerlink" href="#db-collection-deleteone" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.deleteOne">
-<code class="descclassname">db.collection.</code><code class="descname">deleteOne</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3393"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.deleteOne" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">deleteOne</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1818"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.deleteOne" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Removes a single document from a collection.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -237,7 +237,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-3388"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -273,15 +273,15 @@ find and another for the sort.</p>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="deletion-order">
 <span id="deleteone-deletion-order"></span><h3>Deletion Order<a class="headerlink" href="#deletion-order" title="Permalink to this headline">&para;</a></h3>
-<p><a class="reference internal" href="#db.collection.deleteOne" title="db.collection.deleteOne"><a class="dashingAutolink" name="autolink-3389"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteOne"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne</span></code></a> deletes the first document that matches
+<p><a class="reference internal" href="#db.collection.deleteOne" title="db.collection.deleteOne"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne</span></code></a> deletes the first document that matches
 the filter. Use a field that is part of a <a class="reference internal" href="../glossary.html#term-unique-index"><span class="xref std std-term">unique index</span></a> such as <code class="docutils literal"><span class="pre">_id</span></code>
 for precise deletions.</p>
 </div>
 <div class="section" id="capped-collections">
 <span id="deleteone-capped-collection"></span><h3>Capped Collections<a class="headerlink" href="#capped-collections" title="Permalink to this headline">&para;</a></h3>
-<p><a class="reference internal" href="#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-3390"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne()</span></code></a> throws a <code class="docutils literal"><span class="pre">WriteError</span></code> exception
+<p><a class="reference internal" href="#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne()</span></code></a> throws a <code class="docutils literal"><span class="pre">WriteError</span></code> exception
 if used on a <a class="reference internal" href="../glossary.html#term-capped-collection"><span class="xref std std-term">capped collection</span></a>. To remove documents from a capped
-collection, use <a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-3391"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a> instead.</p>
+collection, use <a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a> instead.</p>
 </div>
 </div>
 <div class="section" id="examples">
@@ -433,7 +433,7 @@ copy</a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last">To delete multiple documents, see
-<a class="reference internal" href="db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-3392"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a></p>
+<a class="reference internal" href="db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a></p>
 </div>
 </div>
 </div>

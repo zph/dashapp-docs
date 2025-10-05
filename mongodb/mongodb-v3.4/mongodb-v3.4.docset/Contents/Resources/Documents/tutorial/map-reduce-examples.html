@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8427"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Map-Reduce%20Examples%20%E2%80%94%20MongoDB%20Manual"></a><title>Map-Reduce Examples &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3677"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Map-Reduce%20Examples%20%E2%80%94%20MongoDB%20Manual"></a><title>Map-Reduce Examples &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/map-reduce-examples/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="map-reduce-examples">
-<a class="dashingAutolink" name="autolink-8428"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Map-Reduce%20Examples%C2%B6"></a><h1>Map-Reduce Examples<a class="headerlink" href="#map-reduce-examples" title="Permalink to this headline">&para;</a></h1>
+<h1>Map-Reduce Examples<a class="headerlink" href="#map-reduce-examples" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -159,9 +159,9 @@
 <li><a class="reference internal" href="#calculate-order-and-total-quantity-with-average-quantity-per-item" id="id2">Calculate Order and Total Quantity with Average Quantity Per Item</a></li>
 </ul>
 </div>
-<p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, the <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-8429"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>
+<p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, the <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>
 method is a wrapper around the <a class="reference internal" href="../reference/command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command. The
-following examples use the <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-8430"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method:</p>
+following examples use the <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method:</p>
 <p>Consider the following map-reduce operations on a collection
 <code class="docutils literal"><span class="pre">orders</span></code> that contains documents of the following prototype:</p>
 <div class="button-code-block">

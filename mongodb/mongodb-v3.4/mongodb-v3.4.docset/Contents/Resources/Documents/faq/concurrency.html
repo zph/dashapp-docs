@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-642"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/FAQ%3A%20Concurrency%20%E2%80%94%20MongoDB%20Manual"></a><title>FAQ: Concurrency &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-281"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/FAQ%3A%20Concurrency%20%E2%80%94%20MongoDB%20Manual"></a><title>FAQ: Concurrency &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/faq/concurrency/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="faq-concurrency">
-<a class="dashingAutolink" name="autolink-643"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/FAQ%3A%20Concurrency%C2%B6"></a><h1>FAQ: Concurrency<a class="headerlink" href="#faq-concurrency" title="Permalink to this headline">&para;</a></h1>
+<h1>FAQ: Concurrency<a class="headerlink" href="#faq-concurrency" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -211,7 +211,7 @@ IS and S modes, and once they all drain, it will grant X, even if
 new IS or S requests have been queued in the meantime. As a grant
 will always move all other requests ahead in the queue, no starvation
 of any request is possible.</p>
-<p>In <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-644"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> and <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-645"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> output, the
+<p>In <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> and <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> output, the
 lock modes are represented as follows:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -284,8 +284,8 @@ for the duration of the operation holding the lock.</p>
 <p>For reporting on lock utilization information on locks, use any of the
 following methods:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-646"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>,</li>
-<li><a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-647"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a>,</li>
 <li><a class="reference internal" href="../reference/program/mongotop.html"><span class="doc">mongotop</span></a>,</li>
 <li><a class="reference internal" href="../reference/program/mongostat.html"><span class="doc">mongostat</span></a>, and/or</li>
 <li>the <a class="reference external" href="https://www.mongodb.com/cloud/cloud-manager/?jmp=docs">MongoDB Cloud Manager</a> or
@@ -297,7 +297,7 @@ serverStatus</span></a>, or the <a class="reference internal" href="../reference
 in the <a class="reference internal" href="../reference/method/db.currentOp.html"><span class="doc">current operation reporting</span></a>
 provides insight into the type of locks and amount of lock
 contention in your <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
-<p>In <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-648"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> and <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-649"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> output, the
+<p>In <a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> and <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> output, the
 lock modes are represented as follows:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -324,7 +324,7 @@ lock modes are represented as follows:</p>
 </tr>
 </tbody>
 </table>
-<p>To terminate an operation, use <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-650"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>.</p>
+<p>To terminate an operation, use <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>.</p>
 </div>
 <div class="section" id="does-a-read-or-write-operation-ever-yield-the-lock">
 <span id="faq-concurrency-yielding"></span><h2>Does a read or write operation ever yield the lock?<a class="headerlink" href="#does-a-read-or-write-operation-ever-yield-the-lock" title="Permalink to this headline">&para;</a></h2>
@@ -333,7 +333,7 @@ lock modes are represented as follows:</p>
 and deletes, yield under many conditions.  MongoDB operations can
 also yield locks between individual document modifications in write
 operations that affect multiple documents like
-<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-651"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with the <code class="docutils literal"><span class="pre">multi</span></code> parameter.</p>
+<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with the <code class="docutils literal"><span class="pre">multi</span></code> parameter.</p>
 <p>For storage engines supporting document level <a class="reference internal" href="../reference/glossary.html#term-concurrency-control"><span class="xref std std-term">concurrency
 control</span></a>, such as <a class="reference internal" href="../core/wiredtiger.html"><span class="doc">WiredTiger</span></a>, yielding is not
 necessary when accessing storage as the <a class="reference internal" href="../reference/glossary.html#term-intent-lock"><span class="xref std std-term">intent locks</span></a>, held at the global, database and collection level, do not block
@@ -441,25 +441,25 @@ lock at the database level for extended periods:</p>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/copydb.html#dbcmd.copydb" title="copydb"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">copydb</span></code></a>. This operation may lock all databases. See
 <a class="reference internal" href="#faq-concurrency-lock-multiple-dbs"><span class="std std-ref">Does a MongoDB operation ever lock more than one database?</span></a>.</td>
-<td><a class="reference internal" href="../reference/method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-652"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a>. This operation may lock all
+<td><a class="reference internal" href="../reference/method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a>. This operation may lock all
 databases. See <a class="reference internal" href="#faq-concurrency-lock-multiple-dbs"><span class="std std-ref">Does a MongoDB operation ever lock more than one database?</span></a>.</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../reference/command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a> when creating a very large (i.e. many
 gigabytes) capped collection</td>
-<td><a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-653"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> when creating a very large (i.e.
+<td><a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> when creating a very large (i.e.
 many gigabytes) capped collection</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a> for indexes <em>without</em> <code class="docutils literal"><span class="pre">background</span></code>
 set to <code class="docutils literal"><span class="pre">true</span></code></td>
-<td><a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-654"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.collection.createIndexes.html#db.collection.createIndexes" title="db.collection.createIndexes()"><a class="dashingAutolink" name="autolink-655"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> issued <em>without</em>
+<td><a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.collection.createIndexes.html#db.collection.createIndexes" title="db.collection.createIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndexes()</span></code></a> issued <em>without</em>
 <code class="docutils literal"><span class="pre">background</span></code> set to <code class="docutils literal"><span class="pre">true</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../reference/command/reIndex.html#dbcmd.reIndex" title="reIndex"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">reIndex</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-656"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/repairDatabase.html#dbcmd.repairDatabase" title="repairDatabase"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">repairDatabase</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.repairDatabase.html#db.repairDatabase" title="db.repairDatabase()"><a class="dashingAutolink" name="autolink-657"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.repairDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.repairDatabase()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.repairDatabase.html#db.repairDatabase" title="db.repairDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.repairDatabase()</span></code></a></td>
 </tr>
 </tbody>
 </table>
@@ -475,28 +475,28 @@ the lock for a very short time:</p>
 <td>Methods</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../reference/command/authenticate.html#dbcmd.authenticate" title="authenticate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">authenticate</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-658"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/createUser.html#dbcmd.createUser" title="createUser"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createUser</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-659"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../reference/command/dropIndexes.html#dbcmd.dropIndexes" title="dropIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">dropIndexes</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><a class="dashingAutolink" name="autolink-660"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.dropIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dropIndex()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dropIndex()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/getLastError.html#dbcmd.getLastError" title="getLastError"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">getLastError</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.getLastError.html#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-661"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.getLastError.html#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../reference/command/isMaster.html#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><a class="dashingAutolink" name="autolink-662"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.isMaster.html#db.isMaster" title="db.isMaster()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/replSetGetStatus.html#dbcmd.replSetGetStatus" title="replSetGetStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetStatus</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-663"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="../reference/command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.collection.renameCollection.html#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-664"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.collection.renameCollection.html#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a></td>
-<td><a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-665"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a></td>
+<td><a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a></td>
 </tr>
 </tbody>
 </table>
@@ -509,9 +509,9 @@ the lock for a very short time:</p>
 <span id="faq-concurrency-lock-multiple-dbs"></span><h2>Does a MongoDB operation ever lock more than one database?<a class="headerlink" href="#does-a-mongodb-operation-ever-lock-more-than-one-database" title="Permalink to this headline">&para;</a></h2>
 <p>The following MongoDB operations lock multiple databases:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><a class="dashingAutolink" name="autolink-666"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.copyDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> must lock the entire <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
+<li><a class="reference internal" href="../reference/method/db.copyDatabase.html#db.copyDatabase" title="db.copyDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.copyDatabase()</span></code></a> must lock the entire <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
 instance at once.</li>
-<li><a class="reference internal" href="../reference/method/db.repairDatabase.html#db.repairDatabase" title="db.repairDatabase()"><a class="dashingAutolink" name="autolink-667"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.repairDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.repairDatabase()</span></code></a> obtains a global write lock and will block
+<li><a class="reference internal" href="../reference/method/db.repairDatabase.html#db.repairDatabase" title="db.repairDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.repairDatabase()</span></code></a> obtains a global write lock and will block
 other operations until it finishes.</li>
 <li><a class="reference internal" href="../core/authentication.html"><span class="doc">User authentication</span></a> requires a read
 lock on the <code class="docutils literal"><span class="pre">admin</span></code> database for deployments using <a class="reference internal" href="../reference/system-users-collection.html#admin-system-users-collection"><span class="std std-ref">2.6 user

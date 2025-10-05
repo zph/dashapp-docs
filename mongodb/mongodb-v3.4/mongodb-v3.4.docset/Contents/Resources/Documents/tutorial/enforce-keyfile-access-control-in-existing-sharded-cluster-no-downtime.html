@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8233"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Enforce%20Authentication%20in%20an%20Existing%20Sharded%20Cluster%20Without%20Downtime%20%E2%80%94%20MongoDB%20Manual"></a><title>Enforce Authentication in an Existing Sharded Cluster Without Downtime &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3638"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Enforce%20Authentication%20in%20an%20Existing%20Sharded%20Cluster%20Without%20Downtime%20%E2%80%94%20MongoDB%20Manual"></a><title>Enforce Authentication in an Existing Sharded Cluster Without Downtime &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/enforce-keyfile-access-control-in-existing-sharded-cluster-no-downtime/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="enforce-authentication-in-an-existing-sharded-cluster-without-downtime">
-<a class="dashingAutolink" name="autolink-8212"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Enforce%20Authentication%20in%20an%20Existing%20Sharded%20Cluster%20Without%20Downtime%C2%B6"></a><h1>Enforce Authentication in an Existing Sharded Cluster Without Downtime<a class="headerlink" href="#enforce-authentication-in-an-existing-sharded-cluster-without-downtime" title="Permalink to this headline">&para;</a></h1>
+<h1>Enforce Authentication in an Existing Sharded Cluster Without Downtime<a class="headerlink" href="#enforce-authentication-in-an-existing-sharded-cluster-without-downtime" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -267,7 +267,7 @@ section. The users created in these steps are cluster-level users and
 cannot be used for accessing individual shard replica sets.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">1</div></div><div class="section" id="create-the-adminstrator-user">
 <h4>Create the adminstrator user.<a class="headerlink" href="#create-the-adminstrator-user" title="Permalink to this headline">&para;</a></h4>
-<p>Use the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-8213"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method to create an administrator
+<p>Use the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method to create an administrator
 user and assign it the following roles:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/built-in-roles.html#clusterAdmin" title="clusterAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterAdmin</span></code></a> on the <code class="docutils literal"><span class="pre">admin</span></code> database</li>
@@ -412,7 +412,7 @@ in downtime while the <a class="reference internal" href="../reference/program/m
 <ol class="arabic">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> to shutdown.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8214"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a>
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a>
 method against the <code class="docutils literal"><span class="pre">admin</span></code> database to safely shut down the
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>.</p>
 <div class="button-code-block">
@@ -494,7 +494,7 @@ copy</a>
 <li><p class="first">To restart the <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members one at a time,</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> and use the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8215"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database to safely shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -530,7 +530,7 @@ restart the primary:</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8216"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -540,12 +540,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8217"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
+<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
 replica set has elected a new primary.</p>
 </li>
 <li><p class="first">Once you step down the primary and a new primary has been
 elected, shut down the old primary using the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8218"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -589,7 +589,7 @@ server replica set is running with <a class="reference internal" href="../refere
 set should have its own <a class="reference internal" href="../core/security-users.html#shard-local-users"><span class="std std-ref">shard-local administrator</span></a>. You cannot use a shard-local administrator for
 one shard to access another shard or the sharded cluster.</p>
 <p>Connect to the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> member of each shard replica set and create a
-user with the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-8219"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method, assigning it the following
+user with the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method, assigning it the following
 roles:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/built-in-roles.html#clusterAdmin" title="clusterAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterAdmin</span></code></a> on the <code class="docutils literal"><span class="pre">admin</span></code> database</li>
@@ -670,7 +670,7 @@ copy</a>
 <li><p class="first">To restart the <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members one at a time,</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> and use the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8220"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database to safely shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -706,7 +706,7 @@ restart the primary:</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8221"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -716,12 +716,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8222"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
+<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
 replica set has elected a new primary.</p>
 </li>
 <li><p class="first">Once you step down the primary and a new primary has been
 elected, shut down the old primary using the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8223"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -802,7 +802,7 @@ in downtime while the <a class="reference internal" href="../reference/program/m
 <ol class="arabic">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> to shutdown.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8224"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a>
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a>
 method against the <code class="docutils literal"><span class="pre">admin</span></code> database to safely shut down the
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>.</p>
 <div class="button-code-block">
@@ -871,7 +871,7 @@ copy</a>
 <li><p class="first">To restart the <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members one at a time,</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> and use the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8225"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database to safely shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -907,7 +907,7 @@ restart the primary:</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8226"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -917,12 +917,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8227"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
+<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
 replica set has elected a new primary.</p>
 </li>
 <li><p class="first">Once you step down the primary and a new primary has been
 elected, shut down the old primary using the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8228"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -996,7 +996,7 @@ copy</a>
 <li><p class="first">To restart the <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members one at a time,</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> and use the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8229"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database to safely shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -1032,7 +1032,7 @@ restart the primary:</p>
 <ol class="loweralpha">
 <li><p class="first">Connect to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8230"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
+<li><p class="first">Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method to step down the primary and trigger an election.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -1042,12 +1042,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8231"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
+<p>You can use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method to ensure the
 replica set has elected a new primary.</p>
 </li>
 <li><p class="first">Once you step down the primary and a new primary has been
 elected, shut down the old primary using the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8232"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method against the <code class="docutils literal"><span class="pre">admin</span></code>
 database.</p>
 <div class="button-code-block">
 <div class="button-row">

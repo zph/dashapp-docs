@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-517"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Users%20%E2%80%94%20MongoDB%20Manual"></a><title>Users &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-249"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Users%20%E2%80%94%20MongoDB%20Manual"></a><title>Users &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/security-users/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="authentication-client-users">
-<span id="users"></span><span id="id1"></span><a class="dashingAutolink" name="autolink-518"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Users%C2%B6"></a><h1>Users<a class="headerlink" href="#authentication-client-users" title="Permalink to this headline">&para;</a></h1>
+<span id="users"></span><span id="id1"></span><h1>Users<a class="headerlink" href="#authentication-client-users" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,7 +167,7 @@
 MongoDB.</p>
 <div class="section" id="user-management-interface">
 <h2>User Management Interface<a class="headerlink" href="#user-management-interface" title="Permalink to this headline">&para;</a></h2>
-<p>To add a user, MongoDB provides the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-519"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method.
+<p>To add a user, MongoDB provides the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method.
 When adding a user, you can assign <a class="reference internal" href="authorization.html"><span class="doc">roles</span></a> to
 the user in order to grant privileges.</p>
 <div class="admonition note">
@@ -226,7 +226,7 @@ when connecting to the <a class="reference internal" href="../reference/program/
 </li>
 <li><p class="first">Connect first to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> or <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 instance, and then run the <a class="reference internal" href="../reference/command/authenticate.html#dbcmd.authenticate" title="authenticate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">authenticate</span></code></a> command or the
-<a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-520"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method against the <a class="reference internal" href="../reference/program/mongo.html#mongo-shell-authentication-options"><span class="std std-ref">authentication database</span></a>.</p>
+<a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method against the <a class="reference internal" href="../reference/program/mongo.html#mongo-shell-authentication-options"><span class="std std-ref">authentication database</span></a>.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">Authenticating multiple times as different users does <strong>not</strong> drop
@@ -264,7 +264,7 @@ authenticating to a database on a sharded cluster resided on the
 <div class="section" id="shard-local-users">
 <span id="id5"></span><h3>Shard Local Users<a class="headerlink" href="#shard-local-users" title="Permalink to this headline">&para;</a></h3>
 <p>However, some maintenance operations, such as <a class="reference internal" href="../reference/command/cleanupOrphaned.html#dbcmd.cleanupOrphaned" title="cleanupOrphaned"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">cleanupOrphaned</span></code></a>,
-<a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>, <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-521"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>, require direct connections to
+<a class="reference internal" href="../reference/command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a>, <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>, require direct connections to
 specific shards in a sharded cluster. To perform these operations, you must
 connect directly to the shard and authenticate as a <em>shard local</em>
 administrative user.</p>
@@ -289,7 +289,7 @@ privileges to create other users, such as a user with the
 <a class="reference internal" href="../reference/built-in-roles.html#userAdmin" title="userAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">userAdmin</span></code></a> or <a class="reference internal" href="../reference/built-in-roles.html#userAdminAnyDatabase" title="userAdminAnyDatabase"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">userAdminAnyDatabase</span></code></a> role.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.4: </span>MongoDB 3.4 extended the localhost exception to permit execution of the
-<a class="reference internal" href="../reference/method/db.createRole.html#db.createRole" title="db.createRole()"><a class="dashingAutolink" name="autolink-522"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createRole()</span></code></a> method. This method allows users authorizing via
+<a class="reference internal" href="../reference/method/db.createRole.html#db.createRole" title="db.createRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createRole()</span></code></a> method. This method allows users authorizing via
 LDAP to create a role inside of MongoDB that maps to a role defined
 in LDAP. See <a class="reference internal" href="security-ldap-external.html#security-ldap-external"><span class="std std-ref">LDAP Authorization</span></a> for more
 information.</p>

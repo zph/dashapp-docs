@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-5925"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24meta%20%E2%80%94%20MongoDB%20Manual"></a><title>$meta &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2475"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24meta%20%E2%80%94%20MongoDB%20Manual"></a><title>$meta &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/projection/meta/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="meta">
-<a class="dashingAutolink" name="autolink-5926"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24meta%C2%B6"></a><h1>$meta<a class="headerlink" href="#meta" title="Permalink to this headline">&para;</a></h1>
+<h1>$meta<a class="headerlink" href="#meta" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,7 +165,7 @@
 </div>
 <dl class="projection">
 <dt id="proj._S_meta">
-<code class="descname">$meta</code><a class="dashingAutolink" name="autolink-5924"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#proj._S_meta" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$meta</code><a class="dashingAutolink" name="autolink-2474"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#proj._S_meta" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -213,7 +213,7 @@ conjunction with a <a class="reference internal" href="../query/text.html#op._S_
 <div class="section" id="behaviors">
 <h2>Behaviors<a class="headerlink" href="#behaviors" title="Permalink to this headline">&para;</a></h2>
 <p>The <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a> expression can be a part of the
-<a class="reference internal" href="../../glossary.html#term-projection"><span class="xref std std-term">projection</span></a> document as well as a <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5920"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>
+<a class="reference internal" href="../../glossary.html#term-projection"><span class="xref std std-term">projection</span></a> document as well as a <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>
 expression as:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -224,7 +224,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-5921"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operations on <a class="reference internal" href="../../../core/views.html"><span class="doc">views</span></a> do not support <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a> projection operator.</p>
+<p><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operations on <a class="reference internal" href="../../../core/views.html"><span class="doc">views</span></a> do not support <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a> projection operator.</p>
 <div class="section" id="projected-field-name">
 <h3>Projected Field Name<a class="headerlink" href="#projected-field-name" title="Permalink to this headline">&para;</a></h3>
 <p>The <code class="docutils literal"><span class="pre">&lt;projectedFieldName&gt;</span></code> cannot include a dot (<code class="docutils literal"><span class="pre">.</span></code>) in the name.</p>
@@ -265,7 +265,7 @@ non-existing field if no field exists in the documents with the
 <div class="section" id="sort">
 <h3>Sort<a class="headerlink" href="#sort" title="Permalink to this headline">&para;</a></h3>
 <p>The <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a> expression can be part of a
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5922"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> expression, as in:</p>
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> expression, as in:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -279,7 +279,7 @@ copy</a>
 </div>
 </div>
 <p>To include a <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a> expression in a
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5923"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> expression, the <em>same</em> <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a>
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> expression, the <em>same</em> <a class="reference internal" href="#proj._S_meta" title="$meta"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$meta</span></code></a>
 expression, including the <code class="docutils literal"><span class="pre">&lt;projectedFieldName&gt;</span></code>, must appear in the
 projection document. The specified metadata determines the sort order.
 For example, the <code class="docutils literal"><span class="pre">&#34;textScore&#34;</span></code> metadata sorts in descending order.</p>

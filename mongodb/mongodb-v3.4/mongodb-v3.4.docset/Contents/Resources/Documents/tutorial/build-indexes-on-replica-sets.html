@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7922"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Build%20Indexes%20on%20Replica%20Sets%20%E2%80%94%20MongoDB%20Manual"></a><title>Build Indexes on Replica Sets &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3586"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Build%20Indexes%20on%20Replica%20Sets%20%E2%80%94%20MongoDB%20Manual"></a><title>Build Indexes on Replica Sets &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/build-indexes-on-replica-sets/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <span class="target" id="index-0"></span><div class="section" id="build-indexes-on-replica-sets">
-<span id="index-building-replica-sets"></span><span id="index-build-on-replica-sets"></span><span id="index-1"></span><a class="dashingAutolink" name="autolink-7923"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Build%20Indexes%20on%20Replica%20Sets%C2%B6"></a><h1>Build Indexes on Replica Sets<a class="headerlink" href="#build-indexes-on-replica-sets" title="Permalink to this headline">&para;</a></h1>
+<span id="index-building-replica-sets"></span><span id="index-build-on-replica-sets"></span><span id="index-1"></span><h1>Build Indexes on Replica Sets<a class="headerlink" href="#build-indexes-on-replica-sets" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -176,9 +176,9 @@ procedure.</p>
 do not use the procedure on this page. Instead, build your unique index
 on the collection by:</p>
 <ul class="simple">
-<li>issuing <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-7924"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> on the primary for a
+<li>issuing <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> on the primary for a
 replica set, or</li>
-<li>issuing <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-7925"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> on the
+<li>issuing <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> on the
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> for a sharded cluster.</li>
 </ul>
 </div>
@@ -293,7 +293,7 @@ index.</td></tr>
 </div>
 <div class="section" id="build-the-index">
 <span id="tutorial-index-on-replica-sets-build-index"></span><h3>Build the Index<a class="headerlink" href="#build-the-index" title="Permalink to this headline">&para;</a></h3>
-<p>Create the new index using the <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-7926"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndex()</span></code></a>
+<p>Create the new index using the <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndex()</span></code></a>
 in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, or comparable method in your
 driver. This operation will create the index on this
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance</p>
@@ -348,7 +348,7 @@ the procedure one member at a time for the remaining secondary members:</p>
 building the index on the secondaries. You can either:</p>
 <ol class="arabic simple">
 <li><a class="reference internal" href="../core/index-creation.html#index-creation-background"><span class="std std-ref">Build the index in the background</span></a> on the primary.</li>
-<li>Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7927"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
+<li>Use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
 to step down the primary. Upon successful stepdown, the current primary
 becomes a secondary and the replica set members elect a new primary.</li>
 <li><a class="reference internal" href="#tutorial-index-on-replica-sets-stop-one-member"><span class="std std-ref">Stop One Secondary and Restart as a Standalone</span></a></li>

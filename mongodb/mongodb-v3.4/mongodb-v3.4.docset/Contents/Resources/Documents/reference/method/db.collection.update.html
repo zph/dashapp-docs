@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3847"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.update%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.update() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1888"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.update%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.update() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.update/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-update">
-<a class="dashingAutolink" name="autolink-3848"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.update%28%29%C2%B6"></a><h1>db.collection.update()<a class="headerlink" href="#db-collection-update" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.update()<a class="headerlink" href="#db-collection-update" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,15 +167,15 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.update">
-<code class="descclassname">db.collection.</code><code class="descname">update</code><span class="sig-paren">(</span><em>query</em>, <em>update</em>, <em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3846"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.update" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">update</code><span class="sig-paren">(</span><em>query</em>, <em>update</em>, <em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1887"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.update" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Modifies an existing document or documents in a collection. The
 method can modify specific fields of an existing document or documents
 or replace an existing document entirely, depending on the
 <a class="reference internal" href="#update-parameter"><span class="std std-ref">update parameter</span></a>.</p>
-<p>By default, the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3815"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method updates a
+<p>By default, the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method updates a
 <strong>single</strong> document. Set the <a class="reference internal" href="#multi-parameter"><span class="std std-ref">Multi Parameter</span></a> to update all
 documents that match the query criteria.</p>
-<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3816"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method has the following form:</p>
+<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method has the following form:</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
@@ -197,7 +197,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3817"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method takes the following
+<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method takes the following
 parameters:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -215,9 +215,9 @@ parameters:</p>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">query</span></code></td>
 <td>document</td>
 <td><p class="first">The selection criteria for the update. The same <a class="reference internal" href="../operator/query.html#query-selectors"><span class="std std-ref">query
-selectors</span></a> as in the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3818"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method are available.</p>
+selectors</span></a> as in the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method are available.</p>
 <div class="last versionchanged">
-<p><span class="versionmodified">Changed in version 3.0: </span>When you execute an <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3819"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code> and
+<p><span class="versionmodified">Changed in version 3.0: </span>When you execute an <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code> and
 the query matches no existing document, MongoDB will refuse to insert a new
 document if the query specifies conditions on the <code class="docutils literal"><span class="pre">_id</span></code> field using
 <a class="reference internal" href="../../core/document.html#document-dot-notation"><span class="std std-ref">dot notation</span></a>.</p>
@@ -281,7 +281,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-3820"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -298,7 +298,7 @@ find and another for the sort.</p>
 </tbody>
 </table>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3821"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method returns an object that
+<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method returns an object that
 contains the status of the operation.</p>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
@@ -320,14 +320,14 @@ status of the operation.</td>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
-<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3822"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method uses the
+<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method uses the
 <a class="reference internal" href="../command/update.html#dbcmd.update" title="update"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">update</span></code></a> command, which uses the default <a class="reference internal" href="../write-concern.html"><span class="doc">write concern</span></a>. To specify a different write concern,
 include the <code class="docutils literal"><span class="pre">writeConcern</span></code> option in the options parameter. See
 <a class="reference internal" href="#example-update-write-concern"><span class="std std-ref">Override Default Write Concern</span></a> for an example.</p>
 </div>
 <div class="section" id="update-parameter">
 <span id="id1"></span><h3>Update Parameter<a class="headerlink" href="#update-parameter" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3823"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method either modifies specific
+<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method either modifies specific
 fields in existing documents or replaces an existing document entirely.</p>
 <div class="section" id="update-specific-fields">
 <h4>Update Specific Fields<a class="headerlink" href="#update-specific-fields" title="Permalink to this headline">&para;</a></h4>
@@ -335,7 +335,7 @@ fields in existing documents or replaces an existing document entirely.</p>
 <a class="reference internal" href="../operator/update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a> modifier, then:</p>
 <ul class="simple">
 <li>The <code class="docutils literal"><span class="pre">&lt;update&gt;</span></code> document must contain <em>only</em> <a class="reference internal" href="../operator/update.html#id1"><span class="std std-ref">update operator</span></a> expressions.</li>
-<li>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3824"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method updates only the
+<li>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method updates only the
 corresponding fields in the document.</li>
 </ul>
 <p>To update an embedded document or an array as a whole, specify the
@@ -347,12 +347,12 @@ embedded document or in an array, use <a class="reference internal" href="../../
 <p>If the <code class="docutils literal"><span class="pre">&lt;update&gt;</span></code> document contains <em>only</em> <code class="docutils literal"><span class="pre">field:value</span></code>
 expressions, then:</p>
 <ul class="simple">
-<li>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3825"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>replaces</em> the matching
+<li>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>replaces</em> the matching
 document with the <code class="docutils literal"><span class="pre">&lt;update&gt;</span></code> document. The
-<a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3826"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>does not</em> replace the
+<a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>does not</em> replace the
 <code class="docutils literal"><span class="pre">_id</span></code> value. For an example, see
 <a class="reference internal" href="#example-update-replace-fields"><span class="std std-ref">Replace All Fields</span></a>.</li>
-<li><a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3827"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> <em>cannot</em> <a class="reference internal" href="#multi-parameter"><span class="std std-ref">update multiple
+<li><a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> <em>cannot</em> <a class="reference internal" href="#multi-parameter"><span class="std std-ref">update multiple
 documents</span></a>.</li>
 </ul>
 </div>
@@ -362,7 +362,7 @@ documents</span></a>.</li>
 <div class="section" id="upsert-behavior">
 <span id="id2"></span><h4>Upsert Behavior<a class="headerlink" href="#upsert-behavior" title="Permalink to this headline">&para;</a></h4>
 <p>If <code class="docutils literal"><span class="pre">upsert</span></code> is <code class="docutils literal"><span class="pre">true</span></code> and no document matches the query
-criteria, <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3828"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> inserts a <em>single</em> document.
+criteria, <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> inserts a <em>single</em> document.
 The update creates the new document with either:</p>
 <ul class="simple">
 <li>The fields and values of the <code class="docutils literal"><span class="pre">&lt;update&gt;</span></code> parameter if the
@@ -379,7 +379,7 @@ then applies the update expressions from the <code class="docutils literal"><spa
 <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code> will not be included in the new document.</li>
 </ul>
 <p>If <code class="docutils literal"><span class="pre">upsert</span></code> is <code class="docutils literal"><span class="pre">true</span></code> and there are documents that match the query
-criteria, <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3829"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> performs an update.</p>
+criteria, <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> performs an update.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <p class="last"><a class="reference internal" href="../operator/update/setOnInsert.html#up._S_setOnInsert" title="$setOnInsert"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$setOnInsert</span></code></a></p>
@@ -414,7 +414,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>If all <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3830"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operations complete the
+<p>If all <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operations complete the
 <code class="docutils literal"><span class="pre">query</span></code> portion before any client successfully inserts data, <strong>and</strong>
 there is no unique index on the <code class="docutils literal"><span class="pre">name</span></code> field, then each update
 operation may result in an insert.</p>
@@ -422,7 +422,7 @@ operation may result in an insert.</p>
 create a <a class="reference internal" href="../../core/index-unique.html#index-type-unique"><span class="std std-ref">unique index</span></a> on the <code class="docutils literal"><span class="pre">name</span></code> field.
 With a unique index, if multiple applications issue the same update
 with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code>, <em>exactly one</em>
-<a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3831"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> would successfully insert a new
+<a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> would successfully insert a new
 document.</p>
 <p>The remaining operations would either:</p>
 <ul>
@@ -437,7 +437,7 @@ operation.</p>
 </div>
 <div class="section" id="upsert-true-with-a-dotted-id-query">
 <span id="mongodb30-upsert-id"></span><h4><code class="docutils literal"><span class="pre">upsert:true</span></code> with a Dotted <code class="docutils literal"><span class="pre">_id</span></code> Query<a class="headerlink" href="#upsert-true-with-a-dotted-id-query" title="Permalink to this headline">&para;</a></h4>
-<p>When you execute an <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3832"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code> and
+<p>When you execute an <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code> and
 the query matches no existing document, MongoDB will refuse to insert a new
 document if the query specifies conditions on the <code class="docutils literal"><span class="pre">_id</span></code> field using
 <a class="reference internal" href="../../core/document.html#document-dot-notation"><span class="std std-ref">dot notation</span></a>.</p>
@@ -463,7 +463,7 @@ copy</a>
 </div>
 <div class="section" id="multi-parameter">
 <span id="id3"></span><h3>Multi Parameter<a class="headerlink" href="#multi-parameter" title="Permalink to this headline">&para;</a></h3>
-<p>If <code class="docutils literal"><span class="pre">multi</span></code> is set to <code class="docutils literal"><span class="pre">true</span></code>, the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3833"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
+<p>If <code class="docutils literal"><span class="pre">multi</span></code> is set to <code class="docutils literal"><span class="pre">true</span></code>, the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
 method updates all documents that meet the <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code> criteria. The
 <code class="docutils literal"><span class="pre">multi</span></code> update operation may interleave with other operations, both
 read and/or write operations. For unsharded collections, you can
@@ -473,21 +473,21 @@ operation. This isolates the update so that no client can see the
 updated documents until they are all processed, or an error stops the
 update operation.</p>
 <p>If the <a class="reference internal" href="#update-parameter"><span class="std std-ref">&lt;update&gt;</span></a> document contains <em>only</em>
-<code class="docutils literal"><span class="pre">field:value</span></code> expressions, then <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3834"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
+<code class="docutils literal"><span class="pre">field:value</span></code> expressions, then <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
 <em>cannot</em> update multiple documents.</p>
 <p>For an example, see <a class="reference internal" href="#example-update-multi"><span class="std std-ref">Update Multiple Documents</span></a>.</p>
 </div>
 <div class="section" id="sharded-collections">
 <h3>Sharded Collections<a class="headerlink" href="#sharded-collections" title="Permalink to this headline">&para;</a></h3>
-<p>All <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3835"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operations for a sharded
+<p>All <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operations for a sharded
 collection that specify the <code class="docutils literal"><span class="pre">justOne</span></code> option must include the
 <a class="reference internal" href="../glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> <em>or</em> the <code class="docutils literal"><span class="pre">_id</span></code> field in the query specification.
-<a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3836"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operations specifying <code class="docutils literal"><span class="pre">justOne</span></code>
+<a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operations specifying <code class="docutils literal"><span class="pre">justOne</span></code>
 in a sharded collection which do not contain either the
 <a class="reference internal" href="../glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> or the <code class="docutils literal"><span class="pre">_id</span></code> field return an error.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-3837"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a></p>
+<p class="last"><a class="reference internal" href="db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a></p>
 </div>
 </div>
 </div>
@@ -647,7 +647,7 @@ copy</a>
 <div class="section" id="insert-a-new-document-if-no-match-exists">
 <span id="example-update-upsert"></span><h3>Insert a New Document if No Match Exists<a class="headerlink" href="#insert-a-new-document-if-no-match-exists" title="Permalink to this headline">&para;</a></h3>
 <p>The following update sets the <a class="reference internal" href="#upsert-parameter"><span class="std std-ref">upsert</span></a> option
-to <code class="docutils literal"><span class="pre">true</span></code> so that <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3838"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> creates a new
+to <code class="docutils literal"><span class="pre">true</span></code> so that <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> creates a new
 document in the <code class="docutils literal"><span class="pre">books</span></code> collection if no document matches the
 <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code> parameter:</p>
 <div class="button-code-block">
@@ -871,9 +871,9 @@ copy</a>
 </div>
 <div class="section" id="successful-results">
 <h3>Successful Results<a class="headerlink" href="#successful-results" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3839"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method returns a
-<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3840"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object that contains the status of the operation.
-Upon success, the <a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3841"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object contains the number of
+<p>The <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method returns a
+<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object that contains the status of the operation.
+Upon success, the <a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object contains the number of
 documents that matched the query condition, the number of documents
 inserted by the update, and the number of documents modified:</p>
 <div class="button-code-block">
@@ -893,7 +893,7 @@ copy</a>
 </div>
 <div class="section" id="write-concern-errors">
 <h3>Write Concern Errors<a class="headerlink" href="#write-concern-errors" title="Permalink to this headline">&para;</a></h3>
-<p>If the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3842"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method encounters write
+<p>If the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method encounters write
 concern errors, the results include the
 <a class="reference internal" href="WriteResult.html#WriteResult.writeConcernError" title="WriteResult.writeConcernError"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">WriteResult.writeConcernError</span></code></a> field:</p>
 <div class="button-code-block">
@@ -915,12 +915,12 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="WriteResult.hasWriteConcernError.html#WriteResult.hasWriteConcernError" title="WriteResult.hasWriteConcernError()"><a class="dashingAutolink" name="autolink-3843"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult.hasWriteConcernError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteConcernError()</span></code></a></p>
+<p class="last"><a class="reference internal" href="WriteResult.hasWriteConcernError.html#WriteResult.hasWriteConcernError" title="WriteResult.hasWriteConcernError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteConcernError()</span></code></a></p>
 </div>
 </div>
 <div class="section" id="errors-unrelated-to-write-concern">
 <h3>Errors Unrelated to Write Concern<a class="headerlink" href="#errors-unrelated-to-write-concern" title="Permalink to this headline">&para;</a></h3>
-<p>If the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3844"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method encounters a non-write
+<p>If the <a class="reference internal" href="#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method encounters a non-write
 concern error, the results include the <a class="reference internal" href="WriteResult.html#WriteResult.writeError" title="WriteResult.writeError"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">WriteResult.writeError</span></code></a>
 field:</p>
 <div class="button-code-block">
@@ -942,7 +942,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="WriteResult.hasWriteError.html#WriteResult.hasWriteError" title="WriteResult.hasWriteError()"><a class="dashingAutolink" name="autolink-3845"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult.hasWriteError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteError()</span></code></a></p>
+<p class="last"><a class="reference internal" href="WriteResult.hasWriteError.html#WriteResult.hasWriteError" title="WriteResult.hasWriteError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult.hasWriteError()</span></code></a></p>
 </div>
 </div>
 </div>

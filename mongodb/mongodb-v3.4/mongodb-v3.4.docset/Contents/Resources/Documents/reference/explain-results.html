@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2395"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Explain%20Results%20%E2%80%94%20MongoDB%20Manual"></a><title>Explain Results &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1529"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Explain%20Results%20%E2%80%94%20MongoDB%20Manual"></a><title>Explain Results &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/explain-results/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="explain-results">
-<a class="dashingAutolink" name="autolink-2396"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Explain%20Results%C2%B6"></a><h1>Explain Results<a class="headerlink" href="#explain-results" title="Permalink to this headline">&para;</a></h1>
+<h1>Explain Results<a class="headerlink" href="#explain-results" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -175,8 +175,8 @@
 <p>To return information on query plans and execution statistics of the
 query plans, MongoDB provides:</p>
 <ul class="simple">
-<li>the <a class="reference internal" href="method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-2368"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method,</li>
-<li>the <a class="reference internal" href="method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-2369"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method, and</li>
+<li>the <a class="reference internal" href="method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method,</li>
+<li>the <a class="reference internal" href="method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method, and</li>
 <li>the <a class="reference internal" href="command/explain.html#dbcmd.explain" title="explain"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">explain</span></code></a> command.</li>
 </ul>
 <p>The <code class="docutils literal"><span class="pre">explain</span></code> results present the query plans as a tree of stages.</p>
@@ -318,26 +318,26 @@ copy</a>
   </div>
 </div><dl class="data">
 <dt id="explain.queryPlanner">
-<code class="descclassname">explain.</code><code class="descname">queryPlanner</code><a class="dashingAutolink" name="autolink-2370"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.</code><code class="descname">queryPlanner</code><a class="dashingAutolink" name="autolink-1504"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Contains information on the selection of the query plan by the
 <a class="reference internal" href="../core/query-plans.html"><span class="doc">query optimizer</span></a>.</p>
 <dl class="data">
 <dt id="explain.queryPlanner.namespace">
-<code class="descclassname">explain.queryPlanner.</code><code class="descname">namespace</code><a class="dashingAutolink" name="autolink-2371"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.namespace" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.</code><code class="descname">namespace</code><a class="dashingAutolink" name="autolink-1505"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.namespace" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string that specifies the namespace (i.e.,
 <code class="docutils literal"><span class="pre">&lt;database&gt;.&lt;collection&gt;</span></code>) against which the query is run.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="explain.queryPlanner.indexFilterSet">
-<code class="descclassname">explain.queryPlanner.</code><code class="descname">indexFilterSet</code><a class="dashingAutolink" name="autolink-2372"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.indexFilterSet" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.</code><code class="descname">indexFilterSet</code><a class="dashingAutolink" name="autolink-1506"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.indexFilterSet" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean that specifies whether MongoDB applied an <a class="reference internal" href="../core/query-plans.html#index-filters"><span class="std std-ref">index
 filter</span></a> for the <a class="reference internal" href="glossary.html#term-query-shape"><span class="xref std std-term">query shape</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="explain.queryPlanner.winningPlan">
-<code class="descclassname">explain.queryPlanner.</code><code class="descname">winningPlan</code><a class="dashingAutolink" name="autolink-2373"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.</code><code class="descname">winningPlan</code><a class="dashingAutolink" name="autolink-1507"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A document that details the plan selected by the <a class="reference internal" href="../core/query-plans.html"><span class="doc">query
 optimizer</span></a>. MongoDB presents the plan as a
 tree of stages; i.e. a stage can have an
@@ -346,7 +346,7 @@ stage has multiple child stages,
 <a class="reference internal" href="#explain.queryPlanner.winningPlan.inputStages" title="explain.queryPlanner.winningPlan.inputStages"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">inputStages</span></code></a>.</p>
 <dl class="data">
 <dt id="explain.queryPlanner.winningPlan.stage">
-<code class="descclassname">explain.queryPlanner.winningPlan.</code><code class="descname">stage</code><a class="dashingAutolink" name="autolink-2374"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan.stage" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.winningPlan.</code><code class="descname">stage</code><a class="dashingAutolink" name="autolink-1508"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan.stage" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string that denotes the name of the stage.</p>
 <p>Each stage consists of information specific to the stage. For
 instance, an <code class="docutils literal"><span class="pre">IXSCAN</span></code> stage will include the index bounds
@@ -357,7 +357,7 @@ inputStage or inputStages.</p>
 
 <dl class="data">
 <dt id="explain.queryPlanner.winningPlan.inputStage">
-<code class="descclassname">explain.queryPlanner.winningPlan.</code><code class="descname">inputStage</code><a class="dashingAutolink" name="autolink-2375"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan.inputStage" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.winningPlan.</code><code class="descname">inputStage</code><a class="dashingAutolink" name="autolink-1509"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan.inputStage" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A document that describes the child stage, which provides the
 documents or index keys to its parent. The field is present
 <em>if</em> the parent stage has only one child.</p>
@@ -365,7 +365,7 @@ documents or index keys to its parent. The field is present
 
 <dl class="data">
 <dt id="explain.queryPlanner.winningPlan.inputStages">
-<code class="descclassname">explain.queryPlanner.winningPlan.</code><code class="descname">inputStages</code><a class="dashingAutolink" name="autolink-2376"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan.inputStages" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.winningPlan.</code><code class="descname">inputStages</code><a class="dashingAutolink" name="autolink-1510"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.winningPlan.inputStages" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of documents describing the child stages. Child
 stages provide the documents or index keys to the parent
 stage. The field is present <em>if</em> the parent stage has multiple
@@ -377,7 +377,7 @@ multiple sources.</p>
 
 <dl class="data">
 <dt id="explain.queryPlanner.rejectedPlans">
-<code class="descclassname">explain.queryPlanner.</code><code class="descname">rejectedPlans</code><a class="dashingAutolink" name="autolink-2377"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.rejectedPlans" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.queryPlanner.</code><code class="descname">rejectedPlans</code><a class="dashingAutolink" name="autolink-1511"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.queryPlanner.rejectedPlans" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Array of candidate plans considered and rejected by the
 query optimizer. The array can be empty if there were no other
 candidate plans.</p>
@@ -550,14 +550,14 @@ copy</a>
   </div>
 </div><dl class="data">
 <dt id="explain.executionStats">
-<code class="descclassname">explain.</code><code class="descname">executionStats</code><a class="dashingAutolink" name="autolink-2378"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.</code><code class="descname">executionStats</code><a class="dashingAutolink" name="autolink-1512"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Contains statistics that describe the completed query execution for
 the winning plan. For write operations, completed query execution
 refers to the modifications that <em>would</em> be performed, but does
 <em>not</em> apply the modifications to the database.</p>
 <dl class="data">
 <dt id="explain.executionStats.nReturned">
-<code class="descclassname">explain.executionStats.</code><code class="descname">nReturned</code><a class="dashingAutolink" name="autolink-2379"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.nReturned" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.</code><code class="descname">nReturned</code><a class="dashingAutolink" name="autolink-1513"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.nReturned" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of documents that match the query condition.
 <code class="xref mongodb mongodb-data docutils literal"><span class="pre">nReturned</span></code> corresponds to the <code class="docutils literal"><span class="pre">n</span></code> field
 returned by <code class="docutils literal"><span class="pre">cursor.explain()</span></code> in earlier versions of MongoDB.</p>
@@ -565,7 +565,7 @@ returned by <code class="docutils literal"><span class="pre">cursor.explain()</s
 
 <dl class="data">
 <dt id="explain.executionStats.executionTimeMillis">
-<code class="descclassname">explain.executionStats.</code><code class="descname">executionTimeMillis</code><a class="dashingAutolink" name="autolink-2380"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionTimeMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.</code><code class="descname">executionTimeMillis</code><a class="dashingAutolink" name="autolink-1514"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionTimeMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Total time in milliseconds required for query plan selection and
 query execution. <code class="xref mongodb mongodb-data docutils literal"><span class="pre">executionTimeMillis</span></code> corresponds
 to the <code class="docutils literal"><span class="pre">millis</span></code> field returned by <code class="docutils literal"><span class="pre">cursor.explain()</span></code> in
@@ -574,7 +574,7 @@ earlier versions of MongoDB.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.totalKeysExamined">
-<code class="descclassname">explain.executionStats.</code><code class="descname">totalKeysExamined</code><a class="dashingAutolink" name="autolink-2381"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.totalKeysExamined" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.</code><code class="descname">totalKeysExamined</code><a class="dashingAutolink" name="autolink-1515"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.totalKeysExamined" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of index entries scanned.
 <a class="reference internal" href="#explain.executionStats.totalKeysExamined" title="explain.executionStats.totalKeysExamined"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">totalKeysExamined</span></code></a> corresponds to the
 <code class="docutils literal"><span class="pre">nscanned</span></code> field returned by <code class="docutils literal"><span class="pre">cursor.explain()</span></code> in
@@ -583,7 +583,7 @@ earlier versions of MongoDB.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.totalDocsExamined">
-<code class="descclassname">explain.executionStats.</code><code class="descname">totalDocsExamined</code><a class="dashingAutolink" name="autolink-2382"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.totalDocsExamined" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.</code><code class="descname">totalDocsExamined</code><a class="dashingAutolink" name="autolink-1516"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.totalDocsExamined" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of documents examined during query execution. Common
 query execution stages that examine documents are <code class="docutils literal"><span class="pre">COLLSCAN</span></code>
 and <code class="docutils literal"><span class="pre">FETCH</span></code>.</p>
@@ -606,7 +606,7 @@ count of the total number of <em>unique</em> documents examined.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages">
-<code class="descclassname">explain.executionStats.</code><code class="descname">executionStages</code><a class="dashingAutolink" name="autolink-2383"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.</code><code class="descname">executionStages</code><a class="dashingAutolink" name="autolink-1517"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Details the completed execution of the winning plan as a tree of
 stages; i.e. a stage can have an <code class="docutils literal"><span class="pre">inputStage</span></code> or multiple
 <code class="docutils literal"><span class="pre">inputStages</span></code>.</p>
@@ -614,7 +614,7 @@ stages; i.e. a stage can have an <code class="docutils literal"><span class="pre
 stage.</p>
 <dl class="data">
 <dt id="explain.executionStats.executionStages.works">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">works</code><a class="dashingAutolink" name="autolink-2384"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.works" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">works</code><a class="dashingAutolink" name="autolink-1518"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.works" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the number of &ldquo;work units&rdquo; performed by the query
 execution stage. Query execution divides its work into small
 units. A &ldquo;work unit&rdquo; might consist of examining a single index key,
@@ -625,14 +625,14 @@ bookkeeping.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.advanced">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">advanced</code><a class="dashingAutolink" name="autolink-2385"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.advanced" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">advanced</code><a class="dashingAutolink" name="autolink-1519"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.advanced" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of intermediate results returned, or <em>advanced</em>, by
 this stage to its parent stage.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.needTime">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">needTime</code><a class="dashingAutolink" name="autolink-2386"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.needTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">needTime</code><a class="dashingAutolink" name="autolink-1520"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.needTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of work cycles that did not advance an intermediate
 result to its parent stage (see
 <a class="reference internal" href="#explain.executionStats.executionStages.advanced" title="explain.executionStats.executionStages.advanced"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">explain.executionStats.executionStages.advanced</span></code></a>). For
@@ -645,14 +645,14 @@ than <a class="reference internal" href="#explain.executionStats.executionStages
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.needYield">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">needYield</code><a class="dashingAutolink" name="autolink-2387"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.needYield" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">needYield</code><a class="dashingAutolink" name="autolink-1521"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.needYield" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of times that the storage layer requested that the
 query stage suspend processing and yield its locks.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.saveState">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">saveState</code><a class="dashingAutolink" name="autolink-2388"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.saveState" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">saveState</code><a class="dashingAutolink" name="autolink-1522"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.saveState" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of times that the query stage suspended processing
 and saved its current execution state, for example in
 preparation for yielding its locks.</p>
@@ -660,7 +660,7 @@ preparation for yielding its locks.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.restoreState">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">restoreState</code><a class="dashingAutolink" name="autolink-2389"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.restoreState" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">restoreState</code><a class="dashingAutolink" name="autolink-1523"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.restoreState" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of times that the query stage restored a saved
 execution state, for example after recovering locks that it had
 previously yielded.</p>
@@ -668,7 +668,7 @@ previously yielded.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.isEOF">
-<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">isEOF</code><a class="dashingAutolink" name="autolink-2390"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.isEOF" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.</code><code class="descname">isEOF</code><a class="dashingAutolink" name="autolink-1524"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.isEOF" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies whether the execution stage has reached end of stream:</p>
 <ul class="simple">
 <li>If <code class="docutils literal"><span class="pre">true</span></code> or <code class="docutils literal"><span class="pre">1</span></code>, the execution stage has reached
@@ -685,7 +685,7 @@ will report <code class="docutils literal"><span class="pre">isEOF:</span> <span
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.inputStage.keysExamined">
-<code class="descclassname">explain.executionStats.executionStages.inputStage.</code><code class="descname">keysExamined</code><a class="dashingAutolink" name="autolink-2391"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.inputStage.keysExamined" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.inputStage.</code><code class="descname">keysExamined</code><a class="dashingAutolink" name="autolink-1525"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.inputStage.keysExamined" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For query execution stages that scan an index (e.g. IXSCAN),
 <code class="docutils literal"><span class="pre">keysExamined</span></code> is the total number of in-bounds and out-of-bounds
 keys that are examined in the process of the index scan. If the
@@ -717,7 +717,7 @@ still examined. The value of <code class="docutils literal"><span class="pre">ke
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.inputStage.docsExamined">
-<code class="descclassname">explain.executionStats.executionStages.inputStage.</code><code class="descname">docsExamined</code><a class="dashingAutolink" name="autolink-2392"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.inputStage.docsExamined" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.inputStage.</code><code class="descname">docsExamined</code><a class="dashingAutolink" name="autolink-1526"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.inputStage.docsExamined" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the number of documents scanned during the
 query execution stage.</p>
 <p>Present for the <code class="docutils literal"><span class="pre">COLLSCAN</span></code> stage, as well as for stages that
@@ -726,7 +726,7 @@ retrieve documents from the collection (e.g. <code class="docutils literal"><spa
 
 <dl class="data">
 <dt id="explain.executionStats.executionStages.inputStage.seeks">
-<code class="descclassname">explain.executionStats.executionStages.inputStage.</code><code class="descname">seeks</code><a class="dashingAutolink" name="autolink-2393"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.inputStage.seeks" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.executionStages.inputStage.</code><code class="descname">seeks</code><a class="dashingAutolink" name="autolink-1527"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.executionStages.inputStage.seeks" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span>For index scan (<code class="docutils literal"><span class="pre">IXSCAN</span></code>) stages only.</p>
 </div>
@@ -738,7 +738,7 @@ a new position in order to complete the index scan.</p>
 
 <dl class="data">
 <dt id="explain.executionStats.allPlansExecution">
-<code class="descclassname">explain.executionStats.</code><code class="descname">allPlansExecution</code><a class="dashingAutolink" name="autolink-2394"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.allPlansExecution" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">explain.executionStats.</code><code class="descname">allPlansExecution</code><a class="dashingAutolink" name="autolink-1528"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#explain.executionStats.allPlansExecution" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Contains <em>partial</em> execution information captured during the
 <a class="reference internal" href="../core/query-plans.html#query-plans-query-optimization"><span class="std std-ref">plan selection phase</span></a> for
 both the winning and rejected plans. The field is present only if

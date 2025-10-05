@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4192"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.grantRolesToRole%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.grantRolesToRole() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1971"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.grantRolesToRole%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.grantRolesToRole() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.grantRolesToRole/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-grantrolestorole">
-<a class="dashingAutolink" name="autolink-4193"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.grantRolesToRole%28%29%C2%B6"></a><h1>db.grantRolesToRole()<a class="headerlink" href="#db-grantrolestorole" title="Permalink to this headline">&para;</a></h1>
+<h1>db.grantRolesToRole()<a class="headerlink" href="#db-grantrolestorole" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,9 +167,9 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.grantRolesToRole">
-<code class="descclassname">db.</code><code class="descname">grantRolesToRole</code><span class="sig-paren">(</span><em>rolename</em>, <em>roles</em>, <em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4200"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.grantRolesToRole" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">grantRolesToRole</code><span class="sig-paren">(</span><em>rolename</em>, <em>roles</em>, <em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1970"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.grantRolesToRole" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Grants roles to a <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined role</span></a>.</p>
-<p>The <a class="dashingAutolink" name="autolink-4194"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/grantRolesToRole"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">grantRolesToRole</span></code> method uses the following syntax:</p>
+<p>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">grantRolesToRole</span></code> method uses the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -179,7 +179,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="dashingAutolink" name="autolink-4195"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/grantRolesToRole"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">grantRolesToRole</span></code> method takes the following arguments:</p>
+<p>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">grantRolesToRole</span></code> method takes the following arguments:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -213,7 +213,7 @@ fields as the <a class="reference internal" href="../command/getLastError.html#d
 <a class="reference internal" href="../built-in-roles.html#built-in-roles"><span class="std std-ref">built-in roles</span></a> and <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined
 role</span></a>.</p>
 <p>To specify a role that exists in the same database where
-<a class="reference internal" href="#db.grantRolesToRole" title="db.grantRolesToRole()"><a class="dashingAutolink" name="autolink-4196"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a> runs, you can either specify the role with the name of
+<a class="reference internal" href="#db.grantRolesToRole" title="db.grantRolesToRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a> runs, you can either specify the role with the name of
 the role:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -236,7 +236,7 @@ copy</a>
 </div>
 <p>To specify a role that exists in a different database, specify the role
 with a document.</p>
-<p>The <a class="reference internal" href="#db.grantRolesToRole" title="db.grantRolesToRole()"><a class="dashingAutolink" name="autolink-4197"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a> method wraps the
+<p>The <a class="reference internal" href="#db.grantRolesToRole" title="db.grantRolesToRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a> method wraps the
 <a class="reference internal" href="../command/grantRolesToRole.html#dbcmd.grantRolesToRole" title="grantRolesToRole"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">grantRolesToRole</span></code></a> command.</p>
 </dd></dl>
 
@@ -245,7 +245,7 @@ with a document.</p>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="replica-set">
 <h3>Replica set<a class="headerlink" href="#replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>If run on a replica set, <a class="reference internal" href="#db.grantRolesToRole" title="db.grantRolesToRole()"><a class="dashingAutolink" name="autolink-4198"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
+<p>If run on a replica set, <a class="reference internal" href="#db.grantRolesToRole" title="db.grantRolesToRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToRole()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
 </div>
 <div class="section" id="scope">
 <h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">&para;</a></h3>
@@ -260,7 +260,7 @@ any database.</p>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following <a class="dashingAutolink" name="autolink-4199"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/grantRolesToRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">grantRolesToRole()</span></code> operation updates the
+<p>The following <code class="xref mongodb mongodb-method docutils literal"><span class="pre">grantRolesToRole()</span></code> operation updates the
 <code class="docutils literal"><span class="pre">productsReaderWriter</span></code> role in the <code class="docutils literal"><span class="pre">products</span></code> database to <a class="reference internal" href="../../core/authorization.html#inheritance"><span class="std std-ref">inherit</span></a> the <a class="reference internal" href="../../core/authorization.html#privileges"><span class="std std-ref">privileges</span></a> of <code class="docutils literal"><span class="pre">productsReader</span></code> role:</p>
 <div class="button-code-block">
 <div class="button-row">

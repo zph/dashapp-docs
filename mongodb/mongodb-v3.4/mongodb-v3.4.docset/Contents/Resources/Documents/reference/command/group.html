@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1331"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/group%20%E2%80%94%20MongoDB%20Manual"></a><title>group &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-667"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/group%20%E2%80%94%20MongoDB%20Manual"></a><title>group &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/group/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="group">
-<a class="dashingAutolink" name="autolink-1332"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/group%C2%B6"></a><h1>group<a class="headerlink" href="#group" title="Permalink to this headline">&para;</a></h1>
+<h1>group<a class="headerlink" href="#group" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,11 +166,11 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.group">
-<code class="descname">group</code><a class="dashingAutolink" name="autolink-1330"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.group" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">group</code><a class="dashingAutolink" name="autolink-668"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.group" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.4: </span>Mongodb 3.4 deprecates the <a class="reference internal" href="#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> command. Use
-<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-1333"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> with the <a class="reference internal" href="../operator/aggregation/group.html#pipe._S_group" title="$group"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$group</span></code></a>
-stage or <a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-1334"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> instead.</p>
+<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> with the <a class="reference internal" href="../operator/aggregation/group.html#pipe._S_group" title="$group"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$group</span></code></a>
+stage or <a class="reference internal" href="../method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> instead.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -264,8 +264,8 @@ function, this field name is <code class="docutils literal"><span class="pre">fi
 </tbody>
 </table>
 <p>For the shell, MongoDB provides a wrapper method
-<a class="reference internal" href="../method/db.collection.group.html#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-1335"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>. However, the
-<a class="reference internal" href="../method/db.collection.group.html#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-1336"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method takes the <code class="docutils literal"><span class="pre">keyf</span></code> field and
+<a class="reference internal" href="../method/db.collection.group.html#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>. However, the
+<a class="reference internal" href="../method/db.collection.group.html#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method takes the <code class="docutils literal"><span class="pre">keyf</span></code> field and
 the <code class="docutils literal"><span class="pre">reduce</span></code> field whereas the <a class="reference internal" href="#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> command takes
 the <code class="docutils literal"><span class="pre">$keyf</span></code> field and the <code class="docutils literal"><span class="pre">$reduce</span></code> field.</p>
 </dd></dl>
@@ -363,7 +363,7 @@ of the interacting application.</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">&para;</a></h2>
-<p>The following are examples of the <a class="reference internal" href="../method/db.collection.group.html#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-1337"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method.
+<p>The following are examples of the <a class="reference internal" href="../method/db.collection.group.html#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method.
 The examples assume an <code class="docutils literal"><span class="pre">orders</span></code> collection with documents of the
 following prototype:</p>
 <div class="button-code-block">

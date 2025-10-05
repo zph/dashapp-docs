@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2626"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk.find.replaceOne%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk.find.replaceOne() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1625"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk.find.replaceOne%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk.find.replaceOne() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/Bulk.find.replaceOne/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="bulk-find-replaceone">
-<a class="dashingAutolink" name="autolink-2627"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Bulk.find.replaceOne%28%29%C2%B6"></a><h1>Bulk.find.replaceOne()<a class="headerlink" href="#bulk-find-replaceone" title="Permalink to this headline">&para;</a></h1>
+<h1>Bulk.find.replaceOne()<a class="headerlink" href="#bulk-find-replaceone" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -164,23 +164,23 @@
 <div class="admonition-tip admonition">
 <p class="first admonition-title">Tip</p>
 <p class="last">Starting in version 3.2, MongoDB also provides the
-<a class="reference internal" href="db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-2628"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method for performing bulk
+<a class="reference internal" href="db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method for performing bulk
 write operations.</p>
 </div>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="Bulk.find.replaceOne">
-<code class="descclassname">Bulk.find.</code><code class="descname">replaceOne</code><span class="sig-paren">(</span><em>&lt;document&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2640"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Bulk.find.replaceOne" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">Bulk.find.</code><code class="descname">replaceOne</code><span class="sig-paren">(</span><em>&lt;document&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1624"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Bulk.find.replaceOne" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
 <p>Adds a single document replacement operation to a bulk operations
-list. Use the <a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2629"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> method to specify the condition
+list. Use the <a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> method to specify the condition
 that determines which document to replace. The
-<a class="reference internal" href="#Bulk.find.replaceOne" title="Bulk.find.replaceOne()"><a class="dashingAutolink" name="autolink-2630"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.replaceOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.replaceOne()</span></code></a> method limits the replacement to a
+<a class="reference internal" href="#Bulk.find.replaceOne" title="Bulk.find.replaceOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.replaceOne()</span></code></a> method limits the replacement to a
 single document.</p>
-<p><a class="reference internal" href="#Bulk.find.replaceOne" title="Bulk.find.replaceOne()"><a class="dashingAutolink" name="autolink-2631"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.replaceOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.replaceOne()</span></code></a> accepts the following parameter:</p>
+<p><a class="reference internal" href="#Bulk.find.replaceOne" title="Bulk.find.replaceOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.replaceOne()</span></code></a> accepts the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -199,22 +199,22 @@ single document.</p>
 <td><p class="first">A replacement document that completely replaces the existing
 document. Contains only field and value pairs.</p>
 <p class="last">The sum of the associated <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code> document from the
-<a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2632"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> and the replacement document must be less than
+<a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> and the replacement document must be less than
 or equal to the <a class="reference internal" href="../limits.html#BSON-Document-Size" title="BSON Document Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">maximum</span> <span class="pre">BSON</span> <span class="pre">document</span> <span class="pre">size</span></code></a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>To specify an <a class="reference internal" href="../glossary.html#term-upsert"><span class="xref std std-term">upsert</span></a> for this operation, see
-<a class="reference internal" href="Bulk.find.upsert.html#Bulk.find.upsert" title="Bulk.find.upsert()"><a class="dashingAutolink" name="autolink-2633"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.upsert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.upsert()</span></code></a>.</p>
+<a class="reference internal" href="Bulk.find.upsert.html#Bulk.find.upsert" title="Bulk.find.upsert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.upsert()</span></code></a>.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following example initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-2634"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder
+<p>The following example initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder
 for the <code class="docutils literal"><span class="pre">items</span></code> collection, and adds various
-<a class="reference internal" href="#Bulk.find.replaceOne" title="Bulk.find.replaceOne"><a class="dashingAutolink" name="autolink-2635"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/replaceOne"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">replaceOne</span></code></a> operations to the list of operations.</p>
+<a class="reference internal" href="#Bulk.find.replaceOne" title="Bulk.find.replaceOne"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">replaceOne</span></code></a> operations to the list of operations.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -229,10 +229,10 @@ copy</a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><a class="dashingAutolink" name="autolink-2636"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeUnorderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeUnorderedBulkOp()</span></code></a></li>
-<li><a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><a class="dashingAutolink" name="autolink-2637"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeOrderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2638"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-2639"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeUnorderedBulkOp()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a></li>
 <li><a class="reference internal" href="Bulk.html#bulk-methods"><span class="std std-ref">All Bulk Methods</span></a></li>
 </ul>
 </div>

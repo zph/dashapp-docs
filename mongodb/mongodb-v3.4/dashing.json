@@ -4,14 +4,12 @@
     "index": "index.html",
     "selectors": {
         "dt a": "Command",
-        "title": "Package",
-        "h1": "Section",
-        ".mongodb-method": "Method"
+        "title": "Package"
     },
     "ignore": [
         "ABOUT"
     ],
     "icon32x32": "",
-    "allowJS": true,
-    "ExternalURL": ""
+    "allowJS": false,
+    "ExternalURL": "https://docs.mongodb.com/v3.4/manual.tar.gz"
 }

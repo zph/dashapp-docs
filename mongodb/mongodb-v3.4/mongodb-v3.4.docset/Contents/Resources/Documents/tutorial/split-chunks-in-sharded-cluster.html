@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8756"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Split%20Chunks%20in%20a%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Split Chunks in a Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3730"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Split%20Chunks%20in%20a%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Split Chunks in a Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/split-chunks-in-sharded-cluster/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="split-chunks-in-a-sharded-cluster">
-<a class="dashingAutolink" name="autolink-8757"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Split%20Chunks%20in%20a%20Sharded%20Cluster%C2%B6"></a><h1>Split Chunks in a Sharded Cluster<a class="headerlink" href="#split-chunks-in-a-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
+<h1>Split Chunks in a Sharded Cluster<a class="headerlink" href="#split-chunks-in-a-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
 <p>Normally, MongoDB splits a <a class="reference internal" href="../reference/glossary.html#term-chunk"><span class="xref std std-term">chunk</span></a> after an insert if the chunk
 exceeds the maximum <a class="reference internal" href="../core/sharding-data-partitioning.html#sharding-chunk-size"><span class="std std-ref">chunk size</span></a>. However,
 you may want to split chunks manually if:</p>
@@ -190,16 +190,16 @@ irregular sizes, shards may have an equal number of chunks but have
 very different data sizes. Avoid creating splits that lead to a
 collection with differently sized chunks.</p>
 </div>
-<p>Use <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8758"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to determine the current chunk ranges across
+<p>Use <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to determine the current chunk ranges across
 the cluster.</p>
 <p>To split chunks manually, use the <a class="reference internal" href="../reference/command/split.html#dbcmd.split" title="split"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">split</span></code></a> command with either
 fields <code class="docutils literal"><span class="pre">middle</span></code> or <code class="docutils literal"><span class="pre">find</span></code>. The <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the
-helper methods <a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><a class="dashingAutolink" name="autolink-8759"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.splitFind%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitFind()</span></code></a> and <a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><a class="dashingAutolink" name="autolink-8760"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.splitAt%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitAt()</span></code></a>.</p>
-<p><a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><a class="dashingAutolink" name="autolink-8761"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/splitFind%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitFind()</span></code></a> splits the chunk that contains the <em>first</em>
+helper methods <a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitFind()</span></code></a> and <a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitAt()</span></code></a>.</p>
+<p><a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitFind()</span></code></a> splits the chunk that contains the <em>first</em>
 document returned that matches this query into two equally sized chunks.
 You must specify the full namespace (i.e. &ldquo;<code class="docutils literal"><span class="pre">&lt;database&gt;.&lt;collection&gt;</span></code>&rdquo;)
-of the sharded collection to <a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><a class="dashingAutolink" name="autolink-8762"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/splitFind%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitFind()</span></code></a>. The query in
-<a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><a class="dashingAutolink" name="autolink-8763"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/splitFind%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitFind()</span></code></a> does not need to use the shard key, though it
+of the sharded collection to <a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitFind()</span></code></a>. The query in
+<a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitFind()</span></code></a> does not need to use the shard key, though it
 nearly always makes sense to do so.</p>
 <div class="admonition-example admonition">
 <p class="first admonition-title">Example</p>
@@ -216,7 +216,7 @@ copy</a>
 </div>
 </div>
 </div>
-<p>Use <a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><a class="dashingAutolink" name="autolink-8764"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/splitAt%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitAt()</span></code></a> to split a chunk in two, using the queried
+<p>Use <a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitAt()</span></code></a> to split a chunk in two, using the queried
 document as the lower bound in the new chunk:</p>
 <div class="admonition-example admonition">
 <p class="first admonition-title">Example</p>
@@ -235,7 +235,7 @@ copy</a>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><a class="dashingAutolink" name="autolink-8765"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/splitAt%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitAt()</span></code></a> does not necessarily split the chunk
+<p class="last"><a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">splitAt()</span></code></a> does not necessarily split the chunk
 into two equally sized chunks. The split occurs at the location of
 the document matching the query, regardless of where that document is
 in the chunk.</p>

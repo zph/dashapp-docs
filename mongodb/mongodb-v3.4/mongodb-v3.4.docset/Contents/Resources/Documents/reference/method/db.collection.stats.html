@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3792"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.stats%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.stats() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1880"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.stats%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.stats() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.stats/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-stats">
-<a class="dashingAutolink" name="autolink-3793"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.stats%28%29%C2%B6"></a><h1>db.collection.stats()<a class="headerlink" href="#db-collection-stats" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.stats()<a class="headerlink" href="#db-collection-stats" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.stats">
-<code class="descclassname">db.collection.</code><code class="descname">stats</code><span class="sig-paren">(</span><em>scale | options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3800"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.stats" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">stats</code><span class="sig-paren">(</span><em>scale | options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1879"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.stats" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns statistics about the collection. The method includes
 the following parameters:</p>
 <table border="1" class="colwidths-given docutils">
@@ -230,7 +230,7 @@ than bytes, specify a <code class="docutils literal"><span class="pre">scale</sp
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">indexDetails</span></code></td>
 <td>boolean</td>
-<td><p class="first">Optional. If <code class="docutils literal"><span class="pre">true</span></code>, <a class="reference internal" href="#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-3794"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> returns
+<td><p class="first">Optional. If <code class="docutils literal"><span class="pre">true</span></code>, <a class="reference internal" href="#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> returns
 <a class="reference internal" href="../command/collStats.html#collStats.indexDetails" title="collStats.indexDetails"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">index</span> <span class="pre">details</span></code></a>
 in addition to the collection stats.</p>
 <p>Only works for <a class="reference internal" href="../../core/wiredtiger.html#storage-wiredtiger"><span class="std std-ref">WiredTiger</span></a> storage engine.</p>
@@ -247,7 +247,7 @@ index details by specifying the index key specification.
 Only the index that exactly matches <code class="docutils literal"><span class="pre">indexDetailsKey</span></code> will be returned.</p>
 <p>If no match is found, <a class="reference internal" href="../command/collStats.html#collStats.indexDetails" title="collStats.indexDetails"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">indexDetails</span></code></a> will display
 statistics for all indexes.</p>
-<p>Use <a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><a class="dashingAutolink" name="autolink-3795"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getIndexes()</span></code></a> to discover index keys. You cannot
+<p>Use <a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getIndexes()</span></code></a> to discover index keys. You cannot
 use <code class="docutils literal"><span class="pre">indexDetailsKey</span></code> with <code class="docutils literal"><span class="pre">indexDetailsName</span></code>.</p>
 <div class="last versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
@@ -262,7 +262,7 @@ Only the index name that exactly
 matches <code class="docutils literal"><span class="pre">indexDetailsName</span></code> will be returned.</p>
 <p>If no match is found, <a class="reference internal" href="../command/collStats.html#collStats.indexDetails" title="collStats.indexDetails"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">indexDetails</span></code></a> will display
 statistics for all indexes.</p>
-<p>Use <a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><a class="dashingAutolink" name="autolink-3796"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getIndexes()</span></code></a> to discover index names. You cannot
+<p>Use <a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getIndexes()</span></code></a> to discover index names. You cannot
 use <code class="docutils literal"><span class="pre">indexDetailsName</span></code> with <code class="docutils literal"><span class="pre">indexDetailsField</span></code>.</p>
 <div class="last versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
@@ -283,7 +283,7 @@ statistics.</td>
 </table>
 </dd></dl>
 
-<p>The <a class="reference internal" href="#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-3797"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> method provides a wrapper
+<p>The <a class="reference internal" href="#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> method provides a wrapper
 around the database command <a class="reference internal" href="../command/collStats.html#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a>.</p>
 </div>
 <div class="section" id="behavior">
@@ -301,7 +301,7 @@ the fields, see <a class="reference internal" href="../command/collStats.html#co
 <div class="section" id="accuracy-after-unexpected-shutdown">
 <h3>Accuracy after Unexpected Shutdown<a class="headerlink" href="#accuracy-after-unexpected-shutdown" title="Permalink to this headline">&para;</a></h3>
 <p>After an unclean shutdown of a <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> using the <a class="reference internal" href="../../core/wiredtiger.html"><span class="doc">Wired Tiger</span></a> storage engine, count and size statistics reported by
-<a class="reference internal" href="#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-3798"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> may be inaccurate.</p>
+<a class="reference internal" href="#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> may be inaccurate.</p>
 <p>The amount of drift depends on the number of insert, update, or delete
 operations performed between the last <a class="reference internal" href="../../core/wiredtiger.html#storage-wiredtiger-checkpoints"><span class="std std-ref">checkpoint</span></a> and the unclean shutdown. Checkpoints
 usually occur every 60 seconds. However, <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instances running
@@ -743,7 +743,7 @@ copy</a>
 <p>To filter the indexes in the  <a class="reference internal" href="../command/collStats.html#collStats.indexDetails" title="collStats.indexDetails"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">indexDetails</span></code></a> field, you can
 either specify the index keys using the <code class="docutils literal"><span class="pre">indexDetailsKey</span></code> option or specify
 the index name using the <code class="docutils literal"><span class="pre">indexDetailsName</span></code>.  To discover index keys and
-names for the collection, use <a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><a class="dashingAutolink" name="autolink-3799"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a>.</p>
+names for the collection, use <a class="reference internal" href="db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a>.</p>
 <p>Given the following index:</p>
 <div class="button-code-block">
 <div class="button-row">

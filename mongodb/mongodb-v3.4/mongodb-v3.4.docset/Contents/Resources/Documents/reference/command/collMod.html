@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-931"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/collMod%20%E2%80%94%20MongoDB%20Manual"></a><title>collMod &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-416"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/collMod%20%E2%80%94%20MongoDB%20Manual"></a><title>collMod &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/collMod/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="collmod">
-<a class="dashingAutolink" name="autolink-932"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/collMod%C2%B6"></a><h1>collMod<a class="headerlink" href="#collmod" title="Permalink to this headline">&para;</a></h1>
+<h1>collMod<a class="headerlink" href="#collmod" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,7 +167,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.collMod">
-<code class="descname">collMod</code><a class="dashingAutolink" name="autolink-922"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.collMod" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">collMod</code><a class="dashingAutolink" name="autolink-407"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.collMod" title="Permalink to this definition">&para;</a></dt>
 <dd><p><a class="reference internal" href="#dbcmd.collMod" title="collMod"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collMod</span></code></a> makes it possible to add options to a collection
 or to modify view definitions. The command
 takes the following prototype form:</p>
@@ -183,7 +183,7 @@ copy</a>
 <p>For the <code class="docutils literal"><span class="pre">&lt;collection</span> <span class="pre">or</span> <span class="pre">view&gt;</span></code>, specify the name of a collection
 or view in the current database.</p>
 <p>Use the <a class="reference internal" href="collStats.html#collStats.userFlags" title="collStats.userFlags"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">userFlags</span></code></a> field in the
-<a class="reference internal" href="../method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-918"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> output to check the options enabled
+<a class="reference internal" href="../method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> output to check the options enabled
 for a collection.</p>
 </dd></dl>
 
@@ -194,7 +194,7 @@ for a collection.</p>
 <h3>TTL Collections<a class="headerlink" href="#ttl-collections" title="Permalink to this headline">&para;</a></h3>
 <span class="target" id="index-0"></span><dl class="collflag">
 <dt id="index">
-<code class="descname">index</code><a class="dashingAutolink" name="autolink-923"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#index" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">index</code><a class="dashingAutolink" name="autolink-408"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#index" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="#index" title="index"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">index</span></code></a> option changes the expiration time of a
 <a class="reference internal" href="../../tutorial/expire-data.html"><span class="doc">TTL Collection</span></a>.</p>
 <p>Specify the key or index name, and new expiration time with a document of the form:</p>
@@ -226,7 +226,7 @@ does not exist.</p>
 <h3>Record Allocation<a class="headerlink" href="#record-allocation" title="Permalink to this headline">&para;</a></h3>
 <dl class="collflag">
 <dt id="noPadding">
-<code class="descname">noPadding</code><a class="dashingAutolink" name="autolink-924"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#noPadding" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">noPadding</code><a class="dashingAutolink" name="autolink-409"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#noPadding" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
 </div>
@@ -247,7 +247,7 @@ more information, see <a class="reference internal" href="../../core/mmapv1.html
 
 <span class="target" id="index-1"></span><span class="target" id="usepowerof2sizes"><span id="index-2"></span></span><dl class="collflag">
 <dt id="usePowerOf2Sizes">
-<code class="descname">usePowerOf2Sizes</code><a class="dashingAutolink" name="autolink-925"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#usePowerOf2Sizes" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">usePowerOf2Sizes</code><a class="dashingAutolink" name="autolink-410"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#usePowerOf2Sizes" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.0.</span></p>
 </div>
@@ -258,7 +258,7 @@ strategy. MongoDB 3.0 uses the <a class="reference internal" href="../../core/mm
 for MMAPv1.</p>
 <p>To disable the <a class="reference internal" href="../../core/mmapv1.html#power-of-2-allocation"><span class="std std-ref">power of 2 allocation</span></a>
 for a collection, use the <a class="reference internal" href="#dbcmd.collMod" title="collMod"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collMod</span></code></a> command with the
-<a class="reference internal" href="#noPadding" title="noPadding"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">noPadding</span></code></a> option or the <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-919"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>
+<a class="reference internal" href="#noPadding" title="noPadding"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">noPadding</span></code></a> option or the <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>
 method with the <code class="docutils literal"><span class="pre">noPadding</span></code> option. For more information, see
 <a class="reference internal" href="../../release-notes/3.0.html#mmapv1-padding"><span class="std std-ref">MMAPv1 Record Allocation Behavior Changes</span></a>.</p>
 </dd></dl>
@@ -268,7 +268,7 @@ method with the <code class="docutils literal"><span class="pre">noPadding</span
 <h3>Document Validation<a class="headerlink" href="#document-validation" title="Permalink to this headline">&para;</a></h3>
 <dl class="collflag">
 <dt id="validator">
-<code class="descname">validator</code><a class="dashingAutolink" name="autolink-926"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#validator" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">validator</code><a class="dashingAutolink" name="autolink-411"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#validator" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -294,7 +294,7 @@ documents do not undergo validation checks until modification.</li>
 
 <dl class="collflag">
 <dt id="validationLevel">
-<code class="descname">validationLevel</code><a class="dashingAutolink" name="autolink-927"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#validationLevel" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">validationLevel</code><a class="dashingAutolink" name="autolink-412"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#validationLevel" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -329,7 +329,7 @@ documents.</td>
 
 <dl class="collflag">
 <dt id="validationAction">
-<code class="descname">validationAction</code><a class="dashingAutolink" name="autolink-928"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#validationAction" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">validationAction</code><a class="dashingAutolink" name="autolink-413"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#validationAction" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -365,13 +365,13 @@ validation, the write operation logs the validation failure.</td>
 </dd></dl>
 
 <p>To view the validation specifications for a collection, use the
-<a class="reference internal" href="../method/db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-920"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> method.</p>
+<a class="reference internal" href="../method/db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> method.</p>
 </div>
 <div class="section" id="views">
 <h3>Views<a class="headerlink" href="#views" title="Permalink to this headline">&para;</a></h3>
 <dl class="collflag">
 <dt id="viewOn">
-<code class="descname">viewOn</code><a class="dashingAutolink" name="autolink-929"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#viewOn" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">viewOn</code><a class="dashingAutolink" name="autolink-414"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#viewOn" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The underlying source collection or view for the <a class="reference internal" href="../../core/views.html"><span class="doc">view</span></a>. The view definition is determined by applying the
 specified <a class="reference internal" href="#pipeline" title="pipeline"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">pipeline</span></code></a> to this source.</p>
 <p>Required if modifying a view on a MongoDB deployment that is running
@@ -380,12 +380,12 @@ with access control.</p>
 
 <dl class="collflag">
 <dt id="pipeline">
-<code class="descname">pipeline</code><a class="dashingAutolink" name="autolink-930"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#pipeline" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">pipeline</code><a class="dashingAutolink" name="autolink-415"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#pipeline" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="../../core/aggregation-pipeline.html#id1"><span class="std std-ref">aggregation pipeline</span></a> that defines
 the <a class="reference internal" href="../../core/views.html"><span class="doc">view</span></a>.</p>
 <p>Required if modifying a view on a MongoDB deployment that is running
 with access control.</p>
-<p>The view definition is public; i.e. <a class="reference internal" href="../method/db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-921"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
+<p>The view definition is public; i.e. <a class="reference internal" href="../method/db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
 and <code class="docutils literal"><span class="pre">explain</span></code> operations on the view will include the pipeline that
 defines the view. As such, avoid referring directly to sensitive fields
 and values in view definitions.</p>

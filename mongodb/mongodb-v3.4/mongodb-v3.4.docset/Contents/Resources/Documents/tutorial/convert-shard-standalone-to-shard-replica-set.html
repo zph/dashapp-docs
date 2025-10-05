@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8071"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Convert%20a%20Shard%20Standalone%20to%20a%20Shard%20Replica%20Set%20%E2%80%94%20MongoDB%20Manual"></a><title>Convert a Shard Standalone to a Shard Replica Set &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3619"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Convert%20a%20Shard%20Standalone%20to%20a%20Shard%20Replica%20Set%20%E2%80%94%20MongoDB%20Manual"></a><title>Convert a Shard Standalone to a Shard Replica Set &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/convert-shard-standalone-to-shard-replica-set/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="convert-a-shard-standalone-to-a-shard-replica-set">
-<a class="dashingAutolink" name="autolink-8072"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Convert%20a%20Shard%20Standalone%20to%20a%20Shard%20Replica%20Set%C2%B6"></a><h1>Convert a Shard Standalone to a Shard Replica Set<a class="headerlink" href="#convert-a-shard-standalone-to-a-shard-replica-set" title="Permalink to this headline">&para;</a></h1>
+<h1>Convert a Shard Standalone to a Shard Replica Set<a class="headerlink" href="#convert-a-shard-standalone-to-a-shard-replica-set" title="Permalink to this headline">&para;</a></h1>
 <p>This tutorial describes the process for converting a shard standalone
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance to a shard <a class="reference internal" href="../reference/glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a>. The
 procedure is specific to a shard standalone. To convert just a
@@ -194,7 +194,7 @@ manual page.</p>
 </li>
 <li><p class="first">Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the shard <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 </li>
-<li><p class="first">Use <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8073"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the new replica set:</p>
+<li><p class="first">Use <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the new replica set:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -205,8 +205,8 @@ copy</a>
 </div>
 </div>
 <p>The replica set is now operational. To view the replica set
-configuration, use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8074"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>. To check the status of the
-replica set, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8075"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>.</p>
+configuration, use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>. To check the status of the
+replica set, use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>.</p>
 </li>
 <li><p class="first">Disconnect from the instance.</p>
 </li>
@@ -225,8 +225,8 @@ copy</a>
 shard is separate from the shard replica set name (unless you are
 using the shard name as the replica set name). To retrieve the name
 of the shard, see the <a class="reference internal" href="../reference/method/sh.status.html#sh.status.shards._id" title="sh.status.shards._id"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">shards</span></code></a> section
-in the results from the <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8076"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> method. For example,
-if the result of <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8077"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> includes the following shards
+in the results from the <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> method. For example,
+if the result of <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> includes the following shards
 section, the name of the two shards are <code class="docutils literal"><span class="pre">&#34;shard0000&#34;</span></code> and
 <code class="docutils literal"><span class="pre">&#34;shard0001&#34;</span></code> respectively:</p>
 <div class="button-code-block">
@@ -283,7 +283,7 @@ members of the sharded cluster:</p>
 </div>
 <div class="section" id="additional-information">
 <h2>Additional Information<a class="headerlink" href="#additional-information" title="Permalink to this headline">&para;</a></h2>
-<p>To add members to this replica set, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8078"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method.
+<p>To add members to this replica set, use the <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> method.
 For more information on adding members to a replica set, see
 <a class="reference internal" href="expand-replica-set.html"><span class="doc">Add Members to a Replica Set</span></a>.</p>
 <p>To convert a non-shard standalone to a non-shard replica set, see

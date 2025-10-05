@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8823"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Upgrade%20Config%20Servers%20to%20Replica%20Set%20%28Downtime%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Upgrade Config Servers to Replica Set (Downtime) &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3745"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Upgrade%20Config%20Servers%20to%20Replica%20Set%20%28Downtime%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Upgrade Config Servers to Replica Set (Downtime) &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/upgrade-config-servers-to-replica-set-downtime/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="upgrade-config-servers-to-replica-set-downtime">
-<span id="upgrade-config-servers-rs-downtime"></span><a class="dashingAutolink" name="autolink-8824"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Upgrade%20Config%20Servers%20to%20Replica%20Set%20%28Downtime%29%C2%B6"></a><h1>Upgrade Config Servers to Replica Set (Downtime)<a class="headerlink" href="#upgrade-config-servers-to-replica-set-downtime" title="Permalink to this headline">&para;</a></h1>
+<span id="upgrade-config-servers-rs-downtime"></span><h1>Upgrade Config Servers to Replica Set (Downtime)<a class="headerlink" href="#upgrade-config-servers-to-replica-set-downtime" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -194,7 +194,7 @@ downtime. For details, see <a class="reference internal" href="upgrade-config-se
 </li>
 <li><p class="first">Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the <em>first</em> config server listed
 in the <a class="reference internal" href="../reference/configuration-options.html#sharding.configDB" title="sharding.configDB"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">configDB</span></code></a> setting of the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> and
-run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8825"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the single member replica set.</p>
+run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> to initiate the single member replica set.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -227,7 +227,7 @@ server&rsquo;s hostname and port.</li>
 <li><p class="first">Restart this config server as a single member replica set with:</p>
 <ul class="simple">
 <li>the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-replset"><code class="xref std std-option docutils literal"><span class="pre">--replSet</span></code></a> option set to the replica set name specified
-during the <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8826"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a>,</li>
+during the <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a>,</li>
 <li>the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-configsvrmode"><code class="xref std std-option docutils literal"><span class="pre">--configsvrMode</span></code></a> option set to the legacy config server
 mode Sync Cluster Connection Config (<code class="docutils literal"><span class="pre">sccc</span></code>),</li>
 <li>the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-configsvr"><code class="xref std std-option docutils literal"><span class="pre">--configsvr</span></code></a> option, and</li>
@@ -336,7 +336,7 @@ copy</a>
 <li><p class="first">Once all the new members have been added as <a class="reference internal" href="../core/replica-set-elections.html#replica-set-non-voting-members"><span class="std std-ref">non-voting</span></a>, <a class="reference internal" href="../core/replica-set-priority-0-member.html"><span class="doc">priority 0</span></a> members, ensure that the new
 nodes have completed the <a class="reference internal" href="../core/replica-set-sync.html#replica-set-initial-sync"><span class="std std-ref">initial sync</span></a> and have reached <a class="reference internal" href="../reference/replica-states.html#replstate.SECONDARY" title="SECONDARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">SECONDARY</span></code></a>
 state. To check the state of the replica set members, run
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8827"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell:</p>
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -396,7 +396,7 @@ copy</a>
 <li><p class="first">Shut down the first config server.</p>
 <p>If the first config server uses the MMAPv1 storage engine, remove
 the member from the replica set. Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to
-the current primary and use <a class="reference internal" href="../reference/method/rs.remove.html#rs.remove" title="rs.remove()"><a class="dashingAutolink" name="autolink-8828"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.remove()</span></code></a>:</p>
+the current primary and use <a class="reference internal" href="../reference/method/rs.remove.html#rs.remove" title="rs.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.remove()</span></code></a>:</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">If the first config server uses the WiredTiger storage engine,

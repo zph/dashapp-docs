@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-686"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/FAQ%3A%20MongoDB%20Storage%20%E2%80%94%20MongoDB%20Manual"></a><title>FAQ: MongoDB Storage &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-287"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/FAQ%3A%20MongoDB%20Storage%20%E2%80%94%20MongoDB%20Manual"></a><title>FAQ: MongoDB Storage &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/faq/storage/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="faq-mongodb-storage">
-<a class="dashingAutolink" name="autolink-687"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/FAQ%3A%20MongoDB%20Storage%C2%B6"></a><h1>FAQ: MongoDB Storage<a class="headerlink" href="#faq-mongodb-storage" title="Permalink to this headline">&para;</a></h1>
+<h1>FAQ: MongoDB Storage<a class="headerlink" href="#faq-mongodb-storage" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -305,7 +305,7 @@ files as it deletes documents. This space can be reused by WiredTiger,
 but will not be returned to the operating system unless under very
 specific circumstances.</p>
 <p>The amount of empty space available for reuse by WiredTiger is reflected
-in the output of <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-688"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> under the heading
+in the output of <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> under the heading
 <code class="docutils literal"><span class="pre">wiredTiger.block-manager.file</span> <span class="pre">bytes</span> <span class="pre">available</span> <span class="pre">for</span> <span class="pre">reuse</span></code>.</p>
 <p>To allow the WiredTiger storage engine to release this empty space to the
 operating system, you can de-fragment your data file. This can be achieved
@@ -516,8 +516,8 @@ copy</a>
 <div class="section" id="how-can-i-check-the-size-of-a-collection">
 <h3>How can I check the size of a collection?<a class="headerlink" href="#how-can-i-check-the-size-of-a-collection" title="Permalink to this headline">&para;</a></h3>
 <p>To view the statistics for a collection, including the data size, use
-the <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-689"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> method from the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
-shell. The following example issues <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-690"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> for
+the <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> method from the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
+shell. The following example issues <a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> for
 the <code class="docutils literal"><span class="pre">orders</span></code> collection:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -531,14 +531,14 @@ copy</a>
 <p>MongoDB also provides the following methods to return specific sizes
 for the collection:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.dataSize.html#db.collection.dataSize" title="db.collection.dataSize()"><a class="dashingAutolink" name="autolink-691"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.dataSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dataSize()</span></code></a> to return the uncompressed data
+<li><a class="reference internal" href="../reference/method/db.collection.dataSize.html#db.collection.dataSize" title="db.collection.dataSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dataSize()</span></code></a> to return the uncompressed data
 size in bytes for the collection.</li>
-<li><a class="reference internal" href="../reference/method/db.collection.storageSize.html#db.collection.storageSize" title="db.collection.storageSize()"><a class="dashingAutolink" name="autolink-692"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.storageSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.storageSize()</span></code></a> to return the size in bytes of
+<li><a class="reference internal" href="../reference/method/db.collection.storageSize.html#db.collection.storageSize" title="db.collection.storageSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.storageSize()</span></code></a> to return the size in bytes of
 the collection on disk storage. If collection data is compressed
 (which is the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-wiredtigercollectionblockcompressor"><code class="xref std std-option docutils literal"><span class="pre">default</span> <span class="pre">for</span> <span class="pre">WiredTiger</span></code></a>), the storage size reflects
 the compressed size and may be smaller than the value returned by
-<a class="reference internal" href="../reference/method/db.collection.dataSize.html#db.collection.dataSize" title="db.collection.dataSize()"><a class="dashingAutolink" name="autolink-693"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.dataSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dataSize()</span></code></a>.</li>
-<li><a class="reference internal" href="../reference/method/db.collection.totalIndexSize.html#db.collection.totalIndexSize" title="db.collection.totalIndexSize()"><a class="dashingAutolink" name="autolink-694"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.totalIndexSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.totalIndexSize()</span></code></a> to return the index sizes in
+<a class="reference internal" href="../reference/method/db.collection.dataSize.html#db.collection.dataSize" title="db.collection.dataSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dataSize()</span></code></a>.</li>
+<li><a class="reference internal" href="../reference/method/db.collection.totalIndexSize.html#db.collection.totalIndexSize" title="db.collection.totalIndexSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.totalIndexSize()</span></code></a> to return the index sizes in
 bytes for the collection. If an index uses prefix compression
 (which is the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-wiredtigerindexprefixcompression"><code class="xref std std-option docutils literal"><span class="pre">default</span> <span class="pre">for</span> <span class="pre">WiredTiger</span></code></a>), the returned size reflects the
 compressed size.</li>
@@ -577,7 +577,7 @@ copy</a>
 <div class="section" id="how-can-i-check-the-size-of-the-individual-indexes-for-a-collection">
 <h3>How can I check the size of the individual indexes for a collection?<a class="headerlink" href="#how-can-i-check-the-size-of-the-individual-indexes-for-a-collection" title="Permalink to this headline">&para;</a></h3>
 <p>To view the size of the data allocated for each index, use the
-<a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-695"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> method and check the
+<a class="reference internal" href="../reference/method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> method and check the
 <a class="reference internal" href="../reference/command/collStats.html#collStats.indexSizes" title="collStats.indexSizes"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">indexSizes</span></code></a> field in the returned document.</p>
 <p>If an index uses prefix compression (which is the <a class="reference internal" href="../reference/program/mongod.html#cmdoption-mongod-wiredtigerindexprefixcompression"><code class="xref std std-option docutils literal"><span class="pre">default</span> <span class="pre">for</span>
 <span class="pre">WiredTiger</span></code></a>), the returned
@@ -585,7 +585,7 @@ size for that index reflects the compressed size.</p>
 </div>
 <div class="section" id="how-can-i-get-information-on-the-storage-use-of-a-database">
 <span id="faq-tools-for-measuring-storage-use"></span><h3>How can I get information on the storage use of a database?<a class="headerlink" href="#how-can-i-get-information-on-the-storage-use-of-a-database" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><a class="dashingAutolink" name="autolink-696"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell returns
+<p>The <a class="reference internal" href="../reference/method/db.stats.html#db.stats" title="db.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.stats()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell returns
 the current state of the &ldquo;active&rdquo; database. For the description of the
 returned fields, see <a class="reference internal" href="../reference/command/dbStats.html#dbstats-output"><span class="std std-ref">dbStats Output</span></a>.</p>
 </div>

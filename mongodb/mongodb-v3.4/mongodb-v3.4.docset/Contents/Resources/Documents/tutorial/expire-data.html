@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8267"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Expire%20Data%20from%20Collections%20by%20Setting%20TTL%20%E2%80%94%20MongoDB%20Manual"></a><title>Expire Data from Collections by Setting TTL &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3643"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Expire%20Data%20from%20Collections%20by%20Setting%20TTL%20%E2%80%94%20MongoDB%20Manual"></a><title>Expire Data from Collections by Setting TTL &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/expire-data/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="expire-data-from-collections-by-setting-ttl">
-<span id="ttl-collections"></span><a class="dashingAutolink" name="autolink-8268"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Expire%20Data%20from%20Collections%20by%20Setting%20TTL%C2%B6"></a><h1>Expire Data from Collections by Setting TTL<a class="headerlink" href="#expire-data-from-collections-by-setting-ttl" title="Permalink to this headline">&para;</a></h1>
+<span id="ttl-collections"></span><h1>Expire Data from Collections by Setting TTL<a class="headerlink" href="#expire-data-from-collections-by-setting-ttl" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -176,7 +176,7 @@ collection.</p>
 <div class="section" id="procedures">
 <h2>Procedures<a class="headerlink" href="#procedures" title="Permalink to this headline">&para;</a></h2>
 <p>To create a <a class="reference internal" href="../core/index-ttl.html"><span class="doc">TTL index</span></a>, use the
-<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-8269"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> method with the
+<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> method with the
 <code class="docutils literal"><span class="pre">expireAfterSeconds</span></code> option on a field whose value is either a
 <a class="reference internal" href="../reference/bson-types.html#document-bson-type-date"><span class="std std-ref">date</span></a> or an array that contains
 <a class="reference internal" href="../reference/bson-types.html#document-bson-type-date"><span class="std std-ref">date values</span></a>.</p>
@@ -266,7 +266,7 @@ copy</a>
 </div>
 <p>For each document, set the value of <code class="docutils literal"><span class="pre">expireAt</span></code> to correspond to the
 time the document should expire. For instance, the following
-<a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-8270"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> operation adds a document that should
+<a class="reference internal" href="../reference/method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> operation adds a document that should
 expire at <code class="docutils literal"><span class="pre">July</span> <span class="pre">22,</span> <span class="pre">2013</span> <span class="pre">14:00:00</span></code>.</p>
 <div class="button-code-block">
 <div class="button-row">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2982"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.collation%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.collation() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1736"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.collation%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.collation() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.collation/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-collation">
-<span id="method-cursor-collation"></span><a class="dashingAutolink" name="autolink-2983"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.collation%28%29%C2%B6"></a><h1>cursor.collation()<a class="headerlink" href="#cursor-collation" title="Permalink to this headline">&para;</a></h1>
+<span id="method-cursor-collation"></span><h1>cursor.collation()<a class="headerlink" href="#cursor-collation" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,14 +165,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.collation">
-<code class="descclassname">cursor.</code><code class="descname">collation</code><span class="sig-paren">(</span><em>&lt;collation document&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2981"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.collation" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">collation</code><span class="sig-paren">(</span><em>&lt;collation document&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1735"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.collation" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
 <p>Specifies the <a class="reference internal" href="../bson-type-comparison-order.html#collation"><span class="std std-ref">collation</span></a> for the cursor returned
-by the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-2984"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a>. To use, append to the
-<a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-2985"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a>.</p>
-<p>The <a class="reference internal" href="#cursor.collation" title="cursor.collation()"><a class="dashingAutolink" name="autolink-2986"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.collation%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.collation()</span></code></a> accepts the following collation
+by the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a>. To use, append to the
+<a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a>.</p>
+<p>The <a class="reference internal" href="#cursor.collation" title="cursor.collation()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.collation()</span></code></a> accepts the following collation
 document:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -465,8 +465,8 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>You can chain other cursor methods, such as <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-2987"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a>
-and <a class="reference internal" href="cursor.count.html#cursor.count" title="cursor.count()"><a class="dashingAutolink" name="autolink-2988"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.count()</span></code></a>, to <a class="reference internal" href="#cursor.collation" title="cursor.collation()"><a class="dashingAutolink" name="autolink-2989"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.collation%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.collation()</span></code></a>:</p>
+<p>You can chain other cursor methods, such as <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a>
+and <a class="reference internal" href="cursor.count.html#cursor.count" title="cursor.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.count()</span></code></a>, to <a class="reference internal" href="#cursor.collation" title="cursor.collation()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.collation()</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

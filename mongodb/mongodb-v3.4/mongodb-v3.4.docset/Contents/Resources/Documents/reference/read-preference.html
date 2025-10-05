@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7117"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Read%20Preference%20Reference%20%E2%80%94%20MongoDB%20Manual"></a><title>Read Preference Reference &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3397"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Read%20Preference%20Reference%20%E2%80%94%20MongoDB%20Manual"></a><title>Read Preference Reference &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/read-preference/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="read-preference-reference">
-<span id="read-preference"></span><a class="dashingAutolink" name="autolink-7118"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Read%20Preference%20Reference%C2%B6"></a><h1>Read Preference Reference<a class="headerlink" href="#read-preference-reference" title="Permalink to this headline">&para;</a></h1>
+<span id="read-preference"></span><h1>Read Preference Reference<a class="headerlink" href="#read-preference-reference" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -220,7 +220,7 @@ can read data which may be subsequently <a class="reference internal" href="../c
 <span id="replica-set-read-preference-modes"></span><span id="index-1"></span><h2>Read Preference Modes<a class="headerlink" href="#read-preference-modes" title="Permalink to this headline">&para;</a></h2>
 <dl class="readmode">
 <dt id="primary">
-<code class="descname">primary</code><a class="dashingAutolink" name="autolink-7112"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#primary" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">primary</code><a class="dashingAutolink" name="autolink-3398"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#primary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>All read operations use only the current replica set
 <a class="reference internal" href="glossary.html#term-primary"><span class="xref std std-term">primary</span></a>. <a class="footnote-reference" href="#edge-cases-2-primaries" id="id1">[6]</a> This is the default read
 mode. If the primary is unavailable, read operations produce an
@@ -233,7 +233,7 @@ with <a class="reference internal" href="#primary" title="primary"><code class="
 
 <dl class="readmode">
 <dt id="primaryPreferred">
-<code class="descname">primaryPreferred</code><a class="dashingAutolink" name="autolink-7113"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#primaryPreferred" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">primaryPreferred</code><a class="dashingAutolink" name="autolink-3399"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#primaryPreferred" title="Permalink to this definition">&para;</a></dt>
 <dd><p>In most situations, operations read from the <a class="reference internal" href="glossary.html#term-primary"><span class="xref std std-term">primary</span></a> member
 of the set. However, if the primary is unavailable, as is the case
 during <a class="reference internal" href="glossary.html#term-failover"><span class="xref std std-term">failover</span></a> situations, operations read from <a class="reference internal" href="glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a>
@@ -259,7 +259,7 @@ that the client estimates are overly stale.</p>
 
 <dl class="readmode">
 <dt id="secondary">
-<code class="descname">secondary</code><a class="dashingAutolink" name="autolink-7114"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#secondary" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">secondary</code><a class="dashingAutolink" name="autolink-3400"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#secondary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Operations read <em>only</em> from the <a class="reference internal" href="glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members of the set.
 If no secondaries are available, then this read operation produces an
 error or exception.</p>
@@ -290,7 +290,7 @@ that the client estimates are overly stale.</p>
 
 <dl class="readmode">
 <dt id="secondaryPreferred">
-<code class="descname">secondaryPreferred</code><a class="dashingAutolink" name="autolink-7115"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#secondaryPreferred" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">secondaryPreferred</code><a class="dashingAutolink" name="autolink-3401"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#secondaryPreferred" title="Permalink to this definition">&para;</a></dt>
 <dd><p>In most situations, operations read from <a class="reference internal" href="glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members,
 but in situations where the set consists of a single
 <a class="reference internal" href="glossary.html#term-primary"><span class="xref std std-term">primary</span></a> (and no other members), the read operation will use
@@ -319,7 +319,7 @@ that the client estimates are overly stale.</p>
 
 <dl class="readmode">
 <dt id="nearest">
-<code class="descname">nearest</code><a class="dashingAutolink" name="autolink-7116"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#nearest" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">nearest</code><a class="dashingAutolink" name="autolink-3402"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#nearest" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The driver reads from a member whose network latency falls within
 the acceptable latency window. Reads in the <a class="reference internal" href="#nearest" title="nearest"><code class="xref mongodb mongodb-readmode docutils literal"><span class="pre">nearest</span></code></a> mode
 do not consider whether a member is a primary or secondary when

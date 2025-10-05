@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7329"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Update%20Methods%20%E2%80%94%20MongoDB%20Manual"></a><title>Update Methods &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3487"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Update%20Methods%20%E2%80%94%20MongoDB%20Manual"></a><title>Update Methods &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/update-methods/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="update-methods">
-<a class="dashingAutolink" name="autolink-7330"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Update%20Methods%C2%B6"></a><h1>Update Methods<a class="headerlink" href="#update-methods" title="Permalink to this headline">&para;</a></h1>
+<h1>Update Methods<a class="headerlink" href="#update-methods" title="Permalink to this headline">&para;</a></h1>
 <p>MongoDB provides the following methods for updating documents in a
 collection:</p>
 <table border="1" class="colwidths-given docutils">
@@ -160,7 +160,7 @@ collection:</p>
 <col width="65%"/>
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><a class="dashingAutolink" name="autolink-7331"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a></td>
 <td><p class="first">Updates at most a single document that match a specified filter
 even though multiple documents may match the specified filter.</p>
 <div class="last versionadded">
@@ -168,14 +168,14 @@ even though multiple documents may match the specified filter.</p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-7332"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a></td>
 <td><p class="first">Update all documents that match a specified filter.</p>
 <div class="last versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><a class="dashingAutolink" name="autolink-7333"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.replaceOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.replaceOne()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.replaceOne()</span></code></a></td>
 <td><p class="first">Replaces at most a single document that match a specified filter
 even though multiple documents may match the specified filter.</p>
 <div class="last versionadded">
@@ -183,11 +183,11 @@ even though multiple documents may match the specified filter.</p>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7334"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a></td>
 <td><p class="first">Either updates or replaces a single document that match a
 specified filter or updates all documents that match a specified
 filter.</p>
-<p class="last">By default, the <a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7335"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> method
+<p class="last">By default, the <a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a> method
 updates a <strong>single</strong> document. To update multiple documents, use
 the <a class="reference internal" href="method/db.collection.update.html#multi-parameter"><span class="std std-ref">multi</span></a> option.</p>
 </td>
@@ -198,11 +198,11 @@ the <a class="reference internal" href="method/db.collection.update.html#multi-p
 <span id="additional-updates"></span><h2>Additional Methods<a class="headerlink" href="#additional-methods" title="Permalink to this headline">&para;</a></h2>
 <p>The following methods can also update documents from a collection:</p>
 <ul class="simple">
-<li><a class="reference internal" href="method/db.collection.findOneAndReplace.html#db.collection.findOneAndReplace" title="db.collection.findOneAndReplace()"><a class="dashingAutolink" name="autolink-7336"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findOneAndReplace%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOneAndReplace()</span></code></a>.</li>
-<li><a class="reference internal" href="method/db.collection.findOneAndUpdate.html#db.collection.findOneAndUpdate" title="db.collection.findOneAndUpdate()"><a class="dashingAutolink" name="autolink-7337"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findOneAndUpdate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOneAndUpdate()</span></code></a>.</li>
-<li><a class="reference internal" href="method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-7338"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a>.</li>
-<li><a class="reference internal" href="method/db.collection.save.html#db.collection.save" title="db.collection.save()"><a class="dashingAutolink" name="autolink-7339"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.save%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a>.</li>
-<li><a class="reference internal" href="method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-7340"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a>.</li>
+<li><a class="reference internal" href="method/db.collection.findOneAndReplace.html#db.collection.findOneAndReplace" title="db.collection.findOneAndReplace()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOneAndReplace()</span></code></a>.</li>
+<li><a class="reference internal" href="method/db.collection.findOneAndUpdate.html#db.collection.findOneAndUpdate" title="db.collection.findOneAndUpdate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOneAndUpdate()</span></code></a>.</li>
+<li><a class="reference internal" href="method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a>.</li>
+<li><a class="reference internal" href="method/db.collection.save.html#db.collection.save" title="db.collection.save()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.save()</span></code></a>.</li>
+<li><a class="reference internal" href="method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a>.</li>
 </ul>
 <p>See the individual reference pages for the methods for more information
 and examples.</p>

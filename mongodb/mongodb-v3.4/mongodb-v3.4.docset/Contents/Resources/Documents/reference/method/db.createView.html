@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3950"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.createView%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.createView() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1906"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.createView%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.createView() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.createView/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-createview">
-<a class="dashingAutolink" name="autolink-3951"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.createView%28%29%C2%B6"></a><h1>db.createView()<a class="headerlink" href="#db-createview" title="Permalink to this headline">&para;</a></h1>
+<h1>db.createView()<a class="headerlink" href="#db-createview" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -164,7 +164,7 @@
 </div>
 <dl class="method">
 <dt id="db.createView">
-<code class="descclassname">db.</code><code class="descname">createView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3975"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.createView" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">createView</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1905"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.createView" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -174,7 +174,7 @@ the source collection or view. Views act as read-only collections, and are
 computed on demand during read operations. You must create views in the same
 database as the source collection. MongoDB executes read
 operations on views as part of the underlying aggregation pipeline.</p>
-<p>The <a class="reference internal" href="#db.createView" title="db.createView"><a class="dashingAutolink" name="autolink-3952"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView</span></code></a> has the following syntax:</p>
+<p>The <a class="reference internal" href="#db.createView" title="db.createView"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView</span></code></a> has the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -212,9 +212,9 @@ database as the source collection.</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">pipeline</span></code></td>
 <td>array</td>
-<td><p class="first">An array that consists of the <a class="reference internal" href="../../core/aggregation-pipeline.html#id1"><span class="std std-ref">aggregation pipeline stage</span></a>.  <a class="reference internal" href="#db.createView" title="db.createView"><a class="dashingAutolink" name="autolink-3953"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView</span></code></a> creates the view by
+<td><p class="first">An array that consists of the <a class="reference internal" href="../../core/aggregation-pipeline.html#id1"><span class="std std-ref">aggregation pipeline stage</span></a>.  <a class="reference internal" href="#db.createView" title="db.createView"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView</span></code></a> creates the view by
 applying the specified <code class="docutils literal"><span class="pre">pipeline</span></code> to the <code class="docutils literal"><span class="pre">source</span></code> collection or view.</p>
-<p class="last">The view definition is public; i.e. <a class="reference internal" href="db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-3954"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
+<p class="last">The view definition is public; i.e. <a class="reference internal" href="db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
 and <code class="docutils literal"><span class="pre">explain</span></code> operations on the view will include the pipeline that
 defines the view. As such, avoid referring directly to sensitive fields
 and values in view definitions.</p>
@@ -281,7 +281,7 @@ see <a class="reference internal" href="../collation.html#collation-document-fie
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="#db.createView" title="db.createView()"><a class="dashingAutolink" name="autolink-3955"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> method wraps the following
+<p>The <a class="reference internal" href="#db.createView" title="db.createView()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> method wraps the following
 <a class="reference internal" href="../command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a> command operation:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -293,16 +293,16 @@ copy</a>
 </div>
 </div>
 <p>Operations that lists collections, such as
-<a class="reference internal" href="db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-3956"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> and
-<a class="reference internal" href="db.getCollectionNames.html#db.getCollectionNames" title="db.getCollectionNames()"><a class="dashingAutolink" name="autolink-3957"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionNames%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionNames()</span></code></a>, includes views in their outputs.</p>
+<a class="reference internal" href="db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> and
+<a class="reference internal" href="db.getCollectionNames.html#db.getCollectionNames" title="db.getCollectionNames()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionNames()</span></code></a>, includes views in their outputs.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last">The view definition is public; i.e. <a class="reference internal" href="db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-3958"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
+<p class="last">The view definition is public; i.e. <a class="reference internal" href="db.getCollectionInfos.html#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
 and <code class="docutils literal"><span class="pre">explain</span></code> operations on the view will include the pipeline that
 defines the view. As such, avoid referring directly to sensitive fields
 and values in view definitions.</p>
 </div>
-<p>To remove a view, use the <a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-3959"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">drop()</span></code></a> method on the
+<p>To remove a view, use the <a class="reference internal" href="db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">drop()</span></code></a> method on the
 view.</p>
 </dd></dl>
 
@@ -314,11 +314,11 @@ view.</p>
 <p>Views are read-only; write operations on views will error.</p>
 <p>The following read operations can support views:</p>
 <ul class="simple">
-<li><a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3960"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a></li>
-<li><a class="reference internal" href="db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-3961"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOne()</span></code></a></li>
-<li><a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3962"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a></li>
-<li><a class="reference internal" href="db.collection.count.html#db.collection.count" title="db.collection.count()"><a class="dashingAutolink" name="autolink-3963"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.count()</span></code></a></li>
-<li><a class="reference internal" href="db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><a class="dashingAutolink" name="autolink-3964"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.distinct%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.distinct()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOne()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.count.html#db.collection.count" title="db.collection.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.count()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.distinct()</span></code></a></li>
 </ul>
 </div>
 <div class="section" id="index-use-and-sort-operations">
@@ -346,7 +346,7 @@ copy</a>
 </div>
 <div class="section" id="projection-restrictions">
 <h3>Projection Restrictions<a class="headerlink" href="#projection-restrictions" title="Permalink to this headline">&para;</a></h3>
-<p><a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3965"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
+<p><a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
 the following <a class="reference internal" href="../operator/projection.html"><span class="doc">projection</span></a>
 operators:</p>
 <ul class="simple">
@@ -367,7 +367,7 @@ operators:</p>
 executes read operations on views as part of the underlying
 aggregation pipeline. As such, views do not support operations
 such as:<ul>
-<li><a class="reference internal" href="db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-3966"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>,</li>
+<li><a class="reference internal" href="db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>,</li>
 <li><a class="reference internal" href="../operator/query/text.html#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> operator, since <code class="docutils literal"><span class="pre">$text</span></code> operation in
 aggregation is valid only for the first stage,</li>
 <li><a class="reference internal" href="../command/geoNear.html#dbcmd.geoNear" title="geoNear"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">geoNear</span></code></a> command and <a class="reference internal" href="../operator/aggregation/geoNear.html#pipe._S_geoNear" title="$geoNear"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$geoNear</span></code></a> pipeline stage.</li>
@@ -406,7 +406,7 @@ have the same <a class="reference internal" href="../collation.html"><span class
 <h2>Access Control<a class="headerlink" href="#access-control" title="Permalink to this headline">&para;</a></h2>
 <p>If the deployment enforces
 <a class="reference internal" href="../../core/authentication.html#authentication"><span class="std std-ref">authentication/authorization</span></a>,
-<a class="reference internal" href="#db.createView" title="db.createView()"><a class="dashingAutolink" name="autolink-3967"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> requires the following privileges:</p>
+<a class="reference internal" href="#db.createView" title="db.createView()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> requires the following privileges:</p>
 <ul>
 <li><p class="first"><a class="reference internal" href="../privilege-actions.html#createCollection" title="createCollection"><code class="xref mongodb mongodb-authaction docutils literal"><span class="pre">createCollection</span></code></a> on the database</p>
 <p><em>or</em></p>
@@ -426,8 +426,8 @@ privileges.</p>
 <p>The <a class="reference internal" href="../built-in-roles.html#readWrite" title="readWrite"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">readWrite</span></code></a> built in role includes the required
 privileges. Alternatively, you can
 <a class="reference internal" href="../../tutorial/manage-users-and-roles.html#create-user-defined-role"><span class="std std-ref">create a custom role</span></a> to support
-<a class="reference internal" href="#db.createView" title="db.createView()"><a class="dashingAutolink" name="autolink-3968"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a>.</p>
-<p>The following example uses the <a class="reference internal" href="db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-3969"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method to
+<a class="reference internal" href="#db.createView" title="db.createView()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a>.</p>
+<p>The following example uses the <a class="reference internal" href="db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method to
 create a user in the <code class="docutils literal"><span class="pre">admin</span></code> database with the <code class="docutils literal"><span class="pre">readWrite</span></code>
 role on the <code class="docutils literal"><span class="pre">inventory</span></code> and <code class="docutils literal"><span class="pre">employees</span></code> database:</p>
 <div class="button-code-block">
@@ -448,10 +448,10 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The created user can execute <a class="reference internal" href="#db.createView" title="db.createView()"><a class="dashingAutolink" name="autolink-3970"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> on the specified databases.
+<p>The created user can execute <a class="reference internal" href="#db.createView" title="db.createView()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> on the specified databases.
 For more examples of user creation, see <a class="reference internal" href="../../tutorial/create-users.html"><span class="doc">Add Users</span></a>.</p>
 <p>Alternatively, you can add the required roles to an existing user
-using <a class="reference internal" href="db.grantRolesToUser.html#db.grantRolesToUser" title="db.grantRolesToUser()"><a class="dashingAutolink" name="autolink-3971"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToUser()</span></code></a>. For a tutorial on adding
+using <a class="reference internal" href="db.grantRolesToUser.html#db.grantRolesToUser" title="db.grantRolesToUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToUser()</span></code></a>. For a tutorial on adding
 privileges to an existing database user, see
 <a class="reference internal" href="../../tutorial/manage-users-and-roles.html#modify-existing-user-access"><span class="std std-ref">Modify Access for an Existing User</span></a>.</p>
 </div>
@@ -488,7 +488,7 @@ copy</a>
 </div>
 <div class="section" id="query-a-view">
 <h4>Query a View<a class="headerlink" href="#query-a-view" title="Permalink to this headline">&para;</a></h4>
-<p>To query the view, you can use <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3972"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> on
+<p>To query the view, you can use <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> on
 the view:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -575,7 +575,7 @@ copy</a>
 </div>
 </li>
 </ul>
-<p>The following <a class="reference internal" href="#db.createView" title="db.createView()"><a class="dashingAutolink" name="autolink-3973"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createView%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> example specifies a
+<p>The following <a class="reference internal" href="#db.createView" title="db.createView()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createView()</span></code></a> example specifies a
 <a class="reference internal" href="../operator/aggregation/lookup.html#pipe._S_lookup" title="$lookup"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$lookup</span></code></a> stage to create a view from the join of the two
 collections:</p>
 <div class="button-code-block">
@@ -596,7 +596,7 @@ copy</a>
 </div>
 <div class="section" id="id1">
 <h4>Query a View<a class="headerlink" href="#id1" title="Permalink to this headline">&para;</a></h4>
-<p>To query the view, you can use <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3974"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> on
+<p>To query the view, you can use <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> on
 the view:</p>
 <div class="button-code-block">
 <div class="button-row">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-421"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Read%20Isolation%2C%20Consistency%2C%20and%20Recency%20%E2%80%94%20MongoDB%20Manual"></a><title>Read Isolation, Consistency, and Recency &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-211"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Read%20Isolation%2C%20Consistency%2C%20and%20Recency%20%E2%80%94%20MongoDB%20Manual"></a><title>Read Isolation, Consistency, and Recency &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="read-isolation-consistency-and-recency">
-<a class="dashingAutolink" name="autolink-422"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Read%20Isolation%2C%20Consistency%2C%20and%20Recency%C2%B6"></a><h1>Read Isolation, Consistency, and Recency<a class="headerlink" href="#read-isolation-consistency-and-recency" title="Permalink to this headline">&para;</a></h1>
+<h1>Read Isolation, Consistency, and Recency<a class="headerlink" href="#read-isolation-consistency-and-recency" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -255,26 +255,26 @@ change the indexed field on the index used by the query; then the
 cursor will return the same document more than once.</p>
 <p>In very specific cases, you can isolate the cursor from returning
 the same document more than once by using the
-<a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-423"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.snapshot()</span></code></a> method. <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-424"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a>
+<a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.snapshot()</span></code></a> method. <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a>
 guarantees that the query will return each document no more than
 once.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <ul class="last simple">
-<li>The <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-425"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> does not guarantee that the
+<li>The <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> does not guarantee that the
 data returned by the query will reflect a single moment in time
 <em>nor</em> does it provide isolation from insert or delete
 operations.</li>
-<li>You <strong>cannot</strong> use <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-426"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> with
+<li>You <strong>cannot</strong> use <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> with
 <a class="reference internal" href="../reference/glossary.html#term-sharding"><span class="xref std std-term">sharded collections</span></a>.</li>
-<li>You <strong>cannot</strong> use <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-427"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> with the
-<a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-428"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> or <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-429"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> cursor methods.</li>
+<li>You <strong>cannot</strong> use <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a> with the
+<a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> or <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> cursor methods.</li>
 </ul>
 </div>
 <p>As an alternative, if your collection has a field or fields that are
 never modified, you can use a <em>unique</em> index on this field or these
-fields to achieve a similar result as the <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><a class="dashingAutolink" name="autolink-430"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/snapshot%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a>.
-Query with <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-431"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> to explicitly force the query to use
+fields to achieve a similar result as the <a class="reference internal" href="../reference/method/cursor.snapshot.html#cursor.snapshot" title="cursor.snapshot()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">snapshot()</span></code></a>.
+Query with <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> to explicitly force the query to use
 that index.</p>
 </div>
 </div>

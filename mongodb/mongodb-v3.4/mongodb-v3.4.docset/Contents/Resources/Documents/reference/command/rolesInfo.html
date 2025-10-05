@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1716"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rolesInfo%20%E2%80%94%20MongoDB%20Manual"></a><title>rolesInfo &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-931"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rolesInfo%20%E2%80%94%20MongoDB%20Manual"></a><title>rolesInfo &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/rolesInfo/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="rolesinfo">
-<a class="dashingAutolink" name="autolink-1717"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/rolesInfo%C2%B6"></a><h1>rolesInfo<a class="headerlink" href="#rolesinfo" title="Permalink to this headline">&para;</a></h1>
+<h1>rolesInfo<a class="headerlink" href="#rolesinfo" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,7 +168,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.rolesInfo">
-<code class="descname">rolesInfo</code><a class="dashingAutolink" name="autolink-1718"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.rolesInfo" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">rolesInfo</code><a class="dashingAutolink" name="autolink-923"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.rolesInfo" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns inheritance and privilege information for specified roles,
 including both <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined roles</span></a> and
 <a class="reference internal" href="../built-in-roles.html#built-in-roles"><span class="std std-ref">built-in roles</span></a>.</p>
@@ -298,13 +298,13 @@ role or must have the <a class="reference internal" href="../privilege-actions.h
 <span id="rolesinfo-output"></span><h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">&para;</a></h2>
 <dl class="data">
 <dt id="rolesInfo.role">
-<code class="descclassname">rolesInfo.</code><code class="descname">role</code><a class="dashingAutolink" name="autolink-1719"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.role" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">role</code><a class="dashingAutolink" name="autolink-924"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.role" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The name of the role.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="rolesInfo.db">
-<code class="descclassname">rolesInfo.</code><code class="descname">db</code><a class="dashingAutolink" name="autolink-1720"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.db" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">db</code><a class="dashingAutolink" name="autolink-925"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.db" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The database on which the role is defined. Every database has <a class="reference internal" href="../built-in-roles.html#built-in-roles"><span class="std std-ref">built-in
 roles</span></a>. A database might also have <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined
 roles</span></a>.</p>
@@ -312,21 +312,21 @@ roles</span></a>.</p>
 
 <dl class="data">
 <dt id="rolesInfo.isBuiltin">
-<code class="descclassname">rolesInfo.</code><code class="descname">isBuiltin</code><a class="dashingAutolink" name="autolink-1721"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.isBuiltin" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">isBuiltin</code><a class="dashingAutolink" name="autolink-926"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.isBuiltin" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A value of <code class="docutils literal"><span class="pre">true</span></code> indicates the role is a <a class="reference internal" href="../built-in-roles.html#built-in-roles"><span class="std std-ref">built-in role</span></a>. A value of <code class="docutils literal"><span class="pre">false</span></code> indicates the role is a
 <a class="reference internal" href="../../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined role</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="rolesInfo.roles">
-<code class="descclassname">rolesInfo.</code><code class="descname">roles</code><a class="dashingAutolink" name="autolink-1722"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.roles" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">roles</code><a class="dashingAutolink" name="autolink-927"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.roles" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The roles that directly provide privileges to this role and the databases
 on which the roles are defined.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="rolesInfo.inheritedRoles">
-<code class="descclassname">rolesInfo.</code><code class="descname">inheritedRoles</code><a class="dashingAutolink" name="autolink-1723"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.inheritedRoles" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">inheritedRoles</code><a class="dashingAutolink" name="autolink-928"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.inheritedRoles" title="Permalink to this definition">&para;</a></dt>
 <dd><p>All roles from which this role inherits privileges. This includes the roles
 in the <a class="reference internal" href="#rolesInfo.roles" title="rolesInfo.roles"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">rolesInfo.roles</span></code></a> array as well as the roles from which the
 roles in the <a class="reference internal" href="#rolesInfo.roles" title="rolesInfo.roles"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">rolesInfo.roles</span></code></a> array inherit privileges. All
@@ -336,7 +336,7 @@ roles and the databases on which they are defined.</p>
 
 <dl class="data">
 <dt id="rolesInfo.privileges">
-<code class="descclassname">rolesInfo.</code><code class="descname">privileges</code><a class="dashingAutolink" name="autolink-1724"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.privileges" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">privileges</code><a class="dashingAutolink" name="autolink-929"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.privileges" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The privileges directly specified by this role; i.e. the array
 excludes privileges inherited from other roles. By default the
 output does not include the <a class="reference internal" href="#rolesInfo.privileges" title="rolesInfo.privileges"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">privileges</span></code></a> field. To
@@ -347,7 +347,7 @@ include the field, specify <code class="docutils literal"><span class="pre">show
 
 <dl class="data">
 <dt id="rolesInfo.inheritedPrivileges">
-<code class="descclassname">rolesInfo.</code><code class="descname">inheritedPrivileges</code><a class="dashingAutolink" name="autolink-1725"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.inheritedPrivileges" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rolesInfo.</code><code class="descname">inheritedPrivileges</code><a class="dashingAutolink" name="autolink-930"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rolesInfo.inheritedPrivileges" title="Permalink to this definition">&para;</a></dt>
 <dd><p>All privileges granted by this role, including those inherited from
 other roles. By default the output does not include the
 <a class="reference internal" href="#rolesInfo.inheritedPrivileges" title="rolesInfo.inheritedPrivileges"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">inheritedPrivileges</span></code></a> field. To include the field,

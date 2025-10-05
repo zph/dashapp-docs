@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-21"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Run-time%20Database%20Configuration%20%E2%80%94%20MongoDB%20Manual"></a><title>Run-time Database Configuration &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-13"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Run-time%20Database%20Configuration%20%E2%80%94%20MongoDB%20Manual"></a><title>Run-time Database Configuration &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/administration/configuration/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="run-time-database-configuration">
-<span id="configuration-file"></span><a class="dashingAutolink" name="autolink-22"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Run-time%20Database%20Configuration%C2%B6"></a><h1>Run-time Database Configuration<a class="headerlink" href="#run-time-database-configuration" title="Permalink to this headline">&para;</a></h1>
+<span id="configuration-file"></span><h1>Run-time Database Configuration<a class="headerlink" href="#run-time-database-configuration" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -447,7 +447,7 @@ copy</a>
 </div>
 </div>
 <p>To deploy config servers as a replica set, the config servers must run
-the <a class="reference internal" href="../core/wiredtiger.html#storage-wiredtiger"><span class="std std-ref">WiredTiger Storage Engine</span></a>. <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-23"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Initiate"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Initiate</span></code></a> the
+the <a class="reference internal" href="../core/wiredtiger.html#storage-wiredtiger"><span class="std std-ref">WiredTiger Storage Engine</span></a>. <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Initiate</span></code></a> the
 replica set and add members.</p>
 <p>To configure the shard <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instances, specify
 <code class="docutils literal"><span class="pre">shardsvr</span></code> for the <a class="reference internal" href="../reference/configuration-options.html#sharding.clusterRole" title="sharding.clusterRole"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">sharding.clusterRole</span></code></a> setting, and if
@@ -464,7 +464,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>If running as a replica set, <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-24"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/initiate"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">initiate</span></code></a> the
+<p>If running as a replica set, <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">initiate</span></code></a> the
 shard replica set and add members.</p>
 <p>For the router (i.e. <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>), configure at least one
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> process with the following <a class="reference internal" href="../reference/configuration-options.html"><span class="doc">setting</span></a>:</p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7850"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Add%20Shards%20to%20a%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Add Shards to a Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3572"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Add%20Shards%20to%20a%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Add Shards to a Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/add-shards-to-shard-cluster/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="add-shards-to-a-cluster">
-<span id="sharding-procedure-add-shard"></span><a class="dashingAutolink" name="autolink-7851"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Add%20Shards%20to%20a%20Cluster%C2%B6"></a><h1>Add Shards to a Cluster<a class="headerlink" href="#add-shards-to-a-cluster" title="Permalink to this headline">&para;</a></h1>
+<span id="sharding-procedure-add-shard"></span><h1>Add Shards to a Cluster<a class="headerlink" href="#add-shards-to-a-cluster" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -204,8 +204,8 @@ copy</a>
 </div>
 </div>
 </li>
-<li><p class="first">Add a shard to the cluster using the <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><a class="dashingAutolink" name="autolink-7847"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>
-method, as shown in the examples below. Issue <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><a class="dashingAutolink" name="autolink-7848"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>
+<li><p class="first">Add a shard to the cluster using the <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>
+method, as shown in the examples below. Issue <a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>
 separately for each shard. If the shard is a replica set, specify the
 name of the replica set and specify a member of the set. In
 production deployments, all shards should be replica sets.</p>
@@ -218,7 +218,7 @@ a name and maximum size. To use the database command, see
 <a class="reference internal" href="../reference/command/addShard.html#dbcmd.addShard" title="addShard"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">addShard</span></code></a>.</p>
 </div>
 <p>The following are examples of adding a shard with
-<a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><a class="dashingAutolink" name="autolink-7849"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>:</p>
+<a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>:</p>
 <ul>
 <li><p class="first">To add a shard for a replica set named <code class="docutils literal"><span class="pre">rs1</span></code> with a member
 running on port <code class="docutils literal"><span class="pre">27018</span></code> on <code class="docutils literal"><span class="pre">mongodb0.example.net</span></code>, issue the

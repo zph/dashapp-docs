@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3878"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.validate%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.validate() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1894"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.validate%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.validate() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.validate/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-validate">
-<a class="dashingAutolink" name="autolink-3879"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.validate%28%29%C2%B6"></a><h1>db.collection.validate()<a class="headerlink" href="#db-collection-validate" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.validate()<a class="headerlink" href="#db-collection-validate" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,12 +165,12 @@
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.validate">
-<code class="descclassname">db.collection.</code><code class="descname">validate</code><span class="sig-paren">(</span><em>true</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3884"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.validate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">validate</code><span class="sig-paren">(</span><em>true</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1893"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.validate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Validates a collection. The method scans a collection&rsquo;s data
 structures for correctness and returns a single <a class="reference internal" href="../glossary.html#term-document"><span class="xref std std-term">document</span></a> that
 describes the relationship between the logical collection and the
 physical representation of the data.</p>
-<p>The <a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><a class="dashingAutolink" name="autolink-3880"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/validate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">validate()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">validate()</span></code></a> method has the following
 parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -193,12 +193,12 @@ a potentially resource-intensive operation.</td>
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><a class="dashingAutolink" name="autolink-3881"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.validate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate()</span></code></a> method output provides an
+<p>The <a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate()</span></code></a> method output provides an
 in-depth view of how the collection
 uses storage. Be aware that this command is potentially resource
 intensive and may impact the performance of your MongoDB
 instance.</p>
-<p>The <a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><a class="dashingAutolink" name="autolink-3882"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.validate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate()</span></code></a> method is a wrapper
+<p>The <a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate()</span></code></a> method is a wrapper
 around the <a class="reference internal" href="../command/validate.html#dbcmd.validate" title="validate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">validate</span></code></a> <a class="reference internal" href="../glossary.html#term-database-command"><span class="xref std std-term">database
 command</span></a>.</p>
 </dd></dl>
@@ -206,7 +206,7 @@ command</span></a>.</p>
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><a class="dashingAutolink" name="autolink-3883"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.validate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate()</span></code></a> obtains an exclusive lock on the
+<p><a class="reference internal" href="#db.collection.validate" title="db.collection.validate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.validate()</span></code></a> obtains an exclusive lock on the
 collection. This will block all reads and writes on the collection
 until the operation finishes. When run on a secondary, the operation
 can sblock all other operations on that secondary until it finishes.</p>

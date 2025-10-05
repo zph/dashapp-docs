@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8866"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Write%20Scripts%20for%20the%20mongo%20Shell%20%E2%80%94%20MongoDB%20Manual"></a><title>Write Scripts for the mongo Shell &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3752"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Write%20Scripts%20for%20the%20mongo%20Shell%20%E2%80%94%20MongoDB%20Manual"></a><title>Write Scripts for the mongo Shell &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/write-scripts-for-the-mongo-shell/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="write-scripts-for-the-mongo-shell">
-<a class="dashingAutolink" name="autolink-8867"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Write%20Scripts%20for%20the%20mongo%20Shell%C2%B6"></a><h1>Write Scripts for the <code class="docutils literal"><span class="pre">mongo</span></code> Shell<a class="headerlink" href="#write-scripts-for-the-mongo-shell" title="Permalink to this headline">&para;</a></h1>
+<h1>Write Scripts for the <code class="docutils literal"><span class="pre">mongo</span></code> Shell<a class="headerlink" href="#write-scripts-for-the-mongo-shell" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,7 +165,7 @@ the <a class="reference internal" href="../reference/program/mongo.html#bin.mong
 <div class="section" id="opening-new-connections">
 <span id="mongo-shell-new-connections"></span><h2>Opening New Connections<a class="headerlink" href="#opening-new-connections" title="Permalink to this headline">&para;</a></h2>
 <p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell or from a JavaScript file, you can
-instantiate database connections using the <a class="reference internal" href="../reference/method/Mongo.html#Mongo" title="Mongo()"><a class="dashingAutolink" name="autolink-8855"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Mongo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Mongo()</span></code></a>
+instantiate database connections using the <a class="reference internal" href="../reference/method/Mongo.html#Mongo" title="Mongo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Mongo()</span></code></a>
 constructor:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -181,7 +181,7 @@ copy</a>
 <p>Consider the following example that instantiates a new connection to
 the MongoDB instance running on localhost on the default port and sets
 the global <code class="docutils literal"><span class="pre">db</span></code> variable to <code class="docutils literal"><span class="pre">myDatabase</span></code> using the
-<a class="reference internal" href="../reference/method/Mongo.getDB.html#Mongo.getDB" title="Mongo.getDB()"><a class="dashingAutolink" name="autolink-8856"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getDB%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getDB()</span></code></a> method:</p>
+<a class="reference internal" href="../reference/method/Mongo.getDB.html#Mongo.getDB" title="Mongo.getDB()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getDB()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -193,8 +193,8 @@ copy</a>
 </div>
 </div>
 <p>If connecting to a MongoDB instance that enforces access control,
-you can use the <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8857"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method to authenticate.</p>
-<p>Additionally, you can use the <a class="dashingAutolink" name="autolink-8858"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/connect%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">connect()</span></code> method
+you can use the <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method to authenticate.</p>
+<p>Additionally, you can use the <code class="xref mongodb mongodb-method docutils literal"><span class="pre">connect()</span></code> method
 to connect to the MongoDB instance. The following example connects to
 the MongoDB instance that is running on <code class="docutils literal"><span class="pre">localhost</span></code> with the
 non-default port <code class="docutils literal"><span class="pre">27020</span></code> and set the global <code class="docutils literal"><span class="pre">db</span></code> variable:</p>
@@ -217,13 +217,13 @@ copy</a>
 <p>When writing scripts for the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, consider the
 following:</p>
 <ul>
-<li><p class="first">To set the <code class="docutils literal"><span class="pre">db</span></code> global variable, use the <a class="reference internal" href="../reference/method/Mongo.getDB.html#Mongo.getDB" title="Mongo.getDB()"><a class="dashingAutolink" name="autolink-8859"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/getDB%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getDB()</span></code></a>
-method or the <a class="dashingAutolink" name="autolink-8860"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/connect%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">connect()</span></code> method. You can assign the database
+<li><p class="first">To set the <code class="docutils literal"><span class="pre">db</span></code> global variable, use the <a class="reference internal" href="../reference/method/Mongo.getDB.html#Mongo.getDB" title="Mongo.getDB()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">getDB()</span></code></a>
+method or the <code class="xref mongodb mongodb-method docutils literal"><span class="pre">connect()</span></code> method. You can assign the database
 reference to a variable other than <code class="docutils literal"><span class="pre">db</span></code>.</p>
 </li>
 <li><p class="first">Write operations in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell use a write concern of
 <a class="reference internal" href="../reference/write-concern.html#wc-w"><span class="std std-ref">{ w: 1 }</span></a> by default. If performing bulk operations, use
-the <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-8861"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> methods. See
+the <a class="reference internal" href="../reference/method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> methods. See
 <a class="reference internal" href="../release-notes/2.6-compatibility.html#write-methods-incompatibility"><span class="std std-ref">Write Method Acknowledgements</span></a> for more information.</p>
 </li>
 <li><p class="first">You <strong>cannot</strong> use any shell helper (e.g. <code class="docutils literal"><span class="pre">use</span> <span class="pre">&lt;dbname&gt;</span></code>, <code class="docutils literal"><span class="pre">show</span>
@@ -433,7 +433,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>This returns the output of <a class="reference internal" href="../reference/method/db.getCollectionNames.html#db.getCollectionNames" title="db.getCollectionNames()"><a class="dashingAutolink" name="autolink-8862"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionNames%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionNames()</span></code></a> using the
+<p>This returns the output of <a class="reference internal" href="../reference/method/db.getCollectionNames.html#db.getCollectionNames" title="db.getCollectionNames()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionNames()</span></code></a> using the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell connected to the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> or
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance running on port <code class="docutils literal"><span class="pre">27017</span></code> on the
 <code class="docutils literal"><span class="pre">localhost</span></code> interface.</p>
@@ -460,7 +460,7 @@ interface on port <code class="docutils literal"><span class="pre">27017</span><
 of the javascript file using the <code class="docutils literal"><span class="pre">Mongo()</span></code> constructor. See
 <a class="reference internal" href="#mongo-shell-new-connections"><span class="std std-ref">Opening New Connections</span></a> for more information.</p>
 <p>You can execute a <code class="docutils literal"><span class="pre">.js</span></code> file from within the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell,
-using the <a class="dashingAutolink" name="autolink-8863"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/load%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">load()</span></code> function, as in the following:</p>
+using the <code class="xref mongodb mongodb-method docutils literal"><span class="pre">load()</span></code> function, as in the following:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -471,7 +471,7 @@ copy</a>
 </div>
 </div>
 <p>This function loads and executes the <code class="file docutils literal"><span class="pre">myjstest.js</span></code> file.</p>
-<p>The <a class="dashingAutolink" name="autolink-8864"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/load%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">load()</span></code> method accepts relative and absolute paths.
+<p>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">load()</span></code> method accepts relative and absolute paths.
 If the current working directory of the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
 is <code class="file docutils literal"><span class="pre">/data/db</span></code>, and the <code class="file docutils literal"><span class="pre">myjstest.js</span></code> resides in the
 <code class="file docutils literal"><span class="pre">/data/db/scripts</span></code> directory, then the following calls within
@@ -488,7 +488,7 @@ copy</a>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">There is no search path for the <a class="dashingAutolink" name="autolink-8865"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/load%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">load()</span></code>
+<p class="last">There is no search path for the <code class="xref mongodb mongodb-method docutils literal"><span class="pre">load()</span></code>
 function. If the desired script is not in the current working
 directory or the full specified path, <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> will not be
 able to access the file.</p>

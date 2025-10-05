@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2657"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk.find.update%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk.find.update() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1627"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk.find.update%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk.find.update() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/Bulk.find.update/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="bulk-find-update">
-<a class="dashingAutolink" name="autolink-2658"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Bulk.find.update%28%29%C2%B6"></a><h1>Bulk.find.update()<a class="headerlink" href="#bulk-find-update" title="Permalink to this headline">&para;</a></h1>
+<h1>Bulk.find.update()<a class="headerlink" href="#bulk-find-update" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -164,25 +164,25 @@
 <div class="admonition-tip admonition">
 <p class="first admonition-title">Tip</p>
 <p class="last">Starting in version 3.2, MongoDB also provides the
-<a class="reference internal" href="db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-2641"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method for performing bulk
+<a class="reference internal" href="db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method for performing bulk
 write operations.</p>
 </div>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="Bulk.find.update">
-<code class="descclassname">Bulk.find.</code><code class="descname">update</code><span class="sig-paren">(</span><em>&lt;update&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2656"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Bulk.find.update" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">Bulk.find.</code><code class="descname">update</code><span class="sig-paren">(</span><em>&lt;update&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1626"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Bulk.find.update" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
 <p>Adds a <code class="docutils literal"><span class="pre">multi</span></code> update operation to a bulk operations list. The
 method updates specific fields in existing documents.</p>
-<p>Use the <a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2642"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> method to specify the condition that
+<p>Use the <a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> method to specify the condition that
 determines which documents to update. The
-<a class="reference internal" href="#Bulk.find.update" title="Bulk.find.update()"><a class="dashingAutolink" name="autolink-2643"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.update()</span></code></a> method updates all matching documents.
+<a class="reference internal" href="#Bulk.find.update" title="Bulk.find.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.update()</span></code></a> method updates all matching documents.
 To specify a single document update, see
-<a class="reference internal" href="Bulk.find.updateOne.html#Bulk.find.updateOne" title="Bulk.find.updateOne()"><a class="dashingAutolink" name="autolink-2644"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.updateOne()</span></code></a>.</p>
-<p><a class="reference internal" href="#Bulk.find.update" title="Bulk.find.update()"><a class="dashingAutolink" name="autolink-2645"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.update()</span></code></a> accepts the following parameter:</p>
+<a class="reference internal" href="Bulk.find.updateOne.html#Bulk.find.updateOne" title="Bulk.find.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.updateOne()</span></code></a>.</p>
+<p><a class="reference internal" href="#Bulk.find.update" title="Bulk.find.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.update()</span></code></a> accepts the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -200,22 +200,22 @@ To specify a single document update, see
 <td>document</td>
 <td><p class="first">Specifies the fields to update. Only contains <a class="reference internal" href="../operator/update.html#id1"><span class="std std-ref">update operator</span></a> expressions.</p>
 <p class="last">The sum of the associated <code class="docutils literal"><span class="pre">&lt;query&gt;</span></code> document from the
-<a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2646"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> and the update document must be less than or
+<a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> and the update document must be less than or
 equal to the <a class="reference internal" href="../limits.html#BSON-Document-Size" title="BSON Document Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">maximum</span> <span class="pre">BSON</span> <span class="pre">document</span> <span class="pre">size</span></code></a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 <p>To specify <a class="reference internal" href="../glossary.html#term-upsert"><span class="xref std std-term">upsert: true</span></a> for this operation, see
-<a class="reference internal" href="Bulk.find.upsert.html#Bulk.find.upsert" title="Bulk.find.upsert()"><a class="dashingAutolink" name="autolink-2647"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.upsert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.upsert()</span></code></a>. With <a class="reference internal" href="Bulk.find.upsert.html#Bulk.find.upsert" title="Bulk.find.upsert()"><a class="dashingAutolink" name="autolink-2648"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.upsert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.upsert()</span></code></a>, if
-no documents match the <a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2649"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> query condition, the
+<a class="reference internal" href="Bulk.find.upsert.html#Bulk.find.upsert" title="Bulk.find.upsert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.upsert()</span></code></a>. With <a class="reference internal" href="Bulk.find.upsert.html#Bulk.find.upsert" title="Bulk.find.upsert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.upsert()</span></code></a>, if
+no documents match the <a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a> query condition, the
 update operation inserts only a single document.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following example initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-2650"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder
+<p>The following example initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder
 for the <code class="docutils literal"><span class="pre">items</span></code> collection, and adds various <code class="docutils literal"><span class="pre">multi</span></code> update
 operations to the list of operations.</p>
 <div class="button-code-block">
@@ -233,11 +233,11 @@ copy</a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><a class="dashingAutolink" name="autolink-2651"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeUnorderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeUnorderedBulkOp()</span></code></a></li>
-<li><a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><a class="dashingAutolink" name="autolink-2652"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeOrderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><a class="dashingAutolink" name="autolink-2653"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.find.updateOne.html#Bulk.find.updateOne" title="Bulk.find.updateOne()"><a class="dashingAutolink" name="autolink-2654"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.find.updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.updateOne()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-2655"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeUnorderedBulkOp()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.find.html#Bulk.find" title="Bulk.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.find.updateOne.html#Bulk.find.updateOne" title="Bulk.find.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.find.updateOne()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a></li>
 <li><a class="reference internal" href="Bulk.html#bulk-methods"><span class="std std-ref">All Bulk Methods</span></a></li>
 </ul>
 </div>

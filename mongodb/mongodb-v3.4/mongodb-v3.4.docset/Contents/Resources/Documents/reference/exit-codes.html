@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2367"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Exit%20Codes%20and%20Statuses%20%E2%80%94%20MongoDB%20Manual"></a><title>Exit Codes and Statuses &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1503"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Exit%20Codes%20and%20Statuses%20%E2%80%94%20MongoDB%20Manual"></a><title>Exit Codes and Statuses &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/exit-codes/"/><meta name="robots" content="index"/>
@@ -149,26 +149,26 @@
   </div>
                 
                   <div class="section" id="exit-codes-and-statuses">
-<a class="dashingAutolink" name="autolink-2356"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Exit%20Codes%20and%20Statuses%C2%B6"></a><h1>Exit Codes and Statuses<a class="headerlink" href="#exit-codes-and-statuses" title="Permalink to this headline">&para;</a></h1>
+<h1>Exit Codes and Statuses<a class="headerlink" href="#exit-codes-and-statuses" title="Permalink to this headline">&para;</a></h1>
 <p>MongoDB will return one of the following codes and statuses when
 exiting. Use this guide to interpret logs and when troubleshooting
 issues with <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> and <a class="reference internal" href="program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instances.</p>
 <dl class="error">
 <dt id="0">
-<code class="descname">0</code><a class="dashingAutolink" name="autolink-2357"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#0" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">0</code><a class="dashingAutolink" name="autolink-1493"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#0" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returned by MongoDB applications upon successful exit.</p>
 </dd></dl>
 
 <dl class="error">
 <dt id="2">
-<code class="descname">2</code><a class="dashingAutolink" name="autolink-2358"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#2" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">2</code><a class="dashingAutolink" name="autolink-1494"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#2" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The specified options are in error or are incompatible
 with other options.</p>
 </dd></dl>
 
 <dl class="error">
 <dt id="3">
-<code class="descname">3</code><a class="dashingAutolink" name="autolink-2359"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#3" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">3</code><a class="dashingAutolink" name="autolink-1495"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#3" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returned by <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> if there is a mismatch between hostnames
 specified on the command line and in the <a class="reference internal" href="local-database.html#local.sources" title="local.sources"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">local.sources</span></code></a>
 collection, in master/slave mode.</p>
@@ -176,7 +176,7 @@ collection, in master/slave mode.</p>
 
 <dl class="error">
 <dt id="4">
-<code class="descname">4</code><a class="dashingAutolink" name="autolink-2360"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#4" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">4</code><a class="dashingAutolink" name="autolink-1496"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#4" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The version of the database is different from the version supported
 by the <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> (or <a class="reference internal" href="program/mongod.exe.html#bin.mongod.exe" title="bin.mongod.exe"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod.exe</span></code></a>) instance.  The
 instance exits cleanly.</p>
@@ -184,20 +184,20 @@ instance exits cleanly.</p>
 
 <dl class="error">
 <dt id="5">
-<code class="descname">5</code><a class="dashingAutolink" name="autolink-2361"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#5" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">5</code><a class="dashingAutolink" name="autolink-1497"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#5" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returned by <a class="reference internal" href="program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> if a problem is encountered during initialization.</p>
 </dd></dl>
 
 <dl class="error">
 <dt id="12">
-<code class="descname">12</code><a class="dashingAutolink" name="autolink-2362"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#12" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">12</code><a class="dashingAutolink" name="autolink-1498"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#12" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returned by the <a class="reference internal" href="program/mongod.exe.html#bin.mongod.exe" title="bin.mongod.exe"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod.exe</span></code></a> process on Windows when it
 receives a Control-C, Close, Break or Shutdown event.</p>
 </dd></dl>
 
 <dl class="error">
 <dt id="14">
-<code class="descname">14</code><a class="dashingAutolink" name="autolink-2363"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#14" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">14</code><a class="dashingAutolink" name="autolink-1499"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#14" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returned by MongoDB applications which encounter an unrecoverable
 error, an uncaught exception or uncaught signal.  The system exits
 without performing a clean shutdown.</p>
@@ -205,7 +205,7 @@ without performing a clean shutdown.</p>
 
 <dl class="error">
 <dt id="20">
-<code class="descname">20</code><a class="dashingAutolink" name="autolink-2364"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#20" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">20</code><a class="dashingAutolink" name="autolink-1500"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#20" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Message:</em> <code class="docutils literal"><span class="pre">ERROR:</span> <span class="pre">wsastartup</span> <span class="pre">failed</span> <span class="pre">&lt;reason&gt;</span></code></p>
 <p>Returned by MongoDB applications on Windows following an error in the
 WSAStartup function, used to initialize the networking subsystem.</p>
@@ -216,14 +216,14 @@ starting or removing the NT Service for the application.</p>
 
 <dl class="error">
 <dt id="48">
-<code class="descname">48</code><a class="dashingAutolink" name="autolink-2365"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#48" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">48</code><a class="dashingAutolink" name="autolink-1501"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#48" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A newly started <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> or <a class="reference internal" href="program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> could not start listening for incoming connections,
 due to an error.</p>
 </dd></dl>
 
 <dl class="error">
 <dt id="100">
-<code class="descname">100</code><a class="dashingAutolink" name="autolink-2366"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#100" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">100</code><a class="dashingAutolink" name="autolink-1502"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#100" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returned by <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> when the process throws an uncaught exception.</p>
 </dd></dl>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3122"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.maxTimeMS%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.maxTimeMS() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1760"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.maxTimeMS%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.maxTimeMS() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.maxTimeMS/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-maxtimems">
-<a class="dashingAutolink" name="autolink-3116"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.maxTimeMS%28%29%C2%B6"></a><h1>cursor.maxTimeMS()<a class="headerlink" href="#cursor-maxtimems" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.maxTimeMS()<a class="headerlink" href="#cursor-maxtimems" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -169,10 +169,10 @@
 </div>
 <dl class="method">
 <dt id="cursor.maxTimeMS">
-<code class="descclassname">cursor.</code><code class="descname">maxTimeMS</code><span class="sig-paren">(</span><em>&lt;time limit&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3121"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.maxTimeMS" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">maxTimeMS</code><span class="sig-paren">(</span><em>&lt;time limit&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1759"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.maxTimeMS" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies a cumulative time limit in milliseconds for processing
 operations on a cursor.</p>
-<p>The <a class="reference internal" href="#cursor.maxTimeMS" title="cursor.maxTimeMS()"><a class="dashingAutolink" name="autolink-3117"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/maxTimeMS%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxTimeMS()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#cursor.maxTimeMS" title="cursor.maxTimeMS()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxTimeMS()</span></code></a> method has the following
 parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -198,8 +198,8 @@ on the cursor.</td>
 
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last"><a class="reference internal" href="#cursor.maxTimeMS" title="cursor.maxTimeMS()"><a class="dashingAutolink" name="autolink-3118"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/maxTimeMS%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxTimeMS()</span></code></a> is not related to the
-<code class="docutils literal"><span class="pre">NoCursorTimeout</span></code> query flag. <a class="reference internal" href="#cursor.maxTimeMS" title="cursor.maxTimeMS()"><a class="dashingAutolink" name="autolink-3119"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/maxTimeMS%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxTimeMS()</span></code></a>
+<p class="last"><a class="reference internal" href="#cursor.maxTimeMS" title="cursor.maxTimeMS()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxTimeMS()</span></code></a> is not related to the
+<code class="docutils literal"><span class="pre">NoCursorTimeout</span></code> query flag. <a class="reference internal" href="#cursor.maxTimeMS" title="cursor.maxTimeMS()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxTimeMS()</span></code></a>
 relates to processing time, while <code class="docutils literal"><span class="pre">NoCursorTimeout</span></code> relates
 to idle time. A cursor&rsquo;s idle time does not contribute towards its
 processing time.</p>
@@ -210,7 +210,7 @@ processing time.</p>
 <p>MongoDB targets operations for termination if the associated cursor
 exceeds its allotted time limit. MongoDB terminates operations that
 exceed their allotted time limit using the same mechanism as
-<a class="reference internal" href="db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-3120"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only terminates an operation at one of
+<a class="reference internal" href="db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only terminates an operation at one of
 its designated <a class="reference internal" href="../glossary.html#term-interrupt-point"><span class="xref std std-term">interrupt points</span></a>.</p>
 <p>MongoDB does not count network latency towards a cursor&rsquo;s time limit.</p>
 <p>Queries that generate multiple batches of results continue to return

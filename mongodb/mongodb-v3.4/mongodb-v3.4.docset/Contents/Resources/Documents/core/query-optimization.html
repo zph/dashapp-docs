@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-395"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Query%20Optimization%20%E2%80%94%20MongoDB%20Manual"></a><title>Query Optimization &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-208"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Query%20Optimization%20%E2%80%94%20MongoDB%20Manual"></a><title>Query Optimization &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/query-optimization/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="query-optimization">
-<span id="read-operations-indexing"></span><a class="dashingAutolink" name="autolink-396"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Query%20Optimization%C2%B6"></a><h1>Query Optimization<a class="headerlink" href="#query-optimization" title="Permalink to this headline">&para;</a></h1>
+<span id="read-operations-indexing"></span><h1>Query Optimization<a class="headerlink" href="#query-optimization" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -187,7 +187,7 @@ copy</a>
 <p>To improve the performance of this query, add an ascending or a
 descending index to the <code class="docutils literal"><span class="pre">inventory</span></code> collection on the <code class="docutils literal"><span class="pre">type</span></code>
 field. <a class="footnote-reference" href="#ensureindexorder" id="id1">[1]</a> In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, you can
-create indexes using the <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-397"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a>
+create indexes using the <a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a>
 method:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -205,7 +205,7 @@ whole collection to return the results.</p>
 <a class="reference internal" href="../tutorial/analyze-query-plan.html"><span class="doc">Analyze Query Performance</span></a>.</p>
 <p>In addition to optimizing read operations, indexes can support sort
 operations and allow for a more efficient storage utilization. See
-<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-398"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a> and
 <a class="reference internal" href="../indexes.html"><span class="doc">Indexes</span></a> for more information about index
 creation.</p>
 <table class="docutils footnote" frame="void" id="ensureindexorder" rules="none">
@@ -363,11 +363,11 @@ a query on a <a class="reference internal" href="../reference/glossary.html#term
 <div class="section" id="explain">
 <h3><code class="docutils literal"><span class="pre">explain</span></code><a class="headerlink" href="#explain" title="Permalink to this headline">&para;</a></h3>
 <p>To determine whether a query is a covered query, use the
-<a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-399"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> or the <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-400"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a>
+<a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> or the <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a>
 method and review the <a class="reference internal" href="../reference/explain-results.html#explain-output-covered-queries"><span class="std std-ref">results</span></a>.</p>
-<p><a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-401"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> provides information on the execution
-of other operations, such as <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-402"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>. See
-<a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-403"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> for details.</p>
+<p><a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> provides information on the execution
+of other operations, such as <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>. See
+<a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> for details.</p>
 <p>For more information see <a class="reference internal" href="../tutorial/measure-index-use.html#indexes-measuring-use"><span class="std std-ref">Measure Index Use</span></a>.</p>
 <table class="docutils footnote" frame="void" id="index-embedded-document-fields" rules="none">
 <colgroup><col class="label"/><col/></colgroup>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7957"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Clear%20jumbo%20Flag%20%E2%80%94%20MongoDB%20Manual"></a><title>Clear jumbo Flag &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3594"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Clear%20jumbo%20Flag%20%E2%80%94%20MongoDB%20Manual"></a><title>Clear jumbo Flag &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/clear-jumbo-flag/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="clear-jumbo-flag">
-<a class="dashingAutolink" name="autolink-7958"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Clear%20jumbo%20Flag%C2%B6"></a><h1>Clear <code class="docutils literal"><span class="pre">jumbo</span></code> Flag<a class="headerlink" href="#clear-jumbo-flag" title="Permalink to this headline">&para;</a></h1>
+<h1>Clear <code class="docutils literal"><span class="pre">jumbo</span></code> Flag<a class="headerlink" href="#clear-jumbo-flag" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -178,7 +178,7 @@ the flag upon successful split of the chunk.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="find-the-jumbo-chunk">
 <h4>Find the <code class="docutils literal"><span class="pre">jumbo</span></code> Chunk.<a class="headerlink" href="#find-the-jumbo-chunk" title="Permalink to this headline">&para;</a></h4>
-<p>Run <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status"><a class="dashingAutolink" name="autolink-7959"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28true%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status(true)</span></code></a> to find the chunk labeled
+<p>Run <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status(true)</span></code></a> to find the chunk labeled
 <code class="docutils literal"><span class="pre">jumbo</span></code>.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -220,7 +220,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="split-the-jumbo-chunk">
 <h4>Split the <code class="docutils literal"><span class="pre">jumbo</span></code> Chunk.<a class="headerlink" href="#split-the-jumbo-chunk" title="Permalink to this headline">&para;</a></h4>
-<p>Use either <a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><a class="dashingAutolink" name="autolink-7960"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.splitAt%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitAt()</span></code></a> or <a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><a class="dashingAutolink" name="autolink-7961"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.splitFind%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitFind()</span></code></a> to
+<p>Use either <a class="reference internal" href="../reference/method/sh.splitAt.html#sh.splitAt" title="sh.splitAt()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitAt()</span></code></a> or <a class="reference internal" href="../reference/method/sh.splitFind.html#sh.splitFind" title="sh.splitFind()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.splitFind()</span></code></a> to
 split the <code class="docutils literal"><span class="pre">jumbo</span></code> chunk.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -274,7 +274,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">4</div></div><div class="section" id="id2">
 <h4>Find the <code class="docutils literal"><span class="pre">jumbo</span></code> Chunk.<a class="headerlink" href="#id2" title="Permalink to this headline">&para;</a></h4>
-<p>Run <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status"><a class="dashingAutolink" name="autolink-7962"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28true%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status(true)</span></code></a> to find the chunk labeled
+<p>Run <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status(true)</span></code></a> to find the chunk labeled
 <code class="docutils literal"><span class="pre">jumbo</span></code>.</p>
 <div class="button-code-block">
 <div class="button-row">

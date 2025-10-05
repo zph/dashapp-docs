@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-358"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/In-Memory%20Storage%20Engine%20%E2%80%94%20MongoDB%20Manual"></a><title>In-Memory Storage Engine &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-198"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/In-Memory%20Storage%20Engine%20%E2%80%94%20MongoDB%20Manual"></a><title>In-Memory Storage Engine &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/inmemory/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="in-memory-storage-engine">
-<span id="storage-inmemory"></span><a class="dashingAutolink" name="autolink-359"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/In-Memory%20Storage%20Engine%C2%B6"></a><h1>In-Memory Storage Engine<a class="headerlink" href="#in-memory-storage-engine" title="Permalink to this headline">&para;</a></h1>
+<span id="storage-inmemory"></span><h1>In-Memory Storage Engine<a class="headerlink" href="#in-memory-storage-engine" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -335,9 +335,9 @@ you could have one shard that has consists of the following replica set:</p>
 as a hidden member (i.e. <a class="reference internal" href="../reference/replica-configuration.html#rsconf.members[n].hidden" title="members[n].hidden"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">hidden:</span> <span class="pre">true</span></code></a>
 and <a class="reference internal" href="../reference/replica-configuration.html#rsconf.members[n].priority" title="members[n].priority"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">priority:</span> <span class="pre">0</span></code></a>).</li>
 </ul>
-<p>To this shard, add the <a class="reference internal" href="../reference/method/sh.addShardTag.html#sh.addShardTag" title="sh.addShardTag"><a class="dashingAutolink" name="autolink-360"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/tag"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">tag</span></code></a> <code class="docutils literal"><span class="pre">inmem</span></code>. For
+<p>To this shard, add the <a class="reference internal" href="../reference/method/sh.addShardTag.html#sh.addShardTag" title="sh.addShardTag"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">tag</span></code></a> <code class="docutils literal"><span class="pre">inmem</span></code>. For
 example, if this shard has the name <code class="docutils literal"><span class="pre">shardC</span></code>, connect to the
-<a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> and run <a class="reference internal" href="../reference/method/sh.addShardTag.html#sh.addShardTag" title="sh.addShardTag()"><a class="dashingAutolink" name="autolink-361"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShardTag%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardTag()</span></code></a>.</p>
+<a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> and run <a class="reference internal" href="../reference/method/sh.addShardTag.html#sh.addShardTag" title="sh.addShardTag()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardTag()</span></code></a>.</p>
 <p>For example,</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -360,7 +360,7 @@ copy</a>
 </div>
 </div>
 <p>For each sharded collection that should reside on the <code class="docutils literal"><span class="pre">inmem</span></code> shard,
-<a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange"><a class="dashingAutolink" name="autolink-362"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/assign%20to%20the%20entire%20chunk%20range"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">assign</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">entire</span> <span class="pre">chunk</span> <span class="pre">range</span></code></a> the tag
+<a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">assign</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">entire</span> <span class="pre">chunk</span> <span class="pre">range</span></code></a> the tag
 <code class="docutils literal"><span class="pre">inmem</span></code>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -372,7 +372,7 @@ copy</a>
 </div>
 </div>
 <p>For each sharded collection that should reside across the
-<code class="docutils literal"><span class="pre">persisted</span></code> shards, <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange"><a class="dashingAutolink" name="autolink-363"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/assign%20to%20the%20entire%20chunk%20range"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">assign</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">entire</span> <span class="pre">chunk</span> <span class="pre">range</span></code></a> the tag
+<code class="docutils literal"><span class="pre">persisted</span></code> shards, <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">assign</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">entire</span> <span class="pre">chunk</span> <span class="pre">range</span></code></a> the tag
 <code class="docutils literal"><span class="pre">persisted</span></code>:</p>
 <div class="button-code-block">
 <div class="button-row">

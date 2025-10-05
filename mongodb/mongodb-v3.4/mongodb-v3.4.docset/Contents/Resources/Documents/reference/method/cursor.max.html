@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3086"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.max%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.max() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1755"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.max%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.max() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.max/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-max">
-<a class="dashingAutolink" name="autolink-3087"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.max%28%29%C2%B6"></a><h1>cursor.max()<a class="headerlink" href="#cursor-max" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.max()<a class="headerlink" href="#cursor-max" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,12 +166,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.max">
-<code class="descclassname">cursor.</code><code class="descname">max</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3108"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.max" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">max</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1756"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.max" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the <em>exclusive</em> upper bound for a specific index in order
 to constrain the results of
-<a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3088"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>. <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3089"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> provides a
+<a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>. <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> provides a
 way to specify an upper bound on compound key indexes.</p>
-<p>The <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3090"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> method has the following parameter:</p>
+<p>The <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> method has the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -203,15 +203,15 @@ copy</a>
 </div>
 <p>The fields correspond to <em>all</em> the keys of a particular index <em>in
 order</em>. You can explicitly specify the particular index with the
-<a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-3091"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method. Otherwise, <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
+<a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method. Otherwise, <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
 selects the index using the fields in the <code class="docutils literal"><span class="pre">indexBounds</span></code>; however,
 if multiple indexes exist on same fields with different sort
 orders, the selection of the index may be ambiguous.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-3092"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a>.</p>
+<p class="last"><a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a>.</p>
 </div>
-<p><a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3093"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> exists primarily to support the
+<p><a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> exists primarily to support the
 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> (sharding) process, and is a shell wrapper around the query
 modifier <a class="reference internal" href="../operator/meta/max.html#metaOp._S_max" title="$max"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$max</span></code></a>.</p>
 <div class="admonition note">
@@ -220,7 +220,7 @@ modifier <a class="reference internal" href="../operator/meta/max.html#metaOp._S
 <dt>Deprecated in the <code class="docutils literal"><span class="pre">mongo</span></code> Shell since v3.2</dt>
 <dd>Starting in v3.2, the <a class="reference internal" href="../operator/meta/max.html#metaOp._S_max" title="$max"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$max</span></code></a> operator is deprecated in the
 <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell. In the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use
-<a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3094"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.max()</span></code></a> instead.</dd>
+<a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.max()</span></code></a> instead.</dd>
 </dl>
 </div>
 </dd></dl>
@@ -230,7 +230,7 @@ modifier <a class="reference internal" href="../operator/meta/max.html#metaOp._S
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="interaction-with-index-selection">
 <h3>Interaction with Index Selection<a class="headerlink" href="#interaction-with-index-selection" title="Permalink to this headline">&para;</a></h3>
-<p>Because <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3095"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> requires an index on a field,
+<p>Because <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> requires an index on a field,
 and forces the query to use this index, you may prefer the
 <a class="reference internal" href="../operator/query/lt.html#op._S_lt" title="$lt"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$lt</span></code></a> operator for the query if possible. Consider the
 following example:</p>
@@ -248,14 +248,14 @@ the index on <code class="docutils literal"><span class="pre">_id</span></code> 
 </div>
 <div class="section" id="index-bounds">
 <h3>Index Bounds<a class="headerlink" href="#index-bounds" title="Permalink to this headline">&para;</a></h3>
-<p>If you use <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3096"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> with <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-3097"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a> to
+<p>If you use <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> with <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a> to
 specify a range:</p>
 <ul>
-<li><p class="first">the index bounds specified in <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-3098"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a> and
-<a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3099"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> must both refer to the keys of the same index.</p>
+<li><p class="first">the index bounds specified in <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a> and
+<a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> must both refer to the keys of the same index.</p>
 </li>
-<li><p class="first">the bound specified by <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3100"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> must be greater than
-the bound specified by <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-3101"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a>.</p>
+<li><p class="first">the bound specified by <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> must be greater than
+the bound specified by <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a>.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.4.16.</span></p>
 </div>
@@ -314,7 +314,7 @@ copy</a>
 </div>
 <ul>
 <li><p class="first">Using the ordering of <code class="docutils literal"><span class="pre">{</span> <span class="pre">item:</span> <span class="pre">1,</span> <span class="pre">type:</span> <span class="pre">1</span> <span class="pre">}</span></code> index,
-<a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3102"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> limits the query to the documents
+<a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> limits the query to the documents
 that are below the bound of <code class="docutils literal"><span class="pre">item</span></code> equal to <code class="docutils literal"><span class="pre">apple</span></code> and
 <code class="docutils literal"><span class="pre">type</span></code> equal to <code class="docutils literal"><span class="pre">jonagold</span></code>:</p>
 <div class="button-code-block">
@@ -339,20 +339,20 @@ copy</a>
 </div>
 </div>
 <p>If the query did not explicitly specify the index with the
-<a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-3103"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method, it is ambiguous as to
+<a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method, it is ambiguous as to
 whether <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> would select the <code class="docutils literal"><span class="pre">{</span> <span class="pre">item:</span> <span class="pre">1,</span> <span class="pre">type:</span> <span class="pre">1</span>
 <span class="pre">}</span></code> index ordering or the <code class="docutils literal"><span class="pre">{</span> <span class="pre">item:</span> <span class="pre">1,</span> <span class="pre">type:</span> <span class="pre">-1</span> <span class="pre">}</span></code> index ordering.</p>
 </li>
-<li><p class="first">Using the ordering of the index <code class="docutils literal"><span class="pre">{</span> <span class="pre">price:</span> <span class="pre">1</span> <span class="pre">}</span></code>, <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3104"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> limits the query to the documents that are below
+<li><p class="first">Using the ordering of the index <code class="docutils literal"><span class="pre">{</span> <span class="pre">price:</span> <span class="pre">1</span> <span class="pre">}</span></code>, <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> limits the query to the documents that are below
 the index key bound of <code class="docutils literal"><span class="pre">price</span></code> equal to <code class="docutils literal"><span class="pre">1.99</span></code> and
-<a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-3105"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a> limits the query to the documents
+<a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a> limits the query to the documents
 that are at or above the index key bound of <code class="docutils literal"><span class="pre">price</span></code> equal to
 <code class="docutils literal"><span class="pre">1.39</span></code>:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <div class="last versionchanged">
-<p><span class="versionmodified">Changed in version 3.4.16: </span>The bound specified by <a class="reference internal" href="#cursor.max" title="cursor.max()"><a class="dashingAutolink" name="autolink-3106"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/max%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> must be greater
-than the bound specified by <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><a class="dashingAutolink" name="autolink-3107"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/min%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a>.</p>
+<p><span class="versionmodified">Changed in version 3.4.16: </span>The bound specified by <a class="reference internal" href="#cursor.max" title="cursor.max()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">max()</span></code></a> must be greater
+than the bound specified by <a class="reference internal" href="cursor.min.html#cursor.min" title="cursor.min()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">min()</span></code></a>.</p>
 </div>
 </div>
 <div class="button-code-block">

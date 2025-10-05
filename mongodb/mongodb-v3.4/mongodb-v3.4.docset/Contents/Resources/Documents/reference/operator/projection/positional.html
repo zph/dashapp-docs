@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-5928"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24%20%28projection%29%20%E2%80%94%20MongoDB%20Manual"></a><title>$ (projection) &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2477"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24%20%28projection%29%20%E2%80%94%20MongoDB%20Manual"></a><title>$ (projection) &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/projection/positional/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="projection">
-<a class="dashingAutolink" name="autolink-5929"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24%20%28projection%29%C2%B6"></a><h1>$ (projection)<a class="headerlink" href="#projection" title="Permalink to this headline">&para;</a></h1>
+<h1>$ (projection)<a class="headerlink" href="#projection" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -170,14 +170,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="projection">
 <dt id="proj._S_">
-<code class="descname">$</code><a class="dashingAutolink" name="autolink-5927"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#proj._S_" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$</code><a class="dashingAutolink" name="autolink-2476"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#proj._S_" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The positional <a class="reference internal" href="#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a> operator limits the contents of an
 <code class="docutils literal"><span class="pre">&lt;array&gt;</span></code> from the query results to contain only the <strong>first</strong> element
 matching the query document. To specify an array element to update, see the
 <a class="reference internal" href="../update/positional.html"><span class="doc">positional $ operator for updates</span></a>.</p>
 <p>Use <a class="reference internal" href="#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a> in the <a class="reference internal" href="../../glossary.html#term-projection"><span class="xref std std-term">projection</span></a> document of the
-<a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-5930"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method or the
-<a class="reference internal" href="../../method/db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-5931"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> method when you only need one particular
+<a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method or the
+<a class="reference internal" href="../../method/db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> method when you only need one particular
 array element in selected documents.</p>
 <p>See the aggregation operator <a class="reference internal" href="../aggregation/filter.html#exp._S_filter" title="$filter"><code class="xref mongodb mongodb-expression docutils literal"><span class="pre">$filter</span></code></a> to return an
 array with only those elements that match the specified condition.</p>
@@ -194,7 +194,7 @@ document in a collection based on some condition from the query statement.</p>
 argument.  This allows you to project based on a condition not in the query, or
 if you need to project based on multiple fields in the array&rsquo;s embedded documents.
 See <a class="reference internal" href="#array-field-limitation"><span class="std std-ref">Array Field Limitations</span></a> for an example.</p>
-<p><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-5932"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operations on <a class="reference internal" href="../../../core/views.html"><span class="doc">views</span></a> do not support <a class="reference internal" href="#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a> projection operator.</p>
+<p><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operations on <a class="reference internal" href="../../../core/views.html"><span class="doc">views</span></a> do not support <a class="reference internal" href="#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a> projection operator.</p>
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
@@ -263,14 +263,14 @@ for selecting documents and for choosing fields within those documents.</p>
 </div>
 <div class="section" id="sorts-and-the-positional-operator">
 <h3>Sorts and the Positional Operator<a class="headerlink" href="#sorts-and-the-positional-operator" title="Permalink to this headline">&para;</a></h3>
-<p>When the <a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-5933"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method includes a
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5934"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>, the <a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-5935"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>
-method applies the <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5936"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> to order the matching
+<p>When the <a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method includes a
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>, the <a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>
+method applies the <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> to order the matching
 documents <strong>before</strong> it applies the positional <a class="reference internal" href="#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a>
 projection operator.</p>
 <p>If an array field contains multiple documents with the same field
-name and the <a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-5937"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method includes a
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-5938"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> on that repeating field, the returned
+name and the <a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method includes a
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> on that repeating field, the returned
 documents may not reflect the sort order because the sort was
 applied to the elements of the array before the <a class="reference internal" href="#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a>
 projection operator.</p>

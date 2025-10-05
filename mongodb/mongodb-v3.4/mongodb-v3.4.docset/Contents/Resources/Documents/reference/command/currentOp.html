@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1109"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/currentOp%20%E2%80%94%20MongoDB%20Manual"></a><title>currentOp &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-535"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/currentOp%20%E2%80%94%20MongoDB%20Manual"></a><title>currentOp &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/currentOp/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="currentop">
-<a class="dashingAutolink" name="autolink-1067"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/currentOp%C2%B6"></a><h1>currentOp<a class="headerlink" href="#currentop" title="Permalink to this headline">&para;</a></h1>
+<h1>currentOp<a class="headerlink" href="#currentop" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -169,7 +169,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.currentOp">
-<code class="descname">currentOp</code><a class="dashingAutolink" name="autolink-1077"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.currentOp" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">currentOp</code><a class="dashingAutolink" name="autolink-503"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.currentOp" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns a <a class="reference internal" href="../glossary.html#term-document"><span class="xref std std-term">document</span></a> that contains information on in-progress
 operations for the <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 <p><a class="reference internal" href="#dbcmd.currentOp" title="currentOp"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">currentOp</span></code></a> has the following form:</p>
@@ -182,7 +182,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-1068"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a>
+<p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the <a class="reference internal" href="../method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a>
 wrapper for the <a class="reference internal" href="#dbcmd.currentOp" title="currentOp"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">currentOp</span></code></a> command.</p>
 </dd></dl>
 
@@ -681,54 +681,54 @@ copy</a>
 <span id="currentop-output-fields"></span><h2>Output Fields<a class="headerlink" href="#output-fields" title="Permalink to this headline">&para;</a></h2>
 <dl class="data">
 <dt id="currentOp.desc">
-<code class="descclassname">currentOp.</code><code class="descname">desc</code><a class="dashingAutolink" name="autolink-1078"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.desc" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">desc</code><a class="dashingAutolink" name="autolink-504"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.desc" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A description of the client. This string includes the
 <a class="reference internal" href="#currentOp.connectionId" title="currentOp.connectionId"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">connectionId</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.threadId">
-<code class="descclassname">currentOp.</code><code class="descname">threadId</code><a class="dashingAutolink" name="autolink-1079"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.threadId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">threadId</code><a class="dashingAutolink" name="autolink-505"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.threadId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An identifier for the thread that handles the operation and its
 connection.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.connectionId">
-<code class="descclassname">currentOp.</code><code class="descname">connectionId</code><a class="dashingAutolink" name="autolink-1080"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.connectionId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">connectionId</code><a class="dashingAutolink" name="autolink-506"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.connectionId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An identifier for the connection where the operation originated.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.client">
-<code class="descclassname">currentOp.</code><code class="descname">client</code><a class="dashingAutolink" name="autolink-1081"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.client" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">client</code><a class="dashingAutolink" name="autolink-507"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.client" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string with information about where the operation originated.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.appName">
-<code class="descclassname">currentOp.</code><code class="descname">appName</code><a class="dashingAutolink" name="autolink-1082"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.appName" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">appName</code><a class="dashingAutolink" name="autolink-508"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.appName" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string with information about the type of client which made the
 request.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.opid">
-<code class="descclassname">currentOp.</code><code class="descname">opid</code><a class="dashingAutolink" name="autolink-1083"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.opid" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">opid</code><a class="dashingAutolink" name="autolink-509"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.opid" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The identifier for the operation. You can pass this value to
-<a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-1069"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to terminate the
+<a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to terminate the
 operation.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Terminate running operations with extreme caution. Only use
-<a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-1070"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> to terminate operations initiated by clients
+<a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> to terminate operations initiated by clients
 and <em>do not</em> terminate internal database operations.</p>
 </div>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.active">
-<code class="descclassname">currentOp.</code><code class="descname">active</code><a class="dashingAutolink" name="autolink-1084"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.active" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">active</code><a class="dashingAutolink" name="autolink-510"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.active" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value specifying whether the operation has started. Value
 is <code class="docutils literal"><span class="pre">true</span></code> if the operation has started or <code class="docutils literal"><span class="pre">false</span></code> if the
 operation is idle, such as an idle connection or an internal thread
@@ -743,7 +743,7 @@ fields.</p>
 
 <dl class="data">
 <dt id="currentOp.secs_running">
-<code class="descclassname">currentOp.</code><code class="descname">secs_running</code><a class="dashingAutolink" name="autolink-1085"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.secs_running" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">secs_running</code><a class="dashingAutolink" name="autolink-511"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.secs_running" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The duration of the operation in seconds. MongoDB calculates this
 value by subtracting the current time from the start time of the
 operation.</p>
@@ -753,7 +753,7 @@ operation.</p>
 
 <dl class="data">
 <dt id="currentOp.microsecs_running">
-<code class="descclassname">currentOp.</code><code class="descname">microsecs_running</code><a class="dashingAutolink" name="autolink-1086"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.microsecs_running" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">microsecs_running</code><a class="dashingAutolink" name="autolink-512"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.microsecs_running" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -766,7 +766,7 @@ operation.</p>
 
 <dl class="data">
 <dt id="currentOp.op">
-<code class="descclassname">currentOp.</code><code class="descname">op</code><a class="dashingAutolink" name="autolink-1087"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.op" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">op</code><a class="dashingAutolink" name="autolink-513"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.op" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string that identifies the type of operation. The possible values
 are:</p>
 <ul class="simple">
@@ -800,7 +800,7 @@ MongoDB included these commands under <code class="docutils literal"><span class
 
 <dl class="data">
 <dt id="currentOp.ns">
-<code class="descclassname">currentOp.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-1088"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.ns" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-514"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.ns" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="../glossary.html#term-namespace"><span class="xref std std-term">namespace</span></a> the operation targets. A namespace consists of
 the <a class="reference internal" href="../glossary.html#term-database"><span class="xref std std-term">database</span></a> name and the <a class="reference internal" href="../glossary.html#term-collection"><span class="xref std std-term">collection</span></a> name
 concatenated with a dot (<code class="docutils literal"><span class="pre">.</span></code>); that is,
@@ -809,21 +809,21 @@ concatenated with a dot (<code class="docutils literal"><span class="pre">.</spa
 
 <dl class="data">
 <dt id="currentOp.insert">
-<code class="descclassname">currentOp.</code><code class="descname">insert</code><a class="dashingAutolink" name="autolink-1089"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.insert" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">insert</code><a class="dashingAutolink" name="autolink-515"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.insert" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Contains the document to be inserted for operations with
 <a class="reference internal" href="#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">op</span></code></a> value of <code class="docutils literal"><span class="pre">&#34;insert&#34;</span></code>. Only appears for
 operations with <a class="reference internal" href="#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">op</span></code></a> value <code class="docutils literal"><span class="pre">&#34;insert&#34;</span></code>.</p>
-<p>Insert operations such as <a class="reference internal" href="../method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-1071"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a> that use
+<p>Insert operations such as <a class="reference internal" href="../method/db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insert()</span></code></a> that use
 the <a class="reference internal" href="insert.html#dbcmd.insert" title="insert"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">insert</span></code></a> command will have <a class="reference internal" href="#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">op</span></code></a> value
 of <code class="docutils literal"><span class="pre">&#34;query&#34;</span></code>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.query">
-<code class="descclassname">currentOp.</code><code class="descname">query</code><a class="dashingAutolink" name="autolink-1090"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.query" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">query</code><a class="dashingAutolink" name="autolink-516"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.query" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A document containing information on operations whose
 <a class="reference internal" href="#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">op</span></code></a> value is <em>not</em> <code class="docutils literal"><span class="pre">&#34;insert&#34;</span></code>. For instance, for
-a <a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-1072"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operation, the
+a <a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operation, the
 <a class="reference internal" href="#currentOp.query" title="currentOp.query"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">query</span></code></a> contains the query predicate.</p>
 <p><a class="reference internal" href="#currentOp.query" title="currentOp.query"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">query</span></code></a> does not appear for <a class="reference internal" href="#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">op</span></code></a>
 of <code class="docutils literal"><span class="pre">&#34;insert&#34;</span></code>. <a class="reference internal" href="#currentOp.query" title="currentOp.query"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">query</span></code></a> can also be an empty
@@ -833,8 +833,8 @@ document.</p>
 document contains the query predicate for the operations.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.4: </span>For <a class="reference internal" href="#currentOp.op" title="currentOp.op"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">&#34;getmore&#34;</span></code></a> operations on cursors
-returned from a <a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-1073"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> or a
-<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-1074"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a>, the
+returned from a <a class="reference internal" href="../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> or a
+<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a>, the
 <a class="reference internal" href="#currentOp.query" title="currentOp.query"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">query</span></code></a> field contains respectively the
 query predicate or the issued <a class="reference internal" href="aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a>
 command document. For details on the <a class="reference internal" href="aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a>
@@ -855,13 +855,13 @@ document.</p>
 
 <dl class="data">
 <dt id="currentOp.planSummary">
-<code class="descclassname">currentOp.</code><code class="descname">planSummary</code><a class="dashingAutolink" name="autolink-1091"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.planSummary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">planSummary</code><a class="dashingAutolink" name="autolink-517"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.planSummary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string that contains the query plan to help debug slow queries.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="iddup.currentOp.client">
-<code class="descclassname">currentOp.</code><code class="descname">client</code><a class="dashingAutolink" name="autolink-1092"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.currentOp.client" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">client</code><a class="dashingAutolink" name="autolink-518"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.currentOp.client" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The IP address (or hostname) and the ephemeral port of the client
 connection where the operation originates. If your <code class="docutils literal"><span class="pre">inprog</span></code>
 array has operations from many different clients, use this string
@@ -870,7 +870,7 @@ to relate operations to clients.</p>
 
 <dl class="data">
 <dt id="iddup.currentOp.appName">
-<code class="descclassname">currentOp.</code><code class="descname">appName</code><a class="dashingAutolink" name="autolink-1093"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.currentOp.appName" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">appName</code><a class="dashingAutolink" name="autolink-519"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#iddup.currentOp.appName" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -883,7 +883,7 @@ be set to a custom string.</p>
 
 <dl class="data">
 <dt id="currentOp.locks">
-<code class="descclassname">currentOp.</code><code class="descname">locks</code><a class="dashingAutolink" name="autolink-1094"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.locks" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">locks</code><a class="dashingAutolink" name="autolink-520"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.locks" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.</span></p>
 </div>
@@ -953,7 +953,7 @@ journal writes; for non-MMAPv1 storage engines, the mode for
 
 <dl class="data">
 <dt id="currentOp.waitingForLock">
-<code class="descclassname">currentOp.</code><code class="descname">waitingForLock</code><a class="dashingAutolink" name="autolink-1095"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.waitingForLock" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">waitingForLock</code><a class="dashingAutolink" name="autolink-521"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.waitingForLock" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns a boolean value. <a class="reference internal" href="#currentOp.waitingForLock" title="currentOp.waitingForLock"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">waitingForLock</span></code></a> is <code class="docutils literal"><span class="pre">true</span></code> if the
 operation is waiting for a lock and <code class="docutils literal"><span class="pre">false</span></code> if the operation has
 the required lock.</p>
@@ -961,7 +961,7 @@ the required lock.</p>
 
 <dl class="data">
 <dt id="currentOp.msg">
-<code class="descclassname">currentOp.</code><code class="descname">msg</code><a class="dashingAutolink" name="autolink-1096"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.msg" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">msg</code><a class="dashingAutolink" name="autolink-522"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.msg" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="#currentOp.msg" title="currentOp.msg"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">msg</span></code></a> provides a message that describes the status and
 progress of the operation. In the case of indexing or mapReduce
 operations, the field reports the completion percentage.</p>
@@ -969,20 +969,20 @@ operations, the field reports the completion percentage.</p>
 
 <dl class="data">
 <dt id="currentOp.progress">
-<code class="descclassname">currentOp.</code><code class="descname">progress</code><a class="dashingAutolink" name="autolink-1097"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.progress" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">progress</code><a class="dashingAutolink" name="autolink-523"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.progress" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Reports on the progress of mapReduce or indexing operations. The
 <a class="reference internal" href="#currentOp.progress" title="currentOp.progress"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">progress</span></code></a> fields corresponds to the completion percentage in
 the <a class="reference internal" href="#currentOp.msg" title="currentOp.msg"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">msg</span></code></a> field. The <a class="reference internal" href="#currentOp.progress" title="currentOp.progress"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">progress</span></code></a> specifies the following
 information:</p>
 <dl class="data">
 <dt id="currentOp.progress.done">
-<code class="descclassname">currentOp.progress.</code><code class="descname">done</code><a class="dashingAutolink" name="autolink-1098"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.progress.done" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.progress.</code><code class="descname">done</code><a class="dashingAutolink" name="autolink-524"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.progress.done" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Reports the number completed.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.progress.total">
-<code class="descclassname">currentOp.progress.</code><code class="descname">total</code><a class="dashingAutolink" name="autolink-1099"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.progress.total" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.progress.</code><code class="descname">total</code><a class="dashingAutolink" name="autolink-525"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.progress.total" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Reports the total number.</p>
 </dd></dl>
 
@@ -990,7 +990,7 @@ information:</p>
 
 <dl class="data">
 <dt id="currentOp.killPending">
-<code class="descclassname">currentOp.</code><code class="descname">killPending</code><a class="dashingAutolink" name="autolink-1100"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.killPending" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">killPending</code><a class="dashingAutolink" name="autolink-526"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.killPending" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns <code class="docutils literal"><span class="pre">true</span></code> if the operation is currently flagged for
 termination.  When the operation encounters its next safe termination point, the
 operation will terminate.</p>
@@ -998,7 +998,7 @@ operation will terminate.</p>
 
 <dl class="data">
 <dt id="currentOp.numYields">
-<code class="descclassname">currentOp.</code><code class="descname">numYields</code><a class="dashingAutolink" name="autolink-1101"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.numYields" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">numYields</code><a class="dashingAutolink" name="autolink-527"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.numYields" title="Permalink to this definition">&para;</a></dt>
 <dd><p><a class="reference internal" href="#currentOp.numYields" title="currentOp.numYields"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">numYields</span></code></a> is a counter that reports the number of times the
 operation has yielded to allow other operations to complete.</p>
 <p>Typically, operations yield when they need access to data that
@@ -1009,8 +1009,8 @@ while MongoDB reads in data for the yielding operation.</p>
 
 <dl class="data">
 <dt id="currentOp.fsyncLock">
-<code class="descclassname">currentOp.</code><code class="descname">fsyncLock</code><a class="dashingAutolink" name="autolink-1102"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.fsyncLock" title="Permalink to this definition">&para;</a></dt>
-<dd><p>Specifies if database is currently locked for <a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-1075"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/fsync%0Awrite%2Fsnapshot"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">fsync</span>
+<code class="descclassname">currentOp.</code><code class="descname">fsyncLock</code><a class="dashingAutolink" name="autolink-528"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.fsyncLock" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Specifies if database is currently locked for <a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">fsync</span>
 <span class="pre">write/snapshot</span></code></a>.</p>
 <p>Only appears if locked; i.e. if <a class="reference internal" href="#currentOp.fsyncLock" title="currentOp.fsyncLock"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">fsyncLock</span></code></a> is
 <code class="docutils literal"><span class="pre">true</span></code>.</p>
@@ -1018,28 +1018,28 @@ while MongoDB reads in data for the yielding operation.</p>
 
 <dl class="data">
 <dt id="currentOp.info">
-<code class="descclassname">currentOp.</code><code class="descname">info</code><a class="dashingAutolink" name="autolink-1103"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.info" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">info</code><a class="dashingAutolink" name="autolink-529"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.info" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Information regarding how to unlock database from
-<a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-1076"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a>. Only appears if
+<a class="reference internal" href="../method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a>. Only appears if
 <a class="reference internal" href="#currentOp.fsyncLock" title="currentOp.fsyncLock"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">fsyncLock</span></code></a> is <code class="docutils literal"><span class="pre">true</span></code>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.lockStats">
-<code class="descclassname">currentOp.</code><code class="descname">lockStats</code><a class="dashingAutolink" name="autolink-1104"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.</code><code class="descname">lockStats</code><a class="dashingAutolink" name="autolink-530"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For each lock type and mode (see <a class="reference internal" href="#currentOp.locks" title="currentOp.locks"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">currentOp.locks</span></code></a> for
 descriptions of lock types and modes), returns the following
 information:</p>
 <dl class="data">
 <dt id="currentOp.lockStats.acquireCount">
-<code class="descclassname">currentOp.lockStats.</code><code class="descname">acquireCount</code><a class="dashingAutolink" name="autolink-1105"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.acquireCount" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.lockStats.</code><code class="descname">acquireCount</code><a class="dashingAutolink" name="autolink-531"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.acquireCount" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of times the operation acquired the lock in the specified
 mode.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="currentOp.lockStats.acquireWaitCount">
-<code class="descclassname">currentOp.lockStats.</code><code class="descname">acquireWaitCount</code><a class="dashingAutolink" name="autolink-1106"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.acquireWaitCount" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.lockStats.</code><code class="descname">acquireWaitCount</code><a class="dashingAutolink" name="autolink-532"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.acquireWaitCount" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of times the operation had to wait for the
 <a class="reference internal" href="#currentOp.lockStats.acquireCount" title="currentOp.lockStats.acquireCount"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">acquireCount</span></code></a> lock acquisitions
 because the locks were held in a conflicting mode.
@@ -1049,7 +1049,7 @@ equal to <a class="reference internal" href="#currentOp.lockStats.acquireCount" 
 
 <dl class="data">
 <dt id="currentOp.lockStats.timeAcquiringMicros">
-<code class="descclassname">currentOp.lockStats.</code><code class="descname">timeAcquiringMicros</code><a class="dashingAutolink" name="autolink-1107"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.timeAcquiringMicros" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.lockStats.</code><code class="descname">timeAcquiringMicros</code><a class="dashingAutolink" name="autolink-533"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.timeAcquiringMicros" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Cumulative time in microseconds that the operation had to wait to
 acquire the locks.</p>
 <p><a class="reference internal" href="#currentOp.lockStats.timeAcquiringMicros" title="currentOp.lockStats.timeAcquiringMicros"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">timeAcquiringMicros</span></code></a> divided by
@@ -1059,7 +1059,7 @@ approximate average wait time for the particular lock mode.</p>
 
 <dl class="data">
 <dt id="currentOp.lockStats.deadlockCount">
-<code class="descclassname">currentOp.lockStats.</code><code class="descname">deadlockCount</code><a class="dashingAutolink" name="autolink-1108"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.deadlockCount" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">currentOp.lockStats.</code><code class="descname">deadlockCount</code><a class="dashingAutolink" name="autolink-534"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#currentOp.lockStats.deadlockCount" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Number of times the operation encountered deadlocks while waiting
 for lock acquisitions.</p>
 </dd></dl>

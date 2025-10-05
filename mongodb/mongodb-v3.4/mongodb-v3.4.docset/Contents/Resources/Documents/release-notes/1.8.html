@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7381"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%201.8%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 1.8 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3518"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%201.8%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 1.8 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/1.8/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="release-notes-for-mongodb-1-8">
-<a class="dashingAutolink" name="autolink-7382"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Release%20Notes%20for%20MongoDB%201.8%C2%B6"></a><h1>Release Notes for MongoDB 1.8<a class="headerlink" href="#release-notes-for-mongodb-1-8" title="Permalink to this headline">&para;</a></h1>
+<h1>Release Notes for MongoDB 1.8<a class="headerlink" href="#release-notes-for-mongodb-1-8" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -210,7 +210,7 @@ a new primary will be elected. To prevent this, you can give
 all of the secondaries a priority of <code class="docutils literal"><span class="pre">0</span></code> before
 upgrading, and then change them back afterwards. To do so:</p>
 <ol class="loweralpha">
-<li><p class="first">Record your current config. Run <a class="reference internal" href="../reference/method/rs.conf.html#rs.config" title="rs.config()"><a class="dashingAutolink" name="autolink-7383"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.config%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.config()</span></code></a> and paste the
+<li><p class="first">Record your current config. Run <a class="reference internal" href="../reference/method/rs.conf.html#rs.config" title="rs.config()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.config()</span></code></a> and paste the
 results into a text file.</p>
 </li>
 <li><p class="first">Update your config so that all secondaries have
@@ -479,7 +479,7 @@ are limited to 8MB.</li>
 <h4>1.7.2<a class="headerlink" href="#id8" title="Permalink to this headline">&para;</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/operator/update/rename.html#up._S_rename" title="$rename"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$rename</span></code></a> operator allows renaming of fields in a document.</li>
-<li><a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-7384"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> not to block.</li>
+<li><a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> not to block.</li>
 <li>Geo queries with sharding.</li>
 <li><a class="reference internal" href="../reference/program/mongostat.html#cmdoption-mongostat-discover"><code class="xref std std-option docutils literal"><span class="pre">mongostat</span> <span class="pre">--discover</span></code></a> option</li>
 <li>Chunk splitting enhancements.</li>

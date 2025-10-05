@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3109"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.maxScan%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.maxScan() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1758"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.maxScan%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.maxScan() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.maxScan/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-maxscan">
-<a class="dashingAutolink" name="autolink-3110"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.maxScan%28%29%C2%B6"></a><h1>cursor.maxScan()<a class="headerlink" href="#cursor-maxscan" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.maxScan()<a class="headerlink" href="#cursor-maxscan" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,14 +166,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.maxScan">
-<code class="descclassname">cursor.</code><code class="descname">maxScan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3115"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.maxScan" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">maxScan</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1757"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.maxScan" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
 <p>Specifies a maximum number of documents or index keys the query plan will
 scan. Once the limit is reached, the query terminates execution and returns
 the current batch of results.</p>
-<p><a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan()"><a class="dashingAutolink" name="autolink-3111"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/maxScan%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxScan()</span></code></a> has the following syntax:</p>
+<p><a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxScan()</span></code></a> has the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -183,7 +183,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The method <a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan"><a class="dashingAutolink" name="autolink-3112"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.maxScan"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxScan</span></code></a> has the following parameter:</p>
+<p>The method <a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxScan</span></code></a> has the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -207,7 +207,7 @@ copy</a>
 <colgroup><col class="field-name"/>
 <col class="field-body"/>
 </colgroup><tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The <a class="reference internal" href="../glossary.html#term-cursor"><span class="xref std std-term">cursor</span></a> that <a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan()"><a class="dashingAutolink" name="autolink-3113"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/maxScan%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxScan()</span></code></a> is attached to with
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The <a class="reference internal" href="../glossary.html#term-cursor"><span class="xref std std-term">cursor</span></a> that <a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">maxScan()</span></code></a> is attached to with
 a modified result set based on the <code class="docutils literal"><span class="pre">maxScan</span></code> parameter. This allows
 for additional cursor modifiers to be chained.</td>
 </tr>
@@ -221,7 +221,7 @@ for additional cursor modifiers to be chained.</td>
 <p>For collection scans, <code class="docutils literal"><span class="pre">maxScan</span></code> is the maximum number of documents scanned
 before the query results are returned. For index scans, <code class="docutils literal"><span class="pre">maxScan</span></code> is the
 maximum number of index keys examined.</p>
-<p>Using a value of <code class="docutils literal"><span class="pre">0</span></code> is equivalent to not using <a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan()"><a class="dashingAutolink" name="autolink-3114"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.maxScan%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxScan()</span></code></a>.</p>
+<p>Using a value of <code class="docutils literal"><span class="pre">0</span></code> is equivalent to not using <a class="reference internal" href="#cursor.maxScan" title="cursor.maxScan()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.maxScan()</span></code></a>.</p>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>

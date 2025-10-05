@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8373"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20mongod%20Processes%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage mongod Processes &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3672"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20mongod%20Processes%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage mongod Processes &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/manage-mongodb-processes/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="manage-mongod-processes">
-<a class="dashingAutolink" name="autolink-8374"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Manage%20mongod%20Processes%C2%B6"></a><h1>Manage <code class="docutils literal"><span class="pre">mongod</span></code> Processes<a class="headerlink" href="#manage-mongod-processes" title="Permalink to this headline">&para;</a></h1>
+<h1>Manage <code class="docutils literal"><span class="pre">mongod</span></code> Processes<a class="headerlink" href="#manage-mongod-processes" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -273,7 +273,7 @@ instances using one of the following methods:</p>
 <div class="section" id="use-shutdownserver">
 <h3>Use <code class="docutils literal"><span class="pre">shutdownServer()</span></code><a class="headerlink" href="#use-shutdownserver" title="Permalink to this headline">&para;</a></h3>
 <p>Shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> from the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell using
-the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8375"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method as follows:</p>
+the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method as follows:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -286,7 +286,7 @@ copy</a>
 </div>
 <p>Calling the same method from a <a class="reference internal" href="../reference/glossary.html#term-init-script"><span class="xref std std-term">init script</span></a> accomplishes the same result.</p>
 <p>For systems with <a class="reference internal" href="../reference/configuration-options.html#security.authorization" title="security.authorization"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">authorization</span></code></a> enabled, users may only issue
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8376"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> when authenticated to the <code class="docutils literal"><span class="pre">admin</span></code>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> when authenticated to the <code class="docutils literal"><span class="pre">admin</span></code>
 database or via the localhost interface on systems without
 authentication enabled.</p>
 </div>
@@ -381,7 +381,7 @@ copy</a>
 </div>
 </div>
 <p>Alternately you can use the <code class="docutils literal"><span class="pre">timeoutSecs</span></code> argument with the
-<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8377"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method:</p>
+<a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

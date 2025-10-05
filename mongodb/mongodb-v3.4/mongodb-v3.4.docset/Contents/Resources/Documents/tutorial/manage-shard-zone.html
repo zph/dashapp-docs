@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8378"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20Shard%20Zones%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage Shard Zones &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3673"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20Shard%20Zones%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage Shard Zones &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/manage-shard-zone/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="manage-shard-zones">
-<a class="dashingAutolink" name="autolink-8379"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Manage%20Shard%20Zones%C2%B6"></a><h1>Manage Shard Zones<a class="headerlink" href="#manage-shard-zones" title="Permalink to this headline">&para;</a></h1>
+<h1>Manage Shard Zones<a class="headerlink" href="#manage-shard-zones" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -170,7 +170,7 @@ inside of the zone.</p>
 <div class="section" id="add-shards-to-a-zone">
 <h2>Add Shards to a Zone<a class="headerlink" href="#add-shards-to-a-zone" title="Permalink to this headline">&para;</a></h2>
 <p>Associate a Zone with a particular shard using the
-<a class="reference internal" href="../reference/method/sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><a class="dashingAutolink" name="autolink-8380"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShardToZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a> method when connected to a <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
+<a class="reference internal" href="../reference/method/sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a> method when connected to a <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 instance. A single shard may have multiple zones, and multiple shards
 may also have the same zone.</p>
 <div class="admonition-example admonition">
@@ -191,7 +191,7 @@ copy</a>
 </div>
 </div>
 <p>You may remove zone from a particular shard using the
-<a class="reference internal" href="../reference/method/sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-8381"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> method when connected to a
+<a class="reference internal" href="../reference/method/sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> method when connected to a
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance, as in the following example, which removes
 the <code class="docutils literal"><span class="pre">NRT</span></code> zone from a shard:</p>
 <div class="button-code-block">
@@ -206,7 +206,7 @@ copy</a>
 </div>
 <div class="section" id="create-a-zone-range">
 <h2>Create a Zone Range<a class="headerlink" href="#create-a-zone-range" title="Permalink to this headline">&para;</a></h2>
-<p>To define the zone&rsquo;s range of shard keys, use the <a class="reference internal" href="../reference/method/sh.updateZoneKeyRange.html#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-8382"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a>
+<p>To define the zone&rsquo;s range of shard keys, use the <a class="reference internal" href="../reference/method/sh.updateZoneKeyRange.html#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a>
 method when connected to a <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance. Any given shard key
 range may only have <em>one</em> assigned zone. You cannot overlap defined ranges.</p>
 <div class="admonition-example admonition">
@@ -238,7 +238,7 @@ of the upper boundary.</p>
 <div class="section" id="remove-a-zone-range">
 <h2>Remove a Zone Range<a class="headerlink" href="#remove-a-zone-range" title="Permalink to this headline">&para;</a></h2>
 <div class="versionadded">
-<p><span class="versionmodified">New in version 3.4: </span>Use the shell helper method <a class="reference internal" href="../reference/method/sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-8383"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> to
+<p><span class="versionmodified">New in version 3.4: </span>Use the shell helper method <a class="reference internal" href="../reference/method/sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> to
 remove a range from a zone.</p>
 </div>
 <div class="admonition-example admonition">
@@ -258,10 +258,10 @@ copy</a>
 </div>
 <div class="section" id="view-existing-zones">
 <h2>View Existing Zones<a class="headerlink" href="#view-existing-zones" title="Permalink to this headline">&para;</a></h2>
-<p>Use <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8384"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to list the zones associated to each shard in the
+<p>Use <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> to list the zones associated to each shard in the
 cluster. You can also view a shards zones by querying the
 <a class="reference internal" href="../reference/config-database.html#config.shards" title="config.shards"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">shards</span></code></a> collection in the <code class="docutils literal"><span class="pre">config</span></code> database.</p>
-<p>The following example uses the <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8385"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to
+<p>The following example uses the <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to
 return all shards with the <code class="docutils literal"><span class="pre">NYC</span></code> zone.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -275,8 +275,8 @@ copy</a>
 </div>
 <p>You can find zone ranges for all <a class="reference internal" href="../reference/glossary.html#term-namespace"><span class="xref std std-term">namespaces</span></a> in the
 <a class="reference internal" href="../reference/config-database.html#config.tags" title="config.tags"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">tags</span></code></a> collection of the <code class="docutils literal"><span class="pre">config</span></code> database. The output
-of <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8386"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> also displays all zone ranges.</p>
-<p>The following example uses the <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-8387"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to
+of <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> also displays all zone ranges.</p>
+<p>The following example uses the <a class="reference internal" href="../reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to
 return any range associated to the <code class="docutils literal"><span class="pre">NYC</span></code> zone.</p>
 <div class="button-code-block">
 <div class="button-row">

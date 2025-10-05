@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4616"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Query%20Plan%20Cache%20Methods%20%E2%80%94%20MongoDB%20Manual"></a><title>Query Plan Cache Methods &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2047"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Query%20Plan%20Cache%20Methods%20%E2%80%94%20MongoDB%20Manual"></a><title>Query Plan Cache Methods &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/js-plan-cache/"/><meta name="robots" content="index"/>
@@ -151,10 +151,10 @@
   </div>
                 
                   <div class="section" id="query-plan-cache-methods">
-<a class="dashingAutolink" name="autolink-4617"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Query%20Plan%20Cache%20Methods%C2%B6"></a><h1>Query Plan Cache Methods<a class="headerlink" href="#query-plan-cache-methods" title="Permalink to this headline">&para;</a></h1>
+<h1>Query Plan Cache Methods<a class="headerlink" href="#query-plan-cache-methods" title="Permalink to this headline">&para;</a></h1>
 <p>The PlanCache methods are only accessible from a collection&rsquo;s plan
 cache object. To retrieve the plan cache object, use the
-<a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><a class="dashingAutolink" name="autolink-4618"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getPlanCache%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getPlanCache()</span></code></a> method.</p>
+<a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getPlanCache()</span></code></a> method.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">For details on specific methods, including syntax and examples,
@@ -171,31 +171,31 @@ click on the specific method to go to its reference page.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><a class="dashingAutolink" name="autolink-4619"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getPlanCache%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getPlanCache()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="db.collection.getPlanCache.html#db.collection.getPlanCache" title="db.collection.getPlanCache()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getPlanCache()</span></code></a></td>
 <td>Returns an interface to access the query plan cache object and
 associated PlanCache methods for a collection.&rdquo;</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="PlanCache.clear.html#PlanCache.clear" title="PlanCache.clear()"><a class="dashingAutolink" name="autolink-4620"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.clear%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clear()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="PlanCache.clear.html#PlanCache.clear" title="PlanCache.clear()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clear()</span></code></a></td>
 <td>Clears all the cached query plans for a collection.
 Accessible through the plan cache object of a specific collection,
 i.e. <code class="docutils literal"><span class="pre">db.collection.getPlanCache().clear()</span></code>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="PlanCache.clearPlansByQuery.html#PlanCache.clearPlansByQuery" title="PlanCache.clearPlansByQuery()"><a class="dashingAutolink" name="autolink-4621"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.clearPlansByQuery%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clearPlansByQuery()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="PlanCache.clearPlansByQuery.html#PlanCache.clearPlansByQuery" title="PlanCache.clearPlansByQuery()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clearPlansByQuery()</span></code></a></td>
 <td>Clears the cached query plans for the specified query shape.
 Accessible through the plan cache object of a specific collection,
 i.e. <code class="docutils literal"><span class="pre">db.collection.getPlanCache().clearPlansByQuery()</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="PlanCache.getPlansByQuery.html#PlanCache.getPlansByQuery" title="PlanCache.getPlansByQuery()"><a class="dashingAutolink" name="autolink-4622"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.getPlansByQuery%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.getPlansByQuery()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="PlanCache.getPlansByQuery.html#PlanCache.getPlansByQuery" title="PlanCache.getPlansByQuery()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.getPlansByQuery()</span></code></a></td>
 <td>Displays the cached query plans for the specified query shape.
 Accessible through the plan cache object of a specific collection,
 i.e. <code class="docutils literal"><span class="pre">db.collection.getPlanCache().getPlansByQuery()</span></code>.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="PlanCache.help.html#PlanCache.help" title="PlanCache.help()"><a class="dashingAutolink" name="autolink-4623"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.help%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.help()</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="PlanCache.help.html#PlanCache.help" title="PlanCache.help()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.help()</span></code></a></td>
 <td>Displays the methods available for a collection&rsquo;s query plan cache.
 Accessible through the plan cache object of a specific collection,
 i.e. <code class="docutils literal"><span class="pre">db.collection.getPlanCache().help()</span></code>.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="PlanCache.listQueryShapes.html#PlanCache.listQueryShapes" title="PlanCache.listQueryShapes()"><a class="dashingAutolink" name="autolink-4624"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.listQueryShapes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.listQueryShapes()</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="PlanCache.listQueryShapes.html#PlanCache.listQueryShapes" title="PlanCache.listQueryShapes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.listQueryShapes()</span></code></a></td>
 <td>Displays the query shapes for which cached query plans exist.
 Accessible through the plan cache object of a specific collection,
 i.e. <code class="docutils literal"><span class="pre">db.collection.getPlanCache().listQueryShapes()</span></code>.</td>

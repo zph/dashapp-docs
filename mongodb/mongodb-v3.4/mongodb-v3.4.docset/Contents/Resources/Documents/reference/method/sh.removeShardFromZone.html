@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4971"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.removeShardFromZone%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.removeShardFromZone() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2134"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.removeShardFromZone%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.removeShardFromZone() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/sh.removeShardFromZone/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="sh-removeshardfromzone">
-<a class="dashingAutolink" name="autolink-4972"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/sh.removeShardFromZone%28%29%C2%B6"></a><h1>sh.removeShardFromZone()<a class="headerlink" href="#sh-removeshardfromzone" title="Permalink to this headline">&para;</a></h1>
+<h1>sh.removeShardFromZone()<a class="headerlink" href="#sh-removeshardfromzone" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="sh.removeShardFromZone">
-<code class="descclassname">sh.</code><code class="descname">removeShardFromZone</code><span class="sig-paren">(</span><em>shard</em>, <em>zone</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4970"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.removeShardFromZone" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">sh.</code><code class="descname">removeShardFromZone</code><span class="sig-paren">(</span><em>shard</em>, <em>zone</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2133"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.removeShardFromZone" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -194,21 +194,21 @@
 </tr>
 </tbody>
 </table>
-<p>Only issue <a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4962"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> when connected to a
+<p>Only issue <a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> when connected to a
 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4963"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> does not remove ranges associated with the
+<p><a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> does not remove ranges associated with the
 zone.</p>
 <p>To completely remove a zone from the cluster, you must run
-<a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4964"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> on each shard associated with the zone.</p>
+<a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> on each shard associated with the zone.</p>
 <p>If the shard specified is the last shard associated with the zone, you
 must ensure there are no remaining ranges associated with the zone. Use
 <a class="reference internal" href="../command/updateZoneKeyRange.html#dbcmd.updateZoneKeyRange" title="updateZoneKeyRange"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">updateZoneKeyRange</span></code></a> to remove any existing ranges associated to
-the zone before running <a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4965"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a>.</p>
+the zone before running <a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a>.</p>
 <p>See the <a class="reference internal" href="../../core/zone-sharding.html#zone-sharding"><span class="std std-ref">zone</span></a> manual page for more information on zones
 in sharded clusters.</p>
 <div class="section" id="balancer">
@@ -230,7 +230,7 @@ database</li>
 database</li>
 </ul>
 <p>The <a class="reference internal" href="../built-in-roles.html#clusterAdmin" title="clusterAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterAdmin</span></code></a> or <a class="reference internal" href="../built-in-roles.html#clusterManager" title="clusterManager"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterManager</span></code></a> built-in roles have
-the appropriate permissions for issuing <a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4966"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a>.
+the appropriate permissions for issuing <a class="reference internal" href="#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a>.
 See the <a class="reference internal" href="../../core/authorization.html#authorization"><span class="std std-ref">Role-Based Access Control</span></a> manual page for more
 information.</p>
 </div>
@@ -250,9 +250,9 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><a class="dashingAutolink" name="autolink-4967"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShardToZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a>,
-<a class="reference internal" href="sh.updateZoneKeyRange.html#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-4968"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a>,
-<a class="reference internal" href="sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-4969"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a></p>
+<p class="last"><a class="reference internal" href="sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a>,
+<a class="reference internal" href="sh.updateZoneKeyRange.html#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a>,
+<a class="reference internal" href="sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a></p>
 </div>
 </div>
 </div>

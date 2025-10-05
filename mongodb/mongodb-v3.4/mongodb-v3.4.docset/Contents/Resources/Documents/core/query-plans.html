@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-404"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Query%20Plans%20%E2%80%94%20MongoDB%20Manual"></a><title>Query Plans &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-209"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Query%20Plans%20%E2%80%94%20MongoDB%20Manual"></a><title>Query Plans &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/query-plans/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="query-plans">
-<span id="query-plans-query-optimization"></span><span id="read-operations-query-optimization"></span><span id="index-0"></span><a class="dashingAutolink" name="autolink-405"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Query%20Plans%C2%B6"></a><h1>Query Plans<a class="headerlink" href="#query-plans" title="Permalink to this headline">&para;</a></h1>
+<span id="query-plans-query-optimization"></span><span id="read-operations-query-optimization"></span><span id="index-0"></span><h1>Query Plans<a class="headerlink" href="#query-plans" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -180,15 +180,15 @@ executes the plan and returns the result documents for the query.</p>
 <img alt="Diagram of query planner logic" src="../_images/query-planner-diagram.bakedsvg.svg"/></div>
 <p>See <a class="reference internal" href="#query-plans-plan-cache-flushes"><span class="std std-ref">Plan Cache Flushes</span></a> for additional scenarios that trigger
 changes to the plan cache.</p>
-<p>You can use the <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-406"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> or the
-<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-407"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method to view statistics about the query
+<p>You can use the <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> or the
+<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method to view statistics about the query
 plan for a given query. This information can help as you develop
 <a class="reference internal" href="../applications/indexes.html"><span class="doc">indexing strategies</span></a>.</p>
-<p><a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-408"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> provides information on the execution
-of other operations, such as <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-409"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>. See
-<a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-410"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> for details.</p>
+<p><a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> provides information on the execution
+of other operations, such as <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>. See
+<a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> for details.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.6: </span><a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-411"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> operations no longer read from or write
+<p><span class="versionmodified">Changed in version 2.6: </span><a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a> operations no longer read from or write
 to the query planner cache.</p>
 </div>
 <div class="section" id="plan-cache-flushes">
@@ -197,9 +197,9 @@ to the query planner cache.</p>
 <p>The plan cache does not persist if a <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> restarts or shuts down.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 2.6: </span>MongoDB provides <a class="reference internal" href="../reference/method/js-plan-cache.html"><span class="doc">Query Plan Cache Methods</span></a> to view and modify
-the cached query plans. The <a class="reference internal" href="../reference/method/PlanCache.clear.html#PlanCache.clear" title="PlanCache.clear()"><a class="dashingAutolink" name="autolink-412"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.clear%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clear()</span></code></a> method flushes the
+the cached query plans. The <a class="reference internal" href="../reference/method/PlanCache.clear.html#PlanCache.clear" title="PlanCache.clear()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clear()</span></code></a> method flushes the
 entire plan cache. Users can also clear particular plan cache entries using
-<a class="reference internal" href="../reference/method/PlanCache.clearPlansByQuery.html#PlanCache.clearPlansByQuery" title="PlanCache.clearPlansByQuery()"><a class="dashingAutolink" name="autolink-413"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/PlanCache.clearPlansByQuery%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clearPlansByQuery()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/PlanCache.clearPlansByQuery.html#PlanCache.clearPlansByQuery" title="PlanCache.clearPlansByQuery()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">PlanCache.clearPlansByQuery()</span></code></a>.</p>
 </div>
 </div>
 <div class="section" id="index-filters">
@@ -213,10 +213,10 @@ sort, and projection specifications. If an index filter exists for a
 given query shape, the optimizer only considers those indexes
 specified in the filter.</p>
 <p>When an index filter exists for the query shape, MongoDB ignores the
-<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-414"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>. To see whether MongoDB applied an index
+<a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a>. To see whether MongoDB applied an index
 filter for a query shape, check the <a class="reference internal" href="../reference/explain-results.html#explain.queryPlanner.indexFilterSet" title="explain.queryPlanner.indexFilterSet"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">indexFilterSet</span></code></a>
-field of either the <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-415"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> or the
-<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-416"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method.</p>
+field of either the <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> or the
+<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method.</p>
 <p>Index filters only affects which indexes the optimizer evaluates; the
 optimizer may still select the collection scan as the winning plan for
 a given query shape.</p>
@@ -224,7 +224,7 @@ a given query shape.</p>
 persist after shutdown. MongoDB also provides a command to manually remove
 filters.</p>
 <p>Because index filters override the expected behavior of the optimizer
-as well as the <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-417"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method, use index filters
+as well as the <a class="reference internal" href="../reference/method/cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> method, use index filters
 sparingly.</p>
 <p>See <a class="reference internal" href="../reference/command/planCacheListFilters.html#dbcmd.planCacheListFilters" title="planCacheListFilters"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">planCacheListFilters</span></code></a>,
 <a class="reference internal" href="../reference/command/planCacheClearFilters.html#dbcmd.planCacheClearFilters" title="planCacheClearFilters"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">planCacheClearFilters</span></code></a>, and <a class="reference internal" href="../reference/command/planCacheSetFilter.html#dbcmd.planCacheSetFilter" title="planCacheSetFilter"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">planCacheSetFilter</span></code></a>.</p>

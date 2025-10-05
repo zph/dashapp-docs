@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-6048"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24near%20%E2%80%94%20MongoDB%20Manual"></a><title>$near &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2533"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24near%20%E2%80%94%20MongoDB%20Manual"></a><title>$near &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/query/near/"/><meta name="robots" content="index"/>
@@ -155,7 +155,7 @@
   </div>
                 
                   <div class="section" id="near">
-<a class="dashingAutolink" name="autolink-6049"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24near%C2%B6"></a><h1>$near<a class="headerlink" href="#near" title="Permalink to this headline">&para;</a></h1>
+<h1>$near<a class="headerlink" href="#near" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,7 +168,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="query">
 <dt id="op._S_near">
-<code class="descname">$near</code><a class="dashingAutolink" name="autolink-6053"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_near" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$near</code><a class="dashingAutolink" name="autolink-2532"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_near" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies a point for which a <a class="reference internal" href="../../glossary.html#term-geospatial"><span class="xref std std-term">geospatial</span></a> query returns the
 documents from nearest to farthest. The <a class="reference internal" href="#op._S_near" title="$near"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$near</span></code></a> operator can
 specify either a <a class="reference internal" href="../../glossary.html#term-geojson"><span class="xref std std-term">GeoJSON</span></a> point or legacy coordinate point.</p>
@@ -267,10 +267,10 @@ or the <a class="reference internal" href="../aggregation/geoNear.html#pipe._S_g
 <div class="section" id="sort-operation">
 <h3>Sort Operation<a class="headerlink" href="#sort-operation" title="Permalink to this headline">&para;</a></h3>
 <p><a class="reference internal" href="#op._S_near" title="$near"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$near</span></code></a> sorts documents by distance. If you also include a
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-6050"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> for the query, <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-6051"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> for the query, <a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>
 re-orders the matching documents, effectively overriding the sort
 operation already performed by <a class="reference internal" href="#op._S_near" title="$near"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$near</span></code></a>. When using
-<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-6052"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> with geospatial queries, consider using
+<a class="reference internal" href="../../method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> with geospatial queries, consider using
 <a class="reference internal" href="geoWithin.html#op._S_geoWithin" title="$geoWithin"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoWithin</span></code></a> operator, which does not sort documents, instead of
 <a class="reference internal" href="#op._S_near" title="$near"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$near</span></code></a>.</p>
 <div class="admonition seealso">

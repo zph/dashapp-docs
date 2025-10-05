@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8404"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Database%20Profiler%20%E2%80%94%20MongoDB%20Manual"></a><title>Database Profiler &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3675"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Database%20Profiler%20%E2%80%94%20MongoDB%20Manual"></a><title>Database Profiler &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/manage-the-database-profiler/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="database-profiler">
-<span id="id1"></span><a class="dashingAutolink" name="autolink-8405"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Database%20Profiler%C2%B6"></a><h1>Database Profiler<a class="headerlink" href="#database-profiler" title="Permalink to this headline">&para;</a></h1>
+<span id="id1"></span><h1>Database Profiler<a class="headerlink" href="#database-profiler" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -178,7 +178,7 @@ following resources:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/database-profiler.html"><span class="doc">Database Profiler Output</span></a></li>
 <li><a class="reference internal" href="../reference/command/profile.html"><span class="doc">Profile Command</span></a></li>
-<li><a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-8406"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a></li>
 </ul>
 <div class="section" id="profiling-levels">
 <span id="database-profiling-level"></span><span id="database-profiling-levels"></span><h2>Profiling Levels<a class="headerlink" href="#profiling-levels" title="Permalink to this headline">&para;</a></h2>
@@ -210,7 +210,7 @@ within your application.</p>
 collection. MongoDB creates the <a class="reference internal" href="../reference/system-collections.html#&lt;database&gt;.system.profile" title="&lt;database&gt;.system.profile"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">system.profile</span></code></a> collection in a database after you
 enable profiling for that database.</p>
 <p>To enable profiling and set the profiling level, use the
-<a class="reference internal" href="../reference/method/db.setProfilingLevel.html#db.setProfilingLevel" title="db.setProfilingLevel()"><a class="dashingAutolink" name="autolink-8407"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setProfilingLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setProfilingLevel()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell,
+<a class="reference internal" href="../reference/method/db.setProfilingLevel.html#db.setProfilingLevel" title="db.setProfilingLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setProfilingLevel()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell,
 passing the profiling level as a parameter. For example, to enable profiling
 for all database operations, consider the following operation in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell:</p>
@@ -251,7 +251,7 @@ threshold to the highest useful value.</p>
 <p>By default the slow operation threshold is 100 milliseconds. Databases with a profiling level
 of <code class="docutils literal"><span class="pre">1</span></code> will log operations slower than 100 milliseconds.</p>
 <p>To change the threshold, pass two parameters to the
-<a class="reference internal" href="../reference/method/db.setProfilingLevel.html#db.setProfilingLevel" title="db.setProfilingLevel()"><a class="dashingAutolink" name="autolink-8408"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setProfilingLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setProfilingLevel()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell. The first parameter sets the
+<a class="reference internal" href="../reference/method/db.setProfilingLevel.html#db.setProfilingLevel" title="db.setProfilingLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setProfilingLevel()</span></code></a> helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell. The first parameter sets the
 profiling level for the current database, and the second sets the default
 slow operation threshold <em>for the entire</em> <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
 <em>instance</em>.</p>
@@ -300,7 +300,7 @@ will log operations that take longer than the threshold if the
 profiling level is <code class="docutils literal"><span class="pre">1</span></code>. This document returns the profiling level in
 the <code class="docutils literal"><span class="pre">was</span></code> field. For an explanation of profiling levels, see
 <a class="reference internal" href="#database-profiling-levels"><span class="std std-ref">Profiling Levels</span></a>.</p>
-<p>To return only the profiling level, use the <a class="reference internal" href="../reference/method/db.getProfilingLevel.html#db.getProfilingLevel" title="db.getProfilingLevel()"><a class="dashingAutolink" name="autolink-8409"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getProfilingLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getProfilingLevel()</span></code></a>
+<p>To return only the profiling level, use the <a class="reference internal" href="../reference/method/db.getProfilingLevel.html#db.getProfilingLevel" title="db.getProfilingLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getProfilingLevel()</span></code></a>
 helper in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> as in the following:</p>
 <div class="button-code-block">
 <div class="button-row">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4951"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.removeRangeFromZone%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.removeRangeFromZone() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2132"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.removeRangeFromZone%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.removeRangeFromZone() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/sh.removeRangeFromZone/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="sh-removerangefromzone">
-<a class="dashingAutolink" name="autolink-4952"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/sh.removeRangeFromZone%28%29%C2%B6"></a><h1>sh.removeRangeFromZone()<a class="headerlink" href="#sh-removerangefromzone" title="Permalink to this headline">&para;</a></h1>
+<h1>sh.removeRangeFromZone()<a class="headerlink" href="#sh-removerangefromzone" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,13 +166,13 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="sh.removeRangeFromZone">
-<code class="descclassname">sh.</code><code class="descname">removeRangeFromZone</code><span class="sig-paren">(</span><em>namespace</em>, <em>minimum</em>, <em>maximum</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4961"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.removeRangeFromZone" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">sh.</code><code class="descname">removeRangeFromZone</code><span class="sig-paren">(</span><em>namespace</em>, <em>minimum</em>, <em>maximum</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2131"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.removeRangeFromZone" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
 <p>Removes the association between a range of shard key values and a
 <a class="reference internal" href="../glossary.html#term-zone"><span class="xref std std-term">zone</span></a>.</p>
-<p><a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-4953"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> takes the following arguments:</p>
+<p><a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> takes the following arguments:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -208,18 +208,18 @@ The value must be of the same BSON type or types as the shard key.</p>
 </tr>
 </tbody>
 </table>
-<p>Use <a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-4954"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> to remove the association between
+<p>Use <a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> to remove the association between
 unused, out of date, or conflicting ranges and a zone.</p>
 <p>If no range matches the minimum and maximum bounds passed to
-<a class="reference internal" href="sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4955"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">removeShardFromZone()</span></code></a>, nothing is removed.</p>
-<p>Only issue <a class="reference internal" href="sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><a class="dashingAutolink" name="autolink-4956"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> when connected to a
+<a class="reference internal" href="sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">removeShardFromZone()</span></code></a>, nothing is removed.</p>
+<p>Only issue <a class="reference internal" href="sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> when connected to a
 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4957"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> does not remove the zone associated to the
+<p><a class="reference internal" href="sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> does not remove the zone associated to the
 specified range.</p>
 <p>See the <a class="reference internal" href="../../core/zone-sharding.html#zone-sharding"><span class="std std-ref">zone</span></a> manual page for more information on zones
 in sharded clusters.</p>
@@ -247,7 +247,7 @@ database</li>
 database</li>
 </ul>
 <p>The <a class="reference internal" href="../built-in-roles.html#clusterAdmin" title="clusterAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterAdmin</span></code></a> or <a class="reference internal" href="../built-in-roles.html#clusterManager" title="clusterManager"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterManager</span></code></a> built-in roles have
-the appropriate permissions for issuing <a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-4958"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a>.
+the appropriate permissions for issuing <a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a>.
 See the documentation page for <a class="reference internal" href="../../core/authorization.html#authorization"><span class="std std-ref">Role-Based Access Control</span></a> for more information.</p>
 </div>
 </div>
@@ -290,7 +290,7 @@ copy</a>
 </div>
 <p>While the range of <code class="docutils literal"><span class="pre">{</span> <span class="pre">a</span> <span class="pre">:</span> <span class="pre">0</span> <span class="pre">}</span></code> and <code class="docutils literal"><span class="pre">{</span> <span class="pre">a</span> <span class="pre">:</span> <span class="pre">10</span> <span class="pre">}</span></code> encompasses the existing
 range, it is not an exact match and therefore
-<a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-4959"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> does not remove anything.</p>
+<a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> does not remove anything.</p>
 <div class="section" id="compound-shard-key">
 <h3>Compound Shard Key<a class="headerlink" href="#compound-shard-key" title="Permalink to this headline">&para;</a></h3>
 <p>Given a sharded collection <code class="docutils literal"><span class="pre">exampledb.collection</span></code> with a shard key of
@@ -311,7 +311,7 @@ copy</a>
 <p>Given the previous example, if there was an existing range with a lower bound
 of <code class="docutils literal"><span class="pre">{</span> <span class="pre">a</span> <span class="pre">:</span> <span class="pre">1,</span> <span class="pre">b</span> <span class="pre">:</span> <span class="pre">5</span> <span class="pre">}</span></code> and an upper bound of <code class="docutils literal"><span class="pre">{</span> <span class="pre">a</span> <span class="pre">:</span> <span class="pre">10,</span> <span class="pre">b</span> <span class="pre">:</span> <span class="pre">1</span> <span class="pre">}</span></code>, the
 operation would <em>not</em> remove that range, as it is not an exact match of the
-minimum and maximum passed to <a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-4960"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a>.</p>
+minimum and maximum passed to <a class="reference internal" href="#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a>.</p>
 </div>
 </div>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8121"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Deploy%20Replica%20Set%20With%20Keyfile%20Access%20Control%20%E2%80%94%20MongoDB%20Manual"></a><title>Deploy Replica Set With Keyfile Access Control &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3629"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Deploy%20Replica%20Set%20With%20Keyfile%20Access%20Control%20%E2%80%94%20MongoDB%20Manual"></a><title>Deploy Replica Set With Keyfile Access Control &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set-with-keyfile-access-control/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="deploy-replica-set-with-keyfile-access-control">
-<span id="deploy-repl-set-with-auth"></span><span id="deploy-repl-set-with-keyfile"></span><a class="dashingAutolink" name="autolink-8122"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Deploy%20Replica%20Set%20With%20Keyfile%20Access%20Control%C2%B6"></a><h1>Deploy Replica Set With Keyfile Access Control<a class="headerlink" href="#deploy-replica-set-with-keyfile-access-control" title="Permalink to this headline">&para;</a></h1>
+<span id="deploy-repl-set-with-auth"></span><span id="deploy-repl-set-with-keyfile"></span><h1>Deploy Replica Set With Keyfile Access Control<a class="headerlink" href="#deploy-replica-set-with-keyfile-access-control" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -333,7 +333,7 @@ creation of the first user.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="initiate-the-replica-set">
 <h3>Initiate the replica set.<a class="headerlink" href="#initiate-the-replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8123"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> method initiates the replica set and can
+<p>The <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> method initiates the replica set and can
 take an optional <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set configuration document</span></a>.</p>
 <p>In the <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set configuration document</span></a>, include:</p>
 <ul class="simple">
@@ -363,9 +363,9 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p><a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8124"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> triggers an <a class="reference internal" href="../reference/glossary.html#term-election"><span class="xref std std-term">election</span></a> and
+<p><a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> triggers an <a class="reference internal" href="../reference/glossary.html#term-election"><span class="xref std std-term">election</span></a> and
 elects one of the members to be the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>.</p>
-<p>Connect to the primary before continuing. Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8125"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to
+<p>Connect to the primary before continuing. Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to
 locate the primary member.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">6</div></div><div class="section" id="create-the-user-administrator">
@@ -382,7 +382,7 @@ once the localhost exception closes you may be unable to create
 or modify users with new privileges, and therefore unable to
 access necessary operations.</p>
 </div>
-<p>Add a user using the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-8126"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method. The user should
+<p>Add a user using the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method. The user should
 have at minimum the <a class="reference internal" href="../reference/built-in-roles.html#userAdminAnyDatabase" title="userAdminAnyDatabase"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">userAdminAnyDatabase</span></code></a> role on the
 <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
 <p>You must be connected to the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> to create users.</p>
@@ -415,7 +415,7 @@ related to database administration operations.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">7</div></div><div class="section" id="authenticate-as-the-user-administrator">
 <h3>Authenticate as the user administrator.<a class="headerlink" href="#authenticate-as-the-user-administrator" title="Permalink to this headline">&para;</a></h3>
 <p>Authenticate to the <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
-<p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8127"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> to
+<p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> to
 authenticate. For example, the following authenticate as the user
 administrator <code class="docutils literal"><span class="pre">fred</span></code>:</p>
 <div class="button-code-block">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4825"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rs.stepDown%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>rs.stepDown() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2096"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rs.stepDown%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>rs.stepDown() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/rs.stepDown/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="rs-stepdown">
-<a class="dashingAutolink" name="autolink-4817"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/rs.stepDown%28%29%C2%B6"></a><h1>rs.stepDown()<a class="headerlink" href="#rs-stepdown" title="Permalink to this headline">&para;</a></h1>
+<h1>rs.stepDown()<a class="headerlink" href="#rs-stepdown" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,7 +165,7 @@
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="rs.stepDown">
-<code class="descclassname">rs.</code><code class="descname">stepDown</code><span class="sig-paren">(</span><em>stepDownSecs</em>, <em>secondaryCatchUpPeriodSecs</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4824"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rs.stepDown" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rs.</code><code class="descname">stepDown</code><span class="sig-paren">(</span><em>stepDownSecs</em>, <em>secondaryCatchUpPeriodSecs</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2095"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rs.stepDown" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Triggers the <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a> of the replica set to become a
 <a class="reference internal" href="../glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a>.  This in turn triggers an <a class="reference internal" href="../../core/replica-set-elections.html#replica-set-election-internals"><span class="std std-ref">election for primary</span></a>. The method steps down the primary
 for a specified number of seconds; during this period, the stepdown
@@ -175,7 +175,7 @@ with the primary, waiting up to 10 seconds, by default, for a secondary to catch
 up.</p>
 <p>The method is only valid against the primary and will error if run
 on a non-primary member.</p>
-<p>The <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-4818"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method has the following parameters:</p>
+<p>The <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method has the following parameters:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -209,7 +209,7 @@ overrides the default wait time of <code class="docutils literal"><span class="p
 </tr>
 </tbody>
 </table>
-<p><a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-4819"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> provides a wrapper around the
+<p><a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> provides a wrapper around the
 command <a class="reference internal" href="../command/replSetStepDown.html#dbcmd.replSetStepDown" title="replSetStepDown"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetStepDown</span></code></a>.</p>
 </dd></dl>
 
@@ -219,17 +219,17 @@ command <a class="reference internal" href="../command/replSetStepDown.html#dbcm
 <div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
 </div>
-<p>Before stepping down, <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-4820"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> will attempt to
+<p>Before stepping down, <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> will attempt to
 terminate long running user operations that would block the primary
 from stepping down, such as an index build, a write operation or a
 map-reduce job.</p>
-<p>To avoid rollbacks, <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-4821"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>, by default, only
+<p>To avoid rollbacks, <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>, by default, only
 steps down the primary if an electable secondary is completely caught up
 with the primary. The command will wait up to either 10 seconds or the
 <code class="docutils literal"><span class="pre">secondaryCatchUpPeriodSecs</span></code> for a secondary to catch up.</p>
 <p>If no electable secondary meets this criterion by the waiting period,
 the primary does not step down and the method throws an exception.</p>
-<p>Upon successful stepdown, <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-4822"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> forces all
+<p>Upon successful stepdown, <a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> forces all
 clients currently connected to the database to disconnect. This helps
 ensure that the clients maintain an accurate view of the replica set.</p>
 <p>Because the disconnect includes the connection used to run the command,
@@ -239,7 +239,7 @@ the command if it errors. When running the command in a script, the
 script should account for this behavior.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last"><a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-4823"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> blocks all writes to the primary while it
+<p class="last"><a class="reference internal" href="#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> blocks all writes to the primary while it
 runs.</p>
 </div>
 </div>

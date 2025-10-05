@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7266"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/SQL%20to%20MongoDB%20Mapping%20Chart%20%E2%80%94%20MongoDB%20Manual"></a><title>SQL to MongoDB Mapping Chart &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3458"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/SQL%20to%20MongoDB%20Mapping%20Chart%20%E2%80%94%20MongoDB%20Manual"></a><title>SQL to MongoDB Mapping Chart &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/sql-comparison/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="sql-to-mongodb-mapping-chart">
-<a class="dashingAutolink" name="autolink-7267"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/SQL%20to%20MongoDB%20Mapping%20Chart%C2%B6"></a><h1>SQL to MongoDB Mapping Chart<a class="headerlink" href="#sql-to-mongodb-mapping-chart" title="Permalink to this headline">&para;</a></h1>
+<h1>SQL to MongoDB Mapping Chart<a class="headerlink" href="#sql-to-mongodb-mapping-chart" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -306,8 +306,8 @@ table-level actions and the corresponding MongoDB statements.</p>
 </div>
 </div>
 </td>
-<td><p class="first">Implicitly created on first <a class="reference internal" href="method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><a class="dashingAutolink" name="autolink-7268"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertOne()</span></code></a> or
-<a class="reference internal" href="method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-7269"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> operation. The primary key
+<td><p class="first">Implicitly created on first <a class="reference internal" href="method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertOne()</span></code></a> or
+<a class="reference internal" href="method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> operation. The primary key
 <code class="docutils literal"><span class="pre">_id</span></code> is automatically added if <code class="docutils literal"><span class="pre">_id</span></code> field is not specified.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -342,7 +342,7 @@ table-level actions and the corresponding MongoDB statements.</p>
 <td><p class="first">Collections do not describe or enforce the structure of its
 documents; i.e. there is no structural alteration at the
 collection level.</p>
-<p>However, at the document level, <a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-7270"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateMany()</span></code></a>
+<p>However, at the document level, <a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateMany()</span></code></a>
 operations can add fields to existing documents using the
 <a class="reference internal" href="operator/update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a> operator.</p>
 <div class="last button-code-block">
@@ -369,7 +369,7 @@ operations can add fields to existing documents using the
 <td><p class="first">Collections do not describe or enforce the structure of its
 documents; i.e. there is no structural alteration at the collection
 level.</p>
-<p>However, at the document level, <a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-7271"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateMany()</span></code></a>
+<p>However, at the document level, <a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateMany()</span></code></a>
 operations can remove fields from documents using the
 <a class="reference internal" href="operator/update/unset.html#up._S_unset" title="$unset"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$unset</span></code></a> operator.</p>
 <div class="last button-code-block">
@@ -449,15 +449,15 @@ operations can remove fields from documents using the
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><ul class="first last simple">
-<li><a class="reference internal" href="method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><a class="dashingAutolink" name="autolink-7272"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertOne()</span></code></a></li>
-<li><a class="reference internal" href="method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-7273"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a></li>
-<li><a class="reference internal" href="method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7274"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertOne()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a></li>
+<li><a class="reference internal" href="method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a></li>
 </ul>
 </td>
 <td><ul class="first last simple">
-<li><a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-7275"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a></li>
-<li><a class="reference internal" href="method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-7276"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a></li>
-<li><a class="reference internal" href="method/db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-7277"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.createIndex()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a></li>
 </ul>
 </td>
 <td><ul class="first last simple">
@@ -519,12 +519,12 @@ inserting records into tables and the corresponding MongoDB statements.</p>
 </tr>
 </tbody>
 </table>
-<p>For more information, see <a class="reference internal" href="method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><a class="dashingAutolink" name="autolink-7278"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertOne()</span></code></a>.</p>
+<p>For more information, see <a class="reference internal" href="method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertOne()</span></code></a>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
 <li><a class="reference internal" href="../tutorial/insert-documents.html"><span class="doc">Insert Documents</span></a></li>
-<li><a class="reference internal" href="method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-7279"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a></li>
 <li><a class="reference internal" href="../core/databases-and-collections.html"><span class="doc">Databases and Collections</span></a></li>
 <li><a class="reference internal" href="../core/document.html"><span class="doc">Documents</span></a></li>
 </ul>
@@ -536,11 +536,11 @@ inserting records into tables and the corresponding MongoDB statements.</p>
 reading records from tables and the corresponding MongoDB statements.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-7280"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method always includes the <code class="docutils literal"><span class="pre">_id</span></code>
+<p class="last">The <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method always includes the <code class="docutils literal"><span class="pre">_id</span></code>
 field in the returned documents unless specifically excluded through
 <a class="reference internal" href="../tutorial/project-fields-from-query-results.html#projection"><span class="std std-ref">projection</span></a>. Some of the SQL queries below may include an
 <code class="docutils literal"><span class="pre">_id</span></code> field to reflect this, even if the field is not included in the
-corresponding <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-7281"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> query.</p>
+corresponding <a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> query.</p>
 </div>
 <table border="1" class="border-table docutils">
 <colgroup>
@@ -1063,14 +1063,14 @@ corresponding <a class="reference internal" href="method/db.collection.find.html
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><ul class="first last simple">
-<li><a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-7282"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a></li>
-<li><a class="reference internal" href="method/db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><a class="dashingAutolink" name="autolink-7283"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.distinct%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.distinct()</span></code></a></li>
-<li><a class="reference internal" href="method/db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-7284"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOne()</span></code></a></li>
-<li><a class="reference internal" href="method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-7285"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a></li>
-<li><a class="reference internal" href="method/cursor.skip.html#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-7286"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a></li>
-<li><a class="reference internal" href="method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-7287"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a></li>
-<li><a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-7288"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a></li>
-<li><a class="reference internal" href="method/cursor.count.html#cursor.count" title="cursor.count()"><a class="dashingAutolink" name="autolink-7289"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.distinct()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOne()</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.skip.html#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">explain()</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a></li>
+<li><a class="reference internal" href="method/cursor.count.html#cursor.count" title="cursor.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a></li>
 </ul>
 </td>
 <td><ul class="first last simple">
@@ -1165,7 +1165,7 @@ statements.</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td><ul class="first last simple">
-<li><a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-7290"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a></li>
 <li><a class="reference internal" href="operator/query/gt.html#op._S_gt" title="$gt"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$gt</span></code></a></li>
 <li><a class="reference internal" href="operator/update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a></li>
 <li><a class="reference internal" href="operator/update/inc.html#up._S_inc" title="$inc"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$inc</span></code></a></li>
@@ -1179,8 +1179,8 @@ statements.</p>
 <ul class="last simple">
 <li><a class="reference internal" href="../tutorial/update-documents.html"><span class="doc">Update Documents</span></a></li>
 <li><a class="reference internal" href="operator/update.html"><span class="doc">Update Operators</span></a></li>
-<li><a class="reference internal" href="method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><a class="dashingAutolink" name="autolink-7291"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a></li>
-<li><a class="reference internal" href="method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><a class="dashingAutolink" name="autolink-7292"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.replaceOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.replaceOne()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.replaceOne()</span></code></a></li>
 </ul>
 </div>
 </div>
@@ -1236,12 +1236,12 @@ deleting records from tables and the corresponding MongoDB statements.</p>
 </tr>
 </tbody>
 </table>
-<p>For more information, see <a class="reference internal" href="method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-7293"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a>.</p>
+<p>For more information, see <a class="reference internal" href="method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
 <li><a class="reference internal" href="../tutorial/remove-documents.html"><span class="doc">Delete Documents</span></a></li>
-<li><a class="reference internal" href="method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-7294"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a></li>
+<li><a class="reference internal" href="method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a></li>
 </ul>
 </div>
 </div>

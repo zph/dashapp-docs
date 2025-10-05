@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4087"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.getCollectionInfos%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.getCollectionInfos() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1928"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.getCollectionInfos%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.getCollectionInfos() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.getCollectionInfos/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-getcollectioninfos">
-<a class="dashingAutolink" name="autolink-4088"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.getCollectionInfos%28%29%C2%B6"></a><h1>db.getCollectionInfos()<a class="headerlink" href="#db-getcollectioninfos" title="Permalink to this headline">&para;</a></h1>
+<h1>db.getCollectionInfos()<a class="headerlink" href="#db-getcollectioninfos" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,20 +165,20 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.getCollectionInfos">
-<code class="descclassname">db.</code><code class="descname">getCollectionInfos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4092"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.getCollectionInfos" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">getCollectionInfos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1927"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.getCollectionInfos" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0.</span></p>
 </div>
 <p>Returns an array of documents with collection or <a class="reference internal" href="../../core/views.html"><span class="doc">view</span></a> information, such as  name and options, for
 the current database.</p>
-<p>The <a class="reference internal" href="#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-4089"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> helper wraps the
+<p>The <a class="reference internal" href="#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> helper wraps the
 <a class="reference internal" href="../command/listCollections.html#dbcmd.listCollections" title="listCollections"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">listCollections</span></code></a> command.</p>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 3.2: </span>MongoDB 3.2 added support for <a class="reference internal" href="../../core/document-validation.html"><span class="doc">document validation</span></a>. <a class="reference internal" href="#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-4090"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
+<p><span class="versionmodified">Changed in version 3.2: </span>MongoDB 3.2 added support for <a class="reference internal" href="../../core/document-validation.html"><span class="doc">document validation</span></a>. <a class="reference internal" href="#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a>
 includes document validation information in the <code class="docutils literal"><span class="pre">options</span></code>
 document.</p>
 </div>
-<p><a class="reference internal" href="#db.getCollectionInfos" title="db.getCollectionInfos()"><a class="dashingAutolink" name="autolink-4091"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionInfos%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> does not return <code class="docutils literal"><span class="pre">validationLevel</span></code>
+<p><a class="reference internal" href="#db.getCollectionInfos" title="db.getCollectionInfos()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionInfos()</span></code></a> does not return <code class="docutils literal"><span class="pre">validationLevel</span></code>
 and <code class="docutils literal"><span class="pre">validationAction</span></code> unless they are explicitly set.</p>
 </dd></dl>
 

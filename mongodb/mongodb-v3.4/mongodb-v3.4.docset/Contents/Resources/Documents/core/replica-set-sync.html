@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-481"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Data%20Synchronization%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Data Synchronization &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-234"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Data%20Synchronization%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Data Synchronization &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/replica-set-sync/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="replica-set-data-synchronization">
-<span id="replica-set-sync"></span><a class="dashingAutolink" name="autolink-482"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Replica%20Set%20Data%20Synchronization%C2%B6"></a><h1>Replica Set Data Synchronization<a class="headerlink" href="#replica-set-data-synchronization" title="Permalink to this headline">&para;</a></h1>
+<span id="replica-set-sync"></span><h1>Replica Set Data Synchronization<a class="headerlink" href="#replica-set-data-synchronization" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -216,10 +216,10 @@ avoid data corruption (See <a class="reference external" href="https://jira.mong
 rename collections include:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a> command and
-<a class="reference internal" href="../reference/method/db.collection.renameCollection.html#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-483"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method.</li>
-<li>Aggregation (<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-484"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method or
+<a class="reference internal" href="../reference/method/db.collection.renameCollection.html#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method.</li>
+<li>Aggregation (<a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method or
 <a class="reference internal" href="../reference/command/aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a> command) with the <a class="reference internal" href="../reference/operator/aggregation/out.html#pipe._S_out" title="$out"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$out</span></code></a> stage.</li>
-<li>Map-reduce (<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-485"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method or
+<li>Map-reduce (<a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> method or
 <a class="reference internal" href="../reference/command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> command) with the <code class="docutils literal"><span class="pre">out</span></code> option.</li>
 <li><a class="reference internal" href="../reference/command/convertToCapped.html#dbcmd.convertToCapped" title="convertToCapped"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">convertToCapped</span></code></a> command.</li>
 </ul>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7852"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Adjust%20Priority%20for%20Replica%20Set%20Member%20%E2%80%94%20MongoDB%20Manual"></a><title>Adjust Priority for Replica Set Member &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3573"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Adjust%20Priority%20for%20Replica%20Set%20Member%20%E2%80%94%20MongoDB%20Manual"></a><title>Adjust Priority for Replica Set Member &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/adjust-replica-set-member-priority/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="adjust-priority-for-replica-set-member">
-<a class="dashingAutolink" name="autolink-7853"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Adjust%20Priority%20for%20Replica%20Set%20Member%C2%B6"></a><h1>Adjust Priority for Replica Set Member<a class="headerlink" href="#adjust-priority-for-replica-set-member" title="Permalink to this headline">&para;</a></h1>
+<h1>Adjust Priority for Replica Set Member<a class="headerlink" href="#adjust-priority-for-replica-set-member" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -210,7 +210,7 @@ leading to an election. Before an election, the primary closes all open
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <ul class="last simple">
-<li>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7854"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can force the current
+<li>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can force the current
 primary to step down, which causes an <a class="reference internal" href="../core/replica-set-elections.html#replica-set-elections"><span class="std std-ref">election</span></a>. When the primary steps down, the
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> closes all client connections. While this
 typically takes 10-20 seconds, try to make these changes during
@@ -221,7 +221,7 @@ MongoDB versions as validation rules may differ across MongoDB versions.</li>
 </div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">1</div></div><div class="section" id="copy-the-replica-set-configuration-to-a-variable">
 <h3>Copy the replica set configuration to a variable.<a class="headerlink" href="#copy-the-replica-set-configuration-to-a-variable" title="Permalink to this headline">&para;</a></h3>
-<p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-7855"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> to retrieve
+<p>In the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> to retrieve
 the replica set configuration and assign it to a variable. For
 example:</p>
 <div class="button-code-block">
@@ -256,7 +256,7 @@ priority for the first three members defined in the
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="assign-the-replica-set-the-new-configuration">
 <h3>Assign the replica set the new configuration.<a class="headerlink" href="#assign-the-replica-set-the-new-configuration" title="Permalink to this headline">&para;</a></h3>
-<p>Use <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7856"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> to apply the new configuration.</p>
+<p>Use <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> to apply the new configuration.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

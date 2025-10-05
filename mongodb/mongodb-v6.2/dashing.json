@@ -1,0 +1,15 @@
+{
+    "name": "MongoDB v6.2",
+    "package": "mongodb-v6.2",
+    "index": "index.html",
+    "selectors": {
+        "dt a": "Command",
+        "title": "Package"
+    },
+    "ignore": [
+        "ABOUT"
+    ],
+    "icon32x32": "",
+    "allowJS": false,
+    "ExternalURL": "https://docs.mongodb.com/v6.2/manual.tar.gz"
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-933"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/collStats%20%E2%80%94%20MongoDB%20Manual"></a><title>collStats &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-435"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/collStats%20%E2%80%94%20MongoDB%20Manual"></a><title>collStats &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/collStats/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="collstats">
-<a class="dashingAutolink" name="autolink-934"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/collStats%C2%B6"></a><h1>collStats<a class="headerlink" href="#collstats" title="Permalink to this headline">&para;</a></h1>
+<h1>collStats<a class="headerlink" href="#collstats" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,10 +167,10 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.collStats">
-<code class="descname">collStats</code><a class="dashingAutolink" name="autolink-937"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.collStats" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">collStats</code><a class="dashingAutolink" name="autolink-417"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.collStats" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a> command returns a variety of storage statistics
 for a given collection.</p>
-<p>To run <code class="docutils literal"><span class="pre">collStats</span></code>, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-935"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%20%7B%20%3Ccommand%3E%20%7D%20%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
+<p>To run <code class="docutils literal"><span class="pre">collStats</span></code>, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
 <p>The <a class="reference internal" href="#dbcmd.collStats" title="collStats"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collStats</span></code></a> command has the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -405,14 +405,14 @@ copy</a>
 <span id="collstats-output"></span><h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">&para;</a></h2>
 <dl class="data">
 <dt id="collStats.ns">
-<code class="descclassname">collStats.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-938"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.ns" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">ns</code><a class="dashingAutolink" name="autolink-418"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.ns" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The namespace of the current collection, which follows the format
 <code class="docutils literal"><span class="pre">[database].[collection]</span></code>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.size">
-<code class="descclassname">collStats.</code><code class="descname">size</code><a class="dashingAutolink" name="autolink-939"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.size" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">size</code><a class="dashingAutolink" name="autolink-419"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.size" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The total uncompressed size in memory of all records in a
 collection. The <a class="reference internal" href="#collStats.size" title="collStats.size"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">size</span></code></a> does not
 include the size of any indexes associated with the collection,
@@ -426,13 +426,13 @@ compression does not affect this value.</p>
 
 <dl class="data">
 <dt id="collStats.count">
-<code class="descclassname">collStats.</code><code class="descname">count</code><a class="dashingAutolink" name="autolink-940"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.count" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">count</code><a class="dashingAutolink" name="autolink-420"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.count" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of objects or documents in this collection.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.avgObjSize">
-<code class="descclassname">collStats.</code><code class="descname">avgObjSize</code><a class="dashingAutolink" name="autolink-941"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.avgObjSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">avgObjSize</code><a class="dashingAutolink" name="autolink-421"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.avgObjSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The average size of an object in the collection (plus any
 <a class="reference internal" href="../glossary.html#term-padding"><span class="xref std std-term">padding</span></a> for MMAPv1). The <code class="docutils literal"><span class="pre">scale</span></code> argument does not affect this
 value.</p>
@@ -440,7 +440,7 @@ value.</p>
 
 <dl class="data">
 <dt id="collStats.storageSize">
-<code class="descclassname">collStats.</code><code class="descname">storageSize</code><a class="dashingAutolink" name="autolink-942"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.storageSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">storageSize</code><a class="dashingAutolink" name="autolink-422"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.storageSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The total amount of storage allocated to this collection for
 <a class="reference internal" href="../glossary.html#term-document"><span class="xref std std-term">document</span></a> storage. The <code class="docutils literal"><span class="pre">scale</span></code> argument affects this
 value.</p>
@@ -456,21 +456,21 @@ as you remove or shrink documents.</p>
 
 <dl class="data">
 <dt id="collStats.numExtents">
-<code class="descclassname">collStats.</code><code class="descname">numExtents</code><a class="dashingAutolink" name="autolink-943"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.numExtents" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">numExtents</code><a class="dashingAutolink" name="autolink-423"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.numExtents" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The total number of contiguously allocated data file regions.
 Only present when using the MMAPv1 storage engine.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.nindexes">
-<code class="descclassname">collStats.</code><code class="descname">nindexes</code><a class="dashingAutolink" name="autolink-944"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.nindexes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">nindexes</code><a class="dashingAutolink" name="autolink-424"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.nindexes" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The number of indexes on the collection. All collections have at
 least one index on the <a class="reference internal" href="../glossary.html#term-id"><span class="xref std std-term">_id</span></a> field.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.lastExtentSize">
-<code class="descclassname">collStats.</code><code class="descname">lastExtentSize</code><a class="dashingAutolink" name="autolink-945"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.lastExtentSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">lastExtentSize</code><a class="dashingAutolink" name="autolink-425"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.lastExtentSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The size of the last extent allocated. The <code class="docutils literal"><span class="pre">scale</span></code> argument
 affects this value. Only present when using the <code class="docutils literal"><span class="pre">mmapv1</span></code> storage
 engine.</p>
@@ -478,7 +478,7 @@ engine.</p>
 
 <dl class="data">
 <dt id="collStats.paddingFactor">
-<code class="descclassname">collStats.</code><code class="descname">paddingFactor</code><a class="dashingAutolink" name="autolink-946"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.paddingFactor" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">paddingFactor</code><a class="dashingAutolink" name="autolink-426"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.paddingFactor" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
 <p><span class="versionmodified">Deprecated since version 3.0.0: </span><a class="reference internal" href="#collStats.paddingFactor" title="collStats.paddingFactor"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">paddingFactor</span></code></a> is no longer used in 3.0.0, and
 remains hard coded to 1.0 for compatibility only.</p>
@@ -489,7 +489,7 @@ remains hard coded to 1.0 for compatibility only.</p>
 
 <dl class="data">
 <dt id="collStats.userFlags">
-<code class="descclassname">collStats.</code><code class="descname">userFlags</code><a class="dashingAutolink" name="autolink-947"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.userFlags" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">userFlags</code><a class="dashingAutolink" name="autolink-427"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.userFlags" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A number that indicates the user-set flags on the collection.
 <a class="reference internal" href="#collStats.userFlags" title="collStats.userFlags"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">userFlags</span></code></a> only appears when using the <code class="docutils literal"><span class="pre">mmapv1</span></code>
 storage engine.</p>
@@ -511,14 +511,14 @@ flags.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">MongoDB 3.0 ignores the <a class="reference internal" href="collMod.html#usePowerOf2Sizes" title="usePowerOf2Sizes"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">usePowerOf2Sizes</span></code></a> flag.
-See <a class="reference internal" href="collMod.html#dbcmd.collMod" title="collMod"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collMod</span></code></a> and <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-936"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> for
+See <a class="reference internal" href="collMod.html#dbcmd.collMod" title="collMod"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collMod</span></code></a> and <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> for
 more information.</p>
 </div>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.totalIndexSize">
-<code class="descclassname">collStats.</code><code class="descname">totalIndexSize</code><a class="dashingAutolink" name="autolink-948"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.totalIndexSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">totalIndexSize</code><a class="dashingAutolink" name="autolink-428"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.totalIndexSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The total size of all indexes. The <code class="docutils literal"><span class="pre">scale</span></code> argument affects this
 value.</p>
 <p>If an index uses prefix compression (which is the <a class="reference internal" href="../program/mongod.html#cmdoption-mongod-wiredtigerindexprefixcompression"><code class="xref std std-option docutils literal"><span class="pre">default</span>
@@ -529,7 +529,7 @@ calculating the total.</p>
 
 <dl class="data">
 <dt id="collStats.indexSizes">
-<code class="descclassname">collStats.</code><code class="descname">indexSizes</code><a class="dashingAutolink" name="autolink-949"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.indexSizes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">indexSizes</code><a class="dashingAutolink" name="autolink-429"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.indexSizes" title="Permalink to this definition">&para;</a></dt>
 <dd><p>This field specifies the key and size of every existing index on
 the collection. The <code class="docutils literal"><span class="pre">scale</span></code> argument affects this value.</p>
 <p>If an index uses prefix compression (which is the <a class="reference internal" href="../program/mongod.html#cmdoption-mongod-wiredtigerindexprefixcompression"><code class="xref std std-option docutils literal"><span class="pre">default</span>
@@ -539,27 +539,27 @@ returned size reflects the compressed size.</p>
 
 <dl class="data">
 <dt id="collStats.capped">
-<code class="descclassname">collStats.</code><code class="descname">capped</code><a class="dashingAutolink" name="autolink-950"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.capped" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">capped</code><a class="dashingAutolink" name="autolink-430"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.capped" title="Permalink to this definition">&para;</a></dt>
 <dd><p>This field will be &ldquo;true&rdquo; if the collection is
 <a class="reference internal" href="../glossary.html#term-capped-collection"><span class="xref std std-term">capped</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.max">
-<code class="descclassname">collStats.</code><code class="descname">max</code><a class="dashingAutolink" name="autolink-951"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.max" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">max</code><a class="dashingAutolink" name="autolink-431"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.max" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Shows the maximum number of documents that may be present in a
 <a class="reference internal" href="../glossary.html#term-capped-collection"><span class="xref std std-term">capped collection</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.maxSize">
-<code class="descclassname">collStats.</code><code class="descname">maxSize</code><a class="dashingAutolink" name="autolink-952"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.maxSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">maxSize</code><a class="dashingAutolink" name="autolink-432"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.maxSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Shows the maximum size of a <a class="reference internal" href="../glossary.html#term-capped-collection"><span class="xref std std-term">capped collection</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="collStats.wiredTiger">
-<code class="descclassname">collStats.</code><code class="descname">wiredTiger</code><a class="dashingAutolink" name="autolink-953"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.wiredTiger" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">wiredTiger</code><a class="dashingAutolink" name="autolink-433"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.wiredTiger" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0.</span></p>
 </div>
@@ -572,7 +572,7 @@ diagnostic use.</p>
 
 <dl class="data">
 <dt id="collStats.indexDetails">
-<code class="descclassname">collStats.</code><code class="descname">indexDetails</code><a class="dashingAutolink" name="autolink-954"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.indexDetails" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">collStats.</code><code class="descname">indexDetails</code><a class="dashingAutolink" name="autolink-434"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#collStats.indexDetails" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.0.</span></p>
 </div>

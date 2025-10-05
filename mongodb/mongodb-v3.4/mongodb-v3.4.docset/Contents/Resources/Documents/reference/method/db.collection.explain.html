@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3431"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.explain%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.explain() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1830"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.explain%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.explain() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.explain/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-explain">
-<a class="dashingAutolink" name="autolink-3432"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.explain%28%29%C2%B6"></a><h1>db.collection.explain()<a class="headerlink" href="#db-collection-explain" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.explain()<a class="headerlink" href="#db-collection-explain" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,22 +167,22 @@
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.explain">
-<code class="descclassname">db.collection.</code><code class="descname">explain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3481"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.explain" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">explain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1829"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.explain" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
-<p><span class="versionmodified">Changed in version 3.2: </span>Adds support for <a class="reference internal" href="db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><a class="dashingAutolink" name="autolink-3433"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.distinct%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.distinct()</span></code></a></p>
+<p><span class="versionmodified">Changed in version 3.2: </span>Adds support for <a class="reference internal" href="db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.distinct()</span></code></a></p>
 </div>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
 </div>
 <p>Returns information on the query plan for the following operations:
-<a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3434"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a>;
-<a class="reference internal" href="db.collection.count.html#db.collection.count" title="db.collection.count()"><a class="dashingAutolink" name="autolink-3435"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a>;
-<a class="reference internal" href="db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><a class="dashingAutolink" name="autolink-3436"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/distinct%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">distinct()</span></code></a>;
-<a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3437"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>; <a class="reference internal" href="db.collection.group.html#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3438"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">group()</span></code></a>;
-<a class="reference internal" href="db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-3439"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a>; and
-<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3440"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> methods.</p>
-<p>To use <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3441"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>, append to
-<a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3442"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> the method(s) available to explain:</p>
+<a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a>;
+<a class="reference internal" href="db.collection.count.html#db.collection.count" title="db.collection.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a>;
+<a class="reference internal" href="db.collection.distinct.html#db.collection.distinct" title="db.collection.distinct()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">distinct()</span></code></a>;
+<a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>; <a class="reference internal" href="db.collection.group.html#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">group()</span></code></a>;
+<a class="reference internal" href="db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a>; and
+<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> methods.</p>
+<p>To use <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>, append to
+<a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> the method(s) available to explain:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -203,9 +203,9 @@ copy</a>
 </div>
 </div>
 <p>For more examples, see <a class="reference internal" href="#explain-method-examples"><span class="std std-ref">Examples</span></a>. For a list of
-methods available for use with <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3443"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>,
+methods available for use with <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>,
 see <a class="reference internal" href="#explain-method-help"><span class="std std-ref">db.collection.explain().help()</span></a>.</p>
-<p>The <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3444"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method has the following
 parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -228,9 +228,9 @@ to return. The possible modes are: <code class="docutils literal"><span class="p
 <code class="docutils literal"><span class="pre">&#34;executionStats&#34;</span></code>, and <code class="docutils literal"><span class="pre">&#34;allPlansExecution&#34;</span></code>.</p>
 <p>Default mode is <code class="docutils literal"><span class="pre">&#34;queryPlanner&#34;</span></code>.</p>
 <p>For backwards compatibility with earlier versions of
-<a class="reference internal" href="cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-3445"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a>, MongoDB interprets <code class="docutils literal"><span class="pre">true</span></code> as
+<a class="reference internal" href="cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a>, MongoDB interprets <code class="docutils literal"><span class="pre">true</span></code> as
 <code class="docutils literal"><span class="pre">&#34;allPlansExecution&#34;</span></code> and <code class="docutils literal"><span class="pre">false</span></code> as <code class="docutils literal"><span class="pre">&#34;queryPlanner&#34;</span></code>.</p>
-<p><a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3446"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> ignores the verbosity
+<p><a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> ignores the verbosity
 parameter and executes in <code class="docutils literal"><span class="pre">queryPlanner</span></code> mode.</p>
 <p class="last">For more information on the modes, see
 <a class="reference internal" href="#explain-method-verbosity"><span class="std std-ref">Verbosity Modes</span></a>.</p>
@@ -245,16 +245,16 @@ parameter and executes in <code class="docutils literal"><span class="pre">query
 <span id="explain-method-behavior"></span><h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="verbosity-modes">
 <span id="explain-method-verbosity"></span><h3>Verbosity Modes<a class="headerlink" href="#verbosity-modes" title="Permalink to this headline">&para;</a></h3>
-<p>The behavior of <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3447"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> and the amount of
+<p>The behavior of <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> and the amount of
 information returned depend on the <code class="docutils literal"><span class="pre">verbosity</span></code> mode.</p>
-<p><a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3448"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> ignores the verbosity
+<p><a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> ignores the verbosity
 parameter and executes in <code class="docutils literal"><span class="pre">queryPlanner</span></code> mode.</p>
 <div class="section" id="queryplanner-mode">
 <span id="explain-method-queryplanner"></span><h4><code class="docutils literal"><span class="pre">queryPlanner</span></code> Mode<a class="headerlink" href="#queryplanner-mode" title="Permalink to this headline">&para;</a></h4>
-<p>By default, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3449"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> runs in
+<p>By default, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> runs in
 <code class="docutils literal"><span class="pre">queryPlanner</span></code> verbosity mode.</p>
 <p>MongoDB runs the <a class="reference internal" href="../../core/query-plans.html"><span class="doc">query optimizer</span></a> to choose
-the winning plan for the operation under evaluation. <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3450"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns
+the winning plan for the operation under evaluation. <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns
 the <a class="reference internal" href="../explain-results.html#explain.queryPlanner" title="explain.queryPlanner"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">queryPlanner</span></code></a> information for the evaluated
 method.</p>
 </div>
@@ -263,10 +263,10 @@ method.</p>
 <p>MongoDB runs the <a class="reference internal" href="../../core/query-plans.html"><span class="doc">query optimizer</span></a> to choose
 the winning plan, executes the winning plan to completion, and returns
 statistics describing the execution of the winning plan.</p>
-<p>For write operations, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3451"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns information about
+<p>For write operations, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns information about
 the update or delete operations that <em>would</em> be performed, but does
 <em>not</em> apply the modifications to the database.</p>
-<p><a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3452"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns the <a class="reference internal" href="../explain-results.html#explain.queryPlanner" title="explain.queryPlanner"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">queryPlanner</span></code></a> and
+<p><a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns the <a class="reference internal" href="../explain-results.html#explain.queryPlanner" title="explain.queryPlanner"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">queryPlanner</span></code></a> and
 <a class="reference internal" href="../explain-results.html#explain.executionStats" title="explain.executionStats"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">executionStats</span></code></a> information for the evaluated
 method. However, <a class="reference internal" href="../explain-results.html#explain.executionStats" title="explain.executionStats"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">executionStats</span></code></a> does not
 provide query execution information for the rejected plans.</p>
@@ -278,10 +278,10 @@ winning plan to completion. In <code class="docutils literal"><span class="pre">
 returns statistics describing the execution of the winning plan as well
 as statistics for the other candidate plans captured during <a class="reference internal" href="../../core/query-plans.html#query-plans-query-optimization"><span class="std std-ref">plan
 selection</span></a>.</p>
-<p>For write operations, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3453"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns information about
+<p>For write operations, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns information about
 the update or delete operations that <em>would</em> be performed, but does
 <em>not</em> apply the modifications to the database.</p>
-<p><a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3454"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns the <a class="reference internal" href="../explain-results.html#explain.queryPlanner" title="explain.queryPlanner"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">queryPlanner</span></code></a> and
+<p><a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns the <a class="reference internal" href="../explain-results.html#explain.queryPlanner" title="explain.queryPlanner"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">queryPlanner</span></code></a> and
 <a class="reference internal" href="../explain-results.html#explain.executionStats" title="explain.executionStats"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">executionStats</span></code></a> information for the evaluated
 method. The <a class="reference internal" href="../explain-results.html#explain.executionStats" title="explain.executionStats"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">executionStats</span></code></a> includes the
 <em>completed</em> query execution information for the <em>winning plan</em>.</p>
@@ -293,17 +293,17 @@ candidate plans.</p>
 </div>
 <div class="section" id="explain-mechanics">
 <span id="explain-method-mechanics"></span><h3><code class="docutils literal"><span class="pre">explain()</span></code> Mechanics<a class="headerlink" href="#explain-mechanics" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3455"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method wraps the
+<p>The <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method wraps the
 <a class="reference internal" href="../command/explain.html#dbcmd.explain" title="explain"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">explain</span></code></a> command and is the preferred way to run
 <a class="reference internal" href="../command/explain.html#dbcmd.explain" title="explain"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">explain</span></code></a>.</p>
-<p><a class="dashingAutolink" name="autolink-3456"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> is similar to
-<a class="reference internal" href="cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-3457"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find().explain()</span></code></a> with the
+<p><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> is similar to
+<a class="reference internal" href="cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find().explain()</span></code></a> with the
 following key differences:</p>
 <ul class="simple">
-<li>The <a class="dashingAutolink" name="autolink-3458"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> construct allows for the
+<li>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> construct allows for the
 additional chaining of query modifiers. For list of query modifiers,
 see <a class="reference internal" href="#explain-method-help"><span class="std std-ref">db.collection.explain().find().help()</span></a>.</li>
-<li>The <a class="dashingAutolink" name="autolink-3459"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> returns a cursor, which
+<li>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> returns a cursor, which
 requires a call to <code class="docutils literal"><span class="pre">.next()</span></code>, or its alias <code class="docutils literal"><span class="pre">.finish()</span></code>, to return
 the <code class="docutils literal"><span class="pre">explain()</span></code> results.
 If run interactively in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, the
@@ -313,14 +313,14 @@ the results. For scripts, however, you must explicitly call
 cursor-related methods, see
 <a class="reference internal" href="#explain-method-help"><span class="std std-ref">db.collection.explain().find().help()</span></a>.</li>
 </ul>
-<p><a class="dashingAutolink" name="autolink-3460"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().aggregate()</span></code> is equivalent to passing
+<p><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().aggregate()</span></code> is equivalent to passing
 the <a class="reference internal" href="db.collection.aggregate.html#example-aggregate-method-explain-option"><span class="std std-ref">explain</span></a> option to
-the <a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3461"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method.</p>
+the <a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method.</p>
 </div>
 <div class="section" id="help">
 <span id="explain-method-help"></span><h3><code class="docutils literal"><span class="pre">help()</span></code><a class="headerlink" href="#help" title="Permalink to this headline">&para;</a></h3>
 <p>To see the list of operations supported by
-<a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3462"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>, run:</p>
+<a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>, run:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -330,9 +330,9 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p><a class="dashingAutolink" name="autolink-3463"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> returns a cursor, which allows
+<p><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> returns a cursor, which allows
 for the chaining of query modifiers. To see the list of query modifiers
-supported by <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3464"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code></a> as well as cursor-related methods, run:</p>
+supported by <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code></a> as well as cursor-related methods, run:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -350,12 +350,12 @@ For an example, see <a class="reference internal" href="#explain-find-modifiers"
 <span id="explain-method-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="id1">
 <h3><code class="docutils literal"><span class="pre">queryPlanner</span></code> Mode<a class="headerlink" href="#id1" title="Permalink to this headline">&para;</a></h3>
-<p>By default, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3465"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> runs in
+<p>By default, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> runs in
 <code class="docutils literal"><span class="pre">&#34;queryPlanner&#34;</span></code> verbosity mode.</p>
-<p>The following example runs <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3466"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
+<p>The following example runs <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
 <a class="reference internal" href="#explain-method-queryplanner"><span class="std std-ref">&ldquo;queryPlanner&rdquo;</span></a> verbosity mode to
 return the query planning information for the specified
-<a class="reference internal" href="db.collection.count.html#db.collection.count" title="db.collection.count()"><a class="dashingAutolink" name="autolink-3467"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/count%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> operation:</p>
+<a class="reference internal" href="db.collection.count.html#db.collection.count" title="db.collection.count()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">count()</span></code></a> operation:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -368,10 +368,10 @@ copy</a>
 </div>
 <div class="section" id="id2">
 <h3><code class="docutils literal"><span class="pre">executionStats</span></code>  Mode<a class="headerlink" href="#id2" title="Permalink to this headline">&para;</a></h3>
-<p>The following example runs <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3468"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
+<p>The following example runs <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
 <a class="reference internal" href="#explain-method-executionstats"><span class="std std-ref">&ldquo;executionStats&rdquo;</span></a> verbosity mode
 to return the query planning and execution information for the
-specified <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3469"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operation:</p>
+specified <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operation:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -386,12 +386,12 @@ copy</a>
 </div>
 <div class="section" id="id3">
 <h3><code class="docutils literal"><span class="pre">allPlansExecution</span></code> Mode<a class="headerlink" href="#id3" title="Permalink to this headline">&para;</a></h3>
-<p>The following example runs <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3470"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
+<p>The following example runs <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
 <a class="reference internal" href="#explain-method-allplansexecution"><span class="std std-ref">&ldquo;allPlansExecution&rdquo;</span></a> verbosity
-mode. The <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3471"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns the
+mode. The <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> returns the
 <a class="reference internal" href="../explain-results.html#explain.queryPlanner" title="explain.queryPlanner"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">queryPlanner</span></code></a> and <a class="reference internal" href="../explain-results.html#explain.executionStats" title="explain.executionStats"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">executionStats</span></code></a> for
 all considered plans for the specified
-<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-3472"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation:</p>
+<a class="reference internal" href="db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The execution of this explain will <em>not</em> modify data but runs the
@@ -414,10 +414,10 @@ copy</a>
 </div>
 <div class="section" id="explain-find-with-modifiers">
 <span id="explain-find-modifiers"></span><h3>Explain <code class="docutils literal"><span class="pre">find()</span></code> with Modifiers<a class="headerlink" href="#explain-find-with-modifiers" title="Permalink to this headline">&para;</a></h3>
-<p><a class="dashingAutolink" name="autolink-3473"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> construct allows for the
+<p><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> construct allows for the
 chaining of query modifiers. For example, the following operation
-provides information on the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3474"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method with
-<a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3475"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> and <a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><a class="dashingAutolink" name="autolink-3476"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/hint%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> query modifiers.</p>
+provides information on the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method with
+<a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> and <a class="reference internal" href="cursor.hint.html#cursor.hint" title="cursor.hint()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">hint()</span></code></a> query modifiers.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -443,7 +443,7 @@ copy</a>
 </div>
 <div class="section" id="iterate-the-explain-find-return-cursor">
 <h3>Iterate the <code class="docutils literal"><span class="pre">explain().find()</span></code> Return Cursor<a class="headerlink" href="#iterate-the-explain-find-return-cursor" title="Permalink to this headline">&para;</a></h3>
-<p><a class="dashingAutolink" name="autolink-3477"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> returns a cursor to the
+<p><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain().find()</span></code> returns a cursor to the
 explain results. If run interactively in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell,
 the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell automatically iterates the cursor using the
 <code class="docutils literal"><span class="pre">.next()</span></code> method. For scripts, however, you must explicitly call
@@ -461,7 +461,7 @@ copy</a>
 </div>
 <div class="section" id="output">
 <span id="explain-collection-method-output"></span><h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3478"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> operations can return information regarding:</p>
+<p><a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> operations can return information regarding:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../explain-results.html#queryplanner"><span class="std std-ref">queryPlanner</span></a>, which details the plan selected by the
 <a class="reference internal" href="../../core/query-plans.html"><span class="doc">query optimizer</span></a> and lists the rejected
@@ -477,8 +477,8 @@ MongoDB instance.</li>
 captured during <a class="reference internal" href="../../core/query-plans.html#query-plans-query-optimization"><span class="std std-ref">plan selection</span></a>.</p>
 <p>For details on the output, see <a class="reference internal" href="../explain-results.html"><span class="doc">Explain Results</span></a>.</p>
 <p>For a mixed version sharded cluster with version 3.0 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
-and at least one 2.6 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> shard, when you run <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3479"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
-a version 3.0 <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3480"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> will retry with the
+and at least one 2.6 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> shard, when you run <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> in
+a version 3.0 <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, <a class="reference internal" href="#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> will retry with the
 <a class="reference internal" href="../operator/meta/explain.html#metaOp._S_explain" title="$explain"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$explain</span></code></a> operator to return results in the 2.6 format.</p>
 </div>
 </div>

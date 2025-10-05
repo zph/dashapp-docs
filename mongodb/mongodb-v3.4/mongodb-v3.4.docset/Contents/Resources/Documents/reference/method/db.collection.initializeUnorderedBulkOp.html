@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3634"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.initializeUnorderedBulkOp%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.initializeUnorderedBulkOp() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1856"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.initializeUnorderedBulkOp%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.initializeUnorderedBulkOp() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.initializeUnorderedBulkOp/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-initializeunorderedbulkop">
-<a class="dashingAutolink" name="autolink-3635"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.initializeUnorderedBulkOp%28%29%C2%B6"></a><h1>db.collection.initializeUnorderedBulkOp()<a class="headerlink" href="#db-collection-initializeunorderedbulkop" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.initializeUnorderedBulkOp()<a class="headerlink" href="#db-collection-initializeunorderedbulkop" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,18 +165,18 @@
 <div class="admonition-tip admonition">
 <p class="first admonition-title">Tip</p>
 <p class="last">Starting in version 3.2, MongoDB also provides the
-<a class="reference internal" href="db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-3636"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method for performing bulk
+<a class="reference internal" href="db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method for performing bulk
 write operations.</p>
 </div>
 <div class="section" id="definition">
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.initializeUnorderedBulkOp">
-<code class="descclassname">db.collection.</code><code class="descname">initializeUnorderedBulkOp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3647"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.initializeUnorderedBulkOp" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">initializeUnorderedBulkOp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1855"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.initializeUnorderedBulkOp" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
-<p>Initializes and returns a new <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-3637"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder
+<p>Initializes and returns a new <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder
 for a collection. The builder constructs an <em>unordered</em> list of
 write operations that MongoDB executes in bulk.</p>
 </dd></dl>
@@ -189,15 +189,15 @@ write operations that MongoDB executes in bulk.</p>
 <p>With an <em>unordered</em> operations list, MongoDB can execute in parallel
 the write operations in the list and in any order. If the order of
 operations matter, use
-<a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><a class="dashingAutolink" name="autolink-3638"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeOrderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a> instead.</p>
+<a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a> instead.</p>
 </div>
 <div class="section" id="execution-of-operations">
 <h3>Execution of Operations<a class="headerlink" href="#execution-of-operations" title="Permalink to this headline">&para;</a></h3>
-<p>When executing an <a class="reference internal" href="#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><a class="dashingAutolink" name="autolink-3639"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/unordered"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">unordered</span></code></a> list of operations,
+<p>When executing an <a class="reference internal" href="#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">unordered</span></code></a> list of operations,
 MongoDB groups the operations. With an unordered bulk operation, the
 operations in the list may be reordered to increase performance. As
 such, applications should not depend on the ordering when performing
-<a class="reference internal" href="#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><a class="dashingAutolink" name="autolink-3640"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/unordered"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">unordered</span></code></a> bulk
+<a class="reference internal" href="#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">unordered</span></code></a> bulk
 operations.</p>
 <p>Each group of operations can have at most <a class="reference internal" href="../limits.html#Write-Command-Operation-Limit-Size" title="Write Command Operation Limit Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">1000</span> <span class="pre">operations</span></code></a>. If a group exceeds this <a class="reference internal" href="../limits.html#Write-Command-Operation-Limit-Size" title="Write Command Operation Limit Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">limit</span></code></a>, MongoDB will divide the group into
 smaller groups of 1000 or less. For example, if the bulk operations list
@@ -206,7 +206,7 @@ consists of 2000 insert operations, MongoDB creates 2 groups, each with
 <p>The sizes and grouping mechanics are internal performance details and
 are subject to change in future versions.</p>
 <p>To see how the operations are grouped for a bulk operation execution,
-call <a class="reference internal" href="Bulk.getOperations.html#Bulk.getOperations" title="Bulk.getOperations()"><a class="dashingAutolink" name="autolink-3641"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.getOperations%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.getOperations()</span></code></a> <em>after</em> the execution.</p>
+call <a class="reference internal" href="Bulk.getOperations.html#Bulk.getOperations" title="Bulk.getOperations()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.getOperations()</span></code></a> <em>after</em> the execution.</p>
 </div>
 <div class="section" id="error-handling">
 <h3>Error Handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">&para;</a></h3>
@@ -217,7 +217,7 @@ in the list.</p>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-3642"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder and
+<p>The following initializes a <a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations builder and
 adds a series of insert operations to add multiple documents:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -235,10 +235,10 @@ copy</a>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><a class="dashingAutolink" name="autolink-3643"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.initializeOrderedBulkOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-3644"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.insert.html#Bulk.insert" title="Bulk.insert()"><a class="dashingAutolink" name="autolink-3645"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.insert()</span></code></a></li>
-<li><a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><a class="dashingAutolink" name="autolink-3646"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk.execute%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a></li>
+<li><a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.initializeOrderedBulkOp()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.insert.html#Bulk.insert" title="Bulk.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.insert()</span></code></a></li>
+<li><a class="reference internal" href="Bulk.execute.html#Bulk.execute" title="Bulk.execute()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk.execute()</span></code></a></li>
 </ul>
 </div>
 </div>

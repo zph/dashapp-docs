@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1384"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/isMaster%20%E2%80%94%20MongoDB%20Manual"></a><title>isMaster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-740"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/isMaster%20%E2%80%94%20MongoDB%20Manual"></a><title>isMaster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/isMaster/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="ismaster">
-<a class="dashingAutolink" name="autolink-1385"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/isMaster%C2%B6"></a><h1>isMaster<a class="headerlink" href="#ismaster" title="Permalink to this headline">&para;</a></h1>
+<h1>isMaster<a class="headerlink" href="#ismaster" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,7 +165,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.isMaster">
-<code class="descname">isMaster</code><a class="dashingAutolink" name="autolink-1387"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.isMaster" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">isMaster</code><a class="dashingAutolink" name="autolink-711"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.isMaster" title="Permalink to this definition">&para;</a></dt>
 <dd><p><a class="reference internal" href="#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a> returns a document that describes the role of
 the <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 <p>If the instance is a member of a
@@ -179,7 +179,7 @@ information.</p>
 <a class="reference internal" href="#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a> to determine the state of the replica set
 members and to discover additional members of a <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica
 set</span></a>.</p>
-<p>The <a class="reference internal" href="../method/db.isMaster.html#db.isMaster" title="db.isMaster()"><a class="dashingAutolink" name="autolink-1386"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> method in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
+<p>The <a class="reference internal" href="../method/db.isMaster.html#db.isMaster" title="db.isMaster()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> method in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
 provides a wrapper around <a class="reference internal" href="#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a>.</p>
 <p>The command takes the following form:</p>
 <div class="button-code-block">
@@ -202,7 +202,7 @@ copy</a>
 roles:</p>
 <dl class="data">
 <dt id="isMaster.ismaster">
-<code class="descclassname">isMaster.</code><code class="descname">ismaster</code><a class="dashingAutolink" name="autolink-1388"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.ismaster" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">ismaster</code><a class="dashingAutolink" name="autolink-712"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.ismaster" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that reports when this node is writable. If
 <code class="docutils literal"><span class="pre">true</span></code>, then this instance is a <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a> in a
 <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a>, or a <a class="reference internal" href="../glossary.html#term-master"><span class="xref std std-term">master</span></a> in a master-slave
@@ -215,7 +215,7 @@ configuration, or a <a class="reference internal" href="../program/mongos.html#b
 
 <dl class="data">
 <dt id="isMaster.maxBsonObjectSize">
-<code class="descclassname">isMaster.</code><code class="descname">maxBsonObjectSize</code><a class="dashingAutolink" name="autolink-1389"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxBsonObjectSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">maxBsonObjectSize</code><a class="dashingAutolink" name="autolink-713"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxBsonObjectSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum permitted size of a <a class="reference internal" href="../glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> object in bytes for
 this <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> process. If not provided, clients should
 assume a max size of &ldquo;<code class="docutils literal"><span class="pre">16</span> <span class="pre">*</span> <span class="pre">1024</span> <span class="pre">*</span> <span class="pre">1024</span></code>&rdquo;.</p>
@@ -223,14 +223,14 @@ assume a max size of &ldquo;<code class="docutils literal"><span class="pre">16<
 
 <dl class="data">
 <dt id="isMaster.maxMessageSizeBytes">
-<code class="descclassname">isMaster.</code><code class="descname">maxMessageSizeBytes</code><a class="dashingAutolink" name="autolink-1390"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxMessageSizeBytes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">maxMessageSizeBytes</code><a class="dashingAutolink" name="autolink-714"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxMessageSizeBytes" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum permitted size of a <a class="reference internal" href="../glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> wire protocol message.
 The default value is <code class="docutils literal"><span class="pre">48000000</span></code> bytes.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.maxWriteBatchSize">
-<code class="descclassname">isMaster.</code><code class="descname">maxWriteBatchSize</code><a class="dashingAutolink" name="autolink-1391"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxWriteBatchSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">maxWriteBatchSize</code><a class="dashingAutolink" name="autolink-715"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxWriteBatchSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum number of write operations permitted in a write batch.
 If a batch exceeds this
 <code class="xref mongodb mongodb-limit docutils literal"><span class="pre">limit</span></code>, the client
@@ -241,14 +241,14 @@ than or equal to the value of this field.</p>
 
 <dl class="data">
 <dt id="isMaster.localTime">
-<code class="descclassname">isMaster.</code><code class="descname">localTime</code><a class="dashingAutolink" name="autolink-1392"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.localTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">localTime</code><a class="dashingAutolink" name="autolink-716"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.localTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns the local server time in UTC. This value is an
 <a class="reference internal" href="../glossary.html#term-isodate"><span class="xref std std-term">ISO date</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.minWireVersion">
-<code class="descclassname">isMaster.</code><code class="descname">minWireVersion</code><a class="dashingAutolink" name="autolink-1393"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.minWireVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">minWireVersion</code><a class="dashingAutolink" name="autolink-717"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.minWireVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -261,7 +261,7 @@ compatibility with MongoDB.</p>
 
 <dl class="data">
 <dt id="isMaster.maxWireVersion">
-<code class="descclassname">isMaster.</code><code class="descname">maxWireVersion</code><a class="dashingAutolink" name="autolink-1394"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxWireVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">maxWireVersion</code><a class="dashingAutolink" name="autolink-718"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.maxWireVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -274,7 +274,7 @@ compatibility with MongoDB.</p>
 
 <dl class="data">
 <dt id="isMaster.readOnly">
-<code class="descclassname">isMaster.</code><code class="descname">readOnly</code><a class="dashingAutolink" name="autolink-1395"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.readOnly" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">readOnly</code><a class="dashingAutolink" name="autolink-719"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.readOnly" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -284,7 +284,7 @@ compatibility with MongoDB.</p>
 
 <dl class="data">
 <dt id="isMaster.compression">
-<code class="descclassname">isMaster.</code><code class="descname">compression</code><a class="dashingAutolink" name="autolink-1396"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.compression" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">compression</code><a class="dashingAutolink" name="autolink-720"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.compression" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -313,7 +313,7 @@ copy</a>
 <a class="reference internal" href="#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a> response document:</p>
 <dl class="data">
 <dt id="isMaster.msg">
-<code class="descclassname">isMaster.</code><code class="descname">msg</code><a class="dashingAutolink" name="autolink-1397"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.msg" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">msg</code><a class="dashingAutolink" name="autolink-721"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.msg" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Contains the value <code class="docutils literal"><span class="pre">isdbgrid</span></code> when <a class="reference internal" href="#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a>
 returns from a <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance.</p>
 </dd></dl>
@@ -325,13 +325,13 @@ returns from a <a class="reference internal" href="../program/mongos.html#bin.mo
 of a replica set:</p>
 <dl class="data">
 <dt id="isMaster.setName">
-<code class="descclassname">isMaster.</code><code class="descname">setName</code><a class="dashingAutolink" name="autolink-1398"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.setName" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">setName</code><a class="dashingAutolink" name="autolink-722"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.setName" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The name of the current :replica set.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.setVersion">
-<code class="descclassname">isMaster.</code><code class="descname">setVersion</code><a class="dashingAutolink" name="autolink-1399"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.setVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">setVersion</code><a class="dashingAutolink" name="autolink-723"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.setVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 2.6.</span></p>
 </div>
@@ -340,7 +340,7 @@ of a replica set:</p>
 
 <dl class="data">
 <dt id="isMaster.secondary">
-<code class="descclassname">isMaster.</code><code class="descname">secondary</code><a class="dashingAutolink" name="autolink-1400"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.secondary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">secondary</code><a class="dashingAutolink" name="autolink-724"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.secondary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates if the
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> is a <a class="reference internal" href="../glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> member of a <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica
 set</span></a>.</p>
@@ -348,7 +348,7 @@ set</span></a>.</p>
 
 <dl class="data">
 <dt id="isMaster.hosts">
-<code class="descclassname">isMaster.</code><code class="descname">hosts</code><a class="dashingAutolink" name="autolink-1401"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.hosts" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">hosts</code><a class="dashingAutolink" name="autolink-725"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.hosts" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of strings in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code> that
 lists all members of the <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> that are neither
 <a class="reference internal" href="../glossary.html#term-hidden-member"><span class="xref std std-term">hidden</span></a>, <a class="reference internal" href="../glossary.html#term-passive-member"><span class="xref std std-term">passive</span></a>,
@@ -359,7 +359,7 @@ which members to read from.</p>
 
 <dl class="data">
 <dt id="isMaster.passives">
-<code class="descclassname">isMaster.</code><code class="descname">passives</code><a class="dashingAutolink" name="autolink-1402"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.passives" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">passives</code><a class="dashingAutolink" name="autolink-726"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.passives" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of strings in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code>
 listing all members of the <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> which have a
 <a class="reference internal" href="../replica-configuration.html#rsconf.members[n].priority" title="members[n].priority"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n].priority</span></code></a> of <code class="docutils literal"><span class="pre">0</span></code>.</p>
@@ -371,7 +371,7 @@ which members to read from.</p>
 
 <dl class="data">
 <dt id="isMaster.arbiters">
-<code class="descclassname">isMaster.</code><code class="descname">arbiters</code><a class="dashingAutolink" name="autolink-1403"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.arbiters" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">arbiters</code><a class="dashingAutolink" name="autolink-727"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.arbiters" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of strings  in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code>
 listing all members of the <a class="reference internal" href="../glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> that are
 <a class="reference internal" href="../glossary.html#term-arbiter"><span class="xref std std-term">arbiters</span></a>.</p>
@@ -381,14 +381,14 @@ replica set.</p>
 
 <dl class="data">
 <dt id="isMaster.primary">
-<code class="descclassname">isMaster.</code><code class="descname">primary</code><a class="dashingAutolink" name="autolink-1404"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.primary" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">primary</code><a class="dashingAutolink" name="autolink-728"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.primary" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A string in the format of <code class="docutils literal"><span class="pre">&#34;[hostname]:[port]&#34;</span></code> listing the
 current <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a> member of the replica set.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.arbiterOnly">
-<code class="descclassname">isMaster.</code><code class="descname">arbiterOnly</code><a class="dashingAutolink" name="autolink-1405"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.arbiterOnly" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">arbiterOnly</code><a class="dashingAutolink" name="autolink-729"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.arbiterOnly" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that , when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the current
 instance is an <a class="reference internal" href="../glossary.html#term-arbiter"><span class="xref std std-term">arbiter</span></a>.  The <a class="reference internal" href="#isMaster.arbiterOnly" title="isMaster.arbiterOnly"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">arbiterOnly</span></code></a>
 field is only present, if the instance is an arbiter.</p>
@@ -396,7 +396,7 @@ field is only present, if the instance is an arbiter.</p>
 
 <dl class="data">
 <dt id="isMaster.passive">
-<code class="descclassname">isMaster.</code><code class="descname">passive</code><a class="dashingAutolink" name="autolink-1406"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.passive" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">passive</code><a class="dashingAutolink" name="autolink-730"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.passive" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the current
 instance is <a class="reference internal" href="../glossary.html#term-passive-member"><span class="xref std std-term">passive</span></a>.  The
 <a class="reference internal" href="#isMaster.passive" title="isMaster.passive"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">passive</span></code></a> field is only present for members with a
@@ -405,7 +405,7 @@ instance is <a class="reference internal" href="../glossary.html#term-passive-me
 
 <dl class="data">
 <dt id="isMaster.hidden">
-<code class="descclassname">isMaster.</code><code class="descname">hidden</code><a class="dashingAutolink" name="autolink-1407"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.hidden" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">hidden</code><a class="dashingAutolink" name="autolink-731"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.hidden" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A boolean value that, when <code class="docutils literal"><span class="pre">true</span></code>, indicates that the current
 instance is <a class="reference internal" href="../glossary.html#term-hidden-member"><span class="xref std std-term">hidden</span></a>.  The
 <a class="reference internal" href="#isMaster.hidden" title="isMaster.hidden"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">hidden</span></code></a> field is only present for hidden members.</p>
@@ -413,7 +413,7 @@ instance is <a class="reference internal" href="../glossary.html#term-hidden-mem
 
 <dl class="data">
 <dt id="isMaster.tags">
-<code class="descclassname">isMaster.</code><code class="descname">tags</code><a class="dashingAutolink" name="autolink-1408"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.tags" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">tags</code><a class="dashingAutolink" name="autolink-732"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.tags" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A <a class="reference internal" href="../glossary.html#term-tag-set"><span class="xref std std-term">tag set</span></a> document containing mappings of arbitrary keys and
 values. These documents describe replica set members in order to customize
 <a class="reference internal" href="../write-concern.html"><span class="doc">write concern</span></a> and <a class="reference internal" href="../read-preference.html"><span class="doc">read preference</span></a> and thereby allow configurable data
@@ -425,14 +425,14 @@ information.</p>
 
 <dl class="data">
 <dt id="isMaster.me">
-<code class="descclassname">isMaster.</code><code class="descname">me</code><a class="dashingAutolink" name="autolink-1409"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.me" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">me</code><a class="dashingAutolink" name="autolink-733"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.me" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">[hostname]:[port]</span></code> of the member that returned
 <a class="reference internal" href="#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.electionId">
-<code class="descclassname">isMaster.</code><code class="descname">electionId</code><a class="dashingAutolink" name="autolink-1410"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.electionId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">electionId</code><a class="dashingAutolink" name="autolink-734"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.electionId" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
 </div>
@@ -443,7 +443,7 @@ to determine when elections occur.</p>
 
 <dl class="data">
 <dt id="isMaster.lastWrite">
-<code class="descclassname">isMaster.</code><code class="descname">lastWrite</code><a class="dashingAutolink" name="autolink-1411"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.</code><code class="descname">lastWrite</code><a class="dashingAutolink" name="autolink-735"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -451,20 +451,20 @@ to determine when elections occur.</p>
 database&rsquo;s most recent write operation.</p>
 <dl class="data">
 <dt id="isMaster.lastWrite.opTime">
-<code class="descclassname">isMaster.lastWrite.</code><code class="descname">opTime</code><a class="dashingAutolink" name="autolink-1412"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.opTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.lastWrite.</code><code class="descname">opTime</code><a class="dashingAutolink" name="autolink-736"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.opTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An object giving the <a class="reference internal" href="../glossary.html#term-optime"><span class="xref std std-term">optime</span></a> of the last write operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.lastWrite.lastWriteDate">
-<code class="descclassname">isMaster.lastWrite.</code><code class="descname">lastWriteDate</code><a class="dashingAutolink" name="autolink-1413"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.lastWriteDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.lastWrite.</code><code class="descname">lastWriteDate</code><a class="dashingAutolink" name="autolink-737"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.lastWriteDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A <a class="reference internal" href="../mongodb-extended-json.html#bson.data_date" title="data_date"><code class="xref mongodb mongodb-bsontype docutils literal"><span class="pre">date</span></code></a> object containing the
 time of the last write operation.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="isMaster.lastWrite.majorityOpTime">
-<code class="descclassname">isMaster.lastWrite.</code><code class="descname">majorityOpTime</code><a class="dashingAutolink" name="autolink-1414"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.majorityOpTime" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.lastWrite.</code><code class="descname">majorityOpTime</code><a class="dashingAutolink" name="autolink-738"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.majorityOpTime" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An object giving the <a class="reference internal" href="../glossary.html#term-optime"><span class="xref std std-term">optime</span></a> of the last write operation
 readable by <a class="reference internal" href="../read-concern.html#readconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-readconcern docutils literal"><span class="pre">majority</span></code></a> reads.</p>
 <p>This field only appears on <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instances started with
@@ -473,7 +473,7 @@ the <a class="reference internal" href="../program/mongod.html#cmdoption-mongod-
 
 <dl class="data">
 <dt id="isMaster.lastWrite.majorityWriteDate">
-<code class="descclassname">isMaster.lastWrite.</code><code class="descname">majorityWriteDate</code><a class="dashingAutolink" name="autolink-1415"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.majorityWriteDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">isMaster.lastWrite.</code><code class="descname">majorityWriteDate</code><a class="dashingAutolink" name="autolink-739"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#isMaster.lastWrite.majorityWriteDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A <a class="reference internal" href="../mongodb-extended-json.html#bson.data_date" title="data_date"><code class="xref mongodb mongodb-bsontype docutils literal"><span class="pre">date</span></code></a> object containing the
 time of the last write operation readable by
 <a class="reference internal" href="../read-concern.html#readconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-readconcern docutils literal"><span class="pre">majority</span></code></a> reads.</p>

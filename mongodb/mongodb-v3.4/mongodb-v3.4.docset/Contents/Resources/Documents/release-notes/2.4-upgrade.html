@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7422"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Upgrade%20MongoDB%20to%202.4%20%E2%80%94%20MongoDB%20Manual"></a><title>Upgrade MongoDB to 2.4 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3527"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Upgrade%20MongoDB%20to%202.4%20%E2%80%94%20MongoDB%20Manual"></a><title>Upgrade MongoDB to 2.4 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/2.4-upgrade/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="upgrade-mongodb-to-2-4">
-<a class="dashingAutolink" name="autolink-7423"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Upgrade%20MongoDB%20to%202.4%C2%B6"></a><h1>Upgrade MongoDB to 2.4<a class="headerlink" href="#upgrade-mongodb-to-2-4" title="Permalink to this headline">&para;</a></h1>
+<h1>Upgrade MongoDB to 2.4<a class="headerlink" href="#upgrade-mongodb-to-2-4" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -218,16 +218,16 @@ shutting down the <a class="reference internal" href="../reference/program/mongo
 with the 2.4 binary.  After upgrading a <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance,
 wait for the member to recover to <code class="docutils literal"><span class="pre">SECONDARY</span></code> state
 before upgrading the next instance.
-To check the member&rsquo;s state, issue <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-7424"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> in the
+To check the member&rsquo;s state, issue <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> in the
 <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.</p>
 </li>
-<li><p class="first">Use the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell method <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7425"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> to
-step down the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> to allow the normal <a class="reference internal" href="../core/replica-set-high-availability.html#replica-set-failover"><span class="std std-ref">failover</span></a> procedure.  <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7426"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
+<li><p class="first">Use the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell method <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> to
+step down the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> to allow the normal <a class="reference internal" href="../core/replica-set-high-availability.html#replica-set-failover"><span class="std std-ref">failover</span></a> procedure.  <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
 expedites the failover procedure and is preferable to shutting down
 the primary directly.</p>
 <p>Once the primary has stepped down and another member has assumed
 <code class="docutils literal"><span class="pre">PRIMARY</span></code> state, as observed in the output of
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-7427"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>, shut down the previous primary and replace
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>, shut down the previous primary and replace
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> binary with the 2.4 binary and start the new
 process.</p>
 <div class="admonition note">
@@ -292,12 +292,12 @@ Ensure low latency between the upgrade process and the config servers.</p>
 collection meta-data. For example, during the upgrade, do <strong>not</strong>
 perform:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/sh.enableSharding.html#sh.enableSharding" title="sh.enableSharding()"><a class="dashingAutolink" name="autolink-7428"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableSharding%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableSharding()</span></code></a>,</li>
-<li><a class="reference internal" href="../reference/method/sh.shardCollection.html#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-7429"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a>,</li>
-<li><a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><a class="dashingAutolink" name="autolink-7430"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>,</li>
-<li><a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7431"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>,</li>
-<li><a class="reference internal" href="../reference/method/db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-7432"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a>,</li>
-<li><a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><a class="dashingAutolink" name="autolink-7433"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/sh.enableSharding.html#sh.enableSharding" title="sh.enableSharding()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableSharding()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/sh.shardCollection.html#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a>,</li>
+<li><a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a>,</li>
 <li>any operation that creates a database, or</li>
 <li>any other operation that modifies the cluster meta-data in any
 way. See <a class="reference internal" href="../reference/sharding.html"><span class="doc">Sharding Reference</span></a> for a complete list
@@ -338,14 +338,14 @@ MongoDB 2.0 or earlier.</p>
 <p>The duration of the metadata upgrade depends on the network latency
 between the node performing the upgrade and the three config servers.
 Ensure low latency between the upgrade process and the config servers.</p>
-<p>To check the version of your indexes, use <a class="reference internal" href="../reference/method/db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><a class="dashingAutolink" name="autolink-7434"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a>.</p>
+<p>To check the version of your indexes, use <a class="reference internal" href="../reference/method/db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a>.</p>
 <p>If any index <strong>on the config database</strong> is <code class="docutils literal"><span class="pre">{v:0}</span></code>, you should
 rebuild those indexes by connecting to the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> and
 either: rebuild all indexes using the
-<a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-7435"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a> method, or drop and rebuild
-specific indexes using <a class="reference internal" href="../reference/method/db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><a class="dashingAutolink" name="autolink-7436"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.dropIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dropIndex()</span></code></a> and then
-<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7437"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a>.  If you need to upgrade the
-<code class="docutils literal"><span class="pre">_id</span></code> index to <code class="docutils literal"><span class="pre">{v:1}</span></code> use <a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-7438"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a> method, or drop and rebuild
+specific indexes using <a class="reference internal" href="../reference/method/db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dropIndex()</span></code></a> and then
+<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.ensureIndex()</span></code></a>.  If you need to upgrade the
+<code class="docutils literal"><span class="pre">_id</span></code> index to <code class="docutils literal"><span class="pre">{v:1}</span></code> use <a class="reference internal" href="../reference/method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a>.</p>
 <p>You may have <code class="docutils literal"><span class="pre">{v:0}</span></code> indexes on other databases in the cluster.</p>
 </li>
 <li><p class="first">Turn off the <a class="reference internal" href="../core/sharding-balancer-administration.html#sharding-balancing-internals"><span class="std std-ref">balancer</span></a> in the
@@ -523,7 +523,7 @@ port back to the old settings (<code class="docutils literal"><span class="pre">
 the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> disables old connections only after attempted
 use. 2.4 fixes this problem, but to avoid this issue in version
 2.2, you can restart all <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instances (one-by-one,
-to avoid downtime) and use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7439"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method
+to avoid downtime) and use the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> method
 before restarting each of the shard <a class="reference internal" href="../reference/glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a>
 <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primaries</span></a>.</p>
 </li>
@@ -725,7 +725,7 @@ copy</a>
 </div>
 </div>
 <p>Then, you will need to drop any existing <code class="docutils literal"><span class="pre">2dsphere</span></code> or <code class="docutils literal"><span class="pre">text</span></code>
-indexes using <a class="reference internal" href="../reference/method/db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><a class="dashingAutolink" name="autolink-7440"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.dropIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dropIndex()</span></code></a>, for example:</p>
+indexes using <a class="reference internal" href="../reference/method/db.collection.dropIndex.html#db.collection.dropIndex" title="db.collection.dropIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.dropIndex()</span></code></a>, for example:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">

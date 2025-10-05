@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3507"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.find%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.find() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1832"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.find%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.find() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.find/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-find">
-<a class="dashingAutolink" name="autolink-3482"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.find%28%29%C2%B6"></a><h1>db.collection.find()<a class="headerlink" href="#db-collection-find" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.find()<a class="headerlink" href="#db-collection-find" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.find">
-<code class="descclassname">db.collection.</code><code class="descname">find</code><span class="sig-paren">(</span><em>query</em>, <em>projection</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3506"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.find" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">find</code><span class="sig-paren">(</span><em>query</em>, <em>projection</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1831"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.find" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Selects documents in a collection or view and returns a
 <a class="reference internal" href="../glossary.html#term-cursor"><span class="xref std std-term">cursor</span></a> to the selected documents.</p>
 <table border="1" class="colwidths-given docutils">
@@ -200,7 +200,7 @@ parameter.  For details, see <a class="reference internal" href="#find-projectio
 <col class="field-body"/>
 </colgroup><tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A <a class="reference internal" href="../glossary.html#term-cursor"><span class="xref std std-term">cursor</span></a> to the documents that match the <code class="docutils literal"><span class="pre">query</span></code>
-criteria. When the <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3483"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method
+criteria. When the <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method
 &ldquo;returns documents,&rdquo; the method is actually returning a cursor to
 the documents.</td>
 </tr>
@@ -232,7 +232,7 @@ copy</a>
 <li><p class="first"><code class="docutils literal"><span class="pre">0</span></code> or <code class="docutils literal"><span class="pre">false</span></code> to exclude the field.</p>
 </li>
 <li><p class="first">Expression using a <a class="reference internal" href="../operator/projection.html"><span class="doc">Projection Operators</span></a>.</p>
-<p><a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3484"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
+<p><a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
 the following <a class="reference internal" href="../operator/projection.html"><span class="doc">projection</span></a>
 operators:</p>
 <ul class="simple">
@@ -246,7 +246,7 @@ operators:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">For the <code class="docutils literal"><span class="pre">_id</span></code> field, you do not have to explicitly specify <code class="docutils literal"><span class="pre">_id:</span>
-<span class="pre">1</span></code> to return the <code class="docutils literal"><span class="pre">_id</span></code> field. The <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3485"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method always returns the <a class="reference internal" href="../glossary.html#term-id"><span class="xref std std-term">_id</span></a> field
+<span class="pre">1</span></code> to return the <code class="docutils literal"><span class="pre">_id</span></code> field. The <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method always returns the <a class="reference internal" href="../glossary.html#term-id"><span class="xref std std-term">_id</span></a> field
 unless you specify <code class="docutils literal"><span class="pre">_id:</span> <span class="pre">0</span></code> to suppress the field.</p>
 </div>
 <p>A <code class="docutils literal"><span class="pre">projection</span></code> <em>cannot</em> contain <em>both</em> include and exclude
@@ -256,7 +256,7 @@ only field that you can <em>explicitly exclude</em>.</p>
 </div>
 <div class="section" id="cursor-handling">
 <h3>Cursor Handling<a class="headerlink" href="#cursor-handling" title="Permalink to this headline">&para;</a></h3>
-<p>Executing <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3486"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
+<p>Executing <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell
 automatically iterates the cursor to display up to the first 20
 documents. Type <code class="docutils literal"><span class="pre">it</span></code> to continue iteration.</p>
 <p>To access the returned documents with a driver, use the appropriate
@@ -265,7 +265,7 @@ cursor handling mechanism for the <a class="reference external" href="https://do
 <div class="section" id="read-concern">
 <h3>Read Concern<a class="headerlink" href="#read-concern" title="Permalink to this headline">&para;</a></h3>
 <p>To specify the <a class="reference internal" href="../read-concern.html"><span class="doc">read concern</span></a> for
-<a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3487"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a>, use the <a class="reference internal" href="cursor.readConcern.html#cursor.readConcern" title="cursor.readConcern()"><a class="dashingAutolink" name="autolink-3488"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.readConcern%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.readConcern()</span></code></a>
+<a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a>, use the <a class="reference internal" href="cursor.readConcern.html#cursor.readConcern" title="cursor.readConcern()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.readConcern()</span></code></a>
 method.</p>
 </div>
 <div class="section" id="type-bracketing">
@@ -352,7 +352,7 @@ copy</a>
 <a class="reference internal" href="../bios-example-collection.html"><span class="doc">The bios Example Collection</span></a>.</p>
 <div class="section" id="find-all-documents-in-a-collection">
 <h3>Find All Documents in a Collection<a class="headerlink" href="#find-all-documents-in-a-collection" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3489"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method with no parameters
+<p>The <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method with no parameters
 returns all documents from a collection and returns all fields for the
 documents. For example, the following operation returns all documents in
 the <a class="reference internal" href="../bios-example-collection.html"><span class="doc">bios collection</span></a>:</p>
@@ -407,7 +407,7 @@ copy</a>
 <div class="section" id="query-using-operators">
 <h4>Query Using Operators<a class="headerlink" href="#query-using-operators" title="Permalink to this headline">&para;</a></h4>
 <p>To find documents that match a set of selection criteria, call
-<a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3490"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> with the <code class="docutils literal"><span class="pre">&lt;criteria&gt;</span></code> parameter.</p>
+<a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> with the <code class="docutils literal"><span class="pre">&lt;criteria&gt;</span></code> parameter.</p>
 <p>MongoDB provides various <a class="reference internal" href="../operator/query.html#query-selectors"><span class="std std-ref">query operators</span></a> to
 specify the criteria.</p>
 <ul>
@@ -795,7 +795,7 @@ copy</a>
 </div>
 <div class="section" id="iterate-the-returned-cursor">
 <span id="crud-read-cursor"></span><h3>Iterate the Returned Cursor<a class="headerlink" href="#iterate-the-returned-cursor" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3491"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method returns a
+<p>The <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method returns a
 <a class="reference internal" href="../../tutorial/iterate-a-cursor.html#read-operations-cursors"><span class="std std-ref">cursor</span></a> to the results.</p>
 <p>In the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, if the returned cursor is not assigned to a
 variable using the <code class="docutils literal"><span class="pre">var</span></code> keyword, the cursor is automatically iterated to
@@ -822,7 +822,7 @@ copy</a>
 </div>
 <div class="section" id="with-next-method">
 <h4>With <code class="docutils literal"><span class="pre">next()</span></code> Method<a class="headerlink" href="#with-next-method" title="Permalink to this headline">&para;</a></h4>
-<p>The following example uses the cursor method <a class="reference internal" href="cursor.next.html#cursor.next" title="cursor.next()"><a class="dashingAutolink" name="autolink-3492"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/next%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">next()</span></code></a> to
+<p>The following example uses the cursor method <a class="reference internal" href="cursor.next.html#cursor.next" title="cursor.next()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">next()</span></code></a> to
 access the documents:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -857,7 +857,7 @@ copy</a>
 </div>
 <div class="section" id="with-foreach-method">
 <h4>With <code class="docutils literal"><span class="pre">forEach()</span></code> Method<a class="headerlink" href="#with-foreach-method" title="Permalink to this headline">&para;</a></h4>
-<p>The following example uses the cursor method <a class="reference internal" href="cursor.forEach.html#cursor.forEach" title="cursor.forEach()"><a class="dashingAutolink" name="autolink-3493"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/forEach%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a>
+<p>The following example uses the cursor method <a class="reference internal" href="cursor.forEach.html#cursor.forEach" title="cursor.forEach()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a>
 to iterate the cursor and access the documents:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -875,11 +875,11 @@ copy</a>
 <div class="section" id="modify-the-cursor-behavior">
 <h3>Modify the Cursor Behavior<a class="headerlink" href="#modify-the-cursor-behavior" title="Permalink to this headline">&para;</a></h3>
 <p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and the <a class="reference external" href="https://docs.mongodb.com/ecosystem/drivers">drivers</a> provide several cursor methods that call on the
-<em>cursor</em> returned by the <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3494"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to
+<em>cursor</em> returned by the <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method to
 modify its behavior.</p>
 <div class="section" id="order-documents-in-the-result-set">
 <h4>Order Documents in the Result Set<a class="headerlink" href="#order-documents-in-the-result-set" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3495"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method orders the documents in the result
+<p>The <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> method orders the documents in the result
 set. The following operation returns documents in the <a class="reference internal" href="../bios-example-collection.html"><span class="doc">bios
 collection</span></a> sorted in ascending
 order by the <code class="docutils literal"><span class="pre">name</span></code> field:</p>
@@ -892,12 +892,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p><a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3496"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> corresponds to the <code class="docutils literal"><span class="pre">ORDER</span> <span class="pre">BY</span></code>
+<p><a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> corresponds to the <code class="docutils literal"><span class="pre">ORDER</span> <span class="pre">BY</span></code>
 statement in SQL.</p>
 </div>
 <div class="section" id="limit-the-number-of-documents-to-return">
 <h4>Limit the Number of Documents to Return<a class="headerlink" href="#limit-the-number-of-documents-to-return" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3497"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method limits the number of documents in
+<p>The <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method limits the number of documents in
 the result set. The following operation returns at most <code class="docutils literal"><span class="pre">5</span></code> documents
 in the <a class="reference internal" href="../bios-example-collection.html"><span class="doc">bios collection</span></a>:</p>
 <div class="button-code-block">
@@ -909,12 +909,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p><a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3498"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> corresponds to the <code class="docutils literal"><span class="pre">LIMIT</span></code>
+<p><a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> corresponds to the <code class="docutils literal"><span class="pre">LIMIT</span></code>
 statement in SQL.</p>
 </div>
 <div class="section" id="set-the-starting-point-of-the-result-set">
 <h4>Set the Starting Point of the Result Set<a class="headerlink" href="#set-the-starting-point-of-the-result-set" title="Permalink to this headline">&para;</a></h4>
-<p>The <a class="reference internal" href="cursor.skip.html#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3499"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> method controls the starting point of the
+<p>The <a class="reference internal" href="cursor.skip.html#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> method controls the starting point of the
 results set. The following operation skips the first <code class="docutils literal"><span class="pre">5</span></code> documents in
 the <a class="reference internal" href="../bios-example-collection.html"><span class="doc">bios collection</span></a> and
 returns all remaining documents:</p>
@@ -933,7 +933,7 @@ copy</a>
 <p><a class="reference internal" href="../collation.html"><span class="doc">Collation</span></a> allows users to specify
 language-specific rules for string comparison, such as rules for
 lettercase and accent marks.</p>
-<p>The <a class="reference internal" href="cursor.collation.html#cursor.collation" title="cursor.collation()"><a class="dashingAutolink" name="autolink-3500"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/collation%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">collation()</span></code></a> method specifies the <a class="reference internal" href="../bson-type-comparison-order.html#collation"><span class="std std-ref">collation</span></a> for the <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3501"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operation.</p>
+<p>The <a class="reference internal" href="cursor.collation.html#cursor.collation" title="cursor.collation()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">collation()</span></code></a> method specifies the <a class="reference internal" href="../bson-type-comparison-order.html#collation"><span class="std std-ref">collation</span></a> for the <a class="reference internal" href="#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> operation.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -946,8 +946,8 @@ copy</a>
 </div>
 <div class="section" id="combine-cursor-methods">
 <h4>Combine Cursor Methods<a class="headerlink" href="#combine-cursor-methods" title="Permalink to this headline">&para;</a></h4>
-<p>The following statements chain cursor methods <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3502"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>
-and <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3503"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>:</p>
+<p>The following statements chain cursor methods <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>
+and <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -959,7 +959,7 @@ copy</a>
 </div>
 </div>
 <p>The two statements are equivalent; i.e. the order in which you chain
-the <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3504"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> and the <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3505"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> methods
+the <a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> and the <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> methods
 is not significant. Both statements return the first five documents, as
 determined by the ascending sort order on &lsquo;name&rsquo;.</p>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7571"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Compatibility%20Changes%20in%20MongoDB%203.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Compatibility Changes in MongoDB 3.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3539"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Compatibility%20Changes%20in%20MongoDB%203.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Compatibility Changes in MongoDB 3.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/3.0-compatibility/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="compatibility-changes-in-mongodb-3-0">
-<a class="dashingAutolink" name="autolink-7572"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Compatibility%20Changes%20in%20MongoDB%203.0%C2%B6"></a><h1>Compatibility Changes in MongoDB 3.0<a class="headerlink" href="#compatibility-changes-in-mongodb-3-0" title="Permalink to this headline">&para;</a></h1>
+<h1>Compatibility Changes in MongoDB 3.0<a class="headerlink" href="#compatibility-changes-in-mongodb-3-0" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -232,8 +232,8 @@ data files created by a storage engine other than the one specified by
 following operations return no output when issued in previous versions
 of the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell or drivers:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.getCollectionNames.html#db.getCollectionNames" title="db.getCollectionNames()"><a class="dashingAutolink" name="autolink-7573"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollectionNames%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionNames()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><a class="dashingAutolink" name="autolink-7574"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.getIndexes%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.getCollectionNames.html#db.getCollectionNames" title="db.getCollectionNames()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollectionNames()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.getIndexes.html#db.collection.getIndexes" title="db.collection.getIndexes()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.getIndexes()</span></code></a></li>
 <li><code class="docutils literal"><span class="pre">show</span> <span class="pre">collections</span></code></li>
 <li><code class="docutils literal"><span class="pre">show</span> <span class="pre">tables</span></code></li>
 </ul>
@@ -244,8 +244,8 @@ connecting to 3.0 <a class="reference internal" href="../reference/program/mongo
 </div>
 <div class="section" id="db-fsynclock-is-not-compatible-with-wiredtiger">
 <h3><code class="docutils literal"><span class="pre">db.fsyncLock()</span></code> is not Compatible with WiredTiger<a class="headerlink" href="#db-fsynclock-is-not-compatible-with-wiredtiger" title="Permalink to this headline">&para;</a></h3>
-<p>With WiredTiger the <a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-7575"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><a class="dashingAutolink" name="autolink-7576"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.fsyncUnlock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncUnlock()</span></code></a> operations <em>cannot</em> guarantee that the data
+<p>With WiredTiger the <a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncLock()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.fsyncUnlock()</span></code></a> operations <em>cannot</em> guarantee that the data
 files do not change. As a result, do not use these methods to ensure
 consistency for the purposes of creating backups.</p>
 </div>
@@ -267,7 +267,7 @@ consistency for the purposes of creating backups.</p>
 parameter such that you can no longer use the parameter to disable the
 power of 2 sizes allocation for a collection. Instead, use the
 <a class="reference internal" href="../reference/command/collMod.html#dbcmd.collMod" title="collMod"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collMod</span></code></a> command with the <a class="reference internal" href="../reference/command/collMod.html#noPadding" title="noPadding"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">noPadding</span></code></a> flag or the
-<a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7577"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> method with the <code class="docutils literal"><span class="pre">noPadding</span></code> option.
+<a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> method with the <code class="docutils literal"><span class="pre">noPadding</span></code> option.
 Only set <code class="docutils literal"><span class="pre">noPadding</span></code> for collections with workloads that consist only
 of inserts or in-place updates (such as incrementing counters).</p>
 <div class="admonition warning">
@@ -325,11 +325,11 @@ settings. Previously, MongoDB ignored unrecognized settings. If
 you must remove the unrecognized settings.</li>
 </ul>
 <p>To fix the settings before upgrading to MongoDB 3.0, connect to the
-primary and <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7578"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/reconfigure"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfigure</span></code></a> your replica set to
+primary and <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfigure</span></code></a> your replica set to
 valid configuration settings.</p>
 <p>If you have already upgraded to MongoDB 3.0, you must <a class="reference internal" href="3.0-downgrade.html"><span class="doc">downgrade
 to MongoDB 2.6</span></a> first and then fix the
-settings. Once you have <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7579"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/reconfigured"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfigured</span></code></a> the
+settings. Once you have <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">reconfigured</span></code></a> the
 replica set, you can re-upgrade to MongoDB 3.0.</p>
 </div>
 <div class="section" id="change-of-w-majority-semantics">
@@ -343,7 +343,7 @@ voting and non-voting members of the set.</p>
 <h3>Remove <code class="docutils literal"><span class="pre">local.slaves</span></code> Collection<a class="headerlink" href="#remove-local-slaves-collection" title="Permalink to this headline">&para;</a></h3>
 <p>MongoDB 3.0 removes the <code class="docutils literal"><span class="pre">local.slaves</span></code> collection that tracked the
 secondaries&rsquo; replication progress. To track the replication progress,
-use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-7580"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method.</p>
+use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method.</p>
 </div>
 <div class="section" id="replica-set-state-change">
 <h3>Replica Set State Change<a class="headerlink" href="#replica-set-state-change" title="Permalink to this headline">&para;</a></h3>
@@ -443,7 +443,7 @@ instance.</p>
 <div class="section" id="db-adduser-removed">
 <h3><code class="docutils literal"><span class="pre">db.addUser()</span></code> Removed<a class="headerlink" href="#db-adduser-removed" title="Permalink to this headline">&para;</a></h3>
 <p>3.0 removes the legacy <code class="docutils literal"><span class="pre">db.addUser()</span></code> method. Use
-<a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-7581"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> and <a class="reference internal" href="../reference/method/db.updateUser.html#db.updateUser" title="db.updateUser()"><a class="dashingAutolink" name="autolink-7582"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.updateUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> instead.</p>
+<a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> and <a class="reference internal" href="../reference/method/db.updateUser.html#db.updateUser" title="db.updateUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.updateUser()</span></code></a> instead.</p>
 </div>
 <div class="section" id="tls-ssl-configuration-option-changes">
 <h3>TLS/SSL Configuration Option Changes<a class="headerlink" href="#tls-ssl-configuration-option-changes" title="Permalink to this headline">&para;</a></h3>
@@ -502,8 +502,8 @@ user authentication mechanism introduced in version 3.0.</p>
 <div class="section" id="remove-dropdups-option">
 <h3>Remove <code class="docutils literal"><span class="pre">dropDups</span></code> Option<a class="headerlink" href="#remove-dropdups-option" title="Permalink to this headline">&para;</a></h3>
 <p><code class="docutils literal"><span class="pre">dropDups</span></code> option is no longer available for
-<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-7583"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndex()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><a class="dashingAutolink" name="autolink-7584"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ensureIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a>, and <a class="reference internal" href="../reference/command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndex()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.ensureIndex.html#db.collection.ensureIndex" title="db.collection.ensureIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ensureIndex()</span></code></a>, and <a class="reference internal" href="../reference/command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a>.</p>
 </div>
 <div class="section" id="changes-to-restart-behavior-during-background-indexing">
 <h3>Changes to Restart Behavior during Background Indexing<a class="headerlink" href="#changes-to-restart-behavior-during-background-indexing" title="Permalink to this headline">&para;</a></h3>
@@ -520,8 +520,8 @@ key error, the <a class="reference internal" href="../reference/program/mongod.h
 <p>For <a class="reference internal" href="../reference/operator/query/near.html#op._S_near" title="$near"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$near</span></code></a> queries that use a <a class="reference internal" href="../core/2d.html"><span class="doc">2d</span></a> index:</p>
 <ul class="simple">
 <li>MongoDB no longer uses a default limit of 100 documents.</li>
-<li>Specifying a <a class="reference internal" href="../reference/method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><a class="dashingAutolink" name="autolink-7585"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/batchSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> is no longer analogous to
-specifying a <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-7586"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>.</li>
+<li>Specifying a <a class="reference internal" href="../reference/method/cursor.batchSize.html#cursor.batchSize" title="cursor.batchSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> is no longer analogous to
+specifying a <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>.</li>
 </ul>
 <p>For <a class="reference internal" href="../reference/operator/query/nearSphere.html#op._S_nearSphere" title="$nearSphere"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$nearSphere</span></code></a> queries that use a <a class="reference internal" href="../core/2d.html"><span class="doc">2d</span></a> index,
 MongoDB no longer uses a default limit of 100 documents.</p>
@@ -605,7 +605,7 @@ the update, and <code class="docutils literal"><span class="pre">upsert:</span> 
 </div>
 <div class="section" id="upsert-true-with-a-dotted-id-query">
 <h3><code class="docutils literal"><span class="pre">upsert:true</span></code> with a Dotted <code class="docutils literal"><span class="pre">_id</span></code> Query<a class="headerlink" href="#upsert-true-with-a-dotted-id-query" title="Permalink to this headline">&para;</a></h3>
-<p>When you execute an <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-7587"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code> and
+<p>When you execute an <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> with <code class="docutils literal"><span class="pre">upsert:</span> <span class="pre">true</span></code> and
 the query matches no existing document, MongoDB will refuse to insert a new
 document if the query specifies conditions on the <code class="docutils literal"><span class="pre">_id</span></code> field using
 <a class="reference internal" href="../core/document.html#document-dot-notation"><span class="std std-ref">dot notation</span></a>.</p>
@@ -666,12 +666,12 @@ packages from the new location.</p>
 <p>The following commands and methods are deprecated in MongoDB 3.0:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/command/diagLogging.html#dbcmd.diagLogging" title="diagLogging"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">diagLogging</span></code></a></li>
-<li><a class="reference internal" href="../reference/command/eval.html#dbcmd.eval" title="eval"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">eval</span></code></a>, <a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-7588"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.collection.copyTo.html#db.collection.copyTo" title="db.collection.copyTo()"><a class="dashingAutolink" name="autolink-7589"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.copyTo%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a></li>
+<li><a class="reference internal" href="../reference/command/eval.html#dbcmd.eval" title="eval"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">eval</span></code></a>, <a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.copyTo.html#db.collection.copyTo" title="db.collection.copyTo()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.copyTo()</span></code></a></li>
 </ul>
 <p>In addition, you cannot use the now deprecated <a class="reference internal" href="../reference/command/eval.html#dbcmd.eval" title="eval"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">eval</span></code></a>
-command or the <a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-7590"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> method to invoke
-<a class="reference internal" href="../reference/command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> or <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-7591"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>.</p>
+command or the <a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> method to invoke
+<a class="reference internal" href="../reference/command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> or <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a>.</p>
 </div>
 <div class="section" id="date-and-timestamp-comparison-order">
 <span id="date-timestamp"></span><h3>Date and Timestamp Comparison Order<a class="headerlink" href="#date-and-timestamp-comparison-order" title="Permalink to this headline">&para;</a></h3>
@@ -685,7 +685,7 @@ Timestamp objects, modify your application accordingly before upgrading.</p>
 <div class="section" id="server-status-output-change">
 <h3>Server Status Output Change<a class="headerlink" href="#server-status-output-change" title="Permalink to this headline">&para;</a></h3>
 <p>The <a class="reference internal" href="../reference/command/serverStatus.html#dbcmd.serverStatus" title="serverStatus"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">serverStatus</span></code></a> command and the
-<a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><a class="dashingAutolink" name="autolink-7592"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.serverStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> method no longer return <code class="docutils literal"><span class="pre">workingSet</span></code>,
+<a class="reference internal" href="../reference/method/db.serverStatus.html#db.serverStatus" title="db.serverStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.serverStatus()</span></code></a> method no longer return <code class="docutils literal"><span class="pre">workingSet</span></code>,
 <code class="docutils literal"><span class="pre">indexCounters</span></code>, and <code class="docutils literal"><span class="pre">recordStats</span></code> sections in the output.</p>
 </div>
 <div class="section" id="unix-socket-permissions-change">
@@ -697,7 +697,7 @@ the permission, MongoDB provides the
 </div>
 <div class="section" id="clonecollection">
 <h3><code class="docutils literal"><span class="pre">cloneCollection</span></code><a class="headerlink" href="#clonecollection" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="../reference/command/cloneCollection.html#dbcmd.cloneCollection" title="cloneCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">cloneCollection</span></code></a> command and the <a class="reference internal" href="../reference/method/db.cloneCollection.html#db.cloneCollection" title="db.cloneCollection()"><a class="dashingAutolink" name="autolink-7593"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.cloneCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.cloneCollection()</span></code></a>
+<p>The <a class="reference internal" href="../reference/command/cloneCollection.html#dbcmd.cloneCollection" title="cloneCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">cloneCollection</span></code></a> command and the <a class="reference internal" href="../reference/method/db.cloneCollection.html#db.cloneCollection" title="db.cloneCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.cloneCollection()</span></code></a>
 method will now return an error if the collection already exists, instead of
 inserting into it.</p>
 </div>

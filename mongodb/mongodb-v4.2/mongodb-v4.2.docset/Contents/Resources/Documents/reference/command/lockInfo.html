@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-857"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/lockInfo%20%E2%80%94%20MongoDB%20Manual"></a><title>lockInfo &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-852"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/lockInfo%20%E2%80%94%20MongoDB%20Manual"></a><title>lockInfo &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/lockInfo/"/><meta name="robots" content="index"/>
@@ -167,7 +167,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.lockInfo">
-<code class="descname">lockInfo</code><a class="dashingAutolink" name="autolink-852"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.lockInfo" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">lockInfo</code><a class="dashingAutolink" name="autolink-853"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.lockInfo" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns information on locks that are currently being held or
 pending. <a class="reference internal" href="#dbcmd.lockInfo" title="lockInfo"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">lockInfo</span></code></a> is an internal command available on
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instances only.</p>
@@ -348,7 +348,7 @@ copy</a>
 <h2>Output Fields<a class="headerlink" href="#output-fields" title="Permalink to this headline">&para;</a></h2>
 <dl class="data">
 <dt id="lockInfo">
-<code class="descname">lockInfo</code><a class="dashingAutolink" name="autolink-853"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">lockInfo</code><a class="dashingAutolink" name="autolink-854"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of documents that report on the lock information. Each
 document includes:</p>
 <ul class="simple">
@@ -360,20 +360,20 @@ document includes:</p>
 
 <dl class="data">
 <dt id="lockInfo.resourceId">
-<code class="descclassname">lockInfo.</code><code class="descname">resourceId</code><a class="dashingAutolink" name="autolink-854"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo.resourceId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">lockInfo.</code><code class="descname">resourceId</code><a class="dashingAutolink" name="autolink-855"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo.resourceId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The resource on which the locks are being held or pending.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="lockInfo.granted">
-<code class="descclassname">lockInfo.</code><code class="descname">granted</code><a class="dashingAutolink" name="autolink-855"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo.granted" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">lockInfo.</code><code class="descname">granted</code><a class="dashingAutolink" name="autolink-856"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo.granted" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of documents. Each document provides <a class="reference internal" href="#lockinformation"><span class="std std-ref">information on
 locks</span></a> that are currently granted on the resource.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="lockInfo.pending">
-<code class="descclassname">lockInfo.</code><code class="descname">pending</code><a class="dashingAutolink" name="autolink-856"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo.pending" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">lockInfo.</code><code class="descname">pending</code><a class="dashingAutolink" name="autolink-857"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#lockInfo.pending" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of documents. Each document provides <a class="reference internal" href="#lockinformation"><span class="std std-ref">information on
 locks</span></a> that are currently pending on the resource.</p>
 </dd></dl>

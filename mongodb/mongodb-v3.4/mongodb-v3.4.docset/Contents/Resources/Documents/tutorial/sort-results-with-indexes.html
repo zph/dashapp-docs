@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8753"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Use%20Indexes%20to%20Sort%20Query%20Results%20%E2%80%94%20MongoDB%20Manual"></a><title>Use Indexes to Sort Query Results &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3728"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Use%20Indexes%20to%20Sort%20Query%20Results%20%E2%80%94%20MongoDB%20Manual"></a><title>Use Indexes to Sort Query Results &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/sort-results-with-indexes/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="use-indexes-to-sort-query-results">
-<span id="sorting-with-indexes"></span><span id="index-sort"></span><a class="dashingAutolink" name="autolink-8751"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Use%20Indexes%20to%20Sort%20Query%20Results%C2%B6"></a><h1>Use Indexes to Sort Query Results<a class="headerlink" href="#use-indexes-to-sort-query-results" title="Permalink to this headline">&para;</a></h1>
+<span id="sorting-with-indexes"></span><span id="index-sort"></span><h1>Use Indexes to Sort Query Results<a class="headerlink" href="#use-indexes-to-sort-query-results" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -213,7 +213,7 @@ appear in the index. For example, an index key pattern <code class="docutils lit
 <span class="pre">}</span></code> can support a sort on <code class="docutils literal"><span class="pre">{</span> <span class="pre">a:</span> <span class="pre">1,</span> <span class="pre">b:</span> <span class="pre">1</span> <span class="pre">}</span></code> but <em>not</em> on <code class="docutils literal"><span class="pre">{</span> <span class="pre">b:</span> <span class="pre">1,</span> <span class="pre">a:</span>
 <span class="pre">1</span> <span class="pre">}</span></code>.</p>
 <p>For a query to use a compound index for a sort, the specified sort direction
-for all keys in the <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-8752"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a> document must match the index
+for all keys in the <a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a> document must match the index
 key pattern <em>or</em> match the inverse of the index key pattern.
 For example, an index key pattern <code class="docutils literal"><span class="pre">{</span> <span class="pre">a:</span> <span class="pre">1,</span> <span class="pre">b:</span> <span class="pre">-1</span> <span class="pre">}</span></code> can
 support a sort on <code class="docutils literal"><span class="pre">{</span> <span class="pre">a:</span> <span class="pre">1,</span> <span class="pre">b:</span> <span class="pre">-1</span> <span class="pre">}</span></code> and <code class="docutils literal"><span class="pre">{</span> <span class="pre">a:</span> <span class="pre">-1,</span> <span class="pre">b:</span> <span class="pre">1</span> <span class="pre">}</span></code> but <strong>not</strong>

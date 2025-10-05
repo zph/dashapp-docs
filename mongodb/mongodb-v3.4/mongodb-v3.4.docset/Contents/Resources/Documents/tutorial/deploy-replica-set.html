@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8128"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Deploy%20a%20Replica%20Set%20%E2%80%94%20MongoDB%20Manual"></a><title>Deploy a Replica Set &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3630"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Deploy%20a%20Replica%20Set%20%E2%80%94%20MongoDB%20Manual"></a><title>Deploy a Replica Set &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/deploy-replica-set/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="deploy-a-replica-set">
-<a class="dashingAutolink" name="autolink-8129"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Deploy%20a%20Replica%20Set%C2%B6"></a><h1>Deploy a Replica Set<a class="headerlink" href="#deploy-a-replica-set" title="Permalink to this headline">&para;</a></h1>
+<h1>Deploy a Replica Set<a class="headerlink" href="#deploy-a-replica-set" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -339,11 +339,11 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="initiate-the-replica-set">
 <h3>Initiate the replica set.<a class="headerlink" href="#initiate-the-replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8130"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> on
+<p>From the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> on
 replica set member 0.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last">Run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-8131"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> on <em>just one and only one</em>
+<p class="last">Run <a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> on <em>just one and only one</em>
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance for the replica set.</p>
 </div>
 <div class="button-code-block">
@@ -367,7 +367,7 @@ the default replica set configuration.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">4</div></div><div class="section" id="view-the-replica-set-configuration">
 <h3>View the replica set configuration.<a class="headerlink" href="#view-the-replica-set-configuration" title="Permalink to this headline">&para;</a></h3>
-<p>Use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8132"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> to display the <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set configuration
+<p>Use <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> to display the <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set configuration
 object</span></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -452,7 +452,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="ensure-that-the-replica-set-has-a-primary">
 <h3>Ensure that the replica set has a primary.<a class="headerlink" href="#ensure-that-the-replica-set-has-a-primary" title="Permalink to this headline">&para;</a></h3>
-<p>Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8133"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify the primary in the replica set.</p>
+<p>Use <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to identify the primary in the replica set.</p>
 </div></div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>

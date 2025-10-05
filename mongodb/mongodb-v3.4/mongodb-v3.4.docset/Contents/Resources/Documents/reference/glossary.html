@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2399"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Glossary%20%E2%80%94%20MongoDB%20Manual"></a><title>Glossary &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1531"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Glossary%20%E2%80%94%20MongoDB%20Manual"></a><title>Glossary &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/glossary/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="glossary">
-<a class="dashingAutolink" name="autolink-2400"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Glossary%C2%B6"></a><h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">&para;</a></h1>
+<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">&para;</a></h1>
 <dl class="glossary docutils">
 <dt id="term-cmd">$cmd</dt>
 <dd>A special virtual <a class="reference internal" href="#term-collection"><span class="xref std std-term">collection</span></a> that exposes MongoDB&rsquo;s
@@ -177,8 +177,8 @@ administrative commands. For a list of administrative commands,
 see <a class="reference internal" href="command.html#admin-commands"><span class="std std-ref">Administration Commands</span></a>.</dd>
 <dt id="term-aggregation">aggregation</dt>
 <dd>Any of a variety of operations that reduces and summarizes large
-sets of data. MongoDB&rsquo;s <a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-2401"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> and
-<a class="reference internal" href="method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-2402"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mapReduce()</span></code></a> methods are two
+sets of data. MongoDB&rsquo;s <a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> and
+<a class="reference internal" href="method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">mapReduce()</span></code></a> methods are two
 examples of aggregation operations. For more information, see
 <a class="reference internal" href="../aggregation.html"><span class="doc">Aggregation</span></a>.</dd>
 <dt id="term-aggregation-framework">aggregation framework</dt>
@@ -633,7 +633,7 @@ operation was originally generated on the primary.</li>
 </dd>
 <dt id="term-ordered-query-plan">ordered query plan</dt>
 <dd>A query plan that returns results in the order consistent with the
-<a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-2403"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> order. See
+<a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> order. See
 <a class="reference internal" href="../core/query-plans.html#read-operations-query-optimization"><span class="std std-ref">Query Plans</span></a>.</dd>
 <dt id="term-orphaned-document">orphaned document</dt>
 <dd>In a sharded cluster, orphaned documents are those documents on a
@@ -645,7 +645,7 @@ confusion.</dd>
 <dt id="term-padding">padding</dt>
 <dd>The extra space allocated to document on the disk to prevent
 moving a document when it grows as the result of
-<a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-2404"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
+<a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>
 operations. See <a class="reference internal" href="../core/mmapv1.html#record-allocation-strategies"><span class="std std-ref">Record Allocation Strategies</span></a>.</dd>
 <dt id="term-padding-factor">padding factor</dt>
 <dd>An automatically-calibrated constant used to determine how much
@@ -752,8 +752,8 @@ list of projection operators, see
 that includes a variety of <a class="reference internal" href="#term-operator"><span class="xref std std-term">query operators</span></a> with
 names that begin with a <code class="docutils literal"><span class="pre">$</span></code> character. In the <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
 shell, you can issue queries using the
-<a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-2405"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> and
-<a class="reference internal" href="method/db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-2406"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOne()</span></code></a> methods. See
+<a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a> and
+<a class="reference internal" href="method/db.collection.findOne.html#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findOne()</span></code></a> methods. See
 <a class="reference internal" href="../tutorial/query-documents.html#read-operations-queries"><span class="std std-ref">Query Documents</span></a>.</dd>
 <dt id="term-query-optimizer">query optimizer</dt>
 <dd>A process that generates query plans. For each query, the
@@ -989,12 +989,12 @@ a single collection. See <a class="reference internal" href="../core/index-uniqu
 where the number of seconds or milliseconds since this point is counted.</dd>
 <dt id="term-unordered-query-plan">unordered query plan</dt>
 <dd>A query plan that returns results in an order inconsistent with the
-<a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-2407"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> order.
+<a class="reference internal" href="method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> order.
 See <a class="reference internal" href="../core/query-plans.html#read-operations-query-optimization"><span class="std std-ref">Query Plans</span></a>.</dd>
 <dt id="term-upsert">upsert</dt>
 <dd>An option for update operations; e.g.
-<a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-2408"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>,
-<a class="reference internal" href="method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-2409"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a>. If set to true, the
+<a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.update()</span></code></a>,
+<a class="reference internal" href="method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.findAndModify()</span></code></a>. If set to true, the
 update operation will either update the document(s) matched by
 the specified query or if no documents match, insert a new
 document. The new document will have the fields indicated in the

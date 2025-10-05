@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8234"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Enforce%20Keyfile%20Access%20Control%20in%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Enforce Keyfile Access Control in Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3639"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Enforce%20Keyfile%20Access%20Control%20in%20Sharded%20Cluster%20%E2%80%94%20MongoDB%20Manual"></a><title>Enforce Keyfile Access Control in Sharded Cluster &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/enforce-keyfile-access-control-in-existing-sharded-cluster/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="enforce-keyfile-access-control-in-sharded-cluster">
-<a class="dashingAutolink" name="autolink-8235"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Enforce%20Keyfile%20Access%20Control%20in%20Sharded%20Cluster%C2%B6"></a><h1>Enforce Keyfile Access Control in Sharded Cluster<a class="headerlink" href="#enforce-keyfile-access-control-in-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
+<h1>Enforce Keyfile Access Control in Sharded Cluster<a class="headerlink" href="#enforce-keyfile-access-control-in-sharded-cluster" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -311,9 +311,9 @@ copy</a>
 </div>
 </div>
 <p>The balancer may not stop immediately if a migration is in progress.
-The <a class="reference internal" href="../reference/method/sh.stopBalancer.html#sh.stopBalancer" title="sh.stopBalancer()"><a class="dashingAutolink" name="autolink-8236"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.stopBalancer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.stopBalancer()</span></code></a> method blocks the shell until the
+The <a class="reference internal" href="../reference/method/sh.stopBalancer.html#sh.stopBalancer" title="sh.stopBalancer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.stopBalancer()</span></code></a> method blocks the shell until the
 balancer stops.</p>
-<p>Use <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8237"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> to verify that the balancer has
+<p>Use <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> to verify that the balancer has
 stopped.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -335,7 +335,7 @@ configuring sharded cluster balancer behavior.</p>
 <h4>Shut down all <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instances for the sharded cluster.<a class="headerlink" href="#shut-down-all-mongos-instances-for-the-sharded-cluster" title="Permalink to this headline">&para;</a></h4>
 <p>Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to each <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> and shut
 them down.</p>
-<p>Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8238"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method on the <code class="docutils literal"><span class="pre">admin</span></code> database
+<p>Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method on the <code class="docutils literal"><span class="pre">admin</span></code> database
 to safely shut down the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -357,7 +357,7 @@ should be offline.</p>
 config server deployment and shut them down.</p>
 <p>For replica set config server deployments, shut down the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a>
 member last.</p>
-<p>Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8239"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method on the <code class="docutils literal"><span class="pre">admin</span></code> database
+<p>Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method on the <code class="docutils literal"><span class="pre">admin</span></code> database
 to safely shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -375,7 +375,7 @@ copy</a>
 <p>For each shard replica set, connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to each
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> member in the replica set and shut them down. Shut down
 the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> member last.</p>
-<p>Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><a class="dashingAutolink" name="autolink-8240"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.shutdownServer%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method on the <code class="docutils literal"><span class="pre">admin</span></code> database
+<p>Use the <a class="reference internal" href="../reference/method/db.shutdownServer.html#db.shutdownServer" title="db.shutdownServer()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.shutdownServer()</span></code></a> method on the <code class="docutils literal"><span class="pre">admin</span></code> database
 to safely shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -638,7 +638,7 @@ once the localhost exception closes you cannot create
 or modify users, and therefore may be unable to
 perform necessary operations.</p>
 </div>
-<p>Add a user using the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-8241"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method. The user should
+<p>Add a user using the <a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> method. The user should
 have at minimum the <a class="reference internal" href="../reference/built-in-roles.html#userAdminAnyDatabase" title="userAdminAnyDatabase"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">userAdminAnyDatabase</span></code></a> role on the
 <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
 <div class="admonition important">
@@ -669,7 +669,7 @@ related to database administration operations.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">13</div></div><div class="section" id="authenticate-as-the-user-administrator">
 <h4>Authenticate as the user administrator.<a class="headerlink" href="#authenticate-as-the-user-administrator" title="Permalink to this headline">&para;</a></h4>
-<p>Use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8242"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> to authenticate as the user administrator
+<p>Use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> to authenticate as the user administrator
 to create additional users:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -728,7 +728,7 @@ replica set and sharded cluster operations.</p>
 <h4>Authenticate as cluster admin.<a class="headerlink" href="#authenticate-as-cluster-admin" title="Permalink to this headline">&para;</a></h4>
 <p>To perform sharding operations, authenticate as a
 <a class="reference internal" href="../reference/built-in-roles.html#clusterAdmin" title="clusterAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterAdmin</span></code></a> user with either the
-<a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8243"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method or a new <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell with the
+<a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method or a new <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell with the
 <code class="docutils literal"><span class="pre">username</span></code>, <code class="docutils literal"><span class="pre">password</span></code>, and <code class="docutils literal"><span class="pre">authenticationDatabase</span></code> parameters.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -748,7 +748,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Use the <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8244"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> to verify the balancer has started.</p>
+<p>Use the <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a> to verify the balancer has started.</p>
 <p>See <a class="reference internal" href="manage-sharded-cluster-balancer.html"><span class="doc">Manage Sharded Cluster Balancer</span></a> for tutorials on
 the sharded cluster balancer.</p>
 </div></div>

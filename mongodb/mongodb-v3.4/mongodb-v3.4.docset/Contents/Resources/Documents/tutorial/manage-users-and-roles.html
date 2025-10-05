@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8410"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20Users%20and%20Roles%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage Users and Roles &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3676"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Manage%20Users%20and%20Roles%20%E2%80%94%20MongoDB%20Manual"></a><title>Manage Users and Roles &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/manage-users-and-roles/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="manage-users-and-roles">
-<a class="dashingAutolink" name="autolink-8411"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Manage%20Users%20and%20Roles%C2%B6"></a><h1>Manage Users and Roles<a class="headerlink" href="#manage-users-and-roles" title="Permalink to this headline">&para;</a></h1>
+<h1>Manage Users and Roles<a class="headerlink" href="#manage-users-and-roles" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -198,7 +198,7 @@ other roles in its database.</p>
 apply to the <code class="docutils literal"><span class="pre">admin</span></code> database, other databases or to the
 <a class="reference internal" href="../reference/resource-document.html#resource-cluster"><span class="std std-ref">cluster</span></a> resource, and can inherit from roles
 in other databases as well as the <code class="docutils literal"><span class="pre">admin</span></code> database.</p>
-<p>To create a new role, use the <a class="reference internal" href="../reference/method/db.createRole.html#db.createRole" title="db.createRole()"><a class="dashingAutolink" name="autolink-8412"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createRole()</span></code></a> method,
+<p>To create a new role, use the <a class="reference internal" href="../reference/method/db.createRole.html#db.createRole" title="db.createRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createRole()</span></code></a> method,
 specifying the privileges in the <code class="docutils literal"><span class="pre">privileges</span></code> array and the inherited
 roles in the <code class="docutils literal"><span class="pre">roles</span></code> array.</p>
 <p>MongoDB uses the combination of the database name and the role name to
@@ -222,14 +222,14 @@ specify roles to inherit from.</li>
 <div class="section" id="create-a-role-to-manage-current-operations">
 <span id="create-role-to-manage-ops"></span><h3>Create a Role to Manage Current Operations<a class="headerlink" href="#create-a-role-to-manage-current-operations" title="Permalink to this headline">&para;</a></h3>
 <p>The following example creates a role named <code class="docutils literal"><span class="pre">manageOpRole</span></code> which
-provides only the privileges to run both <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-8413"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-8414"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. <a class="footnote-reference" href="#built-in-roles1" id="id2">[1]</a></p>
+provides only the privileges to run both <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. <a class="footnote-reference" href="#built-in-roles1" id="id2">[1]</a></p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <div class="last versionchanged">
 <p><span class="versionmodified">Changed in version 3.2.9: </span>On <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instances, users do not need any
 specific privileges to view or kill their own operations. See
-<a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-8415"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> and <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-8416"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> for details.</p>
+<a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> and <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> for details.</p>
 </div>
 </div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">1</div></div><div class="section" id="connect-to-mongodb-with-the-appropriate-privileges">
@@ -278,7 +278,7 @@ copy</a>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Terminate running operations with extreme caution. Only use
-the <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-8417"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> method or <a class="reference internal" href="../reference/command/killOp.html#dbcmd.killOp" title="killOp"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">killOp</span></code></a> command to terminate operations initiated by clients
+the <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> method or <a class="reference internal" href="../reference/command/killOp.html#dbcmd.killOp" title="killOp"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">killOp</span></code></a> command to terminate operations initiated by clients
 and <em>do not</em> terminate internal database operations.</p>
 </div>
 </div></div>
@@ -286,9 +286,9 @@ and <em>do not</em> terminate internal database operations.</p>
 <colgroup><col class="label"/><col/></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>The built-in role <a class="reference internal" href="../reference/built-in-roles.html#clusterMonitor" title="clusterMonitor"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterMonitor</span></code></a> also provides the
-privilege to run <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-8418"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> along with other
+privilege to run <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> along with other
 privileges, and the built-in role <a class="reference internal" href="../reference/built-in-roles.html#hostManager" title="hostManager"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">hostManager</span></code></a> provides
-the privilege to run <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-8419"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> along with other
+the privilege to run <a class="reference internal" href="../reference/method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a> along with other
 privileges.</td></tr>
 </tbody>
 </table>
@@ -441,7 +441,7 @@ copy</a>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="identify-the-user-s-roles-and-privileges">
 <h4>Identify the user&rsquo;s roles and privileges.<a class="headerlink" href="#identify-the-user-s-roles-and-privileges" title="Permalink to this headline">&para;</a></h4>
 <p>To display the roles and privileges of the user to be modified, use the
-<a class="reference internal" href="../reference/method/db.getUser.html#db.getUser" title="db.getUser()"><a class="dashingAutolink" name="autolink-8420"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getUser()</span></code></a> and <a class="reference internal" href="../reference/method/db.getRole.html#db.getRole" title="db.getRole()"><a class="dashingAutolink" name="autolink-8421"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getRole()</span></code></a> methods.</p>
+<a class="reference internal" href="../reference/method/db.getUser.html#db.getUser" title="db.getUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getUser()</span></code></a> and <a class="reference internal" href="../reference/method/db.getRole.html#db.getRole" title="db.getRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getRole()</span></code></a> methods.</p>
 <p>For example, to view roles for <code class="docutils literal"><span class="pre">reportsUser</span></code> created in
 <a class="reference internal" href="create-users.html#add-new-user"><span class="std std-ref">Examples</span></a>, issue:</p>
 <div class="button-code-block">
@@ -481,7 +481,7 @@ privileges. You may need to <a class="reference internal" href="#create-user-def
 <h4>Modify the user&rsquo;s access.<a class="headerlink" href="#modify-the-user-s-access" title="Permalink to this headline">&para;</a></h4>
 <div class="section" id="revoke-a-role">
 <h5>Revoke a Role<a class="headerlink" href="#revoke-a-role" title="Permalink to this headline">&para;</a></h5>
-<p>Revoke a role with the <a class="reference internal" href="../reference/method/db.revokeRolesFromUser.html#db.revokeRolesFromUser" title="db.revokeRolesFromUser()"><a class="dashingAutolink" name="autolink-8422"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.revokeRolesFromUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokeRolesFromUser()</span></code></a> method.
+<p>Revoke a role with the <a class="reference internal" href="../reference/method/db.revokeRolesFromUser.html#db.revokeRolesFromUser" title="db.revokeRolesFromUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.revokeRolesFromUser()</span></code></a> method.
 The following example operation removes the <a class="reference internal" href="../reference/built-in-roles.html#readWrite" title="readWrite"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">readWrite</span></code></a>
 role on the <code class="docutils literal"><span class="pre">accounts</span></code> database from the <code class="docutils literal"><span class="pre">reportsUser</span></code>:</p>
 <div class="button-code-block">
@@ -502,7 +502,7 @@ copy</a>
 </div>
 <div class="section" id="grant-a-role">
 <h5>Grant a Role<a class="headerlink" href="#grant-a-role" title="Permalink to this headline">&para;</a></h5>
-<p>Grant a role using the <a class="reference internal" href="../reference/method/db.grantRolesToUser.html#db.grantRolesToUser" title="db.grantRolesToUser()"><a class="dashingAutolink" name="autolink-8423"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.grantRolesToUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToUser()</span></code></a>
+<p>Grant a role using the <a class="reference internal" href="../reference/method/db.grantRolesToUser.html#db.grantRolesToUser" title="db.grantRolesToUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.grantRolesToUser()</span></code></a>
 method. For example, the following operation grants the
 <code class="docutils literal"><span class="pre">reportsUser</span></code> user the <a class="reference internal" href="../reference/built-in-roles.html#read" title="read"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">read</span></code></a> role on the
 <code class="docutils literal"><span class="pre">accounts</span></code> database:</p>
@@ -559,7 +559,7 @@ copy</a>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="change-the-password">
 <h4>Change the password.<a class="headerlink" href="#change-the-password" title="Permalink to this headline">&para;</a></h4>
 <p>Pass the user&rsquo;s username and the new password to the
-<a class="reference internal" href="../reference/method/db.changeUserPassword.html#db.changeUserPassword" title="db.changeUserPassword()"><a class="dashingAutolink" name="autolink-8424"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.changeUserPassword%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.changeUserPassword()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/db.changeUserPassword.html#db.changeUserPassword" title="db.changeUserPassword()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.changeUserPassword()</span></code></a> method.</p>
 <p>The following operation changes the <code class="docutils literal"><span class="pre">reporting</span></code> user&rsquo;s password to
 <code class="docutils literal"><span class="pre">SOh3TbYhxuLiW8ypJPxmt1oOfL</span></code>:</p>
 <div class="button-code-block">
@@ -607,7 +607,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="identify-the-user-s-roles">
 <h4>Identify the user&rsquo;s roles.<a class="headerlink" href="#identify-the-user-s-roles" title="Permalink to this headline">&para;</a></h4>
-<p>Use the <a class="reference internal" href="../reference/command/usersInfo.html#dbcmd.usersInfo" title="usersInfo"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">usersInfo</span></code></a> command or <a class="reference internal" href="../reference/method/db.getUser.html#db.getUser" title="db.getUser()"><a class="dashingAutolink" name="autolink-8425"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getUser()</span></code></a> method to
+<p>Use the <a class="reference internal" href="../reference/command/usersInfo.html#dbcmd.usersInfo" title="usersInfo"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">usersInfo</span></code></a> command or <a class="reference internal" href="../reference/method/db.getUser.html#db.getUser" title="db.getUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getUser()</span></code></a> method to
 display user information.</p>
 <p>For example, to view roles for <code class="docutils literal"><span class="pre">reportsUser</span></code> created in
 <a class="reference internal" href="create-users.html#add-new-user"><span class="std std-ref">Examples</span></a>, issue:</p>
@@ -668,7 +668,7 @@ copy</a>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="identify-the-privileges-granted-by-a-role">
 <h4>Identify the privileges granted by a role.<a class="headerlink" href="#identify-the-privileges-granted-by-a-role" title="Permalink to this headline">&para;</a></h4>
-<p>For a given role, use the <a class="reference internal" href="../reference/method/db.getRole.html#db.getRole" title="db.getRole()"><a class="dashingAutolink" name="autolink-8426"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getRole%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getRole()</span></code></a> method, or the
+<p>For a given role, use the <a class="reference internal" href="../reference/method/db.getRole.html#db.getRole" title="db.getRole()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getRole()</span></code></a> method, or the
 <a class="reference internal" href="../reference/command/rolesInfo.html#dbcmd.rolesInfo" title="rolesInfo"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">rolesInfo</span></code></a> command, with the <code class="docutils literal"><span class="pre">showPrivileges</span></code> option:</p>
 <p>For example, to view the privileges granted by <code class="docutils literal"><span class="pre">read</span></code> role on
 the <code class="docutils literal"><span class="pre">products</span></code> database, use the following operation, issue:</p>

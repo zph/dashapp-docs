@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8469"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Migrate%20a%20Sharded%20Cluster%20to%20Different%20Hardware%20%E2%80%94%20MongoDB%20Manual"></a><title>Migrate a Sharded Cluster to Different Hardware &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3681"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Migrate%20a%20Sharded%20Cluster%20to%20Different%20Hardware%20%E2%80%94%20MongoDB%20Manual"></a><title>Migrate a Sharded Cluster to Different Hardware &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/migrate-sharded-cluster-to-new-hardware/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="migrate-a-sharded-cluster-to-different-hardware">
-<a class="dashingAutolink" name="autolink-8470"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Migrate%20a%20Sharded%20Cluster%20to%20Different%20Hardware%C2%B6"></a><h1>Migrate a Sharded Cluster to Different Hardware<a class="headerlink" href="#migrate-a-sharded-cluster-to-different-hardware" title="Permalink to this headline">&para;</a></h1>
+<h1>Migrate a Sharded Cluster to Different Hardware<a class="headerlink" href="#migrate-a-sharded-cluster-to-different-hardware" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -204,7 +204,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>To check the balancer state, issue the <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8455"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a>
+<p>To check the balancer state, issue the <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a>
 method.</p>
 <p>For more information, see <a class="reference internal" href="manage-sharded-cluster-balancer.html#sharding-balancing-disable-temporarily"><span class="std std-ref">Disable the Balancer</span></a>.</p>
 </div>
@@ -258,7 +258,7 @@ copy</a>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="add-the-new-config-server-to-the-replica-set">
 <h3>Add the new config server to the replica set.<a class="headerlink" href="#add-the-new-config-server-to-the-replica-set" title="Permalink to this headline">&para;</a></h3>
 <p>Connect a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to the primary of the config server
-replica set and use <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-8456"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> to add the new member.</p>
+replica set and use <a class="reference internal" href="../reference/method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> to add the new member.</p>
 <div class="admonition-tip admonition">
 <p class="first admonition-title">Tip</p>
 <p>When a newly added secondary has its <a class="reference internal" href="../reference/replica-configuration.html#rsconf.members[n].votes" title="members[n].votes"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">votes</span></code></a> and
@@ -270,7 +270,7 @@ not yet consistent.</p>
 online but no primary can be elected. To avoid such situations,
 consider adding the new secondary initially with
 <a class="reference internal" href="../reference/replica-configuration.html#rsconf.members[n].priority" title="members[n].priority"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">priority</span> <span class="pre">:0</span></code></a> and <a class="reference internal" href="../reference/replica-configuration.html#rsconf.members[n].votes" title="members[n].votes"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">votes</span> <span class="pre">:0</span></code></a>. Then, once the member has transitioned into
-<a class="reference internal" href="../reference/replica-states.html#replstate.SECONDARY" title="SECONDARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">SECONDARY</span></code></a> state, use <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8457"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> to update its
+<a class="reference internal" href="../reference/replica-states.html#replstate.SECONDARY" title="SECONDARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">SECONDARY</span></code></a> state, use <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> to update its
 priority and votes.</p>
 </div>
 <div class="button-code-block">
@@ -292,7 +292,7 @@ config server replica set members without restarting.</p>
 <ol class="loweralpha">
 <li><p class="first">Ensure that the new member has reached <a class="reference internal" href="../reference/replica-states.html#replstate.SECONDARY" title="SECONDARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">SECONDARY</span></code></a>
 state. To check the state of the replica set members, run
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8458"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>:</p>
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>:</p>
 <div class="copyable-code button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -326,7 +326,7 @@ copy</a>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <ul class="last simple">
-<li>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8459"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can force the current
+<li>The <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can force the current
 primary to step down, which causes an <a class="reference internal" href="../core/replica-set-elections.html#replica-set-elections"><span class="std std-ref">election</span></a>. When the primary steps down, the
 <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> closes all client connections. While this
 typically takes 10-20 seconds, try to make these changes during
@@ -345,7 +345,7 @@ shutting down.</p>
 <h3>Remove the member to replace from the config server replica set.<a class="headerlink" href="#remove-the-member-to-replace-from-the-config-server-replica-set" title="Permalink to this headline">&para;</a></h3>
 <p>Upon completion of initial sync of the replacement config server,
 from a <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell connected to the primary, use
-<a class="reference internal" href="../reference/method/rs.remove.html#rs.remove" title="rs.remove()"><a class="dashingAutolink" name="autolink-8460"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.remove()</span></code></a> to remove the old member.</p>
+<a class="reference internal" href="../reference/method/rs.remove.html#rs.remove" title="rs.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.remove()</span></code></a> to remove the old member.</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -402,7 +402,7 @@ location.</p>
 <li><p class="first">Connect to the replica set&rsquo;s current primary.</p>
 </li>
 <li><p class="first">If the hostname of the member has changed, use
-<a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-8461"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> to update the <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set configuration
+<a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> to update the <a class="reference internal" href="../reference/replica-configuration.html"><span class="doc">replica set configuration
 document</span></a> with the new hostname.</p>
 <p>For example, the following sequence of commands updates the
 hostname for the instance at position <code class="docutils literal"><span class="pre">2</span></code> in the <code class="docutils literal"><span class="pre">members</span></code>
@@ -421,10 +421,10 @@ copy</a>
 <p>For more information on updating the configuration document, see
 <a class="reference internal" href="../reference/method/rs.reconfig.html#replica-set-reconfiguration-usage"><span class="std std-ref">Examples</span></a>.</p>
 </li>
-<li><p class="first">To confirm the new configuration, issue <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-8462"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>.</p>
+<li><p class="first">To confirm the new configuration, issue <a class="reference internal" href="../reference/method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>.</p>
 </li>
 <li><p class="first">Wait for the member to recover. To check the member&rsquo;s state, issue
-<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8463"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a>.</p>
 </li>
 </ol>
 </div>
@@ -438,8 +438,8 @@ migration during a maintenance window.</p>
 <ol class="arabic">
 <li><p class="first">Step down the primary to allow the normal <a class="reference internal" href="../core/replica-set-high-availability.html#replica-set-failover"><span class="std std-ref">failover</span></a> process.  To step down the primary, connect
 to the primary and issue the either the
-<a class="reference internal" href="../reference/command/replSetStepDown.html#dbcmd.replSetStepDown" title="replSetStepDown"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetStepDown</span></code></a> command or the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8464"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
-method. The following example shows the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-8465"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
+<a class="reference internal" href="../reference/command/replSetStepDown.html#dbcmd.replSetStepDown" title="replSetStepDown"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetStepDown</span></code></a> command or the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
+method. The following example shows the <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a>
 method:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -454,7 +454,7 @@ copy</a>
 <li><p class="first">Once the primary has stepped down and another member has become
 <a class="reference internal" href="../reference/replica-states.html#replstate.PRIMARY" title="PRIMARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">PRIMARY</span></code></a> state. To migrate the stepped-down primary,
 follow the <a class="reference internal" href="#migrate-replica-set-shard-member"><span class="std std-ref">Migrate a Member of a Replica Set Shard</span></a> procedure</p>
-<p>You can check the output of <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-8466"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to confirm the
+<p>You can check the output of <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> to confirm the
 change in status.</p>
 </li>
 </ol>
@@ -481,7 +481,7 @@ procedure.</p>
 <p>To complete the migration, re-enable the balancer to resume
 <a class="reference internal" href="../core/sharding-balancer-administration.html"><span class="doc">chunk migrations</span></a>.</p>
 <p>Connect to one of the cluster&rsquo;s <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instances and pass
-<code class="docutils literal"><span class="pre">true</span></code> to the <a class="reference internal" href="../reference/method/sh.setBalancerState.html#sh.setBalancerState" title="sh.setBalancerState()"><a class="dashingAutolink" name="autolink-8467"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.setBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.setBalancerState()</span></code></a> method:</p>
+<code class="docutils literal"><span class="pre">true</span></code> to the <a class="reference internal" href="../reference/method/sh.setBalancerState.html#sh.setBalancerState" title="sh.setBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.setBalancerState()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -491,7 +491,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>To check the balancer state, issue the <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><a class="dashingAutolink" name="autolink-8468"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.getBalancerState%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a>
+<p>To check the balancer state, issue the <a class="reference internal" href="../reference/method/sh.getBalancerState.html#sh.getBalancerState" title="sh.getBalancerState()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.getBalancerState()</span></code></a>
 method.</p>
 <p>For more information, see <a class="reference internal" href="manage-sharded-cluster-balancer.html#sharding-balancing-enable"><span class="std std-ref">Enable the Balancer</span></a>.</p>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-278"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/GridFS%20%E2%80%94%20MongoDB%20Manual"></a><title>GridFS &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-178"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/GridFS%20%E2%80%94%20MongoDB%20Manual"></a><title>GridFS &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/gridfs/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="gridfs">
-<span id="index-0"></span><a class="dashingAutolink" name="autolink-279"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/GridFS%C2%B6"></a><h1>GridFS<a class="headerlink" href="#gridfs" title="Permalink to this headline">&para;</a></h1>
+<span id="index-0"></span><h1>GridFS<a class="headerlink" href="#gridfs" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -263,27 +263,27 @@ copy</a>
 <p>A document from the <code class="docutils literal"><span class="pre">chunks</span></code> collection contains the following fields:</p>
 <dl class="data">
 <dt id="chunks._id">
-<code class="descclassname">chunks.</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-280"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks._id" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">chunks.</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-165"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks._id" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The unique <a class="reference internal" href="../reference/glossary.html#term-objectid"><span class="xref std std-term">ObjectId</span></a> of the chunk.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="chunks.files_id">
-<code class="descclassname">chunks.</code><code class="descname">files_id</code><a class="dashingAutolink" name="autolink-281"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks.files_id" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">chunks.</code><code class="descname">files_id</code><a class="dashingAutolink" name="autolink-166"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks.files_id" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <code class="docutils literal"><span class="pre">_id</span></code> of the &ldquo;parent&rdquo; document, as specified in the <code class="docutils literal"><span class="pre">files</span></code>
 collection.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="chunks.n">
-<code class="descclassname">chunks.</code><code class="descname">n</code><a class="dashingAutolink" name="autolink-282"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks.n" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">chunks.</code><code class="descname">n</code><a class="dashingAutolink" name="autolink-167"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks.n" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The sequence number of the chunk. GridFS numbers all chunks, starting
 with 0.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="chunks.data">
-<code class="descclassname">chunks.</code><code class="descname">data</code><a class="dashingAutolink" name="autolink-283"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks.data" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">chunks.</code><code class="descname">data</code><a class="dashingAutolink" name="autolink-168"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#chunks.data" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The chunk&rsquo;s payload as a <a class="reference internal" href="../reference/glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> <code class="docutils literal"><span class="pre">Binary</span></code> type.</p>
 </dd></dl>
 
@@ -315,7 +315,7 @@ copy</a>
 following fields:</p>
 <dl class="data">
 <dt id="files._id">
-<code class="descclassname">files.</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-284"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files._id" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-169"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files._id" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The unique identifier for this document. The <code class="docutils literal"><span class="pre">_id</span></code> is of the data
 type you chose for the original document. The default type for
 MongoDB documents is <a class="reference internal" href="../reference/glossary.html#term-bson"><span class="xref std std-term">BSON</span></a> <a class="reference internal" href="../reference/glossary.html#term-objectid"><span class="xref std std-term">ObjectId</span></a>.</p>
@@ -323,13 +323,13 @@ MongoDB documents is <a class="reference internal" href="../reference/glossary.h
 
 <dl class="data">
 <dt id="files.length">
-<code class="descclassname">files.</code><code class="descname">length</code><a class="dashingAutolink" name="autolink-285"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.length" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">length</code><a class="dashingAutolink" name="autolink-170"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.length" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The size of the document in bytes.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="files.chunkSize">
-<code class="descclassname">files.</code><code class="descname">chunkSize</code><a class="dashingAutolink" name="autolink-286"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.chunkSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">chunkSize</code><a class="dashingAutolink" name="autolink-171"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.chunkSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The size of each chunk in <strong>bytes</strong>. GridFS divides the document into
 chunks of size <code class="docutils literal"><span class="pre">chunkSize</span></code>, except for the last, which is only as
 large as needed. The default size is 255 kilobytes (kB).</p>
@@ -337,14 +337,14 @@ large as needed. The default size is 255 kilobytes (kB).</p>
 
 <dl class="data">
 <dt id="files.uploadDate">
-<code class="descclassname">files.</code><code class="descname">uploadDate</code><a class="dashingAutolink" name="autolink-287"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.uploadDate" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">uploadDate</code><a class="dashingAutolink" name="autolink-172"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.uploadDate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The date the document was first stored by GridFS. This value has the
 <code class="docutils literal"><span class="pre">Date</span></code> type.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="files.md5">
-<code class="descclassname">files.</code><code class="descname">md5</code><a class="dashingAutolink" name="autolink-288"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.md5" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">md5</code><a class="dashingAutolink" name="autolink-173"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.md5" title="Permalink to this definition">&para;</a></dt>
 <dd><p><strong>Deprecated</strong></p>
 <p>The MD5 algorithm is prohibited by FIPS 140-2. MongoDB drivers
 deprecate MD5 support and will remove MD5 generation in future
@@ -356,13 +356,13 @@ type.</p>
 
 <dl class="data">
 <dt id="files.filename">
-<code class="descclassname">files.</code><code class="descname">filename</code><a class="dashingAutolink" name="autolink-289"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.filename" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">filename</code><a class="dashingAutolink" name="autolink-174"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.filename" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Optional. A human-readable name for the GridFS file.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="files.contentType">
-<code class="descclassname">files.</code><code class="descname">contentType</code><a class="dashingAutolink" name="autolink-290"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.contentType" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">contentType</code><a class="dashingAutolink" name="autolink-175"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.contentType" title="Permalink to this definition">&para;</a></dt>
 <dd><p><strong>Deprecated</strong></p>
 <p>Optional. A valid MIME type for the GridFS file. For application
 use only.</p>
@@ -372,7 +372,7 @@ MIME type of the GridFS file.</p>
 
 <dl class="data">
 <dt id="files.aliases">
-<code class="descclassname">files.</code><code class="descname">aliases</code><a class="dashingAutolink" name="autolink-291"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.aliases" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">aliases</code><a class="dashingAutolink" name="autolink-176"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.aliases" title="Permalink to this definition">&para;</a></dt>
 <dd><p><strong>Deprecated</strong></p>
 <p>Optional. An array of alias strings. For application use only.</p>
 <p>Use <a class="reference internal" href="#files.metadata" title="files.metadata"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">files.metadata</span></code></a> for storing information related to the
@@ -381,7 +381,7 @@ MIME type of the GridFS file.</p>
 
 <dl class="data">
 <dt id="files.metadata">
-<code class="descclassname">files.</code><code class="descname">metadata</code><a class="dashingAutolink" name="autolink-292"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.metadata" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">files.</code><code class="descname">metadata</code><a class="dashingAutolink" name="autolink-177"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#files.metadata" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Optional. The metadata field may be of any data type and can hold
 any additional information you want to store. If you wish to add
 additional arbitrary fields to documents in the <code class="docutils literal"><span class="pre">files</span></code>

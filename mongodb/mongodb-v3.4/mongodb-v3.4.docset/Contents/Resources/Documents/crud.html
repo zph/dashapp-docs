@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-620"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/MongoDB%20CRUD%20Operations%20%E2%80%94%20MongoDB%20Manual"></a><title>MongoDB CRUD Operations &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-270"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/MongoDB%20CRUD%20Operations%20%E2%80%94%20MongoDB%20Manual"></a><title>MongoDB CRUD Operations &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/crud/"/><meta name="robots" content="index"/>
@@ -145,7 +145,7 @@
   </div>
                 
                   <div class="section" id="mongodb-crud-operations">
-<span id="crud"></span><a class="dashingAutolink" name="autolink-621"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/MongoDB%20CRUD%20Operations%C2%B6"></a><h1>MongoDB CRUD Operations<a class="headerlink" href="#mongodb-crud-operations" title="Permalink to this headline">&para;</a></h1>
+<span id="crud"></span><h1>MongoDB CRUD Operations<a class="headerlink" href="#mongodb-crud-operations" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,8 +166,8 @@ collection.</p>
 <p>MongoDB provides the following methods to insert documents into a
 collection:</p>
 <ul class="simple">
-<li><a class="reference internal" href="reference/method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><a class="dashingAutolink" name="autolink-622"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertOne()</span></code></a> <em>New in version 3.2</em></li>
-<li><a class="reference internal" href="reference/method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-623"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertOne()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a> <em>New in version 3.2</em></li>
 </ul>
 <p>In MongoDB, insert operations target a single <a class="reference internal" href="reference/glossary.html#term-collection"><span class="xref std std-term">collection</span></a>. All
 write operations in MongoDB are <a class="reference internal" href="core/write-operations-atomicity.html"><span class="doc">atomic</span></a> on the level of a single
@@ -183,7 +183,7 @@ write operations in MongoDB are <a class="reference internal" href="core/write-o
 documents. MongoDB provides the following methods to read documents from
 a collection:</p>
 <ul class="simple">
-<li><a class="reference internal" href="reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-624"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a></li>
+<li><a class="reference internal" href="reference/method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.find()</span></code></a></li>
 </ul>
 <p>You can specify <a class="reference internal" href="tutorial/query-documents.html#read-operations-query-argument"><span class="std std-ref">query filters or criteria</span></a> that identify the documents to return.</p>
 <div class="figure" style="width: 680px">
@@ -201,9 +201,9 @@ a collection:</p>
 <p>Update operations modify existing <a class="reference internal" href="core/document.html#bson-document-format"><span class="std std-ref">documents</span></a> in a <a class="reference internal" href="core/databases-and-collections.html#collections"><span class="std std-ref">collection</span></a>. MongoDB
 provides the following methods to update documents of a collection:</p>
 <ul class="simple">
-<li><a class="reference internal" href="reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><a class="dashingAutolink" name="autolink-625"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a> <em>New in version 3.2</em></li>
-<li><a class="reference internal" href="reference/method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-626"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a> <em>New in version 3.2</em></li>
-<li><a class="reference internal" href="reference/method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><a class="dashingAutolink" name="autolink-627"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.replaceOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.replaceOne()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateOne()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.updateMany()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.replaceOne()</span></code></a> <em>New in version 3.2</em></li>
 </ul>
 <p>In MongoDB, update operations target a single collection. All write
 operations in MongoDB are <a class="reference internal" href="core/write-operations-atomicity.html"><span class="doc">atomic</span></a> on the level of a single document.</p>
@@ -219,8 +219,8 @@ syntax as read operations.</p>
 <p>Delete operations remove documents from a collection. MongoDB provides
 the following methods to delete documents of a collection:</p>
 <ul class="simple">
-<li><a class="reference internal" href="reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-628"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a> <em>New in version 3.2</em></li>
-<li><a class="reference internal" href="reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-629"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a> <em>New in version 3.2</em></li>
+<li><a class="reference internal" href="reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a> <em>New in version 3.2</em></li>
 </ul>
 <p>In MongoDB, delete operations target a single <a class="reference internal" href="reference/glossary.html#term-collection"><span class="xref std std-term">collection</span></a>. All
 write operations in MongoDB are <a class="reference internal" href="core/write-operations-atomicity.html"><span class="doc">atomic</span></a> on the level of a single document.</p>

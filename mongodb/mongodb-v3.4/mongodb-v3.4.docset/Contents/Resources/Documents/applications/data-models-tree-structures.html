@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-153"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Model%20Tree%20Structures%20%E2%80%94%20MongoDB%20Manual"></a><title>Model Tree Structures &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-114"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Model%20Tree%20Structures%20%E2%80%94%20MongoDB%20Manual"></a><title>Model Tree Structures &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/applications/data-models-tree-structures/"/><meta name="robots" content="index"/>
@@ -151,30 +151,30 @@
   </div>
                 
                   <div class="section" id="model-tree-structures">
-<a class="dashingAutolink" name="autolink-154"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Model%20Tree%20Structures%C2%B6"></a><h1>Model Tree Structures<a class="headerlink" href="#model-tree-structures" title="Permalink to this headline">&para;</a></h1>
+<h1>Model Tree Structures<a class="headerlink" href="#model-tree-structures" title="Permalink to this headline">&para;</a></h1>
 <p>MongoDB allows various ways to use tree data structures to model large
 hierarchical or nested data relationships.</p>
 <div class="figure" style="width: 760px">
 <img alt="Tree data model for a sample hierarchy of categories." src="../_images/data-model-tree.bakedsvg.svg"/></div>
 <dl class="toc docutils">
-<dt><a class="dashingAutolink" name="autolink-155"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Parent%20References"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-parent-references.html"><span class="doc">Model Tree Structures with Parent References</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-109"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Parent%20References"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-parent-references.html"><span class="doc">Model Tree Structures with Parent References</span></a></dt>
 <dd>Presents a data model that organizes documents in a tree-like
 structure by storing <a class="reference internal" href="../core/data-model-design.html#data-modeling-referencing"><span class="std std-ref">references</span></a>
 to &ldquo;parent&rdquo; nodes in &ldquo;child&rdquo; nodes.</dd>
-<dt><a class="dashingAutolink" name="autolink-156"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Child%20References"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-child-references.html"><span class="doc">Model Tree Structures with Child References</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-110"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Child%20References"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-child-references.html"><span class="doc">Model Tree Structures with Child References</span></a></dt>
 <dd>Presents a data model that organizes documents in a tree-like
 structure by storing <a class="reference internal" href="../core/data-model-design.html#data-modeling-referencing"><span class="std std-ref">references</span></a>
 to &ldquo;child&rdquo; nodes in &ldquo;parent&rdquo; nodes.</dd>
-<dt><a class="dashingAutolink" name="autolink-157"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20an%20Array%20of%20Ancestors"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-ancestors-array.html"><span class="doc">Model Tree Structures with an Array of Ancestors</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-111"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20an%20Array%20of%20Ancestors"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-ancestors-array.html"><span class="doc">Model Tree Structures with an Array of Ancestors</span></a></dt>
 <dd>Presents a data model that organizes documents in a tree-like
 structure by storing <a class="reference internal" href="../core/data-model-design.html#data-modeling-referencing"><span class="std std-ref">references</span></a>
 to &ldquo;parent&rdquo; nodes and an array that stores all ancestors.</dd>
-<dt><a class="dashingAutolink" name="autolink-158"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Materialized%20Paths"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-materialized-paths.html"><span class="doc">Model Tree Structures with Materialized Paths</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-112"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Materialized%20Paths"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-materialized-paths.html"><span class="doc">Model Tree Structures with Materialized Paths</span></a></dt>
 <dd>Presents a data model that organizes documents in a tree-like
 structure by storing full relationship paths between documents. In
 addition to the tree node, each document stores the <code class="docutils literal"><span class="pre">_id</span></code> of the
 nodes ancestors or path as a string.</dd>
-<dt><a class="dashingAutolink" name="autolink-159"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Nested%20Sets"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-nested-sets.html"><span class="doc">Model Tree Structures with Nested Sets</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-113"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Model%20Tree%20Structures%20with%20Nested%20Sets"></a><a class="reference internal" href="../tutorial/model-tree-structures-with-nested-sets.html"><span class="doc">Model Tree Structures with Nested Sets</span></a></dt>
 <dd>Presents a data model that organizes documents in a tree-like
 structure using the <em>Nested Sets</em> pattern. This optimizes
 discovering subtrees at the expense of tree mutability.</dd>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8192"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Enable%20Auth%20%E2%80%94%20MongoDB%20Manual"></a><title>Enable Auth &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3635"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Enable%20Auth%20%E2%80%94%20MongoDB%20Manual"></a><title>Enable Auth &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/enable-authentication/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="enable-auth">
-<a class="dashingAutolink" name="autolink-8193"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Enable%20Auth%C2%B6"></a><h1>Enable Auth<a class="headerlink" href="#enable-auth" title="Permalink to this headline">&para;</a></h1>
+<h1>Enable Auth<a class="headerlink" href="#enable-auth" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -279,7 +279,7 @@ determined by their assigned roles.</p>
 <ul class="simple">
 <li>Connect with authentication by passing in user credentials, or</li>
 <li>Connect first withouth authentication, and then issue the
-<a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8194"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method to authenticate.</li>
+<a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth()</span></code></a> method to authenticate.</li>
 </ul>
 <div class="section" id="to-authenticate-during-connection">
 <h4>To authenticate during connection<a class="headerlink" href="#to-authenticate-during-connection" title="Permalink to this headline">&para;</a></h4>
@@ -310,7 +310,7 @@ copy</a>
 </div>
 </div>
 <p>Switch to the authentication database (in this case, <code class="docutils literal"><span class="pre">admin</span></code>),
-and use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8195"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%3Cusername%3E%2C%20%3Cpwd%3E%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth(&lt;username&gt;,</span> <span class="pre">&lt;pwd&gt;)</span></code></a>
+and use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth(&lt;username&gt;,</span> <span class="pre">&lt;pwd&gt;)</span></code></a>
 method to authenticate:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -327,7 +327,7 @@ copy</a>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">6</div></div><div class="section" id="create-additional-users-as-needed-for-your-deployment">
 <h3>Create additional users as needed for your deployment.<a class="headerlink" href="#create-additional-users-as-needed-for-your-deployment" title="Permalink to this headline">&para;</a></h3>
 <p>Once authenticated as the user administrator, use
-<a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-8196"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createUser%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> to create additional users. You can assign
+<a class="reference internal" href="../reference/method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createUser()</span></code></a> to create additional users. You can assign
 any <a class="reference internal" href="../core/security-built-in-roles.html"><span class="doc">built-in roles</span></a> or
 <a class="reference internal" href="../core/security-user-defined-roles.html"><span class="doc">user-defined roles</span></a> to the
 users.</p>
@@ -396,7 +396,7 @@ copy</a>
 </div>
 </div>
 <p>Switch to the authentication database (in this case, <code class="docutils literal"><span class="pre">test</span></code>),
-and use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><a class="dashingAutolink" name="autolink-8197"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.auth%28%3Cusername%3E%2C%20%3Cpwd%3E%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth(&lt;username&gt;,</span> <span class="pre">&lt;pwd&gt;)</span></code></a>
+and use <a class="reference internal" href="../reference/method/db.auth.html#db.auth" title="db.auth()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.auth(&lt;username&gt;,</span> <span class="pre">&lt;pwd&gt;)</span></code></a>
 method to authenticate:</p>
 <div class="button-code-block">
 <div class="button-row">

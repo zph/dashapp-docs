@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7594"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Downgrade%20MongoDB%20from%203.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Downgrade MongoDB from 3.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3541"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Downgrade%20MongoDB%20from%203.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Downgrade MongoDB from 3.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/3.0-downgrade/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="downgrade-mongodb-from-3-0">
-<a class="dashingAutolink" name="autolink-7595"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Downgrade%20MongoDB%20from%203.0%C2%B6"></a><h1>Downgrade MongoDB from 3.0<a class="headerlink" href="#downgrade-mongodb-from-3-0" title="Permalink to this headline">&para;</a></h1>
+<h1>Downgrade MongoDB from 3.0<a class="headerlink" href="#downgrade-mongodb-from-3-0" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -348,12 +348,12 @@ time:</p>
 <ol class="loweralpha simple">
 <li>Shut down the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>. See <a class="reference internal" href="../tutorial/manage-mongodb-processes.html#terminate-mongod-processes"><span class="std std-ref">Stop mongod Processes</span></a> for instructions on safely terminating <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> processes.</li>
 <li>Replace the 3.0 binary with the 2.6 binary and restart.</li>
-<li>Wait for the member to recover to <code class="docutils literal"><span class="pre">SECONDARY</span></code> state before downgrading the next secondary. To check the member&rsquo;s state, use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-7596"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.</li>
+<li>Wait for the member to recover to <code class="docutils literal"><span class="pre">SECONDARY</span></code> state before downgrading the next secondary. To check the member&rsquo;s state, use the <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> method in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell.</li>
 </ol>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="step-down-the-primary">
 <h5>Step down the primary.<a class="headerlink" href="#step-down-the-primary" title="Permalink to this headline">&para;</a></h5>
-<p>Use <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-7597"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to
+<p>Use <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell to
 step down the <a class="reference internal" href="../reference/glossary.html#term-primary"><span class="xref std std-term">primary</span></a> and force the normal <a class="reference internal" href="../core/replica-set-high-availability.html#replica-set-failover"><span class="std std-ref">failover</span></a> procedure.</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -365,13 +365,13 @@ copy</a>
 </div>
 </div>
 <dl class="docutils">
-<dt><a class="dashingAutolink" name="autolink-7606"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/rs.stepDown%28%29"></a><a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashAnchor" name="//apple_ref/cpp/Command/"></a><a class="dashingAutolink" name="autolink-7598"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> expedites the failover procedure and is</dt>
+<dt><a class="dashingAutolink" name="autolink-3540"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/rs.stepDown%28%29"></a><a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> expedites the failover procedure and is</dt>
 <dd>preferable to shutting down the primary directly.</dd>
 </dl>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="replace-and-restart-former-primary-mongod">
 <h5>Replace and restart former primary <code class="docutils literal"><span class="pre">mongod</span></code>.<a class="headerlink" href="#replace-and-restart-former-primary-mongod" title="Permalink to this headline">&para;</a></h5>
-<p>When <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><a class="dashingAutolink" name="autolink-7599"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> shows that the primary has stepped down
+<p>When <a class="reference internal" href="../reference/method/rs.status.html#rs.status" title="rs.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.status()</span></code></a> shows that the primary has stepped down
 and another member has assumed <code class="docutils literal"><span class="pre">PRIMARY</span></code> state, shut down the
 previous primary and replace the <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> binary with
 the 2.6 binary and start the new instance.</p>
@@ -390,12 +390,12 @@ plan the downgrade during a predetermined maintenance window.</p>
 collection meta-data. For example, during the downgrade, do
 <strong>not</strong> do any of the following:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/sh.enableSharding.html#sh.enableSharding" title="sh.enableSharding()"><a class="dashingAutolink" name="autolink-7600"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableSharding%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableSharding()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/sh.shardCollection.html#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-7601"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><a class="dashingAutolink" name="autolink-7602"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShard%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7603"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><a class="dashingAutolink" name="autolink-7604"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.drop%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><a class="dashingAutolink" name="autolink-7605"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropDatabase%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/sh.enableSharding.html#sh.enableSharding" title="sh.enableSharding()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableSharding()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/sh.shardCollection.html#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/sh.addShard.html#sh.addShard" title="sh.addShard()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShard()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.drop.html#db.collection.drop" title="db.collection.drop()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.drop()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.dropDatabase.html#db.dropDatabase" title="db.dropDatabase()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropDatabase()</span></code></a></li>
 <li>any operation that creates a database</li>
 <li>any other operation that modifies the cluster meta-data in any
 way. See <a class="reference internal" href="../reference/sharding.html"><span class="doc">Sharding Reference</span></a> for a complete list of

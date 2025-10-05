@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3996"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.dropAllUsers%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.dropAllUsers() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1912"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.dropAllUsers%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.dropAllUsers() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.dropAllUsers/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-dropallusers">
-<a class="dashingAutolink" name="autolink-3997"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.dropAllUsers%28%29%C2%B6"></a><h1>db.dropAllUsers()<a class="headerlink" href="#db-dropallusers" title="Permalink to this headline">&para;</a></h1>
+<h1>db.dropAllUsers()<a class="headerlink" href="#db-dropallusers" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,14 +167,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.dropAllUsers">
-<code class="descclassname">db.</code><code class="descname">dropAllUsers</code><span class="sig-paren">(</span><em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4003"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.dropAllUsers" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">dropAllUsers</code><span class="sig-paren">(</span><em>writeConcern</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1911"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.dropAllUsers" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Removes all users from the current database.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The <a class="dashingAutolink" name="autolink-3998"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/dropAllUsers"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">dropAllUsers</span></code> method removes all users from the
+<p class="last">The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">dropAllUsers</span></code> method removes all users from the
 database.</p>
 </div>
-<p>The <a class="dashingAutolink" name="autolink-3999"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/dropAllUsers"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">dropAllUsers</span></code> method takes the following arguments:</p>
+<p>The <code class="xref mongodb mongodb-method docutils literal"><span class="pre">dropAllUsers</span></code> method takes the following arguments:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -196,7 +196,7 @@ fields as the <a class="reference internal" href="../command/getLastError.html#d
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="#db.dropAllUsers" title="db.dropAllUsers()"><a class="dashingAutolink" name="autolink-4000"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropAllUsers%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropAllUsers()</span></code></a> method wraps the
+<p>The <a class="reference internal" href="#db.dropAllUsers" title="db.dropAllUsers()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropAllUsers()</span></code></a> method wraps the
 <a class="reference internal" href="../command/dropAllUsersFromDatabase.html#dbcmd.dropAllUsersFromDatabase" title="dropAllUsersFromDatabase"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">dropAllUsersFromDatabase</span></code></a> command.</p>
 </dd></dl>
 
@@ -205,7 +205,7 @@ fields as the <a class="reference internal" href="../command/getLastError.html#d
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="replica-set">
 <h3>Replica set<a class="headerlink" href="#replica-set" title="Permalink to this headline">&para;</a></h3>
-<p>If run on a replica set, <a class="reference internal" href="#db.dropAllUsers" title="db.dropAllUsers()"><a class="dashingAutolink" name="autolink-4001"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropAllUsers%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropAllUsers()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
+<p>If run on a replica set, <a class="reference internal" href="#db.dropAllUsers" title="db.dropAllUsers()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropAllUsers()</span></code></a> is executed using <a class="reference internal" href="../write-concern.html#writeconcern.&#34;majority&#34;" title="&#34;majority&#34;"><code class="xref mongodb mongodb-writeconcern docutils literal"><span class="pre">majority</span></code></a> write concern by default.</p>
 </div>
 </div>
 <div class="section" id="required-access">
@@ -214,7 +214,7 @@ fields as the <a class="reference internal" href="../command/getLastError.html#d
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following <a class="reference internal" href="#db.dropAllUsers" title="db.dropAllUsers()"><a class="dashingAutolink" name="autolink-4002"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.dropAllUsers%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropAllUsers()</span></code></a> operation drops every user from
+<p>The following <a class="reference internal" href="#db.dropAllUsers" title="db.dropAllUsers()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.dropAllUsers()</span></code></a> operation drops every user from
 the <code class="docutils literal"><span class="pre">products</span></code> database.</p>
 <div class="button-code-block">
 <div class="button-row">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3549"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.findOne%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.findOne() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1836"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.findOne%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.findOne() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-findone">
-<a class="dashingAutolink" name="autolink-3542"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.findOne%28%29%C2%B6"></a><h1>db.collection.findOne()<a class="headerlink" href="#db-collection-findone" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.findOne()<a class="headerlink" href="#db-collection-findone" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,7 +165,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.findOne">
-<code class="descclassname">db.collection.</code><code class="descname">findOne</code><span class="sig-paren">(</span><em>query</em>, <em>projection</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3548"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.findOne" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">findOne</code><span class="sig-paren">(</span><em>query</em>, <em>projection</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1835"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.findOne" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Returns one document that satisfies the specified query criteria on
 the collection or <a class="reference internal" href="../../core/views.html"><span class="doc">view</span></a>. If multiple documents
 satisfy the query, this method returns the first document according
@@ -208,7 +208,7 @@ copy</a>
 </div>
 <p>The <code class="docutils literal"><span class="pre">&lt;boolean&gt;</span></code> can be one of the following include or exclude values:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">1</span></code> or <code class="docutils literal"><span class="pre">true</span></code> to include. The <a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-3543"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a>
+<li><code class="docutils literal"><span class="pre">1</span></code> or <code class="docutils literal"><span class="pre">true</span></code> to include. The <a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a>
 method always includes the <a class="reference internal" href="../glossary.html#term-id"><span class="xref std std-term">_id</span></a> field even if the field is not
 explicitly specified in the <a class="reference internal" href="../glossary.html#term-projection"><span class="xref std std-term">projection</span></a> parameter.</li>
 <li><code class="docutils literal"><span class="pre">0</span></code> or <code class="docutils literal"><span class="pre">false</span></code> to exclude.</li>
@@ -221,10 +221,10 @@ specifications, with the exception of excluding the <code class="docutils litera
 </colgroup><tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">One document that satisfies the criteria specified as the first
 argument to this method. If you specify a <code class="docutils literal"><span class="pre">projection</span></code>
-parameter, <a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-3544"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> returns a document
+parameter, <a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> returns a document
 that only contains the <code class="docutils literal"><span class="pre">projection</span></code> fields. The <code class="docutils literal"><span class="pre">_id</span></code>
-field is always included unless you explicitly exclude it.<p>Although similar to the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3545"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method,
-the <a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-3546"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> method returns a document
+field is always included unless you explicitly exclude it.<p>Although similar to the <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> method,
+the <a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> method returns a document
 rather than a cursor.</p>
 </td>
 </tr>
@@ -318,7 +318,7 @@ copy</a>
 <div class="section" id="the-findone-result-document">
 <h3>The <code class="docutils literal"><span class="pre">findOne</span></code> Result Document<a class="headerlink" href="#the-findone-result-document" title="Permalink to this headline">&para;</a></h3>
 <p>You cannot apply cursor methods to the result of
-<a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><a class="dashingAutolink" name="autolink-3547"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> because a single document is
+<a class="reference internal" href="#db.collection.findOne" title="db.collection.findOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findOne()</span></code></a> because a single document is
 returned. You have access to the document directly:</p>
 <div class="button-code-block">
 <div class="button-row">

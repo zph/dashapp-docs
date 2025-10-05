@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-5005"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.shardCollection%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.shardCollection() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2142"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.shardCollection%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.shardCollection() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/sh.shardCollection/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="sh-shardcollection">
-<a class="dashingAutolink" name="autolink-5006"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/sh.shardCollection%28%29%C2%B6"></a><h1>sh.shardCollection()<a class="headerlink" href="#sh-shardcollection" title="Permalink to this headline">&para;</a></h1>
+<h1>sh.shardCollection()<a class="headerlink" href="#sh-shardcollection" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,9 +166,9 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="sh.shardCollection">
-<code class="descclassname">sh.</code><code class="descname">shardCollection</code><span class="sig-paren">(</span><em>namespace</em>, <em>key</em>, <em>unique</em>, <em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-5012"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.shardCollection" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">sh.</code><code class="descname">shardCollection</code><span class="sig-paren">(</span><em>namespace</em>, <em>key</em>, <em>unique</em>, <em>options</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2141"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.shardCollection" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Shards a collection using the <code class="docutils literal"><span class="pre">key</span></code> as a the <a class="reference internal" href="../glossary.html#term-shard-key"><span class="xref std std-term">shard
-key</span></a>. <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-5007"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> takes the following arguments:</p>
+key</span></a>. <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> takes the following arguments:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -291,10 +291,10 @@ collection.</p>
 <h3>Uniqueness<a class="headerlink" href="#uniqueness" title="Permalink to this headline">&para;</a></h3>
 <p>If specifying <code class="docutils literal"><span class="pre">unique:</span> <span class="pre">true</span></code>:</p>
 <ul class="simple">
-<li>If the collection is empty, <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-5008"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> creates the unique index on the
+<li>If the collection is empty, <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> creates the unique index on the
 shard key if such an index does not already exist.</li>
 <li>If the collection is not empty, you must create the index first
-before using <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-5009"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a>.</li>
+before using <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a>.</li>
 </ul>
 <p>Although you can have a unique <a class="reference internal" href="../glossary.html#term-compound-index"><span class="xref std std-term">compound index</span></a> where the shard
 key is a <a class="reference internal" href="../../core/index-compound.html#compound-index-prefix"><span class="std std-ref">prefix</span></a>, if using <code class="docutils literal"><span class="pre">unique</span></code>
@@ -308,7 +308,7 @@ key.</p>
 <p><span class="versionmodified">Changed in version 3.4.</span></p>
 </div>
 <p>If the collection has a default <a class="reference internal" href="../collation.html"><span class="doc">collation</span></a>,
-the <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection"><a class="dashingAutolink" name="autolink-5010"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection</span></code></a> command must include a <code class="docutils literal"><span class="pre">collation</span></code> parameter with the
+the <a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection</span></code></a> command must include a <code class="docutils literal"><span class="pre">collation</span></code> parameter with the
 value <code class="docutils literal"><span class="pre">{</span> <span class="pre">locale:</span> <span class="pre">&#34;simple&#34;</span> <span class="pre">}</span></code>. For non-empty collections with a
 default collation, you must have at least one index with the simple
 collation whose fields support the shard key pattern.</p>
@@ -339,7 +339,7 @@ copy</a>
 <p>The <code class="docutils literal"><span class="pre">phonebook</span></code> database has a collection <code class="docutils literal"><span class="pre">contacts</span></code> with no
 default <a class="reference internal" href="db.createCollection.html#createcollection-collation-example"><span class="std std-ref">collation</span></a>. The
 following example uses
-<a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><a class="dashingAutolink" name="autolink-5011"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.shardCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> to shard the <code class="docutils literal"><span class="pre">phonebook.contacts</span></code> with:</p>
+<a class="reference internal" href="#sh.shardCollection" title="sh.shardCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.shardCollection()</span></code></a> to shard the <code class="docutils literal"><span class="pre">phonebook.contacts</span></code> with:</p>
 <ul class="simple">
 <li>a <a class="reference internal" href="../../core/hashed-sharding.html#sharding-hashed-sharding"><span class="std std-ref">hashed shard key</span></a> on the
 <code class="docutils literal"><span class="pre">last_name</span></code> field,</li>

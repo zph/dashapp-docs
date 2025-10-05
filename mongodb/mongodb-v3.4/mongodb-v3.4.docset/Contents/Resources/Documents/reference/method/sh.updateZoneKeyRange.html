@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-5091"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.updateZoneKeyRange%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.updateZoneKeyRange() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2180"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.updateZoneKeyRange%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.updateZoneKeyRange() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/sh.updateZoneKeyRange/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="sh-updatezonekeyrange">
-<a class="dashingAutolink" name="autolink-5092"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/sh.updateZoneKeyRange%28%29%C2%B6"></a><h1>sh.updateZoneKeyRange()<a class="headerlink" href="#sh-updatezonekeyrange" title="Permalink to this headline">&para;</a></h1>
+<h1>sh.updateZoneKeyRange()<a class="headerlink" href="#sh-updatezonekeyrange" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,12 +166,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="sh.updateZoneKeyRange">
-<code class="descclassname">sh.</code><code class="descname">updateZoneKeyRange</code><span class="sig-paren">(</span><em>namespace</em>, <em>minimum</em>, <em>maximum</em>, <em>zone</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-5100"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.updateZoneKeyRange" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">sh.</code><code class="descname">updateZoneKeyRange</code><span class="sig-paren">(</span><em>namespace</em>, <em>minimum</em>, <em>maximum</em>, <em>zone</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2179"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.updateZoneKeyRange" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
 <p>Associates a range of shard key values with a <a class="reference internal" href="../glossary.html#term-zone"><span class="xref std std-term">zone</span></a>.
-<a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-5093"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> takes the following arguments:</p>
+<a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> takes the following arguments:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -212,7 +212,7 @@ by <code class="docutils literal"><span class="pre">minimum</span></code> and <c
 </tr>
 </tbody>
 </table>
-<p>Only issue <a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-5094"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> when connected to a
+<p>Only issue <a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> when connected to a
 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance.</p>
 </dd></dl>
 
@@ -244,7 +244,7 @@ of the upper boundary.</p>
 </div>
 <div class="section" id="dropped-collections">
 <h3>Dropped Collections<a class="headerlink" href="#dropped-collections" title="Permalink to this headline">&para;</a></h3>
-<p>If you add a zone range to a collection using <a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-5095"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> and
+<p>If you add a zone range to a collection using <a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> and
 then later drop the collection or its database, MongoDB does not remove the
 zone association. If you later create a new collection with the same name, the
 old zone association applies to the new collection.</p>
@@ -262,7 +262,7 @@ database</li>
 database</li>
 </ul>
 <p>The <a class="reference internal" href="../built-in-roles.html#clusterAdmin" title="clusterAdmin"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterAdmin</span></code></a> or <a class="reference internal" href="../built-in-roles.html#clusterManager" title="clusterManager"><code class="xref mongodb mongodb-authrole docutils literal"><span class="pre">clusterManager</span></code></a> built-in roles have
-the appropriate permissions for issuing <a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-5096"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a>. See
+the appropriate permissions for issuing <a class="reference internal" href="#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a>. See
 the documentation page for <a class="reference internal" href="../../core/authorization.html#authorization"><span class="std std-ref">Role-Based Access Control</span></a>
 for more information.</p>
 </div>
@@ -349,7 +349,7 @@ operations create two ranges on <code class="docutils literal"><span class="pre"
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The previously defined range conflicts with the ranges defined in this
-example. Issue the <a class="reference internal" href="sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-5097"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> operation to remove an
+example. Issue the <a class="reference internal" href="sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a> operation to remove an
 existing conflicting range.</p>
 </div>
 <div class="button-code-block">
@@ -379,7 +379,7 @@ value. Using these special values for the lower and upper bounds of the range
 captures the entire possible value space of <code class="docutils literal"><span class="pre">a</span></code>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><a class="dashingAutolink" name="autolink-5098"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShardToZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a>, <a class="reference internal" href="sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><a class="dashingAutolink" name="autolink-5099"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeRangeFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a></p>
+<p class="last"><a class="reference internal" href="sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a>, <a class="reference internal" href="sh.removeRangeFromZone.html#sh.removeRangeFromZone" title="sh.removeRangeFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeRangeFromZone()</span></code></a></p>
 </div>
 </div>
 </div>

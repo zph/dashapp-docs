@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4798"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rs.reconfig%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>rs.reconfig() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2090"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/rs.reconfig%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>rs.reconfig() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/rs.reconfig/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="rs-reconfig">
-<a class="dashingAutolink" name="autolink-4799"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/rs.reconfig%28%29%C2%B6"></a><h1>rs.reconfig()<a class="headerlink" href="#rs-reconfig" title="Permalink to this headline">&para;</a></h1>
+<h1>rs.reconfig()<a class="headerlink" href="#rs-reconfig" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="rs.reconfig">
-<code class="descclassname">rs.</code><code class="descname">reconfig</code><span class="sig-paren">(</span><em>configuration</em>, <em>force</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4808"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rs.reconfig" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">rs.</code><code class="descname">reconfig</code><span class="sig-paren">(</span><em>configuration</em>, <em>force</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2089"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rs.reconfig" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Reconfigures an existing replica set, overwriting the existing
 replica set configuration. To run the method, you must connect to
 the <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a> of the replica set.</p>
@@ -198,10 +198,10 @@ not accessible. Use with caution, as this can lead to
 </tbody>
 </table>
 <p>To reconfigure an existing replica set, first retrieve the
-current configuration with <a class="reference internal" href="rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-4800"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>, modify the
+current configuration with <a class="reference internal" href="rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>, modify the
 configuration document as needed, and then pass the modified
-document to <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-4801"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>.</p>
-<p><a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-4802"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> provides a wrapper around the
+document to <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>.</p>
+<p><a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> provides a wrapper around the
 <a class="reference internal" href="../command/replSetReconfig.html#dbcmd.replSetReconfig" title="replSetReconfig"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetReconfig</span></code></a> command.</p>
 <p>The <code class="docutils literal"><span class="pre">force</span></code> parameter allows a reconfiguration command to be issued
 to a non-primary node.</p>
@@ -220,7 +220,7 @@ MongoDB versions as validation rules may differ across MongoDB versions.</p>
 </div>
 <div class="section" id="availability">
 <h3>Availability<a class="headerlink" href="#availability" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-4803"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can trigger the current primary
+<p>The <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> shell method can trigger the current primary
 to step down in some situations. When the primary steps down, it
 forcibly closes all client connections. Primary step-down triggers an
 <a class="reference internal" href="../../core/replica-set-elections.html#replica-set-elections"><span class="std std-ref">election</span></a> to select a new <a class="reference internal" href="../glossary.html#term-primary"><span class="xref std std-term">primary</span></a>.</p>
@@ -246,7 +246,7 @@ reconfigure only during scheduled maintenance periods.</p>
 <h3><code class="docutils literal"><span class="pre">{</span> <span class="pre">force:</span> <span class="pre">true</span> <span class="pre">}</span></code><a class="headerlink" href="#force-true" title="Permalink to this headline">&para;</a></h3>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Using <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-4804"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> with <code class="docutils literal"><span class="pre">{</span> <span class="pre">force:</span> <span class="pre">true</span> <span class="pre">}</span></code> can lead to
+<p class="last">Using <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> with <code class="docutils literal"><span class="pre">{</span> <span class="pre">force:</span> <span class="pre">true</span> <span class="pre">}</span></code> can lead to
 <a class="reference internal" href="../glossary.html#term-rollback"><span class="xref std std-term">rollback</span></a> of committed writes. Exercise caution when using this option.</p>
 </div>
 </div>
@@ -357,7 +357,7 @@ copy</a>
 </div>
 </div>
 <ol class="arabic">
-<li><p class="first">The first statement uses the <a class="reference internal" href="rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-4805"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method to retrieve
+<li><p class="first">The first statement uses the <a class="reference internal" href="rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method to retrieve
 a document containing the current <a class="reference internal" href="../replica-configuration.html#replsetgetconfig-output"><span class="std std-ref">configuration</span></a> for the replica set and sets the
 document to the local variable <code class="docutils literal"><span class="pre">cfg</span></code>.</p>
 </li>
@@ -369,7 +369,7 @@ For additional settings, see <a class="reference internal" href="../replica-conf
 statement uses the array index and <strong>not</strong> the replica set member&rsquo;s
 <a class="reference internal" href="../replica-configuration.html#rsconf.members[n]._id" title="members[n]._id"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n]._id</span></code></a> field.</p>
 </li>
-<li><p class="first">The last statement calls the <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-4806"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method with the
+<li><p class="first">The last statement calls the <a class="reference internal" href="#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method with the
 modified <code class="docutils literal"><span class="pre">cfg</span></code> to initialize this new configuration. Upon
 successful reconfiguration, the replica set configuration will
 resemble the following:</p>
@@ -446,7 +446,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-4807"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>,
+<p class="last"><a class="reference internal" href="rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a>,
 <a class="reference internal" href="../replica-configuration.html#replsetgetconfig-output"><span class="std std-ref">Replica Set Configuration Fields</span></a> and
 <a class="reference internal" href="../../administration/replica-sets.html"><span class="doc">Replica Set Tutorials</span></a>.</p>
 </div>

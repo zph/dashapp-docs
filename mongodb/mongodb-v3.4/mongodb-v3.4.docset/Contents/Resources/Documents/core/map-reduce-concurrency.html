@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-372"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Map-Reduce%20Concurrency%20%E2%80%94%20MongoDB%20Manual"></a><title>Map-Reduce Concurrency &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-202"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Map-Reduce%20Concurrency%20%E2%80%94%20MongoDB%20Manual"></a><title>Map-Reduce Concurrency &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/map-reduce-concurrency/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="map-reduce-concurrency">
-<a class="dashingAutolink" name="autolink-373"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Map-Reduce%20Concurrency%C2%B6"></a><h1>Map-Reduce Concurrency<a class="headerlink" href="#map-reduce-concurrency" title="Permalink to this headline">&para;</a></h1>
+<h1>Map-Reduce Concurrency<a class="headerlink" href="#map-reduce-concurrency" title="Permalink to this headline">&para;</a></h1>
 <p>The map-reduce operation is composed of many tasks, including reads
 from the input collection, executions of the <code class="docutils literal"><span class="pre">map</span></code> function,
 executions of the <code class="docutils literal"><span class="pre">reduce</span></code> function, writes to a temporary collection
@@ -175,7 +175,7 @@ atomically. However, output actions <code class="docutils literal"><span class="
 take minutes to process. For the <code class="docutils literal"><span class="pre">merge</span></code> and <code class="docutils literal"><span class="pre">reduce</span></code>, the
 <code class="docutils literal"><span class="pre">nonAtomic</span></code> flag is available, which releases the lock between
 writing each output
-document. See the <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-374"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> reference for more
+document. See the <a class="reference internal" href="../reference/method/db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> reference for more
 information.</p>
 </div>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-856"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/aggregate%20%E2%80%94%20MongoDB%20Manual"></a><title>aggregate &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-362"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/aggregate%20%E2%80%94%20MongoDB%20Manual"></a><title>aggregate &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/aggregate/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="aggregate">
-<a class="dashingAutolink" name="autolink-857"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/aggregate%C2%B6"></a><h1>aggregate<a class="headerlink" href="#aggregate" title="Permalink to this headline">&para;</a></h1>
+<h1>aggregate<a class="headerlink" href="#aggregate" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -162,7 +162,7 @@
 </div>
 <dl class="dbcommand">
 <dt id="dbcmd.aggregate">
-<code class="descname">aggregate</code><a class="dashingAutolink" name="autolink-855"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.aggregate" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">aggregate</code><a class="dashingAutolink" name="autolink-361"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.aggregate" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Performs aggregation operation using the <a class="reference internal" href="../operator/aggregation-pipeline.html"><span class="doc">aggregation pipeline</span></a>. The pipeline allows
 users to process data from a collection with a sequence of
 stage-based manipulations.</p>
@@ -255,7 +255,7 @@ operations on a cursor. If you do not specify a value for maxTimeMS,
 operations will not time out. A value of <code class="docutils literal"><span class="pre">0</span></code> explicitly
 specifies the default unbounded behavior.</p>
 <p class="last">MongoDB terminates operations that exceed their allotted time limit
-using the same mechanism as <a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><a class="dashingAutolink" name="autolink-846"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.killOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only
+using the same mechanism as <a class="reference internal" href="../method/db.killOp.html#db.killOp" title="db.killOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.killOp()</span></code></a>. MongoDB only
 terminates an operation at one of its designated <a class="reference internal" href="../glossary.html#term-interrupt-point"><span class="xref std std-term">interrupt
 points</span></a>.</p>
 </td>
@@ -327,7 +327,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-847"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="../method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -371,13 +371,13 @@ introduces the <a class="reference internal" href="../operator/aggregation/out.h
 default batch size <code class="docutils literal"><span class="pre">cursor:</span> <span class="pre">{}</span></code> or specify the batch size in the
 cursor option <code class="docutils literal"><span class="pre">cursor:</span> <span class="pre">{</span> <span class="pre">batchSize:</span> <span class="pre">&lt;num&gt;</span> <span class="pre">}</span></code>.</p>
 <p>Rather than run the <a class="reference internal" href="#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a> command directly, most
-users should use the <a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-848"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper
+users should use the <a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper
 provided in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell or the equivalent helper in
 their driver. In 2.6 and later, the
-<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-849"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper always returns a cursor.</p>
+<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper always returns a cursor.</p>
 <p>Except for the first example which demonstrates the command syntax,
 the examples in this page use the
-<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-850"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper.</p>
+<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper.</p>
 </div>
 <div class="section" id="aggregate-data-with-multi-stage-pipeline">
 <h3>Aggregate Data with Multi-Stage Pipeline<a class="headerlink" href="#aggregate-data-with-multi-stage-pipeline" title="Permalink to this headline">&para;</a></h3>
@@ -417,7 +417,7 @@ copy</a>
 </div>
 </div>
 <p>In the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, this operation can use the
-<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-851"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper as in the following:</p>
+<a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> helper as in the following:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -457,7 +457,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-852"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method</p>
+<p class="last"><a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> method</p>
 </div>
 </div>
 <div class="section" id="aggregate-data-using-external-sort">
@@ -481,7 +481,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-853"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a></p>
+<p class="last"><a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a></p>
 </div>
 </div>
 <div class="section" id="aggregate-data-specifying-batch-size">
@@ -591,7 +591,7 @@ copy</a>
 write concern against the primary of the replica set.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-854"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a></p>
+<p class="last"><a class="reference internal" href="../method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a></p>
 </div>
 </div>
 </div>

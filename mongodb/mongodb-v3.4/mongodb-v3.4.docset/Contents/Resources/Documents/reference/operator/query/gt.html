@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-6001"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24gt%20%E2%80%94%20MongoDB%20Manual"></a><title>$gt &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2515"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/%24gt%20%E2%80%94%20MongoDB%20Manual"></a><title>$gt &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/operator/query/gt/"/><meta name="robots" content="index"/>
@@ -155,10 +155,10 @@
   </div>
                 
                   <div class="section" id="gt">
-<a class="dashingAutolink" name="autolink-6002"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/%24gt%C2%B6"></a><h1>$gt<a class="headerlink" href="#gt" title="Permalink to this headline">&para;</a></h1>
+<h1>$gt<a class="headerlink" href="#gt" title="Permalink to this headline">&para;</a></h1>
 <dl class="query">
 <dt id="op._S_gt">
-<code class="descname">$gt</code><a class="dashingAutolink" name="autolink-6007"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_gt" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">$gt</code><a class="dashingAutolink" name="autolink-2514"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#op._S_gt" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Syntax</em>: <code class="docutils literal"><span class="pre">{field:</span> <span class="pre">{$gt:</span> <span class="pre">value}</span> <span class="pre">}</span></code></p>
 <p><a class="reference internal" href="#op._S_gt" title="$gt"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$gt</span></code></a> selects those documents where the value of the
 <code class="docutils literal"><span class="pre">field</span></code> is greater than (i.e. <code class="docutils literal"><span class="pre">&gt;</span></code>) the specified <code class="docutils literal"><span class="pre">value</span></code>.</p>
@@ -191,13 +191,13 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>This <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6003"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation will set
+<p>This <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation will set
 the value of the <code class="docutils literal"><span class="pre">price</span></code> field in the first document found containing the
 embedded document <code class="docutils literal"><span class="pre">carrier</span></code> whose <code class="docutils literal"><span class="pre">fee</span></code> field value is
 greater than <code class="docutils literal"><span class="pre">2</span></code>.</p>
 <p>To set the value of the <code class="docutils literal"><span class="pre">price</span></code> field in <em>all</em> documents containing the
 embedded document <code class="docutils literal"><span class="pre">carrier</span></code> whose <code class="docutils literal"><span class="pre">fee</span></code> field value is greater than <code class="docutils literal"><span class="pre">2</span></code>,
-specify the <code class="docutils literal"><span class="pre">multi:true</span></code> option in the <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6004"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method:</p>
+specify the <code class="docutils literal"><span class="pre">multi:true</span></code> option in the <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -213,7 +213,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-6005"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>, <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-6006"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>, <a class="reference internal" href="../update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a>.</p>
+<p class="last"><a class="reference internal" href="../../method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>, <a class="reference internal" href="../../method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a>, <a class="reference internal" href="../update/set.html#up._S_set" title="$set"><code class="xref mongodb mongodb-update docutils literal"><span class="pre">$set</span></code></a>.</p>
 </div>
 </dd></dl>
 

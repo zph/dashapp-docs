@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1580"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/profile%20%E2%80%94%20MongoDB%20Manual"></a><title>profile &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-833"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/profile%20%E2%80%94%20MongoDB%20Manual"></a><title>profile &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/profile/"/><meta name="robots" content="index"/>
@@ -153,17 +153,17 @@
   </div>
                 
                   <div class="section" id="profile">
-<a class="dashingAutolink" name="autolink-1581"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/profile%C2%B6"></a><h1>profile<a class="headerlink" href="#profile" title="Permalink to this headline">&para;</a></h1>
+<h1>profile<a class="headerlink" href="#profile" title="Permalink to this headline">&para;</a></h1>
 <dl class="dbcommand">
 <dt id="dbcmd.profile">
-<code class="descname">profile</code><a class="dashingAutolink" name="autolink-1585"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.profile" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">profile</code><a class="dashingAutolink" name="autolink-832"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.profile" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Use the <a class="reference internal" href="#dbcmd.profile" title="profile"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">profile</span></code></a> command to enable, disable, or change
 the query profiling level. This allows administrators to capture
 data regarding performance. The database profiling system can
 impact performance and can allow the server to write the contents
 of queries to the log.  Your deployment should carefully consider the
 security implications of this. The profiler is off by default.</p>
-<p>To run <code class="docutils literal"><span class="pre">profile</span></code>, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-1582"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%20%7B%20%3Ccommand%3E%20%7D%20%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
+<p>To run <code class="docutils literal"><span class="pre">profile</span></code>, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
 <p>The <a class="reference internal" href="#dbcmd.profile" title="profile"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">profile</span></code></a> command has the following syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -220,8 +220,8 @@ not active.</p>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last">&ldquo;<a class="reference internal" href="../method/db.getProfilingStatus.html#db.getProfilingStatus" title="db.getProfilingStatus()"><a class="dashingAutolink" name="autolink-1583"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getProfilingStatus%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getProfilingStatus()</span></code></a>&rdquo; and
-&ldquo;<a class="reference internal" href="../method/db.setProfilingLevel.html#db.setProfilingLevel" title="db.setProfilingLevel()"><a class="dashingAutolink" name="autolink-1584"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setProfilingLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setProfilingLevel()</span></code></a>&rdquo; provide wrappers
+<p class="last">&ldquo;<a class="reference internal" href="../method/db.getProfilingStatus.html#db.getProfilingStatus" title="db.getProfilingStatus()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getProfilingStatus()</span></code></a>&rdquo; and
+&ldquo;<a class="reference internal" href="../method/db.setProfilingLevel.html#db.setProfilingLevel" title="db.setProfilingLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setProfilingLevel()</span></code></a>&rdquo; provide wrappers
 around this functionality in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a>
 shell.</p>
 </div>

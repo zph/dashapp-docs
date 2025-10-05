@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8249"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Evaluate%20Performance%20of%20Current%20Operations%20%E2%80%94%20MongoDB%20Manual"></a><title>Evaluate Performance of Current Operations &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3641"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Evaluate%20Performance%20of%20Current%20Operations%20%E2%80%94%20MongoDB%20Manual"></a><title>Evaluate Performance of Current Operations &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/evaluate-operation-performance/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="evaluate-performance-of-current-operations">
-<a class="dashingAutolink" name="autolink-8250"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Evaluate%20Performance%20of%20Current%20Operations%C2%B6"></a><h1>Evaluate Performance of Current Operations<a class="headerlink" href="#evaluate-performance-of-current-operations" title="Permalink to this headline">&para;</a></h1>
+<h1>Evaluate Performance of Current Operations<a class="headerlink" href="#evaluate-performance-of-current-operations" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -174,12 +174,12 @@ use this information, for example, to determine what indexes to create.</p>
 </div>
 <div class="section" id="use-db-currentop-to-evaluate-mongod-operations">
 <h2>Use <code class="docutils literal"><span class="pre">db.currentOp()</span></code> to Evaluate <code class="docutils literal"><span class="pre">mongod</span></code> Operations<a class="headerlink" href="#use-db-currentop-to-evaluate-mongod-operations" title="Permalink to this headline">&para;</a></h2>
-<p>The <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><a class="dashingAutolink" name="autolink-8251"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.currentOp%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> method reports on current operations
+<p>The <a class="reference internal" href="../reference/method/db.currentOp.html#db.currentOp" title="db.currentOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.currentOp()</span></code></a> method reports on current operations
 running on a <a class="reference internal" href="../reference/program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance.</p>
 </div>
 <div class="section" id="use-explain-to-evaluate-query-performance">
 <h2>Use <code class="docutils literal"><span class="pre">explain</span></code> to Evaluate Query Performance<a class="headerlink" href="#use-explain-to-evaluate-query-performance" title="Permalink to this headline">&para;</a></h2>
-<p>The <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-8252"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-8253"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>
+<p>The <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>
 methods return information on a query execution, such as the index
 MongoDB selected to fulfill the query and execution statistics. You can
 run the methods in <a class="reference internal" href="../reference/method/db.collection.explain.html#explain-method-queryplanner"><span class="std std-ref">queryPlanner</span></a>
@@ -188,7 +188,7 @@ mode, <a class="reference internal" href="../reference/method/db.collection.expl
 control the amount of information returned.</p>
 <div class="admonition-example admonition">
 <p class="first admonition-title">Example</p>
-<p>To use <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-8254"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> on a query
+<p>To use <a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> on a query
 for documents matching the expression <code class="docutils literal"><span class="pre">{</span> <span class="pre">a:</span> <span class="pre">1</span> <span class="pre">}</span></code>, in the
 collection named <code class="docutils literal"><span class="pre">records</span></code>, use an operation that resembles the
 following in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell:</p>
@@ -203,7 +203,7 @@ copy</a>
 </div>
 </div>
 <p>For more information, see <a class="reference internal" href="../reference/explain-results.html"><span class="doc">Explain Results</span></a>,
-<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-8255"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a>, <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-8256"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>, and
+<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a>, <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>, and
 <a class="reference internal" href="analyze-query-plan.html"><span class="doc">Analyze Query Performance</span></a>.</p>
 </div>
 </div>

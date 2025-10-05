@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8732"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Tiered%20Hardware%20for%20Varying%20SLA%20or%20SLO%20%E2%80%94%20MongoDB%20Manual"></a><title>Tiered Hardware for Varying SLA or SLO &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3727"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Tiered%20Hardware%20for%20Varying%20SLA%20or%20SLO%20%E2%80%94%20MongoDB%20Manual"></a><title>Tiered Hardware for Varying SLA or SLO &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/sharding-tiered-hardware-for-varying-slas/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="tiered-hardware-for-varying-sla-or-slo">
-<a class="dashingAutolink" name="autolink-8733"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Tiered%20Hardware%20for%20Varying%20SLA%20or%20SLO%C2%B6"></a><h1>Tiered Hardware for Varying SLA or SLO<a class="headerlink" href="#tiered-hardware-for-varying-sla-or-slo" title="Permalink to this headline">&para;</a></h1>
+<h1>Tiered Hardware for Varying SLA or SLO<a class="headerlink" href="#tiered-hardware-for-varying-sla-or-slo" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -343,7 +343,7 @@ You cannot create zone or zone ranges by connecting directly to a
 <h3>Disable the Balancer<a class="headerlink" href="#disable-the-balancer" title="Permalink to this headline">&para;</a></h3>
 <p>The balancer must be disabled on the collection
 to ensure no migrations take place while configuring the new zones.</p>
-<p>Use <a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><a class="dashingAutolink" name="autolink-8734"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.disableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a>, specifying the namespace of the
+<p>Use <a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a>, specifying the namespace of the
 collection, to stop the balancer</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -354,7 +354,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><a class="dashingAutolink" name="autolink-8735"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.isBalancerRunning%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
+<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
 is currently running. Wait until any current balancing rounds have completed
 before proceeding.</p>
 </div></div>
@@ -391,12 +391,12 @@ copy</a>
 </div>
 </div>
 <p>You can review the zone assigned to any given shard by running
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8736"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="define-ranges-for-each-zone">
 <h3>Define ranges for each zone<a class="headerlink" href="#define-ranges-for-each-zone" title="Permalink to this headline">&para;</a></h3>
 <p>Define range for recent photos and associate it to the <code class="docutils literal"><span class="pre">recent</span></code> zone
-using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-8737"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method requires:</p>
+using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method requires:</p>
 <ul class="simple">
 <li>the full namespace of the target collection.</li>
 <li>the inclusive lower bound of the range.</li>
@@ -418,7 +418,7 @@ copy</a>
 </div>
 </div>
 <p>Define range for older photos and associate it to the
-<code class="docutils literal"><span class="pre">archive</span></code> zone using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-8738"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method.
+<code class="docutils literal"><span class="pre">archive</span></code> zone using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method.
 This method requires:</p>
 <ul class="simple">
 <li>the full namespace of the target collection.</li>
@@ -446,7 +446,7 @@ comparisons.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">4</div></div><div class="section" id="enable-the-balancer">
 <h3>Enable the Balancer<a class="headerlink" href="#enable-the-balancer" title="Permalink to this headline">&para;</a></h3>
 <p>Re-enable the balancer to rebalance the cluster.</p>
-<p>Use <a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><a class="dashingAutolink" name="autolink-8739"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a>, specifying the namespace of the
+<p>Use <a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a>, specifying the namespace of the
 collection, to start the balancer</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -457,7 +457,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><a class="dashingAutolink" name="autolink-8740"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.isBalancerRunning%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
+<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
 is currently running.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="review-the-changes">
@@ -471,7 +471,7 @@ contain documents with <code class="docutils literal"><span class="pre">creation
 <code class="docutils literal"><span class="pre">ISODate(&#34;2016-01-01&#34;)</span></code>, while shards in the <code class="docutils literal"><span class="pre">archive</span></code> zone should
 only contain documents with <code class="docutils literal"><span class="pre">creation_date</span></code> less than
 <code class="docutils literal"><span class="pre">ISODate(&#34;2016-01-01&#34;)</span></code>.</p>
-<p>You can confirm the chunk distribution by running <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8741"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
+<p>You can confirm the chunk distribution by running <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
 </div></div>
 <div class="section" id="updating-zone-ranges">
 <h3>Updating Zone Ranges<a class="headerlink" href="#updating-zone-ranges" title="Permalink to this headline">&para;</a></h3>
@@ -481,7 +481,7 @@ a cron job or other scheduled procedure:</p>
 <h4>Disable the Balancer<a class="headerlink" href="#id1" title="Permalink to this headline">&para;</a></h4>
 <p>The balancer must be disabled on the collection
 to ensure no migrations take place while configuring the new zones.</p>
-<p>Use <a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><a class="dashingAutolink" name="autolink-8742"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.disableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a>, specifying the namespace of the
+<p>Use <a class="reference internal" href="../reference/method/sh.disableBalancing.html#sh.disableBalancing" title="sh.disableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.disableBalancing()</span></code></a>, specifying the namespace of the
 collection, to stop the balancer</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -492,14 +492,14 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><a class="dashingAutolink" name="autolink-8743"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.isBalancerRunning%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
+<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
 is currently running. Wait until any current balancing rounds have completed
 before proceeding.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">2</div></div><div class="section" id="remove-the-old-shard-zone-ranges">
 <h4>Remove the old shard zone ranges<a class="headerlink" href="#remove-the-old-shard-zone-ranges" title="Permalink to this headline">&para;</a></h4>
 <p>Remove the old <code class="docutils literal"><span class="pre">recent</span></code> zone range using the
-<a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><a class="dashingAutolink" name="autolink-8744"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> method. This method requires:</p>
+<a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> method. This method requires:</p>
 <ul class="simple">
 <li>the full namespace of the target collection.</li>
 <li>the inclusive lower bound of the range.</li>
@@ -521,7 +521,7 @@ copy</a>
 </div>
 </div>
 <p>Remove the old <code class="docutils literal"><span class="pre">archive</span></code> zone range using the
-<a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><a class="dashingAutolink" name="autolink-8745"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> method. This method requires:</p>
+<a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> method. This method requires:</p>
 <ul class="simple">
 <li>the full namespace of the target collection.</li>
 <li>the inclusive lower bound of the range.</li>
@@ -548,7 +548,7 @@ comparisons.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="add-the-new-zone-range-for-each-zone">
 <h4>Add the new zone range for each zone<a class="headerlink" href="#add-the-new-zone-range-for-each-zone" title="Permalink to this headline">&para;</a></h4>
 <p>Define range for recent photos and associate it to the <code class="docutils literal"><span class="pre">recent</span></code> zone using
-the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-8746"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method requires:</p>
+the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method. This method requires:</p>
 <ul class="simple">
 <li>the full namespace of the target collection.</li>
 <li>the inclusive lower bound of the range.</li>
@@ -570,7 +570,7 @@ copy</a>
 </div>
 </div>
 <p>Define range for older photos and associate it to the
-<code class="docutils literal"><span class="pre">archive</span></code> zone using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-8747"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method.
+<code class="docutils literal"><span class="pre">archive</span></code> zone using the <a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a> method.
 This method requires:</p>
 <ul class="simple">
 <li>the full namespace of the target collection.</li>
@@ -598,7 +598,7 @@ comparisons.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">4</div></div><div class="section" id="id3">
 <h4>Enable the Balancer<a class="headerlink" href="#id3" title="Permalink to this headline">&para;</a></h4>
 <p>Re-enable the balancer to rebalance the cluster.</p>
-<p>Use <a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><a class="dashingAutolink" name="autolink-8748"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.enableBalancing%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a>, specifying the namespace of the
+<p>Use <a class="reference internal" href="../reference/method/sh.enableBalancing.html#sh.enableBalancing" title="sh.enableBalancing()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.enableBalancing()</span></code></a>, specifying the namespace of the
 collection, to start the balancer</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -609,7 +609,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><a class="dashingAutolink" name="autolink-8749"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.isBalancerRunning%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
+<p>Use <a class="reference internal" href="../reference/method/sh.isBalancerRunning.html#sh.isBalancerRunning" title="sh.isBalancerRunning()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.isBalancerRunning()</span></code></a> to check if the balancer process
 is currently running.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="id5">
@@ -627,7 +627,7 @@ contain documents with <code class="docutils literal"><span class="pre">creation
 <code class="docutils literal"><span class="pre">ISODate(&#34;2016-06-01&#34;)</span></code>, while shards in the <code class="docutils literal"><span class="pre">archive</span></code> zone should
 only contain documents with <code class="docutils literal"><span class="pre">creation_date</span></code> less than
 <code class="docutils literal"><span class="pre">ISODate(&#34;2016-06-01&#34;)</span></code>.</p>
-<p>You can confirm the chunk distribution by running <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-8750"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
+<p>You can confirm the chunk distribution by running <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>.</p>
 </div></div>
 </div>
 </div>

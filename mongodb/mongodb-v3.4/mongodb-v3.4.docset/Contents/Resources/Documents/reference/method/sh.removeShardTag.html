@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4973"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.removeShardTag%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.removeShardTag() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2136"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/sh.removeShardTag%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>sh.removeShardTag() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/sh.removeShardTag/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="sh-removeshardtag">
-<a class="dashingAutolink" name="autolink-4974"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/sh.removeShardTag%28%29%C2%B6"></a><h1>sh.removeShardTag()<a class="headerlink" href="#sh-removeshardtag" title="Permalink to this headline">&para;</a></h1>
+<h1>sh.removeShardTag()<a class="headerlink" href="#sh-removeshardtag" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -164,13 +164,13 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="sh.removeShardTag">
-<code class="descclassname">sh.</code><code class="descname">removeShardTag</code><span class="sig-paren">(</span><em>shard</em>, <em>tag</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4979"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.removeShardTag" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">sh.</code><code class="descname">removeShardTag</code><span class="sig-paren">(</span><em>shard</em>, <em>tag</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2135"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#sh.removeShardTag" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
-<p><span class="versionmodified">Changed in version 3.4: </span>This method aliases to <a class="reference internal" href="sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><a class="dashingAutolink" name="autolink-4975"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardFromZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> in MongoDB 3.4. The functionality specified
+<p><span class="versionmodified">Changed in version 3.4: </span>This method aliases to <a class="reference internal" href="sh.removeShardFromZone.html#sh.removeShardFromZone" title="sh.removeShardFromZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardFromZone()</span></code></a> in MongoDB 3.4. The functionality specified
 below still applies to MongoDB 3.2. MongoDB 3.4 provides <a class="reference internal" href="../../core/zone-sharding.html#zone-sharding"><span class="std std-ref">Zone sharding</span></a> as the successor to tag-aware sharding.</p>
 </div>
 <p>Removes the association between a tag and a shard. Only issue
-<a class="reference internal" href="#sh.removeShardTag" title="sh.removeShardTag()"><a class="dashingAutolink" name="autolink-4976"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeShardTag%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardTag()</span></code></a> when connected to a <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
+<a class="reference internal" href="#sh.removeShardTag" title="sh.removeShardTag()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeShardTag()</span></code></a> when connected to a <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 instance.</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -197,8 +197,8 @@ instance.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sh.addShardTag.html#sh.addShardTag" title="sh.addShardTag()"><a class="dashingAutolink" name="autolink-4977"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShardTag%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardTag()</span></code></a>,
-<a class="reference internal" href="sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-4978"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a></p>
+<p class="last"><a class="reference internal" href="sh.addShardTag.html#sh.addShardTag" title="sh.addShardTag()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardTag()</span></code></a>,
+<a class="reference internal" href="sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a></p>
 </div>
 </dd></dl>
 

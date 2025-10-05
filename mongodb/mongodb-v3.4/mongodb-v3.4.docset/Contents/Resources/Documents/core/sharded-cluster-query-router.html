@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-546"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/mongos%20%E2%80%94%20MongoDB%20Manual"></a><title>mongos &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-254"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/mongos%20%E2%80%94%20MongoDB%20Manual"></a><title>mongos &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/sharded-cluster-query-router/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="mongos">
-<span id="sharding-read-operations"></span><span id="sharded-cluster-query-routing"></span><span id="index-0"></span><a class="dashingAutolink" name="autolink-533"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/mongos%C2%B6"></a><h1>mongos<a class="headerlink" href="#mongos" title="Permalink to this headline">&para;</a></h1>
+<span id="sharding-read-operations"></span><span id="sharded-cluster-query-routing"></span><span id="index-0"></span><h1>mongos<a class="headerlink" href="#mongos" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -217,7 +217,7 @@ broadcast operations.</p>
 instance opens a result cursor that &ldquo;round robins&rdquo; results from all
 cursors on the shards.</p>
 <p>If the query specifies sorted results using the
-<a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-534"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> cursor method, the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance
+<a class="reference internal" href="../reference/method/cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sort()</span></code></a> cursor method, the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance
 passes the <a class="reference internal" href="../reference/operator/meta/orderby.html#metaOp._S_orderby" title="$orderby"><code class="xref mongodb mongodb-operator docutils literal"><span class="pre">$orderby</span></code></a> option to the shards. The <a class="reference internal" href="../reference/glossary.html#term-primary-shard"><span class="xref std std-term">primary
 shard</span></a> for the database receives and performs a merge sort for all
 results before returning the data to the client via the
@@ -226,20 +226,20 @@ results before returning the data to the client via the
 <div class="section" id="limits">
 <h3>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">&para;</a></h3>
 <p>If the query limits the size of the result set using the
-<a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-535"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> cursor method, the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
+<a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> cursor method, the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a>
 instance passes that limit to the shards and then re-applies the limit
 to the result before returning the result to the client.</p>
 </div>
 <div class="section" id="skips">
 <h3>Skips<a class="headerlink" href="#skips" title="Permalink to this headline">&para;</a></h3>
 <p>If the query specifies a number of records to <em>skip</em> using the
-<a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-536"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> cursor method, the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> <em>cannot</em>
+<a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> cursor method, the <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> <em>cannot</em>
 pass the skip to the shards, but rather retrieves unskipped results
 from the shards and skips the appropriate number of documents when assembling
 the complete result.</p>
-<p>When used in conjunction with a <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-537"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>, the
+<p>When used in conjunction with a <a class="reference internal" href="../reference/method/cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>, the
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> will pass the <em>limit</em> plus the value of the
-<a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-538"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> to the shards to improve the efficiency of these
+<a class="reference internal" href="../reference/method/cursor.skip.html#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">skip()</span></code></a> to the shards to improve the efficiency of these
 operations.</p>
 </div>
 </div>
@@ -293,8 +293,8 @@ per shard. Whenever possible, favor operations that result in <a class="referenc
 operation</span></a> over those that result in a broadcast
 operation.</p>
 <p>Multi-update operations are always broadcast operations.</p>
-<p>The <a class="reference internal" href="../reference/method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><a class="dashingAutolink" name="autolink-539"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateMany()</span></code></a> and
-<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-540"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a> methods are broadcast
+<p>The <a class="reference internal" href="../reference/method/db.collection.updateMany.html#db.collection.updateMany" title="db.collection.updateMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateMany()</span></code></a> and
+<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a> methods are broadcast
 operations, unless the query document specifies the shard key in full.</p>
 </div>
 <div class="section" id="targeted-operations">
@@ -329,12 +329,12 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>All <a class="reference internal" href="../reference/method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><a class="dashingAutolink" name="autolink-541"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertOne()</span></code></a> operations target to one shard. Each
-document in the <a class="reference internal" href="../reference/method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-542"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> array targets to a
+<p>All <a class="reference internal" href="../reference/method/db.collection.insertOne.html#db.collection.insertOne" title="db.collection.insertOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertOne()</span></code></a> operations target to one shard. Each
+document in the <a class="reference internal" href="../reference/method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> array targets to a
 single shard, but there is no guarantee all documents in the array insert into
 a single shard.</p>
-<p>All <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><a class="dashingAutolink" name="autolink-543"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/updateOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne()</span></code></a>,
-<a class="reference internal" href="../reference/method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><a class="dashingAutolink" name="autolink-544"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/replaceOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">replaceOne()</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-545"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne()</span></code></a>
+<p>All <a class="reference internal" href="../reference/method/db.collection.updateOne.html#db.collection.updateOne" title="db.collection.updateOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">updateOne()</span></code></a>,
+<a class="reference internal" href="../reference/method/db.collection.replaceOne.html#db.collection.replaceOne" title="db.collection.replaceOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">replaceOne()</span></code></a> and <a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteOne()</span></code></a>
 operations <em>must</em> include the <a class="reference internal" href="../reference/glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> or <code class="docutils literal"><span class="pre">_id</span></code> in the query
 document. MongoDB returns an error if these methods are used without
 the shard key or <code class="docutils literal"><span class="pre">_id</span></code>.</p>

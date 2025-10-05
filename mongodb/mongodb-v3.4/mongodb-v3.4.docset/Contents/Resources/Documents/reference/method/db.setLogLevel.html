@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4336"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.setLogLevel%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.setLogLevel() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2015"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.setLogLevel%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.setLogLevel() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.setLogLevel/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-setloglevel">
-<a class="dashingAutolink" name="autolink-4337"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.setLogLevel%28%29%C2%B6"></a><h1>db.setLogLevel()<a class="headerlink" href="#db-setloglevel" title="Permalink to this headline">&para;</a></h1>
+<h1>db.setLogLevel()<a class="headerlink" href="#db-setloglevel" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,12 +166,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.setLogLevel">
-<code class="descclassname">db.</code><code class="descname">setLogLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4341"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.setLogLevel" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">setLogLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2014"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.setLogLevel" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.0.</span></p>
 </div>
 <p>Sets a single verbosity level for <a class="reference internal" href="../log-messages.html"><span class="doc">log messages</span></a>.</p>
-<p><a class="reference internal" href="#db.setLogLevel" title="db.setLogLevel()"><a class="dashingAutolink" name="autolink-4338"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setLogLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> has the following form:</p>
+<p><a class="reference internal" href="#db.setLogLevel" title="db.setLogLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> has the following form:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -181,7 +181,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p><a class="reference internal" href="#db.setLogLevel" title="db.setLogLevel()"><a class="dashingAutolink" name="autolink-4339"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setLogLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> takes the following parameters:</p>
+<p><a class="reference internal" href="#db.setLogLevel" title="db.setLogLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> takes the following parameters:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -238,7 +238,7 @@ corresponding <code class="docutils literal"><span class="pre">systemLog.compone
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="#db.setLogLevel" title="db.setLogLevel()"><a class="dashingAutolink" name="autolink-4340"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.setLogLevel%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> sets a <em>single</em> verbosity level. To set
+<p><a class="reference internal" href="#db.setLogLevel" title="db.setLogLevel()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.setLogLevel()</span></code></a> sets a <em>single</em> verbosity level. To set
 multiple verbosity levels in a single operation, use either the
 <a class="reference internal" href="../command/setParameter.html#dbcmd.setParameter" title="setParameter"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">setParameter</span></code></a> command to set the
 <a class="reference internal" href="../parameters.html#param.logComponentVerbosity" title="logComponentVerbosity"><code class="xref mongodb mongodb-parameter docutils literal"><span class="pre">logComponentVerbosity</span></code></a> parameter. You can also specify the

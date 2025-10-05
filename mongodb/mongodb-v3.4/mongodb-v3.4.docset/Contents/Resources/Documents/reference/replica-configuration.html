@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7119"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Configuration%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Configuration &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3427"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Configuration%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Configuration &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/replica-configuration/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="replica-set-configuration">
-<a class="dashingAutolink" name="autolink-7120"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Replica%20Set%20Configuration%C2%B6"></a><h1>Replica Set Configuration<a class="headerlink" href="#replica-set-configuration" title="Permalink to this headline">&para;</a></h1>
+<h1>Replica Set Configuration<a class="headerlink" href="#replica-set-configuration" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -160,10 +160,10 @@
 </ul>
 </div>
 <p>You can access the configuration of a <a class="reference internal" href="glossary.html#term-replica-set"><span class="xref std std-term">replica set</span></a> using the
-<a class="reference internal" href="method/rs.conf.html#rs.conf" title="rs.conf()"><a class="dashingAutolink" name="autolink-7121"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.conf%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method or the <a class="reference internal" href="command/replSetGetConfig.html#dbcmd.replSetGetConfig" title="replSetGetConfig"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetConfig</span></code></a> command.</p>
+<a class="reference internal" href="method/rs.conf.html#rs.conf" title="rs.conf()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.conf()</span></code></a> method or the <a class="reference internal" href="command/replSetGetConfig.html#dbcmd.replSetGetConfig" title="replSetGetConfig"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetGetConfig</span></code></a> command.</p>
 <p>To modify the configuration for a replica set, use the
-<a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7122"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method, passing a configuration document to the
-method. See <a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7123"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> for more information.</p>
+<a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> method, passing a configuration document to the
+method. See <a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a> for more information.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Avoid reconfiguring replica sets that contain members of different
@@ -218,7 +218,7 @@ copy</a>
 <span id="replsetgetconfig-output"></span><h2>Replica Set Configuration Fields<a class="headerlink" href="#replica-set-configuration-fields" title="Permalink to this headline">&para;</a></h2>
 <dl class="rsconf">
 <dt id="rsconf._id">
-<code class="descname">_id</code><a class="dashingAutolink" name="autolink-7129"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf._id" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">_id</code><a class="dashingAutolink" name="autolink-3403"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf._id" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Type</em>: string</p>
 <p>The name of the replica set. Once set, you cannot change the
 name of a replica set.</p>
@@ -234,7 +234,7 @@ for information on setting the replica set name.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.version">
-<code class="descname">version</code><a class="dashingAutolink" name="autolink-7130"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.version" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">version</code><a class="dashingAutolink" name="autolink-3404"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.version" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Type</em>: int</p>
 <p>An incrementing number used to distinguish revisions of the replica
 set configuration object from previous iterations of the
@@ -243,7 +243,7 @@ configuration.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.configsvr">
-<code class="descname">configsvr</code><a class="dashingAutolink" name="autolink-7131"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.configsvr" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">configsvr</code><a class="dashingAutolink" name="autolink-3405"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.configsvr" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -260,7 +260,7 @@ cluster&rsquo;s config servers.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.protocolVersion">
-<code class="descname">protocolVersion</code><a class="dashingAutolink" name="autolink-7132"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.protocolVersion" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">protocolVersion</code><a class="dashingAutolink" name="autolink-3406"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.protocolVersion" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -283,7 +283,7 @@ from the primary to all secondaries. For details, see
 
 <dl class="rsconf">
 <dt id="rsconf.writeConcernMajorityJournalDefault">
-<code class="descname">writeConcernMajorityJournalDefault</code><a class="dashingAutolink" name="autolink-7133"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.writeConcernMajorityJournalDefault" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">writeConcernMajorityJournalDefault</code><a class="dashingAutolink" name="autolink-3407"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.writeConcernMajorityJournalDefault" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.6.</span></p>
 </div>
@@ -347,7 +347,7 @@ must set <a class="reference internal" href="#rsconf.writeConcernMajorityJournal
 <h3><code class="docutils literal"><span class="pre">members</span></code><a class="headerlink" href="#members" title="Permalink to this headline">&para;</a></h3>
 <dl class="rsconf">
 <dt id="rsconf.members">
-<code class="descname">members</code><a class="dashingAutolink" name="autolink-7134"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">members</code><a class="dashingAutolink" name="autolink-3408"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Type</em>: array</p>
 <p>An array of member configuration documents, one for each member
 of the replica set. The <a class="reference internal" href="#rsconf.members" title="members"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members</span></code></a> array
@@ -356,7 +356,7 @@ is a zero-indexed array.</p>
 fields:</p>
 <dl class="rsconf">
 <dt id="rsconf.members[n]._id">
-<code class="descclassname">members[n].</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-7135"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n]._id" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">_id</code><a class="dashingAutolink" name="autolink-3409"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n]._id" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Type</em>: integer</p>
 <p>An integer identifier of every member in the replica set.
 Values must be between 0 and 255 inclusive. Each replica set member
@@ -375,7 +375,7 @@ the <a class="reference internal" href="#rsconf.members" title="members"><code c
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].host">
-<code class="descclassname">members[n].</code><code class="descname">host</code><a class="dashingAutolink" name="autolink-7136"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].host" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">host</code><a class="dashingAutolink" name="autolink-3410"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].host" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Type</em>: string</p>
 <p>The hostname and, if specified, the port number, of the set
 member.</p>
@@ -392,13 +392,13 @@ unless <em>all</em> members of the set are on hosts that resolve to
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].arbiterOnly">
-<code class="descclassname">members[n].</code><code class="descname">arbiterOnly</code><a class="dashingAutolink" name="autolink-7137"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].arbiterOnly" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">arbiterOnly</code><a class="dashingAutolink" name="autolink-3411"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].arbiterOnly" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: boolean</p>
 <p><em>Default</em>: false</p>
 <p>A boolean that identifies an arbiter. A value of <code class="docutils literal"><span class="pre">true</span></code>
 indicates that the member is an arbiter.</p>
-<p>When using the <a class="reference internal" href="method/rs.addArb.html#rs.addArb" title="rs.addArb()"><a class="dashingAutolink" name="autolink-7124"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.addArb%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.addArb()</span></code></a> method to add an arbiter,
+<p>When using the <a class="reference internal" href="method/rs.addArb.html#rs.addArb" title="rs.addArb()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.addArb()</span></code></a> method to add an arbiter,
 the method automatically sets
 <a class="reference internal" href="#rsconf.members[n].arbiterOnly" title="members[n].arbiterOnly"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n].arbiterOnly</span></code></a> to <code class="docutils literal"><span class="pre">true</span></code>
 for the added member.</p>
@@ -415,7 +415,7 @@ for replica sets with arbiters:</p>
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].buildIndexes">
-<code class="descclassname">members[n].</code><code class="descname">buildIndexes</code><a class="dashingAutolink" name="autolink-7138"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].buildIndexes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">buildIndexes</code><a class="dashingAutolink" name="autolink-3412"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].buildIndexes" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: boolean</p>
 <p><em>Default</em>: true</p>
@@ -424,7 +424,7 @@ for replica sets with arbiters:</p>
 value when adding a member to a replica set. You cannot change
 <a class="reference internal" href="#rsconf.members[n].buildIndexes" title="members[n].buildIndexes"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">members[n].buildIndexes</span></code></a> field after
 the member has been added to the set. To add a member, see
-<a class="reference internal" href="method/rs.add.html#rs.add" title="rs.add()"><a class="dashingAutolink" name="autolink-7125"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.add%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> and <a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-7126"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>.</p>
+<a class="reference internal" href="method/rs.add.html#rs.add" title="rs.add()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.add()</span></code></a> and <a class="reference internal" href="method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>.</p>
 <p>Do not set to <code class="docutils literal"><span class="pre">false</span></code> for <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instances that receive
 queries from clients.</p>
 <p>Setting <code class="docutils literal"><span class="pre">buildIndexes</span></code> to <code class="docutils literal"><span class="pre">false</span></code> may be useful if <strong>all</strong>
@@ -460,13 +460,13 @@ false.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].hidden">
-<code class="descclassname">members[n].</code><code class="descname">hidden</code><a class="dashingAutolink" name="autolink-7139"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].hidden" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">hidden</code><a class="dashingAutolink" name="autolink-3413"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].hidden" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: boolean</p>
 <p><em>Default</em>: false</p>
 <p>When this value is <code class="docutils literal"><span class="pre">true</span></code>, the replica set hides this instance
 and does not include the member in the output of
-<a class="reference internal" href="method/db.isMaster.html#db.isMaster" title="db.isMaster()"><a class="dashingAutolink" name="autolink-7127"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.isMaster%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> or <a class="reference internal" href="command/isMaster.html#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a>. This prevents
+<a class="reference internal" href="method/db.isMaster.html#db.isMaster" title="db.isMaster()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.isMaster()</span></code></a> or <a class="reference internal" href="command/isMaster.html#dbcmd.isMaster" title="isMaster"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">isMaster</span></code></a>. This prevents
 read operations (i.e. queries) from ever reaching this host by
 way of secondary <a class="reference internal" href="glossary.html#term-read-preference"><span class="xref std std-term">read preference</span></a>.</p>
 <p>Hidden members can acknowledge write operations
@@ -482,7 +482,7 @@ greater than <code class="docutils literal"><span class="pre">0</span></code>).<
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].priority">
-<code class="descclassname">members[n].</code><code class="descname">priority</code><a class="dashingAutolink" name="autolink-7140"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].priority" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">priority</code><a class="dashingAutolink" name="autolink-3414"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].priority" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: Number, between 0 and 1000.</p>
 <p><em>Default</em>: 1.0</p>
@@ -512,7 +512,7 @@ concern, the member must also be a voting member (i.e.
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].tags">
-<code class="descclassname">members[n].</code><code class="descname">tags</code><a class="dashingAutolink" name="autolink-7141"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].tags" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">tags</code><a class="dashingAutolink" name="autolink-3415"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].tags" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: document</p>
 <p><em>Default</em>: none</p>
@@ -538,7 +538,7 @@ and write concern, see
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].slaveDelay">
-<code class="descclassname">members[n].</code><code class="descname">slaveDelay</code><a class="dashingAutolink" name="autolink-7142"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].slaveDelay" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">slaveDelay</code><a class="dashingAutolink" name="autolink-3416"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].slaveDelay" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: integer</p>
 <p><em>Default</em>: 0</p>
@@ -562,7 +562,7 @@ a voting member (i.e. <a class="reference internal" href="#rsconf.members[n].vot
 
 <dl class="rsconf">
 <dt id="rsconf.members[n].votes">
-<code class="descclassname">members[n].</code><code class="descname">votes</code><a class="dashingAutolink" name="autolink-7143"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].votes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">members[n].</code><code class="descname">votes</code><a class="dashingAutolink" name="autolink-3417"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.members[n].votes" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: integer</p>
 <p><em>Default</em>: 1</p>
@@ -594,7 +594,7 @@ issued with a <a class="reference internal" href="write-concern.html#write-conce
 <h3><code class="docutils literal"><span class="pre">settings</span></code><a class="headerlink" href="#settings" title="Permalink to this headline">&para;</a></h3>
 <dl class="rsconf">
 <dt id="rsconf.settings">
-<code class="descname">settings</code><a class="dashingAutolink" name="autolink-7144"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">settings</code><a class="dashingAutolink" name="autolink-3418"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: document</p>
 <p>A document that contains configuration options that apply to the
@@ -603,7 +603,7 @@ whole replica set.</p>
 following fields:</p>
 <dl class="rsconf">
 <dt id="rsconf.settings.chainingAllowed">
-<code class="descclassname">settings.</code><code class="descname">chainingAllowed</code><a class="dashingAutolink" name="autolink-7145"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.chainingAllowed" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">chainingAllowed</code><a class="dashingAutolink" name="autolink-3419"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.chainingAllowed" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: boolean</p>
 <p><em>Default</em>: true</p>
@@ -620,7 +620,7 @@ replicate from other secondary members. When
 
 <dl class="rsconf">
 <dt id="rsconf.settings.getLastErrorDefaults">
-<code class="descclassname">settings.</code><code class="descname">getLastErrorDefaults</code><a class="dashingAutolink" name="autolink-7146"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.getLastErrorDefaults" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">getLastErrorDefaults</code><a class="dashingAutolink" name="autolink-3420"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.getLastErrorDefaults" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: document</p>
 <p>A document that specifies the <a class="reference internal" href="../core/replica-set-write-concern.html"><span class="doc">write concern</span></a> for the replica set. The
@@ -634,7 +634,7 @@ requires confirmation from the primary.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.settings.getLastErrorModes">
-<code class="descclassname">settings.</code><code class="descname">getLastErrorModes</code><a class="dashingAutolink" name="autolink-7147"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.getLastErrorModes" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">getLastErrorModes</code><a class="dashingAutolink" name="autolink-3421"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.getLastErrorModes" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: document</p>
 <p>A document used to define an extended <a class="reference internal" href="glossary.html#term-write-concern"><span class="xref std std-term">write concern</span></a>
@@ -661,7 +661,7 @@ information and example.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.settings.heartbeatTimeoutSecs">
-<code class="descclassname">settings.</code><code class="descname">heartbeatTimeoutSecs</code><a class="dashingAutolink" name="autolink-7148"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.heartbeatTimeoutSecs" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">heartbeatTimeoutSecs</code><a class="dashingAutolink" name="autolink-3422"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.heartbeatTimeoutSecs" title="Permalink to this definition">&para;</a></dt>
 <dd><p><em>Optional</em>.</p>
 <p><em>Type</em>: int</p>
 <p><em>Default</em>: 10</p>
@@ -676,7 +676,7 @@ When using <code class="xref mongodb mongodb-rsconf docutils literal"><span clas
 
 <dl class="rsconf">
 <dt id="rsconf.settings.electionTimeoutMillis">
-<code class="descclassname">settings.</code><code class="descname">electionTimeoutMillis</code><a class="dashingAutolink" name="autolink-7149"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.electionTimeoutMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">electionTimeoutMillis</code><a class="dashingAutolink" name="autolink-3423"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.electionTimeoutMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -696,7 +696,7 @@ sensitivity to primary node or network slowness or spottiness.</li>
 
 <dl class="rsconf">
 <dt id="rsconf.settings.catchUpTimeoutMillis">
-<code class="descclassname">settings.</code><code class="descname">catchUpTimeoutMillis</code><a class="dashingAutolink" name="autolink-7150"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.catchUpTimeoutMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">catchUpTimeoutMillis</code><a class="dashingAutolink" name="autolink-3424"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.catchUpTimeoutMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4.</span></p>
 </div>
@@ -736,7 +736,7 @@ to abort the catchup then complete the transition to primary.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.settings.heartbeatIntervalMillis">
-<code class="descclassname">settings.</code><code class="descname">heartbeatIntervalMillis</code><a class="dashingAutolink" name="autolink-7151"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.heartbeatIntervalMillis" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">heartbeatIntervalMillis</code><a class="dashingAutolink" name="autolink-3425"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.heartbeatIntervalMillis" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
@@ -746,13 +746,13 @@ to abort the catchup then complete the transition to primary.</p>
 
 <dl class="rsconf">
 <dt id="rsconf.settings.replicaSetId">
-<code class="descclassname">settings.</code><code class="descname">replicaSetId</code><a class="dashingAutolink" name="autolink-7152"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.replicaSetId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">settings.</code><code class="descname">replicaSetId</code><a class="dashingAutolink" name="autolink-3426"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#rsconf.settings.replicaSetId" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
 <p><em>Type</em>: ObjectId</p>
 <p>The ObjectId associated with the replica set and automatically
-created during <a class="reference internal" href="method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-7128"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.initiate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> or
+created during <a class="reference internal" href="method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.initiate()</span></code></a> or
 <code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">replSetInitate</span></code>. You cannot change the
 <code class="xref mongodb mongodb-setting docutils literal"><span class="pre">replicaSetId</span></code>.</p>
 </dd></dl>

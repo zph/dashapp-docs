@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-4107"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.getLastError%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.getLastError() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1932"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.getLastError%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.getLastError() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.getLastError/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-getlasterror">
-<a class="dashingAutolink" name="autolink-4108"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.getLastError%28%29%C2%B6"></a><h1>db.getLastError()<a class="headerlink" href="#db-getlasterror" title="Permalink to this headline">&para;</a></h1>
+<h1>db.getLastError()<a class="headerlink" href="#db-getlasterror" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,23 +166,23 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.getLastError">
-<code class="descclassname">db.</code><code class="descname">getLastError</code><span class="sig-paren">(</span><em>&lt;w&gt;</em>, <em>&lt;wtimeout&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-4106"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.getLastError" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.</code><code class="descname">getLastError</code><span class="sig-paren">(</span><em>&lt;w&gt;</em>, <em>&lt;wtimeout&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1931"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.getLastError" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the level of <a class="reference internal" href="../glossary.html#term-write-concern"><span class="xref std std-term">write concern</span></a> for confirming the success
 of previous write operation issued over the same connection and
 returns the <a class="reference internal" href="../command/getLastError.html#getLastError.err" title="getLastError.err"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">error</span> <span class="pre">string</span></code></a> for that operation.</p>
-<p>When using <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4098"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a>, clients must issue the
-<a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4099"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> on the same connection as the write
+<p>When using <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a>, clients must issue the
+<a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> on the same connection as the write
 operation they wish to confirm.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6: </span>A new protocol for <a class="reference internal" href="../../release-notes/2.6.html#rel-notes-write-operations"><span class="std std-ref">write operations</span></a> integrates write concerns with the
-write operations, eliminating the need for a separate <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4100"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a>.
+write operations, eliminating the need for a separate <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a>.
 <a class="reference internal" href="../../release-notes/2.6-compatibility.html#write-methods-incompatibility"><span class="std std-ref">Most write methods</span></a> now return
 the status of the write operation, including error information.
-In previous versions, clients typically used the <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4101"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> in
+In previous versions, clients typically used the <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> in
 combination with a write operation to verify that the write
 succeeded.</p>
 </div>
-<p>The <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4102"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> can accept the following parameters:</p>
+<p>The <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> can accept the following parameters:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -213,12 +213,12 @@ succeeded.</p>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <p>The returned <a class="reference internal" href="../command/getLastError.html#getLastError.err" title="getLastError.err"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">error</span> <span class="pre">string</span></code></a> provides error information on the
 previous write operation.</p>
-<p>If the <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4103"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> method itself encounters an error, such as an
-incorrect write concern value, the <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4104"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> throws an exception.</p>
+<p>If the <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> method itself encounters an error, such as an
+incorrect write concern value, the <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> throws an exception.</p>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following example issues a <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><a class="dashingAutolink" name="autolink-4105"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getLastError%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> operation
+<p>The following example issues a <a class="reference internal" href="#db.getLastError" title="db.getLastError()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getLastError()</span></code></a> operation
 that verifies that the preceding write operation, issued over the same
 connection, has propagated to at least two members of the replica set.</p>
 <div class="button-code-block">

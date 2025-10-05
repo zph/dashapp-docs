@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-176"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Indexing%20Strategies%20%E2%80%94%20MongoDB%20Manual"></a><title>Indexing Strategies &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-130"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Indexing%20Strategies%20%E2%80%94%20MongoDB%20Manual"></a><title>Indexing Strategies &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/applications/indexes/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="indexing-strategies">
-<a class="dashingAutolink" name="autolink-177"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Indexing%20Strategies%C2%B6"></a><h1>Indexing Strategies<a class="headerlink" href="#indexing-strategies" title="Permalink to this headline">&para;</a></h1>
+<h1>Indexing Strategies<a class="headerlink" href="#indexing-strategies" title="Permalink to this headline">&para;</a></h1>
 <p>The best indexes for your application must take a number
 of factors into account, including the kinds of queries you expect,
 the ratio of reads to writes, and the amount of free memory on your
@@ -172,17 +172,17 @@ However, each clause of an <a class="reference internal" href="../reference/oper
 index, and starting in 2.6, MongoDB can use an <a class="reference internal" href="../core/index-intersection.html"><span class="doc">intersection</span></a> of multiple indexes.</p>
 <p>The following documents introduce indexing strategies:</p>
 <dl class="toc docutils">
-<dt><a class="dashingAutolink" name="autolink-172"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Create%20Indexes%20to%20Support%20Your%20Queries"></a><a class="reference internal" href="../tutorial/create-indexes-to-support-queries.html"><span class="doc">Create Indexes to Support Your Queries</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-126"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Create%20Indexes%20to%20Support%20Your%20Queries"></a><a class="reference internal" href="../tutorial/create-indexes-to-support-queries.html"><span class="doc">Create Indexes to Support Your Queries</span></a></dt>
 <dd>An index supports a query when the index contains all the fields
 scanned by the query. Creating indexes that supports queries
 results in greatly increased query performance.</dd>
-<dt><a class="dashingAutolink" name="autolink-173"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Use%20Indexes%20to%20Sort%20Query%20Results"></a><a class="reference internal" href="../tutorial/sort-results-with-indexes.html"><span class="doc">Use Indexes to Sort Query Results</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-127"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Use%20Indexes%20to%20Sort%20Query%20Results"></a><a class="reference internal" href="../tutorial/sort-results-with-indexes.html"><span class="doc">Use Indexes to Sort Query Results</span></a></dt>
 <dd>To support efficient queries, use the strategies here when you
 specify the sequential order and sort order of index fields.</dd>
-<dt><a class="dashingAutolink" name="autolink-174"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Ensure%20Indexes%20Fit%20in%20RAM"></a><a class="reference internal" href="../tutorial/ensure-indexes-fit-ram.html"><span class="doc">Ensure Indexes Fit in RAM</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-128"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Ensure%20Indexes%20Fit%20in%20RAM"></a><a class="reference internal" href="../tutorial/ensure-indexes-fit-ram.html"><span class="doc">Ensure Indexes Fit in RAM</span></a></dt>
 <dd>When your index fits in RAM, the system can avoid reading the
 index from disk and you get the fastest processing.</dd>
-<dt><a class="dashingAutolink" name="autolink-175"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Create%20Queries%20that%20Ensure%20Selectivity"></a><a class="reference internal" href="../tutorial/create-queries-that-ensure-selectivity.html"><span class="doc">Create Queries that Ensure Selectivity</span></a></dt>
+<dt><a class="dashingAutolink" name="autolink-129"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/Create%20Queries%20that%20Ensure%20Selectivity"></a><a class="reference internal" href="../tutorial/create-queries-that-ensure-selectivity.html"><span class="doc">Create Queries that Ensure Selectivity</span></a></dt>
 <dd>Selectivity is the ability of a query to narrow results using the
 index. Selectivity allows MongoDB to use the index for a larger
 portion of the work associated with fulfilling the query.</dd>

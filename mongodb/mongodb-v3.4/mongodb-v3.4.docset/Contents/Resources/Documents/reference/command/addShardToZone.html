@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-841"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/addShardToZone%20%E2%80%94%20MongoDB%20Manual"></a><title>addShardToZone &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-360"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/addShardToZone%20%E2%80%94%20MongoDB%20Manual"></a><title>addShardToZone &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/command/addShardToZone/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="addshardtozone">
-<a class="dashingAutolink" name="autolink-842"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/addShardToZone%C2%B6"></a><h1>addShardToZone<a class="headerlink" href="#addshardtozone" title="Permalink to this headline">&para;</a></h1>
+<h1>addShardToZone<a class="headerlink" href="#addshardtozone" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -167,12 +167,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="dbcommand">
 <dt id="dbcmd.addShardToZone">
-<code class="descname">addShardToZone</code><a class="dashingAutolink" name="autolink-840"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.addShardToZone" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">addShardToZone</code><a class="dashingAutolink" name="autolink-359"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#dbcmd.addShardToZone" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.4: </span>Associates a shard with a <a class="reference internal" href="../glossary.html#term-zone"><span class="xref std std-term">zone</span></a>. MongoDB associates this shard with
 the given zone. Chunks that are covered by the zone are assigned to shards
 associated with the zone.</p>
-<p>To run <code class="docutils literal"><span class="pre">addShardToZone</span></code>, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><a class="dashingAutolink" name="autolink-843"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.runCommand%28%20%7B%20%3Ccommand%3E%20%7D%20%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
+<p>To run <code class="docutils literal"><span class="pre">addShardToZone</span></code>, use the <a class="reference internal" href="../method/db.runCommand.html#db.runCommand" title="db.runCommand()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.runCommand(</span> <span class="pre">{</span> <span class="pre">&lt;command&gt;</span> <span class="pre">}</span> <span class="pre">)</span></code></a> method.</p>
 <p>You must run <a class="reference internal" href="#dbcmd.addShardToZone" title="addShardToZone"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">addShardToZone</span></code></a> on the admin database.</p>
 <p>The <a class="reference internal" href="#dbcmd.addShardToZone" title="addShardToZone"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">addShardToZone</span></code></a> command has the following syntax:</p>
 <div class="button-code-block">
@@ -214,7 +214,7 @@ copy</a>
 <p>Only issue <a class="reference internal" href="#dbcmd.addShardToZone" title="addShardToZone"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">addShardToZone</span></code></a> when connected to a
 <a class="reference internal" href="../program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instance.</p>
 <p>The <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell provides the helper method
-<a class="reference internal" href="../method/sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><a class="dashingAutolink" name="autolink-844"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addShardToZone%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a></p>
+<a class="reference internal" href="../method/sh.addShardToZone.html#sh.addShardToZone" title="sh.addShardToZone()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addShardToZone()</span></code></a></p>
 </div>
 </dd></dl>
 
@@ -231,7 +231,7 @@ in a sharded cluster.</p>
 shard key values associated with it.</p>
 <p>To associate a range of shard key values with a zone, use the
 <a class="reference internal" href="updateZoneKeyRange.html#dbcmd.updateZoneKeyRange" title="updateZoneKeyRange"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">updateZoneKeyRange</span></code></a> database command, or the
-<a class="reference internal" href="../method/sh.updateZoneKeyRange.html#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><a class="dashingAutolink" name="autolink-845"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.updateZoneKeyRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> shell helper.</p>
+<a class="reference internal" href="../method/sh.updateZoneKeyRange.html#sh.updateZoneKeyRange" title="sh.updateZoneKeyRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.updateZoneKeyRange()</span></code></a> shell helper.</p>
 </div>
 </div>
 <div class="section" id="security">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-449"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Elections%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Elections &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-221"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Elections%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Elections &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/replica-set-elections/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <span class="target" id="index-0"></span><span class="target" id="index-1"></span><div class="section" id="replica-set-elections">
-<span id="replica-set-election-internals"></span><span id="index-2"></span><span id="id1"></span><a class="dashingAutolink" name="autolink-450"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Replica%20Set%20Elections%C2%B6"></a><h1>Replica Set Elections<a class="headerlink" href="#replica-set-elections" title="Permalink to this headline">&para;</a></h1>
+<span id="replica-set-election-internals"></span><span id="index-2"></span><span id="id1"></span><h1>Replica Set Elections<a class="headerlink" href="#replica-set-elections" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,8 +165,8 @@ set member will become <a class="reference internal" href="../reference/glossary
 election in response to a variety of events, such as:</p>
 <ul class="simple">
 <li>Adding a new node to the replica set,</li>
-<li><a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><a class="dashingAutolink" name="autolink-451"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/initiating%20a%20replica%20set"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">initiating</span> <span class="pre">a</span> <span class="pre">replica</span> <span class="pre">set</span></code></a>,</li>
-<li>performing replica set maintenance using methods such as <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><a class="dashingAutolink" name="autolink-452"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.stepDown%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> or <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><a class="dashingAutolink" name="autolink-453"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/rs.reconfig%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>, and</li>
+<li><a class="reference internal" href="../reference/method/rs.initiate.html#rs.initiate" title="rs.initiate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">initiating</span> <span class="pre">a</span> <span class="pre">replica</span> <span class="pre">set</span></code></a>,</li>
+<li>performing replica set maintenance using methods such as <a class="reference internal" href="../reference/method/rs.stepDown.html#rs.stepDown" title="rs.stepDown()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.stepDown()</span></code></a> or <a class="reference internal" href="../reference/method/rs.reconfig.html#rs.reconfig" title="rs.reconfig()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">rs.reconfig()</span></code></a>, and</li>
 <li>the <a class="reference internal" href="../reference/glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a> members losing connectivity to the primary for more than the configured <a class="reference internal" href="../reference/replica-configuration.html#rsconf.settings.electionTimeoutMillis" title="settings.electionTimeoutMillis"><code class="xref mongodb mongodb-rsconf docutils literal"><span class="pre">timeout</span></code></a> (10 seconds by default).</li>
 </ul>
 <p>In the following diagram, the primary node was unavailable for longer

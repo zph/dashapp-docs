@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-364"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Journaling%20%E2%80%94%20MongoDB%20Manual"></a><title>Journaling &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-199"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Journaling%20%E2%80%94%20MongoDB%20Manual"></a><title>Journaling &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/journaling/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="journaling">
-<span id="journaling-internals"></span><a class="dashingAutolink" name="autolink-365"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Journaling%C2%B6"></a><h1>Journaling<a class="headerlink" href="#journaling" title="Permalink to this headline">&para;</a></h1>
+<span id="journaling-internals"></span><h1>Journaling<a class="headerlink" href="#journaling" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -338,8 +338,8 @@ different filesystem from the database data files.</p>
 <p class="last">If you place the journal on a different filesystem from your data
 files, you <em>cannot</em> use a filesystem snapshot alone to capture valid
 backups of a <a class="reference internal" href="../reference/configuration-options.html#storage.dbPath" title="storage.dbPath"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">dbPath</span></code></a> directory. In this case, use
-<a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><a class="dashingAutolink" name="autolink-366"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/fsyncLock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">fsyncLock()</span></code></a> to ensure that database files are consistent
-before the snapshot and <a class="reference internal" href="../reference/method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><a class="dashingAutolink" name="autolink-367"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/fsyncUnlock%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">fsyncUnlock()</span></code></a> once the snapshot
+<a class="reference internal" href="../reference/method/db.fsyncLock.html#db.fsyncLock" title="db.fsyncLock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">fsyncLock()</span></code></a> to ensure that database files are consistent
+before the snapshot and <a class="reference internal" href="../reference/method/db.fsyncUnlock.html#db.fsyncUnlock" title="db.fsyncUnlock()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">fsyncUnlock()</span></code></a> once the snapshot
 is complete.</p>
 </div>
 </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3669"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.insert%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.insert() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1858"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.insert%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.insert() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.insert/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-insert">
-<a class="dashingAutolink" name="autolink-3648"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.insert%28%29%C2%B6"></a><h1>db.collection.insert()<a class="headerlink" href="#db-collection-insert" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.insert()<a class="headerlink" href="#db-collection-insert" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,9 +168,9 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.insert">
-<code class="descclassname">db.collection.</code><code class="descname">insert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3668"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.insert" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">insert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1857"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.insert" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Inserts a document or documents into a collection.</p>
-<p>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3649"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method has the following
 syntax:</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
@@ -233,7 +233,7 @@ in the array.</p>
 </tbody>
 </table>
 <div class="versionchanged">
-<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3650"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> returns an object that
+<p><span class="versionmodified">Changed in version 2.6: </span>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> returns an object that
 contains the status of the operation.</p>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
@@ -258,20 +258,20 @@ contains the status of the operation.</p>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
-<p>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3651"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method uses the
+<p>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method uses the
 <a class="reference internal" href="../command/insert.html#dbcmd.insert" title="insert"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">insert</span></code></a> command, which uses the default <a class="reference internal" href="../write-concern.html"><span class="doc">write concern</span></a>. To specify a different write concern,
 include the write concern in the options parameter.</p>
 </div>
 <div class="section" id="create-collection">
 <h3>Create Collection<a class="headerlink" href="#create-collection" title="Permalink to this headline">&para;</a></h3>
 <p>If the collection does not exist, then the
-<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3652"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method will create the collection.</p>
+<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method will create the collection.</p>
 </div>
 <div class="section" id="id-field">
 <h3><code class="docutils literal"><span class="pre">_id</span></code> Field<a class="headerlink" href="#id-field" title="Permalink to this headline">&para;</a></h3>
 <p>If the document does not specify an <a class="reference internal" href="../glossary.html#term-id"><span class="xref std std-term">_id</span></a> field, then MongoDB
 will add the <code class="docutils literal"><span class="pre">_id</span></code> field and assign a unique
-<a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><a class="dashingAutolink" name="autolink-3653"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> for the document before inserting. Most
+<a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> for the document before inserting. Most
 drivers create an ObjectId and insert the <code class="docutils literal"><span class="pre">_id</span></code> field, but the
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> will create and populate the <code class="docutils literal"><span class="pre">_id</span></code> if the driver or
 application does not.</p>
@@ -283,11 +283,11 @@ unique within the collection to avoid duplicate key error.</p>
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">&para;</a></h2>
 <p>The following examples insert documents into the <code class="docutils literal"><span class="pre">products</span></code>
 collection. If the collection does not exist, the
-<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3654"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method creates the collection.</p>
+<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method creates the collection.</p>
 <div class="section" id="insert-a-document-without-specifying-an-id-field">
 <h3>Insert a Document without Specifying an <code class="docutils literal"><span class="pre">_id</span></code> Field<a class="headerlink" href="#insert-a-document-without-specifying-an-id-field" title="Permalink to this headline">&para;</a></h3>
 <p>In the following example, the document passed to the
-<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3655"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method does not contain the <code class="docutils literal"><span class="pre">_id</span></code>
+<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method does not contain the <code class="docutils literal"><span class="pre">_id</span></code>
 field:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -299,7 +299,7 @@ copy</a>
 </div>
 </div>
 <p>During the insert, <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> will create the <code class="docutils literal"><span class="pre">_id</span></code> field and
-assign it a unique <a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><a class="dashingAutolink" name="autolink-3656"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> value, as verified by
+assign it a unique <a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> value, as verified by
 the inserted document:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -317,7 +317,7 @@ example.</p>
 <div class="section" id="insert-a-document-specifying-an-id-field">
 <h3>Insert a Document Specifying an <code class="docutils literal"><span class="pre">_id</span></code> Field<a class="headerlink" href="#insert-a-document-specifying-an-id-field" title="Permalink to this headline">&para;</a></h3>
 <p>In the following example, the document passed to the
-<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3657"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method includes the <code class="docutils literal"><span class="pre">_id</span></code> field.
+<a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method includes the <code class="docutils literal"><span class="pre">_id</span></code> field.
 The value of <code class="docutils literal"><span class="pre">_id</span></code> must be unique within the collection to avoid
 duplicate key error.</p>
 <div class="button-code-block">
@@ -344,7 +344,7 @@ copy</a>
 <div class="section" id="insert-multiple-documents">
 <h3>Insert Multiple Documents<a class="headerlink" href="#insert-multiple-documents" title="Permalink to this headline">&para;</a></h3>
 <p>The following example performs a bulk insert of three documents by
-passing an array of documents to the <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3658"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a>
+passing an array of documents to the <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a>
 method. By default, MongoDB performs an <em>ordered</em> insert. With
 <em>ordered</em> inserts, if an error occurs during an insert of one of the
 documents, MongoDB returns on error without processing the remaining
@@ -436,13 +436,13 @@ copy</a>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
-<p>When passed a single document, <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3659"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a>
+<p>When passed a single document, <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a>
 returns a <code class="docutils literal"><span class="pre">WriteResult</span></code> object.</p>
 <div class="section" id="successful-results">
 <h3>Successful Results<a class="headerlink" href="#successful-results" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3660"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> returns a <a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3661"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a>
+<p>The <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> returns a <a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a>
 object that contains the status of the operation. Upon success, the
-<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><a class="dashingAutolink" name="autolink-3662"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object contains information on the number of
+<a class="reference internal" href="WriteResult.html#WriteResult" title="WriteResult"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult</span></code></a> object contains information on the number of
 documents inserted:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -456,7 +456,7 @@ copy</a>
 </div>
 <div class="section" id="write-concern-errors">
 <h3>Write Concern Errors<a class="headerlink" href="#write-concern-errors" title="Permalink to this headline">&para;</a></h3>
-<p>If the <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3663"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method encounters write
+<p>If the <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method encounters write
 concern errors, the results include the
 <a class="reference internal" href="WriteResult.html#WriteResult.writeConcernError" title="WriteResult.writeConcernError"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">WriteResult.writeConcernError</span></code></a> field:</p>
 <div class="button-code-block">
@@ -477,7 +477,7 @@ copy</a>
 </div>
 <div class="section" id="errors-unrelated-to-write-concern">
 <h3>Errors Unrelated to Write Concern<a class="headerlink" href="#errors-unrelated-to-write-concern" title="Permalink to this headline">&para;</a></h3>
-<p>If the <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3664"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method encounters a non-write
+<p>If the <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> method encounters a non-write
 concern error, the results include the <a class="reference internal" href="WriteResult.html#WriteResult.writeError" title="WriteResult.writeError"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">WriteResult.writeError</span></code></a>
 field:</p>
 <div class="button-code-block">
@@ -502,9 +502,9 @@ copy</a>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
-<p>When passed an array of documents, <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3665"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a>
-returns a <a class="reference internal" href="BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><a class="dashingAutolink" name="autolink-3666"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/BulkWriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> object. See
-<a class="reference internal" href="BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><a class="dashingAutolink" name="autolink-3667"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/BulkWriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> for details.</p>
+<p>When passed an array of documents, <a class="reference internal" href="#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a>
+returns a <a class="reference internal" href="BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> object. See
+<a class="reference internal" href="BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> for details.</p>
 </div>
 </div>
 

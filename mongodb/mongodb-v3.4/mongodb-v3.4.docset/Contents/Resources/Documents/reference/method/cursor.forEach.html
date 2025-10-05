@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3042"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.forEach%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.forEach() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1744"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.forEach%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.forEach() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.forEach/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-foreach">
-<a class="dashingAutolink" name="autolink-3043"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.forEach%28%29%C2%B6"></a><h1>cursor.forEach()<a class="headerlink" href="#cursor-foreach" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.forEach()<a class="headerlink" href="#cursor-foreach" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,10 +165,10 @@
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.forEach">
-<code class="descclassname">cursor.</code><code class="descname">forEach</code><span class="sig-paren">(</span><em>function</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3049"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.forEach" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">forEach</code><span class="sig-paren">(</span><em>function</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1743"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.forEach" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Iterates the cursor to apply a JavaScript <code class="docutils literal"><span class="pre">function</span></code> to each
 document from the cursor.</p>
-<p>The <a class="reference internal" href="#cursor.forEach" title="cursor.forEach()"><a class="dashingAutolink" name="autolink-3044"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/forEach%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> method has the following prototype
+<p>The <a class="reference internal" href="#cursor.forEach" title="cursor.forEach()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> method has the following prototype
 form:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -179,7 +179,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#cursor.forEach" title="cursor.forEach()"><a class="dashingAutolink" name="autolink-3045"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/forEach%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> method has the following parameter:</p>
+<p>The <a class="reference internal" href="#cursor.forEach" title="cursor.forEach()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> method has the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -206,8 +206,8 @@ current document to process.</td>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>The following example invokes the <a class="reference internal" href="#cursor.forEach" title="cursor.forEach()"><a class="dashingAutolink" name="autolink-3046"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/forEach%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> method
-on the cursor returned by <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-3047"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> to print
+<p>The following example invokes the <a class="reference internal" href="#cursor.forEach" title="cursor.forEach()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">forEach()</span></code></a> method
+on the cursor returned by <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> to print
 the name of each user in the collection:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -220,7 +220,7 @@ copy</a>
 </div>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="cursor.map.html#cursor.map" title="cursor.map()"><a class="dashingAutolink" name="autolink-3048"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.map%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.map()</span></code></a> for similar functionality.</p>
+<p class="last"><a class="reference internal" href="cursor.map.html#cursor.map" title="cursor.map()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.map()</span></code></a> for similar functionality.</p>
 </div>
 </div>
 </div>

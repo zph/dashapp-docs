@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8536"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Perform%20Two%20Phase%20Commits%20%E2%80%94%20MongoDB%20Manual"></a><title>Perform Two Phase Commits &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3701"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Perform%20Two%20Phase%20Commits%20%E2%80%94%20MongoDB%20Manual"></a><title>Perform Two Phase Commits &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/perform-two-phase-commits/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="perform-two-phase-commits">
-<a class="dashingAutolink" name="autolink-8537"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Perform%20Two%20Phase%20Commits%C2%B6"></a><h1>Perform Two Phase Commits<a class="headerlink" href="#perform-two-phase-commits" title="Permalink to this headline">&para;</a></h1>
+<h1>Perform Two Phase Commits<a class="headerlink" href="#perform-two-phase-commits" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -238,9 +238,9 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The operation returns a <a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><a class="dashingAutolink" name="autolink-8538"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/BulkWriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> object with the
+<p>The operation returns a <a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> object with the
 status of the operation. Upon successful insert, the
-<a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><a class="dashingAutolink" name="autolink-8539"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/BulkWriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> has <a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult.nInserted" title="BulkWriteResult.nInserted"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nInserted</span></code></a> set
+<a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult" title="BulkWriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">BulkWriteResult()</span></code></a> has <a class="reference internal" href="../reference/method/BulkWriteResult.html#BulkWriteResult.nInserted" title="BulkWriteResult.nInserted"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nInserted</span></code></a> set
 to <code class="docutils literal"><span class="pre">2</span></code> .</p>
 </div>
 <div class="section" id="initialize-transfer-record">
@@ -273,8 +273,8 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The operation returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8540"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with the status
-of the operation. Upon successful insert, the <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8541"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
+<p>The operation returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with the status
+of the operation. Upon successful insert, the <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
 object has <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nInserted" title="WriteResult.nInserted"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nInserted</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div>
 <div class="section" id="transfer-funds-between-accounts-using-two-phase-commit">
@@ -331,7 +331,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The operation returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8542"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with the status
+<p>The operation returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with the status
 of the operation. Upon successful update, the
 <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a> and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a>
 displays <code class="docutils literal"><span class="pre">1</span></code>.</p>
@@ -344,7 +344,7 @@ and restart the procedure.</p>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">3</div></div><div class="section" id="apply-the-transaction-to-both-accounts">
 <h4>Apply the transaction to both accounts.<a class="headerlink" href="#apply-the-transaction-to-both-accounts" title="Permalink to this headline">&para;</a></h4>
 <p>Apply the transaction <code class="docutils literal"><span class="pre">t</span></code> to both accounts using the
-<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-8543"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>if</em> the transaction has not
+<a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> method <em>if</em> the transaction has not
 been applied to the accounts. In the update condition, include the
 condition <code class="docutils literal"><span class="pre">pendingTransactions:</span> <span class="pre">{</span> <span class="pre">$ne:</span> <span class="pre">t._id</span> <span class="pre">}</span></code> in order to avoid
 re-applying the transaction if the step is run more than once.</p>
@@ -366,7 +366,7 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8544"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 <p>Update the destination account, adding to its <code class="docutils literal"><span class="pre">balance</span></code> the
 transaction <code class="docutils literal"><span class="pre">value</span></code> and adding to its <code class="docutils literal"><span class="pre">pendingTransactions</span></code>
@@ -384,12 +384,12 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8545"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">4</div></div><div class="section" id="update-transaction-state-to-applied">
 <h4>Update transaction state to applied.<a class="headerlink" href="#update-transaction-state-to-applied" title="Permalink to this headline">&para;</a></h4>
-<p>Use the following <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-8546"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation to
+<p>Use the following <a class="reference internal" href="../reference/method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> operation to
 set the transaction&rsquo;s <code class="docutils literal"><span class="pre">state</span></code> to <code class="docutils literal"><span class="pre">applied</span></code> and update the
 <code class="docutils literal"><span class="pre">lastModified</span></code> field:</p>
 <div class="button-code-block">
@@ -408,7 +408,7 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8547"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">5</div></div><div class="section" id="update-both-accounts-list-of-pending-transactions">
@@ -429,7 +429,7 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8548"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 <p>Update the destination account.</p>
 <div class="button-code-block">
@@ -445,7 +445,7 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8549"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div></div>
 <div class="sequence-block"><div class="bullet-block"><div class="sequence-step">6</div></div><div class="section" id="update-transaction-state-to-done">
@@ -467,7 +467,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Upon successful update, the method returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8550"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
+<p>Upon successful update, the method returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
 object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a> and
 <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div></div>
@@ -573,7 +573,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Upon successful update, the method returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8551"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
+<p>Upon successful update, the method returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
 object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a> and
 <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div></div>
@@ -602,7 +602,7 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8552"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.
 If the pending transaction has not been previously applied to
 this account, no document will match the update condition and
@@ -627,7 +627,7 @@ copy</a>
 </div>
 </div>
 <p>Upon successful update, the method returns a
-<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8553"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
+<a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a> object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a>
 and <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.
 If the pending transaction has not been previously applied to
 this account, no document will match the update condition and
@@ -653,7 +653,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>Upon successful update, the method returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><a class="dashingAutolink" name="autolink-8554"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/WriteResult%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
+<p>Upon successful update, the method returns a <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult" title="WriteResult()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">WriteResult()</span></code></a>
 object with <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nMatched" title="WriteResult.nMatched"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nMatched</span></code></a> and
 <a class="reference internal" href="../reference/method/WriteResult.html#WriteResult.nModified" title="WriteResult.nModified"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">nModified</span></code></a> set to <code class="docutils literal"><span class="pre">1</span></code>.</p>
 </div></div>
@@ -681,7 +681,7 @@ application can handle a given transaction at any point in time. As
 such, in addition including the expected state of the transaction in
 the update condition, you can also create a marker in the transaction
 document itself to identify the application that is handling the
-transaction. Use <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><a class="dashingAutolink" name="autolink-8555"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/findAndModify%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method to
+transaction. Use <a class="reference internal" href="../reference/method/db.collection.findAndModify.html#db.collection.findAndModify" title="db.collection.findAndModify()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">findAndModify()</span></code></a> method to
 modify the transaction and get it back in one step:</p>
 <div class="button-code-block">
 <div class="button-row">

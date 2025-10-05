@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3194"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.skip%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.skip() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1781"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.skip%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.skip() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.skip/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-skip">
-<a class="dashingAutolink" name="autolink-3195"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.skip%28%29%C2%B6"></a><h1>cursor.skip()<a class="headerlink" href="#cursor-skip" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.skip()<a class="headerlink" href="#cursor-skip" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,16 +165,16 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.skip">
-<code class="descclassname">cursor.</code><code class="descname">skip</code><span class="sig-paren">(</span><em>&lt;offset&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3205"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.skip" title="Permalink to this definition">&para;</a></dt>
-<dd><p>Call the <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3196"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> method on a cursor to control where
+<code class="descclassname">cursor.</code><code class="descname">skip</code><span class="sig-paren">(</span><em>&lt;offset&gt;</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1782"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.skip" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Call the <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> method on a cursor to control where
 MongoDB begins returning results. This approach may be useful in
 implementing paginated results.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You must apply <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3197"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> to the cursor before
+<p class="last">You must apply <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> to the cursor before
 retrieving any documents from the database.</p>
 </div>
-<p>The <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3198"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> method has the following parameter:</p>
+<p>The <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> method has the following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="17%"/>
@@ -200,8 +200,8 @@ retrieving any documents from the database.</p>
 <div class="section" id="pagination-example">
 <h2>Pagination Example<a class="headerlink" href="#pagination-example" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="using-cursor-skip">
-<h3>Using <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3199"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a><a class="headerlink" href="#using-cursor-skip" title="Permalink to this headline">&para;</a></h3>
-<p>The following JavaScript function uses <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3200"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> to
+<h3>Using <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a><a class="headerlink" href="#using-cursor-skip" title="Permalink to this headline">&para;</a></h3>
+<p>The following JavaScript function uses <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> to
 paginate a collection in <a class="reference internal" href="../glossary.html#term-natural-order"><span class="xref std std-term">natural order</span></a>:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -220,15 +220,15 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3201"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> method requires the server to scan from the
+<p>The <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> method requires the server to scan from the
 beginning of the input results set before beginning to return results.
-As the offset increases, <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3202"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> will become slower.</p>
+As the offset increases, <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> will become slower.</p>
 </div>
 <div class="section" id="using-range-queries">
 <h3>Using Range Queries<a class="headerlink" href="#using-range-queries" title="Permalink to this headline">&para;</a></h3>
 <p>Range queries can use <a class="reference internal" href="../../indexes.html#indexes"><span class="std std-ref">indexes</span></a> to avoid scanning
 unwanted documents, typically yielding better performance as the offset
-grows compared to using <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><a class="dashingAutolink" name="autolink-3203"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.skip%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> for pagination.</p>
+grows compared to using <a class="reference internal" href="#cursor.skip" title="cursor.skip()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.skip()</span></code></a> for pagination.</p>
 <div class="section" id="descending-order">
 <h4>Descending Order<a class="headerlink" href="#descending-order" title="Permalink to this headline">&para;</a></h4>
 <p>Use this procedure to implement pagination with range queries:</p>
@@ -237,7 +237,7 @@ grows compared to using <a class="reference internal" href="#cursor.skip" title=
 direction over time and has a <a class="reference internal" href="../../core/index-unique.html#index-type-unique"><span class="std std-ref">unique index</span></a>
 to prevent duplicate values,</li>
 <li>Query for documents whose field is less than the start value
-using the <a class="reference internal" href="../operator/query/lt.html#op._S_lt" title="$lt"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$lt</span></code></a> and <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><a class="dashingAutolink" name="autolink-3204"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.sort%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a> operators, and</li>
+using the <a class="reference internal" href="../operator/query/lt.html#op._S_lt" title="$lt"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$lt</span></code></a> and <a class="reference internal" href="cursor.sort.html#cursor.sort" title="cursor.sort()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.sort()</span></code></a> operators, and</li>
 <li>Store the last-seen field value for the next query.</li>
 </ul>
 <p>For example, the following function uses the above procedure to print

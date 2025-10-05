@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3764"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.renameCollection%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.renameCollection() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1873"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.renameCollection%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.renameCollection() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.renameCollection/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-renamecollection">
-<a class="dashingAutolink" name="autolink-3765"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.renameCollection%28%29%C2%B6"></a><h1>db.collection.renameCollection()<a class="headerlink" href="#db-collection-renamecollection" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.renameCollection()<a class="headerlink" href="#db-collection-renamecollection" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,7 +166,7 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.renameCollection">
-<code class="descclassname">db.collection.</code><code class="descname">renameCollection</code><span class="sig-paren">(</span><em>target</em>, <em>dropTarget</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3763"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.renameCollection" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">renameCollection</code><span class="sig-paren">(</span><em>target</em>, <em>dropTarget</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1874"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.renameCollection" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Renames a collection. Provides a wrapper for the
 <a class="reference internal" href="../command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a> <a class="reference internal" href="../glossary.html#term-database-command"><span class="xref std std-term">database command</span></a>.</p>
 <table border="1" class="colwidths-given docutils">
@@ -199,22 +199,22 @@ renaming the collection. The default value is <code class="docutils literal"><sp
 </div>
 <div class="section" id="behavior">
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
-<p>The <a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-3758"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method operates within a
+<p>The <a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method operates within a
 collection by changing the metadata associated with a given collection.</p>
 <p>Refer to the documentation <a class="reference internal" href="../command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a> for additional
 warnings and messages.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The <a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-3759"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method and
+<p class="last">The <a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method and
 <a class="reference internal" href="../command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a> command will invalidate open cursors
 which interrupts queries that are currently returning data.</p>
 </div>
 <ul class="simple">
 <li>The method has the following limitations:<ul>
-<li><a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-3760"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> cannot move a collection
+<li><a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> cannot move a collection
 between databases. Use <a class="reference internal" href="../command/renameCollection.html#dbcmd.renameCollection" title="renameCollection"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">renameCollection</span></code></a> for these
 rename operations.</li>
-<li><a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-3761"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> is not supported on
+<li><a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> is not supported on
 sharded collections.</li>
 <li>You cannot rename <a class="reference internal" href="../../core/views.html"><span class="doc">views</span></a>.</li>
 </ul>
@@ -223,7 +223,7 @@ sharded collections.</li>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
-<p>Call the <a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><a class="dashingAutolink" name="autolink-3762"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.renameCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method on a
+<p>Call the <a class="reference internal" href="#db.collection.renameCollection" title="db.collection.renameCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.renameCollection()</span></code></a> method on a
 collection object. For example:</p>
 <div class="button-code-block">
 <div class="button-row">

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2969"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.batchSize%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.batchSize() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1732"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.batchSize%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.batchSize() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.batchSize/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-batchsize">
-<a class="dashingAutolink" name="autolink-2970"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.batchSize%28%29%C2%B6"></a><h1>cursor.batchSize()<a class="headerlink" href="#cursor-batchsize" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.batchSize()<a class="headerlink" href="#cursor-batchsize" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,14 +165,14 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.batchSize">
-<code class="descclassname">cursor.</code><code class="descname">batchSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-2975"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.batchSize" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">cursor.</code><code class="descname">batchSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1731"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.batchSize" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Specifies the
 number of documents to return in each batch of the response from the
 MongoDB instance. In most cases, modifying the batch size will
 not affect the user or the application, as the
 <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and most <a class="reference external" href="https://docs.mongodb.com/ecosystem/drivers">drivers</a> return results as if MongoDB returned a
 single batch.</p>
-<p>The <a class="reference internal" href="#cursor.batchSize" title="cursor.batchSize()"><a class="dashingAutolink" name="autolink-2971"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/batchSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> method takes the
+<p>The <a class="reference internal" href="#cursor.batchSize" title="cursor.batchSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> method takes the
 following parameter:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -197,7 +197,7 @@ size of <code class="docutils literal"><span class="pre">1</span></code>.</td>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Specifying <code class="docutils literal"><span class="pre">1</span></code> or a negative number is analogous to using the
-<a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-2972"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method.</p>
+<a class="reference internal" href="cursor.limit.html#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method.</p>
 </div>
 </dd></dl>
 
@@ -205,8 +205,8 @@ size of <code class="docutils literal"><span class="pre">1</span></code>.</td>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">&para;</a></h2>
 <p>The following example sets the batch size for the results of a query
-(i.e. <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-2973"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>) to <code class="docutils literal"><span class="pre">10</span></code>. The
-<a class="reference internal" href="#cursor.batchSize" title="cursor.batchSize()"><a class="dashingAutolink" name="autolink-2974"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/batchSize%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> method does not change the
+(i.e. <a class="reference internal" href="db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a>) to <code class="docutils literal"><span class="pre">10</span></code>. The
+<a class="reference internal" href="#cursor.batchSize" title="cursor.batchSize()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">batchSize()</span></code></a> method does not change the
 output in the <a class="reference internal" href="../program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell, which, by default, iterates over the
 first 20 documents.</p>
 <div class="button-code-block">

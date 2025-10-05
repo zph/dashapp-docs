@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-221"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk%20Write%20Operations%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk Write Operations &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-148"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Bulk%20Write%20Operations%20%E2%80%94%20MongoDB%20Manual"></a><title>Bulk Write Operations &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/core/bulk-write-operations/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="bulk-write-operations">
-<a class="dashingAutolink" name="autolink-222"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Bulk%20Write%20Operations%C2%B6"></a><h1>Bulk Write Operations<a class="headerlink" href="#bulk-write-operations" title="Permalink to this headline">&para;</a></h1>
+<h1>Bulk Write Operations<a class="headerlink" href="#bulk-write-operations" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -168,10 +168,10 @@ acknowledgement required for bulk write operations.</p>
 <div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
-<p>The <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-223"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method provides the ability to
+<p>The <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.bulkWrite()</span></code></a> method provides the ability to
 perform bulk insert, update, and remove operations.
 MongoDB also supports bulk insert
-through the <a class="reference internal" href="../reference/method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-224"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a>.</p>
+through the <a class="reference internal" href="../reference/method/db.collection.insertMany.html#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a>.</p>
 </div>
 <div class="section" id="ordered-vs-unordered-operations">
 <h2>Ordered vs Unordered Operations<a class="headerlink" href="#ordered-vs-unordered-operations" title="Permalink to this headline">&para;</a></h2>
@@ -191,14 +191,14 @@ See <a class="reference internal" href="../reference/method/db.collection.bulkWr
 generally be slower than executing an unordered list since with an
 ordered list, each operation must wait for the previous operation to
 finish.</p>
-<p>By default, <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-225"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> performs <code class="docutils literal"><span class="pre">ordered</span></code>
+<p>By default, <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> performs <code class="docutils literal"><span class="pre">ordered</span></code>
 operations. To specify <code class="docutils literal"><span class="pre">unordered</span></code> write operations, set
 <code class="docutils literal"><span class="pre">ordered</span> <span class="pre">:</span> <span class="pre">false</span></code> in the options document.</p>
 <p>See <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#bulkwrite-write-operations-executionofoperations"><span class="std std-ref">Execution of Operations</span></a></p>
 </div>
 <div class="section" id="bulkwrite-methods">
 <h2>bulkWrite() Methods<a class="headerlink" href="#bulkwrite-methods" title="Permalink to this headline">&para;</a></h2>
-<p><a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-226"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> supports the following write operations:</p>
+<p><a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> supports the following write operations:</p>
 <ul class="simple">
 <li><a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#bulkwrite-write-operations-insertone"><span class="std std-ref">insertOne</span></a></li>
 <li><a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#bulkwrite-write-operations-updateonemany"><span class="std std-ref">updateOne</span></a></li>
@@ -207,7 +207,7 @@ operations. To specify <code class="docutils literal"><span class="pre">unordere
 <li><a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#bulkwrite-write-operations-deleteonemany"><span class="std std-ref">deleteOne</span></a></li>
 <li><a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#bulkwrite-write-operations-deleteonemany"><span class="std std-ref">deleteMany</span></a></li>
 </ul>
-<p>Each write operation is passed to <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-227"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> as a
+<p>Each write operation is passed to <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> as a
 document in an array.</p>
 <p>For example, the following performs multiple write operations:</p>
 <p>The <code class="docutils literal"><span class="pre">characters</span></code> collection contains the following documents:</p>
@@ -222,7 +222,7 @@ copy</a>
 </pre></div>
 </div>
 </div>
-<p>The following <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-228"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> performs multiple
+<p>The following <a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> performs multiple
 operations on the collection:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -315,7 +315,7 @@ performance cost, you can pre-split the collection, as described in
 <div class="section" id="unordered-writes-to-mongos">
 <h3>Unordered Writes to <code class="docutils literal"><span class="pre">mongos</span></code><a class="headerlink" href="#unordered-writes-to-mongos" title="Permalink to this headline">&para;</a></h3>
 <p>To improve write performance to sharded clusters, use
-<a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><a class="dashingAutolink" name="autolink-229"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/bulkWrite%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> with the optional parameter <code class="docutils literal"><span class="pre">ordered</span></code>
+<a class="reference internal" href="../reference/method/db.collection.bulkWrite.html#db.collection.bulkWrite" title="db.collection.bulkWrite()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">bulkWrite()</span></code></a> with the optional parameter <code class="docutils literal"><span class="pre">ordered</span></code>
 set to <code class="docutils literal"><span class="pre">false</span></code>. <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> can attempt to send the writes to
 multiple shards simultaneously. For <em>empty</em> collections,
 first pre-split the collection as described in

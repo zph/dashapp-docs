@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-2445"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/MongoDB%20Limits%20and%20Thresholds%20%E2%80%94%20MongoDB%20Manual"></a><title>MongoDB Limits and Thresholds &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1582"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/MongoDB%20Limits%20and%20Thresholds%20%E2%80%94%20MongoDB%20Manual"></a><title>MongoDB Limits and Thresholds &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/limits/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="mongodb-limits-and-thresholds">
-<a class="dashingAutolink" name="autolink-2446"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/MongoDB%20Limits%20and%20Thresholds%C2%B6"></a><h1>MongoDB Limits and Thresholds<a class="headerlink" href="#mongodb-limits-and-thresholds" title="Permalink to this headline">&para;</a></h1>
+<h1>MongoDB Limits and Thresholds<a class="headerlink" href="#mongodb-limits-and-thresholds" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -170,7 +170,7 @@ the MongoDB system.</p>
 <h2>BSON Documents<a class="headerlink" href="#bson-documents" title="Permalink to this headline">&para;</a></h2>
 <span class="target" id="limit-bson-document-size"></span><dl class="limit">
 <dt id="BSON-Document-Size">
-<code class="descname">BSON Document Size</code><a class="dashingAutolink" name="autolink-2462"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#BSON-Document-Size" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">BSON Document Size</code><a class="dashingAutolink" name="autolink-1534"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#BSON-Document-Size" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum BSON document size is 16 megabytes.</p>
 <p>The maximum document size helps ensure that a single document cannot
 use excessive amount of RAM or, during transmission, excessive amount
@@ -182,7 +182,7 @@ information about GridFS.</p>
 
 <span class="target" id="limit-nested-depth"></span><dl class="limit">
 <dt id="Nested-Depth-for-BSON-Documents">
-<code class="descname">Nested Depth for BSON Documents</code><a class="dashingAutolink" name="autolink-2463"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Nested-Depth-for-BSON-Documents" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Nested Depth for BSON Documents</code><a class="dashingAutolink" name="autolink-1535"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Nested-Depth-for-BSON-Documents" title="Permalink to this definition">&para;</a></dt>
 <dd><p>MongoDB supports no more than 100 levels of nesting for <a class="reference internal" href="glossary.html#term-document"><span class="xref std std-term">BSON
 documents</span></a>.</p>
 </dd></dl>
@@ -192,14 +192,14 @@ documents</span></a>.</p>
 <span id="faq-restrictions-on-collection-names"></span><span id="restrictions-on-collection-names"></span><span id="restrictions-on-db-names"></span><h2>Naming Restrictions<a class="headerlink" href="#naming-restrictions" title="Permalink to this headline">&para;</a></h2>
 <dl class="limit">
 <dt id="Database-Name-Case-Sensitivity">
-<code class="descname">Database Name Case Sensitivity</code><a class="dashingAutolink" name="autolink-2464"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Database-Name-Case-Sensitivity" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Database Name Case Sensitivity</code><a class="dashingAutolink" name="autolink-1536"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Database-Name-Case-Sensitivity" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Since database names are case <em>insensitive</em> in MongoDB, database
 names cannot differ only by the case of the characters.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Restrictions-on-Database-Names-for-Windows">
-<code class="descname">Restrictions on Database Names for Windows</code><a class="dashingAutolink" name="autolink-2465"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restrictions-on-Database-Names-for-Windows" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Restrictions on Database Names for Windows</code><a class="dashingAutolink" name="autolink-1537"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restrictions-on-Database-Names-for-Windows" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For MongoDB deployments running on Windows, database names cannot
 contain any of the following characters:</p>
 <div class="button-code-block">
@@ -216,7 +216,7 @@ copy</a>
 
 <dl class="limit">
 <dt id="Restrictions-on-Database-Names-for-Unix-and-Linux-Systems">
-<code class="descname">Restrictions on Database Names for Unix and Linux Systems</code><a class="dashingAutolink" name="autolink-2466"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restrictions-on-Database-Names-for-Unix-and-Linux-Systems" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Restrictions on Database Names for Unix and Linux Systems</code><a class="dashingAutolink" name="autolink-1538"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restrictions-on-Database-Names-for-Unix-and-Linux-Systems" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For MongoDB deployments running on Unix and Linux systems, database
 names cannot contain any of the following characters:</p>
 <div class="button-code-block">
@@ -233,13 +233,13 @@ copy</a>
 
 <dl class="limit">
 <dt id="Length-of-Database-Names">
-<code class="descname">Length of Database Names</code><a class="dashingAutolink" name="autolink-2467"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Length-of-Database-Names" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Length of Database Names</code><a class="dashingAutolink" name="autolink-1539"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Length-of-Database-Names" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Database names cannot be empty and must have fewer than 64 characters.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Restriction-on-Collection-Names">
-<code class="descname">Restriction on Collection Names</code><a class="dashingAutolink" name="autolink-2468"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restriction-on-Collection-Names" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Restriction on Collection Names</code><a class="dashingAutolink" name="autolink-1540"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restriction-on-Collection-Names" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Collection names should begin with an underscore or a letter
 character, and <em>cannot</em>:</p>
 <ul class="simple">
@@ -250,7 +250,7 @@ character, and <em>cannot</em>:</p>
 </ul>
 <p>If your collection name includes special characters, such as the
 underscore character, or begins with numbers, then to access the
-collection use the <a class="reference internal" href="method/db.getCollection.html#db.getCollection" title="db.getCollection()"><a class="dashingAutolink" name="autolink-2447"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.getCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollection()</span></code></a> method in the
+collection use the <a class="reference internal" href="method/db.getCollection.html#db.getCollection" title="db.getCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.getCollection()</span></code></a> method in the
 <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell or a <a class="reference external" href="https://api.mongodb.com/">similar method for your driver</a>.</p>
 <p>The maximum length of the collection namespace, which includes the
 database name, the dot (<code class="docutils literal"><span class="pre">.</span></code>) separator, and the collection name (i.e.
@@ -259,7 +259,7 @@ database name, the dot (<code class="docutils literal"><span class="pre">.</span
 
 <span class="target" id="limit-restrictions-on-field-names"></span><dl class="limit">
 <dt id="Restrictions-on-Field-Names">
-<code class="descname">Restrictions on Field Names</code><a class="dashingAutolink" name="autolink-2469"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restrictions-on-Field-Names" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Restrictions on Field Names</code><a class="dashingAutolink" name="autolink-1541"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Restrictions-on-Field-Names" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Field names cannot contain dots (i.e. <code class="docutils literal"><span class="pre">.</span></code>) or null characters, and they
 must not start with a dollar sign (i.e. <code class="docutils literal"><span class="pre">$</span></code>).</p>
 </dd></dl>
@@ -269,7 +269,7 @@ must not start with a dollar sign (i.e. <code class="docutils literal"><span cla
 <span id="faq-dev-namespace"></span><h2>Namespaces<a class="headerlink" href="#namespaces" title="Permalink to this headline">&para;</a></h2>
 <span class="target" id="limit-namespace-length"></span><dl class="limit">
 <dt id="Namespace-Length">
-<code class="descname">Namespace Length</code><a class="dashingAutolink" name="autolink-2470"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Namespace-Length" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Namespace Length</code><a class="dashingAutolink" name="autolink-1542"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Namespace-Length" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The maximum length of the collection namespace, which includes the
 database name, the dot (<code class="docutils literal"><span class="pre">.</span></code>) separator, and the collection name (i.e.
 <code class="docutils literal"><span class="pre">&lt;database&gt;.&lt;collection&gt;</span></code>), is 120 bytes.</p>
@@ -281,7 +281,7 @@ database name, the dot (<code class="docutils literal"><span class="pre">.</span
 
 <span class="target" id="limit-number-of-namespaces"></span><dl class="limit">
 <dt id="Number-of-Namespaces">
-<code class="descname">Number of Namespaces</code><a class="dashingAutolink" name="autolink-2471"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Namespaces" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Number of Namespaces</code><a class="dashingAutolink" name="autolink-1543"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Namespaces" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.</span></p>
 </div>
@@ -294,7 +294,7 @@ namespaces. Each collection and index is a namespace.</p>
 
 <span class="target" id="limit-size-of-namespace-file"></span><dl class="limit">
 <dt id="Size-of-Namespace-File">
-<code class="descname">Size of Namespace File</code><a class="dashingAutolink" name="autolink-2472"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Size-of-Namespace-File" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Size of Namespace File</code><a class="dashingAutolink" name="autolink-1544"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Size-of-Namespace-File" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.</span></p>
 </div>
@@ -314,7 +314,7 @@ size using the <a class="reference internal" href="configuration-options.html#st
 <span id="index-limitations"></span><h2>Indexes<a class="headerlink" href="#indexes" title="Permalink to this headline">&para;</a></h2>
 <span class="target" id="limit-index-size"></span><dl class="limit">
 <dt id="Index-Key-Limit">
-<code class="descname">Index Key Limit</code><a class="dashingAutolink" name="autolink-2473"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Index-Key-Limit" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Index Key Limit</code><a class="dashingAutolink" name="autolink-1545"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Index-Key-Limit" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <em>total size</em> of an index entry, which can include structural
 overhead depending on the BSON type, must be <em>less than</em> 1024 bytes.</p>
 <div class="versionchanged">
@@ -329,7 +329,7 @@ would create the index but not index such documents.</p>
 <li><p class="first">Reindexing operations will error if the index entry for an indexed
 field exceeds the <a class="reference internal" href="#Index-Key-Limit" title="Index Key Limit"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">index</span> <span class="pre">key</span> <span class="pre">limit</span></code></a>. Reindexing operations occur as part of
 <a class="reference internal" href="command/compact.html#dbcmd.compact" title="compact"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">compact</span></code></a> and <a class="reference internal" href="command/repairDatabase.html#dbcmd.repairDatabase" title="repairDatabase"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">repairDatabase</span></code></a> commands as well
-as the <a class="reference internal" href="method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><a class="dashingAutolink" name="autolink-2448"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.reIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a> method.</p>
+as the <a class="reference internal" href="method/db.collection.reIndex.html#db.collection.reIndex" title="db.collection.reIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.reIndex()</span></code></a> method.</p>
 <p>Because these operations drop <em>all</em> the indexes from a collection and
 then recreate them sequentially, the error from the <a class="reference internal" href="#Index-Key-Limit" title="Index Key Limit"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">index</span> <span class="pre">key</span> <span class="pre">limit</span></code></a> prevents
 these operations from rebuilding any remaining indexes for the
@@ -373,31 +373,31 @@ that contains an indexed field whose index entry exceeds the <a class="reference
 
 <span class="target" id="limit-number-of-indexes-per-collection"></span><dl class="limit">
 <dt id="Number-of-Indexes-per-Collection">
-<code class="descname">Number of Indexes per Collection</code><a class="dashingAutolink" name="autolink-2474"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Indexes-per-Collection" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Number of Indexes per Collection</code><a class="dashingAutolink" name="autolink-1546"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Indexes-per-Collection" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A single collection can have <em>no more</em> than 64 indexes.</p>
 </dd></dl>
 
 <span class="target" id="limit-index-name-length"></span><dl class="limit">
 <dt id="Index-Name-Length">
-<code class="descname">Index Name Length</code><a class="dashingAutolink" name="autolink-2475"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Index-Name-Length" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Index Name Length</code><a class="dashingAutolink" name="autolink-1547"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Index-Name-Length" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Fully qualified index names, which includes the namespace and the dot
 separators (i.e. <code class="docutils literal"><span class="pre">&lt;database</span> <span class="pre">name&gt;.&lt;collection</span> <span class="pre">name&gt;.$&lt;index</span> <span class="pre">name&gt;</span></code>),
 cannot be longer than 128 characters.</p>
 <p>By default, <code class="docutils literal"><span class="pre">&lt;index</span> <span class="pre">name&gt;</span></code> is the concatenation of the field names
 and index type. You can explicitly specify the <code class="docutils literal"><span class="pre">&lt;index</span> <span class="pre">name&gt;</span></code> to the
-<a class="reference internal" href="method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><a class="dashingAutolink" name="autolink-2449"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/createIndex%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndex()</span></code></a> method to ensure that the fully
+<a class="reference internal" href="method/db.collection.createIndex.html#db.collection.createIndex" title="db.collection.createIndex()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">createIndex()</span></code></a> method to ensure that the fully
 qualified index name does not exceed the limit.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Number-of-Indexed-Fields-in-a-Compound-Index">
-<code class="descname">Number of Indexed Fields in a Compound Index</code><a class="dashingAutolink" name="autolink-2476"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Indexed-Fields-in-a-Compound-Index" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Number of Indexed Fields in a Compound Index</code><a class="dashingAutolink" name="autolink-1548"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Indexed-Fields-in-a-Compound-Index" title="Permalink to this definition">&para;</a></dt>
 <dd><p>There can be no more than 32 fields in a compound index.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Queries-cannot-use-both-text-and-Geospatial-Indexes">
-<code class="descname">Queries cannot use both text and Geospatial Indexes</code><a class="dashingAutolink" name="autolink-2477"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Queries-cannot-use-both-text-and-Geospatial-Indexes" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Queries cannot use both text and Geospatial Indexes</code><a class="dashingAutolink" name="autolink-1549"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Queries-cannot-use-both-text-and-Geospatial-Indexes" title="Permalink to this definition">&para;</a></dt>
 <dd><p>You cannot combine the <a class="reference internal" href="operator/query/text.html#op._S_text" title="$text"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$text</span></code></a> query, which requires a
 special <a class="reference internal" href="../core/index-text.html#create-text-index"><span class="std std-ref">text index</span></a>, with a query operator
 that requires a different type of special index. For example you
@@ -406,7 +406,7 @@ cannot combine <a class="reference internal" href="operator/query/text.html#op._
 
 <dl class="limit">
 <dt id="Fields-with-2dsphere-Indexes-can-only-hold-Geometries">
-<code class="descname">Fields with 2dsphere Indexes can only hold Geometries</code><a class="dashingAutolink" name="autolink-2478"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Fields-with-2dsphere-Indexes-can-only-hold-Geometries" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Fields with 2dsphere Indexes can only hold Geometries</code><a class="dashingAutolink" name="autolink-1550"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Fields-with-2dsphere-Indexes-can-only-hold-Geometries" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Fields with <a class="reference internal" href="../core/2dsphere.html"><span class="doc">2dsphere</span></a> indexes must hold geometry
 data in the form of <a class="reference internal" href="glossary.html#term-legacy-coordinate-pairs"><span class="xref std std-term">coordinate pairs</span></a>
 or <a class="reference internal" href="glossary.html#term-geojson"><span class="xref std std-term">GeoJSON</span></a> data. If you attempt to insert a document with
@@ -421,7 +421,7 @@ non-geometry data, the operation will fail.</p>
 </div>
 <dl class="limit">
 <dt id="NaN-values-returned-from-Covered-Queries-by-the-WiredTiger-Storage-Engine-are-always-of-type-double">
-<code class="descname">NaN values returned from Covered Queries by the WiredTiger Storage Engine are always of type double</code><a class="dashingAutolink" name="autolink-2479"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#NaN-values-returned-from-Covered-Queries-by-the-WiredTiger-Storage-Engine-are-always-of-type-double" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">NaN values returned from Covered Queries by the WiredTiger Storage Engine are always of type double</code><a class="dashingAutolink" name="autolink-1551"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#NaN-values-returned-from-Covered-Queries-by-the-WiredTiger-Storage-Engine-are-always-of-type-double" title="Permalink to this definition">&para;</a></dt>
 <dd><p>If the value of a field returned from a query that is <a class="reference internal" href="../core/query-optimization.html#covered-queries"><span class="std std-ref">covered
 by an index</span></a> is <code class="docutils literal"><span class="pre">NaN</span></code>, the type of that <code class="docutils literal"><span class="pre">NaN</span></code>
 value is <em>always</em> <code class="docutils literal"><span class="pre">double</span></code>.</p>
@@ -429,21 +429,21 @@ value is <em>always</em> <code class="docutils literal"><span class="pre">double
 
 <dl class="limit">
 <dt id="Multikey-Index">
-<code class="descname">Multikey Index</code><a class="dashingAutolink" name="autolink-2480"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Multikey-Index" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Multikey Index</code><a class="dashingAutolink" name="autolink-1552"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Multikey-Index" title="Permalink to this definition">&para;</a></dt>
 <dd><p><a class="reference internal" href="../core/index-multikey.html#index-type-multikey"><span class="std std-ref">Multikey indexes</span></a> cannot <a class="reference internal" href="../core/query-optimization.html#covered-queries"><span class="std std-ref">cover a
 query</span></a>.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Geospatial-Index">
-<code class="descname">Geospatial Index</code><a class="dashingAutolink" name="autolink-2481"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Geospatial-Index" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Geospatial Index</code><a class="dashingAutolink" name="autolink-1553"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Geospatial-Index" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A <a class="reference internal" href="../geospatial-queries.html#index-feature-geospatial"><span class="std std-ref">geospatial indexes</span></a> cannot
 <a class="reference internal" href="../core/query-optimization.html#covered-queries"><span class="std std-ref">cover a query</span></a>.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Memory-Usage-in-Foreground-Index-Builds">
-<code class="descname">Memory Usage in Foreground Index Builds</code><a class="dashingAutolink" name="autolink-2482"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Memory-Usage-in-Foreground-Index-Builds" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Memory Usage in Foreground Index Builds</code><a class="dashingAutolink" name="autolink-1554"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Memory-Usage-in-Foreground-Index-Builds" title="Permalink to this definition">&para;</a></dt>
 <dd><p>You can build one or more indexes on a collection with the database
 command <a class="reference internal" href="command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a>. The default limit on memory usage
 for a <a class="reference internal" href="command/createIndexes.html#dbcmd.createIndexes" title="createIndexes"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">createIndexes</span></code></a> operation is
@@ -480,7 +480,7 @@ procedure as described on
 
 <dl class="limit">
 <dt id="Collation-and-Index-Types">
-<code class="descname">Collation and Index Types</code><a class="dashingAutolink" name="autolink-2483"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Collation-and-Index-Types" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Collation and Index Types</code><a class="dashingAutolink" name="autolink-1555"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Collation-and-Index-Types" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The following index types only support simple binary comparison and
 do not support <a class="reference internal" href="bson-type-comparison-order.html#collation"><span class="std std-ref">collation</span></a>:</p>
 <ul class="simple">
@@ -502,7 +502,7 @@ index.</p>
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">&para;</a></h2>
 <dl class="limit">
 <dt id="Maximum-Number-of-Documents-in-a-Capped-Collection">
-<code class="descname">Maximum Number of Documents in a Capped Collection</code><a class="dashingAutolink" name="autolink-2484"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Maximum-Number-of-Documents-in-a-Capped-Collection" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Maximum Number of Documents in a Capped Collection</code><a class="dashingAutolink" name="autolink-1556"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Maximum-Number-of-Documents-in-a-Capped-Collection" title="Permalink to this definition">&para;</a></dt>
 <dd><p>If you specify a maximum number of documents for a capped
 collection using the <code class="docutils literal"><span class="pre">max</span></code> parameter to
 <a class="reference internal" href="command/create.html#dbcmd.create" title="create"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">create</span></code></a>, the limit must be less than 2<sup>32</sup>
@@ -513,7 +513,7 @@ documents.</p>
 
 <span class="target" id="limit-database-size"></span><dl class="limit">
 <dt id="Database-Size">
-<code class="descname">Database Size</code><a class="dashingAutolink" name="autolink-2485"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Database-Size" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Database Size</code><a class="dashingAutolink" name="autolink-1557"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Database-Size" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The MMAPv1 storage engine limits each database to no more than 16000 data
 files. This means that a single MMAPv1 database has a maximum size of 32TB.
 Setting the <a class="reference internal" href="configuration-options.html#storage.mmapv1.smallFiles" title="storage.mmapv1.smallFiles"><code class="xref mongodb mongodb-setting docutils literal"><span class="pre">storage.mmapv1.smallFiles</span></code></a> option reduces this limit to 8TB.</p>
@@ -521,7 +521,7 @@ Setting the <a class="reference internal" href="configuration-options.html#stora
 
 <span class="target" id="limit-data-size"></span><dl class="limit">
 <dt id="Data-Size">
-<code class="descname">Data Size</code><a class="dashingAutolink" name="autolink-2486"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Data-Size" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Data Size</code><a class="dashingAutolink" name="autolink-1558"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Data-Size" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.</span></p>
 </div>
@@ -561,7 +561,7 @@ memory address space provided by the underlying operating system.</p>
 
 <dl class="limit">
 <dt id="Number-of-Collections-in-a-Database">
-<code class="descname">Number of Collections in a Database</code><a class="dashingAutolink" name="autolink-2487"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Collections-in-a-Database" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Number of Collections in a Database</code><a class="dashingAutolink" name="autolink-1559"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Collections-in-a-Database" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.</span></p>
 </div>
@@ -577,7 +577,7 @@ number of indexes of collections in the database.</p>
 <h2>Replica Sets<a class="headerlink" href="#replica-sets" title="Permalink to this headline">&para;</a></h2>
 <dl class="limit">
 <dt id="Number-of-Members-of-a-Replica-Set">
-<code class="descname">Number of Members of a Replica Set</code><a class="dashingAutolink" name="autolink-2488"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Members-of-a-Replica-Set" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Number of Members of a Replica Set</code><a class="dashingAutolink" name="autolink-1560"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Members-of-a-Replica-Set" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.0.0.</span></p>
 </div>
@@ -588,14 +588,14 @@ specific driver compatibility with large replica sets.</p>
 
 <dl class="limit">
 <dt id="Number-of-Voting-Members-of-a-Replica-Set">
-<code class="descname">Number of Voting Members of a Replica Set</code><a class="dashingAutolink" name="autolink-2489"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Voting-Members-of-a-Replica-Set" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Number of Voting Members of a Replica Set</code><a class="dashingAutolink" name="autolink-1561"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Number-of-Voting-Members-of-a-Replica-Set" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Replica sets can have up to 7 voting members. For replica sets with
 more than 7 total members, see <a class="reference internal" href="../core/replica-set-elections.html#replica-set-non-voting-members"><span class="std std-ref">Non-Voting Members</span></a>.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Maximum-Size-of-Auto-Created-Oplog">
-<code class="descname">Maximum Size of Auto-Created Oplog</code><a class="dashingAutolink" name="autolink-2490"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Maximum-Size-of-Auto-Created-Oplog" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Maximum Size of Auto-Created Oplog</code><a class="dashingAutolink" name="autolink-1562"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Maximum-Size-of-Auto-Created-Oplog" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
@@ -612,14 +612,14 @@ larger than 50 gigabytes.</p>
 <span id="limits-sharding-operations"></span><h3>Sharding Operational Restrictions<a class="headerlink" href="#sharding-operational-restrictions" title="Permalink to this headline">&para;</a></h3>
 <dl class="limit">
 <dt id="Operations-Unavailable-in-Sharded-Environments">
-<code class="descname">Operations Unavailable in Sharded Environments</code><a class="dashingAutolink" name="autolink-2491"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Operations-Unavailable-in-Sharded-Environments" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Operations Unavailable in Sharded Environments</code><a class="dashingAutolink" name="autolink-1563"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Operations-Unavailable-in-Sharded-Environments" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="command/group.html#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> does not work with sharding. Use
 <a class="reference internal" href="command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a> or <a class="reference internal" href="command/aggregate.html#dbcmd.aggregate" title="aggregate"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">aggregate</span></code></a> instead.</p>
 <div class="deprecated">
-<p><span class="versionmodified">Deprecated since version 3.0: </span><a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-2450"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> is deprecated.</p>
+<p><span class="versionmodified">Deprecated since version 3.0: </span><a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> is deprecated.</p>
 </div>
-<p><a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-2451"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> is incompatible with sharded collections. You may
-use <a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-2452"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> with un-sharded collections in a shard
+<p><a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> is incompatible with sharded collections. You may
+use <a class="reference internal" href="method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> with un-sharded collections in a shard
 cluster.</p>
 <p><a class="reference internal" href="operator/query/where.html#op._S_where" title="$where"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$where</span></code></a> does not permit references to the <code class="docutils literal"><span class="pre">db</span></code> object
 from the <a class="reference internal" href="operator/query/where.html#op._S_where" title="$where"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$where</span></code></a> function. This is uncommon in
@@ -633,7 +633,7 @@ environments.</p>
 
 <dl class="limit">
 <dt id="Covered-Queries-in-Sharded-Clusters">
-<code class="descname">Covered Queries in Sharded Clusters</code><a class="dashingAutolink" name="autolink-2492"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Covered-Queries-in-Sharded-Clusters" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Covered Queries in Sharded Clusters</code><a class="dashingAutolink" name="autolink-1564"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Covered-Queries-in-Sharded-Clusters" title="Permalink to this definition">&para;</a></dt>
 <dd><p>## FYI &ndash; we doc this in the negative since this is included
 ## in the limitation/restriction section.
 ## We probably could word this in &ldquo;can only cover &hellip;&rdquo;
@@ -653,7 +653,7 @@ a query on a <a class="reference internal" href="glossary.html#term-shard"><span
 
 <dl class="limit">
 <dt id="Sharding-Existing-Collection-Data-Size">
-<code class="descname">Sharding Existing Collection Data Size</code><a class="dashingAutolink" name="autolink-2493"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Sharding-Existing-Collection-Data-Size" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Sharding Existing Collection Data Size</code><a class="dashingAutolink" name="autolink-1565"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Sharding-Existing-Collection-Data-Size" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An existing collection can only be sharded if its size does not exceed
 specific limits. These limits can be estimated based on the average size of
 all <a class="reference internal" href="glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> values, and the configured <a class="reference internal" href="glossary.html#term-chunk"><span class="xref std std-term">chunk</span></a> size.</p>
@@ -739,18 +739,18 @@ using the formulas described above:</p>
 
 <dl class="limit">
 <dt id="Single-Document-Modification-Operations-in-Sharded-Collections">
-<code class="descname">Single Document Modification Operations in Sharded Collections</code><a class="dashingAutolink" name="autolink-2494"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Single-Document-Modification-Operations-in-Sharded-Collections" title="Permalink to this definition">&para;</a></dt>
-<dd><p>All <a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-2453"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> and <a class="reference internal" href="method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-2454"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations for a sharded
+<code class="descname">Single Document Modification Operations in Sharded Collections</code><a class="dashingAutolink" name="autolink-1566"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Single-Document-Modification-Operations-in-Sharded-Collections" title="Permalink to this definition">&para;</a></dt>
+<dd><p>All <a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> and <a class="reference internal" href="method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations for a sharded
 collection that specify the <code class="docutils literal"><span class="pre">justOne</span></code> option must include the
 <a class="reference internal" href="glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> <em>or</em> the <code class="docutils literal"><span class="pre">_id</span></code> field in the query specification.
-<a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><a class="dashingAutolink" name="autolink-2455"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/update%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> and <a class="reference internal" href="method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><a class="dashingAutolink" name="autolink-2456"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/remove%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations specifying <code class="docutils literal"><span class="pre">justOne</span></code>
+<a class="reference internal" href="method/db.collection.update.html#db.collection.update" title="db.collection.update()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">update()</span></code></a> and <a class="reference internal" href="method/db.collection.remove.html#db.collection.remove" title="db.collection.remove()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">remove()</span></code></a> operations specifying <code class="docutils literal"><span class="pre">justOne</span></code>
 in a sharded collection which do not contain either the
 <a class="reference internal" href="glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> or the <code class="docutils literal"><span class="pre">_id</span></code> field return an error.</p>
 </dd></dl>
 
 <span class="target" id="limit-sharding-unique-indexes"></span><dl class="limit">
 <dt id="Unique-Indexes-in-Sharded-Collections">
-<code class="descname">Unique Indexes in Sharded Collections</code><a class="dashingAutolink" name="autolink-2495"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Unique-Indexes-in-Sharded-Collections" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Unique Indexes in Sharded Collections</code><a class="dashingAutolink" name="autolink-1567"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Unique-Indexes-in-Sharded-Collections" title="Permalink to this definition">&para;</a></dt>
 <dd><p>MongoDB does not support unique indexes across shards, except when
 the unique index contains the full shard key as a prefix of the
 index. In these situations MongoDB will enforce uniqueness across
@@ -764,14 +764,14 @@ for an alternate approach.</p>
 
 <span class="target" id="limit-balancer-migration-document-limit"></span><dl class="limit">
 <dt id="Maximum-Number-of-Documents-Per-Chunk-to-Migrate">
-<code class="descname">Maximum Number of Documents Per Chunk to Migrate</code><a class="dashingAutolink" name="autolink-2496"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Maximum-Number-of-Documents-Per-Chunk-to-Migrate" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Maximum Number of Documents Per Chunk to Migrate</code><a class="dashingAutolink" name="autolink-1568"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Maximum-Number-of-Documents-Per-Chunk-to-Migrate" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 3.4.11.</span></p>
 </div>
 <p>MongoDB cannot move a chunk if the number of documents in the chunk is greater than
 1.3 times the result of dividing the configured
 <a class="reference internal" href="../core/sharding-data-partitioning.html#sharding-chunk-size"><span class="std std-ref">chunk size</span></a> by the average document size.
-<a class="reference internal" href="method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><a class="dashingAutolink" name="autolink-2457"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.stats%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> includes the <code class="docutils literal"><span class="pre">avgObjSize</span></code> field,
+<a class="reference internal" href="method/db.collection.stats.html#db.collection.stats" title="db.collection.stats()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.stats()</span></code></a> includes the <code class="docutils literal"><span class="pre">avgObjSize</span></code> field,
 which represents the average document size in the collection.</p>
 </dd></dl>
 
@@ -780,13 +780,13 @@ which represents the average document size in the collection.</p>
 <span id="limits-shard-keys"></span><h3>Shard Key Limitations<a class="headerlink" href="#shard-key-limitations" title="Permalink to this headline">&para;</a></h3>
 <dl class="limit">
 <dt id="Shard-Key-Size">
-<code class="descname">Shard Key Size</code><a class="dashingAutolink" name="autolink-2497"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-Size" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Shard Key Size</code><a class="dashingAutolink" name="autolink-1569"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-Size" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A shard key cannot exceed 512 bytes.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Shard-Key-Index-Type">
-<code class="descname">Shard Key Index Type</code><a class="dashingAutolink" name="autolink-2498"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-Index-Type" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Shard Key Index Type</code><a class="dashingAutolink" name="autolink-1570"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-Index-Type" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A <a class="reference internal" href="glossary.html#term-shard-key"><span class="xref std std-term">shard key</span></a> index can be an ascending index on the shard
 key, a compound index that start with the shard key and specify
 ascending order for the shard key, or a <a class="reference internal" href="../core/index-hashed.html"><span class="doc">hashed index</span></a>.</p>
@@ -796,7 +796,7 @@ ascending order for the shard key, or a <a class="reference internal" href="../c
 
 <dl class="limit">
 <dt id="Shard-Key-is-Immutable">
-<code class="descname">Shard Key is Immutable</code><a class="dashingAutolink" name="autolink-2499"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-is-Immutable" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Shard Key is Immutable</code><a class="dashingAutolink" name="autolink-1571"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-is-Immutable" title="Permalink to this definition">&para;</a></dt>
 <dd><p>If you must change a shard key:</p>
 <ul class="simple">
 <li>Dump all data from MongoDB into an external format.</li>
@@ -810,7 +810,7 @@ key range to ensure initial even distribution.</li>
 
 <dl class="limit">
 <dt id="Shard-Key-Value-in-a-Document-is-Immutable">
-<code class="descname">Shard Key Value in a Document is Immutable</code><a class="dashingAutolink" name="autolink-2500"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-Value-in-a-Document-is-Immutable" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Shard Key Value in a Document is Immutable</code><a class="dashingAutolink" name="autolink-1572"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Shard-Key-Value-in-a-Document-is-Immutable" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Once you shard a collection, the shard key and the shard key values are
 immutable; i.e.</p>
 <ul class="simple">
@@ -821,7 +821,7 @@ immutable; i.e.</p>
 
 <dl class="limit">
 <dt id="Monotonically-Increasing-Shard-Keys-Can-Limit-Insert-Throughput">
-<code class="descname">Monotonically Increasing Shard Keys Can Limit Insert Throughput</code><a class="dashingAutolink" name="autolink-2501"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Monotonically-Increasing-Shard-Keys-Can-Limit-Insert-Throughput" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Monotonically Increasing Shard Keys Can Limit Insert Throughput</code><a class="dashingAutolink" name="autolink-1573"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Monotonically-Increasing-Shard-Keys-Can-Limit-Insert-Throughput" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For clusters with high insert volumes, a shard keys with
 monotonically increasing and decreasing keys can affect insert
 throughput. If your shard key is the <code class="docutils literal"><span class="pre">_id</span></code> field, be aware that
@@ -846,7 +846,7 @@ indexes</span></a> store hashes of keys with ascending values.</p>
 <h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">&para;</a></h2>
 <span class="target" id="limit-sort"></span><dl class="limit">
 <dt id="Sort-Operations">
-<code class="descname">Sort Operations</code><a class="dashingAutolink" name="autolink-2502"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Sort-Operations" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Sort Operations</code><a class="dashingAutolink" name="autolink-1574"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Sort-Operations" title="Permalink to this definition">&para;</a></dt>
 <dd><p>If MongoDB cannot use an index to get documents in the requested
 sort order, the combined size of all documents in the sort
 operation, plus a small overhead, must be less than 32 megabytes.</p>
@@ -854,7 +854,7 @@ operation, plus a small overhead, must be less than 32 megabytes.</p>
 
 <span class="target" id="limit-agg-sort"></span><dl class="limit">
 <dt id="Aggregation-Pipeline-Operation">
-<code class="descname">Aggregation Pipeline Operation</code><a class="dashingAutolink" name="autolink-2503"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Aggregation-Pipeline-Operation" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Aggregation Pipeline Operation</code><a class="dashingAutolink" name="autolink-1575"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Aggregation-Pipeline-Operation" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
@@ -867,9 +867,9 @@ aggregation pipeline stages to write data to temporary files.</p>
 </div>
 <p>The <a class="reference internal" href="operator/aggregation/graphLookup.html#pipe._S_graphLookup" title="$graphLookup"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$graphLookup</span></code></a> stage must stay within the 100 megabyte
 memory limit. If <code class="docutils literal"><span class="pre">allowDiskUse:</span> <span class="pre">true</span></code> is specified for the
-<a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-2458"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> operation, the
+<a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> operation, the
 <a class="reference internal" href="operator/aggregation/graphLookup.html#pipe._S_graphLookup" title="$graphLookup"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$graphLookup</span></code></a> stage ignores the option. If there are other
-stages in the <a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-2459"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> operation,
+stages in the <a class="reference internal" href="method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a> operation,
 <code class="docutils literal"><span class="pre">allowDiskUse:</span> <span class="pre">true</span></code> option is in effect for these other stages.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
@@ -879,7 +879,7 @@ stages in the <a class="reference internal" href="method/db.collection.aggregate
 
 <dl class="limit">
 <dt id="2d-Geospatial-queries-cannot-use-the-_S_or-operator">
-<code class="descname">2d Geospatial queries cannot use the $or operator</code><a class="dashingAutolink" name="autolink-2504"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#2d-Geospatial-queries-cannot-use-the-_S_or-operator" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">2d Geospatial queries cannot use the $or operator</code><a class="dashingAutolink" name="autolink-1576"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#2d-Geospatial-queries-cannot-use-the-_S_or-operator" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="admonition-see admonition">
 <p class="first admonition-title">See</p>
 <p class="last"><a class="reference internal" href="operator/query/or.html#op._S_or" title="$or"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$or</span></code></a> and <a class="reference internal" href="../core/geospatial-indexes.html"><span class="doc">2d Index Internals</span></a>.</p>
@@ -888,7 +888,7 @@ stages in the <a class="reference internal" href="method/db.collection.aggregate
 
 <dl class="limit">
 <dt id="Geospatial-Queries">
-<code class="descname">Geospatial Queries</code><a class="dashingAutolink" name="autolink-2505"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Geospatial-Queries" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Geospatial Queries</code><a class="dashingAutolink" name="autolink-1577"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Geospatial-Queries" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For spherical queries, use the <code class="docutils literal"><span class="pre">2dsphere</span></code> index result.</p>
 <p>The use of <code class="docutils literal"><span class="pre">2d</span></code> index for spherical queries may lead to incorrect
 results, such as the use of the <code class="docutils literal"><span class="pre">2d</span></code> index for spherical queries
@@ -897,7 +897,7 @@ that wrap around the poles.</p>
 
 <dl class="limit">
 <dt id="Geospatial-Coordinates">
-<code class="descname">Geospatial Coordinates</code><a class="dashingAutolink" name="autolink-2506"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Geospatial-Coordinates" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Geospatial Coordinates</code><a class="dashingAutolink" name="autolink-1578"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Geospatial-Coordinates" title="Permalink to this definition">&para;</a></dt>
 <dd><ul class="simple">
 <li>Valid longitude values are between <code class="docutils literal"><span class="pre">-180</span></code> and <code class="docutils literal"><span class="pre">180</span></code>, both
 inclusive.</li>
@@ -908,7 +908,7 @@ inclusive.</li>
 
 <dl class="limit">
 <dt id="Area-of-GeoJSON-Polygons">
-<code class="descname">Area of GeoJSON Polygons</code><a class="dashingAutolink" name="autolink-2507"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Area-of-GeoJSON-Polygons" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Area of GeoJSON Polygons</code><a class="dashingAutolink" name="autolink-1579"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Area-of-GeoJSON-Polygons" title="Permalink to this definition">&para;</a></dt>
 <dd><p>For <a class="reference internal" href="operator/query/geoIntersects.html#op._S_geoIntersects" title="$geoIntersects"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoIntersects</span></code></a> or <a class="reference internal" href="operator/query/geoWithin.html#op._S_geoWithin" title="$geoWithin"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoWithin</span></code></a>, if you specify a single-ringed polygon that
 has an area greater than a single hemisphere, include <a class="reference internal" href="operator/query/geometry.html#op._S_geometry" title="$geometry"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">the</span>
 <span class="pre">custom</span> <span class="pre">MongoDB</span> <span class="pre">coordinate</span> <span class="pre">reference</span> <span class="pre">system</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">$geometry</span></code></a> expression; otherwise, <a class="reference internal" href="operator/query/geoIntersects.html#op._S_geoIntersects" title="$geoIntersects"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoIntersects</span></code></a> or <a class="reference internal" href="operator/query/geoWithin.html#op._S_geoWithin" title="$geoWithin"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoWithin</span></code></a> queries for
@@ -919,21 +919,21 @@ complementary geometry.</p>
 
 <dl class="limit">
 <dt id="Write-Command-Operation-Limit-Size">
-<code class="descname">Write Command Operation Limit Size</code><a class="dashingAutolink" name="autolink-2508"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Write-Command-Operation-Limit-Size" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Write Command Operation Limit Size</code><a class="dashingAutolink" name="autolink-1580"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Write-Command-Operation-Limit-Size" title="Permalink to this definition">&para;</a></dt>
 <dd><p><a class="reference internal" href="command/nav-crud.html"><span class="doc">Write commands</span></a> can accept no
-more than 1000 operations. The <a class="reference internal" href="method/Bulk.html#Bulk" title="Bulk()"><a class="dashingAutolink" name="autolink-2460"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/Bulk%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations in the
+more than 1000 operations. The <a class="reference internal" href="method/Bulk.html#Bulk" title="Bulk()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">Bulk()</span></code></a> operations in the
 <a class="reference internal" href="program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell and comparable methods in the drivers do not
 have this limit.</p>
 </dd></dl>
 
 <dl class="limit">
 <dt id="Views">
-<code class="descname">Views</code><a class="dashingAutolink" name="autolink-2509"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Views" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">Views</code><a class="dashingAutolink" name="autolink-1581"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#Views" title="Permalink to this definition">&para;</a></dt>
 <dd><p>In addition to being read-only, views have the following operation
 restrictions:</p>
 <ul class="simple">
 <li>You cannot rename <a class="reference internal" href="../core/views.html"><span class="doc">views</span></a>.</li>
-<li><a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><a class="dashingAutolink" name="autolink-2461"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/find%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
+<li><a class="reference internal" href="method/db.collection.find.html#db.collection.find" title="db.collection.find()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">find()</span></code></a> operations on views do not support
 the following <a class="reference internal" href="operator/projection.html"><span class="doc">projection</span></a>
 operators:<ul>
 <li><a class="reference internal" href="operator/projection/positional.html#proj._S_" title="$"><code class="xref mongodb mongodb-projection docutils literal"><span class="pre">$</span></code></a></li>

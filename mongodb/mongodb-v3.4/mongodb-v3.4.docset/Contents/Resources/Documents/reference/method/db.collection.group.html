@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3617"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.group%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.group() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1852"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.group%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.group() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.group/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-group">
-<a class="dashingAutolink" name="autolink-3618"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.group%28%29%C2%B6"></a><h1>db.collection.group()<a class="headerlink" href="#db-collection-group" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.group()<a class="headerlink" href="#db-collection-group" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,15 +166,15 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.group">
-<code class="descclassname">db.collection.</code><code class="descname">group</code><span class="sig-paren">(</span><em>{ key, reduce, initial [, keyf] [, cond] [, finalize] }</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3616"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.group" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">group</code><span class="sig-paren">(</span><em>{ key, reduce, initial [, keyf] [, cond] [, finalize] }</em><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1851"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.group" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="deprecated">
-<p><span class="versionmodified">Deprecated since version 3.4: </span>Mongodb 3.4 deprecates the <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3603"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method. Use
-<a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-3604"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> with the <a class="reference internal" href="../operator/aggregation/group.html#pipe._S_group" title="$group"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$group</span></code></a>
-stage or <a class="reference internal" href="db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><a class="dashingAutolink" name="autolink-3605"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.mapReduce%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> instead.</p>
+<p><span class="versionmodified">Deprecated since version 3.4: </span>Mongodb 3.4 deprecates the <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method. Use
+<a class="reference internal" href="db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.aggregate()</span></code></a> with the <a class="reference internal" href="../operator/aggregation/group.html#pipe._S_group" title="$group"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$group</span></code></a>
+stage or <a class="reference internal" href="db.collection.mapReduce.html#db.collection.mapReduce" title="db.collection.mapReduce()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.mapReduce()</span></code></a> instead.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Because <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3606"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> uses JavaScript, it is
+<p class="last">Because <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> uses JavaScript, it is
 subject to a number of performance limitations. For most cases the
 <a class="reference internal" href="../operator/aggregation/group.html#pipe._S_group" title="$group"><code class="xref mongodb mongodb-pipeline docutils literal"><span class="pre">$group</span></code></a> operator in the <a class="reference internal" href="../../core/aggregation-pipeline.html"><span class="doc">aggregation pipeline</span></a> provides a suitable alternative with
 fewer restrictions.</p>
@@ -183,8 +183,8 @@ fewer restrictions.</p>
 collection by the specified keys and performs simple aggregation
 functions such as computing counts and sums. The method is
 analogous to a <code class="docutils literal"><span class="pre">SELECT</span> <span class="pre">&lt;...&gt;</span> <span class="pre">GROUP</span> <span class="pre">BY</span></code> statement in SQL. The
-<a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3607"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">group()</span></code></a> method returns an array.</p>
-<p>The <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3608"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> accepts a single <a class="reference internal" href="../glossary.html#term-document"><span class="xref std std-term">document</span></a> that
+<a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">group()</span></code></a> method returns an array.</p>
+<p>The <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> accepts a single <a class="reference internal" href="../glossary.html#term-document"><span class="xref std std-term">document</span></a> that
 contains the following:</p>
 <table border="1" class="colwidths-given docutils">
 <colgroup>
@@ -225,13 +225,13 @@ fields.</td>
 <tr class="row-even"><td><code class="docutils literal"><span class="pre">cond</span></code></td>
 <td>document</td>
 <td>The selection criteria to determine which documents in the
-collection to process. If you omit the <code class="docutils literal"><span class="pre">cond</span></code> field, <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3609"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>
+collection to process. If you omit the <code class="docutils literal"><span class="pre">cond</span></code> field, <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>
 processes all the documents in the collection for the group
 operation.</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal"><span class="pre">finalize</span></code></td>
 <td>function</td>
-<td>Optional. A function that runs each item in the result set before <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3610"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>
+<td>Optional. A function that runs each item in the result set before <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a>
 returns the final value. This function can either modify the result
 document or replace the result document as a whole.</td>
 </tr>
@@ -265,7 +265,7 @@ copy</a>
 other collation fields are optional. For descriptions of the fields,
 see <a class="reference internal" href="../collation.html#collation-document-fields"><span class="std std-ref">Collation Document</span></a>.</p>
 <p>If the collation is unspecified but the collection has a
-default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-3611"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
+default collation (see <a class="reference internal" href="db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a>), the
 operation uses the collation specified for the collection.</p>
 <p>If no collation is specified for the collection or for the
 operations, MongoDB uses the simple binary comparison used in prior
@@ -281,9 +281,9 @@ find and another for the sort.</p>
 </tr>
 </tbody>
 </table>
-<p>The <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3612"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method is a shell wrapper for
+<p>The <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method is a shell wrapper for
 the <a class="reference internal" href="../command/group.html#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> command. However, the
-<a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3613"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method takes the <code class="docutils literal"><span class="pre">keyf</span></code> field and
+<a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method takes the <code class="docutils literal"><span class="pre">keyf</span></code> field and
 the <code class="docutils literal"><span class="pre">reduce</span></code> field whereas the <a class="reference internal" href="../command/group.html#dbcmd.group" title="group"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">group</span></code></a> command takes
 the <code class="docutils literal"><span class="pre">$keyf</span></code> field and the <code class="docutils literal"><span class="pre">$reduce</span></code> field.</p>
 </dd></dl>
@@ -293,7 +293,7 @@ the <code class="docutils literal"><span class="pre">$keyf</span></code> field a
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="limits-and-restrictions">
 <h3>Limits and Restrictions<a class="headerlink" href="#limits-and-restrictions" title="Permalink to this headline">&para;</a></h3>
-<p>The <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3614"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method does not work with
+<p>The <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method does not work with
 <a class="reference internal" href="../glossary.html#term-sharded-cluster"><span class="xref std std-term">sharded clusters</span></a>. Use the <a class="reference internal" href="../glossary.html#term-aggregation-framework"><span class="xref std std-term">aggregation
 framework</span></a> or <a class="reference internal" href="../glossary.html#term-map-reduce"><span class="xref std std-term">map-reduce</span></a> in <a class="reference internal" href="../glossary.html#term-sharding"><span class="xref std std-term">sharded environments</span></a>.</p>
 <p>The result set must fit within the <a class="reference internal" href="../limits.html#limit-bson-document-size"><span class="std std-ref">maximum BSON document size</span></a>.</p>
@@ -302,7 +302,7 @@ i.e. at most 20,000 unique groupings. For group by operations that
 results in more than 20,000 unique groupings, use
 <a class="reference internal" href="../command/mapReduce.html#dbcmd.mapReduce" title="mapReduce"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">mapReduce</span></code></a>. Previous versions had a limit of 10,000
 elements.</p>
-<p>Prior to 2.4, the <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><a class="dashingAutolink" name="autolink-3615"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.group%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method took the
+<p>Prior to 2.4, the <a class="reference internal" href="#db.collection.group" title="db.collection.group()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.group()</span></code></a> method took the
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> instance&rsquo;s JavaScript lock, which blocked all other
 JavaScript execution.</p>
 </div>

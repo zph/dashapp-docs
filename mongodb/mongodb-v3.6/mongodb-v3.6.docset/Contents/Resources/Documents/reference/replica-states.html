@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3513"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Member%20States%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Member States &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3503"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Replica%20Set%20Member%20States%20%E2%80%94%20MongoDB%20Manual"></a><title>Replica Set Member States &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/replica-states/"/><meta name="robots" content="index"/>
@@ -225,7 +225,7 @@ vote. Data is not available for reads from this member.</td>
 <h3>Core States<a class="headerlink" href="#core-states" title="Permalink to this headline">&para;</a></h3>
 <dl class="replstate">
 <dt id="replstate.PRIMARY">
-<code class="descname">PRIMARY</code><a class="dashingAutolink" name="autolink-3503"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.PRIMARY" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">PRIMARY</code><a class="dashingAutolink" name="autolink-3504"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.PRIMARY" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Members in <a class="reference internal" href="#replstate.PRIMARY" title="PRIMARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">PRIMARY</span></code></a> state accept write operations. A replica set has at most
 one primary at a time. <a class="footnote-reference" href="#edge-cases-2-primaries" id="id1">[1]</a> A <a class="reference internal" href="#replstate.SECONDARY" title="SECONDARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">SECONDARY</span></code></a> member becomes primary
 after an <a class="reference internal" href="../core/replica-set-elections.html#replica-set-elections"><span class="std std-ref">election</span></a>. Members in the <a class="reference internal" href="#replstate.PRIMARY" title="PRIMARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">PRIMARY</span></code></a>
@@ -234,7 +234,7 @@ state are eligible to vote.</p>
 
 <dl class="replstate">
 <dt id="replstate.SECONDARY">
-<code class="descname">SECONDARY</code><a class="dashingAutolink" name="autolink-3504"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.SECONDARY" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">SECONDARY</code><a class="dashingAutolink" name="autolink-3505"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.SECONDARY" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Members in <a class="reference internal" href="#replstate.SECONDARY" title="SECONDARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">SECONDARY</span></code></a> state replicate the primary&rsquo;s data set
 and can be configured to accept read operations. Secondaries are eligible to vote in
 elections, and may be elected to the <a class="reference internal" href="#replstate.PRIMARY" title="PRIMARY"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">PRIMARY</span></code></a> state if the
@@ -243,7 +243,7 @@ primary becomes unavailable.</p>
 
 <dl class="replstate">
 <dt id="replstate.ARBITER">
-<code class="descname">ARBITER</code><a class="dashingAutolink" name="autolink-3505"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.ARBITER" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">ARBITER</code><a class="dashingAutolink" name="autolink-3506"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.ARBITER" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Members in <a class="reference internal" href="#replstate.ARBITER" title="ARBITER"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">ARBITER</span></code></a> state do not replicate data or accept write operations.
 They are eligible to vote, and exist solely to break a tie during
 elections. Replica sets should only have a member in the <a class="reference internal" href="#replstate.ARBITER" title="ARBITER"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">ARBITER</span></code></a> state
@@ -259,7 +259,7 @@ in any replica set. For considerations when using an arbiter, see
 <h3>Other States<a class="headerlink" href="#other-states" title="Permalink to this headline">&para;</a></h3>
 <dl class="replstate">
 <dt id="replstate.STARTUP">
-<code class="descname">STARTUP</code><a class="dashingAutolink" name="autolink-3506"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.STARTUP" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">STARTUP</code><a class="dashingAutolink" name="autolink-3507"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.STARTUP" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Each member of a replica set starts up in <a class="reference internal" href="#replstate.STARTUP" title="STARTUP"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">STARTUP</span></code></a>
 state. <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> then loads that member&rsquo;s replica set configuration,
 and transitions the member&rsquo;s state to <a class="reference internal" href="#replstate.STARTUP2" title="STARTUP2"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">STARTUP2</span></code></a> or <a class="reference internal" href="#replstate.ARBITER" title="ARBITER"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">ARBITER</span></code></a>. Members in
@@ -268,7 +268,7 @@ and transitions the member&rsquo;s state to <a class="reference internal" href="
 
 <dl class="replstate">
 <dt id="replstate.STARTUP2">
-<code class="descname">STARTUP2</code><a class="dashingAutolink" name="autolink-3507"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.STARTUP2" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">STARTUP2</code><a class="dashingAutolink" name="autolink-3508"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.STARTUP2" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Each data-bearing member of a replica set enters the <a class="reference internal" href="#replstate.STARTUP2" title="STARTUP2"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">STARTUP2</span></code></a> state as
 soon as <a class="reference internal" href="program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> finishes loading that member&rsquo;s
 configuration, at which time it becomes an active member of the replica set and is eligible to vote.
@@ -280,7 +280,7 @@ data is copied and all indexes are built.  Afterwards, the member transitions to
 
 <dl class="replstate">
 <dt id="replstate.RECOVERING">
-<code class="descname">RECOVERING</code><a class="dashingAutolink" name="autolink-3508"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.RECOVERING" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">RECOVERING</code><a class="dashingAutolink" name="autolink-3509"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.RECOVERING" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A member of a replica set enters <a class="reference internal" href="#replstate.RECOVERING" title="RECOVERING"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">RECOVERING</span></code></a> state when
 it is not ready to accept reads. The <a class="reference internal" href="#replstate.RECOVERING" title="RECOVERING"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">RECOVERING</span></code></a> state
 can occur during normal operation, and doesn&rsquo;t necessarily reflect
@@ -302,7 +302,7 @@ rest of the set. When this happens, the member enters the
 
 <dl class="replstate">
 <dt id="replstate.ROLLBACK">
-<code class="descname">ROLLBACK</code><a class="dashingAutolink" name="autolink-3509"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.ROLLBACK" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">ROLLBACK</code><a class="dashingAutolink" name="autolink-3510"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.ROLLBACK" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Whenever the replica set replaces a <a class="reference internal" href="glossary.html#term-primary"><span class="xref std std-term">primary</span></a> in an
 election, the old primary may contain documents
 that did not replicate to the <a class="reference internal" href="glossary.html#term-secondary"><span class="xref std std-term">secondary</span></a>
@@ -318,20 +318,20 @@ are eligible to vote in elections.</p>
 <p>Members in any error state can&rsquo;t vote.</p>
 <dl class="replstate">
 <dt id="replstate.UNKNOWN">
-<code class="descname">UNKNOWN</code><a class="dashingAutolink" name="autolink-3510"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.UNKNOWN" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">UNKNOWN</code><a class="dashingAutolink" name="autolink-3511"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.UNKNOWN" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Members that have never communicated status information to the replica
 set are in the <a class="reference internal" href="#replstate.UNKNOWN" title="UNKNOWN"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">UNKNOWN</span></code></a> state.</p>
 </dd></dl>
 
 <dl class="replstate">
 <dt id="replstate.DOWN">
-<code class="descname">DOWN</code><a class="dashingAutolink" name="autolink-3511"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.DOWN" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">DOWN</code><a class="dashingAutolink" name="autolink-3512"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.DOWN" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Members that lose their connection to the replica set are seen as <a class="reference internal" href="#replstate.DOWN" title="DOWN"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">DOWN</span></code></a> by the remaining members of the set.</p>
 </dd></dl>
 
 <dl class="replstate">
 <dt id="replstate.REMOVED">
-<code class="descname">REMOVED</code><a class="dashingAutolink" name="autolink-3512"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.REMOVED" title="Permalink to this definition">&para;</a></dt>
+<code class="descname">REMOVED</code><a class="dashingAutolink" name="autolink-3513"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#replstate.REMOVED" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Members that are removed from the replica set enter the <a class="reference internal" href="#replstate.REMOVED" title="REMOVED"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">REMOVED</span></code></a>
 state.
 When members enter the <a class="reference internal" href="#replstate.REMOVED" title="REMOVED"><code class="xref mongodb mongodb-replstate docutils literal"><span class="pre">REMOVED</span></code></a> state, the logs will

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-8606"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Delete%20Documents%20%E2%80%94%20MongoDB%20Manual"></a><title>Delete Documents &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3713"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Delete%20Documents%20%E2%80%94%20MongoDB%20Manual"></a><title>Delete Documents &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/tutorial/remove-documents/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="delete-documents">
-<span id="write-op-delete"></span><a class="dashingAutolink" name="autolink-8596"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Delete%20Documents%C2%B6"></a><h1>Delete Documents<a class="headerlink" href="#delete-documents" title="Permalink to this headline">&para;</a></h1>
+<span id="write-op-delete"></span><h1>Delete Documents<a class="headerlink" href="#delete-documents" title="Permalink to this headline">&para;</a></h1>
 <div class="tabs-top"></div><div class="tabs" data-tab-preference="languages">
   <ul class="tab-strip tab-strip--singleton" role="tablist">
     <li class="tab-strip__element" data-tabid="shell" role="tab" aria-selected="true">Mongo Shell</li>
@@ -174,8 +174,8 @@
     <div class="tabpanel-shell" data-tabid="shell"><p>This page provides examples of delete operations using the
 following methods in the <a class="reference internal" href="../reference/program/mongo.html#bin.mongo" title="bin.mongo"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongo</span></code></a> shell:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-8597"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-8598"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a></li>
 </ul>
 </div>
 <div class="tabpanel-python" data-tabid="python"><p>This page provides examples of delete operations using the
@@ -586,7 +586,7 @@ copy</a>
   <div class="tabs__content" role="tabpanel">
     <div class="tabpanel-shell" data-tabid="shell"><p>To remove all documents from a collection, pass an empty
 <a class="reference internal" href="../core/document.html#document-query-filter"><span class="std std-ref">filter</span></a> document <code class="docutils literal"><span class="pre">{}</span></code> to the
-<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-8599"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a> method.</p>
 </div>
 <div class="tabpanel-python" data-tabid="python"><p>To remove all documents from a collection, pass an empty
 <a class="reference internal" href="../core/document.html#document-query-filter"><span class="std std-ref">filter</span></a> document <code class="docutils literal"><span class="pre">{}</span></code> to the
@@ -781,7 +781,7 @@ copy</a>
   <div class="tabs__content" role="tabpanel">
     <div class="tabpanel-shell" data-tabid="shell"><p>The method returns a document with the status of the operation. For
 more information and examples, see
-<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-8600"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a>.</p>
 </div>
 <div class="tabpanel-python" data-tabid="python"><p>The <code class="xref py py-meth docutils literal"><span class="pre">delete_many()</span></code>
 method returns an instance of
@@ -1175,7 +1175,7 @@ copy</a>
   <div class="tabs__content" role="tabpanel">
     <div class="tabpanel-shell" data-tabid="shell"><p>To delete all documents that match a deletion criteria, pass a
 <a class="reference internal" href="../core/document.html#document-query-filter"><span class="std std-ref">filter</span></a> parameter to the
-<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-8601"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a> method.</p>
 </div>
 <div class="tabpanel-python" data-tabid="python"><p>To delete all documents that match a deletion criteria, pass a
 <a class="reference internal" href="../core/document.html#document-query-filter"><span class="std std-ref">filter</span></a> parameter to the
@@ -1370,7 +1370,7 @@ copy</a>
   <div class="tabs__content" role="tabpanel">
     <div class="tabpanel-shell" data-tabid="shell"><p>The method returns a document with the status of the operation. For
 more information and examples, see
-<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-8602"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a>.</p>
+<a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">deleteMany()</span></code></a>.</p>
 </div>
 <div class="tabpanel-python" data-tabid="python"><p>The <code class="xref py py-meth docutils literal"><span class="pre">delete_many()</span></code>
 method returns an instance of
@@ -1453,7 +1453,7 @@ an <code class="docutils literal"><span class="pre">com.mongodb.MongoException</
   <div class="tabs__content" role="tabpanel">
     <div class="tabpanel-shell" data-tabid="shell"><p>To delete at most a single document that matches a specified
 filter (even though multiple documents may match the specified
-filter) use the <a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-8603"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a> method.</p>
+filter) use the <a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a> method.</p>
 </div>
 <div class="tabpanel-python" data-tabid="python"><p>To delete at most a single document that matches a specified
 filter (even though multiple documents may match the specified
@@ -1672,8 +1672,8 @@ requested from MongoDB for write operations. For details, see
     <div class="tabpanel-shell" data-tabid="shell"><div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <ul class="last simple">
-<li><a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><a class="dashingAutolink" name="autolink-8604"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a></li>
-<li><a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><a class="dashingAutolink" name="autolink-8605"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.deleteOne%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.deleteMany.html#db.collection.deleteMany" title="db.collection.deleteMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteMany()</span></code></a></li>
+<li><a class="reference internal" href="../reference/method/db.collection.deleteOne.html#db.collection.deleteOne" title="db.collection.deleteOne()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.deleteOne()</span></code></a></li>
 <li><a class="reference internal" href="../reference/delete-methods.html#additional-deletes"><span class="std std-ref">Additional Methods</span></a></li>
 </ul>
 </div>

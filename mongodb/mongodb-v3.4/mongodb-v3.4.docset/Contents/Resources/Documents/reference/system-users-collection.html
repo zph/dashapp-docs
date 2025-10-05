@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7323"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/system.users%20Collection%20%E2%80%94%20MongoDB%20Manual"></a><title>system.users Collection &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3484"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/system.users%20Collection%20%E2%80%94%20MongoDB%20Manual"></a><title>system.users Collection &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/system-users-collection/"/><meta name="robots" content="index"/>
@@ -151,7 +151,7 @@
   </div>
                 
                   <div class="section" id="system-users-collection">
-<a class="dashingAutolink" name="autolink-7324"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/system.users%20Collection%C2%B6"></a><h1><code class="docutils literal"><span class="pre">system.users</span></code> Collection<a class="headerlink" href="#system-users-collection" title="Permalink to this headline">&para;</a></h1>
+<h1><code class="docutils literal"><span class="pre">system.users</span></code> Collection<a class="headerlink" href="#system-users-collection" title="Permalink to this headline">&para;</a></h1>
 <div class="versionchanged">
 <p><span class="versionmodified">Changed in version 2.6.</span></p>
 </div>
@@ -192,10 +192,10 @@ copy</a>
 <p>Each <code class="docutils literal"><span class="pre">system.users</span></code> document has the following fields:</p>
 <dl class="data">
 <dt id="admin.system.users.userId">
-<code class="descclassname">admin.system.users.</code><code class="descname">userId</code><a class="dashingAutolink" name="autolink-7315"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.userId" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.</code><code class="descname">userId</code><a class="dashingAutolink" name="autolink-3476"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.userId" title="Permalink to this definition">&para;</a></dt>
 <dd><p>A unique identifier for the user assigned to the user upon creation.</p>
 <p><a class="reference internal" href="#admin.system.users.userId" title="admin.system.users.userId"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">userId</span></code></a> is available for users (not
-managed via LDAP) <a class="reference internal" href="method/db.createUser.html#db.createUser" title="db.createUser()"><a class="dashingAutolink" name="autolink-7314"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/created"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">created</span></code></a> in MongoDB
+managed via LDAP) <a class="reference internal" href="method/db.createUser.html#db.createUser" title="db.createUser()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">created</span></code></a> in MongoDB
 3.4.22+.</p>
 <p>For <a class="reference internal" href="../core/security-ldap.html#security-ldap"><span class="std std-ref">LDAP managed users</span></a>, users may not have an
 associated <a class="reference internal" href="#admin.system.users.userId" title="admin.system.users.userId"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">userId</span></code></a>.</p>
@@ -206,7 +206,7 @@ associated <a class="reference internal" href="#admin.system.users.userId" title
 
 <dl class="data">
 <dt id="admin.system.users.user">
-<code class="descclassname">admin.system.users.</code><code class="descname">user</code><a class="dashingAutolink" name="autolink-7316"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.user" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.</code><code class="descname">user</code><a class="dashingAutolink" name="autolink-3477"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.user" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The user name. A user exists in the context of a single logical
 database (see <a class="reference internal" href="#admin.system.users.db" title="admin.system.users.db"><code class="xref mongodb mongodb-data docutils literal"><span class="pre">admin.system.users.db</span></code></a>) but can have access on
 other databases through roles specified in the
@@ -215,7 +215,7 @@ other databases through roles specified in the
 
 <dl class="data">
 <dt id="admin.system.users.db">
-<code class="descclassname">admin.system.users.</code><code class="descname">db</code><a class="dashingAutolink" name="autolink-7317"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.db" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.</code><code class="descname">db</code><a class="dashingAutolink" name="autolink-3478"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.db" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The <a class="reference internal" href="../core/security-users.html#authentication-database"><span class="std std-ref">authentication database</span></a>
 associated with the user. The user&rsquo;s privileges are not necessarily
 limited to this database. The user can have privileges in additional
@@ -224,7 +224,7 @@ databases through the <a class="reference internal" href="#admin.system.users.ro
 
 <dl class="data">
 <dt id="admin.system.users.credentials">
-<code class="descclassname">admin.system.users.</code><code class="descname">credentials</code><a class="dashingAutolink" name="autolink-7318"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.credentials" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.</code><code class="descname">credentials</code><a class="dashingAutolink" name="autolink-3479"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.credentials" title="Permalink to this definition">&para;</a></dt>
 <dd><p>User&rsquo;s authentication information. For users with externally stored
 authentication credentials, such as users that use <a class="reference internal" href="../tutorial/control-access-to-mongodb-with-kerberos-authentication.html"><span class="doc">Kerberos</span></a>
 or x.509 certificates for authentication, the <code class="docutils literal"><span class="pre">system.users</span></code>
@@ -234,7 +234,7 @@ document for that user does not contain the
 
 <dl class="data">
 <dt id="admin.system.users.roles">
-<code class="descclassname">admin.system.users.</code><code class="descname">roles</code><a class="dashingAutolink" name="autolink-7319"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.roles" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.</code><code class="descname">roles</code><a class="dashingAutolink" name="autolink-3480"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.roles" title="Permalink to this definition">&para;</a></dt>
 <dd><p>An array of roles granted to the user. The array contains both
 <a class="reference internal" href="built-in-roles.html#built-in-roles"><span class="std std-ref">built-in roles</span></a> and <a class="reference internal" href="../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">user-defined role</span></a>.</p>
 <p>A role document has the following syntax:</p>
@@ -250,14 +250,14 @@ copy</a>
 <p>A role document has the following fields:</p>
 <dl class="data">
 <dt id="admin.system.users.roles[n].role">
-<code class="descclassname">admin.system.users.roles[n].</code><code class="descname">role</code><a class="dashingAutolink" name="autolink-7320"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.roles[n].role" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.roles[n].</code><code class="descname">role</code><a class="dashingAutolink" name="autolink-3481"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.roles[n].role" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The name of a role. A role can be a <a class="reference internal" href="built-in-roles.html#built-in-roles"><span class="std std-ref">built-in role</span></a> provided by MongoDB or a <a class="reference internal" href="../core/security-user-defined-roles.html#user-defined-roles"><span class="std std-ref">custom
 user-defined role</span></a>.</p>
 </dd></dl>
 
 <dl class="data">
 <dt id="admin.system.users.roles[n].db">
-<code class="descclassname">admin.system.users.roles[n].</code><code class="descname">db</code><a class="dashingAutolink" name="autolink-7321"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.roles[n].db" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.roles[n].</code><code class="descname">db</code><a class="dashingAutolink" name="autolink-3482"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.roles[n].db" title="Permalink to this definition">&para;</a></dt>
 <dd><p>The name of the database where role is defined.</p>
 </dd></dl>
 
@@ -268,7 +268,7 @@ the command is run.</p>
 
 <dl class="data">
 <dt id="admin.system.users.customData">
-<code class="descclassname">admin.system.users.</code><code class="descname">customData</code><a class="dashingAutolink" name="autolink-7322"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.customData" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">admin.system.users.</code><code class="descname">customData</code><a class="dashingAutolink" name="autolink-3483"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#admin.system.users.customData" title="Permalink to this definition">&para;</a></dt>
 <dd><p>Optional custom information about the user.</p>
 </dd></dl>
 

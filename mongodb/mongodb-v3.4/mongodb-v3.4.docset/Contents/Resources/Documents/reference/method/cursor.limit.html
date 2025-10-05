@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3070"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.limit%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.limit() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1752"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/cursor.limit%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>cursor.limit() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/cursor.limit/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="cursor-limit">
-<a class="dashingAutolink" name="autolink-3071"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/cursor.limit%28%29%C2%B6"></a><h1>cursor.limit()<a class="headerlink" href="#cursor-limit" title="Permalink to this headline">&para;</a></h1>
+<h1>cursor.limit()<a class="headerlink" href="#cursor-limit" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -165,18 +165,18 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="cursor.limit">
-<code class="descclassname">cursor.</code><code class="descname">limit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3069"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.limit" title="Permalink to this definition">&para;</a></dt>
-<dd><p>Use the <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3072"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method on a cursor to specify the maximum
-number of documents the cursor will return. <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3073"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> is
+<code class="descclassname">cursor.</code><code class="descname">limit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1751"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#cursor.limit" title="Permalink to this definition">&para;</a></dt>
+<dd><p>Use the <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> method on a cursor to specify the maximum
+number of documents the cursor will return. <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> is
 analogous to the <code class="docutils literal"><span class="pre">LIMIT</span></code> statement in a SQL database.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">You must apply <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3074"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> to the cursor before
+<p class="last">You must apply <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> to the cursor before
 retrieving any documents from the database.</p>
 </div>
-<p>Use <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3075"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> to maximize performance and prevent
+<p>Use <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> to maximize performance and prevent
 MongoDB from returning more results than required for processing.</p>
-<p>The <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3076"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.limit()</span></code></a> method has the following prototype form:</p>
+<p>The <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.limit()</span></code></a> method has the following prototype form:</p>
 <div class="button-code-block">
 <div class="button-row">
 <a class="code-button--copy code-button" role="button">
@@ -193,13 +193,13 @@ copy</a>
 <h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">&para;</a></h2>
 <div class="section" id="supported-values">
 <h3>Supported Values<a class="headerlink" href="#supported-values" title="Permalink to this headline">&para;</a></h3>
-<p>The behavior of <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3077"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> is undefined for values less
+<p>The behavior of <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> is undefined for values less
 than -2<sup>31</sup> and greater than 2<sup>31</sup>.</p>
-<p>You must specify a numeric value for <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3078"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>.</p>
+<p>You must specify a numeric value for <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a>.</p>
 </div>
 <div class="section" id="zero-value">
 <h3>Zero Value<a class="headerlink" href="#zero-value" title="Permalink to this headline">&para;</a></h3>
-<p>A <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3079"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/limit%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> value of 0 (i.e. <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><a class="dashingAutolink" name="autolink-3080"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/.limit%280%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">.limit(0)</span></code></a>) is equivalent to setting no limit.</p>
+<p>A <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">limit()</span></code></a> value of 0 (i.e. <a class="reference internal" href="#cursor.limit" title="cursor.limit()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">.limit(0)</span></code></a>) is equivalent to setting no limit.</p>
 </div>
 <div class="section" id="negative-values">
 <h3>Negative Values<a class="headerlink" href="#negative-values" title="Permalink to this headline">&para;</a></h3>

@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3685"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.insertMany%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.insertMany() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-1860"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/db.collection.insertMany%28%29%20%E2%80%94%20MongoDB%20Manual"></a><title>db.collection.insertMany() &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/reference/method/db.collection.insertMany/"/><meta name="robots" content="index"/>
@@ -153,7 +153,7 @@
   </div>
                 
                   <div class="section" id="db-collection-insertmany">
-<a class="dashingAutolink" name="autolink-3670"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/db.collection.insertMany%28%29%C2%B6"></a><h1>db.collection.insertMany()<a class="headerlink" href="#db-collection-insertmany" title="Permalink to this headline">&para;</a></h1>
+<h1>db.collection.insertMany()<a class="headerlink" href="#db-collection-insertmany" title="Permalink to this headline">&para;</a></h1>
 <div class="contents singlecol local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -166,12 +166,12 @@
 <h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">&para;</a></h2>
 <dl class="method">
 <dt id="db.collection.insertMany">
-<code class="descclassname">db.collection.</code><code class="descname">insertMany</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-3684"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.insertMany" title="Permalink to this definition">&para;</a></dt>
+<code class="descclassname">db.collection.</code><code class="descname">insertMany</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="dashingAutolink" name="autolink-1859"></a><a class="dashAnchor" name="//apple_ref/cpp/Command/%C2%B6"></a><a class="headerlink" href="#db.collection.insertMany" title="Permalink to this definition">&para;</a></dt>
 <dd><div class="versionadded">
 <p><span class="versionmodified">New in version 3.2.</span></p>
 </div>
 <p>Inserts multiple documents into a collection.</p>
-<p>The <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3671"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> method has the following
+<p>The <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> method has the following
 syntax:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -234,7 +234,7 @@ an ordered or unordered insert. Defaults to <code class="docutils literal"><span
 </div>
 <div class="section" id="behaviors">
 <h2>Behaviors<a class="headerlink" href="#behaviors" title="Permalink to this headline">&para;</a></h2>
-<p>Given an array of documents, <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3672"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a>
+<p>Given an array of documents, <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a>
 inserts each document in the array into the collection.</p>
 <div class="section" id="execution-of-operations">
 <h3>Execution of Operations<a class="headerlink" href="#execution-of-operations" title="Permalink to this headline">&para;</a></h3>
@@ -242,7 +242,7 @@ inserts each document in the array into the collection.</p>
 <p>If <code class="docutils literal"><span class="pre">ordered</span></code> is set to false, documents are inserted in an unordered
 format and may be reordered by <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> to increase performance.
 Applications should not depend on ordering of inserts if using an unordered
-<a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3673"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a>.</p>
+<a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a>.</p>
 <p>Each group of operations can have at most
 <a class="reference internal" href="../limits.html#Write-Command-Operation-Limit-Size" title="Write Command Operation Limit Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">1000</span> <span class="pre">operations</span></code></a>.
 If a group exceeds this <a class="reference internal" href="../limits.html#Write-Command-Operation-Limit-Size" title="Write Command Operation Limit Size"><code class="xref mongodb mongodb-limit docutils literal"><span class="pre">limit</span></code></a>,
@@ -251,22 +251,22 @@ smaller groups of 1000 or less. For example, if the queue consists of 2000
 operations, MongoDB creates 2 groups, each with 1000 operations.</p>
 <p>The sizes and grouping mechanics are internal performance details and
 are subject to change in future versions.</p>
-<p>Executing an <a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><a class="dashingAutolink" name="autolink-3674"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ordered"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ordered</span></code></a> list of operations on a
+<p>Executing an <a class="reference internal" href="db.collection.initializeOrderedBulkOp.html#db.collection.initializeOrderedBulkOp" title="db.collection.initializeOrderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ordered</span></code></a> list of operations on a
 sharded collection will generally be slower than executing an
-<a class="reference internal" href="db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><a class="dashingAutolink" name="autolink-3675"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/unordered"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">unordered</span></code></a> list
+<a class="reference internal" href="db.collection.initializeUnorderedBulkOp.html#db.collection.initializeUnorderedBulkOp" title="db.collection.initializeUnorderedBulkOp()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">unordered</span></code></a> list
 since with an ordered list, each operation must wait for the previous
 operation to finish.</p>
 </div>
 <div class="section" id="collection-creation">
 <h3>Collection Creation<a class="headerlink" href="#collection-creation" title="Permalink to this headline">&para;</a></h3>
-<p>If the collection does not exist, then <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3676"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a>
+<p>If the collection does not exist, then <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a>
 creates the collection on successful write.</p>
 </div>
 <div class="section" id="id-field">
 <h3><code class="docutils literal"><span class="pre">_id</span></code> Field<a class="headerlink" href="#id-field" title="Permalink to this headline">&para;</a></h3>
 <p>If the document does not specify an <a class="reference internal" href="../glossary.html#term-id"><span class="xref std std-term">_id</span></a> field, then <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a>
 adds the <code class="docutils literal"><span class="pre">_id</span></code> field and assign a unique
-<a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><a class="dashingAutolink" name="autolink-3677"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> for the document. Most
+<a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> for the document. Most
 drivers create an ObjectId and insert the <code class="docutils literal"><span class="pre">_id</span></code> field, but the
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> will create and populate the <code class="docutils literal"><span class="pre">_id</span></code> if the driver or
 application does not.</p>
@@ -275,9 +275,9 @@ unique within the collection to avoid duplicate key error.</p>
 </div>
 <div class="section" id="explainability">
 <h3>Explainability<a class="headerlink" href="#explainability" title="Permalink to this headline">&para;</a></h3>
-<p><a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3678"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> is not compatible with
-<a class="reference internal" href="db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-3679"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>.</p>
-<p>Use <a class="reference internal" href="db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><a class="dashingAutolink" name="autolink-3680"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insert%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> instead.</p>
+<p><a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> is not compatible with
+<a class="reference internal" href="db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a>.</p>
+<p>Use <a class="reference internal" href="db.collection.insert.html#db.collection.insert" title="db.collection.insert()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insert()</span></code></a> instead.</p>
 </div>
 <div class="section" id="error-handling">
 <h3>Error Handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">&para;</a></h3>
@@ -298,7 +298,7 @@ encountered while unordered operations display each error in an array.</p>
 collection.</p>
 <div class="section" id="insert-several-document-without-specifying-an-id-field">
 <h3>Insert Several Document without Specifying an <code class="docutils literal"><span class="pre">_id</span></code> Field<a class="headerlink" href="#insert-several-document-without-specifying-an-id-field" title="Permalink to this headline">&para;</a></h3>
-<p>The following example uses <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3681"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a> to insert
+<p>The following example uses <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.insertMany()</span></code></a> to insert
 documents that do not contain the <code class="docutils literal"><span class="pre">_id</span></code> field:</p>
 <div class="button-code-block">
 <div class="button-row">
@@ -336,14 +336,14 @@ copy</a>
 </div>
 <p>Because the documents did not include <code class="docutils literal"><span class="pre">_id</span></code>,
 <a class="reference internal" href="../program/mongod.html#bin.mongod" title="bin.mongod"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongod</span></code></a> creates and adds the <code class="docutils literal"><span class="pre">_id</span></code> field for each document and
-assigns it a unique <a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><a class="dashingAutolink" name="autolink-3682"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/ObjectId"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> value.</p>
+assigns it a unique <a class="reference internal" href="ObjectId.html#ObjectId" title="ObjectId"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">ObjectId</span></code></a> value.</p>
 <p>The <code class="docutils literal"><span class="pre">ObjectId</span></code> values are specific to the machine and time when the
 operation is run. As such, your values may differ from those in the
 example.</p>
 </div>
 <div class="section" id="insert-several-document-specifying-an-id-field">
 <h3>Insert Several Document Specifying an <code class="docutils literal"><span class="pre">_id</span></code> Field<a class="headerlink" href="#insert-several-document-specifying-an-id-field" title="Permalink to this headline">&para;</a></h3>
-<p>The following example/operation uses <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><a class="dashingAutolink" name="autolink-3683"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/insertMany%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> to
+<p>The following example/operation uses <a class="reference internal" href="#db.collection.insertMany" title="db.collection.insertMany()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">insertMany()</span></code></a> to
 insert documents that include the <code class="docutils literal"><span class="pre">_id</span></code> field. The value of <code class="docutils literal"><span class="pre">_id</span></code> must be
 unique within the collection to avoid a duplicate key error.</p>
 <div class="button-code-block">

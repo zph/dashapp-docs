@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-7621"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%203.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 3.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/><a class="dashingAutolink" name="autolink-3544"></a><a class="dashAnchor" name="//apple_ref/cpp/Package/Release%20Notes%20for%20MongoDB%203.0%20%E2%80%94%20MongoDB%20Manual"></a><title>Release Notes for MongoDB 3.0 &mdash; MongoDB Manual</title><link rel="shortcut icon" href="https://www.mongodb.com/docs/assets/favicon.ico"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="canonical" href="https://www.mongodb.com/docs/manual/release-notes/3.0/"/><meta name="robots" content="index"/>
@@ -149,7 +149,7 @@
   </div>
                 
                   <div class="section" id="release-notes-for-mongodb-3-0">
-<a class="dashingAutolink" name="autolink-7622"></a><a class="dashAnchor" name="//apple_ref/cpp/Section/Release%20Notes%20for%20MongoDB%203.0%C2%B6"></a><h1>Release Notes for MongoDB 3.0<a class="headerlink" href="#release-notes-for-mongodb-3-0" title="Permalink to this headline">&para;</a></h1>
+<h1>Release Notes for MongoDB 3.0<a class="headerlink" href="#release-notes-for-mongodb-3-0" title="Permalink to this headline">&para;</a></h1>
 <div class="contents twocols local topic" id="on-this-page">
 <p class="topic-title first">On this page</p>
 <ul class="simple">
@@ -550,7 +550,7 @@ unexpected system restarts: <a class="reference external" href="https://jira.mon
 <span id="id12"></span><h3>3.0.3 &ndash; May 12, 2015<a class="headerlink" href="#may-12-2015" title="Permalink to this headline">&para;</a></h3>
 <p>Issues fixed:</p>
 <ul class="simple">
-<li>Deprecate <a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><a class="dashingAutolink" name="autolink-7623"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.eval%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> and add warnings:
+<li>Deprecate <a class="reference internal" href="../reference/method/db.eval.html#db.eval" title="db.eval()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.eval()</span></code></a> and add warnings:
 <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-17453">SERVER-17453</a></li>
 <li>Potential for abrupt termination with the Windows service stop
 operation: <a class="reference external" href="https://jira.mongodb.org/browse/SERVER-17802">SERVER-17802</a></li>
@@ -680,7 +680,7 @@ used for all collections that do not have <code class="docutils literal"><span c
 updates (such as incrementing counters), you can disable the power of 2
 strategy. To disable the power of 2 strategy for a collection, use the
 <a class="reference internal" href="../reference/command/collMod.html#dbcmd.collMod" title="collMod"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">collMod</span></code></a> command with the <a class="reference internal" href="../reference/command/collMod.html#noPadding" title="noPadding"><code class="xref mongodb mongodb-collflag docutils literal"><span class="pre">noPadding</span></code></a> flag or the
-<a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><a class="dashingAutolink" name="autolink-7624"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.createCollection%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> method with the <code class="docutils literal"><span class="pre">noPadding</span></code> option.</p>
+<a class="reference internal" href="../reference/method/db.createCollection.html#db.createCollection" title="db.createCollection()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.createCollection()</span></code></a> method with the <code class="docutils literal"><span class="pre">noPadding</span></code> option.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Do not set <code class="docutils literal"><span class="pre">noPadding</span></code> if the workload includes removes or any
@@ -767,10 +767,10 @@ longer automatically builds missing <code class="docutils literal"><span class="
 <span id="id19"></span><h2>Sharded Clusters<a class="headerlink" href="#sharded-clusters" title="Permalink to this headline">&para;</a></h2>
 <p>MongoDB 3.0 provides the following enhancements to sharded clusters:</p>
 <ul class="simple">
-<li>Adds a new <a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><a class="dashingAutolink" name="autolink-7625"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> helper to improve management
+<li>Adds a new <a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> helper to improve management
 of sharded collections with tags. The new
-<a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><a class="dashingAutolink" name="autolink-7626"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.removeTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> method acts as a complement to
-<a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><a class="dashingAutolink" name="autolink-7627"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.addTagRange%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a>.</li>
+<a class="reference internal" href="../reference/method/sh.removeTagRange.html#sh.removeTagRange" title="sh.removeTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.removeTagRange()</span></code></a> method acts as a complement to
+<a class="reference internal" href="../reference/method/sh.addTagRange.html#sh.addTagRange" title="sh.addTagRange()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.addTagRange()</span></code></a>.</li>
 <li>Provides a more predictable read preference behavior.
 <a class="reference internal" href="../reference/program/mongos.html#bin.mongos" title="bin.mongos"><code class="xref mongodb mongodb-binary docutils literal"><span class="pre">mongos</span></code></a> instances no longer pin connections to members of
 replica sets when performing read operations. Instead,
@@ -780,9 +780,9 @@ predictable read preference behavior when read preferences change.</li>
 concern</span></a> of chunk migration operations. You can
 configure the <code class="docutils literal"><span class="pre">writeConcern</span></code> setting for the <a class="reference internal" href="../tutorial/manage-sharded-cluster-balancer.html#sharded-cluster-config-secondary-throttle"><span class="std std-ref">balancer</span></a> as well as for
 <a class="reference internal" href="../reference/command/moveChunk.html#dbcmd.moveChunk" title="moveChunk"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">moveChunk</span></code></a> and <a class="reference internal" href="../reference/command/cleanupOrphaned.html#dbcmd.cleanupOrphaned" title="cleanupOrphaned"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">cleanupOrphaned</span></code></a> commands.</li>
-<li>Improves visibility of balancer operations. <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-7628"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>
+<li>Improves visibility of balancer operations. <a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a>
 includes information about the state of the balancer. See
-<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><a class="dashingAutolink" name="autolink-7629"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/sh.status%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> for details.</li>
+<a class="reference internal" href="../reference/method/sh.status.html#sh.status" title="sh.status()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">sh.status()</span></code></a> for details.</li>
 </ul>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
@@ -814,9 +814,9 @@ access MongoDB. For details, see <a class="reference internal" href="3.0-compati
 <p>MongoDB 3.0 includes a new query introspection system that provides an
 improved output format and a finer-grained introspection into both
 query plan and query execution.</p>
-<p>For details, see the new <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><a class="dashingAutolink" name="autolink-7630"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/db.collection.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method and
+<p>For details, see the new <a class="reference internal" href="../reference/method/db.collection.explain.html#db.collection.explain" title="db.collection.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">db.collection.explain()</span></code></a> method and
 the new <a class="reference internal" href="../reference/command/explain.html#dbcmd.explain" title="explain"><code class="xref mongodb mongodb-dbcommand docutils literal"><span class="pre">explain</span></code></a> command as well as the updated
-<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><a class="dashingAutolink" name="autolink-7631"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/cursor.explain%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method.</p>
+<a class="reference internal" href="../reference/method/cursor.explain.html#cursor.explain" title="cursor.explain()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">cursor.explain()</span></code></a> method.</p>
 <p>For information on the format of the new output, see
 <a class="reference internal" href="../reference/explain-results.html"><span class="doc">Explain Results</span></a>.</p>
 </div>
@@ -892,7 +892,7 @@ operation will build all the specified indexes in the foreground.</li>
 polygons are single-ringed GeoJSON polygons with areas greater than
 that of a single hemisphere. See <a class="reference internal" href="../reference/operator/query/geometry.html#op._S_geometry" title="$geometry"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geometry</span></code></a>,
 <a class="reference internal" href="../reference/operator/query/geoIntersects.html#op._S_geoIntersects" title="$geoIntersects"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoIntersects</span></code></a>, and <a class="reference internal" href="../reference/operator/query/geoWithin.html#op._S_geoWithin" title="$geoWithin"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$geoWithin</span></code></a> for details.</li>
-<li>For <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><a class="dashingAutolink" name="autolink-7632"></a><a class="dashAnchor" name="//apple_ref/cpp/Method/aggregate%28%29"></a><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a>, adds a new
+<li>For <a class="reference internal" href="../reference/method/db.collection.aggregate.html#db.collection.aggregate" title="db.collection.aggregate()"><code class="xref mongodb mongodb-method docutils literal"><span class="pre">aggregate()</span></code></a>, adds a new
 <a class="reference internal" href="../reference/operator/aggregation/dateToString.html#exp._S_dateToString" title="$dateToString"><code class="xref mongodb mongodb-expression docutils literal"><span class="pre">$dateToString</span></code></a> operator to facilitate converting a date
 to a formatted string.</li>
 <li>Adds the <a class="reference internal" href="../reference/operator/query/eq.html#op._S_eq" title="$eq"><code class="xref mongodb mongodb-query docutils literal"><span class="pre">$eq</span></code></a> query operator to query for equality conditions.</li>
